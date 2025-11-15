@@ -1,0 +1,23 @@
+# requirements.txt
+streamlit
+networkx
+matplotlib
+polygon-api-client
+nltk
+beautifulsoup4
+gensim
+feedparser
+stop-words
+nest_asyncio
+transformers
+torch
+torch_geometric
+sec-edgar-downloader
+sentence-transformers
+pandas
+pyvis
+aiohttp
+py2neo
+lxml
+spacy==3.7.5
+neo4j
