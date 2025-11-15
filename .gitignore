@@ -1,0 +1,47 @@
+Python
+
+pycache/
+*.py[cod]
+*$py.class
+*.so
+
+IDE / Editor
+
+.vscode/
+.idea/
+
+Environment
+
+venv/
+.env
+.env.*
+
+Local Data & Config
+
+!! IMPORTANT: Do not upload your secrets or local DB !!
+
+config.json
+*.db
+*.sqlite
+*.sqlite3
+financial_data.db
+
+Logs
+
+*.log
+worker_cron.log
+
+Reports
+
+reports/
+
+Temporary Files from app.py
+
+temp_graph_*.html
+
+OS
+
+.DS_Store
+Thumbs.db
+
+neo4j/

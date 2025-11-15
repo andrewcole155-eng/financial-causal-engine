@@ -1,0 +1,4241 @@
+[
+    {
+        "source": "INTC",
+        "target": "TROW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "ON",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "TEL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "STT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "USB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "COF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "CHRW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "EQR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "ED",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "LLY",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "URI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "ROST",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "GE",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "AOS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "DTE",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "MGM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "META",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "DHI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "GEN",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "APD",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "ROP",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "LVS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "CF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "ODFL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "WRB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "EQT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "GM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "DOW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "FICO",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "LRCX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "TRV",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "PSA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "LIN",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "FRT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "HD",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "EOG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "LYV",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "PPL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "DLTR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "EXR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "APA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "FSLR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "NXPI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "HPQ",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "IFF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "JBHT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "VFC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "GWW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "MMM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "CME",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "WEC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "NRG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "PNC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "KLAC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "FOX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "LKQ",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "CSX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "SLB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "PPG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "CMS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "CVS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "SBAC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "DXC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "AES",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "TJX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "BALL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "XEL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "AON",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "RTX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "HCA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "INTC",
+        "target": "FMC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "TROW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "TEL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "ON",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "STT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "CHRW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "DLTR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "URI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "USB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "GE",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "TRV",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "DHI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "EQR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "ED",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "SBNY",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "MSFT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "DUK",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "AAP",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "AMD",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "ACGL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "GEN",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "LLY",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "LYV",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "ROP",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "UNP",
+        "attrs": {
+            "label": "sec_competitor",
+            "type": "competitor",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "PPL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "IFF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "FRT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "GM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "COF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "PSA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "AOS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "PFG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "ODFL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "APD",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "FICO",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "EOG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "FSLR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "JBHT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "VFC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "CSX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "GWW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "HPQ",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "MMM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "CF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "MGM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "HCA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "META",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "LRCX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "TGT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "LVS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "LIN",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "DTE",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "ROST",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "WRB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "AON",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "IONQ",
+        "target": "SBAC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "TROW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "GE",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "STT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "TEL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "ON",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "GEN",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "GM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "TRV",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "USB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "CHRW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "ROP",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "URI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "KLAC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "DHI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "PFG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "GWW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "HPQ",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "EQR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "SBNY",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "DLR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "COF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "IRM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "PSA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "BKR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "PPL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "RL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "CF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "IFF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "GPN",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "AWK",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "PG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "WRB",
+        "attrs": {
+            "label": "sec_competitor",
+            "type": "competitor",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "INTC",
+        "attrs": {
+            "label": "sec_competitor",
+            "type": "competitor",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "ED",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "FRT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "CVS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "LLY",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "LYV",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "EXR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "ELV",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "ROST",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "APD",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "FICO",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "ODFL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "AOS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "VFC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "JBHT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "CMS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "MMM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "LKQ",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "AES",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "SLB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "HD",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "PNC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "CDW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "PPG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "SBAC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "UNP",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "LUV",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "WST",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "CME",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "BK",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "CINF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "LIN",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "META",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "HST",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "APA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "LRCX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "VICI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "POOL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "TGT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "LVS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "IEX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "DTE",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "EOG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "RTX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "NXPI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "TJX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "DXC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "EQT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "AON",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "MGM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "FMC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "DOW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KR",
+        "target": "FOX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "TROW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "STT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "TEL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "ON",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "ED",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "LLY",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "APD",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "TRV",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "CHRW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "FICO",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "GE",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "AOS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "META",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "FRT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "USB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "SBAC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "EQR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "GEN",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "PPL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "HPQ",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "DHI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "HCA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "ACGL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "ROP",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "MGM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "DTE",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "HD",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "ODFL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "WRB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "EQT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "LRCX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "JBHT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "MMM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "CMS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "DXC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "GWW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "VFC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "CF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "CVS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "AES",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "CDW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "APA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "URI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "COF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "GM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "PSA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "LIN",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "ROST",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "PM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "LVS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "IFF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "EOG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "TGT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "APTV",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "CSX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "KLAC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "PPG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "TJX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "NXPI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "LKQ",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "FOX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "RTX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "AON",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "SLB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "KO",
+        "target": "CME",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "TROW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "ON",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "STT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "TEL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "ED",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "DHI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "TRV",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "CHRW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "LLY",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "APD",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "FICO",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "META",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "EQR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "USB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "IRM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "ROP",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "PPL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "GE",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "MGM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "DTE",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "HD",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "ODFL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "WRB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "EQT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "LRCX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "GWW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "CF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "JBHT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "VFC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "MMM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "HPQ",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "AOS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "APA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "GEN",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "BRK.B",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "URI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "LVS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "GM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "COF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "ROST",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "PSA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "LIN",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "EOG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "FRT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "CCI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "IFF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "TGT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "BK",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "SBAC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "WEC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "CMS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "NRG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "CME",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "PNC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "CVS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "CDW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "RTX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "CSX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "FMC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "SLB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "DXC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "DOW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "AES",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "KLAC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "TJX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "NXPI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "PPG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "HCA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "EXR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "UNP",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "OXY",
+        "target": "LYV",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "TROW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "USB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "ODFL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "ON",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "TEL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "ED",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "TRV",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "STT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "CHRW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "PPL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "LLY",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "GE",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "GEN",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "META",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "EOG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "EQR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "APD",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "FICO",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "MGM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "DTE",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "DHI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "HD",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "WRB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "EQT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "LRCX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "AOS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "CSX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "VFC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "JBHT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "HPQ",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "CF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "LIN",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "COF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "PSA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "GM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "EXR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "RCL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "ROST",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "FRT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "LYV",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "PFG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "APA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "MTCH",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "EA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "ROP",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "IFF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "LVS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "AWK",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "MMM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "SBAC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "GWW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "NRG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "AES",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "SLB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "CMS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "CME",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "NXPI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "PNC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "WEC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "KLAC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "CVS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "CDW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "SIRI",
+        "target": "DXC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "TROW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "ON",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "AAP",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "TEL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "STT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "ED",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "CHRW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "PPL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "TRV",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "COF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "ROP",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "DHI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "META",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "USB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "EQR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "ODFL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "EOG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "GE",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "ROST",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "GEN",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "MGM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "DTE",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "APD",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "FICO",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "HD",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "WRB",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "EQT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "LRCX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "FRT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "URI",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "IRM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "PFG",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "CF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "GM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "PSA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "LYV",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "LIN",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "LVS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "AOS",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "ACGL",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "LLY",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "APA",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "IFF",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "BK",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "VFC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "JBHT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "HPQ",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "MMM",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "GWW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "LKQ",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "LW",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "AON",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "KLAC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "DXC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "PNC",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "CSX",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "GPN",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "TGT",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "MTCH",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    },
+    {
+        "source": "AMD",
+        "target": "EXR",
+        "attrs": {
+            "label": "sec_dependency",
+            "type": "dependency",
+            "weight": 0.75
+        }
+    }
+]
