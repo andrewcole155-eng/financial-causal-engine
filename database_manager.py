@@ -7,8 +7,8 @@ from typing import Dict, Any, List, Optional
 import re
 import os
 import networkx as nx
-from py2neo import Graph  # We will use py2neo for everything
-# from neo4j import GraphDatabase  # <-- Removed this, as it's not being used
+from py2neo import Graph 
+# from neo4j import GraphDatabase 
 
 # --- Setup structured logging ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -30,30 +30,36 @@ class DatabaseManager:
         """
         logger.info("🗄️ Initializing Database Manager...")
         self.sqlite_conn: Optional[sqlite3.Connection] = None
-        self.neo4j_graph: Optional[Graph] = None  # This is the py2neo object
+        self.neo4j_graph: Optional[Graph] = None 
 
+        # ### CLOUD EDIT: DISABLE SQLITE CONNECTION ###
+        # The Streamlit Cloud filesystem is read-only.
+        # We cannot create or connect to a local .db file.
+        # This entire block is now commented out.
         # --- Connect to SQLite ---
-        try:
-            db_path = '/app/database/financial_data.db'
-            os.makedirs(os.path.dirname(db_path), exist_ok=True)
-            self.sqlite_conn = sqlite3.connect(db_path, check_same_thread=False)
-            self.sqlite_conn.row_factory = sqlite3.Row
-            self._create_sqlite_tables()
-            logger.info(" -> ✅ Successfully connected to SQLite and tables are ready.")
-        except sqlite3.Error as e:
-            logger.critical(f" -> ❌ FATAL: Failed to connect to or initialize SQLite: {e}")
-            self.sqlite_conn = None
+        # try:
+        #     db_path = '/app/database/financial_data.db'
+        #     #os.makedirs(os.path.dirname(db_path), exist_ok=True)
+        #     self.sqlite_conn = sqlite3.connect(db_path, check_same_thread=False)
+        #     self.sqlite_conn.row_factory = sqlite3.Row
+        #     self._create_sqlite_tables()
+        #     logger.info(" -> ✅ Successfully connected to SQLite and tables are ready.")
+        # except sqlite3.Error as e:
+        #     logger.critical(f" -> ❌ FATAL: Failed to connect to or initialize SQLite: {e}")
+        #     self.sqlite_conn = None
 
         # --- Connect to Neo4j ---
         try:
-            neo4j_uri = os.getenv("NEO4J_URI", config.get("neo4j_uri"))
-            neo4j_user = os.getenv("NEO4J_USER", config.get("neo4j_user"))
-            neo4j_password = os.getenv("NEO4J_PASSWORD", config.get("neo4j_password"))
+            # ### CLOUD EDIT: FIX CONFIG MISMATCH ###
+            # app.py provides config as {'neo4j': {'uri': ...}}
+            # We must access these keys directly.
+            neo4j_uri = config["neo4j"]["uri"]
+            neo4j_user = config["neo4j"]["user"]
+            neo4j_password = config["neo4j"]["password"]
 
             if not all([neo4j_uri, neo4j_user, neo4j_password]):
-                raise ValueError("Neo4j connection details not found in environment variables or config.")
+                raise ValueError("Neo4j connection details not found in config.")
 
-            # This creates the self.neo4j_graph object
             self.neo4j_graph = Graph(neo4j_uri, auth=(neo4j_user, neo4j_password))
             
             # Test connection
@@ -66,11 +72,11 @@ class DatabaseManager:
 
     def is_connected(self) -> bool:
         """Checks if the connection to Neo4j is active."""
-        # This now correctly checks the py2neo object
         return self.neo4j_graph is not None
 
     def _create_sqlite_tables(self):
         """Creates all necessary tables in the SQLite database if they don't exist."""
+        # This function will now do nothing, as self.sqlite_conn is None
         if not self.sqlite_conn: return
         with self.sqlite_conn as conn:
             conn.execute('''
@@ -159,47 +165,74 @@ class DatabaseManager:
         Adds a newly detected significant event to the SQLite database
         AND adds a corresponding node to the Neo4j graph.
         """
-        if not self.sqlite_conn: return
-        
         from datetime import datetime
         event_timestamp = datetime.now()
         timestamp_str = event_timestamp.isoformat()
 
+        # ### CLOUD EDIT: DISABLE SQLITE WRITE ###
         # --- 1. Add to SQLite ---
-        with self.sqlite_conn as conn:
-            conn.execute(
-                "INSERT INTO significant_events (timestamp, ticker, headline, score, link) VALUES (?, ?, ?, ?, ?)",
-                (event_timestamp, ticker, headline, score, link)
-            )
-        logger.info(f" -> ✅ Event for {ticker} saved to SQLite.")
+        # if not self.sqlite_conn: return # <-- This guard clause would fire
+        # with self.sqlite_conn as conn:
+        #     conn.execute(
+        #         "INSERT INTO significant_events (timestamp, ticker, headline, score, link) VALUES (?, ?, ?, ?, ?)",
+        #         (event_timestamp, ticker, headline, score, link)
+        #     )
+        # logger.info(f" -> ✅ Event for {ticker} saved to SQLite.")
 
-        # --- 2. Add to Neo4j ---
+        # --- 2. Add to Neo4j (This part still runs and is what we need) ---
         self._add_event_node_to_graph(ticker, headline, score, link, timestamp_str)
         logger.info(f" -> ✅ Event node for {ticker} added to Neo4j.")
 
+    # ### CLOUD EDIT: RE-ROUTE TO NEO4J ###
     def get_all_events(self) -> List[Dict[str, Any]]:
-        """Retrieves ALL significant events from the SQLite database."""
-        if not self.sqlite_conn: 
-            logger.error("SQLite connection not available.")
+        """Retrieves ALL significant events from the Neo4j database."""
+        if not self.is_connected(): 
+            logger.error("Neo4j connection not available.")
             return []
         
-        logger.info("Retrieving all historical events from SQLite...")
+        logger.info("Retrieving all historical events from Neo4j...")
+        query = """
+        MATCH (c:Company)-[:HAD_EVENT]->(e:Event)
+        RETURN 
+            c.ticker AS ticker, 
+            e.headline AS headline, 
+            e.score AS score, 
+            e.link AS link, 
+            e.timestamp AS timestamp
+        ORDER BY e.timestamp ASC
+        """
         try:
-            with self.sqlite_conn as conn:
-                cursor = conn.execute("SELECT * FROM significant_events ORDER BY timestamp ASC")
-                events = [dict(row) for row in cursor.fetchall()]
-                logger.info(f" -> Found {len(events)} total events in SQLite.")
-                return events
+            results = self.neo4j_graph.run(query).data()
+            logger.info(f" -> Found {len(results)} total events in Neo4j.")
+            return results
         except Exception as e:
-            logger.error(f"Failed to retrieve all events from SQLite: {e}")
+            logger.error(f"Failed to retrieve all events from Neo4j: {e}")
             return []
 
+    # ### CLOUD EDIT: RE-ROUTE TO NEO4J ###
     def get_recent_events(self, limit: int = 20) -> List[Dict[str, Any]]:
-        """Retrieves the most recent significant events from the SQLite database."""
-        if not self.sqlite_conn: return []
-        with self.sqlite_conn as conn:
-            cursor = conn.execute("SELECT * FROM significant_events ORDER BY timestamp DESC LIMIT ?", (limit,))
-            return [dict(row) for row in cursor.fetchall()]
+        """Retrieves the most recent significant events from the Neo4j database."""
+        if not self.is_connected(): return []
+        
+        logger.info(f"Retrieving {limit} recent events from Neo4j...")
+        query = """
+        MATCH (c:Company)-[:HAD_EVENT]->(e:Event)
+        RETURN 
+            c.ticker AS ticker, 
+            e.headline AS headline, 
+            e.score AS score, 
+            e.link AS link, 
+            e.timestamp AS timestamp
+        ORDER BY e.timestamp DESC
+        LIMIT $limit
+        """
+        try:
+            results = self.neo4j_graph.run(query, limit=limit).data()
+            return results
+        except Exception as e:
+            logger.error(f"Failed to retrieve recent events from Neo4j: {e}")
+            return []
+
 
     # ==============================================================================
     # --- UPDATED FUNCTIONS (FIXED) ---
@@ -208,21 +241,15 @@ class DatabaseManager:
     def get_graph_from_db(self, weight_threshold: float = 0.1) -> nx.DiGraph:
         """
         Builds a NetworkX DiGraph from Neo4j using the py2neo driver.
-        
-        1. Adds ALL company nodes (so selectboxes work).
-        2. Adds only relationships with a weight > threshold (for performance).
         """
         G = nx.DiGraph()
         
-        # Safety check
         if not self.is_connected():
             logger.error("get_graph_from_db: No database connection. Returning empty graph.")
             return G
         
-        # 1. Query 1: Get ALL nodes
         nodes_query = "MATCH (n:Company) RETURN n"
         
-        # 2. Query 2: Get only STRONG relationships
         edges_query = f"""
         MATCH (n:Company)-[r]->(m:Company)
         WHERE r.weight > {weight_threshold}
@@ -230,8 +257,6 @@ class DatabaseManager:
         """
         
         try:
-            # --- THIS IS THE FIX ---
-            # Run queries using the existing self.neo4j_graph object
             nodes_result = self.neo4j_graph.run(nodes_query)
             for record in nodes_result:
                 node_data = record["n"]
@@ -242,7 +267,6 @@ class DatabaseManager:
             for record in edges_result:
                 rel_data = record["r"]
                 G.add_edge(record["source"], record["target"], **dict(rel_data))
-            # --- END FIX ---
             
         except Exception as e:
             logger.error(f"Failed to get graph from Neo4j: {e}")
@@ -260,7 +284,6 @@ class DatabaseManager:
                 logger.error("get_neighborhood_graph: No database connection.")
                 return G
             
-            # This simpler query gets the center node, its neighbors, and the relationships
             query = """
             MATCH (c:Company {ticker: $ticker})-[r]-(neighbor:Company)
             RETURN c, r, neighbor
@@ -269,25 +292,20 @@ class DatabaseManager:
             try:
                 result = self.neo4j_graph.run(query, ticker=company_ticker)
                 
-                # Loop through each relationship path found
                 for record in result:
                     center_node_data = record['c']
                     rel_data = record['r']
                     neighbor_node_data = record['neighbor']
                     
-                    # Add nodes with all their properties (this is idempotent)
                     G.add_node(center_node_data['ticker'], **dict(center_node_data))
                     G.add_node(neighbor_node_data['ticker'], **dict(neighbor_node_data))
                     
-                    # Add the edge. py2neo rels have .start_node and .end_node
                     G.add_edge(
                         rel_data.start_node['ticker'], 
                         rel_data.end_node['ticker'], 
                         **dict(rel_data)
                     )
                 
-                # If the node has 0 relationships, the query returns nothing.
-                # We should at least add the node itself.
                 if G.number_of_nodes() == 0:
                     node_data_list = self.neo4j_graph.run(
                         "MATCH (c:Company {ticker: $ticker}) RETURN c", ticker=company_ticker
@@ -303,7 +321,7 @@ class DatabaseManager:
 
     # ==============================================================================
     # --- OTHER FUNCTIONS ---
-    # ==============================================================================
+    # =================================H==============================================
 
     def clear_neo4j_database(self):
         """
@@ -320,4 +338,3 @@ class DatabaseManager:
             self.sqlite_conn.close()
             logger.info("SQLite connection closed.")
         # py2neo Graph object doesn't have an explicit .close()
-        # The connection pool is managed automatically
