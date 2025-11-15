@@ -20,4 +20,3 @@ aiohttp
 py2neo
 lxml
 spacy==3.7.5
-neo4j
