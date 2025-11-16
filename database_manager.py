@@ -8,7 +8,6 @@ import re
 import os
 import networkx as nx
 from py2neo import Graph 
-# from neo4j import GraphDatabase 
 
 # --- Setup structured logging ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -32,37 +31,58 @@ class DatabaseManager:
         self.sqlite_conn: Optional[sqlite3.Connection] = None
         self.neo4j_graph: Optional[Graph] = None 
 
-        # ### CLOUD EDIT: DISABLE SQLITE CONNECTION ###
-        # The Streamlit Cloud filesystem is read-only.
-        # We cannot create or connect to a local .db file.
-        # This entire block is now commented out.
-        # --- Connect to SQLite ---
-        # try:
-        #     db_path = '/app/database/financial_data.db'
-        #     #os.makedirs(os.path.dirname(db_path), exist_ok=True)
-        #     self.sqlite_conn = sqlite3.connect(db_path, check_same_thread=False)
-        #     self.sqlite_conn.row_factory = sqlite3.Row
-        #     self._create_sqlite_tables()
-        #     logger.info(" -> ✅ Successfully connected to SQLite and tables are ready.")
-        # except sqlite3.Error as e:
-        #     logger.critical(f" -> ❌ FATAL: Failed to connect to or initialize SQLite: {e}")
-        #     self.sqlite_conn = None
+        # ### UNIVERSAL EDIT: Re-enable SQLite but make it fail-safe ###
+        # This will WORK on your local server but fail gracefully 
+        # (with a warning) on read-only systems like Streamlit Cloud.
+        try:
+            # Use a relative path for the database. 
+            # This will create it in the project root on your server.
+            db_dir = 'database'
+            db_path = os.path.join(db_dir, 'financial_data.db')
+            
+            # Try to create the directory
+            os.makedirs(db_dir, exist_ok=True) 
+            
+            self.sqlite_conn = sqlite3.connect(db_path, check_same_thread=False)
+            self.sqlite_conn.row_factory = sqlite3.Row
+            self._create_sqlite_tables()
+            logger.info(f" -> ✅ Successfully connected to SQLite at {db_path}")
+        except Exception as e:
+            # On Streamlit, this will fail with a PermissionError
+            logger.warning(f" -> ⚠️ Failed to connect to local SQLite (this is normal on Streamlit): {e}")
+            self.sqlite_conn = None
 
         # --- Connect to Neo4j ---
         try:
-            # ### CLOUD EDIT: FIX CONFIG MISMATCH ###
-            # app.py provides config as {'neo4j': {'uri': ...}}
-            # We must access these keys directly.
-            neo4j_uri = config["neo4j"]["uri"]
-            neo4j_user = config["neo4j"]["user"]
-            neo4j_password = config["neo4j"]["password"]
+            # ### UNIVERSAL EDIT: Handle BOTH config formats ###
+            neo4j_uri = None
+            neo4j_user = None
+            neo4j_password = None
+
+            # 1. Check for Streamlit Secrets format (from app.py)
+            if "neo4j" in config and isinstance(config.get("neo4j"), dict):
+                logger.info(" -> Reading Neo4j config from nested [neo4j] block (Streamlit mode).")
+                neo4j_uri = config["neo4j"].get("uri")
+                neo4j_user = config["neo4j"].get("user")
+                neo4j_password = config["neo4j"].get("password")
+            
+            # 2. Check for local config.json format (from worker.py)
+            elif "neo4j_uri" in config:
+                logger.info(" -> Reading Neo4j config from flat 'neo4j_uri' keys (Worker mode).")
+                neo4j_uri = config.get("neo4j_uri")
+                neo4j_user = config.get("neo4j_user")
+                neo4j_password = config.get("neo4j_password")
+
+            # 3. Fallback to environment variables
+            if not neo4j_uri:
+                neo4j_uri = os.getenv("NEO4J_URI")
+                neo4j_user = os.getenv("NEO4J_USER")
+                neo4j_password = os.getenv("NEO4J_PASSWORD")
 
             if not all([neo4j_uri, neo4j_user, neo4j_password]):
-                raise ValueError("Neo4j connection details not found in config.")
+                raise ValueError("Neo4j connection details not found in any config source.")
 
             self.neo4j_graph = Graph(neo4j_uri, auth=(neo4j_user, neo4j_password))
-            
-            # Test connection
             self.neo4j_graph.run("MATCH (n) RETURN count(n)")
             logger.info(" -> ✅ Successfully connected to Neo4j.")
             
@@ -76,8 +96,10 @@ class DatabaseManager:
 
     def _create_sqlite_tables(self):
         """Creates all necessary tables in the SQLite database if they don't exist."""
-        # This function will now do nothing, as self.sqlite_conn is None
-        if not self.sqlite_conn: return
+        # This function will now ONLY run if self.sqlite_conn is valid
+        if not self.sqlite_conn: 
+            logger.info(" -> Skipping SQLite table creation (no connection).")
+            return
         with self.sqlite_conn as conn:
             conn.execute('''
                 CREATE TABLE IF NOT EXISTS companies (
@@ -162,28 +184,35 @@ class DatabaseManager:
 
     def add_event(self, ticker: str, headline: str, score: float, link: str):
         """
-        Adds a newly detected significant event to the SQLite database
+        Adds a newly detected significant event to the SQLite database (if available)
         AND adds a corresponding node to the Neo4j graph.
         """
         from datetime import datetime
         event_timestamp = datetime.now()
         timestamp_str = event_timestamp.isoformat()
 
-        # ### CLOUD EDIT: DISABLE SQLITE WRITE ###
-        # --- 1. Add to SQLite ---
-        # if not self.sqlite_conn: return # <-- This guard clause would fire
-        # with self.sqlite_conn as conn:
-        #     conn.execute(
-        #         "INSERT INTO significant_events (timestamp, ticker, headline, score, link) VALUES (?, ?, ?, ?, ?)",
-        #         (event_timestamp, ticker, headline, score, link)
-        #     )
-        # logger.info(f" -> ✅ Event for {ticker} saved to SQLite.")
+        # ### UNIVERSAL EDIT: Re-enable SQLite write ###
+        # This check ensures it only runs if the connection succeeded
+        if self.sqlite_conn:
+            try:
+                with self.sqlite_conn as conn:
+                    conn.execute(
+                        "INSERT INTO significant_events (timestamp, ticker, headline, score, link) VALUES (?, ?, ?, ?, ?)",
+                        (event_timestamp, ticker, headline, score, link)
+                    )
+                logger.info(f" -> ✅ Event for {ticker} saved to SQLite.")
+            except Exception as e:
+                logger.error(f" -> Failed to save event for {ticker} to SQLite: {e}")
+        else:
+            logger.info(" -> Skipping SQLite event logging (no connection).")
 
-        # --- 2. Add to Neo4j (This part still runs and is what we need) ---
+        # --- 2. Add to Neo4j (This part always runs) ---
         self._add_event_node_to_graph(ticker, headline, score, link, timestamp_str)
         logger.info(f" -> ✅ Event node for {ticker} added to Neo4j.")
 
-    # ### CLOUD EDIT: RE-ROUTE TO NEO4J ###
+    # ### CLOUD EDIT: KEPT THIS POINTED AT NEO4J ###
+    # This is the most robust solution. Both the worker and the app
+    # will rely on Neo4j as the "source of truth" for events.
     def get_all_events(self) -> List[Dict[str, Any]]:
         """Retrieves ALL significant events from the Neo4j database."""
         if not self.is_connected(): 
@@ -209,7 +238,7 @@ class DatabaseManager:
             logger.error(f"Failed to retrieve all events from Neo4j: {e}")
             return []
 
-    # ### CLOUD EDIT: RE-ROUTE TO NEO4J ###
+    # ### CLOUD EDIT: KEPT THIS POINTED AT NEO4J ###
     def get_recent_events(self, limit: int = 20) -> List[Dict[str, Any]]:
         """Retrieves the most recent significant events from the Neo4j database."""
         if not self.is_connected(): return []
@@ -235,7 +264,7 @@ class DatabaseManager:
 
 
     # ==============================================================================
-    # --- UPDATED FUNCTIONS (FIXED) ---
+    # --- GRAPH FUNCTIONS (No changes needed) ---
     # ==============================================================================
 
     def get_graph_from_db(self, weight_threshold: float = 0.1) -> nx.DiGraph:
@@ -321,7 +350,7 @@ class DatabaseManager:
 
     # ==============================================================================
     # --- OTHER FUNCTIONS ---
-    # =================================H==============================================
+    # ==============================================================================
 
     def clear_neo4j_database(self):
         """
