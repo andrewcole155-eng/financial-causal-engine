@@ -24,8 +24,6 @@ logger = logging.getLogger(__name__)
 # --- UI HELPER & ANALYSIS FUNCTIONS ---
 # ==============================================================================
 
-# This function is no longer used by app.py (which uses secrets)
-# but we leave it for your local worker.py
 def load_config(config_file: str = "config.json") -> Dict[str, Any]:
     """Loads all configurations from a JSON file."""
     try:
@@ -109,14 +107,37 @@ def calculate_impact_scores(graph: nx.DiGraph, start_node: str, event_magnitude:
 
 
 # ==============================================================================
-# --- NEW/UPDATED FUNCTION 2 of 3: get_top_ripple_effects ---
+# --- CACHED FUNCTIONS ---
 # ==============================================================================
 
-# ### SPEED EDIT: We create a new cached function to load the graph
-# ### This will be called by all the tabs, but only run once.
+# ### CACHE FIX: get_db_manager is now defined globally, outside main()
+@st.cache_resource
+def get_db_manager():
+    """Cached function to initialize the database manager once."""
+    if "neo4j" not in st.secrets:
+        st.error("Neo4j credentials not found in Streamlit Secrets.")
+        st.info("Please add NEO4J_URI, NEO4J_USER, and NEO4J_PASSWORD to your secrets.")
+        st.stop()
+        
+    cloud_config = {
+        "neo4j": {
+            "uri": st.secrets["neo4j"]["uri"],
+            "user": st.secrets["neo4j"]["user"],
+            "password": st.secrets["neo4j"]["password"]
+        }
+    }
+    
+    return DatabaseManager(cloud_config)
+
+# ### CACHE FIX: This function now has NO arguments.
+# ### It will call get_db_manager() internally.
 @st.cache_data(ttl=600)
-def get_full_graph(db_manager):
+def get_full_graph():
     """Cached function to load the full graph."""
+    
+    # ### CACHE FIX: Call the cached resource function *inside*
+    db_manager = get_db_manager()
+    
     logger.info("Loading full graph from Neo4j...")
     graph = db_manager.get_graph_from_db(weight_threshold=0.1)
     if graph.number_of_nodes() == 0:
@@ -125,15 +146,16 @@ def get_full_graph(db_manager):
     logger.info(f"Graph loaded with {graph.number_of_nodes()} nodes and {graph.number_of_edges()} relationships.")
     return graph
 
+# ### CACHE FIX: This function no longer takes db_manager as an argument.
 @st.cache_data(ttl=600) 
-def get_top_ripple_effects(db_manager, all_events: list, threshold: float) -> pd.DataFrame | None:
+def get_top_ripple_effects(all_events: list, threshold: float) -> pd.DataFrame | None:
     """
     Runs a simulation for ALL recent negative events and finds the
     companies with the worst potential ripple effects.
     """
     
-    # ### SPEED EDIT: Load the graph here, when this function is called.
-    financial_graph = get_full_graph(db_manager)
+    # ### CACHE FIX: Call the cached data function *inside*
+    financial_graph = get_full_graph()
     if financial_graph is None:
         st.warning("Knowledge graph is empty. Please run `worker.py` (locally) to populate the *cloud* database.")
         return None
@@ -184,35 +206,13 @@ def main():
     st.set_page_config(layout="wide", page_title="Financial Causal Inference Engine")
     st.title("🧠 Financial Causal Inference Engine")
 
-    # This part now reads from st.secrets
-    @st.cache_resource
-    def get_db_manager():
-        """Cached function to initialize the database manager once."""
-        if "neo4j" not in st.secrets:
-            st.error("Neo4j credentials not found in Streamlit Secrets.")
-            st.info("Please add NEO4J_URI, NEO4J_USER, and NEO4J_PASSWORD to your secrets.")
-            st.stop()
-            
-        cloud_config = {
-            "neo4j": {
-                "uri": st.secrets["neo4j"]["uri"],
-                "user": st.secrets["neo4j"]["user"],
-                "password": st.secrets["neo4j"]["password"]
-            }
-        }
-        
-        return DatabaseManager(cloud_config) 
-
+    # Call the cached function to get the db connection
     db_manager = get_db_manager()
+    
     if not db_manager.is_connected():
         st.error("Fatal: Could not connect to Neo4j. Please ensure the database is running and credentials are correct.")
         st.info("This can also be caused by a 'Paused' Free Tier database on Neo4j Aura. Please check your Aura dashboard.")
         st.stop()
-
-    # ### SPEED EDIT: We remove the graph loading from here.
-    # ### The app will now load instantly.
-    # with st.spinner("Loading knowledge graph from database..."):
-    #     financial_graph = get_full_graph(db_manager) # <-- REMOVED
 
     st.sidebar.success(f"Connected to Neo4j.")
     st.sidebar.info(f"The knowledge graph will be loaded on-demand when you open a tab.")
@@ -231,11 +231,12 @@ def main():
             st.cache_resource.clear()
             st.rerun()
 
+        # This function is NOT cached, it runs live
         recent_events = db_manager.get_recent_events()
+        
         if not recent_events:
             st.info("No significant events have been detected by the worker yet. Check the worker's logs.")
         else:
-            # ### SPEED EDIT: Load graph ONLY if there are events to process
             financial_graph = None 
 
             for event in recent_events:
@@ -244,10 +245,10 @@ def main():
                     st.markdown(f"**Sentiment Score:** `{event['score']:.2f}`")
                     st.markdown(f"[Read Full Article]({event['link']})", unsafe_allow_html=True)
                     
-                    # Load the graph on-demand, one time
                     if financial_graph is None:
                          with st.spinner("Loading knowledge graph to calculate impacts..."):
-                            financial_graph = get_full_graph(db_manager)
+                            # ### CACHE FIX: Call with no arguments
+                            financial_graph = get_full_graph()
 
                     if financial_graph is not None and event['ticker'] in financial_graph:
                         impact_results = calculate_impact_scores(financial_graph, event['ticker'], event['score'])
@@ -266,9 +267,9 @@ def main():
         st.header("🗺️ Interactive Knowledge Graph Explorer")
         st.write("Select a company to load its 1st-degree neighborhood from the graph.")
 
-        # ### SPEED EDIT: Load graph here
         with st.spinner("Loading full graph for explorer..."):
-            financial_graph = get_full_graph(db_manager)
+            # ### CACHE FIX: Call with no arguments
+            financial_graph = get_full_graph()
         
         if financial_graph is None:
              st.warning("Knowledge graph is empty. Please run `worker.py` (locally) to populate the *cloud* database.")
@@ -286,6 +287,7 @@ def main():
             if st.button("🗺️ Explore Neighborhood"):
                 if selected_company:
                     with st.spinner(f"Loading neighborhood for {selected_company}..."):
+                        # This function is NOT cached, it runs live
                         neighborhood_graph = db_manager.get_neighborhood_graph(selected_company)
 
                         if neighborhood_graph.number_of_nodes() > 0:
@@ -364,10 +366,12 @@ def main():
             min_value=-1.0, max_value=0.0, value=-0.5, step=0.05
         )
         
+        # This function is NOT cached, it runs live
         all_recent_events = db_manager.get_recent_events()
         
         with st.spinner("Calculating top ripple effects..."):
-            top_impacts_df = get_top_ripple_effects(db_manager, all_recent_events, sensitivity_threshold)
+            # ### CACHE FIX: Call with no db_manager argument
+            top_impacts_df = get_top_ripple_effects(all_recent_events, sensitivity_threshold)
         
         if top_impacts_df is None:
             st.info(f"No significant negative events (score < {sensitivity_threshold:.2f}) or empty graph found.")
@@ -386,9 +390,9 @@ def main():
         # --- Manual Simulation ---
         st.subheader("Manual 'What-If' Simulation")
 
-        # ### SPEED EDIT: Load graph here
         with st.spinner("Loading full graph for simulation..."):
-            financial_graph = get_full_graph(db_manager)
+            # ### CACHE FIX: Call with no arguments
+            financial_graph = get_full_graph()
 
         if financial_graph is None:
              st.warning("Knowledge graph is empty. Please run `worker.py` (locally) to populate the *cloud* database.")
@@ -466,9 +470,9 @@ def main():
     with tab_path:
         st.header("↔️ Causal Pathfinding")
         
-        # ### SPEED EDIT: Load graph here
         with st.spinner("Loading full graph for pathfinding..."):
-            financial_graph = get_full_graph(db_manager)
+            # ### CACHE FIX: Call with no arguments
+            financial_graph = get_full_graph()
         
         if financial_graph is None:
              st.warning("Knowledge graph is empty. Please run `worker.py` (locally) to populate the *cloud* database.")
@@ -482,7 +486,7 @@ def main():
             if st.button("🗺️ Find Riskiest Path"):
                 if start_node != end_node:
                     try:
-                        all_paths = list(nx.all_simple_paths(financial_graph, source=start_node, target=end_.node, cutoff=5))
+                        all_paths = list(nx.all_simple_paths(financial_graph, source=start_node, target=end_node, cutoff=5))
                         
                         if not all_paths:
                             st.error(f"No path found between {start_node} and {end_node} (within 5 steps).")
