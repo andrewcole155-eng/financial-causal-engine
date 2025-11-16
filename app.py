@@ -237,30 +237,39 @@ def main():
         if not recent_events:
             st.info("No significant events have been detected by the worker yet. Check the worker's logs.")
         else:
-            financial_graph = None 
-
+            # --- BUG FIX: Load the graph ONCE, *before* the loop ---
+            with st.spinner("Loading knowledge graph to analyze events..."):
+                financial_graph = get_full_graph()
+            
+            if financial_graph is None:
+                 st.warning("Could not load graph to calculate impacts. Displaying events without analysis.")
+            
+            # --- END FIX ---
+            
             for event in recent_events:
                 event_type = "Positive📈" if event['score'] > 0 else "Negative📉"
                 with st.expander(f"**{event['timestamp']} - {event_type} for {event['ticker']}**: {event['headline']}"):
                     st.markdown(f"**Sentiment Score:** `{event['score']:.2f}`")
                     st.markdown(f"[Read Full Article]({event['link']})", unsafe_allow_html=True)
                     
-                    if financial_graph is None:
-                         with st.spinner("Loading knowledge graph to calculate impacts..."):
-                            # ### CACHE FIX: Call with no arguments
-                            financial_graph = get_full_graph()
-
-                    if financial_graph is not None and event['ticker'] in financial_graph:
-                        impact_results = calculate_impact_scores(financial_graph, event['ticker'], event['score'])
-                        if impact_results:
-                            st.write("**Potential GNN-Amplified Impacts:**")
-                            impact_str = " | ".join([
-                                f"**{co}**: {data['score']:.2f}" 
-                                for co, data in list(impact_results.items())[:3]
-                            ])
-                            st.write(impact_str)
-                    elif financial_graph is None:
-                        st.warning("Could not load graph to calculate impacts.")
+                    # --- FIX: This logic is now safe to run inside the loop ---
+                    if financial_graph is not None:
+                        if event['ticker'] in financial_graph:
+                            impact_results = calculate_impact_scores(financial_graph, event['ticker'], event['score'])
+                            
+                            if impact_results:
+                                st.write("**Potential GNN-Amplified Impacts:**")
+                                impact_str = " | ".join([
+                                    f"**{co}**: {data['score']:.2f}" 
+                                    for co, data in list(impact_results.items())[:3]
+                                ])
+                                st.write(impact_str)
+                            else:
+                                st.info("*No significant downstream impacts found for this event.*")
+                        else:
+                            st.info(f"Ticker {event['ticker']} not found in the graph. Cannot calculate impacts.")
+                    # The 'financial_graph is None' case is covered by the single warning
+                    # outside the loop.
 
     # --- TAB 2: EXPLORE GRAPH (On-Demand Version) ---
     with tab_explore:
@@ -299,7 +308,7 @@ def main():
                             risk_map = {
                                 0: {"label": "Low", "color": "#66bb6a"},  # Green
                                 1: {"label": "Medium", "color": "#ffa726"}, # Orange
-                                2: {"label": "High", "color": "#ef5350"}   # Red
+                                2: {"label": "High", "color": "#ef5350"}  # Red
                             }
 
                             for node in net.nodes:
@@ -514,7 +523,7 @@ def main():
                             risk_map = {
                                 0: {"label": "Low", "color": "#66bb6a"},  # Green
                                 1: {"label": "Medium", "color": "#ffa726"}, # Orange
-                                2: {"label": "High", "color": "#ef5350"}   # Red
+                                2: {"label": "High", "color": "#ef5350"}  # Red
                             }
 
                             for node_id in best_path:
