@@ -131,7 +131,7 @@ def get_db_manager():
 
 # ### CACHE FIX: This function now has NO arguments.
 # ### It will call get_db_manager() internally.
-@st.cache_data(ttl=600)
+@st.cache_data(ttl=86400)
 def get_full_graph():
     """Cached function to load the full graph."""
     
