@@ -32,23 +32,15 @@ class DatabaseManager:
         self.neo4j_graph: Optional[Graph] = None 
 
         # ### UNIVERSAL EDIT: Re-enable SQLite but make it fail-safe ###
-        # This will WORK on your local server but fail gracefully 
-        # (with a warning) on read-only systems like Streamlit Cloud.
         try:
-            # Use a relative path for the database. 
-            # This will create it in the project root on your server.
             db_dir = 'database'
             db_path = os.path.join(db_dir, 'financial_data.db')
-            
-            # Try to create the directory
             os.makedirs(db_dir, exist_ok=True) 
-            
             self.sqlite_conn = sqlite3.connect(db_path, check_same_thread=False)
             self.sqlite_conn.row_factory = sqlite3.Row
             self._create_sqlite_tables()
             logger.info(f" -> ✅ Successfully connected to SQLite at {db_path}")
         except Exception as e:
-            # On Streamlit, this will fail with a PermissionError
             logger.warning(f" -> ⚠️ Failed to connect to local SQLite (this is normal on Streamlit): {e}")
             self.sqlite_conn = None
 
@@ -59,25 +51,17 @@ class DatabaseManager:
             neo4j_user = None
             neo4j_password = None
 
-            # 1. Check for Streamlit Secrets format (from app.py)
             if "neo4j" in config and isinstance(config.get("neo4j"), dict):
                 logger.info(" -> Reading Neo4j config from nested [neo4j] block (Streamlit mode).")
                 neo4j_uri = config["neo4j"].get("uri")
                 neo4j_user = config["neo4j"].get("user")
                 neo4j_password = config["neo4j"].get("password")
             
-            # 2. Check for local config.json format (from worker.py)
             elif "neo4j_uri" in config:
-                logger.info(" -> Reading Neo4j config from flat 'neo4j_uri' keys (Worker mode).")
+                logger.info(" -> Reading Neo4j config from flat 'neo4j_uri' keys (Worker/Backfill mode).")
                 neo4j_uri = config.get("neo4j_uri")
                 neo4j_user = config.get("neo4j_user")
                 neo4j_password = config.get("neo4j_password")
-
-            # 3. Fallback to environment variables
-            if not neo4j_uri:
-                neo4j_uri = os.getenv("NEO4J_URI")
-                neo4j_user = os.getenv("NEO4J_USER")
-                neo4j_password = os.getenv("NEO4J_PASSWORD")
 
             if not all([neo4j_uri, neo4j_user, neo4j_password]):
                 raise ValueError("Neo4j connection details not found in any config source.")
@@ -96,7 +80,6 @@ class DatabaseManager:
 
     def _create_sqlite_tables(self):
         """Creates all necessary tables in the SQLite database if they don't exist."""
-        # This function will now ONLY run if self.sqlite_conn is valid
         if not self.sqlite_conn: 
             logger.info(" -> Skipping SQLite table creation (no connection).")
             return
@@ -121,7 +104,6 @@ class DatabaseManager:
         """
         if not self.is_connected() or not nodes_data:
             return
-
         logger.info(f" -> Upserting batch of {len(nodes_data)} company nodes into Neo4j...")
         query = """
         UNWIND $nodes_data AS node_props
@@ -137,12 +119,10 @@ class DatabaseManager:
         Creates or updates a single relationship between two companies in Neo4j.
         """
         if not self.is_connected(): return
-
         rel_type_sanitized = re.sub(r'[^A-Z0-9_]', '', rel_type.upper())
         if not rel_type_sanitized:
             logger.warning(f"Skipping invalid relationship type: {rel_type}")
             return
-
         query = f"""
         MATCH (source:Company {{ticker: $source_ticker}})
         MATCH (target:Company {{ticker: $target_ticker}})
@@ -157,21 +137,29 @@ class DatabaseManager:
     def _add_event_node_to_graph(self, ticker: str, headline: str, score: float, link: str, timestamp: str):
         """
         (Private) Creates an Event node in Neo4j and links it to a Company.
+        This now also updates the timestamp ON MATCH.
         """
         if not self.is_connected(): return
-
+        
+        # This query ensures the Company node exists. If not, it fails gracefully.
         query = """
         MATCH (c:Company {ticker: $ticker})
-        MERGE (e:Event {link: $link, timestamp: $timestamp})
+        MERGE (e:Event {link: $link})
         ON CREATE SET
             e.headline = $headline,
-            e.score = $score
+            e.score = $score,
+            e.timestamp = $timestamp
+        ON MATCH SET
+            e.headline = $headline,
+            e.score = $score,
+            e.timestamp = $timestamp
         MERGE (c)-[:HAD_EVENT]->(e)
         """
         try:
             from datetime import datetime
+            # Ensure timestamp is valid, default to now if not
             ts = timestamp if timestamp else datetime.now().isoformat()
-
+            
             self.neo4j_graph.run(query, 
                 ticker=ticker, 
                 link=link, 
@@ -180,6 +168,7 @@ class DatabaseManager:
                 score=score
             )
         except Exception as e:
+            # This will log if the MATCH (c:Company) fails
             logger.error(f"Failed to create Event node for {ticker} in Neo4j: {e}")
 
     def add_event(self, ticker: str, headline: str, score: float, link: str):
@@ -191,8 +180,6 @@ class DatabaseManager:
         event_timestamp = datetime.now()
         timestamp_str = event_timestamp.isoformat()
 
-        # ### UNIVERSAL EDIT: Re-enable SQLite write ###
-        # This check ensures it only runs if the connection succeeded
         if self.sqlite_conn:
             try:
                 with self.sqlite_conn as conn:
@@ -206,15 +193,14 @@ class DatabaseManager:
         else:
             logger.info(" -> Skipping SQLite event logging (no connection).")
 
-        # --- 2. Add to Neo4j (This part always runs) ---
         self._add_event_node_to_graph(ticker, headline, score, link, timestamp_str)
         logger.info(f" -> ✅ Event node for {ticker} added to Neo4j.")
 
-    # ### CLOUD EDIT: KEPT THIS POINTED AT NEO4J ###
-    # This is the most robust solution. Both the worker and the app
-    # will rely on Neo4j as the "source of truth" for events.
     def get_all_events(self) -> List[Dict[str, Any]]:
-        """Retrieves ALL significant events from the Neo4j database."""
+        """
+        Retrieves ALL significant events from the Neo4j database.
+        This is for the Streamlit app.
+        """
         if not self.is_connected(): 
             logger.error("Neo4j connection not available.")
             return []
@@ -238,14 +224,17 @@ class DatabaseManager:
             logger.error(f"Failed to retrieve all events from Neo4j: {e}")
             return []
 
-    # ### CLOUD EDIT: KEPT THIS POINTED AT NEO4J ###
     def get_recent_events(self, limit: int = 20) -> List[Dict[str, Any]]:
-        """Retrieves the most recent significant events from the Neo4j database."""
+        """
+        Retrieves the most recent significant events from the Neo4j database.
+        This is for the Streamlit app.
+        """
         if not self.is_connected(): return []
         
         logger.info(f"Retrieving {limit} recent events from Neo4j...")
         query = """
         MATCH (c:Company)-[:HAD_EVENT]->(e:Event)
+        WHERE e.timestamp IS NOT NULL
         RETURN 
             c.ticker AS ticker, 
             e.headline AS headline, 
@@ -262,65 +251,64 @@ class DatabaseManager:
             logger.error(f"Failed to retrieve recent events from Neo4j: {e}")
             return []
 
-
-    # ==============================================================================
-    # --- GRAPH FUNCTIONS (No changes needed) ---
-    # ==============================================================================
+    # ### NEW FUNCTION FOR BACKFILL SCRIPT ###
+    def get_all_events_from_sqlite(self) -> List[Dict[str, Any]]:
+        """
+        Retrieves ALL significant events from the LOCAL SQLITE database.
+        This is ONLY for the backfill script.
+        """
+        if not self.sqlite_conn: 
+            logger.error("SQLite connection not available. Cannot backfill.")
+            return []
+        
+        logger.info("Retrieving all historical events from SQLite for backfill...")
+        try:
+            with self.sqlite_conn as conn:
+                # Order by ID to get them in the order they were found
+                cursor = conn.execute("SELECT * FROM significant_events ORDER BY id ASC")
+                events = [dict(row) for row in cursor.fetchall()]
+                logger.info(f" -> Found {len(events)} total events in SQLite.")
+                return events
+        except Exception as e:
+            logger.error(f"Failed to retrieve all events from SQLite: {e}")
+            return []
 
     def get_graph_from_db(self, weight_threshold: float = 0.1) -> nx.DiGraph:
-        """
-        Builds a NetworkX DiGraph from Neo4j using the py2neo driver.
-        """
         G = nx.DiGraph()
-        
         if not self.is_connected():
             logger.error("get_graph_from_db: No database connection. Returning empty graph.")
             return G
-        
         nodes_query = "MATCH (n:Company) RETURN n"
-        
         edges_query = f"""
         MATCH (n:Company)-[r]->(m:Company)
         WHERE r.weight > {weight_threshold}
         RETURN n.ticker AS source, m.ticker AS target, r
         """
-        
         try:
             nodes_result = self.neo4j_graph.run(nodes_query)
             for record in nodes_result:
                 node_data = record["n"]
                 ticker = node_data['ticker']
                 G.add_node(ticker, **dict(node_data))
-                
             edges_result = self.neo4j_graph.run(edges_query)
             for record in edges_result:
                 rel_data = record["r"]
                 G.add_edge(record["source"], record["target"], **dict(rel_data))
-            
         except Exception as e:
             logger.error(f"Failed to get graph from Neo4j: {e}")
-
         return G
 
     def get_neighborhood_graph(self, company_ticker: str) -> nx.DiGraph:
-            """
-            Gets a specific company and its 1st-degree neighbors (in and out)
-            using a simpler, more robust query.
-            """
             G = nx.DiGraph()
-
             if not self.is_connected():
                 logger.error("get_neighborhood_graph: No database connection.")
                 return G
-            
             query = """
             MATCH (c:Company {ticker: $ticker})-[r]-(neighbor:Company)
             RETURN c, r, neighbor
             """
-            
             try:
                 result = self.neo4j_graph.run(query, ticker=company_ticker)
-                
                 for record in result:
                     center_node_data = record['c']
                     rel_data = record['r']
@@ -348,10 +336,6 @@ class DatabaseManager:
 
             return G
 
-    # ==============================================================================
-    # --- OTHER FUNCTIONS ---
-    # ==============================================================================
-
     def clear_neo4j_database(self):
         """
         !! DANGEROUS !! Deletes all nodes and relationships from the Neo4j database.
@@ -360,6 +344,16 @@ class DatabaseManager:
         logger.warning("🚨 DELETING ALL DATA from the Neo4j database...")
         self.neo4j_graph.run("MATCH (n) DETACH DELETE n")
         logger.warning(" -> ✅ Neo4j database has been cleared.")
+
+    def clear_neo4j_events(self):
+        """
+        Deletes all :Event nodes and their :HAD_EVENT relationships from Neo4j.
+        """
+        if not self.is_connected(): return
+        logger.warning("🚨 DELETING ALL :Event nodes and :HAD_EVENT relationships from Neo4j...")
+        self.neo4j_graph.run("MATCH (e:Event) DETACH DELETE e")
+        logger.warning(" -> ✅ Neo4j events have been cleared.")
+
 
     def close(self):
         """Closes the SQLite database connection."""
