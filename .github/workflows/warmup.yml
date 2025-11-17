@@ -1,0 +1,21 @@
+name: Warm up Streamlit Cache
+
+on:
+  schedule:
+    # This runs at 7:00 PM UTC every day.
+    # Adjust this to a time that is a few hours BEFORE you use the app.
+    # Use a cron calculator: https://crontab.guru/
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+    # This adds a button in your GitHub "Actions" tab to run it manually
+
+jobs:
+  warmup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send warmup request to Streamlit app
+        # This command will hang for a long time and MAY even
+        # time out, but that's OK. The request is what's
+        # important to wake up the app and start the script.
+        run: |
+          curl --fail "https://financial-causal-engine.streamlit.app/?warmup=true"
