@@ -1,9 +1,13 @@
 import json
 import logging
 import networkx as nx
-from database_manager import DatabaseManager
 import os
 import sys
+
+# --- THIS IS THE FIX ---
+# Import the module itself, not just the class
+import database_manager
+# --- END FIX ---
 
 # --- Setup logging ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -25,7 +29,6 @@ def create_config_and_get_dict():
         logger.error("Missing one or more Neo4j credentials in environment variables.")
         return None
 
-    # This is the config structure your DatabaseManager is expecting
     config_data = {
         "neo4j": {
             "uri": NEO4J_URI,
@@ -37,7 +40,8 @@ def create_config_and_get_dict():
     try:
         # --- THIS IS THE FIX ---
         # Find the directory where the database_manager.py module is located
-        db_module_path = os.path.dirname(os.path.abspath(DatabaseManager.__module_file__))
+        # We use the module's __file__ attribute, not the class's.
+        db_module_path = os.path.dirname(os.path.abspath(database_manager.__file__))
         config_file_path = os.path.join(db_module_path, 'config.json')
         # --- END FIX ---
         
@@ -63,9 +67,11 @@ def main():
         sys.exit(1) # Exit with an error
 
     # 2. Initialize DatabaseManager
-    # We pass the config_dict just in case (to prevent the TypeError)
+    # We pass the config_dict to satisfy the TypeError
     logger.info("Initializing DatabaseManager...")
-    db_manager = DatabaseManager(cloud_config) 
+    # --- THIS IS THE FIX ---
+    db_manager = database_manager.DatabaseManager(cloud_config) 
+    # --- END FIX ---
     
     if not db_manager.is_connected():
         logger.error("Could not connect to Neo4j. Check credentials in GitHub secrets.")
@@ -90,7 +96,7 @@ def main():
     # 5. Clean up the config file (optional, but good practice)
     try:
         # We need the path again
-        db_module_path = os.path.dirname(os.path.abspath(DatabaseManager.__module_file__))
+        db_module_path = os.path.dirname(os.path.abspath(database_manager.__file__))
         config_file_path = os.path.join(db_module_path, 'config.json')
         os.remove(config_file_path)
         logger.info(f"Cleaned up temporary config file at {config_file_path}")
