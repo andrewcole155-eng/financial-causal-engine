@@ -9,10 +9,11 @@ import sys
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-def create_config_from_secrets():
+def create_config_and_get_dict():
     """
-    Reads Neo4j credentials from GitHub environment secrets
-    and writes them to a local config.json file.
+    Reads Neo4j credentials from GitHub environment secrets,
+    writes them to a local config.json file,
+    AND returns them as a dictionary.
     """
     logger.info("Loading secrets from environment...")
     
@@ -22,7 +23,7 @@ def create_config_from_secrets():
 
     if not all([NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD]):
         logger.error("Missing one or more Neo4j credentials in environment variables.")
-        return False
+        return None
 
     # This is the config structure your DatabaseManager is likely expecting
     config_data = {
@@ -34,28 +35,29 @@ def create_config_from_secrets():
     }
 
     try:
-        # Note: We are writing to 'config.json' in the root,
-        # which is where your DatabaseManager appears to be looking.
+        # Overwrite the config.json that's in the repo
+        # This fixes the "Unknown protocol" error
         with open("config.json", 'w', encoding='utf-8') as f:
             json.dump(config_data, f, indent=4)
-        logger.info("Successfully created temporary config.json")
-        return True
+        logger.info("Successfully created/overwritten config.json")
+        return config_data # Return the dictionary
     except Exception as e:
         logger.error(f"Failed to write config.json: {e}")
-        return False
+        return None
 
 def main():
     logger.info("Starting pre-computation job...")
     
-    # 1. Create the config.json file
-    if not create_config_from_secrets():
+    # 1. Create config.json AND get the config_dict
+    cloud_config = create_config_and_get_dict()
+    if not cloud_config:
         logger.critical("Could not create config from secrets. Exiting.")
         sys.exit(1) # Exit with an error
 
     # 2. Initialize DatabaseManager
-    # We pass NO arguments, so it will find and read config.json
-    logger.info("Initializing DatabaseManager (will read from config.json)...")
-    db_manager = DatabaseManager() 
+    # We pass the config_dict to satisfy the TypeError
+    logger.info("Initializing DatabaseManager...")
+    db_manager = DatabaseManager(cloud_config) 
     
     if not db_manager.is_connected():
         logger.error("Could not connect to Neo4j. Check credentials in GitHub secrets.")
@@ -77,7 +79,7 @@ def main():
     
     logger.info(f"Successfully saved graph to {output_file}")
     
-    # 5. Clean up the temporary config file (optional, but good practice)
+    # 5. Clean up the config file (optional, but good practice)
     try:
         os.remove("config.json")
         logger.info("Cleaned up temporary config.json")
