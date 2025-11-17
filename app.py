@@ -131,19 +131,31 @@ def get_db_manager():
 
 # ### CACHE FIX: This function now has NO arguments.
 # ### It will call get_db_manager() internally.
-@st.cache_data(ttl=86400)
+@st.cache_data(ttl=86400) # Keep the cache in case the file is large
 def get_full_graph():
-    """Cached function to load the full graph."""
+    """Cached function to load the pre-computed graph from a file."""
     
-    # ### CACHE FIX: Call the cached resource function *inside*
-    db_manager = get_db_manager()
+    GRAPH_FILE = "financial_graph.gml"
     
-    logger.info("Loading full graph from Neo4j...")
-    graph = db_manager.get_graph_from_db(weight_threshold=0.1)
-    if graph.number_of_nodes() == 0:
-        logger.warning("Knowledge graph is empty.")
+    logger.info(f"Loading pre-computed graph from {GRAPH_FILE}...")
+    try:
+        graph = nx.read_gml(GRAPH_FILE)
+    except FileNotFoundError:
+        logger.error(f"FATAL: Graph file not found at {GRAPH_FILE}.")
+        st.error(f"Graph file '{GRAPH_FILE}' not found. Please run the pre-computation script.")
+        st.stop()
         return None
-    logger.info(f"Graph loaded with {graph.number_of_nodes()} nodes and {graph.number_of_edges()} relationships.")
+    except Exception as e:
+        logger.error(f"Error loading graph file: {e}")
+        st.error(f"Error loading graph file: {e}")
+        st.stop()
+        return None
+        
+    if graph.number_of_nodes() == 0:
+        logger.warning("Loaded graph is empty.")
+        return None
+        
+    logger.info(f"Graph loaded with {graph.number_of_nodes()} nodes.")
     return graph
 
 # ### CACHE FIX: This function no longer takes db_manager as an argument.
@@ -203,19 +215,6 @@ def get_top_ripple_effects(all_events: list, threshold: float) -> pd.DataFrame |
 
 def main():
     """Renders the Streamlit User Interface."""
-
-    # --- ADD THIS CODE BLOCK ---
-    # Check for the "warmup" query parameter
-    params = st.query_params
-    if params.get("warmup") == "true":
-        logger.info("WARM-UP TRIGGERED: Running get_full_graph() to cache...")
-        # This is the 1-hour function call
-        get_full_graph() 
-        logger.info("WARM-UP COMPLETE: Cache is populated.")
-        st.success("Cache has been successfully warmed up.")
-        # Stop the script. The work is done.
-        st.stop() 
-    # --- END OF NEW CODE BLOCK ---
 
     st.set_page_config(layout="wide", page_title="Financial Causal Inference Engine")
     st.title("🧠 Financial Causal Inference Engine")
