@@ -303,26 +303,53 @@ class DatabaseManager:
             if not self.is_connected():
                 logger.error("get_neighborhood_graph: No database connection.")
                 return G
+            
+            # --- MODIFIED QUERY ---
+            # We now order by weight and take only the top 25 most
+            # significant relationships to avoid overloading the browser.
             query = """
             MATCH (c:Company {ticker: $ticker})-[r]-(neighbor:Company)
             RETURN c, r, neighbor
+            ORDER BY r.weight DESC
+            LIMIT 25
             """
+            # --- END MODIFICATION ---
+            
             try:
                 result = self.neo4j_graph.run(query, ticker=company_ticker)
+                
+                # This logic is complex, but it correctly builds the graph
+                # from the query results.
+                
+                # We need to keep track of what's added, as the query
+                # returns one row *per relationship*
+                nodes_added = set()
+                
                 for record in result:
                     center_node_data = record['c']
                     rel_data = record['r']
                     neighbor_node_data = record['neighbor']
                     
-                    G.add_node(center_node_data['ticker'], **dict(center_node_data))
-                    G.add_node(neighbor_node_data['ticker'], **dict(neighbor_node_data))
+                    center_ticker = center_node_data['ticker']
+                    neighbor_ticker = neighbor_node_data['ticker']
+
+                    if center_ticker not in nodes_added:
+                        G.add_node(center_ticker, **dict(center_node_data))
+                        nodes_added.add(center_ticker)
+                        
+                    if neighbor_ticker not in nodes_added:
+                        G.add_node(neighbor_ticker, **dict(neighbor_node_data))
+                        nodes_added.add(neighbor_ticker)
                     
                     G.add_edge(
                         rel_data.start_node['ticker'], 
                         rel_data.end_node['ticker'], 
+                        type=type(rel_data).__name__, # Store relationship type (e.g., 'SUPPLIER')
                         **dict(rel_data)
                     )
                 
+                # This handles the case where a company exists but has
+                # NO relationships (the query above would return nothing).
                 if G.number_of_nodes() == 0:
                     node_data_list = self.neo4j_graph.run(
                         "MATCH (c:Company {ticker: $ticker}) RETURN c", ticker=company_ticker
