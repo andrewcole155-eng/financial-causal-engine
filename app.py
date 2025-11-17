@@ -231,53 +231,35 @@ def main():
             st.cache_resource.clear()
             st.rerun()
 
-        # This function is NOT cached, it runs live
+        # This function is NOT cached, it runs live and should be fast.
         recent_events = db_manager.get_recent_events()
         
         if not recent_events:
             st.info("No significant events have been detected by the worker yet. Check the worker's logs.")
         else:
-            # --- BUG FIX: Load the graph ONCE, *before* the loop ---
-            with st.spinner("Loading knowledge graph to analyze events..."):
-                financial_graph = get_full_graph()
+            # --- START FIX ---
+            # We no longer load the full graph or calculate impacts here.
+            # This loop will now be fast and display all events.
             
-            if financial_graph is None:
-                 st.warning("Could not load graph to calculate impacts. Displaying events without analysis.")
-            
-            # --- END FIX ---
-            
+            st.info(f"Displaying the {len(recent_events)} most recent events.")
+
             for event in recent_events:
                 event_type = "Positive📈" if event['score'] > 0 else "Negative📉"
                 with st.expander(f"**{event['timestamp']} - {event_type} for {event['ticker']}**: {event['headline']}"):
                     st.markdown(f"**Sentiment Score:** `{event['score']:.2f}`")
                     st.markdown(f"[Read Full Article]({event['link']})", unsafe_allow_html=True)
-                    
-                    # --- FIX: This logic is now safe to run inside the loop ---
-                    if financial_graph is not None:
-                        if event['ticker'] in financial_graph:
-                            impact_results = calculate_impact_scores(financial_graph, event['ticker'], event['score'])
-                            
-                            if impact_results:
-                                st.write("**Potential GNN-Amplified Impacts:**")
-                                impact_str = " | ".join([
-                                    f"**{co}**: {data['score']:.2f}" 
-                                    for co, data in list(impact_results.items())[:3]
-                                ])
-                                st.write(impact_str)
-                            else:
-                                st.info("*No significant downstream impacts found for this event.*")
-                        else:
-                            st.info(f"Ticker {event['ticker']} not found in the graph. Cannot calculate impacts.")
-                    # The 'financial_graph is None' case is covered by the single warning
-                    # outside the loop.
+                    st.info(f"To see the potential impact of this event, go to the 'Simulate Scenarios' tab and run a simulation for {event['ticker']}.")
+            
+            # --- END FIX ---
 
     # --- TAB 2: EXPLORE GRAPH (On-Demand Version) ---
     with tab_explore:
         st.header("🗺️ Interactive Knowledge Graph Explorer")
-        st.write("Select a company to load its 1st-degree neighborhood from the graph.")
+        st.write("Select a company to load its **Top 25** strongest relationships.") # Updated text
 
+        # This tab will still trigger the slow graph load, but only when a user
+        # clicks on it, which is acceptable.
         with st.spinner("Loading full graph for explorer..."):
-            # ### CACHE FIX: Call with no arguments
             financial_graph = get_full_graph()
         
         if financial_graph is None:
@@ -297,10 +279,10 @@ def main():
                 if selected_company:
                     with st.spinner(f"Loading neighborhood for {selected_company}..."):
                         # This function is NOT cached, it runs live
+                        # This query is now optimized to LIMIT 25 in database_manager.py
                         neighborhood_graph = db_manager.get_neighborhood_graph(selected_company)
 
                         if neighborhood_graph.number_of_nodes() > 0:
-                            st.info(f"Displaying {neighborhood_graph.number_of_nodes()} companies and {neighborhood_graph.number_of_edges()} relationships.")
                             
                             net = Network(height="750px", width="100%", notebook=True, cdn_resources='in_line', directed=True, bgcolor="#222222", font_color="white")
                             net.from_nx(neighborhood_graph)
@@ -339,9 +321,23 @@ def main():
 
                                 if node_data.get('sector') and node_data.get('sector') != 'Discovered':
                                     node['group'] = node_data.get('sector')
-
-                            options_str = '{"nodes": {"font": {"size": 18}}, "edges": {"smooth": {"type": "dynamic"}}, "physics": {"barnesHut": {"gravitationalConstant": -20000, "springLength": 350}, "stabilization": {"iterations": 1000}}}'
+                            
+                            # --- START FIX (from before): DYNAMICALLY SET PHYSICS ---
+                            
+                            # This threshold is now fine because we only query 25 edges
+                            RELATIONSHIP_THRESHOLD = 75 
+                            
+                            if neighborhood_graph.number_of_edges() > RELATIONSHIP_THRESHOLD:
+                                st.warning(f"Graph is large ({neighborhood_graph.number_of_edges()} relationships). Displaying with a simplified, static layout to prevent crashing.")
+                                options_str = '{"nodes": {"font": {"size": 18}}, "edges": {"smooth": {"type": "dynamic"}}, "physics": {"enabled": false}}'
+                            
+                            else:
+                                st.info(f"Displaying {neighborhood_graph.number_of_nodes()} companies and {neighborhood_graph.number_of_edges()} relationships.")
+                                options_str = '{"nodes": {"font": {"size": 18}}, "edges": {"smooth": {"type": "dynamic"}}, "physics": {"barnesHut": {"gravitationalConstant": -20000, "springLength": 350}, "stabilization": {"iterations": 1000}}}'
+                            
                             net.set_options(options_str)
+                            
+                            # --- END FIX ---
                             
                             html_file = f"temp_graph_{uuid.uuid4().hex}.html"
                             try:
@@ -378,8 +374,8 @@ def main():
         # This function is NOT cached, it runs live
         all_recent_events = db_manager.get_recent_events()
         
-        with st.spinner("Calculating top ripple effects..."):
-            # ### CACHE FIX: Call with no db_manager argument
+        # This will still be slow, but it's acceptable on a secondary tab.
+        with st.spinner("Calculating top ripple effects (this may take a while)..."):
             top_impacts_df = get_top_ripple_effects(all_recent_events, sensitivity_threshold)
         
         if top_impacts_df is None:
@@ -400,7 +396,6 @@ def main():
         st.subheader("Manual 'What-If' Simulation")
 
         with st.spinner("Loading full graph for simulation..."):
-            # ### CACHE FIX: Call with no arguments
             financial_graph = get_full_graph()
 
         if financial_graph is None:
@@ -480,7 +475,6 @@ def main():
         st.header("↔️ Causal Pathfinding")
         
         with st.spinner("Loading full graph for pathfinding..."):
-            # ### CACHE FIX: Call with no arguments
             financial_graph = get_full_graph()
         
         if financial_graph is None:
@@ -568,7 +562,6 @@ def main():
         st.write("Reports generated by the background worker when significant events are detected.")
         st.write("This feature is currently disabled on Streamlit Cloud, as it cannot access the local 'reports/' folder.")
         
-        # ### BUG FIX: Removed the stray '*' from the line below ###
         st.info("No reports have been generated yet.")
         
         # ### BUG FIX: The rest of this is commented out
