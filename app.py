@@ -203,6 +203,20 @@ def get_top_ripple_effects(all_events: list, threshold: float) -> pd.DataFrame |
 
 def main():
     """Renders the Streamlit User Interface."""
+
+    # --- ADD THIS CODE BLOCK ---
+    # Check for the "warmup" query parameter
+    params = st.query_params
+    if params.get("warmup") == "true":
+        logger.info("WARM-UP TRIGGERED: Running get_full_graph() to cache...")
+        # This is the 1-hour function call
+        get_full_graph() 
+        logger.info("WARM-UP COMPLETE: Cache is populated.")
+        st.success("Cache has been successfully warmed up.")
+        # Stop the script. The work is done.
+        st.stop() 
+    # --- END OF NEW CODE BLOCK ---
+
     st.set_page_config(layout="wide", page_title="Financial Causal Inference Engine")
     st.title("🧠 Financial Causal Inference Engine")
 
