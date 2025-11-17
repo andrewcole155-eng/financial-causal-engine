@@ -32,7 +32,7 @@ def create_config_at_startup():
     }
 
     try:
-        # Based on your path, config.json is in the root.
+        # Based on your file path, config.json is in the root.
         config_file_path = "config.json"
         
         logger.info(f"Overwriting config file at: {config_file_path}")
@@ -47,23 +47,24 @@ def create_config_at_startup():
         logger.error(f"Failed to write config.json: {e}")
         return None
 
-# --- RUN THE CONFIG CREATION FIRST ---
+# --- STEP 1: RUN THE CONFIG CREATION FIRST ---
 # This code runs *immediately*
 cloud_config = create_config_at_startup()
 if not cloud_config:
     logger.critical("Could not create config from secrets. Exiting.")
     sys.exit(1)
 
-# --- NOW, IMPORT THE MODULES ---
+# --- STEP 2: NOW, IMPORT THE OTHER MODULES ---
 # By importing here, database_manager will read the
 # config.json file we *just* created.
 import networkx as nx
 import database_manager 
 
+# --- STEP 3: DEFINE AND RUN THE MAIN LOGIC ---
 def main():
     logger.info("Starting pre-computation job...")
     
-    # 1. Initialize DatabaseManager
+    # Initialize DatabaseManager
     # We pass the config_dict to satisfy the TypeError from earlier
     logger.info("Initializing DatabaseManager...")
     db_manager = database_manager.DatabaseManager(cloud_config) 
@@ -74,7 +75,7 @@ def main():
 
     logger.info("✅ Connected to Neo4j. Fetching full graph...")
     
-    # 2. This is the slow part (can take a long time)
+    # This is the slow part (can take a long time)
     graph = db_manager.get_graph_from_db(weight_threshold=0.1)
     
     if graph.number_of_nodes() == 0:
@@ -82,13 +83,13 @@ def main():
     else:
         logger.info(f"Graph loaded with {graph.number_of_nodes()} nodes.")
 
-    # 3. Save the computed graph to a file
+    # Save the computed graph to a file
     output_file = "financial_graph.gml"
     nx.write_gml(graph, output_file)
     
     logger.info(f"Successfully saved graph to {output_file}")
     
-    # 4. Clean up the config file (optional, but good practice)
+    # Clean up the config file (optional, but good practice)
     try:
         os.remove("config.json")
         logger.info("Cleaned up temporary config.json")
