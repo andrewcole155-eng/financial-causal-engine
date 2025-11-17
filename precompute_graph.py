@@ -12,8 +12,8 @@ logger = logging.getLogger(__name__)
 def create_config_and_get_dict():
     """
     Reads Neo4j credentials from GitHub environment secrets,
-    writes them to a local config.json file,
-    AND returns them as a dictionary.
+    writes them to the config.json file *in the same
+    directory as database_manager.py*, AND returns them as a dictionary.
     """
     logger.info("Loading secrets from environment...")
     
@@ -25,7 +25,7 @@ def create_config_and_get_dict():
         logger.error("Missing one or more Neo4j credentials in environment variables.")
         return None
 
-    # This is the config structure your DatabaseManager is likely expecting
+    # This is the config structure your DatabaseManager is expecting
     config_data = {
         "neo4j": {
             "uri": NEO4J_URI,
@@ -35,14 +35,22 @@ def create_config_and_get_dict():
     }
 
     try:
-        # Overwrite the config.json that's in the repo
-        # This fixes the "Unknown protocol" error
-        with open("config.json", 'w', encoding='utf-8') as f:
+        # --- THIS IS THE FIX ---
+        # Find the directory where the database_manager.py module is located
+        db_module_path = os.path.dirname(os.path.abspath(DatabaseManager.__module_file__))
+        config_file_path = os.path.join(db_module_path, 'config.json')
+        # --- END FIX ---
+        
+        logger.info(f"Overwriting config file at: {config_file_path}")
+        
+        # Overwrite the config.json in that specific directory
+        with open(config_file_path, 'w', encoding='utf-8') as f:
             json.dump(config_data, f, indent=4)
+            
         logger.info("Successfully created/overwritten config.json")
         return config_data # Return the dictionary
     except Exception as e:
-        logger.error(f"Failed to write config.json: {e}")
+        logger.error(f"Failed to find and write config.json: {e}")
         return None
 
 def main():
@@ -55,7 +63,7 @@ def main():
         sys.exit(1) # Exit with an error
 
     # 2. Initialize DatabaseManager
-    # We pass the config_dict to satisfy the TypeError
+    # We pass the config_dict just in case (to prevent the TypeError)
     logger.info("Initializing DatabaseManager...")
     db_manager = DatabaseManager(cloud_config) 
     
@@ -63,7 +71,7 @@ def main():
         logger.error("Could not connect to Neo4j. Check credentials in GitHub secrets.")
         sys.exit(1) # Exit with an error
 
-    logger.info("Connected to Neo4j. Fetching full graph...")
+    logger.info("✅ Connected to Neo4j. Fetching full graph...")
     
     # 3. This is the slow part (can take a long time)
     graph = db_manager.get_graph_from_db(weight_threshold=0.1)
@@ -81,8 +89,11 @@ def main():
     
     # 5. Clean up the config file (optional, but good practice)
     try:
-        os.remove("config.json")
-        logger.info("Cleaned up temporary config.json")
+        # We need the path again
+        db_module_path = os.path.dirname(os.path.abspath(DatabaseManager.__module_file__))
+        config_file_path = os.path.join(db_module_path, 'config.json')
+        os.remove(config_file_path)
+        logger.info(f"Cleaned up temporary config file at {config_file_path}")
     except Exception as e:
         logger.warning(f"Could not remove config.json: {e}")
 
