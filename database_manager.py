@@ -304,25 +304,17 @@ class DatabaseManager:
                 logger.error("get_neighborhood_graph: No database connection.")
                 return G
             
-            # --- MODIFIED QUERY ---
-            # We now order by weight and take only the top 25 most
-            # significant relationships to avoid overloading the browser.
+            # This query is correct: It gets the Top 25 relationships
             query = """
             MATCH (c:Company {ticker: $ticker})-[r]-(neighbor:Company)
             RETURN c, r, neighbor
             ORDER BY r.weight DESC
             LIMIT 25
             """
-            # --- END MODIFICATION ---
             
             try:
                 result = self.neo4j_graph.run(query, ticker=company_ticker)
                 
-                # This logic is complex, but it correctly builds the graph
-                # from the query results.
-                
-                # We need to keep track of what's added, as the query
-                # returns one row *per relationship*
                 nodes_added = set()
                 
                 for record in result:
@@ -333,23 +325,28 @@ class DatabaseManager:
                     center_ticker = center_node_data['ticker']
                     neighbor_ticker = neighbor_node_data['ticker']
 
+                    # Add the center node if we haven't already
                     if center_ticker not in nodes_added:
                         G.add_node(center_ticker, **dict(center_node_data))
                         nodes_added.add(center_ticker)
                         
+                    # Add the neighbor node if we haven't already
                     if neighbor_ticker not in nodes_added:
                         G.add_node(neighbor_ticker, **dict(neighbor_node_data))
                         nodes_added.add(neighbor_ticker)
                     
+                    # --- THIS IS THE FIX ---
+                    # I have removed the extra 'type=' argument which was
+                    # conflicting with the 'type' property inside dict(rel_data).
+                    # This is the original, correct code.
                     G.add_edge(
                         rel_data.start_node['ticker'], 
                         rel_data.end_node['ticker'], 
-                        type=type(rel_data).__name__, # Store relationship type (e.g., 'SUPPLIER')
                         **dict(rel_data)
                     )
+                    # --- END FIX ---
                 
-                # This handles the case where a company exists but has
-                # NO relationships (the query above would return nothing).
+                # This correctly handles companies with 0 relationships
                 if G.number_of_nodes() == 0:
                     node_data_list = self.neo4j_graph.run(
                         "MATCH (c:Company {ticker: $ticker}) RETURN c", ticker=company_ticker
@@ -359,7 +356,8 @@ class DatabaseManager:
                         G.add_node(node_data['ticker'], **dict(node_data))
 
             except Exception as e:
-                logger.error(f"Failed to get neighborhood graph for {company_ticker}: {e}")
+                # This log will catch any future errors
+                logger.error(f"Failed to build neighborhood graph for {company_ticker}: {e}")
 
             return G
 
