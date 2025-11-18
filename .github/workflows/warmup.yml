@@ -21,7 +21,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          echo "--- Installing py2neo first to resolve conflict ---"
+          echo "--- Force-purging all pip caches ---"
+          pip cache purge
+          echo "--- Installing py2neo standalone ---"
           pip install --no-cache-dir py2neo==2024.1.1
           echo "--- Installing remaining packages ---"
           pip install --no-cache-dir -r requirements.txt
