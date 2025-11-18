@@ -165,7 +165,7 @@ def get_full_graph():
             
         st.stop()
         return None
-        
+        #
     except Exception as e:
         logger.error(f"Error loading graph file: {e}")
         st.error(f"Error loading graph file: {e}")
