@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # ==============================================================================
-# --- DATABASE MANAGER CLASS ---
+# --- DATABASE MANAGER CLASS (MODIFIED) ---
 # ==============================================================================
 
 class DatabaseManager:
@@ -31,7 +31,7 @@ class DatabaseManager:
         self.sqlite_conn: Optional[sqlite3.Connection] = None
         self.neo4j_graph: Optional[Graph] = None 
 
-        # ### UNIVERSAL EDIT: Re-enable SQLite but make it fail-safe ###
+        # --- Connect to SQLite (fail-safe) ---
         try:
             db_dir = 'database'
             db_path = os.path.join(db_dir, 'financial_data.db')
@@ -41,31 +41,31 @@ class DatabaseManager:
             self._create_sqlite_tables()
             logger.info(f" -> ✅ Successfully connected to SQLite at {db_path}")
         except Exception as e:
-            logger.warning(f" -> ⚠️ Failed to connect to local SQLite (this is normal on Streamlit): {e}")
+            logger.warning(f" -> ⚠️ Failed to connect to local SQLite: {e}")
             self.sqlite_conn = None
 
         # --- Connect to Neo4j ---
         try:
-            # ### UNIVERSAL EDIT: Handle BOTH config formats ###
-            neo4j_uri = None
-            neo4j_user = None
-            neo4j_password = None
-
-            if "neo4j" in config and isinstance(config.get("neo4j"), dict):
-                # THIS IS THE CORRECT LOG LINE
-                logger.info(" -> Reading Neo4j config from nested [neo4j] block (Streamlit mode).")
-                neo4j_uri = config["neo4j"].get("uri")
-                neo4j_user = config["neo4j"].get("user")
-                neo4j_password = config["neo4j"].get("password")
+            # ### THIS IS THE FIX ###
+            # We ONLY read from the 'config' dictionary passed to __init__.
+            # All other logic (reading from st.secrets or files) is removed.
             
-            elif "neo4j_uri" in config:
-                logger.info(" -> Reading Neo4j config from flat 'neo4j_uri' keys (Worker/Backfill mode).")
-                neo4j_uri = config.get("neo4j_uri")
-                neo4j_user = config.get("neo4j_user")
-                neo4j_password = config.get("neo4j_password")
+            logger.info(" -> Reading Neo4j config from provided config dictionary...")
+            
+            if "neo4j" in config and isinstance(config.get("neo4j"), dict):
+                # Handles config dictionaries in the format: {"neo4j": {"uri": ...}}
+                neo4j_config = config["neo4j"]
+            else:
+                # Handles config dictionaries in the format: {"neo4j_uri": ...}
+                neo4j_config = config
+
+            neo4j_uri = neo4j_config.get("uri") or neo4j_config.get("neo4j_uri")
+            neo4j_user = neo4j_config.get("user") or neo4j_config.get("neo4j_user")
+            neo4j_password = neo4j_config.get("password") or neo4j_config.get("neo4j_password")
+            # ### END FIX ###
 
             if not all([neo4j_uri, neo4j_user, neo4j_password]):
-                raise ValueError("Neo4j connection details not found in any config source.")
+                raise ValueError("Neo4j connection details are missing from the config dictionary.")
 
             self.neo4j_graph = Graph(neo4j_uri, auth=(neo4j_user, neo4j_password))
             self.neo4j_graph.run("MATCH (n) RETURN count(n)")
@@ -74,7 +74,7 @@ class DatabaseManager:
         except Exception as e:
             logger.critical(f" -> ❌ FATAL: Failed to connect to Neo4j: {e}")
             self.neo4j_graph = None
-#s
+
     def is_connected(self) -> bool:
         """Checks if the connection to Neo4j is active."""
         return self.neo4j_graph is not None
@@ -252,7 +252,6 @@ class DatabaseManager:
             logger.error(f"Failed to retrieve recent events from Neo4j: {e}")
             return []
 
-    # ### NEW FUNCTION FOR BACKFILL SCRIPT ###
     def get_all_events_from_sqlite(self) -> List[Dict[str, Any]]:
         """
         Retrieves ALL significant events from the LOCAL SQLITE database.
@@ -336,16 +335,11 @@ class DatabaseManager:
                         G.add_node(neighbor_ticker, **dict(neighbor_node_data))
                         nodes_added.add(neighbor_ticker)
                     
-                    # --- THIS IS THE FIX ---
-                    # I have removed the extra 'type=' argument which was
-                    # conflicting with the 'type' property inside dict(rel_data).
-                    # This is the original, correct code.
                     G.add_edge(
                         rel_data.start_node['ticker'], 
                         rel_data.end_node['ticker'], 
                         **dict(rel_data)
                     )
-                    # --- END FIX ---
                 
                 # This correctly handles companies with 0 relationships
                 if G.number_of_nodes() == 0:
