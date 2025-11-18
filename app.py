@@ -110,7 +110,6 @@ def calculate_impact_scores(graph: nx.DiGraph, start_node: str, event_magnitude:
 # --- CACHED FUNCTIONS ---
 # ==============================================================================
 
-# ### CACHE FIX: get_db_manager is now defined globally, outside main()
 @st.cache_resource
 def get_db_manager():
     """Cached function to initialize the database manager once."""
@@ -133,7 +132,7 @@ def get_db_manager():
 def get_full_graph():
     """Cached function to load the pre-computed graph from a file."""
     
-    # --- START FIX: Use an absolute path ---
+    # --- FIX: Use an absolute path ---
     try:
         # Get the absolute path of the directory this script is in
         SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -177,7 +176,6 @@ def get_full_graph():
     logger.info(f"Graph loaded with {graph.number_of_nodes()} nodes.")
     return graph
 
-# ### CACHE FIX: This function no longer takes db_manager as an argument.
 @st.cache_data(ttl=600) 
 def get_top_ripple_effects(all_events: list, threshold: float) -> pd.DataFrame | None:
     """
@@ -185,7 +183,6 @@ def get_top_ripple_effects(all_events: list, threshold: float) -> pd.DataFrame |
     companies with the worst potential ripple effects.
     """
     
-    # ### CACHE FIX: Call the cached data function *inside*
     financial_graph = get_full_graph()
     if financial_graph is None:
         st.warning("Knowledge graph is empty. Please run `worker.py` (locally) to populate the *cloud* database.")
@@ -269,33 +266,25 @@ def main():
         if not recent_events:
             st.info("No significant events have been detected by the worker yet. Check the worker's logs.")
         else:
-            # --- START FIX ---
-            # We no longer load the full graph or calculate impacts here.
-            # This loop will now be fast and display all events.
-            
             st.info(f"Displaying the {len(recent_events)} most recent events.")
 
             for event in recent_events:
                 event_type = "Positive📈" if event['score'] > 0 else "Negative📉"
-                with st.expander(f"**{event['timestamp']} - {event_type} for {event['ticker']}**: {event['headline']}"):
-                    st.markdown(f"**Sentiment Score:** `{event['score']:.2f}`")
+                with st.expander(f"**{event.get('timestamp', 'No Date')} - {event_type} for {event['ticker']}**: {event['headline']}"):
+                    st.markdown(f"**Sentiment Score:** `{event.get('score', 0.0):.2f}`")
                     st.markdown(f"[Read Full Article]({event['link']})", unsafe_allow_html=True)
                     st.info(f"To see the potential impact of this event, go to the 'Simulate Scenarios' tab and run a simulation for {event['ticker']}.")
             
-            # --- END FIX ---
-
     # --- TAB 2: EXPLORE GRAPH (On-Demand Version) ---
     with tab_explore:
         st.header("🗺️ Interactive Knowledge Graph Explorer")
-        st.write("Select a company to load its **Top 25** strongest relationships.") # Updated text
+        st.write("Select a company to load its **Top 25** strongest relationships.") 
 
-        # This tab will still trigger the slow graph load, but only when a user
-        # clicks on it, which is acceptable.
         with st.spinner("Loading full graph for explorer..."):
             financial_graph = get_full_graph()
         
         if financial_graph is None:
-             st.warning("Knowledge graph is empty. Please run `worker.py` (locally) to populate the *cloud* database.")
+                st.warning("Knowledge graph is empty. Please run `worker.py` (locally) to populate the *cloud* database.")
         else:
             all_nodes = sorted(list(financial_graph.nodes()))
             
@@ -310,14 +299,26 @@ def main():
             if st.button("🗺️ Explore Neighborhood"):
                 if selected_company:
                     with st.spinner(f"Loading neighborhood for {selected_company}..."):
-                        # This function is NOT cached, it runs live
-                        # This query is now optimized to LIMIT 25 in database_manager.py
+                        
                         neighborhood_graph = db_manager.get_neighborhood_graph(selected_company)
 
                         if neighborhood_graph.number_of_nodes() > 0:
                             
+                            # --- START FIX 1 of 3 ---
+                            # Manually clean the graph edges of reserved keywords
+                            # before passing to pyvis.
+                            
+                            # Create a clean copy to avoid modifying the cached graph
+                            graph_for_pyvis = neighborhood_graph.copy() 
+                            
+                            for u, v, data in graph_for_pyvis.edges(data=True):
+                                # Pop reserved keys if they exist
+                                data.pop('source', None)
+                                data.pop('target', None)
+                            # --- END FIX 1 of 3 ---
+
                             net = Network(height="750px", width="100%", notebook=True, cdn_resources='in_line', directed=True, bgcolor="#222222", font_color="white")
-                            net.from_nx(neighborhood_graph)
+                            net.from_nx(graph_for_pyvis) # <-- Pass the clean graph
                             
                             risk_map = {
                                 0: {"label": "Low", "color": "#66bb6a"},  # Green
@@ -354,9 +355,6 @@ def main():
                                 if node_data.get('sector') and node_data.get('sector') != 'Discovered':
                                     node['group'] = node_data.get('sector')
                             
-                            # --- START FIX (from before): DYNAMICALLY SET PHYSICS ---
-                            
-                            # This threshold is now fine because we only query 25 edges
                             RELATIONSHIP_THRESHOLD = 75 
                             
                             if neighborhood_graph.number_of_edges() > RELATIONSHIP_THRESHOLD:
@@ -368,8 +366,6 @@ def main():
                                 options_str = '{"nodes": {"font": {"size": 18}}, "edges": {"smooth": {"type": "dynamic"}}, "physics": {"barnesHut": {"gravitationalConstant": -20000, "springLength": 350}, "stabilization": {"iterations": 1000}}}'
                             
                             net.set_options(options_str)
-                            
-                            # --- END FIX ---
                             
                             html_file = f"temp_graph_{uuid.uuid4().hex}.html"
                             try:
@@ -389,7 +385,7 @@ def main():
                     st.warning("Please select a company.")
 
     # ==============================================================================
-    # --- NEW/UPDATED SECTION 3 of 3: tab_simulate ---
+    # --- TAB 3: SIMULATE SCENARIOS ---
     # ==============================================================================
     with tab_simulate:
         st.header("🔬 Impact & Contagion Analysis")
@@ -403,10 +399,8 @@ def main():
             min_value=-1.0, max_value=0.0, value=-0.5, step=0.05
         )
         
-        # This function is NOT cached, it runs live
         all_recent_events = db_manager.get_recent_events()
         
-        # This will still be slow, but it's acceptable on a secondary tab.
         with st.spinner("Calculating top ripple effects (this may take a while)..."):
             top_impacts_df = get_top_ripple_effects(all_recent_events, sensitivity_threshold)
         
@@ -417,10 +411,10 @@ def main():
             top_impacts_df['Worst Impact Score'] = top_impacts_df['Worst Impact Score'].map('{:,.2f}'.format)
             
             st.dataframe(top_impacts_df, use_container_width=True, 
-                         column_config={
-                             "Source Event Headline": st.column_config.TextColumn("Source Event Headline", max_chars=100),
-                             "Causal Path": st.column_config.TextColumn("Causal Path", max_chars=100)
-                         })
+                            column_config={
+                                "Source Event Headline": st.column_config.TextColumn("Source Event Headline", max_chars=100),
+                                "Causal Path": st.column_config.TextColumn("Causal Path", max_chars=100)
+                            })
 
         st.divider() 
 
@@ -431,7 +425,7 @@ def main():
             financial_graph = get_full_graph()
 
         if financial_graph is None:
-             st.warning("Knowledge graph is empty. Please run `worker.py` (locally) to populate the *cloud* database.")
+                st.warning("Knowledge graph is empty. Please run `worker.py` (locally) to populate the *cloud* database.")
         else:
             all_nodes = sorted(list(financial_graph.nodes()))
             col1, col2 = st.columns(2)
@@ -481,8 +475,18 @@ def main():
                     nodes_to_include = {selected_company, *st.session_state.get('sim_impact_nodes', [])}
                     
                     subgraph = financial_graph.subgraph(nodes_to_include)
+
+                    # --- START FIX 2 of 3 ---
+                    # Create a clean copy for pyvis
+                    graph_for_pyvis = subgraph.copy()
+                    for u, v, data in graph_for_pyvis.edges(data=True):
+                        data.pop('source', None)
+                        data.pop('target', None)
+                    # --- END FIX 2 of 3 ---
+
                     net = Network(height="500px", width="100%", notebook=True, directed=True, bgcolor="#222222", font_color="white")
-                    net.from_nx(subgraph)
+                    net.from_nx(graph_for_pyvis) # <-- Pass the clean graph
+                    
                     for node in net.nodes:
                         node['label'] = node["id"]
                         node["size"] = 20
@@ -510,7 +514,7 @@ def main():
             financial_graph = get_full_graph()
         
         if financial_graph is None:
-             st.warning("Knowledge graph is empty. Please run `worker.py` (locally) to populate the *cloud* database.")
+                st.warning("Knowledge graph is empty. Please run `worker.py` (locally) to populate the *cloud* database.")
         else:
             st.write(f"Finds the shortest path between two nodes in the pre-filtered graph (the {financial_graph.number_of_edges()} strongest relationships).")
             all_nodes = sorted(list(financial_graph.nodes()))
@@ -543,8 +547,17 @@ def main():
                             st.info(f"Total Path Risk Score: **{max_risk_score}**")
 
                             path_graph = financial_graph.subgraph(best_path)
+
+                            # --- START FIX 3 of 3 ---
+                            # Create a clean copy for pyvis
+                            graph_for_pyvis = path_graph.copy()
+                            for u, v, data in graph_for_pyvis.edges(data=True):
+                                data.pop('source', None)
+                                data.pop('target', None)
+                            # --- END FIX 3 of 3 ---
+                            
                             net = Network(height="400px", width="100%", notebook=True, directed=True, bgcolor="#222222", font_color="white")
-                            net.from_nx(path_graph)
+                            net.from_nx(graph_for_pyvis) # <-- Pass the clean graph
                             
                             risk_map = {
                                 0: {"label": "Low", "color": "#66bb6a"},  # Green
@@ -600,12 +613,12 @@ def main():
         # ### because glob.glob will not work on Streamlit Cloud.
         # report_files = sorted(glob.glob("reports/*.txt"), reverse=True)
         # if not report_files:
-        #    st.info("No reports have been generated yet.")
+        # 	  st.info("No reports have been generated yet.")
         # else:
-        #     selected_report = st.selectbox("Select a report to view:", report_files)
-        #     if selected_report:
-        #         with open(selected_report, 'r', encoding='utf-8') as f:
-        #             st.code(f.read(), language='text')
+        # 	  selected_report = st.selectbox("Select a report to view:", report_files)
+        # 	  if selected_report:
+        # 	 	   with open(selected_report, 'r', encoding='utf-8') as f:
+        # 	 	 	   st.code(f.read(), language='text')
 
 if __name__ == "__main__":
     main()
