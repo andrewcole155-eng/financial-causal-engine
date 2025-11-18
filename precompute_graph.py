@@ -9,9 +9,9 @@ logger = logging.getLogger(__name__)
 
 def create_config_at_startup():
     """
-    Reads Neo4j credentials from GitHub environment secrets
-    and writes them to 'config.json' *immediately*.
-    This runs BEFORE other modules are imported.
+    Reads Neo4j credentials from GitHub environment secrets,
+    writes them to 'database/config.json',
+    AND returns them as a dictionary.
     """
     logger.info("Loading secrets from environment...")
     
@@ -32,8 +32,14 @@ def create_config_at_startup():
     }
 
     try:
-        # Config file is in the root directory
-        config_file_path = "config.json"
+        # --- THIS IS THE FIX ---
+        # Based on the SQLite log, the config is in the 'database' folder.
+        config_dir = "database"
+        config_file_path = os.path.join(config_dir, 'config.json')
+        
+        # Ensure the 'database' directory exists
+        os.makedirs(config_dir, exist_ok=True)
+        # --- END FIX ---
         
         logger.info(f"Overwriting config file at: {config_file_path}")
         
@@ -56,7 +62,7 @@ if not cloud_config:
 
 # --- STEP 2: NOW, IMPORT THE OTHER MODULES ---
 # By importing here, database_manager will read the
-# config.json file we *just* created.
+# config.json file we *just* created in the 'database' folder.
 import networkx as nx
 import database_manager 
 
@@ -91,8 +97,9 @@ def main():
     
     # Clean up the config file (optional, but good practice)
     try:
-        os.remove("config.json")
-        logger.info("Cleaned up temporary config.json")
+        config_file_path = "database/config.json"
+        os.remove(config_file_path)
+        logger.info(f"Cleaned up temporary config file at {config_file_path}")
     except Exception as e:
         logger.warning(f"Could not remove config.json: {e}")
 
