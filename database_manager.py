@@ -8,11 +8,42 @@ import re
 import os
 import networkx as nx
 # --- NEW IMPORTS ---
+import datetime
 from neo4j import GraphDatabase, exceptions
+from neo4j.time import Date, DateTime, Time
 
 # --- Setup structured logging ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
+
+# ==============================================================================
+# --- NEW HELPER FUNCTION ---
+# ==============================================================================
+
+def _clean_properties(properties: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Recursively converts Neo4j/Python complex types (like dates)
+    into simple strings that are JSON-serializable for pyvis.
+    """
+    clean_props = {}
+    if not isinstance(properties, dict):
+        # Handle cases where the property is not a dict, though it should be.
+        return {}
+        
+    for key, value in properties.items():
+        if isinstance(value, (Date, DateTime, datetime.date, datetime.datetime)):
+            clean_props[key] = value.isoformat()
+        elif isinstance(value, (Time, datetime.time)):
+            clean_props[key] = value.isoformat()
+        elif isinstance(value, (int, float, str, bool)) or value is None:
+            clean_props[key] = value
+        elif isinstance(value, list):
+            # Recursively clean lists (though not expected for node props)
+            clean_props[key] = [str(item) for item in value]
+        else:
+            # Fallback for any other complex type (like Geopspatial)
+            clean_props[key] = str(value)
+    return clean_props
 
 # ==============================================================================
 # --- DATABASE MANAGER CLASS (MODIFIED) ---
@@ -145,7 +176,8 @@ class DatabaseManager:
         """Helper function passed to session.execute_read"""
         result = tx.run(query, **params)
         # Convert to a list of dicts *inside* the transaction
-        return [dict(record) for record in result]
+        # .data() correctly converts nodes/rels to dicts of their properties
+        return result.data() 
 
     # ==========================================================================
     # --- REFACTORED NEO4J METHODS ---
@@ -183,11 +215,13 @@ class DatabaseManager:
         MERGE (source)-[r:{rel_type_sanitized}]->(target)
         SET r += $properties
         """
+        # --- FIX: Sanitize properties before sending them ---
+        clean_props = _clean_properties(properties)
         self.execute_write(
             query, 
             source_ticker=source_ticker, 
             target_ticker=target_ticker, 
-            properties=properties
+            properties=clean_props # Use the clean dictionary
         )
 
     def _add_event_node_to_graph(self, ticker: str, headline: str, score: float, link: str, timestamp: str):
@@ -271,7 +305,8 @@ class DatabaseManager:
         """
         results = self.execute_read(query)
         logger.info(f" -> Found {len(results)} total events in Neo4j.")
-        return results
+        # --- FIX: Sanitize results ---
+        return [_clean_properties(event) for event in results]
 
     def get_recent_events(self, limit: int = 20) -> List[Dict[str, Any]]:
         """
@@ -293,7 +328,10 @@ class DatabaseManager:
         ORDER BY e.timestamp DESC
         LIMIT $limit
         """
-        return self.execute_read(query, limit=limit)
+        # --- FIX: Sanitize results ---
+        results = self.execute_read(query, limit=limit)
+        return [_clean_properties(event) for event in results]
+
 
     def get_all_events_from_sqlite(self) -> List[Dict[str, Any]]:
         """
@@ -325,7 +363,6 @@ class DatabaseManager:
             return G
             
         nodes_query = "MATCH (n:Company) RETURN n"
-        # We must explicitly return source and target, as 'r' is just a property dict now
         edges_query = f"""
         MATCH (n:Company)-[r]->(m:Company)
         WHERE r.weight > $weight_threshold
@@ -335,12 +372,14 @@ class DatabaseManager:
         try:
             nodes_result = self.execute_read(nodes_query)
             for record in nodes_result:
-                node_data = record["n"] # This is already a dict
+                # --- FIX: Sanitize node properties ---
+                node_data = _clean_properties(record["n"]) 
                 G.add_node(node_data['ticker'], **node_data)
                 
             edges_result = self.execute_read(edges_query, weight_threshold=weight_threshold)
             for record in edges_result:
-                rel_data = record["r"] # This is a dict of the relationship's properties
+                # --- FIX: Sanitize relationship properties ---
+                rel_data = _clean_properties(record["r"]) 
                 G.add_edge(record["source"], record["target"], **rel_data)
         except Exception as e:
             logger.error(f"Failed to get graph from Neo4j: {e}")
@@ -355,8 +394,6 @@ class DatabaseManager:
             logger.error("get_neighborhood_graph: No database connection.")
             return G
         
-        # --- MODIFIED QUERY ---
-        # We must explicitly return start and end nodes for the edge
         query = """
         MATCH (c:Company {ticker: $ticker})-[r]-(neighbor:Company)
         WITH c, r, neighbor
@@ -371,35 +408,33 @@ class DatabaseManager:
             result_list = self.execute_read(query, ticker=company_ticker)
             nodes_added = set()
 
-            # Handle case where company exists but has 0 relationships
             if not result_list:
                 node_data_list = self.execute_read(
                     "MATCH (c:Company {ticker: $ticker}) RETURN c", ticker=company_ticker
                 )
                 if node_data_list:
-                    node_data = node_data_list[0]['c'] # This is a dict
+                    # --- FIX: Sanitize node properties ---
+                    node_data = _clean_properties(node_data_list[0]['c'])
                     G.add_node(node_data['ticker'], **node_data)
-                return G # Return graph with just one node
+                return G 
 
-            # Process all relationships
             for record in result_list:
-                center_node_data = record['c']
-                neighbor_node_data = record['neighbor']
-                rel_data = record['r']
+                # --- FIX: Sanitize all properties ---
+                center_node_data = _clean_properties(record['c'])
+                neighbor_node_data = _clean_properties(record['neighbor'])
+                rel_data = _clean_properties(record['r'])
                 source_ticker = record['source_ticker']
                 target_ticker = record['target_ticker']
                 
-                # Add the center node if we haven't already
                 if center_node_data['ticker'] not in nodes_added:
                     G.add_node(center_node_data['ticker'], **center_node_data)
                     nodes_added.add(center_node_data['ticker'])
                     
-                # Add the neighbor node if we haven't already
                 if neighbor_node_data['ticker'] not in nodes_added:
                     G.add_node(neighbor_node_data['ticker'], **neighbor_node_data)
                     nodes_added.add(neighbor_node_data['ticker'])
                 
-                # Add the edge using the explicit source and target
+                # Add the edge with clean data
                 G.add_edge(source_ticker, target_ticker, **rel_data)
                 
         except Exception as e:
@@ -430,7 +465,6 @@ class DatabaseManager:
         if self.sqlite_conn:
             self.sqlite_conn.close()
             logger.info(" -> SQLite connection closed.")
-        # --- DRIVER CHANGE ---
         if self.neo4j_driver:
             self.neo4j_driver.close()
             logger.info(" -> Neo4j connection closed.")
