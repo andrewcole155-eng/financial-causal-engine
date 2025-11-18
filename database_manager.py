@@ -7,7 +7,6 @@ from typing import Dict, Any, List, Optional
 import re
 import os
 import networkx as nx
-# --- NEW IMPORTS ---
 import datetime
 from neo4j import GraphDatabase, exceptions
 from neo4j.time import Date, DateTime, Time
@@ -17,20 +16,28 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # ==============================================================================
-# --- NEW HELPER FUNCTION ---
+# --- HELPER FUNCTION (UPDATED) ---
 # ==============================================================================
 
 def _clean_properties(properties: Dict[str, Any]) -> Dict[str, Any]:
     """
     Recursively converts Neo4j/Python complex types (like dates)
-    into simple strings that are JSON-serializable for pyvis.
+    into simple strings AND removes reserved keywords ('source', 'target') 
+    to prevent pyvis errors.
     """
     clean_props = {}
     if not isinstance(properties, dict):
-        # Handle cases where the property is not a dict, though it should be.
         return {}
         
     for key, value in properties.items():
+        
+        # --- NEW FIX: Check for reserved keys ---
+        # pyvis/networkx will pass 'source' and 'target' as positional
+        # arguments, so they MUST NOT be in the properties dictionary.
+        if key.lower() in ["source", "target"]:
+            continue  # Skip this key entirely
+        # --- END FIX ---
+            
         if isinstance(value, (Date, DateTime, datetime.date, datetime.datetime)):
             clean_props[key] = value.isoformat()
         elif isinstance(value, (Time, datetime.time)):
@@ -38,23 +45,22 @@ def _clean_properties(properties: Dict[str, Any]) -> Dict[str, Any]:
         elif isinstance(value, (int, float, str, bool)) or value is None:
             clean_props[key] = value
         elif isinstance(value, list):
-            # Recursively clean lists (though not expected for node props)
+            # Recursively clean lists
             clean_props[key] = [str(item) for item in value]
         else:
-            # Fallback for any other complex type (like Geopspatial)
+            # Fallback for any other complex type
             clean_props[key] = str(value)
+            
     return clean_props
 
 # ==============================================================================
-# --- DATABASE MANAGER CLASS (MODIFIED) ---
+# --- DATABASE MANAGER CLASS ---
 # ==============================================================================
 
 class DatabaseManager:
     """
     Manages all database interactions, providing a clean interface for connecting to,
     writing to, and reading from SQLite (for event logs) and Neo4j (for the graph).
-    
-    This version uses the official 'neo4j' driver, not 'py2neo'.
     """
 
     def __init__(self, config: Dict[str, Any]):
@@ -63,8 +69,6 @@ class DatabaseManager:
         """
         logger.info("🗄️ Initializing Database Manager...")
         self.sqlite_conn: Optional[sqlite3.Connection] = None
-        # --- DRIVER CHANGE ---
-        # We now store the driver, not a 'Graph' object
         self.neo4j_driver: Optional[GraphDatabase.driver] = None 
 
         # --- Connect to SQLite (fail-safe) ---
@@ -96,17 +100,14 @@ class DatabaseManager:
             if not all([neo4j_uri, neo4j_user, neo4j_password]):
                 raise ValueError("Neo4j connection details are missing from the config dictionary.")
 
-            # --- DRIVER CHANGE ---
-            # 1. Initialize the driver
             self.neo4j_driver = GraphDatabase.driver(neo4j_uri, auth=(neo4j_user, neo4j_password))
-            # 2. Verify connectivity and authentication
             self.neo4j_driver.verify_connectivity()
             logger.info(" -> ✅ Successfully connected to Neo4j.")
             
         except (exceptions.AuthError, exceptions.ServiceUnavailable, ValueError) as e:
             logger.critical(f" -> ❌ FATAL: Failed to connect to Neo4j: {e}")
             self.neo4j_driver = None
-            raise # Re-raise the error to stop the application
+            raise
 
     def is_connected(self) -> bool:
         """Checks if the connection to Neo4j is active."""
@@ -133,7 +134,7 @@ class DatabaseManager:
             ''')
 
     # ==========================================================================
-    # --- NEW NEO4J HELPER METHODS ---
+    # --- NEO4J HELPER METHODS ---
     # ==========================================================================
 
     def execute_write(self, query: str, **params: Any):
@@ -152,15 +153,12 @@ class DatabaseManager:
     def _run_write_tx(tx, query: str, **params: Any):
         """Helper function passed to session.execute_write"""
         result = tx.run(query, **params)
-        return result.consume() # Returns a ResultSummary
+        return result.consume() 
 
     def execute_read(self, query: str, **params: Any) -> List[Dict[str, Any]]:
         """
         Runs a read-only Cypher query (e.g., MATCH, RETURN)
         using a managed session and transaction.
-        
-        Returns:
-            List[Dict[str, Any]]: A list of result records, converted to dictionaries.
         """
         if not self.is_connected(): return []
         try:
@@ -175,8 +173,7 @@ class DatabaseManager:
     def _run_read_tx(tx, query: str, **params: Any) -> List[Dict[str, Any]]:
         """Helper function passed to session.execute_read"""
         result = tx.run(query, **params)
-        # Convert to a list of dicts *inside* the transaction
-        # .data() correctly converts nodes/rels to dicts of their properties
+        # .data() converts nodes/rels to dicts of their properties
         return result.data() 
 
     # ==========================================================================
@@ -185,7 +182,7 @@ class DatabaseManager:
 
     def upsert_company_nodes_batch(self, nodes_data: List[Dict[str, Any]]):
         """
-        Inserts or updates a batch of company nodes in Neo4j using a single, efficient query.
+        Inserts or updates a batch of company nodes in Neo4j.
         """
         if not self.is_connected() or not nodes_data:
             return
@@ -215,19 +212,17 @@ class DatabaseManager:
         MERGE (source)-[r:{rel_type_sanitized}]->(target)
         SET r += $properties
         """
-        # --- FIX: Sanitize properties before sending them ---
         clean_props = _clean_properties(properties)
         self.execute_write(
             query, 
             source_ticker=source_ticker, 
             target_ticker=target_ticker, 
-            properties=clean_props # Use the clean dictionary
+            properties=clean_props
         )
 
     def _add_event_node_to_graph(self, ticker: str, headline: str, score: float, link: str, timestamp: str):
         """
         (Private) Creates an Event node in Neo4j and links it to a Company.
-        This now also updates the timestamp ON MATCH.
         """
         if not self.is_connected(): return
         
@@ -260,8 +255,7 @@ class DatabaseManager:
 
     def add_event(self, ticker: str, headline: str, score: float, link: str):
         """
-        Adds a newly detected significant event to the SQLite database (if available)
-        AND adds a corresponding node to the Neo4j graph.
+        Adds an event to SQLite and the Neo4j graph.
         """
         from datetime import datetime
         event_timestamp = datetime.now()
@@ -286,7 +280,6 @@ class DatabaseManager:
     def get_all_events(self) -> List[Dict[str, Any]]:
         """
         Retrieves ALL significant events from the Neo4j database.
-        This is for the Streamlit app.
         """
         if not self.is_connected(): 
             logger.error("Neo4j connection not available.")
@@ -305,13 +298,11 @@ class DatabaseManager:
         """
         results = self.execute_read(query)
         logger.info(f" -> Found {len(results)} total events in Neo4j.")
-        # --- FIX: Sanitize results ---
         return [_clean_properties(event) for event in results]
 
     def get_recent_events(self, limit: int = 20) -> List[Dict[str, Any]]:
         """
         Retrieves the most recent significant events from the Neo4j database.
-        This is for the Streamlit app.
         """
         if not self.is_connected(): return []
         
@@ -328,7 +319,6 @@ class DatabaseManager:
         ORDER BY e.timestamp DESC
         LIMIT $limit
         """
-        # --- FIX: Sanitize results ---
         results = self.execute_read(query, limit=limit)
         return [_clean_properties(event) for event in results]
 
@@ -336,7 +326,6 @@ class DatabaseManager:
     def get_all_events_from_sqlite(self) -> List[Dict[str, Any]]:
         """
         Retrieves ALL significant events from the LOCAL SQLITE database.
-        This is ONLY for the backfill script.
         """
         if not self.sqlite_conn: 
             logger.error("SQLite connection not available. Cannot backfill.")
@@ -372,13 +361,11 @@ class DatabaseManager:
         try:
             nodes_result = self.execute_read(nodes_query)
             for record in nodes_result:
-                # --- FIX: Sanitize node properties ---
                 node_data = _clean_properties(record["n"]) 
                 G.add_node(node_data['ticker'], **node_data)
                 
             edges_result = self.execute_read(edges_query, weight_threshold=weight_threshold)
             for record in edges_result:
-                # --- FIX: Sanitize relationship properties ---
                 rel_data = _clean_properties(record["r"]) 
                 G.add_edge(record["source"], record["target"], **rel_data)
         except Exception as e:
@@ -413,13 +400,11 @@ class DatabaseManager:
                     "MATCH (c:Company {ticker: $ticker}) RETURN c", ticker=company_ticker
                 )
                 if node_data_list:
-                    # --- FIX: Sanitize node properties ---
                     node_data = _clean_properties(node_data_list[0]['c'])
                     G.add_node(node_data['ticker'], **node_data)
                 return G 
 
             for record in result_list:
-                # --- FIX: Sanitize all properties ---
                 center_node_data = _clean_properties(record['c'])
                 neighbor_node_data = _clean_properties(record['neighbor'])
                 rel_data = _clean_properties(record['r'])
@@ -434,7 +419,6 @@ class DatabaseManager:
                     G.add_node(neighbor_node_data['ticker'], **neighbor_node_data)
                     nodes_added.add(neighbor_node_data['ticker'])
                 
-                # Add the edge with clean data
                 G.add_edge(source_ticker, target_ticker, **rel_data)
                 
         except Exception as e:
