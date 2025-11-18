@@ -28,8 +28,6 @@ jobs:
         run: |
           # This prevents database_manager from trying to read st.secrets
           pip uninstall -y streamlit
-          # This prevents database_manager from trying to read secrets.toml
-          pip uninstall -y toml
       # --- END OF UPDATED STEP ---
 
       - name: Run Pre-computation Script

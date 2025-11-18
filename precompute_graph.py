@@ -1,4 +1,3 @@
-import json
 import logging
 import os
 import sys
@@ -7,11 +6,11 @@ import sys
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-def create_config_at_startup():
+def create_secrets_file_at_startup():
     """
-    Reads Neo4j credentials from GitHub environment secrets,
-    writes them to 'database/config.json',
-    AND returns them as a dictionary.
+    Reads Neo4j credentials from GitHub environment secrets
+    and writes them to '.streamlit/secrets.toml' *immediately*.
+    This runs BEFORE other modules are imported.
     """
     logger.info("Loading secrets from environment...")
     
@@ -23,7 +22,15 @@ def create_config_at_startup():
         logger.error("Missing one or more Neo4j credentials in environment variables.")
         return None
 
-    config_data = {
+    # This is the TOML format your DatabaseManager is expecting
+    toml_content = f"""
+[neo4j]
+uri = "{NEO4J_URI}"
+user = "{NEO4J_USER}"
+password = "{NEO4J_PASSWORD}"
+"""
+    # This is the config_dict we will pass to the class constructor
+    config_dict = {
         "neo4j": {
             "uri": NEO4J_URI,
             "user": NEO4J_USER,
@@ -33,36 +40,36 @@ def create_config_at_startup():
 
     try:
         # --- THIS IS THE FIX ---
-        # Based on the SQLite log, the config is in the 'database' folder.
-        config_dir = "database"
-        config_file_path = os.path.join(config_dir, 'config.json')
+        # The code is hard-coded to read .streamlit/secrets.toml
+        config_dir = ".streamlit"
+        config_file_path = os.path.join(config_dir, 'secrets.toml')
         
-        # Ensure the 'database' directory exists
+        # Ensure the '.streamlit' directory exists
         os.makedirs(config_dir, exist_ok=True)
         # --- END FIX ---
         
-        logger.info(f"Overwriting config file at: {config_file_path}")
+        logger.info(f"Overwriting secrets file at: {config_file_path}")
         
-        # Overwrite the config.json in that specific directory
+        # Overwrite the secrets.toml in that specific directory
         with open(config_file_path, 'w', encoding='utf-8') as f:
-            json.dump(config_data, f, indent=4)
+            f.write(toml_content)
             
         logger.info(f"Successfully created/overwritten {config_file_path}")
-        return config_data # Return the dictionary
+        return config_dict # Return the dictionary
     except Exception as e:
-        logger.error(f"Failed to write config.json: {e}")
+        logger.error(f"Failed to write secrets.toml: {e}")
         return None
 
 # --- STEP 1: RUN THE CONFIG CREATION FIRST ---
 # This code runs *immediately*
-cloud_config = create_config_at_startup()
+cloud_config = create_secrets_file_at_startup()
 if not cloud_config:
     logger.critical("Could not create config from secrets. Exiting.")
     sys.exit(1)
 
 # --- STEP 2: NOW, IMPORT THE OTHER MODULES ---
 # By importing here, database_manager will read the
-# config.json file we *just* created in the 'database' folder.
+# secrets.toml file we *just* created.
 import networkx as nx
 import database_manager 
 
@@ -97,11 +104,11 @@ def main():
     
     # Clean up the config file (optional, but good practice)
     try:
-        config_file_path = "database/config.json"
+        config_file_path = ".streamlit/secrets.toml"
         os.remove(config_file_path)
         logger.info(f"Cleaned up temporary config file at {config_file_path}")
     except Exception as e:
-        logger.warning(f"Could not remove config.json: {e}")
+        logger.warning(f"Could not remove {config_file_path}: {e}")
 
 if __name__ == "__main__":
     main()
