@@ -11,20 +11,25 @@ logger = logging.getLogger(__name__)
 def main():
     logger.info("Starting pre-computation job...")
     
-    # --- THIS IS THE FIX ---
     # Load secrets *directly* from the environment.
-    # The 'env:' block in warmup.yml makes these available.
     logger.info("Loading secrets directly from environment...")
     neo4j_uri = os.environ.get('NEO4J_URI')
     neo4j_user = os.environ.get('NEO4J_USER')
     neo4j_password = os.environ.get('NEO4J_PASSWORD')
+
+    # --- THIS IS THE NEW DEBUG LINE ---
+    # We print the first 5 characters. This will not be masked by GitHub's logger.
+    if neo4j_uri:
+        logger.info(f"DEBUG: URI first 5 chars: [{neo4j_uri[:5]}]")
+    else:
+        logger.info("DEBUG: NEO4J_URI is NOT SET")
+    # --- END DEBUG LINE ---
 
     if not all([neo4j_uri, neo4j_user, neo4j_password]):
         logger.critical("Missing one or more Neo4j credentials in environment variables.")
         sys.exit(1) # Exit with an error
 
     # Create the config dictionary to pass to the DatabaseManager
-    # This matches the structure your new DatabaseManager expects
     cloud_config = {
         "neo4j": {
             "uri": neo4j_uri,
@@ -32,7 +37,6 @@ def main():
             "password": neo4j_password
         }
     }
-    # --- END FIX ---
 
     # Initialize DatabaseManager
     logger.info("Initializing DatabaseManager...")
@@ -57,8 +61,6 @@ def main():
     nx.write_gml(graph, output_file)
     
     logger.info(f"Successfully saved graph to {output_file}")
-    
-    # (No config file to clean up)
 
 if __name__ == "__main__":
     main()
