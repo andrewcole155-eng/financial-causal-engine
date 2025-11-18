@@ -73,7 +73,7 @@ class DatabaseManager:
         except Exception as e:
             logger.critical(f" -> ❌ FATAL: Failed to connect to Neo4j: {e}")
             self.neo4j_graph = None
-
+#s
     def is_connected(self) -> bool:
         """Checks if the connection to Neo4j is active."""
         return self.neo4j_graph is not None
