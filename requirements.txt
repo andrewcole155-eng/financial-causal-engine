@@ -1,4 +1,5 @@
 # requirements.txt
+python==3.11
 streamlit
 networkx
 matplotlib

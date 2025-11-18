@@ -130,7 +130,6 @@ def get_db_manager():
     return DatabaseManager(cloud_config)
 
 # ### CACHE FIX: This function now has NO arguments.
-# ### It will call get_db_manager() internally.
 @st.cache_data(ttl=86400) # Keep the cache in case the file is large
 def get_full_graph():
     """Cached function to load the pre-computed graph from a file."""
@@ -165,7 +164,7 @@ def get_full_graph():
             
         st.stop()
         return None
-        #
+        
     except Exception as e:
         logger.error(f"Error loading graph file: {e}")
         st.error(f"Error loading graph file: {e}")
