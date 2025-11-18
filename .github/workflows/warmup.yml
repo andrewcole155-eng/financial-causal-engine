@@ -23,13 +23,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       
-      # --- ADD THIS NEW STEP ---
+      # --- THIS IS THE UPDATED STEP ---
       - name: Force script to read config.json
         run: |
-          # This prevents database_manager from thinking it's in Streamlit mode
-          # by forcing the 'import streamlit' check to fail.
+          # This prevents database_manager from trying to read st.secrets
           pip uninstall -y streamlit
-      # --- END OF NEW STEP ---
+          # This prevents database_manager from trying to read secrets.toml
+          pip uninstall -y toml
+      # --- END OF UPDATED STEP ---
 
       - name: Run Pre-computation Script
         env:
