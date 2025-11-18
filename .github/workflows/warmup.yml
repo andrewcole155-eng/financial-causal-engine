@@ -21,11 +21,16 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          echo "--- Force-purging all pip caches ---"
-          pip cache purge
-          echo "--- Installing py2neo standalone (MAXIMUM VERBOSITY) ---"
-          pip install -v --no-cache-dir --ignore-installed --index-url https://pypi.org/simple py2neo==2024.1.1
-          echo "--- Installing remaining packages ---"
+          echo "--- 1. Checking pip configuration ---"
+          pip config list -v
+          
+          echo "--- 2. Checking available py2neo versions from pip's index ---"
+          pip index versions py2neo
+          
+          echo "--- 3. Now, attempting the install again (with -vvv) ---"
+          pip install -vvv --no-cache-dir --ignore-installed --index-url https://pypi.org/simple py2neo==2024.1.1
+          
+          echo "--- 4. Installing remaining packages ---"
           pip install --no-cache-dir -r requirements.txt
 
       # --- THIS IS THE UPDATED STEP ---
