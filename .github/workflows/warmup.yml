@@ -9,6 +9,12 @@ on:
 jobs:
   build_graph:
     runs-on: ubuntu-latest
+
+    # --- ADD THIS BLOCK ---
+    permissions:
+      contents: write
+    # --- END ADD ---
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
