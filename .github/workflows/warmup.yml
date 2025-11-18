@@ -23,8 +23,8 @@ jobs:
           python -m pip install --upgrade pip
           echo "--- Force-purging all pip caches ---"
           pip cache purge
-          echo "--- Installing py2neo standalone ---"
-          pip install --no-cache-dir py2neo==2024.1.1
+          echo "--- Installing py2neo standalone (MAXIMUM VERBOSITY) ---"
+          pip install -v --no-cache-dir --ignore-installed --index-url https://pypi.org/simple py2neo==2024.1.1
           echo "--- Installing remaining packages ---"
           pip install --no-cache-dir -r requirements.txt
 
