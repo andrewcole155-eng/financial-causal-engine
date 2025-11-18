@@ -52,6 +52,7 @@ class DatabaseManager:
             neo4j_password = None
 
             if "neo4j" in config and isinstance(config.get("neo4j"), dict):
+                # THIS IS THE CORRECT LOG LINE
                 logger.info(" -> Reading Neo4j config from nested [neo4j] block (Streamlit mode).")
                 neo4j_uri = config["neo4j"].get("uri")
                 neo4j_user = config["neo4j"].get("user")
