@@ -19,4 +19,6 @@ pyvis
 aiohttp
 py2neo
 lxml
-spacy
+spacy==3.7.5
+pyopenssl
+service-identity
