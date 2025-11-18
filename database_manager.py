@@ -7,7 +7,8 @@ from typing import Dict, Any, List, Optional
 import re
 import os
 import networkx as nx
-from py2neo import Graph 
+# --- NEW IMPORTS ---
+from neo4j import GraphDatabase, exceptions
 
 # --- Setup structured logging ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -21,6 +22,8 @@ class DatabaseManager:
     """
     Manages all database interactions, providing a clean interface for connecting to,
     writing to, and reading from SQLite (for event logs) and Neo4j (for the graph).
+    
+    This version uses the official 'neo4j' driver, not 'py2neo'.
     """
 
     def __init__(self, config: Dict[str, Any]):
@@ -29,7 +32,9 @@ class DatabaseManager:
         """
         logger.info("🗄️ Initializing Database Manager...")
         self.sqlite_conn: Optional[sqlite3.Connection] = None
-        self.neo4j_graph: Optional[Graph] = None 
+        # --- DRIVER CHANGE ---
+        # We now store the driver, not a 'Graph' object
+        self.neo4j_driver: Optional[GraphDatabase.driver] = None 
 
         # --- Connect to SQLite (fail-safe) ---
         try:
@@ -46,38 +51,35 @@ class DatabaseManager:
 
         # --- Connect to Neo4j ---
         try:
-            # ### THIS IS THE FIX ###
-            # We ONLY read from the 'config' dictionary passed to __init__.
-            # All other logic (reading from st.secrets or files) is removed.
-            
             logger.info(" -> Reading Neo4j config from provided config dictionary...")
             
             if "neo4j" in config and isinstance(config.get("neo4j"), dict):
-                # Handles config dictionaries in the format: {"neo4j": {"uri": ...}}
                 neo4j_config = config["neo4j"]
             else:
-                # Handles config dictionaries in the format: {"neo4j_uri": ...}
                 neo4j_config = config
 
             neo4j_uri = neo4j_config.get("uri") or neo4j_config.get("neo4j_uri")
             neo4j_user = neo4j_config.get("user") or neo4j_config.get("neo4j_user")
             neo4j_password = neo4j_config.get("password") or neo4j_config.get("neo4j_password")
-            # ### END FIX ###
 
             if not all([neo4j_uri, neo4j_user, neo4j_password]):
                 raise ValueError("Neo4j connection details are missing from the config dictionary.")
 
-            self.neo4j_graph = Graph(neo4j_uri, auth=(neo4j_user, neo4j_password))
-            self.neo4j_graph.run("MATCH (n) RETURN count(n)")
+            # --- DRIVER CHANGE ---
+            # 1. Initialize the driver
+            self.neo4j_driver = GraphDatabase.driver(neo4j_uri, auth=(neo4j_user, neo4j_password))
+            # 2. Verify connectivity and authentication
+            self.neo4j_driver.verify_connectivity()
             logger.info(" -> ✅ Successfully connected to Neo4j.")
             
-        except Exception as e:
+        except (exceptions.AuthError, exceptions.ServiceUnavailable, ValueError) as e:
             logger.critical(f" -> ❌ FATAL: Failed to connect to Neo4j: {e}")
-            self.neo4j_graph = None
+            self.neo4j_driver = None
+            raise # Re-raise the error to stop the application
 
     def is_connected(self) -> bool:
         """Checks if the connection to Neo4j is active."""
-        return self.neo4j_graph is not None
+        return self.neo4j_driver is not None
 
     def _create_sqlite_tables(self):
         """Creates all necessary tables in the SQLite database if they don't exist."""
@@ -99,6 +101,56 @@ class DatabaseManager:
                 )
             ''')
 
+    # ==========================================================================
+    # --- NEW NEO4J HELPER METHODS ---
+    # ==========================================================================
+
+    def execute_write(self, query: str, **params: Any):
+        """
+        Runs a write Cypher query (e.g., CREATE, MERGE, SET, DELETE)
+        using a managed session and transaction.
+        """
+        if not self.is_connected(): return
+        try:
+            with self.neo4j_driver.session() as session:
+                return session.execute_write(self._run_write_tx, query, **params)
+        except Exception as e:
+            logger.error(f"Failed to execute write query '{query[:50]}...': {e}")
+
+    @staticmethod
+    def _run_write_tx(tx, query: str, **params: Any):
+        """Helper function passed to session.execute_write"""
+        result = tx.run(query, **params)
+        return result.consume() # Returns a ResultSummary
+
+    def execute_read(self, query: str, **params: Any) -> List[Dict[str, Any]]:
+        """
+        Runs a read-only Cypher query (e.g., MATCH, RETURN)
+        using a managed session and transaction.
+        
+        Returns:
+            List[Dict[str, Any]]: A list of result records, converted to dictionaries.
+        """
+        if not self.is_connected(): return []
+        try:
+            with self.neo4j_driver.session() as session:
+                result = session.execute_read(self._run_read_tx, query, **params)
+                return result
+        except Exception as e:
+            logger.error(f"Failed to execute read query '{query[:50]}...': {e}")
+            return []
+    
+    @staticmethod
+    def _run_read_tx(tx, query: str, **params: Any) -> List[Dict[str, Any]]:
+        """Helper function passed to session.execute_read"""
+        result = tx.run(query, **params)
+        # Convert to a list of dicts *inside* the transaction
+        return [dict(record) for record in result]
+
+    # ==========================================================================
+    # --- REFACTORED NEO4J METHODS ---
+    # ==========================================================================
+
     def upsert_company_nodes_batch(self, nodes_data: List[Dict[str, Any]]):
         """
         Inserts or updates a batch of company nodes in Neo4j using a single, efficient query.
@@ -113,7 +165,7 @@ class DatabaseManager:
             c.sector = node_props.sector,
             c.market_cap = node_props.market_cap
         """
-        self.neo4j_graph.run(query, nodes_data=nodes_data)
+        self.execute_write(query, nodes_data=nodes_data)
 
     def upsert_relationship(self, source_ticker: str, target_ticker: str, rel_type: str, properties: Dict[str, Any]):
         """
@@ -124,16 +176,19 @@ class DatabaseManager:
         if not rel_type_sanitized:
             logger.warning(f"Skipping invalid relationship type: {rel_type}")
             return
+            
         query = f"""
         MATCH (source:Company {{ticker: $source_ticker}})
         MATCH (target:Company {{ticker: $target_ticker}})
         MERGE (source)-[r:{rel_type_sanitized}]->(target)
         SET r += $properties
         """
-        try:
-            self.neo4j_graph.run(query, source_ticker=source_ticker, target_ticker=target_ticker, properties=properties)
-        except Exception as e:
-            logger.error(f"Failed to upsert relationship {source_ticker}->{target_ticker}: {e}")
+        self.execute_write(
+            query, 
+            source_ticker=source_ticker, 
+            target_ticker=target_ticker, 
+            properties=properties
+        )
 
     def _add_event_node_to_graph(self, ticker: str, headline: str, score: float, link: str, timestamp: str):
         """
@@ -142,7 +197,6 @@ class DatabaseManager:
         """
         if not self.is_connected(): return
         
-        # This query ensures the Company node exists. If not, it fails gracefully.
         query = """
         MATCH (c:Company {ticker: $ticker})
         MERGE (e:Event {link: $link})
@@ -158,10 +212,9 @@ class DatabaseManager:
         """
         try:
             from datetime import datetime
-            # Ensure timestamp is valid, default to now if not
             ts = timestamp if timestamp else datetime.now().isoformat()
             
-            self.neo4j_graph.run(query, 
+            self.execute_write(query, 
                 ticker=ticker, 
                 link=link, 
                 timestamp=ts,
@@ -169,7 +222,6 @@ class DatabaseManager:
                 score=score
             )
         except Exception as e:
-            # This will log if the MATCH (c:Company) fails
             logger.error(f"Failed to create Event node for {ticker} in Neo4j: {e}")
 
     def add_event(self, ticker: str, headline: str, score: float, link: str):
@@ -217,13 +269,9 @@ class DatabaseManager:
             e.timestamp AS timestamp
         ORDER BY e.timestamp ASC
         """
-        try:
-            results = self.neo4j_graph.run(query).data()
-            logger.info(f" -> Found {len(results)} total events in Neo4j.")
-            return results
-        except Exception as e:
-            logger.error(f"Failed to retrieve all events from Neo4j: {e}")
-            return []
+        results = self.execute_read(query)
+        logger.info(f" -> Found {len(results)} total events in Neo4j.")
+        return results
 
     def get_recent_events(self, limit: int = 20) -> List[Dict[str, Any]]:
         """
@@ -245,12 +293,7 @@ class DatabaseManager:
         ORDER BY e.timestamp DESC
         LIMIT $limit
         """
-        try:
-            results = self.neo4j_graph.run(query, limit=limit).data()
-            return results
-        except Exception as e:
-            logger.error(f"Failed to retrieve recent events from Neo4j: {e}")
-            return []
+        return self.execute_read(query, limit=limit)
 
     def get_all_events_from_sqlite(self) -> List[Dict[str, Any]]:
         """
@@ -264,7 +307,6 @@ class DatabaseManager:
         logger.info("Retrieving all historical events from SQLite for backfill...")
         try:
             with self.sqlite_conn as conn:
-                # Order by ID to get them in the order they were found
                 cursor = conn.execute("SELECT * FROM significant_events ORDER BY id ASC")
                 events = [dict(row) for row in cursor.fetchall()]
                 logger.info(f" -> Found {len(events)} total events in SQLite.")
@@ -274,87 +316,96 @@ class DatabaseManager:
             return []
 
     def get_graph_from_db(self, weight_threshold: float = 0.1) -> nx.DiGraph:
+        """
+        Fetches the entire graph from Neo4j and converts it to a NetworkX DiGraph.
+        """
         G = nx.DiGraph()
         if not self.is_connected():
             logger.error("get_graph_from_db: No database connection. Returning empty graph.")
             return G
+            
         nodes_query = "MATCH (n:Company) RETURN n"
+        # We must explicitly return source and target, as 'r' is just a property dict now
         edges_query = f"""
         MATCH (n:Company)-[r]->(m:Company)
-        WHERE r.weight > {weight_threshold}
+        WHERE r.weight > $weight_threshold
         RETURN n.ticker AS source, m.ticker AS target, r
         """
+        
         try:
-            nodes_result = self.neo4j_graph.run(nodes_query)
+            nodes_result = self.execute_read(nodes_query)
             for record in nodes_result:
-                node_data = record["n"]
-                ticker = node_data['ticker']
-                G.add_node(ticker, **dict(node_data))
-            edges_result = self.neo4j_graph.run(edges_query)
+                node_data = record["n"] # This is already a dict
+                G.add_node(node_data['ticker'], **node_data)
+                
+            edges_result = self.execute_read(edges_query, weight_threshold=weight_threshold)
             for record in edges_result:
-                rel_data = record["r"]
-                G.add_edge(record["source"], record["target"], **dict(rel_data))
+                rel_data = record["r"] # This is a dict of the relationship's properties
+                G.add_edge(record["source"], record["target"], **rel_data)
         except Exception as e:
             logger.error(f"Failed to get graph from Neo4j: {e}")
         return G
 
     def get_neighborhood_graph(self, company_ticker: str) -> nx.DiGraph:
-            G = nx.DiGraph()
-            if not self.is_connected():
-                logger.error("get_neighborhood_graph: No database connection.")
-                return G
-            
-            # This query is correct: It gets the Top 25 relationships
-            query = """
-            MATCH (c:Company {ticker: $ticker})-[r]-(neighbor:Company)
-            RETURN c, r, neighbor
-            ORDER BY r.weight DESC
-            LIMIT 25
-            """
-            
-            try:
-                result = self.neo4j_graph.run(query, ticker=company_ticker)
-                
-                nodes_added = set()
-                
-                for record in result:
-                    center_node_data = record['c']
-                    rel_data = record['r']
-                    neighbor_node_data = record['neighbor']
-                    
-                    center_ticker = center_node_data['ticker']
-                    neighbor_ticker = neighbor_node_data['ticker']
-
-                    # Add the center node if we haven't already
-                    if center_ticker not in nodes_added:
-                        G.add_node(center_ticker, **dict(center_node_data))
-                        nodes_added.add(center_ticker)
-                        
-                    # Add the neighbor node if we haven't already
-                    if neighbor_ticker not in nodes_added:
-                        G.add_node(neighbor_ticker, **dict(neighbor_node_data))
-                        nodes_added.add(neighbor_ticker)
-                    
-                    G.add_edge(
-                        rel_data.start_node['ticker'], 
-                        rel_data.end_node['ticker'], 
-                        **dict(rel_data)
-                    )
-                
-                # This correctly handles companies with 0 relationships
-                if G.number_of_nodes() == 0:
-                    node_data_list = self.neo4j_graph.run(
-                        "MATCH (c:Company {ticker: $ticker}) RETURN c", ticker=company_ticker
-                    ).data()
-                    if node_data_list:
-                        node_data = node_data_list[0]['c']
-                        G.add_node(node_data['ticker'], **dict(node_data))
-
-            except Exception as e:
-                # This log will catch any future errors
-                logger.error(f"Failed to build neighborhood graph for {company_ticker}: {e}")
-
+        """
+        Fetches a 1-hop neighborhood for a given company and converts to NetworkX.
+        """
+        G = nx.DiGraph()
+        if not self.is_connected():
+            logger.error("get_neighborhood_graph: No database connection.")
             return G
+        
+        # --- MODIFIED QUERY ---
+        # We must explicitly return start and end nodes for the edge
+        query = """
+        MATCH (c:Company {ticker: $ticker})-[r]-(neighbor:Company)
+        WITH c, r, neighbor
+        ORDER BY r.weight DESC
+        LIMIT 25
+        RETURN c, neighbor, r, 
+               startNode(r).ticker AS source_ticker, 
+               endNode(r).ticker AS target_ticker
+        """
+        
+        try:
+            result_list = self.execute_read(query, ticker=company_ticker)
+            nodes_added = set()
+
+            # Handle case where company exists but has 0 relationships
+            if not result_list:
+                node_data_list = self.execute_read(
+                    "MATCH (c:Company {ticker: $ticker}) RETURN c", ticker=company_ticker
+                )
+                if node_data_list:
+                    node_data = node_data_list[0]['c'] # This is a dict
+                    G.add_node(node_data['ticker'], **node_data)
+                return G # Return graph with just one node
+
+            # Process all relationships
+            for record in result_list:
+                center_node_data = record['c']
+                neighbor_node_data = record['neighbor']
+                rel_data = record['r']
+                source_ticker = record['source_ticker']
+                target_ticker = record['target_ticker']
+                
+                # Add the center node if we haven't already
+                if center_node_data['ticker'] not in nodes_added:
+                    G.add_node(center_node_data['ticker'], **center_node_data)
+                    nodes_added.add(center_node_data['ticker'])
+                    
+                # Add the neighbor node if we haven't already
+                if neighbor_node_data['ticker'] not in nodes_added:
+                    G.add_node(neighbor_node_data['ticker'], **neighbor_node_data)
+                    nodes_added.add(neighbor_node_data['ticker'])
+                
+                # Add the edge using the explicit source and target
+                G.add_edge(source_ticker, target_ticker, **rel_data)
+                
+        except Exception as e:
+            logger.error(f"Failed to build neighborhood graph for {company_ticker}: {e}")
+
+        return G
 
     def clear_neo4j_database(self):
         """
@@ -362,7 +413,7 @@ class DatabaseManager:
         """
         if not self.is_connected(): return
         logger.warning("🚨 DELETING ALL DATA from the Neo4j database...")
-        self.neo4j_graph.run("MATCH (n) DETACH DELETE n")
+        self.execute_write("MATCH (n) DETACH DELETE n")
         logger.warning(" -> ✅ Neo4j database has been cleared.")
 
     def clear_neo4j_events(self):
@@ -371,13 +422,15 @@ class DatabaseManager:
         """
         if not self.is_connected(): return
         logger.warning("🚨 DELETING ALL :Event nodes and :HAD_EVENT relationships from Neo4j...")
-        self.neo4j_graph.run("MATCH (e:Event) DETACH DELETE e")
+        self.execute_write("MATCH (e:Event) DETACH DELETE e")
         logger.warning(" -> ✅ Neo4j events have been cleared.")
 
-
     def close(self):
-        """Closes the SQLite database connection."""
+        """Closes all database connections."""
         if self.sqlite_conn:
             self.sqlite_conn.close()
-            logger.info("SQLite connection closed.")
-        # py2neo Graph object doesn't have an explicit .close()
+            logger.info(" -> SQLite connection closed.")
+        # --- DRIVER CHANGE ---
+        if self.neo4j_driver:
+            self.neo4j_driver.close()
+            logger.info(" -> Neo4j connection closed.")

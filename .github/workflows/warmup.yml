@@ -21,16 +21,6 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          echo "--- 1. Force-purging all pip caches ---"
-          pip cache purge
-          
-          echo "--- 2. Checking available versions from pypi.python.org ---"
-          pip index --index-url https://pypi.python.org/simple versions py2neo
-          
-          echo "--- 3. Attempting install from pypi.python.org ---"
-          pip install -vvv --no-cache-dir --ignore-installed --index-url https://pypi.python.org/simple py2neo==2024.1.1
-          
-          echo "--- 4. Installing remaining packages ---"
           pip install --no-cache-dir -r requirements.txt
 
       # --- THIS IS THE UPDATED STEP ---

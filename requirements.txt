@@ -17,7 +17,7 @@ sentence-transformers
 pandas
 pyvis
 aiohttp
-py2neo==2024.1.1
+neo4j
 lxml
 spacy==3.7.5
 pyopenssl
