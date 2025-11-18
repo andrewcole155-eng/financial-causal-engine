@@ -135,16 +135,37 @@ def get_db_manager():
 def get_full_graph():
     """Cached function to load the pre-computed graph from a file."""
     
-    GRAPH_FILE = "financial_graph.gml"
-    
-    logger.info(f"Loading pre-computed graph from {GRAPH_FILE}...")
+    # --- START FIX: Use an absolute path ---
     try:
-        graph = nx.read_gml(GRAPH_FILE)
+        # Get the absolute path of the directory this script is in
+        SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+        # Join it with the filename to get the full, robust path
+        GRAPH_FILE_PATH = os.path.join(SCRIPT_DIR, "financial_graph.gml")
+    except Exception as e:
+        logger.warning(f"Could not determine script path, falling back to relative path. Error: {e}")
+        # Fallback just in case __file__ is not available
+        GRAPH_FILE_PATH = "financial_graph.gml" 
+    # --- END FIX ---
+    
+    logger.info(f"Attempting to load pre-computed graph from {GRAPH_FILE_PATH}...")
+    try:
+        # Load using the new, full path
+        graph = nx.read_gml(GRAPH_FILE_PATH)
+        
     except FileNotFoundError:
-        logger.error(f"FATAL: Graph file not found at {GRAPH_FILE}.")
-        st.error(f"Graph file '{GRAPH_FILE}' not found. Please run the pre-computation script.")
+        logger.error(f"FATAL: Graph file not found at {GRAPH_FILE_PATH}.")
+        st.error(f"Graph file not found. Looked for: {GRAPH_FILE_PATH}")
+        
+        # Add debugging to show what's in the directory
+        try:
+            st.warning(f"Files found in the script's directory ({SCRIPT_DIR}):")
+            st.code(os.listdir(SCRIPT_DIR))
+        except Exception as e:
+            st.error(f"Could not list directory contents: {e}")
+            
         st.stop()
         return None
+        
     except Exception as e:
         logger.error(f"Error loading graph file: {e}")
         st.error(f"Error loading graph file: {e}")
