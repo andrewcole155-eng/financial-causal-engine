@@ -1,5 +1,6 @@
 import json
 import logging
+import os
 from database_manager import DatabaseManager
 from typing import Dict, Any
 from datetime import datetime, timedelta
@@ -8,14 +9,29 @@ from datetime import datetime, timedelta
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-def load_config() -> Dict[str, Any]:
-    """Loads config.json from the same directory."""
+def get_db_config() -> Dict[str, Any]:
+    """
+    Prioritizes Environment Variables (for GitHub Actions).
+    Falls back to config.json (for Local testing).
+    """
+    # 1. Try Environment Variables first (Best for GitHub Actions)
+    if os.environ.get("NEO4J_URI"):
+        logger.info("🔧 Configuration loaded from Environment Variables.")
+        return {
+            "neo4j_uri": os.environ.get("NEO4J_URI"),
+            "neo4j_user": os.environ.get("NEO4J_USER"),
+            "neo4j_password": os.environ.get("NEO4J_PASSWORD"),
+            # We assume the SQLite DB is in the root folder on the runner
+            "database_path": "financial_data.db" 
+        }
+
+    # 2. Fallback to config.json
     try:
-        # ### FIX: Ensure config.json is in the project root
         with open('config.json', 'r') as f:
+            logger.info("📂 Configuration loaded from config.json.")
             return json.load(f)
     except FileNotFoundError:
-        logger.error("config.json not found. Make sure it's in the same directory.")
+        logger.error("❌ No config found (Env Vars missing and config.json missing).")
         return {}
     except json.JSONDecodeError:
         logger.error("Error decoding config.json.")
@@ -32,15 +48,15 @@ def run_backfill():
     logger.info("🚀 Starting Neo4j backfill script...")
     
     # 1. Load config and initialize DatabaseManager
-    # ### FIX: Load config from the correct "flat" format (e.g., neo4j_uri)
-    config = load_config()
-    if not config:
+    config = get_db_config()
+    
+    if not config or not config.get("neo4j_uri"):
+        logger.critical("❌ Missing NEO4J_URI in config. Exiting.")
         return
 
-    # ### FIX: Make sure your config.json points to your CLOUD Neo4j DB
     logger.warning("="*50)
-    logger.warning("IMPORTANT: Make sure your config.json is pointing to your")
-    logger.warning(f" CLOUD Neo4j database: {config.get('neo4j_uri')}")
+    logger.warning("IMPORTANT: Connecting to Neo4j database at:")
+    logger.warning(f" {config.get('neo4j_uri')}")
     logger.warning("="*50)
 
     db_manager = DatabaseManager(config)
@@ -53,15 +69,16 @@ def run_backfill():
         logger.critical("❌ Failed to connect to Neo4j. Cannot write data. Exiting.")
         return
 
-    # ### NEW STEP: Clear all old/bad events from Neo4j first
+    # 3. NEW STEP: Clear all old/bad events from Neo4j first
     try:
+        logger.info("Cleaning up old events in Neo4j...")
         db_manager.clear_neo4j_events()
     except Exception as e:
         logger.error(f"Could not clear old events from Neo4j: {e}. Stopping backfill.")
         return
 
-    # 3. Get all events from SQLite
-    # ### FIX: Call the new function to specifically get data from SQLite
+    # 4. Get all events from SQLite
+    # This grabs the fresh data that worker.py just put there
     all_events = db_manager.get_all_events_from_sqlite()
     if not all_events:
         logger.warning("No events found in SQLite. Nothing to backfill.")
@@ -70,7 +87,7 @@ def run_backfill():
 
     logger.info(f"Found {len(all_events)} events to backfill. Starting process...")
 
-    # 4. Loop and insert into Neo4j
+    # 5. Loop and insert into Neo4j
     count = 0
     now = datetime.now()
     total_events = len(all_events)
@@ -83,8 +100,6 @@ def run_backfill():
             
             if not original_timestamp:
                 # Create a NEW, FAKE, STAGGERED timestamp
-                # This makes the oldest event (i=0) appear far in the past
-                # and the newest event (i=total_events) appear just before "now"
                 minutes_ago = (total_events - i) * 10  # Stagger by 10 mins
                 new_timestamp_dt = now - timedelta(minutes=minutes_ago)
                 final_timestamp = new_timestamp_dt.isoformat()
@@ -98,7 +113,7 @@ def run_backfill():
                 headline=event['headline'],
                 score=event['score'],
                 link=event['link'],
-                timestamp=final_timestamp # Pass the FIXED timestamp
+                timestamp=final_timestamp 
             )
             count += 1
             if count % 100 == 0:
@@ -109,7 +124,7 @@ def run_backfill():
             # This can happen if the (c:Company) node doesn't exist
             logger.warning(f" -> Make sure a Company node with ticker '{event.get('ticker')}' exists first.")
 
-    # 5. Clean up and report
+    # 6. Clean up and report
     logger.info(f"✅ Backfill complete! {count} events processed and timestamps fixed.")
     db_manager.close()
 
