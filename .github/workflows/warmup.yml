@@ -43,12 +43,20 @@ jobs:
           NEO4J_PASSWORD: ${{ secrets.NEO4J_PASSWORD }}
         run: |
           python precompute_graph.py
-      
-      - name: Commit and push the graph file
+
+      - name: Commit and Push Graph
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add financial_graph.gml
-          # Check if there are changes to commit
-          git diff --staged --quiet || git commit -m "Update pre-computed graph"
-          git push
+          # Check if there are changes; if not, exit cleanly
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Update pre-computed graph"
+          
+          # Pull the latest changes from remote and reapply our commit on top
+          git pull --rebase origin main
+          
+          git push          
