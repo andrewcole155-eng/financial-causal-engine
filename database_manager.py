@@ -461,7 +461,7 @@ class DatabaseManager:
         This replaces the previous per-event write and ensures atomicity.
         """
         if not events:
-            self.logger.warning("Attempted to add an empty batch of events.")
+            logger.warning("Attempted to add an empty batch of events.")
             return
         
         # Cypher uses UNWIND to iterate over the list of events passed as a parameter ($events)
@@ -482,8 +482,10 @@ class DatabaseManager:
         """
         
         # Neo4j best practice: Execute write operations inside execute_write
-        with self.driver.session() as session:
+        # --- FIX: Use self.neo4j_driver instead of self.driver ---
+        with self.neo4j_driver.session() as session:
             session.execute_write(
                 lambda tx: tx.run(query, events=events)
             )
-        self.logger.info(f"Successfully processed {len(events)} events in a single batch.")
+        # --- FIX: Use global 'logger', not self.logger ---
+        logger.info(f"Successfully processed {len(events)} events in a single batch.")
