@@ -452,3 +452,38 @@ class DatabaseManager:
         if self.neo4j_driver:
             self.neo4j_driver.close()
             logger.info(" -> Neo4j connection closed.")
+
+
+    def add_events_batch(self, events: List[Dict[str, Any]]):
+        """
+        Adds a list of event dictionaries to Neo4j using UNWIND for efficient batch creation.
+        
+        This replaces the previous per-event write and ensures atomicity.
+        """
+        if not events:
+            self.logger.warning("Attempted to add an empty batch of events.")
+            return
+        
+        # Cypher uses UNWIND to iterate over the list of events passed as a parameter ($events)
+        query = """
+        UNWIND $events AS event
+        MERGE (c:Company {ticker: event.ticker})
+        ON CREATE SET c.name = event.ticker, c.sector = 'Unknown'
+
+        MERGE (e:Event {
+            headline: event.headline
+        })
+        ON CREATE SET 
+            e.score = event.score, 
+            e.link = event.link,
+            e.timestamp = datetime()
+            
+        MERGE (e)-[:MENTIONS_COMPANY {score: event.score}]->(c)
+        """
+        
+        # Neo4j best practice: Execute write operations inside execute_write
+        with self.driver.session() as session:
+            session.execute_write(
+                lambda tx: tx.run(query, events=events)
+            )
+        self.logger.info(f"Successfully processed {len(events)} events in a single batch.")

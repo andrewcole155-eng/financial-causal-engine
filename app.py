@@ -128,7 +128,7 @@ def get_db_manager():
     
     return DatabaseManager(cloud_config)
 
-@st.cache_data(ttl=86400) # Keep the cache in case the file is large
+@st.cache_data(ttl=3600) # Keep the cache in case the file is large
 def get_full_graph():
     """Cached function to load the pre-computed graph from a file."""
     

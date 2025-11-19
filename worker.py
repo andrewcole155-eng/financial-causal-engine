@@ -154,12 +154,12 @@ def send_email_alert(config: Dict[str, Any], subject: str, body_html: str):
         logger.error(f"Could not send email alert. Reason: {e}")
 
 # ==============================================================================
-# --- DATA PIPELINE FUNCTIONS ---
+# --- DATA PIPELINE FUNCTIONS (worker.py) ---
 # ==============================================================================
 
 def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, Any]):
     """
-    Fetches live news, saves significant events, and sends a single summary email.
+    Fetches live news, collects significant events, and saves them in a batch.
     """
     logger.info("📰 Checking live news for significant events...")
     try:
@@ -184,6 +184,7 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
     graph = db_manager.get_graph_from_db()
     all_tickers = list(graph.nodes())
     sentiment_threshold = config.get("news_sentiment_threshold", 0.7)
+    # Get a set of recent headlines to skip duplicates (Good practice)
     processed_headlines = set(event['headline'] for event in db_manager.get_recent_events(limit=500))
     ticker_stopwords = {'A', 'ON', 'IT', 'HAS', 'SO', 'D', 'BE', 'ARE', 'SEE'} 
 
@@ -201,21 +202,37 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
                 if abs(score) >= sentiment_threshold:
                     logger.warning(f"🚨 Significant event FOUND for {ticker}! Score: {score:.2f}, Headline: {title}")
                     
-                    db_manager.add_event(ticker=ticker, headline=title, score=score, link=link)
                     processed_headlines.add(title)
                     
+                    # --- Collect event data for the batch write later ---
                     significant_events_found.append({
-                        'ticker': ticker, 'headline': title,
-                        'score': score, 'link': link
+                        'ticker': ticker, 
+                        'headline': title,
+                        'score': score, 
+                        'link': link
                     })
+                    # ---------------------------------------------------
                     break 
 
     if significant_events_found:
-        logger.info(f"Found {len(significant_events_found)} new significant events. Preparing summary email.")
-        subject = f"Financial KG Summary: {len(significant_events_found)} Significant Events Detected"
-        body_html = generate_summary_email_body(significant_events_found)
-        send_email_alert(config, subject, body_html)
-    
+        logger.info(f"✍️ DB-WRITE: Writing batch of {len(significant_events_found)} new events...")
+        try:
+            # --- Perform the single, robust batch write ---
+            db_manager.add_events_batch(significant_events_found)
+            logger.info("✅ DB-WRITE: Events written to Neo4j successfully.")
+
+            # Send email only after the database write is confirmed
+            subject = f"Financial KG Summary: {len(significant_events_found)} Significant Events Detected"
+            body_html = generate_summary_email_body(significant_events_found)
+            send_email_alert(config, subject, body_html)
+            
+        except Exception as e:
+            # Log a CRITICAL error if the database write failed
+            logger.critical(f"FATAL DB WRITE ERROR: Could not write event batch to Neo4j. Reason: {e}", exc_info=True)
+            
+    else:
+        logger.info("-> No new significant events found to write.")
+        
     logger.info("✅ Live news check complete.")
 
 
