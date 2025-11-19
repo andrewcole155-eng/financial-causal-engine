@@ -4035,19101 +4035,10913 @@ graph [
   edge [
     source 31
     target 0
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 1
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 2
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 3
-    sentiment 0.08
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 4
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 5
-    sentiment 0.09
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 6
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 7
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 8
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 9
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 10
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 11
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 13
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 18
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 19
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 21
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 23
-    sentiment 0.09
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 24
-    sentiment 0.09
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 27
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 28
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 29
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 30
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 33
-    sentiment 0.09
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 34
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 35
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 37
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 40
-    sentiment 0.66
-    weight 0.63
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 44
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 45
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 49
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 50
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 53
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 54
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 56
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 57
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 60
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 61
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 63
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 64
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 65
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 66
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 67
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 68
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 73
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 74
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 75
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 79
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 81
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 82
-    sentiment 0.73
-    weight 0.65
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 83
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 84
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 86
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 87
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 89
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 92
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 93
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 95
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 96
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 98
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 103
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 106
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 111
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 113
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 114
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 115
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 119
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 121
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 125
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 131
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 134
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 135
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 136
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 137
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 138
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 140
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 141
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 142
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 143
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 144
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 146
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 150
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 152
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 153
-    sentiment 0.09
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 154
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 156
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 158
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 160
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 163
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 164
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 166
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 169
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 172
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 174
-    weight 0.63
-    type "sec_discovered"
-    data_source "manual"
-    sentiment 0.63
   ]
   edge [
     source 31
     target 175
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 177
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 178
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 189
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 190
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 191
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 198
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 199
-    sentiment 0.09
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 200
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 201
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 202
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 203
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 204
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 205
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 207
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 208
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 209
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 211
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 213
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 214
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 217
-    sentiment 0.73
-    weight 0.65
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 219
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 220
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 221
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 225
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 228
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 229
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 231
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 234
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 235
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 236
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 237
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 240
-    sentiment 0.63
-    weight 0.63
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 242
-    sentiment 0.66
-    weight 0.63
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 244
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 245
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 247
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 249
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 251
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 253
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 255
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 256
-    sentiment 0.09
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 257
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 259
-    sentiment 0.73
-    weight 0.65
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 264
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 267
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 270
-    sentiment 0.66
-    weight 0.63
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 274
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 277
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 278
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 281
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 283
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 284
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 285
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 286
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 287
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 288
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 289
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 293
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 294
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 298
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 299
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 301
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 303
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 308
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 309
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 311
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 313
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 314
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 315
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 316
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 318
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 319
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 323
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 324
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 325
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 326
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 328
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 329
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 330
-    sentiment -0.19
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 332
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 333
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 335
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 336
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 337
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 338
-    sentiment 0.09
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 339
-    sentiment 0.09
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 340
-    sentiment 0.09
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 341
-    sentiment 0.09
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 342
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 343
-    sentiment 0.09
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 344
-    sentiment 0.09
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 345
-    sentiment 0.09
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 346
-    sentiment 0.09
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 347
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 348
-    sentiment 0.73
-    weight 0.65
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 349
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 351
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 352
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 353
-    sentiment 0.73
-    weight 0.65
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 354
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 355
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 356
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 357
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 358
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 359
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 360
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 361
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 362
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 363
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 364
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 365
-    sentiment 0.66
-    weight 0.63
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 366
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 367
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 368
-    sentiment 0.73
-    weight 0.65
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 369
-    sentiment 0.73
-    weight 0.65
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 370
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 371
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 372
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 373
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 374
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 375
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 377
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 378
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 379
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 380
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 381
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 382
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 383
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 384
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 385
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 386
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 387
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 388
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 389
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 390
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 391
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 392
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 393
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 394
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 395
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 396
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 397
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 398
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 399
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 400
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 401
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 402
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 403
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 404
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 405
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 406
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 407
-    sentiment 0.52
-    weight 0.6
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 408
-    sentiment -0.19
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 409
-    sentiment -0.19
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 410
-    sentiment -0.19
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 411
-    sentiment -0.19
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 412
-    sentiment -0.19
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 413
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 416
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 417
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 418
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 420
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 421
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 422
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 424
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 425
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 426
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 427
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 428
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 429
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 433
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 434
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 435
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 436
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 437
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 438
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 439
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 440
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 441
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 442
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 443
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 444
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 445
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 446
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 447
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 448
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 449
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 450
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 451
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 452
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 453
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 454
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 455
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 456
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 457
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 458
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 459
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 460
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 461
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 462
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 463
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 464
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 465
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 466
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 467
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 468
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 469
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 470
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 471
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 473
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 474
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 475
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 477
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 479
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 481
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 482
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 483
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 484
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 485
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 486
-    sentiment 0.25
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 487
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 488
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 489
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 31
     target 490
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 1
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 2
-    sentiment 0.1
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 3
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 4
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 5
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 7
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 8
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 9
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 13
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 14
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 16
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 18
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 22
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 23
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 24
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 26
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 30
-    sentiment -0.15
-    weight 0.47
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 31
-    weight 0.52
-    type "sec_discovered"
-    data_source "manual"
-    sentiment 0.1
   ]
   edge [
     source 174
     target 32
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 33
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 34
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 35
-    sentiment -0.93
-    weight 0.31
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 36
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 40
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 41
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 42
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 43
-    sentiment 0.1
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 44
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 45
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 46
-    sentiment 0.69
-    weight 0.64
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 48
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 51
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 53
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 55
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 56
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 57
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 59
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 61
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 68
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 70
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 71
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 72
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 77
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 78
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 80
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 82
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 88
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 89
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 90
-    sentiment 0.69
-    weight 0.64
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 91
-    sentiment 0.69
-    weight 0.64
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 94
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 97
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 100
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 101
-    sentiment 0.69
-    weight 0.64
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 102
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 104
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 106
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 108
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 109
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 110
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 112
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 114
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 115
-    sentiment -0.15
-    weight 0.47
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 117
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 118
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 120
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 122
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 123
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 124
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 125
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 127
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 128
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 129
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 131
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 133
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 135
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 136
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 138
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 139
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 143
-    sentiment 0.69
-    weight 0.64
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 144
-    sentiment 0.69
-    weight 0.64
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 146
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 147
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 148
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 149
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 153
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 154
-    sentiment 0.69
-    weight 0.64
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 156
-    sentiment 0.28
-    weight 0.56
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 157
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 159
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 160
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 163
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 166
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 167
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 169
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 172
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 173
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 175
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 176
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 177
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 178
-    sentiment 0.69
-    weight 0.64
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 182
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 183
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 186
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 188
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 190
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 191
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 192
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 198
-    sentiment -0.15
-    weight 0.47
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 199
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 206
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 207
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 208
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 213
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 215
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 216
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 217
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 218
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 220
-    sentiment 0.28
-    weight 0.56
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 221
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 222
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 225
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 230
-    sentiment 0.2
-    weight 0.54
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 234
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 235
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 237
-    sentiment -0.15
-    weight 0.47
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 238
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 240
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 242
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 243
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 246
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 251
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 252
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 253
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 255
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 256
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 257
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 259
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 260
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 269
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 270
-    sentiment 0.1
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 273
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 274
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 275
-    sentiment 0.12
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 276
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 277
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 282
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 284
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 285
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 288
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 289
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 292
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 294
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 296
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 298
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 300
-    sentiment 0.69
-    weight 0.64
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 301
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 302
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 306
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 308
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 310
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 311
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 312
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 315
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 316
-    sentiment -0.93
-    weight 0.31
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 317
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 318
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 320
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 322
-    sentiment 0.69
-    weight 0.64
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 323
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 324
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 328
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 329
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 330
-    sentiment 0.88
-    weight 0.68
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 332
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 335
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 336
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 337
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 338
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 339
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 340
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 341
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 342
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 343
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 344
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 345
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 346
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 347
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 348
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 349
-    sentiment 0.69
-    weight 0.64
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 350
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 352
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 353
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 354
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 355
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 356
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 357
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 358
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 359
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 360
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 361
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 362
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 363
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 364
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 365
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 366
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 367
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 368
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 369
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 370
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 371
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 372
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 373
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 374
-    sentiment 0.28
-    weight 0.56
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 375
-    sentiment 0.69
-    weight 0.64
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 376
-    sentiment 0.69
-    weight 0.64
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 377
-    sentiment -0.15
-    weight 0.47
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 378
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 379
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 380
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 381
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 382
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 383
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 384
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 385
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 386
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 387
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 388
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 389
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 390
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 391
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 392
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 393
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 394
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 395
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 396
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 397
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 398
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 399
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 400
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 401
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 402
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 403
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 404
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 406
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 407
-    sentiment 0.88
-    weight 0.68
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 408
-    sentiment 0.88
-    weight 0.68
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 409
-    sentiment 0.88
-    weight 0.68
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 410
-    sentiment 0.88
-    weight 0.68
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 411
-    sentiment 0.88
-    weight 0.68
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 412
-    sentiment 0.88
-    weight 0.68
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 413
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 414
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 415
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 416
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 417
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 418
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 420
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 421
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 422
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 423
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 424
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 425
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 426
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 428
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 430
-    sentiment -0.75
-    weight 0.35
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 431
-    sentiment -0.75
-    weight 0.35
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 432
-    sentiment -0.77
-    weight 0.35
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 433
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 434
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 435
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 436
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 437
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 438
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 439
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 440
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 441
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 442
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 443
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 444
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 445
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 446
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 447
-    sentiment 0.1
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 448
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 449
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 450
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 451
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 452
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 453
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 454
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 455
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 456
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 457
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 458
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 460
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 461
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 465
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 466
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 469
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 472
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 473
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 477
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 478
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 479
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 480
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 481
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 174
     target 482
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 2
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 3
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 4
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 5
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 7
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 8
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 9
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 10
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 11
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 19
-    sentiment -0.26
-    weight 0.45
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 21
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 22
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 23
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 24
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 26
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 28
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 29
-    sentiment 0.35
-    weight 0.57
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 33
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 34
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 39
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 53
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 55
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 60
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 63
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 65
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 74
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 79
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 80
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 84
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 86
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 87
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 89
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 92
-    sentiment -0.26
-    weight 0.45
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 93
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 96
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 114
-    sentiment 0.24
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 118
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 119
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 131
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 134
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 135
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 136
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 137
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 138
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 140
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 141
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 142
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 143
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 144
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 150
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 152
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 153
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 154
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 158
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 163
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 164
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 169
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 174
-    sentiment 0.35
-    weight 0.57
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 175
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 176
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 177
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 178
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 186
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 190
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 192
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 199
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 201
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 208
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 209
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 214
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 215
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 216
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 217
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 218
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 221
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 228
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 234
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 244
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 245
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 248
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 251
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 253
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 255
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 256
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 257
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 259
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 267
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 274
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 277
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 281
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 283
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 284
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 286
-    sentiment -0.64
-    weight 0.37
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 293
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 294
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 298
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 300
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 302
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 303
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 309
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 315
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 323
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 329
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 330
-    sentiment -0.08
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 332
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 333
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 335
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 336
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 337
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 338
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 339
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 340
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 341
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 342
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 343
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 344
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 345
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 346
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 347
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 349
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 352
-    sentiment -0.26
-    weight 0.45
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 356
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 357
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 359
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 360
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 362
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 363
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 364
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 365
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 366
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 367
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 368
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 369
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 370
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 371
-    sentiment -0.34
-    weight 0.43
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 373
-    sentiment -0.26
-    weight 0.45
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 374
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 375
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 377
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 378
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 379
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 380
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 381
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 382
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 383
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 384
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 385
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 386
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 387
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 388
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 389
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 390
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 391
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 392
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 393
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 394
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 395
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 396
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 397
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 398
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 399
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 400
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 401
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 402
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 403
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 404
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 405
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 406
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 407
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 408
-    sentiment -0.08
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 409
-    sentiment -0.08
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 410
-    sentiment -0.08
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 411
-    sentiment -0.08
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 412
-    sentiment -0.08
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 416
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 417
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 418
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 420
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 421
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 422
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 424
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 425
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 426
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 428
-    sentiment 0.61
-    weight 0.62
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 429
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 433
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 434
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 435
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 436
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 437
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 438
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 439
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 440
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 441
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 442
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 443
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 444
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 445
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 446
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 447
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 448
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 449
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 450
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 451
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 452
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 453
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 454
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 455
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 456
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 457
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 458
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 459
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 460
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 462
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 463
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 464
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 465
-    sentiment -0.56
-    weight 0.39
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 466
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 467
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 468
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 470
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 471
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 474
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 327
     target 483
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 0
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 2
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 3
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 4
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 5
-    sentiment -0.91
-    weight 0.32
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 7
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 8
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 9
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 19
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 23
-    sentiment -0.91
-    weight 0.32
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 24
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 28
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 30
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 33
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 34
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 45
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 53
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 58
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 67
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 74
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 79
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 80
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 84
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 86
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 87
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 92
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 93
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 96
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 98
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 101
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 107
-    sentiment 0.14
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 115
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 119
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 121
-    sentiment 0.08
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 125
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 137
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 141
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 145
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 147
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 152
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 153
-    sentiment -0.91
-    weight 0.32
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 154
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 156
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 158
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 160
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 171
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 175
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 177
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 181
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 182
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 193
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 195
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 198
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 199
-    sentiment -0.91
-    weight 0.32
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 201
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 203
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 207
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 208
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 209
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 210
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 216
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 220
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 227
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 228
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 233
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 237
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 245
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 253
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 256
-    sentiment -0.91
-    weight 0.32
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 267
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 274
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 281
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 282
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 284
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 293
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 299
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 301
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 313
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 315
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 318
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 319
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 324
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 329
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 330
-    sentiment -0.95
-    weight 0.31
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 334
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 335
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 336
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 337
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 338
-    sentiment -0.91
-    weight 0.32
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 339
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 340
-    sentiment -0.91
-    weight 0.32
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 341
-    sentiment -0.91
-    weight 0.32
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 342
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 343
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 344
-    sentiment -0.91
-    weight 0.32
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 345
-    sentiment -0.91
-    weight 0.32
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 346
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 347
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 349
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 351
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 352
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 356
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 358
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 359
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 360
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 362
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 365
-    sentiment -0.06
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 366
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 367
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 369
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 370
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 371
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 373
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 374
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 375
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 377
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 378
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 379
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 380
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 381
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 382
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 383
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 384
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 385
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 386
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 387
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 388
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 389
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 390
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 391
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 392
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 393
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 394
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 395
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 396
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 397
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 398
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 399
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 400
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 401
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 402
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 403
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 404
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 406
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 407
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 408
-    sentiment -0.95
-    weight 0.31
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 409
-    sentiment -0.95
-    weight 0.31
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 410
-    sentiment -0.95
-    weight 0.31
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 411
-    sentiment -0.95
-    weight 0.31
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 412
-    sentiment -0.95
-    weight 0.31
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 413
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 415
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 416
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 417
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 418
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 420
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 421
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 422
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 424
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 425
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 426
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 428
-    sentiment 0.18
-    weight 0.54
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 433
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 434
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 435
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 436
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 437
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 438
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 439
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 440
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 441
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 442
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 443
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 444
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 445
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 446
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 447
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 448
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 449
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 450
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 451
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 452
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 453
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 454
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 455
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 456
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 457
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 458
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 459
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 461
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 466
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 474
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 475
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 482
-    sentiment 0.14
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 483
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 484
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 328
     target 485
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 0
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 1
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 2
-    sentiment -0.87
-    weight 0.33
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 3
-    sentiment -0.87
-    weight 0.33
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 4
-    sentiment -0.87
-    weight 0.33
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 5
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 6
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 7
-    sentiment -0.08
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 8
-    sentiment -0.08
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 9
-    sentiment -0.08
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 10
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 11
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 12
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 13
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 14
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 15
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 16
-    sentiment 0.23
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 17
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 18
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 19
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 20
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 21
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 22
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 23
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 24
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 25
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 26
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 27
-    sentiment -0.06
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 28
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 29
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 30
-    sentiment -0.18
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 31
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 32
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 33
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 34
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 35
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 36
-    sentiment 0.23
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 37
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 38
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 39
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 40
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 41
-    sentiment 0.23
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 42
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 43
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 44
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 45
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 46
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 47
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 48
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 49
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 50
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 51
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 52
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 53
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 54
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 55
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 56
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 57
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 58
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 59
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 60
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 61
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 62
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 63
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 64
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 65
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 66
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 67
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 68
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 69
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 70
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 71
-    sentiment 0.23
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 72
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 73
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 74
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 75
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 76
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 77
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 78
-    sentiment 0.23
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 79
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 80
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 81
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 82
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 83
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 84
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 85
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 86
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 87
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 88
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 89
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 90
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 91
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 92
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 93
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 94
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 95
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 96
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 97
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 98
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 99
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 100
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 101
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 102
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 103
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 104
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 105
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 106
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 107
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 108
-    sentiment 0.23
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 109
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 110
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 111
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 112
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 113
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 114
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 115
-    sentiment -0.18
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 116
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 117
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 118
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 119
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 120
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 121
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 122
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 123
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 124
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 125
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 126
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 127
-    sentiment 0.23
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 128
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 129
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 130
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 131
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 132
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 133
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 134
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 135
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 136
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 137
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 138
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 139
-    sentiment 0.23
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 140
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 141
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 142
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 143
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 144
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 145
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 146
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 147
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 148
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 149
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 150
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 151
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 152
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 153
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 154
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 155
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 156
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 157
-    sentiment 0.23
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 158
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 159
-    sentiment 0.23
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 160
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 161
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 162
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 163
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 164
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 165
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 166
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 167
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 168
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 169
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 170
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 171
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 172
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 173
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 174
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 175
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 176
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 177
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 178
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 179
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 180
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 181
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 182
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 183
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 184
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 185
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 186
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 187
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 188
-    sentiment 0.23
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 189
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 190
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 191
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 192
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 193
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 194
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 195
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 196
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 197
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 198
-    sentiment -0.18
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 199
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 200
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 201
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 202
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 203
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 204
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 205
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 206
-    sentiment 0.23
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 207
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 208
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 209
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 210
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 211
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 212
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 213
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 214
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 215
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 216
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 217
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 218
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 219
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 220
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 221
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 222
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 223
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 224
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 225
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 226
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 227
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 228
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 229
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 230
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 231
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 232
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 233
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 234
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 235
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 236
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 237
-    sentiment -0.18
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 238
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 239
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 240
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 241
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 242
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 243
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 244
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 245
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 246
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 247
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 248
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 249
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 250
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 251
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 252
-    sentiment 0.23
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 253
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 254
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 255
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 256
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 257
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 258
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 259
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 260
-    sentiment 0.23
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 261
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 262
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 263
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 264
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 265
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 266
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 267
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 268
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 269
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 270
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 271
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 272
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 273
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 274
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 275
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 276
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 277
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 278
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 279
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 280
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 281
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 282
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 283
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 284
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 285
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 286
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 287
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 288
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 289
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 290
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 291
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 292
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 293
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 294
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 295
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 296
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 297
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 298
-    sentiment 0.76
-    weight 0.65
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 299
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 300
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 301
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 302
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 303
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 304
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 305
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 306
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 307
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 308
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 309
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 310
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 311
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 312
-    sentiment 0.23
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 313
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 314
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 315
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 316
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 317
-    sentiment 0.23
-    weight 0.55
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 318
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 319
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 320
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 321
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 322
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 323
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 324
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 325
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 326
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 328
-    weight 0.9
-    type "dependency"
-    data_source "manual"
   ]
   edge [
     source 329
     target 330
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 333
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 335
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 336
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 337
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 338
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 339
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 340
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 341
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 342
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 343
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 344
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 345
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 346
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 347
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 348
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 349
-    sentiment 0.1
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 351
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 352
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 353
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 354
-    sentiment 0.1
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 355
-    sentiment 0.1
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 356
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 357
-    sentiment 0.1
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 358
-    sentiment 0.1
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 359
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 360
-    sentiment 0.1
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 361
-    sentiment 0.1
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 362
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 363
-    sentiment 0.1
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 364
-    sentiment 0.1
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 365
-    sentiment 0.1
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 366
-    sentiment 0.1
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 367
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 368
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 369
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 370
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 371
-    sentiment -0.06
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 372
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 373
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 374
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 375
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 376
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 377
-    sentiment -0.18
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 378
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 379
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 380
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 381
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 382
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 383
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 384
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 385
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 386
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 387
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 388
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 389
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 390
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 391
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 392
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 393
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 394
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 395
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 396
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 397
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 398
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 399
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 400
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 401
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 402
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 403
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 404
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 405
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 406
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 407
-    sentiment -0.79
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 408
-    sentiment 0.17
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 409
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 410
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 411
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 412
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 413
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 414
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 415
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 416
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 417
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 418
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 419
-    sentiment 0.06
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 420
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 421
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 422
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 423
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 424
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 425
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 426
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 427
-    sentiment -0.06
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 428
-    sentiment -0.28
-    weight 0.44
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 429
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 432
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 433
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 434
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 435
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 436
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 437
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 438
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 439
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 440
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 441
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 442
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 443
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 444
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 445
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 446
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 447
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 448
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 449
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 450
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 451
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 452
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 453
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 454
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 455
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 456
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 457
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 458
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 459
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 460
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 461
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 462
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 463
-    sentiment -0.06
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 464
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 465
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 466
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 467
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 468
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 470
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 471
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 473
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 474
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 475
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 476
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 477
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 478
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 479
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 480
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 481
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 482
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 483
-    sentiment 0.14
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 484
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 485
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 486
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 487
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 488
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 489
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 490
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 491
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 492
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 493
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 494
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 495
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 496
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 497
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 498
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 499
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 500
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 501
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 329
     target 502
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 0
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 1
-    sentiment 0.1
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 2
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 3
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 4
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 5
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 6
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 7
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 8
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 9
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 10
-    sentiment -0.24
-    weight 0.45
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 11
-    sentiment -0.19
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 12
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 13
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 14
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 15
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 16
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 17
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 18
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 19
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 20
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 21
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 22
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 23
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 24
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 25
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 26
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 27
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 28
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 29
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 30
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 31
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 32
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 33
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 34
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 35
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 36
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 37
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 38
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 39
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 40
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 41
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 42
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 43
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 44
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 45
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 46
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 47
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 48
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 49
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 50
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 51
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 52
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 53
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 54
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 55
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 56
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 57
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 58
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 59
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 60
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 61
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 62
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 63
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 64
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 65
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 66
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 67
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 68
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 69
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 70
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 71
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 72
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 73
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 74
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 75
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 76
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 77
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 78
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 79
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 80
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 81
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 82
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 83
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 84
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 85
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 86
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 87
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 88
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 89
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 90
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 91
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 92
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 93
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 94
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 95
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 96
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 97
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 98
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 99
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 100
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 101
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 102
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 103
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 104
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 105
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 106
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 107
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 108
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 109
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 110
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 111
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 112
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 113
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 114
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 115
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 116
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 117
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 118
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 119
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 120
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 121
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 122
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 123
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 124
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 125
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 126
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 127
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 128
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 129
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 130
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 131
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 132
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 133
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 134
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 135
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 136
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 137
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 138
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 139
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 140
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 141
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 142
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 143
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 144
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 145
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 146
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 147
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 148
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 149
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 150
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 151
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 152
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 153
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 154
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 155
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 156
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 157
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 158
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 159
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 160
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 161
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 162
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 163
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 164
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 165
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 166
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 167
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 168
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 169
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 170
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 171
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 172
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 173
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 174
-    weight 0.5
-    type "sec_discovered"
-    data_source "manual"
-    sentiment -0.0
   ]
   edge [
     source 330
     target 175
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 176
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 177
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 178
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 179
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 180
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 181
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 182
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 183
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 184
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 185
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 186
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 187
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 188
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 189
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 190
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 191
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 192
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 193
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 194
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 195
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 196
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 197
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 198
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 199
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 200
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 201
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 202
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 203
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 204
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 205
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 206
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 207
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 208
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 209
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 210
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 211
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 212
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 213
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 214
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 215
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 216
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 217
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 218
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 219
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 220
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 221
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 222
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 223
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 224
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 225
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 226
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 227
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 228
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 229
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 230
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 231
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 232
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 233
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 234
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 235
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 236
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 237
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 238
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 239
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 240
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 241
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 242
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 243
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 244
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 245
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 246
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 247
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 248
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 249
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 250
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 251
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 252
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 253
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 254
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 255
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 256
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 257
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 258
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 259
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 260
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 261
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 262
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 263
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 264
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 265
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 266
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 267
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 268
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 269
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 270
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 271
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 272
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 273
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 274
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 275
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 276
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 277
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 278
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 279
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 280
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 281
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 282
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 283
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 284
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 285
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 286
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 287
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 288
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 289
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 290
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 291
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 292
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 293
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 294
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 295
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 296
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 297
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 298
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 299
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 300
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 301
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 302
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 303
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 304
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 305
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 306
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 307
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 308
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 309
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 310
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 311
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 312
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 313
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 314
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 315
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 316
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 317
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 318
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 319
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 320
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 321
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 322
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 323
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 324
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 325
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 326
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 329
-    weight 0.5
-    type "sec_discovered"
-    data_source "manual"
-    sentiment -0.01
   ]
   edge [
     source 330
     target 332
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 333
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 334
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 335
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 336
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 337
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 338
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 339
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 340
-    sentiment 0.14
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 341
-    sentiment 0.54
-    weight 0.61
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 342
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 343
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 345
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 346
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 347
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 348
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 349
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 351
-    sentiment 0.54
-    weight 0.61
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 352
-    sentiment 0.54
-    weight 0.61
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 354
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 355
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 356
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 357
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 358
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 359
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 360
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 361
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 362
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 363
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 364
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 365
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 366
-    sentiment 0.14
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 367
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 368
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 369
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 370
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 373
-    sentiment 0.54
-    weight 0.61
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 374
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 375
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 376
-    sentiment 0.54
-    weight 0.61
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 377
-    sentiment 0.54
-    weight 0.61
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 378
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 379
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 380
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 381
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 382
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 383
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 384
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 385
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 386
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 387
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 388
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 389
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 390
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 391
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 392
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 393
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 394
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 395
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 396
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 397
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 398
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 399
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 400
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 401
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 402
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 403
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 404
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 405
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 406
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 407
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 408
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 409
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 410
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 411
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 412
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 413
-    sentiment -0.2
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 415
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 416
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 417
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 418
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 419
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 420
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 421
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 422
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 423
-    sentiment -0.21
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 424
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 425
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 426
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 427
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 428
-    sentiment 0.06
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 429
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 432
-    sentiment 0.14
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 433
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 434
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 435
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 436
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 437
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 438
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 439
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 440
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 441
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 442
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 443
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 444
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 445
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 446
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 447
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 448
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 449
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 450
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 451
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 452
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 453
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 454
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 455
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 456
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 457
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 458
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 459
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 460
-    sentiment 0.14
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 461
-    sentiment 0.54
-    weight 0.61
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 462
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 463
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 464
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 465
-    sentiment 0.14
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 466
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 467
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 468
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 470
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 471
-    sentiment 0.54
-    weight 0.61
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 473
-    sentiment 0.14
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 474
-    sentiment 0.54
-    weight 0.61
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 475
-    sentiment 0.54
-    weight 0.61
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 476
-    sentiment 0.54
-    weight 0.61
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 477
-    sentiment 0.54
-    weight 0.61
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 482
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 483
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 484
-    sentiment -0.81
-    weight 0.34
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 485
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 488
-    sentiment 0.8
-    weight 0.66
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 491
-    sentiment 0.77
-    weight 0.65
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 493
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 494
-    sentiment -0.21
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 495
-    sentiment -0.21
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 330
     target 496
-    sentiment -0.21
-    weight 0.46
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 2
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 3
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 4
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 5
-    sentiment -0.48
-    weight 0.4
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 6
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 7
-    sentiment -0.06
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 8
-    sentiment -0.06
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 9
-    sentiment -0.06
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 10
-    sentiment -0.88
-    weight 0.32
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 11
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 12
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 13
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 19
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 20
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 21
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 23
-    sentiment -0.48
-    weight 0.4
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 24
-    sentiment -0.48
-    weight 0.4
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 25
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 27
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 29
-    sentiment 0.09
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 30
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 32
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 33
-    sentiment -0.48
-    weight 0.4
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 35
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 38
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 39
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 43
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 48
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 50
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 52
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 53
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 56
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 57
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 60
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 63
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 65
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 69
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 70
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 75
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 76
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 79
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 81
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 88
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 89
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 90
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 91
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 92
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 96
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 98
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 100
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 104
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 106
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 111
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 112
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 114
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 115
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 119
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 124
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 130
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 131
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 133
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 134
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 135
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 136
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 137
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 138
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 140
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 141
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 142
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 143
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 144
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 150
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 152
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 153
-    sentiment -0.48
-    weight 0.4
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 154
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 158
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 164
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 169
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 170
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 175
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 177
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 178
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 189
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 191
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 194
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 196
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 198
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 199
-    sentiment -0.48
-    weight 0.4
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 200
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 201
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 202
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 208
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 210
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 211
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 214
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 216
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 219
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 222
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 223
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 228
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 229
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 234
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 237
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 239
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 242
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 244
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 246
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 249
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 251
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 253
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 255
-    sentiment -0.13
-    weight 0.47
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 256
-    sentiment -0.48
-    weight 0.4
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 257
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 258
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 261
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 262
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 263
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 264
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 271
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 272
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 273
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 274
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 277
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 283
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 284
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 286
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 289
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 291
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 294
-    sentiment -0.13
-    weight 0.47
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 295
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 298
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 303
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 306
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 309
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 322
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 323
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 324
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 325
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 326
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 329
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 330
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 332
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 333
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 335
-    sentiment -0.06
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 336
-    sentiment -0.06
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 337
-    sentiment 0.82
-    weight 0.66
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 338
-    sentiment -0.48
-    weight 0.4
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 339
-    sentiment -0.48
-    weight 0.4
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 340
-    sentiment -0.48
-    weight 0.4
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 341
-    sentiment -0.48
-    weight 0.4
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 342
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 343
-    sentiment -0.48
-    weight 0.4
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 344
-    sentiment -0.48
-    weight 0.4
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 345
-    sentiment -0.48
-    weight 0.4
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 346
-    sentiment -0.48
-    weight 0.4
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 347
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 349
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 351
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 352
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 354
-    sentiment 0.11
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 355
-    sentiment 0.11
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 356
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 357
-    sentiment 0.11
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 358
-    sentiment 0.11
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 359
-    sentiment 0.11
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 360
-    sentiment 0.11
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 361
-    sentiment 0.11
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 362
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 363
-    sentiment 0.11
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 364
-    sentiment 0.11
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 365
-    sentiment 0.11
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 366
-    sentiment 0.11
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 367
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 368
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 369
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 370
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 373
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 374
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 375
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 376
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 377
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 378
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 379
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 380
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 381
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 382
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 383
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 384
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 385
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 386
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 387
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 388
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 389
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 390
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 391
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 392
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 393
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 394
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 395
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 396
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 397
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 398
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 399
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 400
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 401
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 402
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 403
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 404
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 405
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 406
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 407
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 409
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 413
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 415
-    sentiment -0.86
-    weight 0.33
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 416
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 417
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 418
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 419
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 420
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 421
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 422
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 423
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 424
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 425
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 426
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 427
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 429
-    sentiment -0.05
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 432
-    sentiment 0.05
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 433
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 434
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 435
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 436
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 437
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 438
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 439
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 440
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 441
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 442
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 443
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 444
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 445
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 446
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 447
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 448
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 449
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 450
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 451
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 452
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 453
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 454
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 455
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 456
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 457
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 458
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 459
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 460
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 461
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 462
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 463
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 464
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 465
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 466
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 467
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 468
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 470
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 471
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 474
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 475
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 476
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 477
-    sentiment -0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 331
     target 483
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 0
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 1
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 2
-    sentiment -0.09
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 3
-    sentiment -0.09
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 4
-    sentiment -0.09
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 5
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 6
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 7
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 8
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 9
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 10
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 11
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 12
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 13
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 15
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 18
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 19
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 20
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 21
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 22
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 23
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 24
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 25
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 26
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 27
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 28
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 29
-    sentiment 0.08
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 30
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 31
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 32
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 33
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 34
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 35
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 39
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 40
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 42
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 43
-    sentiment 0.08
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 44
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 45
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 46
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 48
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 49
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 50
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 51
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 52
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 53
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 54
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 56
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 57
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 58
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 59
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 60
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 61
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 62
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 63
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 65
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 66
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 67
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 68
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 69
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 70
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 72
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 73
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 74
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 75
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 76
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 77
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 79
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 80
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 81
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 82
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 84
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 85
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 86
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 87
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 88
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 89
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 90
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 91
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 92
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 93
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 94
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 95
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 96
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 97
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 98
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 100
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 101
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 103
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 104
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 107
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 109
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 110
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 111
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 112
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 114
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 115
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 117
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 118
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 119
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 120
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 122
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 123
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 124
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 125
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 126
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 129
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 130
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 131
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 132
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 133
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 134
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 135
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 136
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 137
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 138
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 140
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 141
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 142
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 143
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 144
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 145
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 146
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 147
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 148
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 149
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 150
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 151
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 152
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 153
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 154
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 155
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 156
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 158
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 160
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 161
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 162
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 164
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 165
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 166
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 167
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 169
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 170
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 171
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 172
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 174
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 176
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 177
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 178
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 179
-    sentiment -0.09
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 180
-    sentiment -0.09
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 181
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 182
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 184
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 185
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 186
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 187
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 190
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 192
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 193
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 194
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 195
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 196
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 197
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 198
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 199
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 200
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 201
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 202
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 203
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 205
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 207
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 208
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 209
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 210
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 211
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 212
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 214
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 216
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 217
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 218
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 219
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 220
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 221
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 222
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 223
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 224
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 225
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 226
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 227
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 228
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 229
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 232
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 233
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 234
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 235
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 236
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 237
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 239
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 240
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 242
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 243
-    sentiment -0.12
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 244
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 245
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 246
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 249
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 250
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 251
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 253
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 254
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 255
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 256
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 257
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 258
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 259
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 261
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 262
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 263
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 264
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 265
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 266
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 267
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 268
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 269
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 270
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 271
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 272
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 273
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 274
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 275
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 277
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 279
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 280
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 281
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 282
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 283
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 284
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 285
-    sentiment -0.09
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 286
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 287
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 288
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 289
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 290
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 291
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 292
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 293
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 294
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 295
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 296
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 298
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 299
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 300
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 301
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 302
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 303
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 304
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 306
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 307
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 308
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 309
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 310
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 311
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 313
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 314
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 315
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 318
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 319
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 321
-    sentiment -0.03
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 322
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 323
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 324
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 325
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 326
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 329
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 330
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 332
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 333
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 334
-    sentiment 0.03
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 335
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 336
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 337
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 338
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 339
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 340
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 341
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 342
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 343
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 344
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 345
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 346
-    sentiment -0.07
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 347
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 348
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 349
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 351
-    sentiment 0.04
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 352
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 353
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 354
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 355
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 356
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 357
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 358
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 359
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 360
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 361
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 362
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 363
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 364
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 365
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 366
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 367
-    sentiment -0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 368
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 369
-    sentiment 0.02
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 370
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 371
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 372
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 373
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 374
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 375
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 376
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 377
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 378
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 379
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 380
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 381
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 382
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 383
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 384
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 385
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 386
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 387
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 388
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 389
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 390
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 391
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 392
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 393
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 394
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 395
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 396
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 397
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 398
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 399
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 400
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 401
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 402
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 403
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 404
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 405
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 406
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 407
-    sentiment 0.07
-    weight 0.51
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 408
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 409
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 410
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 411
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 412
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 413
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 414
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 415
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 416
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 417
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 418
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 419
-    sentiment 0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 420
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 421
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 422
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 423
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 424
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 425
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 426
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 427
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 428
-    sentiment -0.09
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 429
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 430
-    sentiment -0.08
-    weight 0.48
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 431
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 432
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 433
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 434
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 435
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 436
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 437
-    sentiment -0.58
-    weight 0.38
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 438
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 439
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 440
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 441
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 442
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 443
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 444
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 445
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 446
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 447
-    sentiment 0.12
-    weight 0.52
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 448
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 449
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 450
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 451
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 452
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 453
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 454
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 455
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 456
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 457
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 458
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 459
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 460
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 461
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 462
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 463
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 464
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 465
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 466
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 467
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 468
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 469
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 470
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 471
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 472
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 473
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 474
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 475
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 476
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 477
-    sentiment -0.04
-    weight 0.49
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 478
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 479
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 480
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 481
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 482
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 483
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 484
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 485
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 486
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 487
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 489
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 490
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 491
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 492
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 493
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 494
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 495
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 496
-    sentiment 0.0
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 497
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 498
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 499
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 500
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 501
-    sentiment -0.01
-    weight 0.5
-    type "sec_discovered"
   ]
   edge [
     source 503
     target 502
-    sentiment 0.13
-    weight 0.53
-    type "sec_discovered"
   ]
 ]
