@@ -34,14 +34,54 @@ from database_manager import DatabaseManager
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger("FinancialWorker")
 
-def load_config(config_file: str = "config.json") -> Dict[str, Any]:
-    """Loads all configurations from a JSON file for the worker."""
+def get_worker_config() -> Dict[str, Any]:
+    """
+    Robust configuration loader.
+    1. Defines defaults (prevents crashes).
+    2. Loads config.json (if exists locally).
+    3. Overrides with Environment Variables (for GitHub Actions).
+    """
+    # 1. Defaults
+    config = {
+        "news_sentiment_threshold": 0.7,
+        # Default list so worker does something if config is missing on cloud
+        "target_tickers": ["AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "TSLA", "META", "BRK.B", "LLY", "V"],
+        "downloader_company": "OpenSourceProject",
+        "downloader_email": "worker@example.com",
+        "recipient_emails": [],
+        "smtp_server": "smtp.gmail.com",
+        "smtp_port": 587
+    }
+
+    # 2. Try loading local config.json (Merge if exists)
     try:
-        with open(config_file, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except Exception as e:
-        logger.critical(f"FATAL: Could not load config file '{config_file}'. Error: {e}")
-        sys.exit(1) # Exit if config is missing, as the worker cannot run.
+        with open("config.json", "r", encoding='utf-8') as f:
+            local_conf = json.load(f)
+            config.update(local_conf)
+            logger.info("📂 Loaded configuration from config.json")
+    except FileNotFoundError:
+        logger.warning("⚠️ config.json not found. Proceeding with Defaults + Env Vars.")
+
+    # 3. Override with Environment Variables (GitHub Actions)
+    # Database
+    if os.environ.get("NEO4J_URI"):
+        config["neo4j_uri"] = os.environ.get("NEO4J_URI")
+    if os.environ.get("NEO4J_USER"):
+        config["neo4j_user"] = os.environ.get("NEO4J_USER")
+    if os.environ.get("NEO4J_PASSWORD"):
+        config["neo4j_password"] = os.environ.get("NEO4J_PASSWORD")
+    
+    # APIs
+    if os.environ.get("POLYGON_API_KEY"):
+        config["polygon_api_key"] = os.environ.get("POLYGON_API_KEY")
+
+    # Email (Optional: Add these to Secrets if you want alerts from Cloud)
+    if os.environ.get("EMAIL_SENDER"):
+        config["email_sender"] = os.environ.get("EMAIL_SENDER")
+    if os.environ.get("EMAIL_PASSWORD"):
+        config["email_password"] = os.environ.get("EMAIL_PASSWORD")
+
+    return config
 
 # ==============================================================================
 # --- GLOBAL NLP MODEL LOADING ---
@@ -131,8 +171,10 @@ def generate_summary_email_body(events: list) -> str:
 def send_email_alert(config: Dict[str, Any], subject: str, body_html: str):
     """Sends a formatted HTML email alert using the STARTTLS method."""
     email_keys = ['email_sender', 'email_password', 'smtp_server', 'smtp_port', 'recipient_emails']
-    if not all(k in config for k in email_keys):
-        logger.warning("Email configuration is incomplete. Skipping alert.")
+    
+    # Graceful check for missing email config
+    if not all(config.get(k) for k in email_keys) or not config['recipient_emails']:
+        logger.warning("📧 Email configuration incomplete (or no recipients). Skipping alert.")
         return
 
     try:
@@ -163,11 +205,13 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
     """
     logger.info("📰 Checking live news for significant events...")
     try:
+        # Attempt to load news_urls.json, handle failure gracefully
         with open('news_urls.json', 'r', encoding='utf-8') as f:
             feed_urls = [s['url'] for s in json.load(f).get("sources", [])]
     except Exception as e:
         logger.error(f"Could not load news_urls.json: {e}")
-        return
+        # Use a default fallback if file missing
+        feed_urls = ["http://feeds.marketwatch.com/marketwatch/topstories/"] 
 
     articles = []
     for url in feed_urls:
@@ -181,63 +225,76 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
         logger.info("-> No new articles found in any feeds.")
         return
 
-    graph = db_manager.get_graph_from_db()
-    all_tickers = list(graph.nodes())
-    sentiment_threshold = config.get("news_sentiment_threshold", 0.7)
-    # Get a set of recent headlines to skip duplicates (Good practice)
-    processed_headlines = set(event['headline'] for event in db_manager.get_recent_events(limit=500))
-    ticker_stopwords = {'A', 'ON', 'IT', 'HAS', 'SO', 'D', 'BE', 'ARE', 'SEE'} 
+    try:
+        graph = db_manager.get_graph_from_db()
+        all_tickers = list(graph.nodes())
+        
+        # If graph is empty (first run), use target tickers from config
+        if not all_tickers:
+             all_tickers = config.get("target_tickers", [])
 
-    significant_events_found = []
-    for article in articles:
-        title = article.get('title', 'No Title')
-        if title in processed_headlines: continue
+        sentiment_threshold = config.get("news_sentiment_threshold", 0.7)
+        # Get a set of recent headlines to skip duplicates (Good practice)
+        processed_headlines = set(event['headline'] for event in db_manager.get_recent_events(limit=500))
+        ticker_stopwords = {'A', 'ON', 'IT', 'HAS', 'SO', 'D', 'BE', 'ARE', 'SEE'} 
 
-        link = article.get('link', '#')
-        for ticker in all_tickers:
-            if ticker in ticker_stopwords: continue
+        significant_events_found = []
+        for article in articles:
+            title = article.get('title', 'No Title')
+            if title in processed_headlines: continue
 
-            if re.search(r'\b' + re.escape(ticker) + r'\b', title, re.IGNORECASE):
-                score = get_financial_sentiment(title, finbert_tokenizer, finbert_model)
-                if abs(score) >= sentiment_threshold:
-                    logger.warning(f"🚨 Significant event FOUND for {ticker}! Score: {score:.2f}, Headline: {title}")
-                    
-                    processed_headlines.add(title)
-                    
-                    # --- Collect event data for the batch write later ---
-                    significant_events_found.append({
-                        'ticker': ticker, 
-                        'headline': title,
-                        'score': score, 
-                        'link': link
-                    })
-                    # ---------------------------------------------------
-                    break 
+            link = article.get('link', '#')
+            for ticker in all_tickers:
+                if ticker in ticker_stopwords: continue
 
-    if significant_events_found:
-        logger.info(f"✍️ DB-WRITE: Writing batch of {len(significant_events_found)} new events...")
-        try:
-            # --- Perform the single, robust batch write ---
-            db_manager.add_events_batch(significant_events_found)
-            logger.info("✅ DB-WRITE: Events written to Neo4j successfully.")
+                if re.search(r'\b' + re.escape(ticker) + r'\b', title, re.IGNORECASE):
+                    score = get_financial_sentiment(title, finbert_tokenizer, finbert_model)
+                    if abs(score) >= sentiment_threshold:
+                        logger.warning(f"🚨 Significant event FOUND for {ticker}! Score: {score:.2f}, Headline: {title}")
+                        
+                        processed_headlines.add(title)
+                        
+                        # --- Collect event data for the batch write later ---
+                        significant_events_found.append({
+                            'ticker': ticker, 
+                            'headline': title,
+                            'score': score, 
+                            'link': link
+                        })
+                        # ---------------------------------------------------
+                        break 
 
-            # Send email only after the database write is confirmed
-            subject = f"Financial KG Summary: {len(significant_events_found)} Significant Events Detected"
-            body_html = generate_summary_email_body(significant_events_found)
-            send_email_alert(config, subject, body_html)
+        if significant_events_found:
+            logger.info(f"✍️ DB-WRITE: Writing batch of {len(significant_events_found)} new events...")
+            try:
+                # --- Perform the single, robust batch write ---
+                db_manager.add_events_batch(significant_events_found)
+                logger.info("✅ DB-WRITE: Events written to Neo4j successfully.")
+
+                # Send email only after the database write is confirmed
+                subject = f"Financial KG Summary: {len(significant_events_found)} Significant Events Detected"
+                body_html = generate_summary_email_body(significant_events_found)
+                send_email_alert(config, subject, body_html)
+                
+            except Exception as e:
+                # Log a CRITICAL error if the database write failed
+                logger.critical(f"FATAL DB WRITE ERROR: Could not write event batch to Neo4j. Reason: {e}", exc_info=True)
+                
+        else:
+            logger.info("-> No new significant events found to write.")
             
-        except Exception as e:
-            # Log a CRITICAL error if the database write failed
-            logger.critical(f"FATAL DB WRITE ERROR: Could not write event batch to Neo4j. Reason: {e}", exc_info=True)
-            
-    else:
-        logger.info("-> No new significant events found to write.")
+    except Exception as e:
+        logger.error(f"Error during news check execution: {e}")
         
     logger.info("✅ Live news check complete.")
 
 
 def update_nodes_from_api(tickers: List[str], client: RESTClient, db_manager: DatabaseManager):
     """Fetches company data from the API and upserts it to the database in a batch."""
+    if not tickers:
+        logger.warning("No tickers provided to update_nodes_from_api. Skipping.")
+        return
+
     logger.info("🔄 Updating company nodes from Polygon API...")
     nodes_to_update = []
     for ticker in tickers:
@@ -252,7 +309,7 @@ def update_nodes_from_api(tickers: List[str], client: RESTClient, db_manager: Da
             logger.info(f"  -> Fetched data for {ticker}")
         except Exception as e:
             logger.error(f"  -> Could not fetch data for {ticker}. Reason: {e}")
-        time.sleep(13)
+        time.sleep(13) # Rate limit
     
     if nodes_to_update:
         db_manager.upsert_company_nodes_batch(nodes_to_update)
@@ -274,7 +331,7 @@ def add_manual_relationships(db_manager: DatabaseManager):
     logger.info(f"  -> ✅ Wrote {len(edges)} manual relationships to the database.")
 
 # ==============================================================================
-# --- THIS IS THE UPDATED SECTION ---
+# --- SEC SECTION ---
 # ==============================================================================
 def discover_relations_from_filings(tickers: List[str], db_manager: DatabaseManager, dl: Downloader):
     """Downloads and parses SEC filings to discover new relationships."""
@@ -287,18 +344,18 @@ def discover_relations_from_filings(tickers: List[str], db_manager: DatabaseMana
         except Exception as e:
             logger.error(f"    -> Failed to download 10-K for {ticker}: {e}")
 
+    # Load mapping
     try:
         with open('sp500_map.json', 'r', encoding='utf-8') as f:
             company_map = {item['ticker']: item['name'] for item in json.load(f) if 'name' in item}
     except FileNotFoundError:
-        logger.error("  -> 'sp500_map.json' not found. Cannot perform entity matching.")
+        logger.error("  -> 'sp500_map.json' not found. Skipping SEC entity matching.")
         return
 
     # --- BATCHING LOGIC START ---
-    # Create containers to hold all discovered items *before* writing to the DB
     all_new_relationships = []
-    all_new_nodes_map = {}       # Use a dict/map to store unique nodes, keyed by ticker
-    collected_pairs_global = set() # Use a set to track all unique pairs found (A, B)
+    all_new_nodes_map = {} 
+    collected_pairs_global = set() 
     # --- BATCHING LOGIC END ---
 
     for ticker in tickers:
@@ -323,10 +380,7 @@ def discover_relations_from_filings(tickers: List[str], db_manager: DatabaseMana
                 for related_ticker, name in company_map.items():
                     if ticker == related_ticker: continue
                     
-                    # Create a sorted pair to uniquely identify this relationship
                     pair = tuple(sorted((ticker, related_ticker)))
-                    
-                    # If we have *already* found this pair in a previous filing, skip
                     if pair in collected_pairs_global: continue
 
                     name_lower = name.lower()
@@ -335,28 +389,19 @@ def discover_relations_from_filings(tickers: List[str], db_manager: DatabaseMana
                         weight = min(1.0, 0.5 + (0.2 * sentiment))
                         attrs = {"type": "sec_discovered", "weight": round(weight, 2), "sentiment": round(sentiment, 2)}
                         
-                        # --- BATCHING LOGIC (COLLECTION) ---
-                        # 1. Add the new node to our map (dict). This automatically handles duplicates.
                         if related_ticker not in all_new_nodes_map:
                             all_new_nodes_map[related_ticker] = {
                                 "ticker": related_ticker, "name": name, "sector": "Discovered", "market_cap": 0
                             }
 
-                        # 2. Add the relationship tuple to our list
                         all_new_relationships.append((ticker, related_ticker, "SEC_DISCOVERED", attrs))
-                        
                         logger.info(f"  -> ✅ DISCOVERED: Found relationship {ticker} -> {related_ticker} (Weight: {weight:.2f})")
-                        
-                        # 3. Mark this pair as "collected" so we don't add it again
                         collected_pairs_global.add(pair)
                         
         except Exception as e:
             logger.error(f"  -> Failed to process filing for {ticker}. Reason: {e}")
 
     # --- BATCHING LOGIC (WRITE) ---
-    # Now, *after* all filings are processed, write all collected items to the database.
-    
-    # 1. Write all unique new nodes in a single batch
     if all_new_nodes_map:
         nodes_list = list(all_new_nodes_map.values())
         logger.info(f"  -> ✍️ DB-WRITE: Upserting batch of {len(nodes_list)} newly discovered company nodes...")
@@ -364,7 +409,6 @@ def discover_relations_from_filings(tickers: List[str], db_manager: DatabaseMana
     else:
         logger.info("  -> No new company nodes were discovered.")
 
-    # 2. Write all unique new relationships
     if all_new_relationships:
         logger.info(f"  -> ✍️ DB-WRITE: Upserting {len(all_new_relationships)} newly discovered unique relationships...")
         for u, v, rel_type, attrs in all_new_relationships:
@@ -375,10 +419,6 @@ def discover_relations_from_filings(tickers: List[str], db_manager: DatabaseMana
 
     logger.info("✅ SEC relationship discovery complete.")
 
-# ==============================================================================
-# --- END OF UPDATED SECTION ---
-# ==============================================================================
-
 
 # ==============================================================================
 # --- MAIN WORKER ORCHESTRATION ---
@@ -386,19 +426,30 @@ def discover_relations_from_filings(tickers: List[str], db_manager: DatabaseMana
 
 def run_full_data_pipeline():
     """The main function for the worker, orchestrating all data tasks."""
-    config = load_config()
+    # Use the robust config loader
+    config = get_worker_config()
+    
     db_manager = DatabaseManager(config)
     if not db_manager.is_connected():
         logger.critical("Cannot run pipeline without a valid database connection.")
         return
 
-    client = RESTClient(config.get("polygon_api_key"))
+    # Check for API key before starting
+    api_key = config.get("polygon_api_key")
+    if not api_key:
+        logger.warning("⚠️ No POLYGON_API_KEY found. Skipping API updates.")
+        client = None
+    else:
+        client = RESTClient(api_key)
+    
     dl = Downloader(config.get("downloader_company"), config.get("downloader_email"))
     tickers = config.get("target_tickers", [])
     
     logger.info("\n" + "="*60 + f"\n🚀 STARTING DATA REFRESH PIPELINE\n" + "="*60)
     try:
-        update_nodes_from_api(tickers, client, db_manager)
+        if client:
+            update_nodes_from_api(tickers, client, db_manager)
+        
         add_manual_relationships(db_manager)
         discover_relations_from_filings(tickers, db_manager, dl)
         check_live_news_for_events(db_manager, config)
