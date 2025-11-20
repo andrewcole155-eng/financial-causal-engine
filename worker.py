@@ -8,8 +8,12 @@ import os
 import glob
 import logging
 import sys
+import smtplib
 from typing import Dict, Any, List
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
+# Third-party Imports
 import feedparser
 import spacy
 import torch
@@ -18,12 +22,7 @@ from polygon import RESTClient
 from sec_edgar_downloader import Downloader
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-# --- Email Alerting Imports ---
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-
-# --- Local Imports ---
+# Local Imports
 from database_manager import DatabaseManager
 
 # ==============================================================================
@@ -31,7 +30,13 @@ from database_manager import DatabaseManager
 # ==============================================================================
 
 # Setup professional logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    level=logging.INFO, 
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(sys.stdout) # Ensure logs go to console/Docker logs
+    ]
+)
 logger = logging.getLogger("FinancialWorker")
 
 def get_worker_config() -> Dict[str, Any]:
@@ -39,30 +44,32 @@ def get_worker_config() -> Dict[str, Any]:
     Robust configuration loader.
     1. Defines defaults (prevents crashes).
     2. Loads config.json (if exists locally).
-    3. Overrides with Environment Variables (for GitHub Actions).
+    3. Overrides with Environment Variables (for GitHub Actions/Docker).
     """
     # 1. Defaults
     config = {
         "news_sentiment_threshold": 0.7,
-        # Default list so worker does something if config is missing on cloud
         "target_tickers": ["AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "TSLA", "META", "BRK.B", "LLY", "V"],
         "downloader_company": "OpenSourceProject",
         "downloader_email": "worker@example.com",
         "recipient_emails": [],
         "smtp_server": "smtp.gmail.com",
-        "smtp_port": 587
+        "smtp_port": 587,
+        "email_sender": "",
+        "email_password": ""
     }
 
     # 2. Try loading local config.json (Merge if exists)
     try:
-        with open("config.json", "r", encoding='utf-8') as f:
-            local_conf = json.load(f)
-            config.update(local_conf)
-            logger.info("📂 Loaded configuration from config.json")
-    except FileNotFoundError:
-        logger.warning("⚠️ config.json not found. Proceeding with Defaults + Env Vars.")
+        if os.path.exists("config.json"):
+            with open("config.json", "r", encoding='utf-8') as f:
+                local_conf = json.load(f)
+                config.update(local_conf)
+                logger.info("📂 Loaded configuration from config.json")
+    except Exception as e:
+        logger.warning(f"⚠️ Error loading config.json: {e}. Proceeding with Defaults + Env Vars.")
 
-    # 3. Override with Environment Variables (GitHub Actions)
+    # 3. Override with Environment Variables (Docker/Cloud)
     # Database
     if os.environ.get("NEO4J_URI"):
         config["neo4j_uri"] = os.environ.get("NEO4J_URI")
@@ -75,11 +82,14 @@ def get_worker_config() -> Dict[str, Any]:
     if os.environ.get("POLYGON_API_KEY"):
         config["polygon_api_key"] = os.environ.get("POLYGON_API_KEY")
 
-    # Email (Optional: Add these to Secrets if you want alerts from Cloud)
+    # Email
     if os.environ.get("EMAIL_SENDER"):
         config["email_sender"] = os.environ.get("EMAIL_SENDER")
     if os.environ.get("EMAIL_PASSWORD"):
         config["email_password"] = os.environ.get("EMAIL_PASSWORD")
+    if os.environ.get("RECIPIENT_EMAILS"):
+        # Expects comma-separated string in ENV
+        config["recipient_emails"] = os.environ.get("RECIPIENT_EMAILS").split(",")
 
     return config
 
@@ -95,6 +105,7 @@ def get_financial_sentiment(text: str, tokenizer: Any, model: Any) -> float:
         outputs = model(**inputs)
         scores = torch.nn.functional.softmax(outputs.logits, dim=-1)
         # FinBERT: 0=positive, 1=negative, 2=neutral
+        # Result is Positive Score minus Negative Score
         return (scores[0][0] - scores[0][1]).item()
     except Exception as e:
         logger.error(f"Error during sentiment analysis: {e}")
@@ -196,7 +207,7 @@ def send_email_alert(config: Dict[str, Any], subject: str, body_html: str):
         logger.error(f"Could not send email alert. Reason: {e}")
 
 # ==============================================================================
-# --- DATA PIPELINE FUNCTIONS (worker.py) ---
+# --- DATA PIPELINE FUNCTIONS ---
 # ==============================================================================
 
 def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, Any]):
@@ -204,13 +215,14 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
     Fetches live news, collects significant events, and saves them in a batch.
     """
     logger.info("📰 Checking live news for significant events...")
+    
+    # Load feed URLs
     try:
-        # Attempt to load news_urls.json, handle failure gracefully
         with open('news_urls.json', 'r', encoding='utf-8') as f:
             feed_urls = [s['url'] for s in json.load(f).get("sources", [])]
     except Exception as e:
         logger.error(f"Could not load news_urls.json: {e}")
-        # Use a default fallback if file missing
+        # Fallback
         feed_urls = ["http://feeds.marketwatch.com/marketwatch/topstories/"] 
 
     articles = []
@@ -234,42 +246,48 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
              all_tickers = config.get("target_tickers", [])
 
         sentiment_threshold = config.get("news_sentiment_threshold", 0.7)
-        # Get a set of recent headlines to skip duplicates (Good practice)
-        processed_headlines = set(event['headline'] for event in db_manager.get_recent_events(limit=500))
-        ticker_stopwords = {'A', 'ON', 'IT', 'HAS', 'SO', 'D', 'BE', 'ARE', 'SEE'} 
+        
+        # Get recent headlines to skip duplicates
+        recent_events = db_manager.get_recent_events(limit=500)
+        processed_headlines = set(event['headline'] for event in recent_events)
+        
+        ticker_stopwords = {'A', 'ON', 'IT', 'HAS', 'SO', 'D', 'BE', 'ARE', 'SEE', 'CAN', 'OR'} 
 
         significant_events_found = []
+        
         for article in articles:
             title = article.get('title', 'No Title')
             if title in processed_headlines: continue
 
             link = article.get('link', '#')
+            
             for ticker in all_tickers:
                 if ticker in ticker_stopwords: continue
 
+                # Regex search for whole word ticker match
                 if re.search(r'\b' + re.escape(ticker) + r'\b', title, re.IGNORECASE):
                     score = get_financial_sentiment(title, finbert_tokenizer, finbert_model)
+                    
                     if abs(score) >= sentiment_threshold:
                         logger.warning(f"🚨 Significant event FOUND for {ticker}! Score: {score:.2f}, Headline: {title}")
                         
                         processed_headlines.add(title)
                         
-                        # --- Collect event data for the batch write later ---
+                        # --- Collect event data ---
                         significant_events_found.append({
                             'ticker': ticker, 
                             'headline': title,
                             'score': score, 
                             'link': link
                         })
-                        # ---------------------------------------------------
-                        break 
+                        break # Stop checking other tickers for this specific article
 
         if significant_events_found:
             logger.info(f"✍️ DB-WRITE: Writing batch of {len(significant_events_found)} new events...")
             try:
                 # --- Perform the single, robust batch write ---
                 db_manager.add_events_batch(significant_events_found)
-                logger.info("✅ DB-WRITE: Events written to Neo4j successfully.")
+                logger.info("✅ DB-WRITE: Events written to Database successfully.")
 
                 # Send email only after the database write is confirmed
                 subject = f"Financial KG Summary: {len(significant_events_found)} Significant Events Detected"
@@ -277,9 +295,7 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
                 send_email_alert(config, subject, body_html)
                 
             except Exception as e:
-                # Log a CRITICAL error if the database write failed
-                logger.critical(f"FATAL DB WRITE ERROR: Could not write event batch to Neo4j. Reason: {e}", exc_info=True)
-                
+                logger.critical(f"FATAL DB WRITE ERROR: Could not write event batch. Reason: {e}", exc_info=True)
         else:
             logger.info("-> No new significant events found to write.")
             
@@ -309,7 +325,7 @@ def update_nodes_from_api(tickers: List[str], client: RESTClient, db_manager: Da
             logger.info(f"  -> Fetched data for {ticker}")
         except Exception as e:
             logger.error(f"  -> Could not fetch data for {ticker}. Reason: {e}")
-        time.sleep(13) # Rate limit
+        time.sleep(13) # Rate limit compliant
     
     if nodes_to_update:
         db_manager.upsert_company_nodes_batch(nodes_to_update)
@@ -340,6 +356,7 @@ def discover_relations_from_filings(tickers: List[str], db_manager: DatabaseMana
     logger.info("  -> Downloading recent 10-K filings...")
     for ticker in tickers:
         try:
+            # Note: 'download_details' deprecated in newer versions, check your library version
             dl.get("10-K", ticker, limit=1, download_details=False)
         except Exception as e:
             logger.error(f"    -> Failed to download 10-K for {ticker}: {e}")
@@ -395,7 +412,7 @@ def discover_relations_from_filings(tickers: List[str], db_manager: DatabaseMana
                             }
 
                         all_new_relationships.append((ticker, related_ticker, "SEC_DISCOVERED", attrs))
-                        logger.info(f"  -> ✅ DISCOVERED: Found relationship {ticker} -> {related_ticker} (Weight: {weight:.2f})")
+                        logger.info(f"  -> ✅ DISCOVERED: Relationship {ticker} -> {related_ticker} (Weight: {weight:.2f})")
                         collected_pairs_global.add(pair)
                         
         except Exception as e:
@@ -456,7 +473,7 @@ def run_full_data_pipeline():
     except Exception as e:
         logger.critical(f"A critical error occurred during the pipeline execution: {e}", exc_info=True)
     finally:
-        db_manager.close() # Close SQLite connection
+        db_manager.close() # Close database connection
     
     logger.info("\n" + "="*60 + f"\n✅ PIPELINE COMPLETE\n" + "="*60 + "\n")
 
