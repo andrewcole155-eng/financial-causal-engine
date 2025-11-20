@@ -88,8 +88,10 @@ def get_worker_config() -> Dict[str, Any]:
     if os.environ.get("EMAIL_PASSWORD"):
         config["email_password"] = os.environ.get("EMAIL_PASSWORD")
     if os.environ.get("RECIPIENT_EMAILS"):
-        # Expects comma-separated string in ENV
-        config["recipient_emails"] = os.environ.get("RECIPIENT_EMAILS").split(",")
+        # 1. Read the secret string (RECIPIENT_EMAILS)
+        raw_recipients = os.environ.get("RECIPIENT_EMAILS")
+        # 2. Split by comma and strip spaces to create the list (recipient_emails)
+        config["recipient_emails"] = [email.strip() for email in raw_recipients.split(",") if email.strip()]
 
     return config
 

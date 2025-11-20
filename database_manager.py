@@ -267,7 +267,7 @@ class DatabaseManager:
         results = self.execute_read(query)
         return [_clean_properties(event) for event in results]
 
-    def get_recent_events(self, limit: int = 20) -> List[Dict[str, Any]]:
+    def get_recent_events(self, limit: int = 100) -> List[Dict[str, Any]]:
         """Retrieves the most recent significant events from Neo4j."""
         if not self.is_connected(): return []
         
