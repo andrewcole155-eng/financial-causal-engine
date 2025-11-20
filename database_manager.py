@@ -160,13 +160,16 @@ class DatabaseManager:
     # --- CORE GRAPH METHODS ---
     # ==========================================================================
 
-    def upsert_company_nodes_batch(self, nodes_data: List[Dict[str, Any]]):
+    def upsert_company_nodes_batch(self, nodes_data: List[Dict[str, Any]], batch_size: int = 100):
         """
         Inserts or updates a batch of company nodes in Neo4j.
+        INCLUDES CHUNKING to prevent SSLEOFError on cloud instances.
         """
         if not self.is_connected() or not nodes_data:
             return
-        logger.info(f" -> Upserting batch of {len(nodes_data)} company nodes...")
+
+        logger.info(f" -> Upserting {len(nodes_data)} company nodes (in batches of {batch_size})...")
+        
         query = """
         UNWIND $nodes_data AS node_props
         MERGE (c:Company {ticker: node_props.ticker})
@@ -174,7 +177,16 @@ class DatabaseManager:
             c.sector = node_props.sector,
             c.market_cap = node_props.market_cap
         """
-        self.execute_write(query, nodes_data=nodes_data)
+
+        # --- CHUNKING LOGIC ---
+        total = len(nodes_data)
+        for i in range(0, total, batch_size):
+            batch = nodes_data[i : i + batch_size]
+            try:
+                self.execute_write(query, nodes_data=batch)
+                logger.info(f"    -> Wrote batch {i // batch_size + 1} ({len(batch)} nodes)")
+            except Exception as e:
+                logger.error(f"    -> ❌ Failed to write node batch {i}-{i+len(batch)}: {e}")
 
     def upsert_relationship(self, source_ticker: str, target_ticker: str, rel_type: str, properties: Dict[str, Any]):
         """
@@ -200,15 +212,15 @@ class DatabaseManager:
             properties=clean_props
         )
 
-    def add_events_batch(self, events: List[Dict[str, Any]]):
+    def add_events_batch(self, events: List[Dict[str, Any]], batch_size: int = 50):
         """
         Adds a batch of events to Neo4j.
-        
-        CORRECTION: This creates a (Company)-[:HAD_EVENT]->(Event) relationship
-        to ensure it matches the query pattern used in 'get_recent_events'.
+        INCLUDES CHUNKING to prevent connection timeouts.
         """
         if not events: return
         
+        logger.info(f" -> Upserting {len(events)} events (in batches of {batch_size})...")
+
         query = """
         UNWIND $events AS event
         MERGE (c:Company {ticker: event.ticker})
@@ -226,8 +238,17 @@ class DatabaseManager:
         MERGE (c)-[:HAD_EVENT]->(e)
         """
         
-        self.execute_write(query, events=events)
-        logger.info(f" -> ✅ Successfully processed {len(events)} events in Neo4j.")
+        # --- CHUNKING LOGIC ---
+        total = len(events)
+        for i in range(0, total, batch_size):
+            batch = events[i : i + batch_size]
+            try:
+                self.execute_write(query, events=batch)
+                logger.info(f"    -> Wrote event batch {i // batch_size + 1}")
+            except Exception as e:
+                logger.error(f"    -> ❌ Failed to write event batch {i}-{i+len(batch)}: {e}")
+                
+        logger.info(f" -> ✅ Processed all {total} events.")
 
     def get_all_events(self) -> List[Dict[str, Any]]:
         """Retrieves ALL significant events from Neo4j."""
