@@ -1,5 +1,6 @@
 # requirements.txt
 streamlit
+google-generativeai
 networkx
 matplotlib
 polygon-api-client
