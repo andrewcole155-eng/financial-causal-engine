@@ -45,6 +45,51 @@ def format_market_cap(cap: float) -> str:
         return f"${cap / 1_000_000:.2f}M"
     return f"${cap / 1_000:.2f}K"
 
+# ==============================================================================
+# --- NEW FUNCTION: Inject Live Risk Scores ---
+# ==============================================================================
+def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.csv") -> nx.DiGraph:
+    """
+    Reads the live risk CSV and updates the graph nodes with real-time scores.
+    Maps continuous scores (0.0-1.0) to discrete risk levels (0, 1, 2).
+    """
+    if not os.path.exists(csv_path):
+        logger.warning(f"Live risk file {csv_path} not found. Using static graph data.")
+        return graph
+
+    try:
+        df = pd.read_csv(csv_path)
+        # Create a dictionary for fast lookup: {Ticker: Risk_Score}
+        risk_map = pd.Series(df.Risk_Score.values, index=df.Ticker).to_dict()
+        
+        updated_count = 0
+        
+        for node in graph.nodes():
+            if node in risk_map:
+                raw_score = float(risk_map[node])
+                
+                # 1. Store the raw float for precision (used in tooltips/math)
+                graph.nodes[node]['raw_risk_score'] = raw_score
+                
+                # 2. Convert Float to Discrete Risk Level (0, 1, 2) for Coloring
+                # Adjust these thresholds based on your specific model's output distribution
+                if raw_score >= 0.7:
+                    risk_level = 2 # High Risk
+                elif raw_score >= 0.4:
+                    risk_level = 1 # Medium Risk
+                else:
+                    risk_level = 0 # Low Risk
+                    
+                graph.nodes[node]['predicted_risk'] = risk_level
+                updated_count += 1
+                
+        logger.info(f"Updated {updated_count} nodes with live risk scores.")
+        
+    except Exception as e:
+        logger.error(f"Error injecting live risk scores: {e}")
+        
+    return graph
+
 
 # ==============================================================================
 # --- NEW/UPDATED FUNCTION 1 of 3: calculate_impact_scores ---
@@ -128,25 +173,33 @@ def get_db_manager():
     
     return DatabaseManager(cloud_config)
 
-@st.cache_data(ttl=3600) # Keep the cache in case the file is large
+@st.cache_data(ttl=600) # Refresh every 10 mins to pick up new CSV data
 def get_full_graph():
-    """Cached function to load the pre-computed graph from a file."""
+    """
+    Cached function to load the pre-computed graph from a file 
+    AND inject the latest live risk scores.
+    """
     
     # --- FIX: Use an absolute path ---
     try:
         # Get the absolute path of the directory this script is in
         SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-        # Join it with the filename to get the full, robust path
+        # Join it with the filenames to get full, robust paths
         GRAPH_FILE_PATH = os.path.join(SCRIPT_DIR, "financial_graph.gml")
+        CSV_FILE_PATH = os.path.join(SCRIPT_DIR, "live_risk_scores.csv")
+        
     except Exception as e:
         logger.warning(f"Could not determine script path, falling back to relative path. Error: {e}")
         # Fallback just in case __file__ is not available
+        SCRIPT_DIR = "."
         GRAPH_FILE_PATH = "financial_graph.gml" 
+        CSV_FILE_PATH = "live_risk_scores.csv"
     # --- END FIX ---
     
     logger.info(f"Attempting to load pre-computed graph from {GRAPH_FILE_PATH}...")
+    
     try:
-        # Load using the new, full path
+        # 1. Load the Graph Structure (GML)
         graph = nx.read_gml(GRAPH_FILE_PATH)
         
     except FileNotFoundError:
@@ -173,7 +226,12 @@ def get_full_graph():
         logger.warning("Loaded graph is empty.")
         return None
         
-    logger.info(f"Graph loaded with {graph.number_of_nodes()} nodes.")
+    logger.info(f"Graph structure loaded with {graph.number_of_nodes()} nodes.")
+
+    # 2. Inject the Live Risk Data (CSV)
+    # This updates the graph object with the latest numbers before returning it
+    graph = inject_live_risk_data(graph, CSV_FILE_PATH)
+
     return graph
 
 @st.cache_data(ttl=600) 
@@ -281,6 +339,7 @@ def main():
         st.write("Select a company to load its **Top 25** strongest relationships.") 
 
         with st.spinner("Loading full graph for explorer..."):
+            # We load the full graph here primarily to get the LIVE RISK SCORES from the CSV
             financial_graph = get_full_graph()
         
         if financial_graph is None:
@@ -300,25 +359,29 @@ def main():
                 if selected_company:
                     with st.spinner(f"Loading neighborhood for {selected_company}..."):
                         
+                        # Get structure from Neo4j
                         neighborhood_graph = db_manager.get_neighborhood_graph(selected_company)
 
                         if neighborhood_graph.number_of_nodes() > 0:
                             
-                            # --- START FIX 1 of 3 ---
+                            # --- FIX: DATA SYNCHRONIZATION ---
+                            # The neighborhood graph comes from Neo4j, but the live risk scores 
+                            # are in 'financial_graph' (loaded from CSV). We must sync them.
+                            for node in neighborhood_graph.nodes():
+                                if financial_graph.has_node(node):
+                                    # Copy risk attributes from the global graph to the local view
+                                    neighborhood_graph.nodes[node]['predicted_risk'] = financial_graph.nodes[node].get('predicted_risk', 0)
+                                    neighborhood_graph.nodes[node]['raw_risk_score'] = financial_graph.nodes[node].get('raw_risk_score', 0.0)
+                            # ---------------------------------
+
                             # Manually clean the graph edges of reserved keywords
-                            # before passing to pyvis.
-                            
-                            # Create a clean copy to avoid modifying the cached graph
                             graph_for_pyvis = neighborhood_graph.copy() 
-                            
                             for u, v, data in graph_for_pyvis.edges(data=True):
-                                # Pop reserved keys if they exist
                                 data.pop('source', None)
                                 data.pop('target', None)
-                            # --- END FIX 1 of 3 ---
 
                             net = Network(height="750px", width="100%", notebook=True, cdn_resources='in_line', directed=True, bgcolor="#222222", font_color="white")
-                            net.from_nx(graph_for_pyvis) # <-- Pass the clean graph
+                            net.from_nx(graph_for_pyvis)
                             
                             risk_map = {
                                 0: {"label": "Low", "color": "#66bb6a"},  # Green
@@ -327,19 +390,24 @@ def main():
                             }
 
                             for node in net.nodes:
-                                node_data = neighborhood_graph.nodes[node["id"]]
-                                node['label'] = node["id"]
+                                node_id = node["id"]
+                                node_data = neighborhood_graph.nodes[node_id]
+                                node['label'] = node_id
                                 
-                                predicted_risk = node_data.get('predicted_risk') 
-                                risk_info = risk_map.get(predicted_risk)
+                                # Retrieve risk data (now synced)
+                                predicted_risk = node_data.get('predicted_risk', 0)
+                                raw_score = node_data.get('raw_risk_score', 0.0)
+                                
+                                risk_info = risk_map.get(predicted_risk, risk_map[0])
                                 
                                 title_prefix = ""
                                 if show_risk and risk_info:
                                     node['color'] = risk_info['color']
-                                    title_prefix = f"GNN PREDICTED RISK: {risk_info['label'].upper()}\n" \
-                                                   "----------------------------------\n"
+                                    # UPDATED TOOLTIP: Shows raw score
+                                    title_prefix = f"⚠️ RISK SCORE: {raw_score:.4f} ({risk_info['label'].upper()})\n" \
+                                                   f"----------------------------------\n"
                                 
-                                if node["id"] == selected_company:
+                                if node_id == selected_company:
                                     node['size'] = 30
                                     node['borderWidth'] = 3
                                     node['color'] = "#ffffff" 
@@ -476,16 +544,14 @@ def main():
                     
                     subgraph = financial_graph.subgraph(nodes_to_include)
 
-                    # --- START FIX 2 of 3 ---
                     # Create a clean copy for pyvis
                     graph_for_pyvis = subgraph.copy()
                     for u, v, data in graph_for_pyvis.edges(data=True):
                         data.pop('source', None)
                         data.pop('target', None)
-                    # --- END FIX 2 of 3 ---
 
                     net = Network(height="500px", width="100%", notebook=True, directed=True, bgcolor="#222222", font_color="white")
-                    net.from_nx(graph_for_pyvis) # <-- Pass the clean graph
+                    net.from_nx(graph_for_pyvis) 
                     
                     for node in net.nodes:
                         node['label'] = node["id"]
@@ -544,38 +610,40 @@ def main():
                                     best_path = path
                             
                             st.success(f"Highest-Risk path found: `{' -> '.join(best_path)}`")
-                            st.info(f"Total Path Risk Score: **{max_risk_score}**")
+                            st.info(f"Total Path Risk Level: **{max_risk_score}** (Sum of risk levels)")
 
                             path_graph = financial_graph.subgraph(best_path)
 
-                            # --- START FIX 3 of 3 ---
                             # Create a clean copy for pyvis
                             graph_for_pyvis = path_graph.copy()
                             for u, v, data in graph_for_pyvis.edges(data=True):
                                 data.pop('source', None)
                                 data.pop('target', None)
-                            # --- END FIX 3 of 3 ---
                             
                             net = Network(height="400px", width="100%", notebook=True, directed=True, bgcolor="#222222", font_color="white")
-                            net.from_nx(graph_for_pyvis) # <-- Pass the clean graph
+                            net.from_nx(graph_for_pyvis) 
                             
                             risk_map = {
-                                0: {"label": "Low", "color": "#66bb6a"},  # Green
-                                1: {"label": "Medium", "color": "#ffa726"}, # Orange
-                                2: {"label": "High", "color": "#ef5350"}  # Red
+                                0: {"label": "Low", "color": "#66bb6a"}, 
+                                1: {"label": "Medium", "color": "#ffa726"},
+                                2: {"label": "High", "color": "#ef5350"} 
                             }
 
                             for node_id in best_path:
                                 node = net.get_node(node_id)
                                 node_data = financial_graph.nodes[node_id]
-                                node_risk = node_data.get('predicted_risk')
-                                risk_info = risk_map.get(node_risk)
+                                
+                                node_risk = node_data.get('predicted_risk', 0)
+                                raw_score = node_data.get('raw_risk_score', 0.0)
+                                
+                                risk_info = risk_map.get(node_risk, risk_map[0])
                                 
                                 node['label'], node['size'] = node_id, 25
                                 
                                 if risk_info:
                                     node['color'] = risk_info['color']
-                                    node['title'] = f"GNN RISK: {risk_info['label'].upper()}"
+                                    # UPDATED TOOLTIP: Shows raw score
+                                    node['title'] = f"⚠️ RISK: {raw_score:.4f} ({risk_info['label']})"
                                 
                                 if node_id == start_node: 
                                     node['color'], node['size'] = '#55a630', 30 
@@ -613,12 +681,12 @@ def main():
         # ### because glob.glob will not work on Streamlit Cloud.
         # report_files = sorted(glob.glob("reports/*.txt"), reverse=True)
         # if not report_files:
-        # 	  st.info("No reports have been generated yet.")
+        #     st.info("No reports have been generated yet.")
         # else:
-        # 	  selected_report = st.selectbox("Select a report to view:", report_files)
-        # 	  if selected_report:
-        # 	 	   with open(selected_report, 'r', encoding='utf-8') as f:
-        # 	 	 	   st.code(f.read(), language='text')
-
+        #     selected_report = st.selectbox("Select a report to view:", report_files)
+        #     if selected_report:
+        #          with open(selected_report, 'r', encoding='utf-8') as f:
+        #              st.code(f.read(), language='text')
+        
 if __name__ == "__main__":
     main()
