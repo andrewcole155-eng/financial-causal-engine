@@ -11,6 +11,7 @@ import pandas as pd
 import networkx as nx
 import streamlit as st
 from pyvis.network import Network
+import google.generativeai as genai  # <--- NEW IMPORT FOR AI
 
 # --- Local Imports ---
 from database_manager import DatabaseManager
@@ -21,7 +22,38 @@ logger = logging.getLogger(__name__)
 
 
 # ==============================================================================
-# --- UI HELPER & ANALYSIS FUNCTIONS ---
+# --- GEMINI AI SETUP & HELPER FUNCTIONS (NEW) ---
+# ==============================================================================
+def setup_genai():
+    """Configures Google Gemini API from Streamlit Secrets."""
+    try:
+        # Check if key exists in secrets
+        if "GEMINI_API_KEY" in st.secrets:
+            api_key = st.secrets["GEMINI_API_KEY"]
+        elif "general" in st.secrets and "GEMINI_API_KEY" in st.secrets["general"]:
+             api_key = st.secrets["general"]["GEMINI_API_KEY"]
+        else:
+            return False
+
+        genai.configure(api_key=api_key)
+        return True
+    except Exception as e:
+        logger.error(f"Failed to configure Gemini AI: {e}")
+        return False
+
+def generate_ai_analysis(prompt: str) -> str:
+    """Sends a prompt to Google Gemini and returns the response."""
+    try:
+        # Using gemini-pro for text-based reasoning
+        model = genai.GenerativeModel('gemini-pro') 
+        response = model.generate_content(prompt)
+        return response.text
+    except Exception as e:
+        return f"Error generating AI explanation: {str(e)}"
+
+
+# ==============================================================================
+# --- UI HELPER & ANALYSIS FUNCTIONS (EXISTING) ---
 # ==============================================================================
 
 def load_config(config_file: str = "config.json") -> Dict[str, Any]:
@@ -301,6 +333,13 @@ def main():
         st.info("This can also be caused by a 'Paused' Free Tier database on Neo4j Aura. Please check your Aura dashboard.")
         st.stop()
 
+    # --- AI SETUP ---
+    gemini_active = setup_genai()
+    if gemini_active:
+        st.sidebar.success("🤖 Gemini AI Active")
+    else:
+        st.sidebar.warning("⚠️ Google Gemini API Key not found. AI Explanations disabled.")
+
     st.sidebar.success(f"Connected to Neo4j.")
     st.sidebar.info(f"The knowledge graph will be loaded on-demand when you open a tab.")
 
@@ -355,102 +394,126 @@ def main():
             
             show_risk = st.toggle("Show GNN Risk Coloring", value=True)
 
-            if st.button("🗺️ Explore Neighborhood"):
-                if selected_company:
-                    with st.spinner(f"Loading neighborhood for {selected_company}..."):
-                        
-                        # Get structure from Neo4j
-                        neighborhood_graph = db_manager.get_neighborhood_graph(selected_company)
+            # Layout for Graph + AI
+            col_graph, col_ai = st.columns([3, 1])
 
-                        if neighborhood_graph.number_of_nodes() > 0:
+            with col_graph:
+                if st.button("🗺️ Explore Neighborhood"):
+                    if selected_company:
+                        with st.spinner(f"Loading neighborhood for {selected_company}..."):
                             
-                            # --- FIX: DATA SYNCHRONIZATION ---
-                            # The neighborhood graph comes from Neo4j, but the live risk scores 
-                            # are in 'financial_graph' (loaded from CSV). We must sync them.
-                            for node in neighborhood_graph.nodes():
-                                if financial_graph.has_node(node):
-                                    # Copy risk attributes from the global graph to the local view
-                                    neighborhood_graph.nodes[node]['predicted_risk'] = financial_graph.nodes[node].get('predicted_risk', 0)
-                                    neighborhood_graph.nodes[node]['raw_risk_score'] = financial_graph.nodes[node].get('raw_risk_score', 0.0)
-                            # ---------------------------------
+                            # Get structure from Neo4j
+                            neighborhood_graph = db_manager.get_neighborhood_graph(selected_company)
 
-                            # Manually clean the graph edges of reserved keywords
-                            graph_for_pyvis = neighborhood_graph.copy() 
-                            for u, v, data in graph_for_pyvis.edges(data=True):
-                                data.pop('source', None)
-                                data.pop('target', None)
+                            if neighborhood_graph.number_of_nodes() > 0:
+                                
+                                # --- FIX: DATA SYNCHRONIZATION ---
+                                for node in neighborhood_graph.nodes():
+                                    if financial_graph.has_node(node):
+                                        # Copy risk attributes from the global graph to the local view
+                                        neighborhood_graph.nodes[node]['predicted_risk'] = financial_graph.nodes[node].get('predicted_risk', 0)
+                                        neighborhood_graph.nodes[node]['raw_risk_score'] = financial_graph.nodes[node].get('raw_risk_score', 0.0)
+                                # ---------------------------------
 
-                            net = Network(height="750px", width="100%", notebook=True, cdn_resources='in_line', directed=True, bgcolor="#222222", font_color="white")
-                            net.from_nx(graph_for_pyvis)
-                            
-                            risk_map = {
-                                0: {"label": "Low", "color": "#66bb6a"},  # Green
-                                1: {"label": "Medium", "color": "#ffa726"}, # Orange
-                                2: {"label": "High", "color": "#ef5350"}  # Red
-                            }
+                                # Manually clean the graph edges of reserved keywords
+                                graph_for_pyvis = neighborhood_graph.copy() 
+                                for u, v, data in graph_for_pyvis.edges(data=True):
+                                    data.pop('source', None)
+                                    data.pop('target', None)
 
-                            for node in net.nodes:
-                                node_id = node["id"]
-                                node_data = neighborhood_graph.nodes[node_id]
-                                node['label'] = node_id
+                                net = Network(height="750px", width="100%", notebook=True, cdn_resources='in_line', directed=True, bgcolor="#222222", font_color="white")
+                                net.from_nx(graph_for_pyvis)
                                 
-                                # Retrieve risk data (now synced)
-                                predicted_risk = node_data.get('predicted_risk', 0)
-                                raw_score = node_data.get('raw_risk_score', 0.0)
-                                
-                                risk_info = risk_map.get(predicted_risk, risk_map[0])
-                                
-                                title_prefix = ""
-                                if show_risk and risk_info:
-                                    node['color'] = risk_info['color']
-                                    # UPDATED TOOLTIP: Shows raw score
-                                    title_prefix = f"⚠️ RISK SCORE: {raw_score:.4f} ({risk_info['label'].upper()})\n" \
-                                                   f"----------------------------------\n"
-                                
-                                if node_id == selected_company:
-                                    node['size'] = 30
-                                    node['borderWidth'] = 3
-                                    node['color'] = "#ffffff" 
+                                risk_map = {
+                                    0: {"label": "Low", "color": "#66bb6a"},  # Green
+                                    1: {"label": "Medium", "color": "#ffa726"}, # Orange
+                                    2: {"label": "High", "color": "#ef5350"}  # Red
+                                }
+
+                                for node in net.nodes:
+                                    node_id = node["id"]
+                                    node_data = neighborhood_graph.nodes[node_id]
+                                    node['label'] = node_id
                                     
-                                market_cap_str = format_market_cap(node_data.get('market_cap', 0))
-                                node["title"] = (
-                                    f"{title_prefix}"
-                                    f"Name: {node_data.get('name', 'N/A')}\n"
-                                    f"Sector: {node_data.get('sector', 'N/A')}\n"
-                                    f"Market Cap: {market_cap_str}"
-                                )
+                                    # Retrieve risk data (now synced)
+                                    predicted_risk = node_data.get('predicted_risk', 0)
+                                    raw_score = node_data.get('raw_risk_score', 0.0)
+                                    
+                                    risk_info = risk_map.get(predicted_risk, risk_map[0])
+                                    
+                                    title_prefix = ""
+                                    if show_risk and risk_info:
+                                        node['color'] = risk_info['color']
+                                        # UPDATED TOOLTIP: Shows raw score
+                                        title_prefix = f"⚠️ RISK SCORE: {raw_score:.4f} ({risk_info['label'].upper()})\n" \
+                                                       f"----------------------------------\n"
+                                    
+                                    if node_id == selected_company:
+                                        node['size'] = 30
+                                        node['borderWidth'] = 3
+                                        node['color'] = "#ffffff" 
+                                        
+                                    market_cap_str = format_market_cap(node_data.get('market_cap', 0))
+                                    node["title"] = (
+                                        f"{title_prefix}"
+                                        f"Name: {node_data.get('name', 'N/A')}\n"
+                                        f"Sector: {node_data.get('sector', 'N/A')}\n"
+                                        f"Market Cap: {market_cap_str}"
+                                    )
 
-                                if node_data.get('sector') and node_data.get('sector') != 'Discovered':
-                                    node['group'] = node_data.get('sector')
-                            
-                            RELATIONSHIP_THRESHOLD = 75 
-                            
-                            if neighborhood_graph.number_of_edges() > RELATIONSHIP_THRESHOLD:
-                                st.warning(f"Graph is large ({neighborhood_graph.number_of_edges()} relationships). Displaying with a simplified, static layout to prevent crashing.")
-                                options_str = '{"nodes": {"font": {"size": 18}}, "edges": {"smooth": {"type": "dynamic"}}, "physics": {"enabled": false}}'
+                                    if node_data.get('sector') and node_data.get('sector') != 'Discovered':
+                                        node['group'] = node_data.get('sector')
+                                
+                                RELATIONSHIP_THRESHOLD = 75 
+                                
+                                if neighborhood_graph.number_of_edges() > RELATIONSHIP_THRESHOLD:
+                                    st.warning(f"Graph is large ({neighborhood_graph.number_of_edges()} relationships). Displaying with a simplified, static layout to prevent crashing.")
+                                    options_str = '{"nodes": {"font": {"size": 18}}, "edges": {"smooth": {"type": "dynamic"}}, "physics": {"enabled": false}}'
+                                
+                                else:
+                                    st.info(f"Displaying {neighborhood_graph.number_of_nodes()} companies and {neighborhood_graph.number_of_edges()} relationships.")
+                                    options_str = '{"nodes": {"font": {"size": 18}}, "edges": {"smooth": {"type": "dynamic"}}, "physics": {"barnesHut": {"gravitationalConstant": -20000, "springLength": 350}, "stabilization": {"iterations": 1000}}}'
+                                
+                                net.set_options(options_str)
+                                
+                                html_file = f"temp_graph_{uuid.uuid4().hex}.html"
+                                try:
+                                    net.save_graph(html_file)
+                                    with open(html_file, 'r', encoding='utf-8') as f:
+                                        html_content = f.read()
+                                    st.components.v1.html(html_content, height=800, scrolling=True)
+                                except Exception as e:
+                                    st.error(f"Failed to render graph: {e}")
+                                finally:
+                                    if os.path.exists(html_file):
+                                        os.remove(html_file)
                             
                             else:
-                                st.info(f"Displaying {neighborhood_graph.number_of_nodes()} companies and {neighborhood_graph.number_of_edges()} relationships.")
-                                options_str = '{"nodes": {"font": {"size": 18}}, "edges": {"smooth": {"type": "dynamic"}}, "physics": {"barnesHut": {"gravitationalConstant": -20000, "springLength": 350}, "stabilization": {"iterations": 1000}}}'
+                                st.warning(f"No relationships found for {selected_company}.")
+                    else:
+                        st.warning("Please select a company.")
+            
+            # --- AI ANALYSIS COLUMN ---
+            with col_ai:
+                st.subheader("🤖 AI Insight")
+                if not gemini_active:
+                    st.write("Gemini API not active.")
+                elif selected_company:
+                    st.write(f"Analyze risks for **{selected_company}**.")
+                    prompt_type = st.selectbox("Query Type:", ["Economic Logic", "Contagion Risk"], key="ai_select")
+                    
+                    if st.button("🧠 Generate"):
+                        with st.spinner("Consulting Gemini..."):
+                            # Construct context
+                            my_risk = financial_graph.nodes[selected_company].get('raw_risk_score', 0.0)
+                            neighbors = list(financial_graph.neighbors(selected_company))[:5]
+                            neighbor_str = ", ".join(neighbors)
                             
-                            net.set_options(options_str)
+                            prompt = f"Financial Analysis for {selected_company}. Risk Score: {my_risk}. Upstream Entities: {neighbor_str}. Explain the {prompt_type} of this graph structure."
                             
-                            html_file = f"temp_graph_{uuid.uuid4().hex}.html"
-                            try:
-                                net.save_graph(html_file)
-                                with open(html_file, 'r', encoding='utf-8') as f:
-                                    html_content = f.read()
-                                st.components.v1.html(html_content, height=800, scrolling=True)
-                            except Exception as e:
-                                st.error(f"Failed to render graph: {e}")
-                            finally:
-                                if os.path.exists(html_file):
-                                    os.remove(html_file)
-                        
-                        else:
-                            st.warning(f"No relationships found for {selected_company}.")
-                else:
-                    st.warning("Please select a company.")
+                            explanation = generate_ai_analysis(prompt)
+                            st.success("Generated Insight:")
+                            st.write(explanation)
 
     # ==============================================================================
     # --- TAB 3: SIMULATE SCENARIOS ---
@@ -611,6 +674,15 @@ def main():
                             
                             st.success(f"Highest-Risk path found: `{' -> '.join(best_path)}`")
                             st.info(f"Total Path Risk Level: **{max_risk_score}** (Sum of risk levels)")
+
+                            # --- AI INTEGRATION FOR PATHS ---
+                            if gemini_active:
+                                if st.button("🧠 Explain this Path Logic"):
+                                    with st.spinner("Analyzing path logic..."):
+                                        path_str = ' -> '.join(best_path)
+                                        prompt = f"Explain the economic logic behind this contagion path: {path_str}."
+                                        st.write(generate_ai_analysis(prompt))
+                            # --------------------------------
 
                             path_graph = financial_graph.subgraph(best_path)
 
