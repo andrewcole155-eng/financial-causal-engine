@@ -82,11 +82,23 @@ def get_worker_config() -> Dict[str, Any]:
     if os.environ.get("POLYGON_API_KEY"):
         config["polygon_api_key"] = os.environ.get("POLYGON_API_KEY")
 
-    # Email
+    # Email - Server Config
+    if os.environ.get("EMAIL_SERVER"):
+        config["smtp_server"] = os.environ.get("EMAIL_SERVER")
+    
+    if os.environ.get("EMAIL_PORT"):
+        try:
+            config["smtp_port"] = int(os.environ.get("EMAIL_PORT"))
+        except ValueError:
+            logger.warning(f"⚠️ Invalid EMAIL_PORT '{os.environ.get('EMAIL_PORT')}'. Defaulting to {config['smtp_port']}.")
+
+    # Email - Credentials
     if os.environ.get("EMAIL_SENDER"):
         config["email_sender"] = os.environ.get("EMAIL_SENDER")
     if os.environ.get("EMAIL_PASSWORD"):
         config["email_password"] = os.environ.get("EMAIL_PASSWORD")
+    
+    # Email - Recipients
     if os.environ.get("RECIPIENT_EMAILS"):
         # 1. Read the secret string (RECIPIENT_EMAILS)
         raw_recipients = os.environ.get("RECIPIENT_EMAILS")
@@ -183,11 +195,14 @@ def generate_summary_email_body(events: list) -> str:
 
 def send_email_alert(config: Dict[str, Any], subject: str, body_html: str):
     """Sends a formatted HTML email alert using the STARTTLS method."""
-    email_keys = ['email_sender', 'email_password', 'smtp_server', 'smtp_port', 'recipient_emails']
-    
-    # Graceful check for missing email config
-    if not all(config.get(k) for k in email_keys) or not config['recipient_emails']:
-        logger.warning("📧 Email configuration incomplete (or no recipients). Skipping alert.")
+    # We check if recipient_emails is empty OR if critical keys are missing
+    if not config.get('recipient_emails'):
+        logger.warning("📧 No recipients configured in environment variables. Skipping alert.")
+        return
+
+    required_keys = ['email_sender', 'email_password', 'smtp_server', 'smtp_port']
+    if not all(config.get(k) for k in required_keys):
+        logger.warning("📧 Email configuration missing (Sender, Password, or Server). Skipping alert.")
         return
 
     try:
@@ -197,7 +212,7 @@ def send_email_alert(config: Dict[str, Any], subject: str, body_html: str):
         msg['To'] = ", ".join(config['recipient_emails'])
         msg.attach(MIMEText(body_html, 'html'))
         
-        logger.info("Connecting to SMTP server to send email alert...")
+        logger.info(f"Connecting to SMTP server {config['smtp_server']}:{config['smtp_port']}...")
         
         with smtplib.SMTP(config['smtp_server'], config['smtp_port']) as server:
             server.starttls()  
