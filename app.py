@@ -87,15 +87,15 @@ def format_market_cap(cap: float) -> str:
     return f"${cap / 1_000:.2f}K"
 
 # ==============================================================================
-# --- FUNCTION: Inject Live Risk Scores (UPDATED: DYNAMIC SCALING) ---
+# --- FUNCTION: Inject Live Risk Scores (FIX: RANK-BASED DISTRIBUTION) ---
 # ==============================================================================
 def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.csv") -> nx.DiGraph:
     """
-    Reads the live risk CSV and updates the graph nodes with real-time scores.
-    USES DYNAMIC PERCENTILES:
-    - High Risk (Red): Top 5% of scores
-    - Medium Risk (Orange): Top 20% of scores
-    - Low Risk (Green): Bottom 80%
+    Reads the live risk CSV and updates nodes.
+    
+    CRITICAL FIX: Uses RANKING (Percentiles) instead of raw values.
+    This ensures we always see Red/Orange/Green even if the raw scores 
+    are very small or clustered together.
     """
     if not os.path.exists(csv_path):
         logger.warning(f"Live risk file {csv_path} not found. Using static graph data.")
@@ -104,43 +104,50 @@ def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.c
     try:
         df = pd.read_csv(csv_path)
         
-        # --- NEW: Calculate Dynamic Thresholds ---
-        # If scores are tiny (e.g., 0.00006), we need to find the relative 
-        # distribution to color them correctly.
-        
-        # Ensure we have data
         if df.empty:
             return graph
 
-        # Calculate the 80th and 95th percentiles
-        # This ensures that the "worst" companies always turn red, regardless of how small the number is.
-        threshold_med = df['Risk_Score'].quantile(0.80) 
-        threshold_high = df['Risk_Score'].quantile(0.95)
-        
-        # Create a dictionary for fast lookup: {Ticker: Risk_Score}
-        risk_map = pd.Series(df.Risk_Score.values, index=df.Ticker).to_dict()
+        # --- DEBUG: Show distribution stats in sidebar (Optional, helps debugging) ---
+        # You can remove these 3 lines if you don't want them in the UI
+        with st.sidebar.expander("📊 Risk Distribution Debug"):
+            st.write(df['Risk_Score'].describe())
+
+        # --- LOGIC CHANGE: Calculate Percentile Rank ---
+        # pct=True gives us a score from 0.0 to 1.0 based on ORDER, not magnitude.
+        # This spreads the data out.
+        df['Risk_Rank'] = df['Risk_Score'].rank(pct=True)
+
+        # Create dictionaries for lookup
+        # 1. Map Ticker -> Raw Score (for the tooltip)
+        score_map = pd.Series(df.Risk_Score.values, index=df.Ticker).to_dict()
+        # 2. Map Ticker -> Percentile Rank (for the color)
+        rank_map = pd.Series(df.Risk_Rank.values, index=df.Ticker).to_dict()
         
         updated_count = 0
         
         for node in graph.nodes():
-            if node in risk_map:
-                raw_score = float(risk_map[node])
+            if node in score_map:
+                raw_score = float(score_map[node])
+                percentile = float(rank_map[node])
                 
-                # 1. Store the raw float for precision (used in tooltips/math)
+                # 1. Store the raw float for precision
                 graph.nodes[node]['raw_risk_score'] = raw_score
                 
-                # 2. Convert to Discrete Risk Level based on DISTRIBUTION
-                if raw_score >= threshold_high:
-                    risk_level = 2 # High Risk (Red)
-                elif raw_score >= threshold_med:
-                    risk_level = 1 # Medium Risk (Orange)
+                # 2. Assign Color based on RANK (Percentile)
+                # Top 10% of riskiest companies -> RED
+                if percentile >= 0.90:
+                    risk_level = 2 
+                # Next 20% (70th to 90th percentile) -> ORANGE
+                elif percentile >= 0.70:
+                    risk_level = 1 
+                # Bottom 70% -> GREEN
                 else:
-                    risk_level = 0 # Low Risk (Green)
+                    risk_level = 0 
                     
                 graph.nodes[node]['predicted_risk'] = risk_level
                 updated_count += 1
                 
-        logger.info(f"Updated {updated_count} nodes. High threshold: >{threshold_high:.6f}")
+        logger.info(f"Updated {updated_count} nodes using Rank-Based coloring.")
         
     except Exception as e:
         logger.error(f"Error injecting live risk scores: {e}")
