@@ -440,6 +440,12 @@ def main():
     st.sidebar.success(f"Connected to Neo4j.")
     st.sidebar.info(f"The knowledge graph will be loaded on-demand when you open a tab.")
 
+    st.sidebar.divider() # Optional: Adds a visual line separator
+        if st.sidebar.button("🔥 Nuke Cache & Reload Data"):
+            st.cache_data.clear()
+            st.cache_resource.clear()
+            st.rerun()
+
     tab_events, tab_explore, tab_simulate, tab_path, tab_reports = st.tabs([
         "🔔 Recent Events", "🗺️ Explore Graph", "🔬 Simulate Scenarios", "↔️ Causal Pathfinding", "📂 View Reports"
     ])
