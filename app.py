@@ -791,34 +791,82 @@ def main():
                 else:
                     st.info("No downstream impacts found (Node might be isolated or impact < threshold).")
                     st.session_state['sim_impact_nodes'] = []
-            
+
             with sim_col2:
                 st.subheader("Visual Impact Graph")
-                if st.session_state['sim_impact_nodes']:
-                    nodes_to_include = {selected_company_sim, *st.session_state['sim_impact_nodes']}
+                
+                # --- FIX: LIMIT VISUALIZATION TO TOP 25 NODES ---
+                # The simulation might hit 500 nodes, creating a 'hairball'.
+                # We only want to visualize the Source + Top 25 Victims.
+                
+                if st.session_state.get('sim_impact_nodes'):
+                    # 1. Sort impacts by magnitude
+                    sorted_nodes = sorted(
+                        impact_results.items(), 
+                        key=lambda item: abs(item[1]['score']), 
+                        reverse=True
+                    )
+                    
+                    # 2. Slice the top 25
+                    top_victims = [n for n, data in sorted_nodes[:25]]
+                    
+                    # 3. Define the subgraph (Source + Top Victims)
+                    nodes_to_include = {selected_company_sim, *top_victims}
                     subgraph = financial_graph.subgraph(nodes_to_include)
                     
-                    # ... (Existing Graph Rendering Logic) ...
+                    # Create a clean copy for pyvis
                     graph_for_pyvis = subgraph.copy()
                     for u, v, data in graph_for_pyvis.edges(data=True):
                         data.pop('source', None)
                         data.pop('target', None)
 
-                    net = Network(height="500px", width="100%", notebook=True, directed=True, bgcolor="#222222", font_color="white")
+                    # --- SETUP PYVIS ---
+                    net = Network(
+                        height="500px", 
+                        width="100%", 
+                        notebook=True, 
+                        directed=True, 
+                        bgcolor="#222222", 
+                        font_color="white"
+                    )
                     net.from_nx(graph_for_pyvis) 
                     
-                    # Simple coloring for simulation
+                    # --- COLORING & PHYSICS ---
                     for node in net.nodes:
                         nid = node['id']
                         node['label'] = nid
-                        node['size'] = 20
+                        
+                        # Source Node = RED and BIG
                         if nid == selected_company_sim:
-                            node['color'] = '#FF4B4B' # Red source
-                            node['size'] = 30
+                            node['color'] = '#FF4B4B' 
+                            node['size'] = 40
+                            node['shape'] = 'diamond'
+                        
+                        # Impacted Nodes = ORANGE
                         elif nid in st.session_state['sim_impact_nodes']:
-                            node['color'] = '#FFA726' # Orange impacted
+                            node['color'] = '#FFA726' 
+                            node['size'] = 20
+                            
+                            # Add tooltip with exact impact score
+                            score = impact_results.get(nid, {}).get('score', 0)
+                            node['title'] = f"Impact: {score:.4f}"
 
-                    net.set_options('{"physics": {"enabled": false}}')
+                    # Use BarnesHut physics to push nodes apart so they don't blob
+                    net.set_options("""
+                    {
+                      "physics": {
+                        "barnesHut": {
+                          "gravitationalConstant": -30000,
+                          "centralGravity": 0.3,
+                          "springLength": 100,
+                          "springConstant": 0.05,
+                          "damping": 0.09,
+                          "avoidOverlap": 1
+                        },
+                        "minVelocity": 0.75
+                      }
+                    }
+                    """)
                     
                     html_file = f"temp_graph_{uuid.uuid4().hex}.html"
                     try:
@@ -831,6 +879,8 @@ def main():
                     finally:
                         if os.path.exists(html_file):
                             os.remove(html_file)
+                else:
+                     st.write("Run a simulation to see the graph.")
 
     # --- TAB 4: CAUSAL PATHFINDING ---
     with tab_path:
