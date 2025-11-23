@@ -320,7 +320,7 @@ class DatabaseManager:
         MATCH (c:Company {ticker: $ticker})-[r]-(neighbor:Company)
         WITH c, r, neighbor
         ORDER BY r.weight DESC
-        LIMIT 75
+        LIMIT 250
         RETURN c, neighbor, r, 
                startNode(r).ticker AS source_ticker, 
                endNode(r).ticker AS target_ticker
