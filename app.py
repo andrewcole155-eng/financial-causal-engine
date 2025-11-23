@@ -24,6 +24,15 @@ logger = logging.getLogger(__name__)
 # ==============================================================================
 # --- GEMINI AI SETUP & HELPER FUNCTIONS (NEW) ---
 # ==============================================================================
+# Check if the key exists in secrets and set it as an environment variable
+if "GEMINI_API_KEY" in st.secrets:
+    os.environ["GEMINI_API_KEY"] = st.secrets["GEMINI_API_KEY"]
+elif "GOOGLE_API_KEY" in st.secrets:
+    # Fallback in case you named it GOOGLE_API_KEY in the cloud dashboard
+    os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
+else:
+    st.warning("⚠️ API Key not found in Streamlit Cloud Secrets.")
+
 def setup_genai():
     """Configures Google Gemini API from Streamlit Secrets."""
     try:
