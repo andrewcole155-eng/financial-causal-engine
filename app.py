@@ -193,67 +193,85 @@ def analyze_systemic_vulnerability(graph: nx.DiGraph) -> pd.DataFrame:
     return df.sort_values("Systemic_Damage", ascending=True)
 
 # ==============================================================================
-# --- FUNCTION: calculate_impact_scores (FIX: WEIGHT HANDLING) ---
+# --- FUNCTION: calculate_impact_scores (FIX: BIDIRECTIONAL PROPAGATION) ---
 # ==============================================================================
 def calculate_impact_scores(graph: nx.DiGraph, start_node: str, event_magnitude: float = 1.0) -> Dict[str, dict]:
     """
     Calculates impact scores by propagating an event through the graph.
+    
+    UPDATED: Now propagates BIDIRECTIONALLY (Upstream & Downstream).
+    - If a Supplier fails, the Customer hurts (Forward).
+    - If a Customer fails, the Supplier hurts (Backward).
     """
     if start_node not in graph:
         return {}
 
-    # Multipliers based on the RECEIVING node's risk status
     risk_multipliers = {
-        0: 1.0,  # Low Risk (No amplification)
-        1: 1.2,  # Medium Risk (20% boost)
-        2: 1.5,  # High Risk (50% boost)
+        0: 1.0,  # Low Risk
+        1: 1.2,  # Medium Risk
+        2: 1.5,  # High Risk
     }
 
     impact_data = {node: {'score': 0.0, 'path': []} for node in graph.nodes}
     impact_data[start_node] = {'score': event_magnitude, 'path': [start_node]}
     
     queue = [start_node]
-    visited = set([start_node]) # Use set for O(1) lookup
+    visited = set([start_node]) 
 
     while queue:
         current_node = queue.pop(0)
         
-        # Safety check: Stop if the signal has faded out to near zero
+        # Stop if signal is too weak
         if abs(impact_data[current_node]['score']) < 0.01:
             continue
 
-        for neighbor in graph.neighbors(current_node):
-            # --- CRITICAL FIX: DEFAULT WEIGHT ---
-            edge_data = graph.get_edge_data(current_node, neighbor, default={})
+        # --- CRITICAL FIX: Get BOTH Incoming and Outgoing neighbors ---
+        # We convert to list() to avoid runtime errors if graph changes, though it shouldn't here.
+        # 1. Outgoing (Successors)
+        successors = list(graph.successors(current_node))
+        # 2. Incoming (Predecessors)
+        predecessors = list(graph.predecessors(current_node))
+        
+        # Combine them to propagate shock in all directions
+        all_neighbors = set(successors + predecessors)
+
+        for neighbor in all_neighbors:
             
-            # If 'weight' is missing or 0, default to 0.5 (Moderate connection)
-            # otherwise the simulation dies instantly.
+            # Determine edge direction for weight lookup
+            # (We need to know which way the arrow points to get the edge data)
+            if neighbor in successors:
+                edge_data = graph.get_edge_data(current_node, neighbor, default={})
+                direction = "forward"
+            else:
+                edge_data = graph.get_edge_data(neighbor, current_node, default={})
+                direction = "backward" # Shock traveling up-stream
+            
+            # Default weight logic (Fixed from previous step)
             weight = edge_data.get('weight', 0.5)
-            if weight == 0: 
-                weight = 0.5
+            if weight == 0: weight = 0.5
+            
+            # Slightly dampen backward shocks (Revenue loss is usually less fatal than Supply cut)
+            if direction == "backward":
+                weight *= 0.8 
                 
             relationship_type = edge_data.get('type', 'dependency').lower()
 
-            # Get risk multiplier of the neighbor
+            # Get neighbor risk multiplier
             neighbor_data = graph.nodes[neighbor]
             neighbor_risk_level = neighbor_data.get('predicted_risk', 0)
             risk_multiplier = risk_multipliers.get(neighbor_risk_level, 1.0)
 
-            # Calculate propagated impact
             base_impact = impact_data[current_node]['score'] * weight
             
-            # Apply Risk Multiplier only if the event is negative (Contagion)
             if event_magnitude < 0:
                 propagated_impact = base_impact * risk_multiplier
             else:
                 propagated_impact = base_impact
 
-            # Competitors usually react inversely, but for systemic risk, 
-            # we often treat shock as universal. Keeping logic simple for now.
             if relationship_type == 'competitor':
                 propagated_impact *= -1
 
-            # If this new path delivers a stronger shock than previously recorded, update it
+            # Update if this impact is stronger than any previous one
             if abs(propagated_impact) > abs(impact_data.get(neighbor, {}).get('score', 0.0)):
                 impact_data[neighbor]['score'] = propagated_impact
                 impact_data[neighbor]['path'] = impact_data[current_node]['path'] + [neighbor]
@@ -262,7 +280,6 @@ def calculate_impact_scores(graph: nx.DiGraph, start_node: str, event_magnitude:
                     visited.add(neighbor)
                     queue.append(neighbor)
 
-    # Filter out the start node and any zero impacts
     final_impacts = {
         n: d for n, d in impact_data.items() 
         if abs(d['score']) > 0.01 and n != start_node
