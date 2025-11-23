@@ -87,15 +87,15 @@ def format_market_cap(cap: float) -> str:
     return f"${cap / 1_000:.2f}K"
 
 # ==============================================================================
-# --- FUNCTION: Inject Live Risk Scores (FIX: RANK-BASED DISTRIBUTION) ---
+# --- FUNCTION: Inject Live Risk Scores (FIX: FORCE VISUAL SPREAD) ---
 # ==============================================================================
 def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.csv") -> nx.DiGraph:
     """
     Reads the live risk CSV and updates nodes.
     
-    CRITICAL FIX: Uses RANKING (Percentiles) instead of raw values.
-    This ensures we always see Red/Orange/Green even if the raw scores 
-    are very small or clustered together.
+    CRITICAL FIX: Uses method='first' for ranking.
+    This prevents 'clumping' where everyone is Green or Red.
+    It forces a visual distribution even if scores are very close.
     """
     if not os.path.exists(csv_path):
         logger.warning(f"Live risk file {csv_path} not found. Using static graph data.")
@@ -107,20 +107,18 @@ def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.c
         if df.empty:
             return graph
 
-        # --- DEBUG: Show distribution stats in sidebar (Optional, helps debugging) ---
-        # You can remove these 3 lines if you don't want them in the UI
+        # --- DEBUG: Show distribution stats in sidebar ---
+        # This will verify if your data is actually loading
         with st.sidebar.expander("📊 Risk Distribution Debug"):
             st.write(df['Risk_Score'].describe())
 
-        # --- LOGIC CHANGE: Calculate Percentile Rank ---
-        # pct=True gives us a score from 0.0 to 1.0 based on ORDER, not magnitude.
-        # This spreads the data out.
-        df['Risk_Rank'] = df['Risk_Score'].rank(pct=True)
+        # --- LOGIC CHANGE: method='first' ---
+        # This breaks ties by forcing a unique rank for every row.
+        # It guarantees we fill the 0-100 percentile range smoothly.
+        df['Risk_Rank'] = df['Risk_Score'].rank(method='first', pct=True)
 
         # Create dictionaries for lookup
-        # 1. Map Ticker -> Raw Score (for the tooltip)
         score_map = pd.Series(df.Risk_Score.values, index=df.Ticker).to_dict()
-        # 2. Map Ticker -> Percentile Rank (for the color)
         rank_map = pd.Series(df.Risk_Rank.values, index=df.Ticker).to_dict()
         
         updated_count = 0
@@ -130,14 +128,13 @@ def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.c
                 raw_score = float(score_map[node])
                 percentile = float(rank_map[node])
                 
-                # 1. Store the raw float for precision
                 graph.nodes[node]['raw_risk_score'] = raw_score
                 
-                # 2. Assign Color based on RANK (Percentile)
-                # Top 10% of riskiest companies -> RED
-                if percentile >= 0.90:
+                # Assign Color based on Forced Percentile
+                # Top 5% -> RED
+                if percentile >= 0.95:
                     risk_level = 2 
-                # Next 20% (70th to 90th percentile) -> ORANGE
+                # Next 25% (70th to 95th) -> ORANGE
                 elif percentile >= 0.70:
                     risk_level = 1 
                 # Bottom 70% -> GREEN
@@ -147,7 +144,7 @@ def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.c
                 graph.nodes[node]['predicted_risk'] = risk_level
                 updated_count += 1
                 
-        logger.info(f"Updated {updated_count} nodes using Rank-Based coloring.")
+        logger.info(f"Updated {updated_count} nodes using Forced Ranking.")
         
     except Exception as e:
         logger.error(f"Error injecting live risk scores: {e}")
