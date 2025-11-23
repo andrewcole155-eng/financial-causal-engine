@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 
 
 # ==============================================================================
-# --- GEMINI AI SETUP & HELPER FUNCTIONS (NEW) ---
+# --- GEMINI AI SETUP & HELPER FUNCTIONS ---
 # ==============================================================================
 # Check if the key exists in secrets and set it as an environment variable
 if "GEMINI_API_KEY" in st.secrets:
@@ -53,8 +53,8 @@ def setup_genai():
 def generate_ai_analysis(prompt: str) -> str:
     """Sends a prompt to Google Gemini and returns the response."""
     try:
-        # Using gemini-pro for text-based reasoning
-        model = genai.GenerativeModel('gemini-2.0-flash')
+        # UPDATED: Use gemini-1.5-flash for best stability and speed
+        model = genai.GenerativeModel('gemini-1.5-flash')
         response = model.generate_content(prompt)
         return response.text
     except Exception as e:
@@ -62,7 +62,7 @@ def generate_ai_analysis(prompt: str) -> str:
 
 
 # ==============================================================================
-# --- UI HELPER & ANALYSIS FUNCTIONS (EXISTING) ---
+# --- UI HELPER & ANALYSIS FUNCTIONS ---
 # ==============================================================================
 
 def load_config(config_file: str = "config.json") -> Dict[str, Any]:
@@ -87,7 +87,7 @@ def format_market_cap(cap: float) -> str:
     return f"${cap / 1_000:.2f}K"
 
 # ==============================================================================
-# --- NEW FUNCTION: Inject Live Risk Scores ---
+# --- FUNCTION: Inject Live Risk Scores ---
 # ==============================================================================
 def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.csv") -> nx.DiGraph:
     """
@@ -113,7 +113,6 @@ def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.c
                 graph.nodes[node]['raw_risk_score'] = raw_score
                 
                 # 2. Convert Float to Discrete Risk Level (0, 1, 2) for Coloring
-                # Adjust these thresholds based on your specific model's output distribution
                 if raw_score >= 0.7:
                     risk_level = 2 # High Risk
                 elif raw_score >= 0.4:
@@ -133,7 +132,7 @@ def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.c
 
 
 # ==============================================================================
-# --- NEW/UPDATED FUNCTION 1 of 3: calculate_impact_scores ---
+# --- FUNCTION: calculate_impact_scores ---
 # ==============================================================================
 def calculate_impact_scores(graph: nx.DiGraph, start_node: str, event_magnitude: float = 1.0) -> Dict[str, dict]:
     """
@@ -195,6 +194,21 @@ def calculate_impact_scores(graph: nx.DiGraph, start_node: str, event_magnitude:
 # ==============================================================================
 # --- CACHED FUNCTIONS ---
 # ==============================================================================
+
+# --- NEW: Load Company Names for Dropdown ---
+@st.cache_data
+def load_company_names():
+    """Loads the dictionary mapping Tickers -> Company Names."""
+    try:
+        # Use absolute path to ensure Streamlit Cloud finds it
+        SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+        FILE_PATH = os.path.join(SCRIPT_DIR, 'sp500_companies.json')
+        
+        with open(FILE_PATH, 'r') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        # Fallback if file isn't pushed to git yet
+        return {} 
 
 @st.cache_resource
 def get_db_manager():
@@ -395,11 +409,24 @@ def main():
         else:
             all_nodes = sorted(list(financial_graph.nodes()))
             
+            # --- UPDATED DROPDOWN WITH COMPANY NAMES ---
+            company_map = load_company_names()
+            
+            # Helper to format the display (e.g. "Apple Inc. (AAPL)")
+            def format_ticker(ticker):
+                name = company_map.get(ticker)
+                if name:
+                    return f"{name} ({ticker})"
+                return ticker
+
             selected_company = st.selectbox(
                 "Select a company to explore:", 
                 all_nodes, 
+                index=all_nodes.index("AAPL") if "AAPL" in all_nodes else 0,
+                format_func=format_ticker, # <--- Displays Readable Names
                 key="explore_select"
             )
+            # -------------------------------------------
             
             show_risk = st.toggle("Show GNN Risk Coloring", value=True)
 
@@ -757,17 +784,6 @@ def main():
         st.write("This feature is currently disabled on Streamlit Cloud, as it cannot access the local 'reports/' folder.")
         
         st.info("No reports have been generated yet.")
-        
-        # ### BUG FIX: The rest of this is commented out
-        # ### because glob.glob will not work on Streamlit Cloud.
-        # report_files = sorted(glob.glob("reports/*.txt"), reverse=True)
-        # if not report_files:
-        #     st.info("No reports have been generated yet.")
-        # else:
-        #     selected_report = st.selectbox("Select a report to view:", report_files)
-        #     if selected_report:
-        #          with open(selected_report, 'r', encoding='utf-8') as f:
-        #              st.code(f.read(), language='text')
         
 if __name__ == "__main__":
     main()
