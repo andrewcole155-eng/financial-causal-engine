@@ -54,7 +54,7 @@ def generate_ai_analysis(prompt: str) -> str:
     """Sends a prompt to Google Gemini and returns the response."""
     try:
         # UPDATED: Use gemini-1.5-flash for best stability and speed
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.0-flash')
         response = model.generate_content(prompt)
         return response.text
     except Exception as e:
