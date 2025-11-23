@@ -11,7 +11,7 @@ import pandas as pd
 import networkx as nx
 import streamlit as st
 from pyvis.network import Network
-import google.generativeai as genai  # <--- NEW IMPORT FOR AI
+import google.generativeai as genai 
 
 # --- Local Imports ---
 from database_manager import DatabaseManager
@@ -19,7 +19,6 @@ from database_manager import DatabaseManager
 # --- Setup structured logging ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
-
 
 # ==============================================================================
 # --- GEMINI AI SETUP & HELPER FUNCTIONS ---
@@ -53,18 +52,15 @@ def setup_genai():
 def generate_ai_analysis(prompt: str) -> str:
     """Sends a prompt to Google Gemini and returns the response."""
     try:
-        # UPDATED: Use gemini-1.5-flash for best stability and speed
         model = genai.GenerativeModel('gemini-2.0-flash')
         response = model.generate_content(prompt)
         return response.text
     except Exception as e:
         return f"Error generating AI explanation: {str(e)}"
 
-
 # ==============================================================================
 # --- UI HELPER & ANALYSIS FUNCTIONS ---
 # ==============================================================================
-
 def load_config(config_file: str = "config.json") -> Dict[str, Any]:
     """Loads all configurations from a JSON file."""
     try:
@@ -74,7 +70,6 @@ def load_config(config_file: str = "config.json") -> Dict[str, Any]:
         st.error(f"Fatal: Error loading configuration file '{config_file}': {e}")
         st.stop()
         return {}
-
 
 def format_market_cap(cap: float) -> str:
     """Formats a large number into a readable string with units (B, M, K)."""
@@ -87,16 +82,9 @@ def format_market_cap(cap: float) -> str:
     return f"${cap / 1_000:.2f}K"
 
 # ==============================================================================
-# --- FUNCTION: Inject Live Risk Scores (FIX: FORCE VISUAL SPREAD) ---
+# --- FUNCTION: Inject Live Risk Scores ---
 # ==============================================================================
 def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.csv") -> nx.DiGraph:
-    """
-    Reads the live risk CSV and updates nodes.
-    
-    CRITICAL FIX: Uses method='first' for ranking.
-    This prevents 'clumping' where everyone is Green or Red.
-    It forces a visual distribution even if scores are very close.
-    """
     if not os.path.exists(csv_path):
         logger.warning(f"Live risk file {csv_path} not found. Using static graph data.")
         return graph
@@ -107,12 +95,10 @@ def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.c
         if df.empty:
             return graph
 
-        # --- DEBUG: Show distribution stats in sidebar ---
         # This will verify if your data is actually loading
         with st.sidebar.expander("📊 Risk Distribution Debug"):
             st.write(df['Risk_Score'].describe())
 
-        # --- LOGIC CHANGE: method='first' ---
         # This breaks ties by forcing a unique rank for every row.
         # It guarantees we fill the 0-100 percentile range smoothly.
         df['Risk_Rank'] = df['Risk_Score'].rank(method='first', pct=True)
@@ -152,7 +138,7 @@ def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.c
     return graph
 
 # ==============================================================================
-# --- NEW FUNCTION: Systemic Vulnerability Analysis (The "Butterfly Effect") ---
+# --- FUNCTION: Systemic Vulnerability Analysis (The "Butterfly Effect") ---
 # ==============================================================================
 def analyze_systemic_vulnerability(graph: nx.DiGraph) -> pd.DataFrame:
     """
@@ -185,7 +171,7 @@ def analyze_systemic_vulnerability(graph: nx.DiGraph) -> pd.DataFrame:
         # Update progress
         progress_bar.progress((i + 1) / total_nodes)
 
-    progress_bar.empty() # Clear bar when done
+    progress_bar.empty() 
     
     df = pd.DataFrame(vulnerability_scores)
     # Sort by Damage (ascending, because damage is a negative number)
@@ -193,7 +179,7 @@ def analyze_systemic_vulnerability(graph: nx.DiGraph) -> pd.DataFrame:
     return df.sort_values("Systemic_Damage", ascending=True)
 
 # ==============================================================================
-# --- FUNCTION: calculate_impact_scores (FIX: BIDIRECTIONAL PROPAGATION) ---
+# --- FUNCTION: calculate_impact_scores  ---
 # ==============================================================================
 def calculate_impact_scores(graph: nx.DiGraph, start_node: str, event_magnitude: float = 1.0) -> Dict[str, dict]:
     """
@@ -225,7 +211,6 @@ def calculate_impact_scores(graph: nx.DiGraph, start_node: str, event_magnitude:
         if abs(impact_data[current_node]['score']) < 0.01:
             continue
 
-        # --- CRITICAL FIX: Get BOTH Incoming and Outgoing neighbors ---
         # We convert to list() to avoid runtime errors if graph changes, though it shouldn't here.
         # 1. Outgoing (Successors)
         successors = list(graph.successors(current_node))
@@ -238,13 +223,12 @@ def calculate_impact_scores(graph: nx.DiGraph, start_node: str, event_magnitude:
         for neighbor in all_neighbors:
             
             # Determine edge direction for weight lookup
-            # (We need to know which way the arrow points to get the edge data)
             if neighbor in successors:
                 edge_data = graph.get_edge_data(current_node, neighbor, default={})
                 direction = "forward"
             else:
                 edge_data = graph.get_edge_data(neighbor, current_node, default={})
-                direction = "backward" # Shock traveling up-stream
+                direction = "backward" 
             
             # Default weight logic (Fixed from previous step)
             weight = edge_data.get('weight', 0.5)
@@ -287,12 +271,10 @@ def calculate_impact_scores(graph: nx.DiGraph, start_node: str, event_magnitude:
     
     return dict(sorted(final_impacts.items(), key=lambda item: abs(item[1]['score']), reverse=True))
 
-
 # ==============================================================================
 # --- CACHED FUNCTIONS ---
 # ==============================================================================
-
-# --- NEW: Load Company Names for Dropdown ---
+# --- Load Company Names for Dropdown ---
 @st.cache_data
 def load_company_names():
     """Loads the dictionary mapping Tickers -> Company Names."""
@@ -331,8 +313,6 @@ def get_full_graph():
     Cached function to load the pre-computed graph from a file 
     AND inject the latest live risk scores.
     """
-    
-    # --- FIX: Use an absolute path ---
     try:
         # Get the absolute path of the directory this script is in
         SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -346,7 +326,6 @@ def get_full_graph():
         SCRIPT_DIR = "."
         GRAPH_FILE_PATH = "financial_graph.gml" 
         CSV_FILE_PATH = "live_risk_scores.csv"
-    # --- END FIX ---
     
     logger.info(f"Attempting to load pre-computed graph from {GRAPH_FILE_PATH}...")
     
@@ -434,11 +413,9 @@ def get_top_ripple_effects(all_events: list, threshold: float) -> pd.DataFrame |
     df = df.sort_values(by='Worst Impact Score', ascending=True)
     return df
 
-
 # ==============================================================================
 # --- MAIN STREAMLIT APPLICATION ---
 # ==============================================================================
-
 def main():
     """Renders the Streamlit User Interface."""
 
@@ -495,7 +472,7 @@ def main():
     # --- TAB 2: EXPLORE GRAPH (On-Demand Version) ---
     with tab_explore:
         st.header("🗺️ Interactive Knowledge Graph Explorer")
-        st.write("Select a company to load its **Top 25** strongest relationships.") 
+        st.write("Select a company to load its strongest relationships.") 
 
         with st.spinner("Loading full graph for explorer..."):
             # We load the full graph here primarily to get the LIVE RISK SCORES from the CSV
@@ -505,11 +482,9 @@ def main():
                 st.warning("Knowledge graph is empty. Please run `worker.py` (locally) to populate the *cloud* database.")
         else:
             all_nodes = sorted(list(financial_graph.nodes()))
-            
-            # --- UPDATED DROPDOWN WITH COMPANY NAMES ---
             company_map = load_company_names()
             
-            # Helper to format the display (e.g. "Apple Inc. (AAPL)")
+            # Helper to format the display
             def format_ticker(ticker):
                 name = company_map.get(ticker)
                 if name:
@@ -520,10 +495,9 @@ def main():
                 "Select a company to explore:", 
                 all_nodes, 
                 index=all_nodes.index("AAPL") if "AAPL" in all_nodes else 0,
-                format_func=format_ticker, # <--- Displays Readable Names
+                format_func=format_ticker,
                 key="explore_select"
             )
-            # -------------------------------------------
             
             show_risk = st.toggle("Show GNN Risk Coloring", value=True)
 
@@ -540,13 +514,11 @@ def main():
 
                             if neighborhood_graph.number_of_nodes() > 0:
                                 
-                                # --- FIX: DATA SYNCHRONIZATION ---
                                 for node in neighborhood_graph.nodes():
                                     if financial_graph.has_node(node):
                                         # Copy risk attributes from the global graph to the local view
                                         neighborhood_graph.nodes[node]['predicted_risk'] = financial_graph.nodes[node].get('predicted_risk', 0)
                                         neighborhood_graph.nodes[node]['raw_risk_score'] = financial_graph.nodes[node].get('raw_risk_score', 0.0)
-                                # ---------------------------------
 
                                 # Manually clean the graph edges of reserved keywords
                                 graph_for_pyvis = neighborhood_graph.copy() 
@@ -568,7 +540,7 @@ def main():
                                     node_data = neighborhood_graph.nodes[node_id]
                                     node['label'] = node_id
                                     
-                                    # Retrieve risk data (now synced)
+                                    # Retrieve risk data
                                     predicted_risk = node_data.get('predicted_risk', 0)
                                     raw_score = node_data.get('raw_risk_score', 0.0)
                                     
@@ -577,7 +549,7 @@ def main():
                                     title_prefix = ""
                                     if show_risk and risk_info:
                                         node['color'] = risk_info['color']
-                                        # UPDATED TOOLTIP: Shows raw score
+                                        # TOOLTIP: Shows raw score
                                         title_prefix = f"⚠️ RISK SCORE: {raw_score:.4f} ({risk_info['label'].upper()})\n" \
                                                        f"----------------------------------\n"
                                     
@@ -649,7 +621,7 @@ def main():
                             st.write(explanation)
 
     # ==============================================================================
-    # --- TAB 3: SIMULATE SCENARIOS (UPDATED) ---
+    # --- TAB 3: SIMULATE SCENARIOS ---
     # ==============================================================================
     with tab_simulate:
         st.header("🔬 Impact & Contagion Analysis")
@@ -668,7 +640,7 @@ def main():
                 return f"{name} ({ticker})"
             return ticker
 
-        # --- SECTION 1: SYSTEMIC VULNERABILITY (NEW!) ---
+        # --- SECTION 1: SYSTEMIC VULNERABILITY ---
         st.subheader("🌪️ Systemic Vulnerability (The 'Butterfly Effect')")
         st.write("Identify 'Super Spreader' nodes. This simulation crashes every single company one by one to see which failure causes the most damage to the entire network.")
         
@@ -701,7 +673,7 @@ def main():
 
         st.divider()
 
-        # --- SECTION 2: AUTOMATED EVENT ANALYSIS (FIXED) ---
+        # --- SECTION 2: AUTOMATED EVENT ANALYSIS ---
         st.subheader("🔔 Real-World Event Ripple Effects")
         st.write("Analyze recent negative news events to find contagion risks.")
         
@@ -737,7 +709,7 @@ def main():
 
         st.divider() 
 
-        # --- SECTION 3: MANUAL SIMULATION (UPDATED DROPDOWN) ---
+        # --- SECTION 3: MANUAL SIMULATION ---
         st.subheader("🧪 Manual 'What-If' Simulation")
         
         all_nodes = sorted(list(financial_graph.nodes()))
@@ -770,7 +742,7 @@ def main():
                     for ticker, data in impact_results.items():
                         df_data.append({
                             'Ticker': ticker,
-                            'Name': company_map.get(ticker, ticker), # Lookup name
+                            'Name': company_map.get(ticker, ticker), 
                             'Impact Score': data['score'],
                             'Causal Path': ' -> '.join(data['path'])
                         })
@@ -795,7 +767,7 @@ def main():
             with sim_col2:
                 st.subheader("Visual Impact Graph")
                 
-                # --- FIX: LIMIT VISUALIZATION TO TOP 25 NODES ---
+                # --- LIMIT VISUALIZATION TO TOP 25 NODES ---
                 # The simulation might hit 500 nodes, creating a 'hairball'.
                 # We only want to visualize the Source + Top 25 Victims.
                 
@@ -922,14 +894,12 @@ def main():
                             st.success(f"Highest-Risk path found: `{' -> '.join(best_path)}`")
                             st.info(f"Total Path Risk Level: **{max_risk_score}** (Sum of risk levels)")
 
-                            # --- AI INTEGRATION FOR PATHS ---
                             if gemini_active:
                                 if st.button("🧠 Explain this Path Logic"):
                                     with st.spinner("Analyzing path logic..."):
                                         path_str = ' -> '.join(best_path)
                                         prompt = f"Explain the economic logic behind this contagion path: {path_str}."
                                         st.write(generate_ai_analysis(prompt))
-                            # --------------------------------
 
                             path_graph = financial_graph.subgraph(best_path)
 
@@ -961,7 +931,7 @@ def main():
                                 
                                 if risk_info:
                                     node['color'] = risk_info['color']
-                                    # UPDATED TOOLTIP: Shows raw score
+                                    # TOOLTIP: Shows raw score
                                     node['title'] = f"⚠️ RISK: {raw_score:.4f} ({risk_info['label']})"
                                 
                                 if node_id == start_node: 
