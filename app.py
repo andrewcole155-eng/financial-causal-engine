@@ -342,6 +342,8 @@ def main():
         st.info("This can also be caused by a 'Paused' Free Tier database on Neo4j Aura. Please check your Aura dashboard.")
         st.stop()
 
+    st.write("DEBUG: Available Secret Keys:", st.secrets.keys())
+
     # --- AI SETUP ---
     gemini_active = setup_genai()
     if gemini_active:
