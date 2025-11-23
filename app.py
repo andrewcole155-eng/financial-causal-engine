@@ -193,49 +193,67 @@ def analyze_systemic_vulnerability(graph: nx.DiGraph) -> pd.DataFrame:
     return df.sort_values("Systemic_Damage", ascending=True)
 
 # ==============================================================================
-# --- FUNCTION: calculate_impact_scores ---
+# --- FUNCTION: calculate_impact_scores (FIX: WEIGHT HANDLING) ---
 # ==============================================================================
 def calculate_impact_scores(graph: nx.DiGraph, start_node: str, event_magnitude: float = 1.0) -> Dict[str, dict]:
     """
-    Calculates impact scores by propagating an event through the graph,
-    now amplified by the GNN's predicted_risk.
+    Calculates impact scores by propagating an event through the graph.
     """
     if start_node not in graph:
         return {}
 
+    # Multipliers based on the RECEIVING node's risk status
     risk_multipliers = {
-        0: 1.0,  # Low Risk
-        1: 1.5,  # Medium Risk
-        2: 2.0,  # High Risk
+        0: 1.0,  # Low Risk (No amplification)
+        1: 1.2,  # Medium Risk (20% boost)
+        2: 1.5,  # High Risk (50% boost)
     }
 
     impact_data = {node: {'score': 0.0, 'path': []} for node in graph.nodes}
     impact_data[start_node] = {'score': event_magnitude, 'path': [start_node]}
     
     queue = [start_node]
-    visited = {start_node}
+    visited = set([start_node]) # Use set for O(1) lookup
 
     while queue:
         current_node = queue.pop(0)
         
-        current_node_data = graph.nodes[current_node]
-        current_risk_level = current_node_data.get('predicted_risk') 
-        risk_multiplier = risk_multipliers.get(current_risk_level, 1.0)
+        # Safety check: Stop if the signal has faded out to near zero
+        if abs(impact_data[current_node]['score']) < 0.01:
+            continue
 
         for neighbor in graph.neighbors(current_node):
+            # --- CRITICAL FIX: DEFAULT WEIGHT ---
             edge_data = graph.get_edge_data(current_node, neighbor, default={})
-            weight = edge_data.get('weight', 0.0)
+            
+            # If 'weight' is missing or 0, default to 0.5 (Moderate connection)
+            # otherwise the simulation dies instantly.
+            weight = edge_data.get('weight', 0.5)
+            if weight == 0: 
+                weight = 0.5
+                
             relationship_type = edge_data.get('type', 'dependency').lower()
 
+            # Get risk multiplier of the neighbor
+            neighbor_data = graph.nodes[neighbor]
+            neighbor_risk_level = neighbor_data.get('predicted_risk', 0)
+            risk_multiplier = risk_multipliers.get(neighbor_risk_level, 1.0)
+
+            # Calculate propagated impact
             base_impact = impact_data[current_node]['score'] * weight
+            
+            # Apply Risk Multiplier only if the event is negative (Contagion)
             if event_magnitude < 0:
                 propagated_impact = base_impact * risk_multiplier
             else:
                 propagated_impact = base_impact
 
+            # Competitors usually react inversely, but for systemic risk, 
+            # we often treat shock as universal. Keeping logic simple for now.
             if relationship_type == 'competitor':
                 propagated_impact *= -1
 
+            # If this new path delivers a stronger shock than previously recorded, update it
             if abs(propagated_impact) > abs(impact_data.get(neighbor, {}).get('score', 0.0)):
                 impact_data[neighbor]['score'] = propagated_impact
                 impact_data[neighbor]['path'] = impact_data[current_node]['path'] + [neighbor]
@@ -244,9 +262,10 @@ def calculate_impact_scores(graph: nx.DiGraph, start_node: str, event_magnitude:
                     visited.add(neighbor)
                     queue.append(neighbor)
 
+    # Filter out the start node and any zero impacts
     final_impacts = {
         n: d for n, d in impact_data.items() 
-        if d['score'] != 0 and n != start_node
+        if abs(d['score']) > 0.01 and n != start_node
     }
     
     return dict(sorted(final_impacts.items(), key=lambda item: abs(item[1]['score']), reverse=True))
