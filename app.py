@@ -76,7 +76,7 @@ def generate_ai_analysis(prompt: str) -> str:
             Explicitly state that you are filling in missing graph data with external knowledge.
             """
 
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.0-flash')
         response = model.generate_content(final_prompt)
         return response.text
     except Exception as e:
