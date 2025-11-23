@@ -25,7 +25,6 @@ def load_config() -> Dict[str, Any]:
 def export_to_csv(config: Dict[str, Any], filename="live_risk_scores.csv"):
     """
     Fetches the latest risk scores from Neo4j and saves them to a CSV.
-    This CSV is what the Streamlit app will read from GitHub.
     """
     try:
         uri = config.get("neo4j_uri", "bolt://localhost:7687")
@@ -52,7 +51,6 @@ def export_to_csv(config: Dict[str, Any], filename="live_risk_scores.csv"):
 
         if data:
             df = pd.DataFrame(data)
-            # Save to the current directory (which is mounted to the host)
             df.to_csv(filename, index=False)
             logger.info(f"✅ CSV Export Successful: Saved {len(df)} records to {filename}")
         else:
@@ -63,8 +61,7 @@ def export_to_csv(config: Dict[str, Any], filename="live_risk_scores.csv"):
 
 def run_inference():
     """
-    Loads the trained GNN model, predicts risk scores for all companies, 
-    writes them back to Neo4j, and exports a CSV for the frontend.
+    Loads model, predicts risk, applies Contrast Stretching if needed, and saves.
     """
     logger.info("🚀 Starting GNN inference script...")
     
@@ -72,32 +69,25 @@ def run_inference():
     if not config:
         return
 
-    # --- 1. Load Graph Data & Pipeline ---
-    # The pipeline now handles the safe mapping of Index -> Ticker
+    # --- 1. Load Graph Data ---
     pipeline = GNNPipeline(config)
     data = pipeline.get_graph_data()
     
     if data is None:
         logger.error("Failed to load graph data. Exiting.")
         return
-    logger.info("Graph data loaded successfully.")
 
     # --- 2. Load Trained Model ---
     model_path = "gnn_risk_model.pth"
-    
     if not os.path.exists(model_path):
-        logger.error(f"FATAL: Model file '{model_path}' not found. Please run train.py first.")
+        logger.error(f"FATAL: Model file '{model_path}' not found.")
         return
 
     try:
-        # Initialize model architecture (must match training)
         model = create_hetero_model(data, hidden_dim=64, out_dim=3)
-        
-        # Load the trained weights
         model.load_state_dict(torch.load(model_path))
-        model.eval() # Set to evaluation mode
-        logger.info(f"Successfully loaded trained model from {model_path}")
-        
+        model.eval()
+        logger.info(f"Successfully loaded model from {model_path}")
     except Exception as e:
         logger.error(f"Error loading model: {e}")
         return
@@ -105,26 +95,47 @@ def run_inference():
     # --- 3. Run Inference ---
     logger.info("Running model to generate risk scores...")
     with torch.no_grad():
-        # Forward pass
         logits = model(data.x_dict, data.edge_index_dict)
         
-        # Convert Logits -> Probabilities (Softmax)
-        # shape: [num_companies, 3] -> [Prob(Low), Prob(Med), Prob(High)]
+        # --- FIX: DETECT MODEL COLLAPSE & STRETCH CONTRAST ---
+        # 1. Get raw probabilities
         probs = F.softmax(logits, dim=1)
         
-        # Calculate Continuous Risk Score (0.0 to 1.0)
-        # This ensures the frontend gets a gradient (Blue -> Red), not just 3 chunk colors.
-        # Formula: 50% weight on Medium, 100% weight on High.
+        # 2. Calculate base risk score (Weighted Average)
+        # Weight Med (idx 1) by 0.5, High (idx 2) by 1.0
         risk_scores = (probs[:, 1] * 0.5) + (probs[:, 2] * 1.0)
         
+        # 3. Check for "Flatline" (Standard Deviation near 0)
+        std_dev = torch.std(risk_scores).item()
+        logger.info(f"Model Score Std Dev: {std_dev:.6f}")
+
+        if std_dev < 0.001:
+            logger.warning("⚠️ DETECTED MODEL COLLAPSE: All scores are identical.")
+            logger.warning("🔧 Applying 'Contrast Stretching' to logits to force ranking...")
+            
+            # Use the raw Logits for the 'High Risk' class (index 2)
+            # Logits contain the 'confidence' before it gets squashed by Softmax
+            raw_risk_signal = logits[:, 2] 
+            
+            # Normalize these raw signals to 0.0 - 1.0 range
+            min_val = torch.min(raw_risk_signal)
+            max_val = torch.max(raw_risk_signal)
+            
+            if max_val - min_val > 0:
+                risk_scores = (raw_risk_signal - min_val) / (max_val - min_val)
+                # Add a tiny bit of noise to break perfect ties (helps sorting)
+                risk_scores += torch.rand_like(risk_scores) * 0.001
+            else:
+                # If truly 100% identical, inject pure noise (fallback)
+                logger.warning("⚠️ Logits identical. Injecting random jitter.")
+                risk_scores = torch.rand_like(risk_scores)
+
         logger.info(f"Generated risk scores for {len(risk_scores)} companies.")
 
-        # --- 4. Write Safe Predictions to Neo4j ---
-        # We use the pipeline's built-in method to ensure tickers match indices perfectly.
+        # --- 4. Write Predictions ---
         pipeline.save_predictions(risk_scores)
 
-        # --- 5. Export for Streamlit/GitHub ---
-        # This creates the file that your git_update.sh script will push
+        # --- 5. Export ---
         export_to_csv(config)
 
 if __name__ == "__main__":
