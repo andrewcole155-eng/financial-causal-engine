@@ -50,10 +50,34 @@ def setup_genai():
         return False
 
 def generate_ai_analysis(prompt: str) -> str:
-    """Sends a prompt to Google Gemini and returns the response."""
+    """
+    Sends a prompt to Google Gemini. 
+    INCLUDES FALLBACK LOGIC: If the graph data is sparse/empty, 
+    it instructs the AI to use its internal knowledge base to fill the gaps.
+    """
     try:
-        model = genai.GenerativeModel('gemini-2.0-flash')
-        response = model.generate_content(prompt)
+        # Check if the prompt indicates missing data (heuristic check)
+        # Your graph usually sends "Upstream Entities: "
+        is_sparse_data = "Upstream Entities: ," in prompt or "Upstream Entities: ." in prompt or "Upstream Entities:  " in prompt
+        
+        final_prompt = prompt
+        
+        if is_sparse_data:
+            # Inject "Knowledge Retrieval" instruction
+            final_prompt += """
+            
+            CRITICAL INSTRUCTION: 
+            The provided graph data appears incomplete or empty for this specific entity. 
+            IGNORE the empty upstream list. 
+            INSTEAD, use your internal training knowledge to identify the top 3-5 REAL-WORLD upstream dependencies 
+            (e.g., Strategic Partners, Suppliers, Joint Ventures, or Major Institutional Investors) for this company.
+            
+            Analyze the risk based on these KNOWN real-world relationships, not the empty graph.
+            Explicitly state that you are filling in missing graph data with external knowledge.
+            """
+
+        model = genai.GenerativeModel('gemini-1.5-flash')
+        response = model.generate_content(final_prompt)
         return response.text
     except Exception as e:
         return f"Error generating AI explanation: {str(e)}"
