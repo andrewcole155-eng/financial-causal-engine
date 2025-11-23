@@ -87,12 +87,15 @@ def format_market_cap(cap: float) -> str:
     return f"${cap / 1_000:.2f}K"
 
 # ==============================================================================
-# --- FUNCTION: Inject Live Risk Scores ---
+# --- FUNCTION: Inject Live Risk Scores (UPDATED: DYNAMIC SCALING) ---
 # ==============================================================================
 def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.csv") -> nx.DiGraph:
     """
     Reads the live risk CSV and updates the graph nodes with real-time scores.
-    Maps continuous scores (0.0-1.0) to discrete risk levels (0, 1, 2).
+    USES DYNAMIC PERCENTILES:
+    - High Risk (Red): Top 5% of scores
+    - Medium Risk (Orange): Top 20% of scores
+    - Low Risk (Green): Bottom 80%
     """
     if not os.path.exists(csv_path):
         logger.warning(f"Live risk file {csv_path} not found. Using static graph data.")
@@ -100,6 +103,20 @@ def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.c
 
     try:
         df = pd.read_csv(csv_path)
+        
+        # --- NEW: Calculate Dynamic Thresholds ---
+        # If scores are tiny (e.g., 0.00006), we need to find the relative 
+        # distribution to color them correctly.
+        
+        # Ensure we have data
+        if df.empty:
+            return graph
+
+        # Calculate the 80th and 95th percentiles
+        # This ensures that the "worst" companies always turn red, regardless of how small the number is.
+        threshold_med = df['Risk_Score'].quantile(0.80) 
+        threshold_high = df['Risk_Score'].quantile(0.95)
+        
         # Create a dictionary for fast lookup: {Ticker: Risk_Score}
         risk_map = pd.Series(df.Risk_Score.values, index=df.Ticker).to_dict()
         
@@ -112,18 +129,18 @@ def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.c
                 # 1. Store the raw float for precision (used in tooltips/math)
                 graph.nodes[node]['raw_risk_score'] = raw_score
                 
-                # 2. Convert Float to Discrete Risk Level (0, 1, 2) for Coloring
-                if raw_score >= 0.7:
-                    risk_level = 2 # High Risk
-                elif raw_score >= 0.4:
-                    risk_level = 1 # Medium Risk
+                # 2. Convert to Discrete Risk Level based on DISTRIBUTION
+                if raw_score >= threshold_high:
+                    risk_level = 2 # High Risk (Red)
+                elif raw_score >= threshold_med:
+                    risk_level = 1 # Medium Risk (Orange)
                 else:
-                    risk_level = 0 # Low Risk
+                    risk_level = 0 # Low Risk (Green)
                     
                 graph.nodes[node]['predicted_risk'] = risk_level
                 updated_count += 1
                 
-        logger.info(f"Updated {updated_count} nodes with live risk scores.")
+        logger.info(f"Updated {updated_count} nodes. High threshold: >{threshold_high:.6f}")
         
     except Exception as e:
         logger.error(f"Error injecting live risk scores: {e}")
