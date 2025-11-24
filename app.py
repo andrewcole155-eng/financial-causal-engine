@@ -907,7 +907,7 @@ def main():
                 else:
                      st.write("Run a simulation to see the graph.")
 
-    # --- TAB 4: CAUSAL PATHFINDING ---
+    # --- TAB 4: CAUSAL PATHFINDING (With Dynamic Filtering) ---
     with tab_path:
         st.header("↔️ Causal Pathfinding")
         
@@ -919,11 +919,10 @@ def main():
         else:
             st.write(f"Finds the shortest path between two nodes in the pre-filtered graph (the {financial_graph.number_of_edges()} strongest relationships).")
             
-            # --- START AMENDED BLOCK ---
             all_nodes = sorted(list(financial_graph.nodes()))
             company_map = load_company_names()
             
-            # Enhanced Formatter (Added for Tab 4)
+            # Enhanced Formatter
             def format_ticker(ticker):
                 name = company_map.get(ticker)
                 if name:
@@ -932,30 +931,51 @@ def main():
 
             path_col1, path_col2 = st.columns(2)
             
-            # Updated Selectboxes
-            start_node = path_col1.selectbox(
-                "Start Company:", 
-                all_nodes, 
-                format_func=format_ticker, # Applied format
-                key="path_start",
-                index=all_nodes.index("AAPL") if "AAPL" in all_nodes else 0
-            )
+            with path_col1:
+                start_node = st.selectbox(
+                    "Start Company:", 
+                    all_nodes, 
+                    format_func=format_ticker, 
+                    key="path_start",
+                    index=all_nodes.index("AAPL") if "AAPL" in all_nodes else 0
+                )
+
+            # --- DYNAMIC FILTERING LOGIC ---
+            # Instead of showing ALL nodes in the second dropdown, we calculate
+            # which nodes are actually reachable within 5 steps.
+            reachable_nodes = {}
+            if start_node:
+                try:
+                    # distinct checking for reachability (fast BFS)
+                    reachable_nodes = nx.single_source_shortest_path_length(financial_graph, start_node, cutoff=5)
+                except Exception:
+                    reachable_nodes = {}
             
-            end_node = path_col2.selectbox(
-                "End Company:", 
-                all_nodes, 
-                format_func=format_ticker, # Applied format
-                key="path_end", 
-                index=min(1, len(all_nodes)-1)
-            )
-            # --- END AMENDED BLOCK ---
+            # Create a list of valid targets (exclude the start node itself)
+            valid_targets = sorted([n for n in reachable_nodes.keys() if n != start_node])
+
+            with path_col2:
+                if not valid_targets:
+                    st.warning("⚠️ No companies are reachable from this start node within 5 steps.")
+                    end_node = None
+                else:
+                    # We show how many targets are valid
+                    st.caption(f"✅ Filtered to {len(valid_targets)} companies reachable within 5 steps.")
+                    
+                    end_node = st.selectbox(
+                        "End Company (Filtered by Reachability):", 
+                        valid_targets, 
+                        format_func=format_ticker, 
+                        key="path_end"
+                    )
 
             if st.button("🗺️ Find Riskiest Path"):
-                if start_node != end_node:
+                if start_node and end_node:
                     try:
                         all_paths = list(nx.all_simple_paths(financial_graph, source=start_node, target=end_node, cutoff=5))
                         
                         if not all_paths:
+                            # This shouldn't happen thanks to the filter, but good as a fallback
                             st.error(f"No path found between {start_node} and {end_node} (within 5 steps).")
                         else:
                             best_path = None
