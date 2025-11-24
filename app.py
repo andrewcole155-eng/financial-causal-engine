@@ -634,8 +634,7 @@ def main():
                                     if os.path.exists(html_file):
                                         os.remove(html_file)
                                         
-                                # === CRITICAL FIX ===
-                                # Rerun to lock the tab state and display the graph immediately
+                                # === CRITICAL FIX (Re-applied) ===
                                 st.rerun()
 
                             else:
@@ -919,10 +918,37 @@ def main():
                 st.warning("Knowledge graph is empty. Please run `worker.py` (locally) to populate the *cloud* database.")
         else:
             st.write(f"Finds the shortest path between two nodes in the pre-filtered graph (the {financial_graph.number_of_edges()} strongest relationships).")
+            
+            # --- START AMENDED BLOCK ---
             all_nodes = sorted(list(financial_graph.nodes()))
+            company_map = load_company_names()
+            
+            # Enhanced Formatter (Added for Tab 4)
+            def format_ticker(ticker):
+                name = company_map.get(ticker)
+                if name:
+                    return f"{name} ({ticker})"
+                return ticker
+
             path_col1, path_col2 = st.columns(2)
-            start_node = path_col1.selectbox("Start Company:", all_nodes, key="path_start")
-            end_node = path_col2.selectbox("End Company:", all_nodes, key="path_end", index=min(1, len(all_nodes)-1))
+            
+            # Updated Selectboxes
+            start_node = path_col1.selectbox(
+                "Start Company:", 
+                all_nodes, 
+                format_func=format_ticker, # Applied format
+                key="path_start",
+                index=all_nodes.index("AAPL") if "AAPL" in all_nodes else 0
+            )
+            
+            end_node = path_col2.selectbox(
+                "End Company:", 
+                all_nodes, 
+                format_func=format_ticker, # Applied format
+                key="path_end", 
+                index=min(1, len(all_nodes)-1)
+            )
+            # --- END AMENDED BLOCK ---
 
             if st.button("🗺️ Find Riskiest Path"):
                 if start_node != end_node:
