@@ -637,7 +637,7 @@ def main():
                                 # === CRITICAL FIX ===
                                 # Rerun to lock the tab state and display the graph immediately
                                 st.rerun()
-                            
+
                             else:
                                 st.warning(f"No relationships found for {selected_company}.")
                     else:
