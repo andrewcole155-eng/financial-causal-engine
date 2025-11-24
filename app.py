@@ -504,7 +504,10 @@ def main():
                     st.markdown(f"[Read Full Article]({event['link']})", unsafe_allow_html=True)
                     st.info(f"To see the potential impact of this event, go to the 'Simulate Scenarios' tab and run a simulation for {event['ticker']}.")
 
-    # --- TAB 2: EXPLORE GRAPH (Fixed for Persistence) ---
+    # ==============================================================================
+    # --- TAB 2: EXPLORE GRAPH ---
+    # ==============================================================================
+
     with tab_explore:
         st.header("🗺️ Interactive Knowledge Graph Explorer")
         st.write("Select a company to load its strongest relationships.") 
@@ -539,8 +542,9 @@ def main():
             # Layout for Graph + AI
             col_graph, col_ai = st.columns([3, 1])
 
+            # --- COLUMN 1: THE GRAPH ---
             with col_graph:
-                # --- 1. BUTTON CLICK HANDLER (Generates & Saves) ---
+                # --- BUTTON CLICK HANDLER (Generates & Saves) ---
                 if st.button("🗺️ Explore Neighborhood"):
                     if selected_company:
                         with st.spinner(f"Loading neighborhood for {selected_company}..."):
@@ -617,7 +621,7 @@ def main():
                                 
                                 net.set_options(options_str)
                                 
-                                # --- CRITICAL FIX: SAVE TO SESSION STATE INSTEAD OF DISPLAYING IMMEDIATELY ---
+                                # --- SAVE TO SESSION STATE ---
                                 html_file = f"temp_graph_{uuid.uuid4().hex}.html"
                                 try:
                                     net.save_graph(html_file)
@@ -629,15 +633,18 @@ def main():
                                 finally:
                                     if os.path.exists(html_file):
                                         os.remove(html_file)
+                                        
+                                # === CRITICAL FIX ===
+                                # Rerun to lock the tab state and display the graph immediately
+                                st.rerun()
                             
                             else:
                                 st.warning(f"No relationships found for {selected_company}.")
                     else:
                         st.warning("Please select a company.")
 
-                # --- 2. PERSISTENT DISPLAY (Runs on every refresh) ---
+                # --- PERSISTENT DISPLAY ---
                 if st.session_state.graph_html is not None:
-                    # Optional: Check if the displayed graph matches the selected dropdown (UI polish)
                     if st.session_state.selected_ticker_for_graph != selected_company:
                         st.caption(f"⚠️ Currently displaying graph for: {st.session_state.selected_ticker_for_graph}. Click 'Explore Neighborhood' to update.")
                     
@@ -645,7 +652,7 @@ def main():
                 else:
                     st.info("Click 'Explore Neighborhood' to generate the graph.")
 
-            # --- AI ANALYSIS COLUMN ---
+            # --- COLUMN 2: AI ANALYSIS ---
             with col_ai:
                 st.subheader("🤖 AI Insight")
                 if not gemini_active:
