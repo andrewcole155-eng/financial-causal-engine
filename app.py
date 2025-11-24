@@ -124,10 +124,6 @@ def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.c
         if df.empty:
             return graph
 
-        # This will verify if your data is actually loading
-        with st.sidebar.expander("📊 Risk Distribution Debug"):
-            st.write(df['Risk_Score'].describe())
-
         # This breaks ties by forcing a unique rank for every row.
         # It guarantees we fill the 0-100 percentile range smoothly.
         df['Risk_Rank'] = df['Risk_Score'].rank(method='first', pct=True)
