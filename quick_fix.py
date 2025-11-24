@@ -30,58 +30,37 @@ def patch_csv_sectors():
                 break
         
         if df_wiki is None:
-            print("❌ Could not download Sector data. Check internet connection.")
+            print("❌ Could not download Sector data.")
             return
 
-        # 2. Create Mapping Dictionary
         # Map Ticker -> Sector
         sector_map = dict(zip(df_wiki['Symbol'], df_wiki['GICS Sector']))
-        
-        # Handle dot/dash variance (BRK.B vs BRK-B)
         sector_map.update(dict(zip(df_wiki['Symbol'].str.replace('.', '-'), df_wiki['GICS Sector'])))
         
-        # Add Manual Overrides for non-S&P stocks in your list
+        # Manual Overrides for non-S&P stocks
         manual_sectors = {
-            "IONQ": "Technology",
-            "SNAP": "Communication Services",
-            "SIRI": "Communication Services",
-            "COR":  "Health Care",
-            "CPAY": "Financials",
-            "DOC":  "Real Estate",
-            "KKR":  "Financials",
-            "GE":   "Industrials",
-            "UBER": "Industrials",
-            "SHOP": "Technology",
-            "SQ":   "Financials"
+            "IONQ": "Technology", "SNAP": "Communication Services",
+            "SIRI": "Communication Services", "COR": "Health Care",
+            "CPAY": "Financials", "DOC": "Real Estate",
+            "KKR": "Financials", "GE": "Industrials", "UBER": "Industrials"
         }
         sector_map.update(manual_sectors)
 
-        # 3. Apply the Patch
+        # 2. Apply the Patch
         print("🛠️  Patching 'Discovered' sectors...")
-        
-        def get_real_sector(row):
-            ticker = row['Ticker']
-            current_sector = row['Sector']
-            
-            # If we have a better name in our map, use it
-            if ticker in sector_map:
-                return sector_map[ticker]
-            
-            # If it's still 'Discovered', try to guess or leave it
-            return current_sector
+        df_csv['Sector'] = df_csv['Ticker'].map(sector_map).fillna(df_csv['Sector'])
 
-        df_csv['Sector'] = df_csv.apply(get_real_sector, axis=1)
-
-        # 4. Fix Timestamps
-        # If Last_Updated is missing/NaN, fill with current time
+        # 3. Fix Timestamps if missing
         now_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        df_csv['Last_Updated'] = df_csv['Last_Updated'].fillna(now_str)
+        if 'Last_Updated' in df_csv.columns:
+            df_csv['Last_Updated'] = df_csv['Last_Updated'].fillna(now_str)
+        else:
+            df_csv['Last_Updated'] = now_str
 
-        # 5. Save
+        # 4. Save
         df_csv.to_csv(csv_file, index=False)
         print(f"✅ Success! Patched {len(df_csv)} records.")
-        print("-" * 50)
-        print(df_csv[['Ticker', 'Sector', 'Risk_Score']].head())
+        print(df_csv[['Ticker', 'Sector']].head())
 
     except Exception as e:
         print(f"❌ Error patching CSV: {e}")
