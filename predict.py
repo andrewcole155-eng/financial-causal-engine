@@ -45,9 +45,23 @@ def add_unique_company_features(data: HeteroData) -> HeteroData:
 
 def export_to_csv(config: Dict[str, Any], filename="live_risk_scores.csv"):
     """
-    Fetches the latest risk scores from Neo4j and saves them to a CSV.
+    Fetches scores from Neo4j, FILTERS them against the clean JSON list,
+    and saves to CSV.
     """
     try:
+        # 1. Load the "Guest List" (Clean JSON)
+        json_file = 'sp500_companies.json'
+        if os.path.exists(json_file):
+            with open(json_file, 'r') as f:
+                clean_map = json.load(f) # {'AAPL': 'Apple Inc.', ...}
+            valid_tickers = set(clean_map.keys())
+            logger.info(f"Loaded {len(valid_tickers)} valid tickers from {json_file}")
+        else:
+            logger.warning(f"⚠️ {json_file} not found. Exporting ALL database nodes (including Zombies).")
+            clean_map = {}
+            valid_tickers = None
+
+        # 2. Connect to Neo4j
         uri = config.get("neo4j_uri", "bolt://localhost:7687")
         auth = (config.get("neo4j_user", "neo4j"), config.get("neo4j_password", "password"))
         
@@ -66,16 +80,44 @@ def export_to_csv(config: Dict[str, Any], filename="live_risk_scores.csv"):
         
         with driver.session() as session:
             result = session.run(query)
-            data = [record.data() for record in result]
+            raw_data = [record.data() for record in result]
             
         driver.close()
 
-        if data:
-            df = pd.DataFrame(data)
+        # 3. FILTER and CLEAN the data
+        clean_data = []
+        
+        for row in raw_data:
+            ticker = row['Ticker']
+            
+            # If we have a valid list, skip tickers not in it (Kills Zombies like ATVI)
+            if valid_tickers and ticker not in valid_tickers:
+                continue
+                
+            # Update the Name from our clean JSON (Fixes 'N/A' names)
+            if valid_tickers and ticker in clean_map:
+                row['Name'] = clean_map[ticker]
+
+            # (Optional) Clean up 'Discovered' sector if possible, 
+            # otherwise keep what is in DB.
+            if row['Sector'] == 'Discovered':
+                # Placeholder: In the future, your JSON should include sectors 
+                # to fix this properly. For now, we leave it or set to 'Unknown'.
+                pass 
+
+            clean_data.append(row)
+
+        if clean_data:
+            df = pd.DataFrame(clean_data)
             df.to_csv(filename, index=False)
-            logger.info(f"✅ CSV Export Successful: Saved {len(df)} records to {filename}")
+            logger.info(f"✅ CSV Export Successful: Saved {len(df)} clean records to {filename}")
+            
+            # Log how many Zombies were killed
+            zombies_killed = len(raw_data) - len(clean_data)
+            if zombies_killed > 0:
+                logger.info(f"👻 Removed {zombies_killed} 'Zombie' tickers (e.g., ATVI, ABC) from export.")
         else:
-            logger.warning("⚠️ CSV Export Warning: No data found in Neo4j to export.")
+            logger.warning("⚠️ CSV Export Warning: No valid data found.")
 
     except Exception as e:
         logger.error(f"❌ Error exporting CSV: {e}")
