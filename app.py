@@ -16,6 +16,11 @@ import google.generativeai as genai
 # --- Local Imports ---
 from database_manager import DatabaseManager
 
+if "graph_html" not in st.session_state:
+    st.session_state.graph_html = None
+if "selected_ticker_for_graph" not in st.session_state:
+    st.session_state.selected_ticker_for_graph = None
+
 # --- Setup structured logging ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -498,8 +503,8 @@ def main():
                     st.markdown(f"**Sentiment Score:** `{event.get('score', 0.0):.2f}`")
                     st.markdown(f"[Read Full Article]({event['link']})", unsafe_allow_html=True)
                     st.info(f"To see the potential impact of this event, go to the 'Simulate Scenarios' tab and run a simulation for {event['ticker']}.")
-            
-    # --- TAB 2: EXPLORE GRAPH (On-Demand Version) ---
+
+    # --- TAB 2: EXPLORE GRAPH (Fixed for Persistence) ---
     with tab_explore:
         st.header("🗺️ Interactive Knowledge Graph Explorer")
         st.write("Select a company to load its strongest relationships.") 
@@ -535,6 +540,7 @@ def main():
             col_graph, col_ai = st.columns([3, 1])
 
             with col_graph:
+                # --- 1. BUTTON CLICK HANDLER (Generates & Saves) ---
                 if st.button("🗺️ Explore Neighborhood"):
                     if selected_company:
                         with st.spinner(f"Loading neighborhood for {selected_company}..."):
@@ -544,13 +550,13 @@ def main():
 
                             if neighborhood_graph.number_of_nodes() > 0:
                                 
+                                # Transfer risk scores from Global Graph to Local Neighborhood Graph
                                 for node in neighborhood_graph.nodes():
                                     if financial_graph.has_node(node):
-                                        # Copy risk attributes from the global graph to the local view
                                         neighborhood_graph.nodes[node]['predicted_risk'] = financial_graph.nodes[node].get('predicted_risk', 0)
                                         neighborhood_graph.nodes[node]['raw_risk_score'] = financial_graph.nodes[node].get('raw_risk_score', 0.0)
 
-                                # Manually clean the graph edges of reserved keywords
+                                # Manually clean the graph edges of reserved keywords for Pyvis
                                 graph_for_pyvis = neighborhood_graph.copy() 
                                 for u, v, data in graph_for_pyvis.edges(data=True):
                                     data.pop('source', None)
@@ -587,7 +593,7 @@ def main():
                                         node['size'] = 30
                                         node['borderWidth'] = 3
                                         node['color'] = "#ffffff" 
-                                        
+                                    
                                     market_cap_str = format_market_cap(node_data.get('market_cap', 0))
                                     node["title"] = (
                                         f"{title_prefix}"
@@ -602,7 +608,7 @@ def main():
                                 RELATIONSHIP_THRESHOLD = 75 
                                 
                                 if neighborhood_graph.number_of_edges() > RELATIONSHIP_THRESHOLD:
-                                    st.warning(f"Graph is large ({neighborhood_graph.number_of_edges()} relationships). Displaying with a simplified, static layout to prevent crashing.")
+                                    st.warning(f"Graph is large ({neighborhood_graph.number_of_edges()} relationships). Displaying with a simplified, static layout.")
                                     options_str = '{"nodes": {"font": {"size": 18}}, "edges": {"smooth": {"type": "dynamic"}}, "physics": {"enabled": false}}'
                                 
                                 else:
@@ -611,12 +617,13 @@ def main():
                                 
                                 net.set_options(options_str)
                                 
+                                # --- CRITICAL FIX: SAVE TO SESSION STATE INSTEAD OF DISPLAYING IMMEDIATELY ---
                                 html_file = f"temp_graph_{uuid.uuid4().hex}.html"
                                 try:
                                     net.save_graph(html_file)
                                     with open(html_file, 'r', encoding='utf-8') as f:
-                                        html_content = f.read()
-                                    st.components.v1.html(html_content, height=800, scrolling=True)
+                                        st.session_state.graph_html = f.read()
+                                        st.session_state.selected_ticker_for_graph = selected_company
                                 except Exception as e:
                                     st.error(f"Failed to render graph: {e}")
                                 finally:
@@ -627,7 +634,17 @@ def main():
                                 st.warning(f"No relationships found for {selected_company}.")
                     else:
                         st.warning("Please select a company.")
-            
+
+                # --- 2. PERSISTENT DISPLAY (Runs on every refresh) ---
+                if st.session_state.graph_html is not None:
+                    # Optional: Check if the displayed graph matches the selected dropdown (UI polish)
+                    if st.session_state.selected_ticker_for_graph != selected_company:
+                        st.caption(f"⚠️ Currently displaying graph for: {st.session_state.selected_ticker_for_graph}. Click 'Explore Neighborhood' to update.")
+                    
+                    st.components.v1.html(st.session_state.graph_html, height=800, scrolling=True)
+                else:
+                    st.info("Click 'Explore Neighborhood' to generate the graph.")
+
             # --- AI ANALYSIS COLUMN ---
             with col_ai:
                 st.subheader("🤖 AI Insight")
