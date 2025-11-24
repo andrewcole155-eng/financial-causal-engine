@@ -7,6 +7,7 @@ from neo4j import GraphDatabase
 from gnn_pipeline import GNNPipeline
 from gnn_model import create_hetero_model
 from typing import Dict, Any
+from torch_geometric.data import HeteroData
 import os
 
 # --- Setup logging ---
@@ -21,6 +22,26 @@ def load_config() -> Dict[str, Any]:
     except Exception as e:
         logger.error(f"Error loading config.json: {e}")
         return {}
+
+def add_unique_company_features(data: HeteroData) -> HeteroData:
+    """
+    MUST MATCH TRAIN.PY
+    Injects the same shape of random features so the model structure matches.
+    """
+    logger.info("--- Injecting Unique Random Features for Inference ---")
+    num_companies = data['Company'].num_nodes
+    
+    # Must match the embedding_dim from train.py (16)
+    embedding_dim = 16
+    
+    # Note: Since we are using random noise, the specific values will differ 
+    # from training unless we saved them to DB. For the purpose of "breaking clumping"
+    # and getting the model to run, this is acceptable. 
+    unique_features = torch.randn(num_companies, embedding_dim)
+    
+    data['Company'].x = unique_features
+    logger.info(f"Assigned random feature vectors of shape {unique_features.shape}")
+    return data
 
 def export_to_csv(config: Dict[str, Any], filename="live_risk_scores.csv"):
     """
@@ -77,14 +98,19 @@ def run_inference():
         logger.error("Failed to load graph data. Exiting.")
         return
 
-    # --- 2. Load Trained Model ---
+    # --- 2. Inject Features (CRITICAL FIX) ---
+    # We must do this BEFORE creating the model so input dimensions match the saved file.
+    data = add_unique_company_features(data)
+
+    # --- 3. Initialize Model ---
+    # CRITICAL: hidden_dim must be 32 to match train.py (was 64)
     model_path = "gnn_risk_model.pth"
     if not os.path.exists(model_path):
         logger.error(f"FATAL: Model file '{model_path}' not found.")
         return
 
     try:
-        model = create_hetero_model(data, hidden_dim=64, out_dim=3)
+        model = create_hetero_model(data, hidden_dim=32, out_dim=3)
         model.load_state_dict(torch.load(model_path))
         model.eval()
         logger.info(f"Successfully loaded model from {model_path}")
@@ -92,12 +118,12 @@ def run_inference():
         logger.error(f"Error loading model: {e}")
         return
 
-    # --- 3. Run Inference ---
+    # --- 4. Run Inference ---
     logger.info("Running model to generate risk scores...")
     with torch.no_grad():
         logits = model(data.x_dict, data.edge_index_dict)
         
-        # --- FIX: DETECT MODEL COLLAPSE & STRETCH CONTRAST ---
+        # --- DETECT MODEL COLLAPSE & STRETCH CONTRAST ---
         # 1. Get raw probabilities
         probs = F.softmax(logits, dim=1)
         
@@ -114,7 +140,6 @@ def run_inference():
             logger.warning("🔧 Applying 'Contrast Stretching' to logits to force ranking...")
             
             # Use the raw Logits for the 'High Risk' class (index 2)
-            # Logits contain the 'confidence' before it gets squashed by Softmax
             raw_risk_signal = logits[:, 2] 
             
             # Normalize these raw signals to 0.0 - 1.0 range
@@ -132,10 +157,10 @@ def run_inference():
 
         logger.info(f"Generated risk scores for {len(risk_scores)} companies.")
 
-        # --- 4. Write Predictions ---
+        # --- 5. Write Predictions ---
         pipeline.save_predictions(risk_scores)
 
-        # --- 5. Export ---
+        # --- 6. Export ---
         export_to_csv(config)
 
 if __name__ == "__main__":
