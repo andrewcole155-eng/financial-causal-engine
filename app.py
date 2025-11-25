@@ -904,8 +904,7 @@ def main():
                 else:
                      st.write("Run a simulation to see the graph.")
 
-
-    # --- TAB 4: CAUSAL PATHFINDING (With Dynamic Filtering) ---
+    # --- TAB 4: CAUSAL PATHFINDING (With Dynamic Filtering & Smart Diagnostics) ---
     with tab_path:
         st.header("↔️ Causal Pathfinding")
         
@@ -930,9 +929,10 @@ def main():
 
             path_col1, path_col2 = st.columns(2)
             
+            # --- COLUMN 1: START NODE & DIAGNOSTICS ---
             with path_col1:
                 start_node = st.selectbox(
-                    "Start Company:", 
+                    "Start Company (The Trigger):", 
                     all_nodes, 
                     format_func=format_ticker, 
                     key="path_start",
@@ -940,22 +940,68 @@ def main():
                 )
 
                 # =========================================================
-                # 📍 CORRECT PLACEMENT: Calculate stats AFTER selection
+                # 📍 DIAGNOSTICS & SMART SWAP LOGIC
                 # =========================================================
+                is_sink_node = False # Flag to control flow
+
                 if start_node and start_node in financial_graph:
                     out_degree = financial_graph.out_degree(start_node)
                     in_degree = financial_graph.in_degree(start_node)
                     
-                    # Show stats nicely
-                    st.caption(f"📊 **Node Stats:** {out_degree} Outgoing (Causes) | {in_degree} Incoming (Effects)")
+                    # Visual Stats
+                    st.caption(f"📊 **Node Stats:** `{out_degree} Outgoing` (Causes) | `{in_degree} Incoming` (Effects)")
                     
+                    # CASE 1: The Dead End (Sink Node)
                     if out_degree == 0:
-                        st.error(f"🚫 **Isolated Node:** {start_node} has 0 outgoing connections. It cannot 'cause' anything in this graph model.")
+                        is_sink_node = True
+                        st.error(f"🚫 **Sink Node Detected:** {start_node} absorbs impacts but doesn't cause downstream ripple effects.")
+                        
+                        # If it has parents, offer to Find Causes instead
+                        if in_degree > 0:
+                            st.info(f"💡 However, {start_node} IS affected by {in_degree} other factors.")
+                            
+                            # --- THE MAGIC BUTTON ---
+                            if st.button("🔄 Analyze Incoming Factors (Reverse Look)"):
+                                st.divider()
+                                st.subheader(f"🕵️‍♀️ What influences {start_node}?")
+                                
+                                # Find all predecessors (Parents)
+                                parents = list(financial_graph.predecessors(start_node))
+                                
+                                # Sort parents by risk score
+                                parent_risks = []
+                                for p in parents:
+                                    r_score = financial_graph.nodes[p].get('raw_risk_score', 0)
+                                    p_name = company_map.get(p, p)
+                                    parent_risks.append({'Ticker': p, 'Name': p_name, 'Risk Score': r_score})
+                                
+                                df_parents = pd.DataFrame(parent_risks).sort_values("Risk Score", ascending=False)
+                                
+                                st.dataframe(
+                                    df_parents, 
+                                    hide_index=True,
+                                    use_container_width=True,
+                                    column_config={
+                                        "Risk Score": st.column_config.ProgressColumn(
+                                            "Risk Impact", 
+                                            format="%.4f",
+                                            min_value=0, 
+                                            max_value=max(df_parents['Risk Score'].max(), 1.0)
+                                        )
+                                    }
+                                )
+                                st.stop() # Stop execution here so we don't show the empty 'End Company' error below
+                    
+                    # CASE 2: The Isolated Island
+                    elif out_degree == 0 and in_degree == 0:
+                         is_sink_node = True
+                         st.warning(f"⚠️ **Ghost Node:** {start_node} is completely disconnected. Check your data ingestion.")
                 # =========================================================
 
             # --- DYNAMIC FILTERING LOGIC ---
+            # We only calculate reachable nodes if it's NOT a sink node
             reachable_nodes = {}
-            if start_node:
+            if start_node and not is_sink_node:
                 try:
                     # distinct checking for reachability (fast BFS)
                     reachable_nodes = nx.single_source_shortest_path_length(financial_graph, start_node, cutoff=5)
@@ -965,14 +1011,14 @@ def main():
             # Create a list of valid targets (exclude the start node itself)
             valid_targets = sorted([n for n in reachable_nodes.keys() if n != start_node])
 
+            # --- COLUMN 2: END NODE ---
             with path_col2:
-                if not valid_targets:
+                if is_sink_node:
+                    st.info("🚫 Cannot select a target because the Start Company has no outgoing connections.")
+                    end_node = None
+                
+                elif not valid_targets:
                     st.warning("⚠️ No companies are reachable from this start node within 5 steps.")
-                    
-                    # Optional: Suggest checking reverse path
-                    if start_node in financial_graph and financial_graph.in_degree(start_node) > 0:
-                        st.info(f"💡 Tip: {start_node} has incoming connections. Try making it the 'End Company' instead.")
-                    
                     end_node = None
                 else:
                     st.caption(f"✅ Filtered to {len(valid_targets)} companies reachable within 5 steps.")
@@ -984,13 +1030,13 @@ def main():
                         key="path_end"
                     )
 
-            if st.button("🗺️ Find Riskiest Path"):
+            # --- EXECUTE PATHFINDING ---
+            if not is_sink_node and st.button("🗺️ Find Riskiest Path"):
                 if start_node and end_node:
                     try:
                         all_paths = list(nx.all_simple_paths(financial_graph, source=start_node, target=end_node, cutoff=5))
                         
                         if not all_paths:
-                            # This shouldn't happen thanks to the filter, but good as a fallback
                             st.error(f"No path found between {start_node} and {end_node} (within 5 steps).")
                         else:
                             best_path = None
@@ -1009,6 +1055,7 @@ def main():
                             st.success(f"Highest-Risk path found: `{' -> '.join(best_path)}`")
                             st.info(f"Total Path Risk Level: **{max_risk_score}** (Sum of risk levels)")
 
+                            # AI Explanation
                             if gemini_active:
                                 if st.button("🧠 Explain this Path Logic"):
                                     with st.spinner("Analyzing path logic..."):
@@ -1016,6 +1063,7 @@ def main():
                                         prompt = f"Explain the economic logic behind this contagion path: {path_str}."
                                         st.write(generate_ai_analysis(prompt))
 
+                            # Subgraph Visualization
                             path_graph = financial_graph.subgraph(best_path)
 
                             # Create a clean copy for pyvis
@@ -1046,7 +1094,6 @@ def main():
                                 
                                 if risk_info:
                                     node['color'] = risk_info['color']
-                                    # TOOLTIP: Shows raw score
                                     node['title'] = f"⚠️ RISK: {raw_score:.4f} ({risk_info['label']})"
                                 
                                 if node_id == start_node: 
@@ -1071,7 +1118,8 @@ def main():
                     except nx.NodeNotFound:
                         st.error(f"One of the nodes ({start_node} or {end_node}) was not found in the graph.")
                 else:
-                    st.warning("Please select two different companies.")
+                    if not is_sink_node:
+                         st.warning("Please select two different companies.")
 
     # ==============================================================================
     # --- TAB 5: INSTRUCTIONS & GUIDE ---
