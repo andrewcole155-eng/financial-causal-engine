@@ -904,13 +904,12 @@ def main():
                 else:
                      st.write("Run a simulation to see the graph.")
 
+
     # --- TAB 4: CAUSAL PATHFINDING (With Dynamic Filtering) ---
     with tab_path:
         st.header("↔️ Causal Pathfinding")
- 
-        if out_degree == 0:
-            st.error(f"🚫 {start_node} is a 'Sink' or Isolated Node. It causes nothing. Pathfinding is impossible.")
         
+        # 1. LOAD THE GRAPH FIRST
         with st.spinner("Loading full graph for pathfinding..."):
             financial_graph = get_full_graph()
         
@@ -941,9 +940,9 @@ def main():
                 )
 
                 # =========================================================
-                # 📍 INSERT DIAGNOSTICS HERE (After start_node is picked)
+                # 📍 CORRECT PLACEMENT: Calculate stats AFTER selection
                 # =========================================================
-                if start_node in financial_graph:
+                if start_node and start_node in financial_graph:
                     out_degree = financial_graph.out_degree(start_node)
                     in_degree = financial_graph.in_degree(start_node)
                     
@@ -954,10 +953,7 @@ def main():
                         st.error(f"🚫 **Isolated Node:** {start_node} has 0 outgoing connections. It cannot 'cause' anything in this graph model.")
                 # =========================================================
 
-
             # --- DYNAMIC FILTERING LOGIC ---
-            # Instead of showing ALL nodes in the second dropdown, we calculate
-            # which nodes are actually reachable within 5 steps.
             reachable_nodes = {}
             if start_node:
                 try:
@@ -972,9 +968,13 @@ def main():
             with path_col2:
                 if not valid_targets:
                     st.warning("⚠️ No companies are reachable from this start node within 5 steps.")
+                    
+                    # Optional: Suggest checking reverse path
+                    if start_node in financial_graph and financial_graph.in_degree(start_node) > 0:
+                        st.info(f"💡 Tip: {start_node} has incoming connections. Try making it the 'End Company' instead.")
+                    
                     end_node = None
                 else:
-                    # We show how many targets are valid
                     st.caption(f"✅ Filtered to {len(valid_targets)} companies reachable within 5 steps.")
                     
                     end_node = st.selectbox(
