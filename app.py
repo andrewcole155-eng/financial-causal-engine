@@ -907,16 +907,9 @@ def main():
     # --- TAB 4: CAUSAL PATHFINDING (With Dynamic Filtering) ---
     with tab_path:
         st.header("↔️ Causal Pathfinding")
-        
-        if start_node in financial_graph:
-            out_degree = financial_graph.out_degree(start_node)
-            in_degree = financial_graph.in_degree(start_node)
-            
-            st.caption(f"📊 Node Diagnostics: **{start_node}** has {out_degree} outgoing edges and {in_degree} incoming edges.")
-            
+ 
         if out_degree == 0:
             st.error(f"🚫 {start_node} is a 'Sink' or Isolated Node. It causes nothing. Pathfinding is impossible.")
-
         
         with st.spinner("Loading full graph for pathfinding..."):
             financial_graph = get_full_graph()
@@ -946,6 +939,21 @@ def main():
                     key="path_start",
                     index=all_nodes.index("AAPL") if "AAPL" in all_nodes else 0
                 )
+
+                # =========================================================
+                # 📍 INSERT DIAGNOSTICS HERE (After start_node is picked)
+                # =========================================================
+                if start_node in financial_graph:
+                    out_degree = financial_graph.out_degree(start_node)
+                    in_degree = financial_graph.in_degree(start_node)
+                    
+                    # Show stats nicely
+                    st.caption(f"📊 **Node Stats:** {out_degree} Outgoing (Causes) | {in_degree} Incoming (Effects)")
+                    
+                    if out_degree == 0:
+                        st.error(f"🚫 **Isolated Node:** {start_node} has 0 outgoing connections. It cannot 'cause' anything in this graph model.")
+                # =========================================================
+
 
             # --- DYNAMIC FILTERING LOGIC ---
             # Instead of showing ALL nodes in the second dropdown, we calculate
