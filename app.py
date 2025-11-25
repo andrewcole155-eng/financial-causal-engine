@@ -908,6 +908,16 @@ def main():
     with tab_path:
         st.header("↔️ Causal Pathfinding")
         
+        if start_node in financial_graph:
+            out_degree = financial_graph.out_degree(start_node)
+            in_degree = financial_graph.in_degree(start_node)
+            
+            st.caption(f"📊 Node Diagnostics: **{start_node}** has {out_degree} outgoing edges and {in_degree} incoming edges.")
+            
+        if out_degree == 0:
+            st.error(f"🚫 {start_node} is a 'Sink' or Isolated Node. It causes nothing. Pathfinding is impossible.")
+
+        
         with st.spinner("Loading full graph for pathfinding..."):
             financial_graph = get_full_graph()
         
