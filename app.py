@@ -471,9 +471,9 @@ def main():
         st.cache_resource.clear()
         st.rerun()
 
-    # Removed "tab_reports" and the "View Reports" label
-    tab_events, tab_explore, tab_simulate, tab_path = st.tabs([
-        "🔔 Recent Events", "🗺️ Explore Graph", "🔬 Simulate Scenarios", "↔️ Causal Pathfinding"
+    # --- UPDATED TABS DEFINITION ---
+    tab_events, tab_explore, tab_simulate, tab_path, tab_help = st.tabs([
+        "🔔 Recent Events", "🗺️ Explore Graph", "🔬 Simulate Scenarios", "↔️ Causal Pathfinding", "📘 Help & Guide"
     ])
 
     # --- TAB 1: RECENT EVENTS ---
@@ -630,7 +630,7 @@ def main():
                                 finally:
                                     if os.path.exists(html_file):
                                         os.remove(html_file)
-                                        
+                                    
                                 # === CRITICAL FIX (Re-applied) ===
                                 st.rerun()
 
@@ -1054,6 +1054,98 @@ def main():
                         st.error(f"One of the nodes ({start_node} or {end_node}) was not found in the graph.")
                 else:
                     st.warning("Please select two different companies.")
+
+    # ==============================================================================
+    # --- TAB 5: INSTRUCTIONS & GUIDE ---
+    # ==============================================================================
+    with tab_help:
+        st.header("📘 User Guide & Documentation")
         
+        # Sidebar for quick navigation within the Help tab
+        help_choice = st.radio(
+            "Navigate Guide:",
+            ["Introduction", "Recent Events", "Explore Graph", "Simulate Scenarios", "Causal Pathfinding"],
+            horizontal=True
+        )
+        
+        st.divider()
+
+        if help_choice == "Introduction":
+            st.markdown("""
+            ### Welcome to the Causal Inference Engine
+            This application allows you to move beyond simple correlations and understand the **causal structure** of the financial markets.
+            
+            **Key Concepts:**
+            * **Nodes:** Companies, Indices, or Economic Indicators.
+            * **Edges:** The causal direction (e.g., Oil Price → Airline Stocks).
+            * **Sentiment:** Real-time news scoring used to shock the system.
+            """)
+        
+        elif help_choice == "Recent Events":
+            st.markdown("""
+            ### 🔔 Recent Events Tab
+            **Purpose:** A real-time feed of market "shocks" and news signals that act as inputs for the causal model.
+
+            **How to Use:**
+            * **Refresh Events:** Click the button to reload the latest news from the database.
+            * **Inspect Source:** Click the link icon to read the original news source.
+
+            **Interpreting the Data:**
+            * **Sentiment Score (-1 to +1):**
+                * 🔴 **-1.0 (Bearish):** Examples: Regulatory bans, Lawsuits, Missed Earnings.
+                * 🟢 **+1.0 (Bullish):** Examples: Mergers, Record Profits, Rate Cuts.
+                * ⚪ **0.0 (Neutral):** Informational news with no immediate price impact.
+            """)
+        
+        elif help_choice == "Explore Graph":
+            st.markdown("""
+            ### 🗺️ Explore Graph Tab
+            **Purpose:** Visual map of your financial universe, showing how assets, sectors, and economic factors are interconnected.
+
+            **How to Use:**
+            * **Select Company:** Choose an asset from the dropdown to load its "Neighborhood" (Direct parents and children).
+            * **Navigation:** Scroll to zoom, click-and-drag to pan the canvas.
+            * **AI Insight:** Use the sidebar to ask Gemini to explain *why* two nodes are connected.
+
+            **Interpreting the Data:**
+            * **Nodes (The Dots):**
+                * **Size:** Represents **Centrality**. Bigger nodes are "super-spreaders" of volatility.
+                * **Color:** 🟢 Green (Low Risk), 🟠 Orange (Medium Risk), 🔴 Red (High Risk).
+            * **Edges (The Arrows):**
+                * **Direction (A → B):** "A causes B." If the arrow points from *Inflation* → *Retail Stocks*, inflation is the driver.
+            """)
+        
+        elif help_choice == "Simulate Scenarios":
+            st.markdown("""
+            ### 🔬 Simulate Scenarios Tab
+            **Purpose:** A "Stress Test" lab where you can ask "What If?" questions to forecast future outcomes.
+
+            **How to Use:**
+            * **Systemic Vulnerability:** Click "Analyze Systemic Vulnerability" to find which single company failure would cause the most total damage to the market.
+            * **Manual Simulation:** Select a specific company and a hypothetical shock score (e.g., -0.5 for bad news).
+            
+            **Interpreting the Data:**
+            * **Impact Score:** How strongly a downstream asset reacts to the shock.
+            * **Divergence:** High impact scores indicate a non-obvious trading opportunity (Alpha).
+            """)
+
+        elif help_choice == "Causal Pathfinding":
+            st.markdown("""
+            ### ↔️ Causal Pathfinding Tab
+            **Purpose:** To find the hidden "domino effect" between two seemingly unrelated assets.
+            
+            
+
+            **How to Use:**
+            * **Select Source:** The trigger event (e.g., `10Y Treasury Yield`).
+            * **Select Target:** The asset you trade (e.g., `Bitcoin`).
+            * *Note:* The Target dropdown automatically filters to only show assets that are actually reachable.
+
+            **Interpreting the Data:**
+            * **Mediators:** The nodes *between* your source and target.
+                * *Example:* Bond Yields → Tech Sector → Crypto.
+                * *Insight:* If the Tech Sector is resilient, the Bond Yield shock might never reach Crypto.
+            """)
+
 if __name__ == "__main__":
     main()
