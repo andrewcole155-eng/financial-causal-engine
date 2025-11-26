@@ -1219,19 +1219,22 @@ def main():
         elif help_choice == "Causal Pathfinding":
             st.markdown("""
             ### ↔️ Causal Pathfinding Tab
-            **Purpose:** To find the hidden "domino effect" between two seemingly unrelated assets.
+            **Purpose:** To find the hidden "domino effect" between two seemingly unrelated assets and identify contagion risks.
             
             
 
             **How to Use:**
-            * **Select Source:** The trigger event (e.g., `10Y Treasury Yield`).
-            * **Select Target:** The asset you trade (e.g., `Bitcoin`).
-            * *Note:* The Target dropdown automatically filters to only show assets that are actually reachable.
+            1.  **Select Start Company:** The trigger event (e.g., `10Y Treasury Yield`).
+            2.  **Check Diagnostics:** The system immediately analyzes connectivity.
+                * 🚫 **Sink Node:** If you see a red box, it means this company absorbs shocks but doesn't pass them on (e.g., An airline absorbs oil prices).
+                * **Smart Swap:** If a Sink Node is detected, use the **"Analyze Incoming Factors"** button to instantly flip the analysis and see what *drives* that company instead.
+            3.  **Select End Company:** The dropdown automatically filters to only show assets that are *actually reachable* within 5 steps.
 
             **Interpreting the Data:**
             * **Mediators:** The nodes *between* your source and target.
                 * *Example:* Bond Yields → Tech Sector → Crypto.
                 * *Insight:* If the Tech Sector is resilient, the Bond Yield shock might never reach Crypto.
+            * **Risk Level:** The cumulative risk score of every company along the chain.
             """)
 
 if __name__ == "__main__":
