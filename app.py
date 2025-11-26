@@ -382,6 +382,27 @@ def get_full_graph():
         logger.warning("Loaded graph is empty.")
         return None
         
+    # ==============================================================================
+    # 🧹 NOISE REDUCTION: Prune "Vendor/Infrastructure" Noise
+    # ==============================================================================
+    # These companies are often cited as vendors/partners, not causal drivers.
+    # We remove their OUTGOING edges unless the relationship is extremely strong.
+    suspicious_parents = ['SNAP', 'V', 'META', 'GOOGL', 'GOOG', 'AWS', 'ADBE', 'CRM', 'MA'] 
+    
+    edges_to_remove = []
+    for u, v, data in graph.edges(data=True):
+        if u in suspicious_parents:
+            # Check weight: If it's weak (< 0.90) or missing, mark for deletion
+            # This allows REAL major news (weight 1.0) to stay, but deletes "vendor noise" (weight 0.5-0.8)
+            weight = data.get('weight', 0.5) 
+            if weight < 0.90: 
+                edges_to_remove.append((u, v))
+    
+    if edges_to_remove:
+        graph.remove_edges_from(edges_to_remove)
+        logger.info(f"🧹 Pruned {len(edges_to_remove)} noisy edges from suspicious parents ({suspicious_parents}).")
+    # ==============================================================================
+
     logger.info(f"Graph structure loaded with {graph.number_of_nodes()} nodes.")
 
     # 2. Inject the Live Risk Data (CSV)
