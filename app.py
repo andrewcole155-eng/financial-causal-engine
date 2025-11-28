@@ -309,10 +309,23 @@ def load_company_names():
         FILE_PATH = os.path.join(SCRIPT_DIR, 'sp500_companies.json')
         
         with open(FILE_PATH, 'r') as f:
-            return json.load(f)
+            data = json.load(f)
+            
+        # --- CRITICAL FIX: Handle List format vs Dictionary format ---
+        if isinstance(data, list):
+            # If it's a list like [{"ticker": "AAPL", "name": "Apple"}, ...], 
+            # convert it to {"AAPL": "Apple"}
+            return {item['ticker']: item['name'] for item in data if 'ticker' in item and 'name' in item}
+        
+        elif isinstance(data, dict):
+            # If it's already {"AAPL": "Apple"}, just return it
+            return data
+            
+        return {}
+
     except FileNotFoundError:
         # Fallback if file isn't pushed to git yet
-        return {} 
+        return {}
 
 @st.cache_resource
 def get_db_manager():
