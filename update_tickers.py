@@ -39,32 +39,49 @@ def update_sp500_data():
                     symbol_col = col
                     break
 
-        # 1. Create the Base Dictionary from Wikipedia (Live Data)
-        # We store BOTH 'BRK.B' and 'BRK-B' to be safe
+        # 1. Create the Base Dictionary from Wikipedia
         ticker_lookup = dict(zip(df[symbol_col], df['Security']))
         
-        # Add the hyphenated versions too (standard API format)
+        # Add hyphenated versions (BRK.B -> BRK-B)
         ticker_lookup.update(dict(zip(df[symbol_col].str.replace('.', '-'), df['Security'])))
 
-        # 2. INJECT MISSING / HISTORICAL / REBRANDED COMPANIES
-        # Updated to remove delisted stocks and add new ticker symbols
+        # 2. INJECT MACRO ASSETS (Crypto, Forex, Indices)
+        additional_assets = {
+            "I:SPX": "S&P 500 Index",
+            "I:NDX": "Nasdaq 100 Index",
+            "I:DJI": "Dow Jones Industrial Average",
+            "I:VIX": "CBOE Volatility Index",
+            "I:RUT": "Russell 2000 Index",
+            "X:BTCUSD": "Bitcoin (USD)",
+            "X:ETHUSD": "Ethereum (USD)",
+            "X:SOLUSD": "Solana (USD)",
+            "X:ADAUSD": "Cardano (USD)",
+            "X:DOGEUSD": "Dogecoin (USD)",
+            "X:LTCUSD": "Litecoin (USD)",
+            "X:MATICUSD": "Polygon (USD)",
+            "X:DOTUSD": "Polkadot (USD)",
+            "C:EURUSD": "Euro / US Dollar",
+            "C:USDJPY": "US Dollar / Japanese Yen",
+            "C:GBPUSD": "British Pound / US Dollar",
+            "C:AUDUSD": "Australian Dollar / US Dollar",
+            "C:USDCAD": "US Dollar / Canadian Dollar",
+            "C:USDCHF": "US Dollar / Swiss Franc",
+            "C:NZDUSD": "New Zealand Dollar / US Dollar"
+        }
+
+        # 3. INJECT REBRANDS & CORRECTIONS
         manual_fix = {
-            # --- Recent Rebrands (The "Zombies" Fixed) ---
             "COR": "Cencora (formerly AmerisourceBergen)",
             "DOC": "Healthpeak Properties (formerly PEAK)",
             "EG": "Everest Group (formerly RE)",
             "DAY": "Dayforce (formerly Ceridian/CDAY)",
             "CPAY": "Corpay (formerly FLEETCOR/FLT)",
             "SW": "Smurfit WestRock (formerly WestRock)",
-            
-            # --- Special Handling / Niche Tickers ---
             "BRK.B": "Berkshire Hathaway (Class B)",
             "BF.B": "Brown-Forman Corp (Class B)",
-            "IONQ": "IonQ, Inc.", # Non-S&P 500 (Quantum Tech)
-            "SNAP": "Snap Inc.", # Non-S&P 500
-            "SIRI": "Sirius XM Holdings", # Nasdaq 100
-            
-            # --- Standard Fixes ---
+            "IONQ": "IonQ, Inc.", 
+            "SNAP": "Snap Inc.", 
+            "SIRI": "Sirius XM Holdings",
             "AAL": "American Airlines Group",
             "AAP": "Advance Auto Parts",
             "ALK": "Alaska Air Group",
@@ -103,16 +120,22 @@ def update_sp500_data():
             "ZION": "Zions Bancorporation"
         }
 
-        # Merge the manual fix into the main dictionary
-        print(f"Injecting {len(manual_fix)} manual overrides (fixes & non-S&P)...")
+        # Merge Dictionaries
+        ticker_lookup.update(additional_assets)
         ticker_lookup.update(manual_fix)
 
-        # 3. Save to JSON
-        output_file = 'sp500_companies.json'
-        with open(output_file, 'w') as f:
-            json.dump(ticker_lookup, f, indent=4)
+        # 4. CONVERT TO LIST OF OBJECTS [{"ticker": "X", "name": "Y"}, ...]
+        formatted_data = [{"ticker": k, "name": v} for k, v in ticker_lookup.items()]
+
+        # 5. Save to JSON (Using the filename your Worker expects)
+        # We save to BOTH names to prevent future errors
         
-        print(f"Success! Created {output_file} with {len(ticker_lookup)} companies.")
+        output_files = ['sp500_companies.json', 'sp500_map.json']
+        
+        for filename in output_files:
+            with open(filename, 'w') as f:
+                json.dump(formatted_data, f, indent=4)
+            print(f"✅ Saved {filename} ({len(formatted_data)} items)")
         
     except Exception as e:
         print(f"An error occurred: {e}")
