@@ -15,7 +15,7 @@ graph [
     label "BRK.B"
     ticker "BRK.B"
     market_cap 0
-    name "BERKSHIRE HATHAWAY Class B"
+    name "Berkshire Hathaway (Class B)"
     gnn_risk_score 1.1020546253348584E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -35,7 +35,7 @@ graph [
     label "ESS"
     ticker "ESS"
     market_cap 0
-    name "Essex Property Trust, Inc"
+    name "Essex Property Trust"
     gnn_risk_score 2.7964794369061963E-10
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -45,7 +45,7 @@ graph [
     label "SPG"
     ticker "SPG"
     market_cap 0
-    name "Simon Property Group, Inc."
+    name "Simon Property Group"
     gnn_risk_score 5.67200368095655E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -55,7 +55,7 @@ graph [
     label "FICO"
     ticker "FICO"
     market_cap 0
-    name "Fair Isaac Corporation"
+    name "Fair Isaac"
     gnn_risk_score 3.385929758792372E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -75,7 +75,7 @@ graph [
     label "ARE"
     ticker "ARE"
     market_cap 0
-    name "Alexandria Real Estate Equities, Inc."
+    name "Alexandria Real Estate Equities"
     gnn_risk_score 2.744129119491845E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -85,7 +85,7 @@ graph [
     label "ALL"
     ticker "ALL"
     market_cap 0
-    name "The Allstate Corporation"
+    name "Allstate"
     gnn_risk_score 0.9977554082870483
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -105,7 +105,7 @@ graph [
     label "MAS"
     ticker "MAS"
     market_cap 0
-    name "Masco Corporation"
+    name "Masco"
     gnn_risk_score 5.538563527807128E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -115,7 +115,7 @@ graph [
     label "WFC"
     ticker "WFC"
     market_cap 0
-    name "Wells Fargo &#38; Co."
+    name "Wells Fargo"
     gnn_risk_score 1.4505225408356637E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -145,7 +145,7 @@ graph [
     label "ABBV"
     ticker "ABBV"
     market_cap 0
-    name "ABBVIE INC."
+    name "AbbVie"
     gnn_risk_score 1.0081039336640174E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -155,7 +155,7 @@ graph [
     label "ACN"
     ticker "ACN"
     market_cap 0
-    name "Accenture PLC"
+    name "Accenture"
     gnn_risk_score 0.0006276060012169182
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -195,7 +195,7 @@ graph [
     label "AAP"
     ticker "AAP"
     market_cap 0
-    name "ADVANCE AUTO PARTS INC"
+    name "Advance Auto Parts"
     gnn_risk_score 8.701171338998392E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -215,7 +215,7 @@ graph [
     label "AFL"
     ticker "AFL"
     market_cap 0
-    name "Aflac Inc."
+    name "Aflac"
     gnn_risk_score 9.961878504327615E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -225,7 +225,7 @@ graph [
     label "A"
     ticker "A"
     market_cap 0
-    name "Agilent Technologies Inc."
+    name "Agilent Technologies"
     gnn_risk_score 1.7306712507547672E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -235,7 +235,7 @@ graph [
     label "AKAM"
     ticker "AKAM"
     market_cap 0
-    name "Akamai Technologies Inc"
+    name "Akamai Technologies"
     gnn_risk_score 1.0511424619608079E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -245,7 +245,7 @@ graph [
     label "ALK"
     ticker "ALK"
     market_cap 0
-    name "Alaska Air Group, Inc."
+    name "Alaska Air Group"
     gnn_risk_score 2.5518568236293504E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -265,7 +265,7 @@ graph [
     label "ALGN"
     ticker "ALGN"
     market_cap 0
-    name "Align Technology Inc"
+    name "Align Technology"
     gnn_risk_score 1.7185640217576292E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -275,7 +275,7 @@ graph [
     label "GOOG"
     ticker "GOOG"
     market_cap 0
-    name "Alphabet Inc. Class C Capital Stock"
+    name "Alphabet Inc. (Class C)"
     gnn_risk_score 4.22935727328877E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -285,7 +285,7 @@ graph [
     label "MO"
     ticker "MO"
     market_cap 0
-    name "Altria Group, Inc."
+    name "Altria"
     gnn_risk_score 2.2703421365122267E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -295,7 +295,7 @@ graph [
     label "AMZN"
     ticker "AMZN"
     market_cap 0
-    name "Amazon.Com Inc"
+    name "Amazon"
     gnn_risk_score 2.0918541565606574E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -305,7 +305,7 @@ graph [
     label "AMCR"
     ticker "AMCR"
     market_cap 0
-    name "Amcor plc Ordinary Shares"
+    name "Amcor"
     gnn_risk_score 1.8766558014249313E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -325,7 +325,7 @@ graph [
     label "AEE"
     ticker "AEE"
     market_cap 0
-    name "Ameren Corporation"
+    name "Ameren"
     gnn_risk_score 1.1603109584257254E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -335,7 +335,7 @@ graph [
     label "AAL"
     ticker "AAL"
     market_cap 0
-    name "American Airlines Group Inc."
+    name "American Airlines Group"
     gnn_risk_score 1.358852932753507E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -345,7 +345,7 @@ graph [
     label "AIG"
     ticker "AIG"
     market_cap 0
-    name "American International Group, Inc."
+    name "American International Group"
     gnn_risk_score 6.091797288831913E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -355,7 +355,7 @@ graph [
     label "AMT"
     ticker "AMT"
     market_cap 0
-    name "American Tower Corporation"
+    name "American Tower"
     gnn_risk_score 3.771159740040275E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -375,7 +375,7 @@ graph [
     label "AME"
     ticker "AME"
     market_cap 0
-    name "Ametek, Inc."
+    name "Ametek"
     gnn_risk_score 0.00016919268819037825
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -385,7 +385,7 @@ graph [
     label "AMGN"
     ticker "AMGN"
     market_cap 0
-    name "Amgen Inc"
+    name "Amgen"
     gnn_risk_score 6.658628990408033E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -395,7 +395,7 @@ graph [
     label "APH"
     ticker "APH"
     market_cap 0
-    name "Amphenol Corporation"
+    name "Amphenol"
     gnn_risk_score 3.108835144871591E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -405,7 +405,7 @@ graph [
     label "ADI"
     ticker "ADI"
     market_cap 0
-    name "Analog Devices, Inc."
+    name "Analog Devices"
     gnn_risk_score 1.4280212781159207E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -415,7 +415,7 @@ graph [
     label "ANSS"
     ticker "ANSS"
     market_cap 0
-    name "N/A"
+    name "ANSYS Inc."
     gnn_risk_score 5.514609711099183E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -425,7 +425,7 @@ graph [
     label "AON"
     ticker "AON"
     market_cap 0
-    name "Aon plc Class A"
+    name "Aon plc"
     gnn_risk_score 1.4560721410816768E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -445,7 +445,7 @@ graph [
     label "AMAT"
     ticker "AMAT"
     market_cap 0
-    name "Applied Materials Inc"
+    name "Applied Materials"
     gnn_risk_score 1.0311415280739311E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -465,7 +465,7 @@ graph [
     label "AIZ"
     ticker "AIZ"
     market_cap 0
-    name "Assurant, Inc."
+    name "Assurant"
     gnn_risk_score 5.2972020057495683E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -485,7 +485,7 @@ graph [
     label "ATO"
     ticker "ATO"
     market_cap 0
-    name "Atmos Energy Corporation"
+    name "Atmos Energy"
     gnn_risk_score 0.9994868040084839
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -495,7 +495,7 @@ graph [
     label "ADSK"
     ticker "ADSK"
     market_cap 0
-    name "Autodesk Inc"
+    name "Autodesk"
     gnn_risk_score 1.1128188370790326E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -505,7 +505,7 @@ graph [
     label "AZO"
     ticker "AZO"
     market_cap 0
-    name "AutoZone, Inc."
+    name "AutoZone"
     gnn_risk_score 2.3921710834429177E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -515,7 +515,7 @@ graph [
     label "AVY"
     ticker "AVY"
     market_cap 0
-    name "Avery Dennison Corp."
+    name "Avery Dennison"
     gnn_risk_score 2.3444412363460287E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -535,7 +535,7 @@ graph [
     label "BAC"
     ticker "BAC"
     market_cap 0
-    name "Bank of America Corporation"
+    name "Bank of America"
     gnn_risk_score 3.203212202151917E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -555,7 +555,7 @@ graph [
     label "BAX"
     ticker "BAX"
     market_cap 0
-    name "Baxter International Inc."
+    name "Baxter International"
     gnn_risk_score 2.2617190609253157E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -565,7 +565,7 @@ graph [
     label "BDX"
     ticker "BDX"
     market_cap 0
-    name "Becton, Dickinson and Co."
+    name "Becton Dickinson"
     gnn_risk_score 3.090825657636742E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -575,7 +575,7 @@ graph [
     label "WRB"
     ticker "WRB"
     market_cap 0
-    name "W.R. Berkley Corporation"
+    name "W. R. Berkley Corporation"
     gnn_risk_score 7.637680391781032E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -585,7 +585,7 @@ graph [
     label "BIO"
     ticker "BIO"
     market_cap 0
-    name "Bio-Rad Laboratories, Inc.Class A"
+    name "Bio-Rad Laboratories"
     gnn_risk_score 4.1904976710860353E-10
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -595,7 +595,7 @@ graph [
     label "TECH"
     ticker "TECH"
     market_cap 0
-    name "Bio-Techne Corp."
+    name "Bio-Techne"
     gnn_risk_score 0.7098164558410645
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -605,7 +605,7 @@ graph [
     label "BK"
     ticker "BK"
     market_cap 0
-    name "Bank of New York Mellon Corporation"
+    name "BNY Mellon"
     gnn_risk_score 2.7981201355942176E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -635,7 +635,7 @@ graph [
     label "BSX"
     ticker "BSX"
     market_cap 0
-    name "Boston Scientific Corp."
+    name "Boston Scientific"
     gnn_risk_score 8.210442501876969E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -645,7 +645,7 @@ graph [
     label "BRO"
     ticker "BRO"
     market_cap 0
-    name "Brown &#38; Brown, Inc."
+    name "Brown &#38; Brown"
     gnn_risk_score 0.004201414063572884
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -655,7 +655,7 @@ graph [
     label "BF.B"
     ticker "BF.B"
     market_cap 0
-    name "Brown-Forman Corporation Class B"
+    name "Brown-Forman Corp (Class B)"
     gnn_risk_score 4.633889005845049E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -665,7 +665,7 @@ graph [
     label "CHRW"
     ticker "CHRW"
     market_cap 0
-    name "C.H. Robinson Worldwide, Inc."
+    name "C.H. Robinson"
     gnn_risk_score 3.8184167351573706E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -675,7 +675,7 @@ graph [
     label "CAH"
     ticker "CAH"
     market_cap 0
-    name "Cardinal Health, Inc."
+    name "Cardinal Health"
     gnn_risk_score 3.341878937135334E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -685,7 +685,7 @@ graph [
     label "KMX"
     ticker "KMX"
     market_cap 0
-    name "CarMax Inc."
+    name "CarMax, Inc."
     gnn_risk_score 4.771709996020945E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -695,7 +695,7 @@ graph [
     label "CCL"
     ticker "CCL"
     market_cap 0
-    name "Carnival Corporation"
+    name "Carnival"
     gnn_risk_score 3.3646942938503344E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -705,7 +705,7 @@ graph [
     label "CARR"
     ticker "CARR"
     market_cap 0
-    name "Carrier Global Corporation"
+    name "Carrier Global"
     gnn_risk_score 0.9189554452896118
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -715,7 +715,7 @@ graph [
     label "CTLT"
     ticker "CTLT"
     market_cap 0
-    name "N/A"
+    name "Catalent, Inc."
     gnn_risk_score 1.290989985136548E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -735,7 +735,7 @@ graph [
     label "CBOE"
     ticker "CBOE"
     market_cap 0
-    name "Cboe Global Markets, Inc."
+    name "Cboe Global Markets"
     gnn_risk_score 5.843202961841598E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -745,7 +745,7 @@ graph [
     label "CBRE"
     ticker "CBRE"
     market_cap 0
-    name "CBRE GROUP, INC."
+    name "CBRE Group"
     gnn_risk_score 7.211271224605298E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -775,7 +775,7 @@ graph [
     label "CNP"
     ticker "CNP"
     market_cap 0
-    name "CenterPoint Energy, Inc."
+    name "CenterPoint Energy"
     gnn_risk_score 1.44484024744429E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -795,7 +795,7 @@ graph [
     label "CF"
     ticker "CF"
     market_cap 0
-    name "CF Industries Holding, Inc."
+    name "CF Industries"
     gnn_risk_score 3.2074033242679434E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -805,7 +805,7 @@ graph [
     label "CRL"
     ticker "CRL"
     market_cap 0
-    name "Charles River Laboratories International, Inc."
+    name "Charles River Laboratories"
     gnn_risk_score 2.3579846128995996E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -815,7 +815,7 @@ graph [
     label "SCHW"
     ticker "SCHW"
     market_cap 0
-    name "The Charles Schwab Corporation"
+    name "Charles Schwab Corporation"
     gnn_risk_score 3.1835671876478955E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -825,7 +825,7 @@ graph [
     label "CMG"
     ticker "CMG"
     market_cap 0
-    name "Chipotle Mexican Grill, Inc."
+    name "Chipotle Mexican Grill"
     gnn_risk_score 5.8698191423900425E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -835,7 +835,7 @@ graph [
     label "CHD"
     ticker "CHD"
     market_cap 0
-    name "Church &#38; Dwight Co., Inc."
+    name "Church &#38; Dwight"
     gnn_risk_score 5.8339708175481064E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -845,7 +845,7 @@ graph [
     label "CI"
     ticker "CI"
     market_cap 0
-    name "The Cigna Group"
+    name "Cigna"
     gnn_risk_score 0.9998378157615662
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -855,7 +855,7 @@ graph [
     label "CTAS"
     ticker "CTAS"
     market_cap 0
-    name "Cintas Corp"
+    name "Cintas"
     gnn_risk_score 8.78343087151734E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -865,7 +865,7 @@ graph [
     label "C"
     ticker "C"
     market_cap 0
-    name "Citigroup Inc."
+    name "Citigroup"
     gnn_risk_score 0.9978252053260803
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -875,7 +875,7 @@ graph [
     label "CME"
     ticker "CME"
     market_cap 0
-    name "CME Group Inc."
+    name "CME Group"
     gnn_risk_score 3.684508476098358E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -885,7 +885,7 @@ graph [
     label "CMS"
     ticker "CMS"
     market_cap 0
-    name "CMS Energy Corporation"
+    name "CMS Energy"
     gnn_risk_score 4.101253580302E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -895,7 +895,7 @@ graph [
     label "CTSH"
     ticker "CTSH"
     market_cap 0
-    name "Cognizant Technology Solutions"
+    name "Cognizant"
     gnn_risk_score 1.7070082094505779E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -905,7 +905,7 @@ graph [
     label "CAG"
     ticker "CAG"
     market_cap 0
-    name "Conagra Brands, Inc."
+    name "Conagra Brands"
     gnn_risk_score 1.4842464679531986E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -915,7 +915,7 @@ graph [
     label "STZ"
     ticker "STZ"
     market_cap 0
-    name "Constellation Brands, Inc."
+    name "Constellation Brands"
     gnn_risk_score 3.021168879513425E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -925,7 +925,7 @@ graph [
     label "CPRT"
     ticker "CPRT"
     market_cap 0
-    name "Copart Inc"
+    name "Copart"
     gnn_risk_score 2.189695607057729E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -935,7 +935,7 @@ graph [
     label "CSGP"
     ticker "CSGP"
     market_cap 0
-    name "CoStar Group Inc"
+    name "CoStar Group"
     gnn_risk_score 5.964525939816667E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -945,7 +945,7 @@ graph [
     label "CTRA"
     ticker "CTRA"
     market_cap 0
-    name "Coterra Energy Inc."
+    name "Coterra"
     gnn_risk_score 8.997352551887161E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -955,7 +955,7 @@ graph [
     label "CCI"
     ticker "CCI"
     market_cap 0
-    name "Crown Castle Inc."
+    name "Crown Castle"
     gnn_risk_score 2.8914244332156613E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -975,7 +975,7 @@ graph [
     label "CMI"
     ticker "CMI"
     market_cap 0
-    name "Cummins Inc."
+    name "Cummins"
     gnn_risk_score 1.6213246567531314E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -985,7 +985,7 @@ graph [
     label "CVS"
     ticker "CVS"
     market_cap 0
-    name "CVS HEALTH CORPORATION"
+    name "CVS Health"
     gnn_risk_score 0.9998949766159058
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -995,7 +995,7 @@ graph [
     label "DHI"
     ticker "DHI"
     market_cap 0
-    name "D.R. Horton Inc."
+    name "D. R. Horton"
     gnn_risk_score 4.513702151598409E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1015,7 +1015,7 @@ graph [
     label "DRI"
     ticker "DRI"
     market_cap 0
-    name "Darden Restaurants, Inc."
+    name "Darden Restaurants"
     gnn_risk_score 0.9998464584350586
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1025,7 +1025,7 @@ graph [
     label "DVA"
     ticker "DVA"
     market_cap 0
-    name "DaVita Inc."
+    name "DaVita"
     gnn_risk_score 2.4518478312529624E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1035,7 +1035,7 @@ graph [
     label "XRAY"
     ticker "XRAY"
     market_cap 0
-    name "DENTSPLY SIRONA Inc."
+    name "Dentsply Sirona"
     gnn_risk_score 2.9104768373144907E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1045,7 +1045,7 @@ graph [
     label "DVN"
     ticker "DVN"
     market_cap 0
-    name "Devon Energy Corporation"
+    name "Devon Energy"
     gnn_risk_score 8.69891607635509E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1065,7 +1065,7 @@ graph [
     label "FANG"
     ticker "FANG"
     market_cap 0
-    name "Diamondback Energy, Inc."
+    name "Diamondback Energy"
     gnn_risk_score 4.2016927181975916E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1075,7 +1075,7 @@ graph [
     label "DLR"
     ticker "DLR"
     market_cap 0
-    name "Digital Realty Trust, Inc."
+    name "Digital Realty"
     gnn_risk_score 0.0001819676108425483
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1085,7 +1085,7 @@ graph [
     label "DFS"
     ticker "DFS"
     market_cap 0
-    name "N/A"
+    name "Discover Financial Services"
     gnn_risk_score 3.8088202813924E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1095,7 +1095,7 @@ graph [
     label "DG"
     ticker "DG"
     market_cap 0
-    name "Dollar General Corp."
+    name "Dollar General"
     gnn_risk_score 1.1341811934073576E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1105,7 +1105,7 @@ graph [
     label "DLTR"
     ticker "DLTR"
     market_cap 0
-    name "Dollar Tree Inc."
+    name "Dollar Tree"
     gnn_risk_score 2.688577751541743E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1115,7 +1115,7 @@ graph [
     label "DPZ"
     ticker "DPZ"
     market_cap 0
-    name "Domino's Pizza Inc."
+    name "Domino's"
     gnn_risk_score 1.1214630148970173E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1145,7 +1145,7 @@ graph [
     label "DUK"
     ticker "DUK"
     market_cap 0
-    name "Duke Energy Corporation"
+    name "Duke Energy"
     gnn_risk_score 6.027645440553897E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1155,7 +1155,7 @@ graph [
     label "ETN"
     ticker "ETN"
     market_cap 0
-    name "Eaton Corporation, plc Ordinary Shares"
+    name "Eaton Corporation"
     gnn_risk_score 1.2752659372949893E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1165,7 +1165,7 @@ graph [
     label "EBAY"
     ticker "EBAY"
     market_cap 0
-    name "eBay Inc"
+    name "eBay Inc."
     gnn_risk_score 1.696595290923142E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1175,7 +1175,7 @@ graph [
     label "ECL"
     ticker "ECL"
     market_cap 0
-    name "Ecolab, Inc."
+    name "Ecolab"
     gnn_risk_score 3.638231191871455E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1195,7 +1195,7 @@ graph [
     label "EW"
     ticker "EW"
     market_cap 0
-    name "Edwards Lifesciences Corp"
+    name "Edwards Lifesciences"
     gnn_risk_score 2.722420955336702E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1205,7 +1205,7 @@ graph [
     label "EA"
     ticker "EA"
     market_cap 0
-    name "Electronic Arts Inc"
+    name "Electronic Arts"
     gnn_risk_score 0.9996801018714905
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1215,7 +1215,7 @@ graph [
     label "ELV"
     ticker "ELV"
     market_cap 0
-    name "Elevance Health, Inc."
+    name "Elevance Health"
     gnn_risk_score 2.022567286985577E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1225,7 +1225,7 @@ graph [
     label "EMR"
     ticker "EMR"
     market_cap 0
-    name "Emerson Electric Co."
+    name "Emerson Electric"
     gnn_risk_score 3.5119839481012605E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1235,7 +1235,7 @@ graph [
     label "ENPH"
     ticker "ENPH"
     market_cap 0
-    name "Enphase Energy, Inc."
+    name "Enphase Energy"
     gnn_risk_score 7.826647561159916E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1245,7 +1245,7 @@ graph [
     label "ETR"
     ticker "ETR"
     market_cap 0
-    name "Entergy Corporation"
+    name "Entergy"
     gnn_risk_score 5.001514225000392E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1255,7 +1255,7 @@ graph [
     label "EL"
     ticker "EL"
     market_cap 0
-    name "The Estee Lauder Companies Inc. Class A"
+    name "Est&#233;e Lauder Companies (The)"
     gnn_risk_score 0.9999983310699463
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1285,7 +1285,7 @@ graph [
     label "EVRG"
     ticker "EVRG"
     market_cap 0
-    name "Evergy, Inc."
+    name "Evergy"
     gnn_risk_score 1.3238133760751225E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1305,7 +1305,7 @@ graph [
     label "EXC"
     ticker "EXC"
     market_cap 0
-    name "Exelon Corporation"
+    name "Exelon"
     gnn_risk_score 7.90083198864977E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1315,7 +1315,7 @@ graph [
     label "EXPD"
     ticker "EXPD"
     market_cap 0
-    name "Expeditors International of Washington, Inc."
+    name "Expeditors International"
     gnn_risk_score 9.477675533275942E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1325,7 +1325,7 @@ graph [
     label "EXR"
     ticker "EXR"
     market_cap 0
-    name "Extra Space Storage, Inc."
+    name "Extra Space Storage"
     gnn_risk_score 4.713107273346395E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1335,7 +1335,7 @@ graph [
     label "XOM"
     ticker "XOM"
     market_cap 0
-    name "Exxon Mobil Corporation"
+    name "ExxonMobil"
     gnn_risk_score 2.1324744636785908E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1345,7 +1345,7 @@ graph [
     label "FAST"
     ticker "FAST"
     market_cap 0
-    name "Fastenal Co"
+    name "Fastenal"
     gnn_risk_score 0.9743404388427734
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1415,7 +1415,7 @@ graph [
     label "FTNT"
     ticker "FTNT"
     market_cap 0
-    name "Fortinet, Inc."
+    name "Fortinet"
     gnn_risk_score 9.258551472157706E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1425,7 +1425,7 @@ graph [
     label "FTV"
     ticker "FTV"
     market_cap 0
-    name "Fortive Corporation"
+    name "Fortive"
     gnn_risk_score 1.2172125707365922E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1435,7 +1435,7 @@ graph [
     label "BEN"
     ticker "BEN"
     market_cap 0
-    name "Franklin Resources, Inc."
+    name "Franklin Resources"
     gnn_risk_score 0.9976280927658081
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1445,7 +1445,7 @@ graph [
     label "FCX"
     ticker "FCX"
     market_cap 0
-    name "Freeport-McMoran Inc."
+    name "Freeport-McMoRan"
     gnn_risk_score 6.747323823219631E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1455,7 +1455,7 @@ graph [
     label "GRMN"
     ticker "GRMN"
     market_cap 0
-    name "Garmin Ltd"
+    name "Garmin"
     gnn_risk_score 4.466446625883691E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1465,7 +1465,7 @@ graph [
     label "IT"
     ticker "IT"
     market_cap 0
-    name "Gartner, Inc."
+    name "Gartner"
     gnn_risk_score 7.297954880414181E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1475,7 +1475,7 @@ graph [
     label "GNRC"
     ticker "GNRC"
     market_cap 0
-    name "GENERAC HOLDINGS INC"
+    name "Generac"
     gnn_risk_score 2.150451905436057E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1485,7 +1485,7 @@ graph [
     label "GIS"
     ticker "GIS"
     market_cap 0
-    name "General Mills, Inc."
+    name "General Mills"
     gnn_risk_score 1.4529878171742894E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1495,7 +1495,7 @@ graph [
     label "GILD"
     ticker "GILD"
     market_cap 0
-    name "Gilead Sciences Inc"
+    name "Gilead Sciences"
     gnn_risk_score 0.00011260734754614532
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1515,7 +1515,7 @@ graph [
     label "GPN"
     ticker "GPN"
     market_cap 0
-    name "Global Payments, Inc."
+    name "Global Payments"
     gnn_risk_score 9.751265395152586E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1525,7 +1525,7 @@ graph [
     label "GS"
     ticker "GS"
     market_cap 0
-    name "Goldman Sachs Group Inc."
+    name "Goldman Sachs"
     gnn_risk_score 3.9659447947926196E-10
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1535,7 +1535,7 @@ graph [
     label "GWW"
     ticker "GWW"
     market_cap 0
-    name "W.W. Grainger, Inc."
+    name "W. W. Grainger"
     gnn_risk_score 6.309896605216636E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1545,7 +1545,7 @@ graph [
     label "HIG"
     ticker "HIG"
     market_cap 0
-    name "The Hartford Insurance Group, Inc."
+    name "Hartford (The)"
     gnn_risk_score 6.586759582205559E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1565,7 +1565,7 @@ graph [
     label "HCA"
     ticker "HCA"
     market_cap 0
-    name "HCA Healthcare, Inc."
+    name "HCA Healthcare"
     gnn_risk_score 2.699309220588475E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1585,7 +1585,7 @@ graph [
     label "HSIC"
     ticker "HSIC"
     market_cap 0
-    name "Henry Schein Inc"
+    name "Henry Schein"
     gnn_risk_score 1.1484924471005797E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1595,7 +1595,7 @@ graph [
     label "HES"
     ticker "HES"
     market_cap 0
-    name "N/A"
+    name "Hess Corporation"
     gnn_risk_score 1.647637404289526E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1605,7 +1605,7 @@ graph [
     label "HLT"
     ticker "HLT"
     market_cap 0
-    name "Hilton Worldwide Holdings Inc."
+    name "Hilton Worldwide"
     gnn_risk_score 2.1049424958619056E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1615,7 +1615,7 @@ graph [
     label "HOLX"
     ticker "HOLX"
     market_cap 0
-    name "Hologic Inc"
+    name "Hologic"
     gnn_risk_score 2.4441815238418485E-10
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1625,7 +1625,7 @@ graph [
     label "HD"
     ticker "HD"
     market_cap 0
-    name "Home Depot, Inc."
+    name "Home Depot (The)"
     gnn_risk_score 5.5618789573941285E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1635,7 +1635,7 @@ graph [
     label "HON"
     ticker "HON"
     market_cap 0
-    name "Honeywell International, Inc."
+    name "Honeywell"
     gnn_risk_score 0.00012622990470845252
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1655,7 +1655,7 @@ graph [
     label "HST"
     ticker "HST"
     market_cap 0
-    name "Host Hotels &#38; Resorts, Inc."
+    name "Host Hotels &#38; Resorts"
     gnn_risk_score 2.6261975705210716E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1665,7 +1665,7 @@ graph [
     label "HWM"
     ticker "HWM"
     market_cap 0
-    name "Howmet Aerospace Inc."
+    name "Howmet Aerospace"
     gnn_risk_score 1.2708998838206753E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1685,7 +1685,7 @@ graph [
     label "HUM"
     ticker "HUM"
     market_cap 0
-    name "Humana Inc."
+    name "Humana"
     gnn_risk_score 9.588746685551541E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1695,7 +1695,7 @@ graph [
     label "IBM"
     ticker "IBM"
     market_cap 0
-    name "International Business Machines Corporation"
+    name "IBM"
     gnn_risk_score 0.9971138834953308
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1715,7 +1715,7 @@ graph [
     label "IDXX"
     ticker "IDXX"
     market_cap 0
-    name "Idexx Laboratories Inc"
+    name "Idexx Laboratories"
     gnn_risk_score 7.190851646771135E-14
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1725,7 +1725,7 @@ graph [
     label "ITW"
     ticker "ITW"
     market_cap 0
-    name "Illinois Tool Works Inc."
+    name "Illinois Tool Works"
     gnn_risk_score 4.310978596322457E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1735,7 +1735,7 @@ graph [
     label "ILMN"
     ticker "ILMN"
     market_cap 0
-    name "Illumina Inc"
+    name "Illumina, Inc."
     gnn_risk_score 1.6991692973533645E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1745,7 +1745,7 @@ graph [
     label "INTC"
     ticker "INTC"
     market_cap 0
-    name "Intel Corp"
+    name "Intel"
     gnn_risk_score 2.87124606757061E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1755,7 +1755,7 @@ graph [
     label "ICE"
     ticker "ICE"
     market_cap 0
-    name "Intercontinental Exchange  Inc."
+    name "Intercontinental Exchange"
     gnn_risk_score 0.9994457960128784
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1765,7 +1765,7 @@ graph [
     label "IP"
     ticker "IP"
     market_cap 0
-    name "International Paper Co."
+    name "International Paper"
     gnn_risk_score 1.713433164240996E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1775,7 +1775,7 @@ graph [
     label "IPG"
     ticker "IPG"
     market_cap 0
-    name "The Interpublic Group of Companies, Inc."
+    name "Interpublic Group of Companies (The)"
     gnn_risk_score 2.9608345357701182E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1785,7 +1785,7 @@ graph [
     label "IFF"
     ticker "IFF"
     market_cap 0
-    name "International Flavors &#38; Fragrances Inc."
+    name "International Flavors &#38; Fragrances"
     gnn_risk_score 7.60787699505272E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1795,7 +1795,7 @@ graph [
     label "INTU"
     ticker "INTU"
     market_cap 0
-    name "Intuit Inc"
+    name "Intuit"
     gnn_risk_score 1.462014733988326E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1805,7 +1805,7 @@ graph [
     label "ISRG"
     ticker "ISRG"
     market_cap 0
-    name "Intuitive Surgical Inc."
+    name "Intuitive Surgical"
     gnn_risk_score 2.627251305398204E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1815,7 +1815,7 @@ graph [
     label "IVZ"
     ticker "IVZ"
     market_cap 0
-    name "Invesco LTD"
+    name "Invesco"
     gnn_risk_score 7.544121672253823E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1835,7 +1835,7 @@ graph [
     label "JBL"
     ticker "JBL"
     market_cap 0
-    name "Jabil Inc."
+    name "Jabil"
     gnn_risk_score 0.9998247027397156
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1845,7 +1845,7 @@ graph [
     label "J"
     ticker "J"
     market_cap 0
-    name "Jacobs Solutions Inc."
+    name "Jacobs Solutions"
     gnn_risk_score 0.9927002191543579
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1865,7 +1865,7 @@ graph [
     label "JCI"
     ticker "JCI"
     market_cap 0
-    name "Johnson Controls International plc"
+    name "Johnson Controls"
     gnn_risk_score 7.561752113360853E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1875,7 +1875,7 @@ graph [
     label "JPM"
     ticker "JPM"
     market_cap 0
-    name "JPMorgan Chase &#38; Co."
+    name "JPMorgan Chase"
     gnn_risk_score 4.0544978219259065E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1885,7 +1885,7 @@ graph [
     label "JNPR"
     ticker "JNPR"
     market_cap 0
-    name "N/A"
+    name "Juniper Networks"
     gnn_risk_score 4.858317197431461E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1905,7 +1905,7 @@ graph [
     label "KEYS"
     ticker "KEYS"
     market_cap 0
-    name "Keysight Technologies, Inc."
+    name "Keysight Technologies"
     gnn_risk_score 2.893622877309099E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1915,7 +1915,7 @@ graph [
     label "KMI"
     ticker "KMI"
     market_cap 0
-    name "Kinder Morgan, Inc."
+    name "Kinder Morgan"
     gnn_risk_score 6.461113457589818E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1925,7 +1925,7 @@ graph [
     label "LHX"
     ticker "LHX"
     market_cap 0
-    name "L3Harris Technologies, Inc."
+    name "L3Harris"
     gnn_risk_score 2.5683588589231476E-10
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1935,7 +1935,7 @@ graph [
     label "LH"
     ticker "LH"
     market_cap 0
-    name "Labcorp Holdings Inc."
+    name "Labcorp"
     gnn_risk_score 4.443443657464741E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1945,7 +1945,7 @@ graph [
     label "LVS"
     ticker "LVS"
     market_cap 0
-    name "Las Vegas Sands Corp."
+    name "Las Vegas Sands"
     gnn_risk_score 3.674888375826413E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1955,7 +1955,7 @@ graph [
     label "LDOS"
     ticker "LDOS"
     market_cap 0
-    name "Leidos Holdings, Inc."
+    name "Leidos"
     gnn_risk_score 8.723211522010388E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1965,7 +1965,7 @@ graph [
     label "LEN"
     ticker "LEN"
     market_cap 0
-    name "Lennar Corporation Class A"
+    name "Lennar"
     gnn_risk_score 6.523301010474825E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1975,7 +1975,7 @@ graph [
     label "LNC"
     ticker "LNC"
     market_cap 0
-    name "Lincoln National Corp."
+    name "Lincoln National Corp"
     gnn_risk_score 4.7350105887744576E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1985,7 +1985,7 @@ graph [
     label "LIN"
     ticker "LIN"
     market_cap 0
-    name "Linde plc Ordinary Share"
+    name "Linde plc"
     gnn_risk_score 5.355702228371229E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -1995,7 +1995,7 @@ graph [
     label "LYV"
     ticker "LYV"
     market_cap 0
-    name "Live Nation Entertainment Inc."
+    name "Live Nation Entertainment"
     gnn_risk_score 2.7886337683469264E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2015,7 +2015,7 @@ graph [
     label "LMT"
     ticker "LMT"
     market_cap 0
-    name "Lockheed Martin Corp."
+    name "Lockheed Martin"
     gnn_risk_score 2.348822272324469E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2045,7 +2045,7 @@ graph [
     label "LULU"
     ticker "LULU"
     market_cap 0
-    name "lululemon athletica inc."
+    name "Lululemon Athletica"
     gnn_risk_score 4.982303991596382E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2055,7 +2055,7 @@ graph [
     label "MTB"
     ticker "MTB"
     market_cap 0
-    name "M&#38;T Bank Corp."
+    name "M&#38;T Bank"
     gnn_risk_score 1.9305672616098946E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2065,7 +2065,7 @@ graph [
     label "MRO"
     ticker "MRO"
     market_cap 0
-    name "N/A"
+    name "Marathon Oil"
     gnn_risk_score 8.893381391317234E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2075,7 +2075,7 @@ graph [
     label "MMC"
     ticker "MMC"
     market_cap 0
-    name "Marsh &#38; McLennan Companies, Inc."
+    name "Marsh McLennan"
     gnn_risk_score 3.420101620577043E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2095,7 +2095,7 @@ graph [
     label "MTCH"
     ticker "MTCH"
     market_cap 0
-    name "Match Group, Inc"
+    name "Match Group"
     gnn_risk_score 0.00013409498205874115
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2105,7 +2105,7 @@ graph [
     label "MCD"
     ticker "MCD"
     market_cap 0
-    name "McDonald's Corporation"
+    name "McDonald's"
     gnn_risk_score 0.9999997615814209
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2125,7 +2125,7 @@ graph [
     label "MDT"
     ticker "MDT"
     market_cap 0
-    name "Medtronic plc"
+    name "Medtronic"
     gnn_risk_score 2.0891479834972415E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2135,7 +2135,7 @@ graph [
     label "MRK"
     ticker "MRK"
     market_cap 0
-    name "Merck &#38; Co., Inc."
+    name "Merck &#38; Co."
     gnn_risk_score 6.283694915509841E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2145,7 +2145,7 @@ graph [
     label "MET"
     ticker "MET"
     market_cap 0
-    name "MetLife, Inc."
+    name "MetLife"
     gnn_risk_score 0.9916649460792542
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2155,7 +2155,7 @@ graph [
     label "MTD"
     ticker "MTD"
     market_cap 0
-    name "Mettler-Toledo International"
+    name "Mettler Toledo"
     gnn_risk_score 4.201040348927876E-10
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2165,7 +2165,7 @@ graph [
     label "MGM"
     ticker "MGM"
     market_cap 0
-    name "MGM RESORTS INTERNATIONAL"
+    name "MGM Resorts"
     gnn_risk_score 1.1814581739599817E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2175,7 +2175,7 @@ graph [
     label "MCHP"
     ticker "MCHP"
     market_cap 0
-    name "Microchip Technology Inc"
+    name "Microchip Technology"
     gnn_risk_score 1.3724418295169016E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2185,7 +2185,7 @@ graph [
     label "MU"
     ticker "MU"
     market_cap 0
-    name "Micron Technology, Inc."
+    name "Micron Technology"
     gnn_risk_score 4.153450561261707E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2195,7 +2195,7 @@ graph [
     label "MHK"
     ticker "MHK"
     market_cap 0
-    name "Mohawk Industries, Inc."
+    name "Mohawk Industries"
     gnn_risk_score 1.7386878425895702E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2205,7 +2205,7 @@ graph [
     label "MOH"
     ticker "MOH"
     market_cap 0
-    name "Molina Healthcare, Inc."
+    name "Molina Healthcare"
     gnn_risk_score 3.2324120979865256E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2215,7 +2215,7 @@ graph [
     label "MPWR"
     ticker "MPWR"
     market_cap 0
-    name "Monolithic Power Systems, Inc."
+    name "Monolithic Power Systems"
     gnn_risk_score 2.6174360456820978E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2225,7 +2225,7 @@ graph [
     label "MNST"
     ticker "MNST"
     market_cap 0
-    name "Monster Beverage Corporation"
+    name "Monster Beverage"
     gnn_risk_score 9.932108469001832E-10
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2255,7 +2255,7 @@ graph [
     label "MSI"
     ticker "MSI"
     market_cap 0
-    name "Motorola Solutions, Inc. New"
+    name "Motorola Solutions"
     gnn_risk_score 1.301908923778683E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2265,7 +2265,7 @@ graph [
     label "MSCI"
     ticker "MSCI"
     market_cap 0
-    name "MSCI, Inc."
+    name "MSCI Inc."
     gnn_risk_score 7.023583066256833E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2275,7 +2275,7 @@ graph [
     label "NTAP"
     ticker "NTAP"
     market_cap 0
-    name "NetApp, Inc"
+    name "NetApp"
     gnn_risk_score 1.0852185816645488E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2285,7 +2285,7 @@ graph [
     label "NFLX"
     ticker "NFLX"
     market_cap 0
-    name "NetFlix Inc"
+    name "Netflix"
     gnn_risk_score 1.2119871826143935E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2295,7 +2295,7 @@ graph [
     label "NEM"
     ticker "NEM"
     market_cap 0
-    name "Newmont Corporation"
+    name "Newmont"
     gnn_risk_score 2.413848960713949E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2305,7 +2305,7 @@ graph [
     label "NEE"
     ticker "NEE"
     market_cap 0
-    name "NextEra Energy, Inc."
+    name "NextEra Energy"
     gnn_risk_score 8.317689434989006E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2325,7 +2325,7 @@ graph [
     label "NI"
     ticker "NI"
     market_cap 0
-    name "NiSource Inc."
+    name "NiSource"
     gnn_risk_score 0.9999512434005737
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2335,7 +2335,7 @@ graph [
     label "NDSN"
     ticker "NDSN"
     market_cap 0
-    name "Nordson Corp"
+    name "Nordson Corporation"
     gnn_risk_score 3.282482339272974E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2345,7 +2345,7 @@ graph [
     label "NSC"
     ticker "NSC"
     market_cap 0
-    name "Norfolk Southern Corp."
+    name "Norfolk Southern"
     gnn_risk_score 2.0579136617016047E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2355,7 +2355,7 @@ graph [
     label "NTRS"
     ticker "NTRS"
     market_cap 0
-    name "Northern Trust Corp"
+    name "Northern Trust"
     gnn_risk_score 5.334328179174008E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2365,7 +2365,7 @@ graph [
     label "NOC"
     ticker "NOC"
     market_cap 0
-    name "Northrop Grumman Corp."
+    name "Northrop Grumman"
     gnn_risk_score 5.21146015231011E-10
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2375,7 +2375,7 @@ graph [
     label "NCLH"
     ticker "NCLH"
     market_cap 0
-    name "Norwegian Cruise Line Holdings Ltd. Ordinary Shares"
+    name "Norwegian Cruise Line Holdings"
     gnn_risk_score 8.21116145743872E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2385,7 +2385,7 @@ graph [
     label "NRG"
     ticker "NRG"
     market_cap 0
-    name "NRG Energy, Inc."
+    name "NRG Energy"
     gnn_risk_score 2.707643034227658E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2395,7 +2395,7 @@ graph [
     label "NUE"
     ticker "NUE"
     market_cap 0
-    name "Nucor Corporation"
+    name "Nucor"
     gnn_risk_score 1.2942706462126807E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2405,7 +2405,7 @@ graph [
     label "NVDA"
     ticker "NVDA"
     market_cap 0
-    name "Nvidia Corp"
+    name "Nvidia"
     gnn_risk_score 4.1586466977605596E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2425,7 +2425,7 @@ graph [
     label "NXPI"
     ticker "NXPI"
     market_cap 0
-    name "NXP Semiconductors N.V."
+    name "NXP Semiconductors"
     gnn_risk_score 1.8129744816519633E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2435,7 +2435,7 @@ graph [
     label "ORLY"
     ticker "ORLY"
     market_cap 0
-    name "O'Reilly Automotive, Inc."
+    name "O&#8217;Reilly Automotive"
     gnn_risk_score 3.4979036627191817E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2445,7 +2445,7 @@ graph [
     label "ODFL"
     ticker "ODFL"
     market_cap 0
-    name "Old Dominion Freight Line"
+    name "Old Dominion"
     gnn_risk_score 2.0055573202171217E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2455,7 +2455,7 @@ graph [
     label "OMC"
     ticker "OMC"
     market_cap 0
-    name "Omnicom Group Inc."
+    name "Omnicom Group"
     gnn_risk_score 4.0585663718673E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2465,7 +2465,7 @@ graph [
     label "ON"
     ticker "ON"
     market_cap 0
-    name "ON Semiconductor Corp"
+    name "ON Semiconductor"
     gnn_risk_score 1.7970978980104413E-13
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2475,7 +2475,7 @@ graph [
     label "OKE"
     ticker "OKE"
     market_cap 0
-    name "Oneok, Inc."
+    name "Oneok"
     gnn_risk_score 3.610313115132158E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2495,7 +2495,7 @@ graph [
     label "OTIS"
     ticker "OTIS"
     market_cap 0
-    name "Otis Worldwide Corporation"
+    name "Otis Worldwide"
     gnn_risk_score 6.724523871071142E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2505,7 +2505,7 @@ graph [
     label "PCAR"
     ticker "PCAR"
     market_cap 0
-    name "Paccar Inc"
+    name "Paccar"
     gnn_risk_score 1.3365458073621994E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2515,7 +2515,7 @@ graph [
     label "PKG"
     ticker "PKG"
     market_cap 0
-    name "Packaging Corp of America"
+    name "Packaging Corporation of America"
     gnn_risk_score 3.6912551877321675E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2525,7 +2525,7 @@ graph [
     label "PARA"
     ticker "PARA"
     market_cap 0
-    name "N/A"
+    name "Paramount Global"
     gnn_risk_score 2.6718776080514317E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2535,7 +2535,7 @@ graph [
     label "PH"
     ticker "PH"
     market_cap 0
-    name "Parker-Hannifin Corporation"
+    name "Parker Hannifin"
     gnn_risk_score 4.0250968595501035E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2545,7 +2545,7 @@ graph [
     label "PAYX"
     ticker "PAYX"
     market_cap 0
-    name "Paychex Inc"
+    name "Paychex"
     gnn_risk_score 7.704635436311946E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2565,7 +2565,7 @@ graph [
     label "PNR"
     ticker "PNR"
     market_cap 0
-    name "Pentair plc"
+    name "Pentair"
     gnn_risk_score 8.299204878881028E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2575,7 +2575,7 @@ graph [
     label "PFE"
     ticker "PFE"
     market_cap 0
-    name "Pfizer Inc."
+    name "Pfizer"
     gnn_risk_score 6.941318535718744E-15
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2595,7 +2595,7 @@ graph [
     label "PM"
     ticker "PM"
     market_cap 0
-    name "Philip Morris International Inc."
+    name "Philip Morris International"
     gnn_risk_score 0.9995401501655579
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2625,7 +2625,7 @@ graph [
     label "PPG"
     ticker "PPG"
     market_cap 0
-    name "PPG Industries, Inc."
+    name "PPG Industries"
     gnn_risk_score 1.1840435035992414E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2655,7 +2655,7 @@ graph [
     label "PLD"
     ticker "PLD"
     market_cap 0
-    name "PROLOGIS, INC."
+    name "Prologis"
     gnn_risk_score 1.6667762565703015E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2665,7 +2665,7 @@ graph [
     label "PTC"
     ticker "PTC"
     market_cap 0
-    name "PTC, INC"
+    name "PTC Inc."
     gnn_risk_score 4.5688807404076215E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2675,7 +2675,7 @@ graph [
     label "PHM"
     ticker "PHM"
     market_cap 0
-    name "Pultegroup, Inc."
+    name "PulteGroup"
     gnn_risk_score 1.3561768597014634E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2695,7 +2695,7 @@ graph [
     label "PWR"
     ticker "PWR"
     market_cap 0
-    name "Quanta Services, Inc."
+    name "Quanta Services"
     gnn_risk_score 6.650533032370731E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2705,7 +2705,7 @@ graph [
     label "QCOM"
     ticker "QCOM"
     market_cap 0
-    name "Qualcomm Inc"
+    name "Qualcomm"
     gnn_risk_score 8.755254725656414E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2725,7 +2725,7 @@ graph [
     label "O"
     ticker "O"
     market_cap 0
-    name "Realty Income Corporation"
+    name "Realty Income"
     gnn_risk_score 0.9740983247756958
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2735,7 +2735,7 @@ graph [
     label "REG"
     ticker "REG"
     market_cap 0
-    name "Regency Centers Corporation"
+    name "Regency Centers"
     gnn_risk_score 2.401846083133208E-12
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2745,7 +2745,7 @@ graph [
     label "RSG"
     ticker "RSG"
     market_cap 0
-    name "Republic Services Inc."
+    name "Republic Services"
     gnn_risk_score 1.7427487364329863E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2765,7 +2765,7 @@ graph [
     label "RVTY"
     ticker "RVTY"
     market_cap 0
-    name "Revvity, Inc."
+    name "Revvity"
     gnn_risk_score 6.575847066869756E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2785,7 +2785,7 @@ graph [
     label "ROK"
     ticker "ROK"
     market_cap 0
-    name "Rockwell Automation, Inc."
+    name "Rockwell Automation"
     gnn_risk_score 7.472020513432653E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2805,7 +2805,7 @@ graph [
     label "ROST"
     ticker "ROST"
     market_cap 0
-    name "Ross Stores Inc"
+    name "Ross Stores"
     gnn_risk_score 6.598440460692245E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2825,7 +2825,7 @@ graph [
     label "SPGI"
     ticker "SPGI"
     market_cap 0
-    name "S&#38;P Global Inc."
+    name "S&#38;P Global"
     gnn_risk_score 3.2385680803770356E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2835,7 +2835,7 @@ graph [
     label "CRM"
     ticker "CRM"
     market_cap 0
-    name "Salesforce, Inc."
+    name "Salesforce"
     gnn_risk_score 3.067474442855489E-12
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2845,7 +2845,7 @@ graph [
     label "STX"
     ticker "STX"
     market_cap 0
-    name "Seagate Technology Holdings PLC Ordinary Shares (Ireland)"
+    name "Seagate Technology"
     gnn_risk_score 1.912287189043127E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2855,7 +2855,7 @@ graph [
     label "NOW"
     ticker "NOW"
     market_cap 0
-    name "SERVICENOW, INC."
+    name "ServiceNow"
     gnn_risk_score 0.9996282458305359
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2875,7 +2875,7 @@ graph [
     label "SWKS"
     ticker "SWKS"
     market_cap 0
-    name "Skyworks Solutions Inc"
+    name "Skyworks Solutions"
     gnn_risk_score 7.271049980772659E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2885,7 +2885,7 @@ graph [
     label "SWK"
     ticker "SWK"
     market_cap 0
-    name "Stanley Black &#38; Decker, Inc."
+    name "Stanley Black &#38; Decker"
     gnn_risk_score 9.937637202028782E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2905,7 +2905,7 @@ graph [
     label "SNPS"
     ticker "SNPS"
     market_cap 0
-    name "Synopsys Inc"
+    name "Synopsys"
     gnn_risk_score 1.2763829317918862E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2915,7 +2915,7 @@ graph [
     label "SYY"
     ticker "SYY"
     market_cap 0
-    name "Sysco Corporation"
+    name "Sysco"
     gnn_risk_score 9.31599686282425E-10
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2925,7 +2925,7 @@ graph [
     label "TMUS"
     ticker "TMUS"
     market_cap 0
-    name "T-Mobile US, Inc."
+    name "T-Mobile US"
     gnn_risk_score 3.6540275250018794E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2935,7 +2935,7 @@ graph [
     label "TROW"
     ticker "TROW"
     market_cap 0
-    name "T Rowe Price Group Inc"
+    name "T. Rowe Price"
     gnn_risk_score 7.585746431004736E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2945,7 +2945,7 @@ graph [
     label "TTWO"
     ticker "TTWO"
     market_cap 0
-    name "Take-Two Interactive Software Inc"
+    name "Take-Two Interactive"
     gnn_risk_score 5.5229916142707225E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2965,7 +2965,7 @@ graph [
     label "TEL"
     ticker "TEL"
     market_cap 0
-    name "TE Connectivity plc"
+    name "TE Connectivity"
     gnn_risk_score 0.9999991655349731
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2975,7 +2975,7 @@ graph [
     label "TXT"
     ticker "TXT"
     market_cap 0
-    name "Textron, Inc."
+    name "Textron"
     gnn_risk_score 1.7482901967014186E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2985,7 +2985,7 @@ graph [
     label "TMO"
     ticker "TMO"
     market_cap 0
-    name "Thermo Fisher Scientific, Inc."
+    name "Thermo Fisher Scientific"
     gnn_risk_score 4.4254626629935956E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -2995,7 +2995,7 @@ graph [
     label "TJX"
     ticker "TJX"
     market_cap 0
-    name "TJX Companies, Inc. (The)"
+    name "TJX Companies"
     gnn_risk_score 4.474449269764591E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3005,7 +3005,7 @@ graph [
     label "TT"
     ticker "TT"
     market_cap 0
-    name "Trane Technologies plc"
+    name "Trane Technologies"
     gnn_risk_score 9.794733912826814E-10
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3015,7 +3015,7 @@ graph [
     label "TRV"
     ticker "TRV"
     market_cap 0
-    name "The Travelers Companies, Inc."
+    name "Travelers Companies (The)"
     gnn_risk_score 1.2727261022860148E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3025,7 +3025,7 @@ graph [
     label "TYL"
     ticker "TYL"
     market_cap 0
-    name "Tyler Technologies, Inc."
+    name "Tyler Technologies"
     gnn_risk_score 1.0262996511301026E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3035,7 +3035,7 @@ graph [
     label "TSN"
     ticker "TSN"
     market_cap 0
-    name "Tyson Foods, Inc."
+    name "Tyson Foods"
     gnn_risk_score 4.082664872839814E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3065,7 +3065,7 @@ graph [
     label "VLO"
     ticker "VLO"
     market_cap 0
-    name "Valero Energy Corporation"
+    name "Valero Energy"
     gnn_risk_score 3.7187842281127814E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3075,7 +3075,7 @@ graph [
     label "VTR"
     ticker "VTR"
     market_cap 0
-    name "Ventas, Inc."
+    name "Ventas"
     gnn_risk_score 6.519169915009115E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3085,7 +3085,7 @@ graph [
     label "VRSN"
     ticker "VRSN"
     market_cap 0
-    name "VeriSign Inc"
+    name "Verisign"
     gnn_risk_score 3.3571759558981284E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3095,7 +3095,7 @@ graph [
     label "VFC"
     ticker "VFC"
     market_cap 0
-    name "V.F. Corporation"
+    name "VF Corporation"
     gnn_risk_score 4.0440917281614475E-10
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3105,7 +3105,7 @@ graph [
     label "V"
     ticker "V"
     market_cap 0
-    name "VISA Inc."
+    name "Visa Inc."
     gnn_risk_score 0.9282501935958862
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3115,7 +3115,7 @@ graph [
     label "WAB"
     ticker "WAB"
     market_cap 0
-    name "Wabtec Inc."
+    name "Wabtec"
     gnn_risk_score 1.4895194055952743E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3125,7 +3125,7 @@ graph [
     label "WBA"
     ticker "WBA"
     market_cap 0
-    name "N/A"
+    name "Walgreens Boots Alliance"
     gnn_risk_score 2.2884216743790375E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3135,7 +3135,7 @@ graph [
     label "WMT"
     ticker "WMT"
     market_cap 0
-    name "Walmart Inc."
+    name "Walmart"
     gnn_risk_score 1.8227408418169944E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3145,7 +3145,7 @@ graph [
     label "WM"
     ticker "WM"
     market_cap 0
-    name "Waste Management, Inc."
+    name "Waste Management"
     gnn_risk_score 2.5627304012232344E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3155,7 +3155,7 @@ graph [
     label "WEC"
     ticker "WEC"
     market_cap 0
-    name "WEC Energy Group, Inc."
+    name "WEC Energy Group"
     gnn_risk_score 2.58480849879561E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3185,7 +3185,7 @@ graph [
     label "WMB"
     ticker "WMB"
     market_cap 0
-    name "Williams Companies Inc."
+    name "Williams Companies"
     gnn_risk_score 1.5822473997673114E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3195,7 +3195,7 @@ graph [
     label "WYNN"
     ticker "WYNN"
     market_cap 0
-    name "Wynn Resorts Ltd"
+    name "Wynn Resorts"
     gnn_risk_score 1.6999487684188352E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3205,7 +3205,7 @@ graph [
     label "XEL"
     ticker "XEL"
     market_cap 0
-    name "Xcel Energy, Inc."
+    name "Xcel Energy"
     gnn_risk_score 2.6824980636774853E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3215,7 +3215,7 @@ graph [
     label "XYL"
     ticker "XYL"
     market_cap 0
-    name "Xylem Inc"
+    name "Xylem Inc."
     gnn_risk_score 6.959376186443933E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3225,7 +3225,7 @@ graph [
     label "YUM"
     ticker "YUM"
     market_cap 0
-    name "Yum! Brands, Inc."
+    name "Yum! Brands"
     gnn_risk_score 7.653617331015994E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3235,7 +3235,7 @@ graph [
     label "ZBRA"
     ticker "ZBRA"
     market_cap 0
-    name "Zebra Technologies Corporation"
+    name "Zebra Technologies"
     gnn_risk_score 6.780581429666199E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3245,7 +3245,7 @@ graph [
     label "ZBH"
     ticker "ZBH"
     market_cap 0
-    name "Zimmer Biomet Holdings, Inc."
+    name "Zimmer Biomet"
     gnn_risk_score 2.1491396182682365E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3255,7 +3255,7 @@ graph [
     label "ZION"
     ticker "ZION"
     market_cap 0
-    name "Zions Bancorporation N.A."
+    name "Zions Bancorporation"
     gnn_risk_score 6.19472530161147E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3274,18 +3274,18 @@ graph [
     id 327
     label "IONQ"
     ticker "IONQ"
-    market_cap 16714911103.38
+    market_cap 0
     name "IonQ, Inc."
     gnn_risk_score 3.6492963317869E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "SERVICES-COMPUTER INTEGRATED SYSTEMS DESIGN"
+    sector "Discovered"
   ]
   node [
     id 328
     label "KR"
     ticker "KR"
     market_cap 0
-    name "The Kroger Co."
+    name "Kroger"
     gnn_risk_score 1.0206709089022326E-10
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3295,7 +3295,7 @@ graph [
     label "KO"
     ticker "KO"
     market_cap 0
-    name "Coca-Cola Company"
+    name "Coca-Cola Company (The)"
     gnn_risk_score 9.79437753123591E-10
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3305,7 +3305,7 @@ graph [
     label "OXY"
     ticker "OXY"
     market_cap 0
-    name "Occidental Petroleum Corporation"
+    name "Occidental Petroleum"
     gnn_risk_score 1.5867004549363628E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3314,18 +3314,18 @@ graph [
     id 331
     label "SIRI"
     ticker "SIRI"
-    market_cap 7239440790.360001
-    name "Sirius XM Holdings,  Inc"
+    market_cap 0
+    name "Sirius XM Holdings"
     gnn_risk_score 2.2624190023634583E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "RADIO BROADCASTING STATIONS"
+    sector "Discovered"
   ]
   node [
     id 332
     label "FDS"
     ticker "FDS"
     market_cap 0
-    name "Factset Research Systems"
+    name "FactSet"
     gnn_risk_score 1.342968403150735E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3335,7 +3335,7 @@ graph [
     label "MSFT"
     ticker "MSFT"
     market_cap 0
-    name "Microsoft Corp"
+    name "Microsoft"
     gnn_risk_score 9.575860993038532E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3355,7 +3355,7 @@ graph [
     label "FSLR"
     ticker "FSLR"
     market_cap 0
-    name "First Solar, Inc."
+    name "First Solar"
     gnn_risk_score 3.3042431368812686E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3365,7 +3365,7 @@ graph [
     label "FE"
     ticker "FE"
     market_cap 0
-    name "FirstEnergy Corp."
+    name "FirstEnergy"
     gnn_risk_score 1.5174967302300502E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3375,7 +3375,7 @@ graph [
     label "TSLA"
     ticker "TSLA"
     market_cap 0
-    name "Tesla, Inc. Common Stock"
+    name "Tesla, Inc."
     gnn_risk_score 1.034031527069601E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3385,7 +3385,7 @@ graph [
     label "APD"
     ticker "APD"
     market_cap 0
-    name "Air Products &#38; Chemicals, Inc."
+    name "Air Products"
     gnn_risk_score 4.4158895207147E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3395,7 +3395,7 @@ graph [
     label "CZR"
     ticker "CZR"
     market_cap 0
-    name "Caesars Entertainment, Inc. Common Stock"
+    name "Caesars Entertainment"
     gnn_risk_score 7.150976699676903E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3405,7 +3405,7 @@ graph [
     label "DAL"
     ticker "DAL"
     market_cap 0
-    name "Delta Air Lines, Inc."
+    name "Delta Air Lines"
     gnn_risk_score 6.660664207680522E-12
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3415,7 +3415,7 @@ graph [
     label "IRM"
     ticker "IRM"
     market_cap 0
-    name "Iron Mountain Inc."
+    name "Iron Mountain"
     gnn_risk_score 9.702704062419798E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3425,7 +3425,7 @@ graph [
     label "PANW"
     ticker "PANW"
     market_cap 0
-    name "Palo Alto Networks, Inc. Common Stock"
+    name "Palo Alto Networks"
     gnn_risk_score 1.2903274182463065E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3435,7 +3435,7 @@ graph [
     label "MOS"
     ticker "MOS"
     market_cap 0
-    name "The Mosaic Company"
+    name "Mosaic Company (The)"
     gnn_risk_score 4.5163988033891656E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3445,7 +3445,7 @@ graph [
     label "SEE"
     ticker "SEE"
     market_cap 0
-    name "Sealed Air Corp."
+    name "Sealed Air Corp"
     gnn_risk_score 1.2325968157256284E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3455,7 +3455,7 @@ graph [
     label "LUV"
     ticker "LUV"
     market_cap 0
-    name "Southwest Airlines Co."
+    name "Southwest Airlines"
     gnn_risk_score 4.159288380378712E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3465,7 +3465,7 @@ graph [
     label "UAL"
     ticker "UAL"
     market_cap 0
-    name "United Airlines Holdings, Inc. Common Stock"
+    name "United Airlines Holdings"
     gnn_risk_score 2.4876355837477604E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3475,7 +3475,7 @@ graph [
     label "GM"
     ticker "GM"
     market_cap 0
-    name "General Motors Company"
+    name "General Motors"
     gnn_risk_score 6.1059899962856434E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3495,7 +3495,7 @@ graph [
     label "TDG"
     ticker "TDG"
     market_cap 0
-    name "TransDigm Group Incorporated"
+    name "TransDigm Group"
     gnn_risk_score 1.2596768783623702E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3504,18 +3504,18 @@ graph [
     id 350
     label "LLY"
     ticker "LLY"
-    market_cap 0
+    market_cap 988405014105.3799
     name "Eli Lilly &#38; Co."
     gnn_risk_score 6.703717581046931E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
+    sector "PHARMACEUTICAL PREPARATIONS"
   ]
   node [
     id 351
     label "AVB"
     ticker "AVB"
     market_cap 0
-    name "AvalonBay Communities, Inc."
+    name "AvalonBay Communities"
     gnn_risk_score 6.099390437164232E-11
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3525,7 +3525,7 @@ graph [
     label "MAA"
     ticker "MAA"
     market_cap 0
-    name "Mid-America Apartment Communities, Inc."
+    name "Mid-America Apartment Communities"
     gnn_risk_score 1.538224303487823E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3535,7 +3535,7 @@ graph [
     label "PSX"
     ticker "PSX"
     market_cap 0
-    name "PHILLIPS 66"
+    name "Phillips 66"
     gnn_risk_score 1.4526763436606416E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3545,7 +3545,7 @@ graph [
     label "CMA"
     ticker "CMA"
     market_cap 0
-    name "Comerica Incorporated"
+    name "Comerica Inc."
     gnn_risk_score 2.5908744305525033E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3555,7 +3555,7 @@ graph [
     label "GLW"
     ticker "GLW"
     market_cap 0
-    name "Corning Incorporated"
+    name "Corning Inc."
     gnn_risk_score 4.425456552326068E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3565,7 +3565,7 @@ graph [
     label "SHW"
     ticker "SHW"
     market_cap 0
-    name "The Sherwin-Williams Company"
+    name "Sherwin-Williams"
     gnn_risk_score 2.7742154884435877E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3575,7 +3575,7 @@ graph [
     label "EFX"
     ticker "EFX"
     market_cap 0
-    name "Equifax, Incorporated"
+    name "Equifax"
     gnn_risk_score 4.119397800650404E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3585,7 +3585,7 @@ graph [
     label "MA"
     ticker "MA"
     market_cap 0
-    name "Mastercard Incorporated"
+    name "Mastercard"
     gnn_risk_score 2.2367403573753109E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3595,7 +3595,7 @@ graph [
     label "MKC"
     ticker "MKC"
     market_cap 0
-    name "McCormick &#38; Company, Incorporated Non-VTG CS"
+    name "McCormick &#38; Company"
     gnn_risk_score 2.1002766192879108E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3605,7 +3605,7 @@ graph [
     label "PEG"
     ticker "PEG"
     market_cap 0
-    name "Public Service Enterprise Group Incorporated"
+    name "Public Service Enterprise Group"
     gnn_risk_score 0.0005362041410990059
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3615,7 +3615,7 @@ graph [
     label "SNA"
     ticker "SNA"
     market_cap 0
-    name "Snap-on Incorporated"
+    name "Snap-on"
     gnn_risk_score 1.2346955372777302E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3625,7 +3625,7 @@ graph [
     label "WTW"
     ticker "WTW"
     market_cap 0
-    name "Willis Towers Watson Public Limited Company Ordinary Shares"
+    name "Willis Towers Watson"
     gnn_risk_score 4.76987452202593E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3635,7 +3635,7 @@ graph [
     label "TDY"
     ticker "TDY"
     market_cap 0
-    name "Teledyne Technologies Incorporated"
+    name "Teledyne Technologies"
     gnn_risk_score 8.519251082361734E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3645,7 +3645,7 @@ graph [
     label "TFX"
     ticker "TFX"
     market_cap 0
-    name "Teleflex Incorporated"
+    name "Teleflex Inc."
     gnn_risk_score 6.218389785317413E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3655,7 +3655,7 @@ graph [
     label "TXN"
     ticker "TXN"
     market_cap 0
-    name "Texas Instruments Incorporated"
+    name "Texas Instruments"
     gnn_risk_score 5.1084560193093154E-11
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3665,7 +3665,7 @@ graph [
     label "UNH"
     ticker "UNH"
     market_cap 0
-    name "UNITEDHEALTH GROUP INCORPORATED (Delaware)"
+    name "UnitedHealth Group"
     gnn_risk_score 3.6935765024281864E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3675,7 +3675,7 @@ graph [
     label "GOOGL"
     ticker "GOOGL"
     market_cap 0
-    name "Alphabet Inc. Class A Common Stock"
+    name "Alphabet Inc. (Class A)"
     gnn_risk_score 2.1278008688341288E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3685,7 +3685,7 @@ graph [
     label "AMP"
     ticker "AMP"
     market_cap 0
-    name "Ameriprise Financial, Inc."
+    name "Ameriprise Financial"
     gnn_risk_score 0.4138738811016083
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3695,7 +3695,7 @@ graph [
     label "PFG"
     ticker "PFG"
     market_cap 0
-    name "Principal Financial Group, Inc."
+    name "Principal Financial Group"
     gnn_risk_score 1.776352974047768E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3705,7 +3705,7 @@ graph [
     label "ADM"
     ticker "ADM"
     market_cap 0
-    name "Archer Daniels Midland Company"
+    name "Archer Daniels Midland"
     gnn_risk_score 8.125306862893922E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3715,7 +3715,7 @@ graph [
     label "ACGL"
     ticker "ACGL"
     market_cap 0
-    name "Arch Capital Group Ltd"
+    name "Arch Capital Group"
     gnn_risk_score 3.057625974633993E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3725,7 +3725,7 @@ graph [
     label "LRCX"
     ticker "LRCX"
     market_cap 0
-    name "Lam Research Corp"
+    name "Lam Research"
     gnn_risk_score 8.681272589683431E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3735,7 +3735,7 @@ graph [
     label "UPS"
     ticker "UPS"
     market_cap 0
-    name "United Parcel Service, Inc. Class B"
+    name "United Parcel Service"
     gnn_risk_score 0.9895485639572144
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3745,7 +3745,7 @@ graph [
     label "GEHC"
     ticker "GEHC"
     market_cap 0
-    name "GE HealthCare Technologies Inc. Common Stock"
+    name "GE HealthCare"
     gnn_risk_score 0.0011779330670833588
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3755,7 +3755,7 @@ graph [
     label "IR"
     ticker "IR"
     market_cap 0
-    name "Ingersoll Rand Inc. Common Stock"
+    name "Ingersoll Rand"
     gnn_risk_score 1.5672327435822808E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3765,7 +3765,7 @@ graph [
     label "JBHT"
     ticker "JBHT"
     market_cap 0
-    name "JB Hunt Transport Services Inc"
+    name "J.B. Hunt"
     gnn_risk_score 4.416059766754188E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3775,7 +3775,7 @@ graph [
     label "HBAN"
     ticker "HBAN"
     market_cap 0
-    name "Huntington Bancshares Inc"
+    name "Huntington Bancshares"
     gnn_risk_score 6.52001253911294E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3785,7 +3785,7 @@ graph [
     label "MMM"
     ticker "MMM"
     market_cap 0
-    name "3M Company"
+    name "3M"
     gnn_risk_score 9.673017586919741E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3795,7 +3795,7 @@ graph [
     label "ALLE"
     ticker "ALLE"
     market_cap 0
-    name "Allegion Public Limited Company"
+    name "Allegion"
     gnn_risk_score 1.5991096447010023E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3805,7 +3805,7 @@ graph [
     label "AEP"
     ticker "AEP"
     market_cap 0
-    name "American Electric Power Company, Inc."
+    name "American Electric Power"
     gnn_risk_score 1.9343694646067888E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3815,7 +3815,7 @@ graph [
     label "AXP"
     ticker "AXP"
     market_cap 0
-    name "American Express Company"
+    name "American Express"
     gnn_risk_score 2.7286413128990716E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3825,7 +3825,7 @@ graph [
     label "AWK"
     ticker "AWK"
     market_cap 0
-    name "American Water Works Company, Inc"
+    name "American Water Works"
     gnn_risk_score 1.4737751143911737E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3835,7 +3835,7 @@ graph [
     label "BKR"
     ticker "BKR"
     market_cap 0
-    name "Baker Hughes Company"
+    name "Baker Hughes"
     gnn_risk_score 2.90334196506592E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3845,7 +3845,7 @@ graph [
     label "BBY"
     ticker "BBY"
     market_cap 0
-    name "Best Buy Company, Inc."
+    name "Best Buy"
     gnn_risk_score 1.002671501382224E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3855,7 +3855,7 @@ graph [
     label "BA"
     ticker "BA"
     market_cap 0
-    name "Boeing Company"
+    name "Boeing"
     gnn_risk_score 6.739363470842363E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3865,7 +3865,7 @@ graph [
     label "CPB"
     ticker "CPB"
     market_cap 0
-    name "The Campbell's Company Common Stock"
+    name "Campbell's Company (The)"
     gnn_risk_score 7.613913476234302E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3875,7 +3875,7 @@ graph [
     label "DXC"
     ticker "DXC"
     market_cap 0
-    name "DXC Technology Company"
+    name "DXC Technology"
     gnn_risk_score 0.00037966284435242414
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3895,7 +3895,7 @@ graph [
     label "CL"
     ticker "CL"
     market_cap 0
-    name "Colgate-Palmolive Company"
+    name "Colgate-Palmolive"
     gnn_risk_score 5.435266757558566E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3915,7 +3915,7 @@ graph [
     label "DIS"
     ticker "DIS"
     market_cap 0
-    name "The Walt Disney Company"
+    name "Walt Disney Company (The)"
     gnn_risk_score 0.8773577809333801
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3925,7 +3925,7 @@ graph [
     label "DTE"
     ticker "DTE"
     market_cap 0
-    name "DTE Energy Company"
+    name "DTE Energy"
     gnn_risk_score 1.5212395737762563E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3935,7 +3935,7 @@ graph [
     label "EMN"
     ticker "EMN"
     market_cap 0
-    name "Eastman Chemical Company"
+    name "Eastman Chemical"
     gnn_risk_score 1.174170449758094E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3945,7 +3945,7 @@ graph [
     label "ROP"
     ticker "ROP"
     market_cap 0
-    name "Roper Technologies, Inc. Common Stock"
+    name "Roper Technologies"
     gnn_risk_score 3.7341011193348095E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3975,7 +3975,7 @@ graph [
     label "HAL"
     ticker "HAL"
     market_cap 0
-    name "Halliburton Company"
+    name "Halliburton"
     gnn_risk_score 1.1104298209829722E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3985,7 +3985,7 @@ graph [
     label "HSY"
     ticker "HSY"
     market_cap 0
-    name "The Hershey Company"
+    name "Hershey Company (The)"
     gnn_risk_score 2.4101532858367136E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -3995,7 +3995,7 @@ graph [
     label "HPE"
     ticker "HPE"
     market_cap 0
-    name "Hewlett Packard Enterprise Company"
+    name "Hewlett Packard Enterprise"
     gnn_risk_score 6.365027047650074E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4005,7 +4005,7 @@ graph [
     label "KHC"
     ticker "KHC"
     market_cap 0
-    name "The Kraft Heinz Company Common Stock"
+    name "Kraft Heinz"
     gnn_risk_score 1.2256776038555017E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4015,7 +4015,7 @@ graph [
     label "TAP"
     ticker "TAP"
     market_cap 0
-    name "Molson Coors Beverage Company Class B"
+    name "Molson Coors Beverage Company"
     gnn_risk_score 1.3344230609391161E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4025,7 +4025,7 @@ graph [
     label "PG"
     ticker "PG"
     market_cap 0
-    name "Procter &#38; Gamble Company"
+    name "Procter &#38; Gamble"
     gnn_risk_score 0.9999305605888367
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4035,7 +4035,7 @@ graph [
     label "SJM"
     ticker "SJM"
     market_cap 0
-    name "The J.M. Smucker Company"
+    name "J.M. Smucker Company (The)"
     gnn_risk_score 1.4954079086137995E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4045,7 +4045,7 @@ graph [
     label "SO"
     ticker "SO"
     market_cap 0
-    name "The Southern Company"
+    name "Southern Company"
     gnn_risk_score 9.006782875076169E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4055,7 +4055,7 @@ graph [
     label "SYF"
     ticker "SYF"
     market_cap 0
-    name "SYNCHRONY FINANCIAL"
+    name "Synchrony Financial"
     gnn_risk_score 5.766869435319677E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4065,7 +4065,7 @@ graph [
     label "VMC"
     ticker "VMC"
     market_cap 0
-    name "Vulcan Materials Company(Holding Company)"
+    name "Vulcan Materials Company"
     gnn_risk_score 2.450343750126649E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4075,7 +4075,7 @@ graph [
     label "WY"
     ticker "WY"
     market_cap 0
-    name "Weyerhaeuser Company"
+    name "Weyerhaeuser"
     gnn_risk_score 1.916902903076334E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4085,7 +4085,7 @@ graph [
     label "KDP"
     ticker "KDP"
     market_cap 0
-    name "Keurig Dr Pepper Inc."
+    name "Keurig Dr Pepper"
     gnn_risk_score 1.228655285151481E-11
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4095,7 +4095,7 @@ graph [
     label "MPC"
     ticker "MPC"
     market_cap 0
-    name "MARATHON PETROLEUM CORPORATION"
+    name "Marathon Petroleum"
     gnn_risk_score 0.0003821583522949368
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4105,7 +4105,7 @@ graph [
     label "REGN"
     ticker "REGN"
     market_cap 0
-    name "Regeneron Pharmaceuticals Inc"
+    name "Regeneron Pharmaceuticals"
     gnn_risk_score 1.2838938800996402E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4115,7 +4115,7 @@ graph [
     label "VRTX"
     ticker "VRTX"
     market_cap 0
-    name "Vertex Pharmaceuticals Inc"
+    name "Vertex Pharmaceuticals"
     gnn_risk_score 7.455686557023E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4125,7 +4125,7 @@ graph [
     label "WST"
     ticker "WST"
     market_cap 0
-    name "West Pharmaceutical Services, Inc."
+    name "West Pharmaceutical Services"
     gnn_risk_score 1.521075773780467E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4135,7 +4135,7 @@ graph [
     label "MKTX"
     ticker "MKTX"
     market_cap 0
-    name "MarketAxess Holdings Inc."
+    name "MarketAxess"
     gnn_risk_score 2.2929802501181484E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4145,7 +4145,7 @@ graph [
     label "TSCO"
     ticker "TSCO"
     market_cap 0
-    name "Tractor Supply Co"
+    name "Tractor Supply"
     gnn_risk_score 1.5106870199232958E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4155,7 +4155,7 @@ graph [
     label "ED"
     ticker "ED"
     market_cap 0
-    name "Consolidated Edison, Inc."
+    name "Consolidated Edison"
     gnn_risk_score 0.9413545727729797
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4165,7 +4165,7 @@ graph [
     label "LNT"
     ticker "LNT"
     market_cap 0
-    name "Alliant Energy Corporation Common Stock"
+    name "Alliant Energy"
     gnn_risk_score 1.7541751162752917E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4175,7 +4175,7 @@ graph [
     label "APA"
     ticker "APA"
     market_cap 0
-    name "APA Corporation Common Stock"
+    name "APA Corporation"
     gnn_risk_score 2.6228625933481797E-14
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4185,7 +4185,7 @@ graph [
     label "CE"
     ticker "CE"
     market_cap 0
-    name "Celanese Corporation Common Stock"
+    name "Celanese Corp"
     gnn_risk_score 0.9955822825431824
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4205,7 +4205,7 @@ graph [
     label "CEG"
     ticker "CEG"
     market_cap 0
-    name "Constellation Energy Corporation Common Stock"
+    name "Constellation Energy"
     gnn_risk_score 1.4242798442865023E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4215,7 +4215,7 @@ graph [
     label "FOXA"
     ticker "FOXA"
     market_cap 0
-    name "Fox Corporation Class A Common Stock"
+    name "Fox Corporation (Class A)"
     gnn_risk_score 5.928998625392978E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4225,7 +4225,7 @@ graph [
     label "FOX"
     ticker "FOX"
     market_cap 0
-    name "Fox Corporation Class B Common Stock"
+    name "Fox Corporation (Class B)"
     gnn_risk_score 0.5431392192840576
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4235,7 +4235,7 @@ graph [
     label "GD"
     ticker "GD"
     market_cap 0
-    name "General Dynamics Corporation"
+    name "General Dynamics"
     gnn_risk_score 1.5945736953071332E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4245,7 +4245,7 @@ graph [
     label "KLAC"
     ticker "KLAC"
     market_cap 0
-    name "KLA Corporation Common Stock"
+    name "KLA Corporation"
     gnn_risk_score 2.067011894979487E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4255,7 +4255,7 @@ graph [
     label "NWSA"
     ticker "NWSA"
     market_cap 0
-    name "News Corporation Class A Common Stock"
+    name "News Corp (Class A)"
     gnn_risk_score 2.2615930461711287E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4265,7 +4265,7 @@ graph [
     label "NWS"
     ticker "NWS"
     market_cap 0
-    name "News Corporation Class B Common Stock"
+    name "News Corp (Class B)"
     gnn_risk_score 4.97700966661796E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4275,7 +4275,7 @@ graph [
     label "PNW"
     ticker "PNW"
     market_cap 0
-    name "Pinnacle West Capital Corporation"
+    name "Pinnacle West Capital"
     gnn_risk_score 2.518486098779249E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4285,7 +4285,7 @@ graph [
     label "JKHY"
     ticker "JKHY"
     market_cap 0
-    name "Henry (Jack) &#38; Associates"
+    name "Jack Henry &#38; Associates"
     gnn_risk_score 1.9623027647241997E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4295,7 +4295,7 @@ graph [
     label "TFC"
     ticker "TFC"
     market_cap 0
-    name "Truist Financial Corporation"
+    name "Truist Financial"
     gnn_risk_score 1.443379318288862E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4315,7 +4315,7 @@ graph [
     label "SLB"
     ticker "SLB"
     market_cap 0
-    name "SLB Limited"
+    name "Schlumberger"
     gnn_risk_score 4.306526079744799E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4325,7 +4325,7 @@ graph [
     label "LYB"
     ticker "LYB"
     market_cap 0
-    name "LyondellBasell Industries N.V. Class A"
+    name "LyondellBasell"
     gnn_risk_score 1.5010336028353777E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4335,7 +4335,7 @@ graph [
     label "BIIB"
     ticker "BIIB"
     market_cap 0
-    name "Biogen Inc. Common Stock"
+    name "Biogen"
     gnn_risk_score 4.183738383289892E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4345,7 +4345,7 @@ graph [
     label "BKNG"
     ticker "BKNG"
     market_cap 0
-    name "Booking Holdings Inc. Common Stock"
+    name "Booking Holdings"
     gnn_risk_score 7.626346814504359E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4355,7 +4355,7 @@ graph [
     label "AVGO"
     ticker "AVGO"
     market_cap 0
-    name "Broadcom Inc. Common Stock"
+    name "Broadcom"
     gnn_risk_score 1.3995060665905612E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4365,7 +4365,7 @@ graph [
     label "CSCO"
     ticker "CSCO"
     market_cap 0
-    name "Cisco Systems, Inc. Common Stock (DE)"
+    name "Cisco"
     gnn_risk_score 0.991435170173645
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4375,7 +4375,7 @@ graph [
     label "COO"
     ticker "COO"
     market_cap 0
-    name "The Cooper Companies, Inc. Common Stock"
+    name "Cooper Companies (The)"
     gnn_risk_score 7.393830686597269E-11
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4385,7 +4385,7 @@ graph [
     label "CTVA"
     ticker "CTVA"
     market_cap 0
-    name "Corteva, Inc. Common Stock"
+    name "Corteva"
     gnn_risk_score 1.3609953839477384E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4395,7 +4395,7 @@ graph [
     label "D"
     ticker "D"
     market_cap 0
-    name "Dominion Energy, Inc Common Stock"
+    name "Dominion Energy"
     gnn_risk_score 1.3250818255983177E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4405,7 +4405,7 @@ graph [
     label "DD"
     ticker "DD"
     market_cap 0
-    name "DuPont de Nemours, Inc. Common Stock"
+    name "DuPont"
     gnn_risk_score 1.7458461343267118E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4415,7 +4415,7 @@ graph [
     label "EQIX"
     ticker "EQIX"
     market_cap 0
-    name "Equinix, Inc. Common Stock REIT"
+    name "Equinix"
     gnn_risk_score 4.201190861863324E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4425,7 +4425,7 @@ graph [
     label "EXPE"
     ticker "EXPE"
     market_cap 0
-    name "Expedia Group, Inc. Common Stock"
+    name "Expedia Group"
     gnn_risk_score 2.0590364968597896E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4435,7 +4435,7 @@ graph [
     label "FFIV"
     ticker "FFIV"
     market_cap 0
-    name "F5, Inc. Common Stock"
+    name "F5, Inc."
     gnn_risk_score 2.7735497496905737E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4445,7 +4445,7 @@ graph [
     label "GEN"
     ticker "GEN"
     market_cap 0
-    name "Gen Digital Inc. Common Stock"
+    name "Gen Digital"
     gnn_risk_score 0.9999996423721313
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4455,7 +4455,7 @@ graph [
     label "INVH"
     ticker "INVH"
     market_cap 0
-    name "Invitation Homes Inc. Common Stock"
+    name "Invitation Homes"
     gnn_risk_score 6.427971754874306E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4465,7 +4465,7 @@ graph [
     label "MAR"
     ticker "MAR"
     market_cap 0
-    name "Marriott International Class A Common Stock"
+    name "Marriott International"
     gnn_risk_score 0.9996995329856873
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4474,18 +4474,18 @@ graph [
     id 447
     label "META"
     ticker "META"
-    market_cap 0
+    market_cap 1597031490735.17
     name "Meta Platforms, Inc. Class A Common Stock"
     gnn_risk_score 0.9981081485748291
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
+    sector "SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC."
   ]
   node [
     id 448
     label "MRNA"
     ticker "MRNA"
     market_cap 0
-    name "Moderna, Inc. Common Stock"
+    name "Moderna"
     gnn_risk_score 0.00044773751869797707
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4495,7 +4495,7 @@ graph [
     label "NDAQ"
     ticker "NDAQ"
     market_cap 0
-    name "Nasdaq, Inc. Common Stock"
+    name "Nasdaq, Inc."
     gnn_risk_score 1.0896881175170847E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4505,7 +4505,7 @@ graph [
     label "PYPL"
     ticker "PYPL"
     market_cap 0
-    name "PayPal Holdings, Inc. Common Stock"
+    name "PayPal"
     gnn_risk_score 1.1607910892053042E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4515,7 +4515,7 @@ graph [
     label "TPR"
     ticker "TPR"
     market_cap 0
-    name "Tapestry, Inc. Common Stock"
+    name "Tapestry, Inc."
     gnn_risk_score 3.60605945104453E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4525,7 +4525,7 @@ graph [
     label "TER"
     ticker "TER"
     market_cap 0
-    name "Teradyne, Inc. Common Stock"
+    name "Teradyne"
     gnn_risk_score 6.058063490854693E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4535,7 +4535,7 @@ graph [
     label "TRMB"
     ticker "TRMB"
     market_cap 0
-    name "Trimble Inc. Common Stock"
+    name "Trimble Inc."
     gnn_risk_score 1.2225272350008254E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4545,7 +4545,7 @@ graph [
     label "ULTA"
     ticker "ULTA"
     market_cap 0
-    name "Ulta Beauty, Inc. Common Stock"
+    name "Ulta Beauty"
     gnn_risk_score 2.8022190235788003E-05
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4555,7 +4555,7 @@ graph [
     label "VRSK"
     ticker "VRSK"
     market_cap 0
-    name "Verisk Analytics, Inc. Common Stock"
+    name "Verisk Analytics"
     gnn_risk_score 1.4198755025063292E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4585,7 +4585,7 @@ graph [
     label "WBD"
     ticker "WBD"
     market_cap 0
-    name "Warner Bros. Discovery, Inc. Series A Common Stock"
+    name "Warner Bros. Discovery"
     gnn_risk_score 2.2795231302552565E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4595,7 +4595,7 @@ graph [
     label "CFG"
     ticker "CFG"
     market_cap 0
-    name "Citizens Financial Group, Inc."
+    name "Citizens Financial Group"
     gnn_risk_score 2.202589222122242E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4605,7 +4605,7 @@ graph [
     label "MDLZ"
     ticker "MDLZ"
     market_cap 0
-    name "Mondelez International, Inc. Class A"
+    name "Mondelez International"
     gnn_risk_score 0.9999996423721313
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4615,7 +4615,7 @@ graph [
     label "VZ"
     ticker "VZ"
     market_cap 0
-    name "Verizon Communications"
+    name "Verizon"
     gnn_risk_score 6.077117973291024E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4625,7 +4625,7 @@ graph [
     label "BR"
     ticker "BR"
     market_cap 0
-    name "Broadridge Financial Solutions Inc"
+    name "Broadridge Financial Solutions"
     gnn_risk_score 0.00012218252231832594
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4635,7 +4635,7 @@ graph [
     label "COF"
     ticker "COF"
     market_cap 0
-    name "Capital One Financial"
+    name "Capital One"
     gnn_risk_score 9.912152165725274E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4645,7 +4645,7 @@ graph [
     label "CINF"
     ticker "CINF"
     market_cap 0
-    name "Cincinnati Financial Corp"
+    name "Cincinnati Financial"
     gnn_risk_score 4.8758156623307514E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4655,7 +4655,7 @@ graph [
     label "FIS"
     ticker "FIS"
     market_cap 0
-    name "Fidelity National Information Services, Inc."
+    name "Fidelity National Information Services"
     gnn_risk_score 1.565001639391994E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4665,7 +4665,7 @@ graph [
     label "PNC"
     ticker "PNC"
     market_cap 0
-    name "PNC Financial Services Group"
+    name "PNC Financial Services"
     gnn_risk_score 5.18506840307964E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4675,7 +4675,7 @@ graph [
     label "PRU"
     ticker "PRU"
     market_cap 0
-    name "Prudential Financial, Inc."
+    name "Prudential Financial"
     gnn_risk_score 1.2188418052616612E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4685,7 +4685,7 @@ graph [
     label "RJF"
     ticker "RJF"
     market_cap 0
-    name "Raymond James Financial, Inc."
+    name "Raymond James Financial"
     gnn_risk_score 8.328682099545404E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4705,7 +4705,7 @@ graph [
     label "RF"
     ticker "RF"
     market_cap 0
-    name "Regions Financial Corp."
+    name "Regions Financial Corporation"
     gnn_risk_score 8.633911363631341E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4715,7 +4715,7 @@ graph [
     label "UNP"
     ticker "UNP"
     market_cap 0
-    name "Union Pacific Corp."
+    name "Union Pacific Corporation"
     gnn_risk_score 5.936261482375471E-10
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4725,7 +4725,7 @@ graph [
     label "BMY"
     ticker "BMY"
     market_cap 0
-    name "Bristol-Myers Squibb Co."
+    name "Bristol Myers Squibb"
     gnn_risk_score 0.98972088098526
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4735,7 +4735,7 @@ graph [
     label "CHTR"
     ticker "CHTR"
     market_cap 0
-    name "Charter Comm Inc Del CL A New"
+    name "Charter Communications"
     gnn_risk_score 0.9999991655349731
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4745,7 +4745,7 @@ graph [
     label "HII"
     ticker "HII"
     market_cap 0
-    name "Huntington Ingalls Industries, Inc."
+    name "Huntington Ingalls Industries"
     gnn_risk_score 2.191395878980984E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4755,7 +4755,7 @@ graph [
     label "SBAC"
     ticker "SBAC"
     market_cap 0
-    name "SBA Communications Corp"
+    name "SBA Communications"
     gnn_risk_score 2.7132145419273E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4765,7 +4765,7 @@ graph [
     label "URI"
     ticker "URI"
     market_cap 0
-    name "United Rentals, Inc."
+    name "United Rentals"
     gnn_risk_score 1.5502183980942164E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4775,7 +4775,7 @@ graph [
     label "UHS"
     ticker "UHS"
     market_cap 0
-    name "Universal Health Services, Inc. Class B"
+    name "Universal Health Services"
     gnn_risk_score 8.434741793905687E-11
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4795,7 +4795,7 @@ graph [
     label "KMB"
     ticker "KMB"
     market_cap 0
-    name "Kimberly-Clark Corp."
+    name "Kimberly-Clark"
     gnn_risk_score 2.028981725743506E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4815,7 +4815,7 @@ graph [
     label "WAT"
     ticker "WAT"
     market_cap 0
-    name "Waters Corp"
+    name "Waters Corporation"
     gnn_risk_score 2.763521024462534E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4825,7 +4825,7 @@ graph [
     label "WDC"
     ticker "WDC"
     market_cap 0
-    name "Western Digital Corp."
+    name "Western Digital"
     gnn_risk_score 2.0312920696596848E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4835,7 +4835,7 @@ graph [
     label "PEP"
     ticker "PEP"
     market_cap 0
-    name "PepsiCo, Inc."
+    name "PepsiCo"
     gnn_risk_score 0.9999265670776367
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4855,7 +4855,7 @@ graph [
     label "LW"
     ticker "LW"
     market_cap 0
-    name "Lamb Weston Holdings, Inc."
+    name "Lamb Weston"
     gnn_risk_score 5.505128797267389E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4865,7 +4865,7 @@ graph [
     label "WHR"
     ticker "WHR"
     market_cap 0
-    name "Whirlpool Corp."
+    name "Whirlpool Corporation"
     gnn_risk_score 1.9394558421481634E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4875,7 +4875,7 @@ graph [
     label "SBUX"
     ticker "SBUX"
     market_cap 0
-    name "Starbucks Corp"
+    name "Starbucks"
     gnn_risk_score 4.35193072689799E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4885,7 +4885,7 @@ graph [
     label "BLK"
     ticker "BLK"
     market_cap 0
-    name "Blackrock, Inc."
+    name "BlackRock"
     gnn_risk_score 1.448704693984837E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4905,7 +4905,7 @@ graph [
     label "KIM"
     ticker "KIM"
     market_cap 0
-    name "Kimco Realty Corp."
+    name "Kimco Realty"
     gnn_risk_score 0.9999991655349731
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4915,7 +4915,7 @@ graph [
     label "EPAM"
     ticker "EPAM"
     market_cap 0
-    name "EPAM SYSTEMS, INC."
+    name "EPAM Systems"
     gnn_risk_score 3.0781830417936362E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4925,7 +4925,7 @@ graph [
     label "CMCSA"
     ticker "CMCSA"
     market_cap 0
-    name "Comcast Corp"
+    name "Comcast"
     gnn_risk_score 0.9854258298873901
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4935,7 +4935,7 @@ graph [
     label "EOG"
     ticker "EOG"
     market_cap 0
-    name "EOG Resources, Inc."
+    name "EOG Resources"
     gnn_risk_score 3.5550901884562336E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4945,7 +4945,7 @@ graph [
     label "INCY"
     ticker "INCY"
     market_cap 0
-    name "Incyte Genomics Inc"
+    name "Incyte"
     gnn_risk_score 9.54683400777867E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4955,7 +4955,7 @@ graph [
     label "DGX"
     ticker "DGX"
     market_cap 0
-    name "Quest Diagnostics Inc."
+    name "Quest Diagnostics"
     gnn_risk_score 1.4441908433582284E-06
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4965,7 +4965,7 @@ graph [
     label "STLD"
     ticker "STLD"
     market_cap 0
-    name "Steel Dynamics Inc"
+    name "Steel Dynamics"
     gnn_risk_score 4.2746343353883276E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4975,7 +4975,7 @@ graph [
     label "APTV"
     ticker "APTV"
     market_cap 0
-    name "Aptiv PLC"
+    name "Aptiv"
     gnn_risk_score 7.144297455852211E-07
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4985,7 +4985,7 @@ graph [
     label "EQT"
     ticker "EQT"
     market_cap 0
-    name "EQT CORP"
+    name "EQT Corporation"
     gnn_risk_score 4.6090669059140055E-08
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -4995,7 +4995,7 @@ graph [
     label "ORCL"
     ticker "ORCL"
     market_cap 0
-    name "Oracle Corp"
+    name "Oracle Corporation"
     gnn_risk_score 8.554588148967923E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
@@ -5025,20 +5025,556 @@ graph [
     label "TRGP"
     ticker "TRGP"
     market_cap 0
-    name "Targa Resources Corp."
+    name "Targa Resources"
     gnn_risk_score 3.848691449093167E-06
     last_risk_update "2025-11-24T09:53:59.584000000+00:00"
     sector "Discovered"
   ]
   node [
     id 503
+    label "X:ETHUSD"
+    ticker "X:ETHUSD"
+    market_cap 0
+    name "Ethereum (USD)"
+    sector "Discovered"
+  ]
+  node [
+    id 504
+    label "C:EURUSD"
+    ticker "C:EURUSD"
+    market_cap 0
+    name "Euro / US Dollar"
+    sector "Discovered"
+  ]
+  node [
+    id 505
+    label "PSKY"
+    ticker "PSKY"
+    market_cap 0
+    name "Paramount Skydance Corporation"
+    sector "Discovered"
+  ]
+  node [
+    id 506
+    label "ERIE"
+    ticker "ERIE"
+    market_cap 0
+    name "Erie Indemnity"
+    sector "Discovered"
+  ]
+  node [
+    id 507
+    label "BG"
+    ticker "BG"
+    market_cap 0
+    name "Bunge Global"
+    sector "Discovered"
+  ]
+  node [
+    id 508
+    label "C:GBPUSD"
+    ticker "C:GBPUSD"
+    market_cap 0
+    name "British Pound / US Dollar"
+    sector "Discovered"
+  ]
+  node [
+    id 509
+    label "BLDR"
+    ticker "BLDR"
+    market_cap 0
+    name "Builders FirstSource"
+    sector "Discovered"
+  ]
+  node [
+    id 510
+    label "COR"
+    ticker "COR"
+    market_cap 0
+    name "Cencora (formerly AmerisourceBergen)"
+    sector "Discovered"
+  ]
+  node [
+    id 511
+    label "EG"
+    ticker "EG"
+    market_cap 0
+    name "Everest Group (formerly RE)"
+    sector "Discovered"
+  ]
+  node [
+    id 512
+    label "HUBB"
+    ticker "HUBB"
+    market_cap 0
+    name "Hubbell Incorporated"
+    sector "Discovered"
+  ]
+  node [
+    id 513
+    label "PODD"
+    ticker "PODD"
+    market_cap 0
+    name "Insulet Corporation"
+    sector "Discovered"
+  ]
+  node [
+    id 514
+    label "KVUE"
+    ticker "KVUE"
+    market_cap 0
+    name "Kenvue"
+    sector "Discovered"
+  ]
+  node [
+    id 515
+    label "SW"
+    ticker "SW"
+    market_cap 0
+    name "Smurfit WestRock (formerly WestRock)"
+    sector "Discovered"
+  ]
+  node [
+    id 516
+    label "SOLV"
+    ticker "SOLV"
+    market_cap 0
+    name "Solventum"
+    sector "Discovered"
+  ]
+  node [
+    id 517
+    label "SMCI"
+    ticker "SMCI"
+    market_cap 0
+    name "Supermicro"
+    sector "Discovered"
+  ]
+  node [
+    id 518
+    label "TKO"
+    ticker "TKO"
+    market_cap 0
+    name "TKO Group Holdings"
+    sector "Discovered"
+  ]
+  node [
+    id 519
+    label "UBER"
+    ticker "UBER"
+    market_cap 0
+    name "Uber"
+    sector "Discovered"
+  ]
+  node [
+    id 520
+    label "I:DJI"
+    ticker "I:DJI"
+    market_cap 0
+    name "Dow Jones Industrial Average"
+    sector "Discovered"
+  ]
+  node [
+    id 521
+    label "I:RUT"
+    ticker "I:RUT"
+    market_cap 0
+    name "Russell 2000 Index"
+    sector "Discovered"
+  ]
+  node [
+    id 522
+    label "X:BTCUSD"
+    ticker "X:BTCUSD"
+    market_cap 0
+    name "Bitcoin (USD)"
+    sector "Discovered"
+  ]
+  node [
+    id 523
+    label "X:SOLUSD"
+    ticker "X:SOLUSD"
+    market_cap 0
+    name "Solana (USD)"
+    sector "Discovered"
+  ]
+  node [
+    id 524
+    label "X:ADAUSD"
+    ticker "X:ADAUSD"
+    market_cap 0
+    name "Cardano (USD)"
+    sector "Discovered"
+  ]
+  node [
+    id 525
+    label "X:DOGEUSD"
+    ticker "X:DOGEUSD"
+    market_cap 0
+    name "Dogecoin (USD)"
+    sector "Discovered"
+  ]
+  node [
+    id 526
+    label "X:LTCUSD"
+    ticker "X:LTCUSD"
+    market_cap 0
+    name "Litecoin (USD)"
+    sector "Discovered"
+  ]
+  node [
+    id 527
+    label "X:MATICUSD"
+    ticker "X:MATICUSD"
+    market_cap 0
+    name "Polygon (USD)"
+    sector "Discovered"
+  ]
+  node [
+    id 528
+    label "X:DOTUSD"
+    ticker "X:DOTUSD"
+    market_cap 0
+    name "Polkadot (USD)"
+    sector "Discovered"
+  ]
+  node [
+    id 529
+    label "C:USDJPY"
+    ticker "C:USDJPY"
+    market_cap 0
+    name "US Dollar / Japanese Yen"
+    sector "Discovered"
+  ]
+  node [
+    id 530
+    label "C:AUDUSD"
+    ticker "C:AUDUSD"
+    market_cap 0
+    name "Australian Dollar / US Dollar"
+    sector "Discovered"
+  ]
+  node [
+    id 531
+    label "C:USDCAD"
+    ticker "C:USDCAD"
+    market_cap 0
+    name "US Dollar / Canadian Dollar"
+    sector "Discovered"
+  ]
+  node [
+    id 532
+    label "C:USDCHF"
+    ticker "C:USDCHF"
+    market_cap 0
+    name "US Dollar / Swiss Franc"
+    sector "Discovered"
+  ]
+  node [
+    id 533
+    label "C:NZDUSD"
+    ticker "C:NZDUSD"
+    market_cap 0
+    name "New Zealand Dollar / US Dollar"
+    sector "Discovered"
+  ]
+  node [
+    id 534
+    label "BX"
+    ticker "BX"
+    market_cap 0
+    name "Blackstone Inc."
+    sector "Discovered"
+  ]
+  node [
+    id 535
+    label "XYZ"
+    ticker "XYZ"
+    market_cap 0
+    name "Block, Inc."
+    sector "Discovered"
+  ]
+  node [
+    id 536
+    label "CRWD"
+    ticker "CRWD"
+    market_cap 0
+    name "CrowdStrike"
+    sector "Discovered"
+  ]
+  node [
+    id 537
+    label "DECK"
+    ticker "DECK"
+    market_cap 0
+    name "Deckers Brands"
+    sector "Discovered"
+  ]
+  node [
+    id 538
+    label "DOC"
+    ticker "DOC"
+    market_cap 0
+    name "Healthpeak Properties (formerly PEAK)"
+    sector "Discovered"
+  ]
+  node [
+    id 539
+    label "IBKR"
+    ticker "IBKR"
+    market_cap 0
+    name "Interactive Brokers"
+    sector "Discovered"
+  ]
+  node [
+    id 540
+    label "KKR"
+    ticker "KKR"
+    market_cap 0
+    name "KKR &#38; Co."
+    sector "Discovered"
+  ]
+  node [
+    id 541
+    label "HOOD"
+    ticker "HOOD"
+    market_cap 0
+    name "Robinhood Markets"
+    sector "Discovered"
+  ]
+  node [
+    id 542
+    label "TTD"
+    ticker "TTD"
+    market_cap 0
+    name "Trade Desk (The)"
+    sector "Discovered"
+  ]
+  node [
+    id 543
+    label "WDAY"
+    ticker "WDAY"
+    market_cap 0
+    name "Workday, Inc."
+    sector "Discovered"
+  ]
+  node [
+    id 544
+    label "BRK-B"
+    ticker "BRK-B"
+    market_cap 0
+    name "Berkshire Hathaway"
+    sector "Discovered"
+  ]
+  node [
+    id 545
+    label "CPAY"
+    ticker "CPAY"
+    market_cap 0
+    name "Corpay (formerly FLEETCOR/FLT)"
+    sector "Discovered"
+  ]
+  node [
+    id 546
+    label "DAY"
+    ticker "DAY"
+    market_cap 0
+    name "Dayforce (formerly Ceridian/CDAY)"
+    sector "Discovered"
+  ]
+  node [
+    id 547
+    label "I:NDX"
+    ticker "I:NDX"
+    market_cap 0
+    name "Nasdaq 100 Index"
+    sector "Discovered"
+  ]
+  node [
+    id 548
+    label "ABNB"
+    ticker "ABNB"
+    market_cap 0
+    name "Airbnb"
+    sector "Discovered"
+  ]
+  node [
+    id 549
+    label "AXON"
+    ticker "AXON"
+    market_cap 0
+    name "Axon Enterprise"
+    sector "Discovered"
+  ]
+  node [
+    id 550
+    label "I:SPX"
+    ticker "I:SPX"
+    market_cap 0
+    name "S&#38;P 500 Index"
+    sector "Discovered"
+  ]
+  node [
+    id 551
+    label "DELL"
+    ticker "DELL"
+    market_cap 0
+    name "Dell Technologies"
+    sector "Discovered"
+  ]
+  node [
+    id 552
+    label "PLTR"
+    ticker "PLTR"
+    market_cap 0
+    name "Palantir Technologies"
+    sector "Discovered"
+  ]
+  node [
+    id 553
+    label "Q"
+    ticker "Q"
+    market_cap 0
+    name "Qnity Electronics"
+    sector "Discovered"
+  ]
+  node [
+    id 554
+    label "LII"
+    ticker "LII"
+    market_cap 0
+    name "Lennox International"
+    sector "Discovered"
+  ]
+  node [
+    id 555
+    label "APO"
+    ticker "APO"
+    market_cap 0
+    name "Apollo Global Management"
+    sector "Discovered"
+  ]
+  node [
+    id 556
+    label "APP"
+    ticker "APP"
+    market_cap 0
+    name "AppLovin"
+    sector "Discovered"
+  ]
+  node [
+    id 557
+    label "COIN"
+    ticker "COIN"
+    market_cap 0
+    name "Coinbase"
+    sector "Discovered"
+  ]
+  node [
+    id 558
+    label "EXE"
+    ticker "EXE"
+    market_cap 0
+    name "Expand Energy"
+    sector "Discovered"
+  ]
+  node [
+    id 559
+    label "GEV"
+    ticker "GEV"
+    market_cap 0
+    name "GE Vernova"
+    sector "Discovered"
+  ]
+  node [
+    id 560
+    label "SOLS"
+    ticker "SOLS"
+    market_cap 0
+    name "Solstice Advanced Materials"
+    sector "Discovered"
+  ]
+  node [
+    id 561
+    label "TPL"
+    ticker "TPL"
+    market_cap 0
+    name "Texas Pacific Land Corporation"
+    sector "Discovered"
+  ]
+  node [
+    id 562
+    label "WSM"
+    ticker "WSM"
+    market_cap 0
+    name "Williams-Sonoma, Inc."
+    sector "Discovered"
+  ]
+  node [
+    id 563
+    label "BF-B"
+    ticker "BF-B"
+    market_cap 0
+    name "Brown&#8211;Forman"
+    sector "Discovered"
+  ]
+  node [
+    id 564
+    label "I:VIX"
+    ticker "I:VIX"
+    market_cap 0
+    name "CBOE Volatility Index"
+    sector "Discovered"
+  ]
+  node [
+    id 565
+    label "DASH"
+    ticker "DASH"
+    market_cap 0
+    name "DoorDash"
+    sector "Discovered"
+  ]
+  node [
+    id 566
+    label "EME"
+    ticker "EME"
+    market_cap 0
+    name "Emcor"
+    sector "Discovered"
+  ]
+  node [
+    id 567
+    label "VLTO"
+    ticker "VLTO"
+    market_cap 0
+    name "Veralto"
+    sector "Discovered"
+  ]
+  node [
+    id 568
+    label "DDOG"
+    ticker "DDOG"
+    market_cap 0
+    name "Datadog"
+    sector "Discovered"
+  ]
+  node [
+    id 569
+    label "VST"
+    ticker "VST"
+    market_cap 0
+    name "Vistra Corp."
+    sector "Discovered"
+  ]
+  node [
+    id 570
     label "SNAP"
     ticker "SNAP"
-    market_cap 14734903296.27
+    market_cap 0
     name "Snap Inc."
     gnn_risk_score 0.9999158978462219
     last_risk_update "2025-11-24T09:53:59.584000000+00:00"
-    sector "SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC."
+    sector "Discovered"
   ]
   edge [
     source 29
@@ -5067,6 +5603,10 @@ graph [
   edge [
     source 29
     target 9
+  ]
+  edge [
+    source 29
+    target 11
   ]
   edge [
     source 29
@@ -5130,6 +5670,10 @@ graph [
   ]
   edge [
     source 29
+    target 41
+  ]
+  edge [
+    source 29
     target 43
   ]
   edge [
@@ -5183,6 +5727,10 @@ graph [
   edge [
     source 29
     target 68
+  ]
+  edge [
+    source 29
+    target 71
   ]
   edge [
     source 29
@@ -5278,6 +5826,10 @@ graph [
   ]
   edge [
     source 29
+    target 108
+  ]
+  edge [
+    source 29
     target 110
   ]
   edge [
@@ -5291,6 +5843,10 @@ graph [
   edge [
     source 29
     target 115
+  ]
+  edge [
+    source 29
+    target 116
   ]
   edge [
     source 29
@@ -5419,6 +5975,10 @@ graph [
   edge [
     source 29
     target 172
+  ]
+  edge [
+    source 29
+    target 173
   ]
   edge [
     source 29
@@ -5586,6 +6146,10 @@ graph [
   ]
   edge [
     source 29
+    target 252
+  ]
+  edge [
+    source 29
     target 253
   ]
   edge [
@@ -5607,6 +6171,10 @@ graph [
   edge [
     source 29
     target 265
+  ]
+  edge [
+    source 29
+    target 266
   ]
   edge [
     source 29
@@ -5738,6 +6306,10 @@ graph [
   ]
   edge [
     source 29
+    target 321
+  ]
+  edge [
+    source 29
     target 322
   ]
   edge [
@@ -5751,6 +6323,10 @@ graph [
   edge [
     source 29
     target 326
+  ]
+  edge [
+    source 29
+    target 327
   ]
   edge [
     source 29
@@ -5835,6 +6411,10 @@ graph [
   edge [
     source 29
     target 363
+  ]
+  edge [
+    source 29
+    target 364
   ]
   edge [
     source 29
@@ -6214,6 +6794,10 @@ graph [
   ]
   edge [
     source 29
+    target 473
+  ]
+  edge [
+    source 29
     target 474
   ]
   edge [
@@ -6255,6 +6839,58 @@ graph [
   edge [
     source 29
     target 495
+  ]
+  edge [
+    source 29
+    target 503
+  ]
+  edge [
+    source 29
+    target 504
+  ]
+  edge [
+    source 29
+    target 505
+  ]
+  edge [
+    source 29
+    target 509
+  ]
+  edge [
+    source 29
+    target 534
+  ]
+  edge [
+    source 29
+    target 535
+  ]
+  edge [
+    source 29
+    target 543
+  ]
+  edge [
+    source 29
+    target 547
+  ]
+  edge [
+    source 29
+    target 551
+  ]
+  edge [
+    source 29
+    target 552
+  ]
+  edge [
+    source 29
+    target 554
+  ]
+  edge [
+    source 29
+    target 562
+  ]
+  edge [
+    source 29
+    target 570
   ]
   edge [
     source 31
@@ -7834,6 +8470,10 @@ graph [
   ]
   edge [
     source 43
+    target 174
+  ]
+  edge [
+    source 43
     target 175
   ]
   edge [
@@ -8107,6 +8747,10 @@ graph [
   edge [
     source 43
     target 330
+  ]
+  edge [
+    source 43
+    target 331
   ]
   edge [
     source 43
@@ -8430,6 +9074,10 @@ graph [
   ]
   edge [
     source 43
+    target 431
+  ]
+  edge [
+    source 43
     target 432
   ]
   edge [
@@ -8574,6 +9222,10 @@ graph [
   ]
   edge [
     source 43
+    target 473
+  ]
+  edge [
+    source 43
     target 474
   ]
   edge [
@@ -8631,6 +9283,186 @@ graph [
   edge [
     source 43
     target 502
+  ]
+  edge [
+    source 43
+    target 503
+  ]
+  edge [
+    source 43
+    target 504
+  ]
+  edge [
+    source 43
+    target 505
+  ]
+  edge [
+    source 43
+    target 506
+  ]
+  edge [
+    source 43
+    target 507
+  ]
+  edge [
+    source 43
+    target 508
+  ]
+  edge [
+    source 43
+    target 509
+  ]
+  edge [
+    source 43
+    target 510
+  ]
+  edge [
+    source 43
+    target 511
+  ]
+  edge [
+    source 43
+    target 512
+  ]
+  edge [
+    source 43
+    target 513
+  ]
+  edge [
+    source 43
+    target 514
+  ]
+  edge [
+    source 43
+    target 515
+  ]
+  edge [
+    source 43
+    target 516
+  ]
+  edge [
+    source 43
+    target 517
+  ]
+  edge [
+    source 43
+    target 518
+  ]
+  edge [
+    source 43
+    target 519
+  ]
+  edge [
+    source 43
+    target 520
+  ]
+  edge [
+    source 43
+    target 521
+  ]
+  edge [
+    source 43
+    target 522
+  ]
+  edge [
+    source 43
+    target 523
+  ]
+  edge [
+    source 43
+    target 524
+  ]
+  edge [
+    source 43
+    target 525
+  ]
+  edge [
+    source 43
+    target 526
+  ]
+  edge [
+    source 43
+    target 527
+  ]
+  edge [
+    source 43
+    target 528
+  ]
+  edge [
+    source 43
+    target 529
+  ]
+  edge [
+    source 43
+    target 530
+  ]
+  edge [
+    source 43
+    target 531
+  ]
+  edge [
+    source 43
+    target 532
+  ]
+  edge [
+    source 43
+    target 533
+  ]
+  edge [
+    source 43
+    target 534
+  ]
+  edge [
+    source 43
+    target 535
+  ]
+  edge [
+    source 43
+    target 536
+  ]
+  edge [
+    source 43
+    target 537
+  ]
+  edge [
+    source 43
+    target 538
+  ]
+  edge [
+    source 43
+    target 539
+  ]
+  edge [
+    source 43
+    target 540
+  ]
+  edge [
+    source 43
+    target 541
+  ]
+  edge [
+    source 43
+    target 542
+  ]
+  edge [
+    source 43
+    target 543
+  ]
+  edge [
+    source 43
+    target 544
+  ]
+  edge [
+    source 43
+    target 545
+  ]
+  edge [
+    source 43
+    target 546
+  ]
+  edge [
+    source 43
+    target 547
   ]
   edge [
     source 174
@@ -10534,6 +11366,10 @@ graph [
   ]
   edge [
     source 240
+    target 233
+  ]
+  edge [
+    source 240
     target 234
   ]
   edge [
@@ -10774,6 +11610,10 @@ graph [
   ]
   edge [
     source 240
+    target 327
+  ]
+  edge [
+    source 240
     target 328
   ]
   edge [
@@ -10783,6 +11623,10 @@ graph [
   edge [
     source 240
     target 330
+  ]
+  edge [
+    source 240
+    target 331
   ]
   edge [
     source 240
@@ -11150,6 +11994,10 @@ graph [
   ]
   edge [
     source 240
+    target 431
+  ]
+  edge [
+    source 240
     target 432
   ]
   edge [
@@ -11330,11 +12178,19 @@ graph [
   ]
   edge [
     source 240
+    target 481
+  ]
+  edge [
+    source 240
     target 482
   ]
   edge [
     source 240
     target 483
+  ]
+  edge [
+    source 240
+    target 486
   ]
   edge [
     source 240
@@ -11362,11 +12218,219 @@ graph [
   ]
   edge [
     source 240
+    target 498
+  ]
+  edge [
+    source 240
+    target 499
+  ]
+  edge [
+    source 240
     target 500
   ]
   edge [
     source 240
     target 502
+  ]
+  edge [
+    source 240
+    target 503
+  ]
+  edge [
+    source 240
+    target 504
+  ]
+  edge [
+    source 240
+    target 505
+  ]
+  edge [
+    source 240
+    target 507
+  ]
+  edge [
+    source 240
+    target 508
+  ]
+  edge [
+    source 240
+    target 509
+  ]
+  edge [
+    source 240
+    target 510
+  ]
+  edge [
+    source 240
+    target 511
+  ]
+  edge [
+    source 240
+    target 512
+  ]
+  edge [
+    source 240
+    target 513
+  ]
+  edge [
+    source 240
+    target 514
+  ]
+  edge [
+    source 240
+    target 515
+  ]
+  edge [
+    source 240
+    target 516
+  ]
+  edge [
+    source 240
+    target 517
+  ]
+  edge [
+    source 240
+    target 518
+  ]
+  edge [
+    source 240
+    target 519
+  ]
+  edge [
+    source 240
+    target 520
+  ]
+  edge [
+    source 240
+    target 521
+  ]
+  edge [
+    source 240
+    target 522
+  ]
+  edge [
+    source 240
+    target 523
+  ]
+  edge [
+    source 240
+    target 524
+  ]
+  edge [
+    source 240
+    target 525
+  ]
+  edge [
+    source 240
+    target 526
+  ]
+  edge [
+    source 240
+    target 527
+  ]
+  edge [
+    source 240
+    target 528
+  ]
+  edge [
+    source 240
+    target 529
+  ]
+  edge [
+    source 240
+    target 530
+  ]
+  edge [
+    source 240
+    target 531
+  ]
+  edge [
+    source 240
+    target 532
+  ]
+  edge [
+    source 240
+    target 533
+  ]
+  edge [
+    source 240
+    target 534
+  ]
+  edge [
+    source 240
+    target 535
+  ]
+  edge [
+    source 240
+    target 536
+  ]
+  edge [
+    source 240
+    target 537
+  ]
+  edge [
+    source 240
+    target 538
+  ]
+  edge [
+    source 240
+    target 539
+  ]
+  edge [
+    source 240
+    target 540
+  ]
+  edge [
+    source 240
+    target 541
+  ]
+  edge [
+    source 240
+    target 542
+  ]
+  edge [
+    source 240
+    target 543
+  ]
+  edge [
+    source 240
+    target 544
+  ]
+  edge [
+    source 240
+    target 545
+  ]
+  edge [
+    source 240
+    target 548
+  ]
+  edge [
+    source 240
+    target 549
+  ]
+  edge [
+    source 240
+    target 551
+  ]
+  edge [
+    source 240
+    target 552
+  ]
+  edge [
+    source 240
+    target 554
+  ]
+  edge [
+    source 240
+    target 560
+  ]
+  edge [
+    source 240
+    target 561
+  ]
+  edge [
+    source 240
+    target 568
   ]
   edge [
     source 310
@@ -11690,6 +12754,10 @@ graph [
   ]
   edge [
     source 310
+    target 133
+  ]
+  edge [
+    source 310
     target 135
   ]
   edge [
@@ -11770,6 +12838,10 @@ graph [
   ]
   edge [
     source 310
+    target 174
+  ]
+  edge [
+    source 310
     target 176
   ]
   edge [
@@ -11803,6 +12875,10 @@ graph [
   edge [
     source 310
     target 186
+  ]
+  edge [
+    source 310
+    target 187
   ]
   edge [
     source 310
@@ -12135,6 +13211,10 @@ graph [
   edge [
     source 310
     target 330
+  ]
+  edge [
+    source 310
+    target 331
   ]
   edge [
     source 310
@@ -12646,6 +13726,10 @@ graph [
   ]
   edge [
     source 310
+    target 473
+  ]
+  edge [
+    source 310
     target 474
   ]
   edge [
@@ -12707,6 +13791,174 @@ graph [
   edge [
     source 310
     target 502
+  ]
+  edge [
+    source 310
+    target 503
+  ]
+  edge [
+    source 310
+    target 504
+  ]
+  edge [
+    source 310
+    target 505
+  ]
+  edge [
+    source 310
+    target 506
+  ]
+  edge [
+    source 310
+    target 507
+  ]
+  edge [
+    source 310
+    target 508
+  ]
+  edge [
+    source 310
+    target 509
+  ]
+  edge [
+    source 310
+    target 510
+  ]
+  edge [
+    source 310
+    target 511
+  ]
+  edge [
+    source 310
+    target 512
+  ]
+  edge [
+    source 310
+    target 513
+  ]
+  edge [
+    source 310
+    target 514
+  ]
+  edge [
+    source 310
+    target 515
+  ]
+  edge [
+    source 310
+    target 516
+  ]
+  edge [
+    source 310
+    target 517
+  ]
+  edge [
+    source 310
+    target 518
+  ]
+  edge [
+    source 310
+    target 519
+  ]
+  edge [
+    source 310
+    target 520
+  ]
+  edge [
+    source 310
+    target 521
+  ]
+  edge [
+    source 310
+    target 522
+  ]
+  edge [
+    source 310
+    target 523
+  ]
+  edge [
+    source 310
+    target 524
+  ]
+  edge [
+    source 310
+    target 525
+  ]
+  edge [
+    source 310
+    target 526
+  ]
+  edge [
+    source 310
+    target 527
+  ]
+  edge [
+    source 310
+    target 528
+  ]
+  edge [
+    source 310
+    target 529
+  ]
+  edge [
+    source 310
+    target 530
+  ]
+  edge [
+    source 310
+    target 531
+  ]
+  edge [
+    source 310
+    target 532
+  ]
+  edge [
+    source 310
+    target 533
+  ]
+  edge [
+    source 310
+    target 537
+  ]
+  edge [
+    source 310
+    target 539
+  ]
+  edge [
+    source 310
+    target 546
+  ]
+  edge [
+    source 310
+    target 548
+  ]
+  edge [
+    source 310
+    target 551
+  ]
+  edge [
+    source 310
+    target 552
+  ]
+  edge [
+    source 310
+    target 553
+  ]
+  edge [
+    source 310
+    target 554
+  ]
+  edge [
+    source 310
+    target 559
+  ]
+  edge [
+    source 310
+    target 564
+  ]
+  edge [
+    source 310
+    target 567
   ]
   edge [
     source 327
@@ -19378,6 +20630,10 @@ graph [
   ]
   edge [
     source 333
+    target 11
+  ]
+  edge [
+    source 333
     target 14
   ]
   edge [
@@ -19438,6 +20694,10 @@ graph [
   ]
   edge [
     source 333
+    target 117
+  ]
+  edge [
+    source 333
     target 135
   ]
   edge [
@@ -19458,11 +20718,19 @@ graph [
   ]
   edge [
     source 333
+    target 174
+  ]
+  edge [
+    source 333
     target 175
   ]
   edge [
     source 333
     target 177
+  ]
+  edge [
+    source 333
+    target 188
   ]
   edge [
     source 333
@@ -19499,6 +20767,10 @@ graph [
   edge [
     source 333
     target 237
+  ]
+  edge [
+    source 333
+    target 252
   ]
   edge [
     source 333
@@ -19841,6 +21113,42 @@ graph [
     target 484
   ]
   edge [
+    source 333
+    target 503
+  ]
+  edge [
+    source 333
+    target 504
+  ]
+  edge [
+    source 333
+    target 505
+  ]
+  edge [
+    source 333
+    target 509
+  ]
+  edge [
+    source 333
+    target 512
+  ]
+  edge [
+    source 333
+    target 517
+  ]
+  edge [
+    source 333
+    target 547
+  ]
+  edge [
+    source 333
+    target 548
+  ]
+  edge [
+    source 333
+    target 549
+  ]
+  edge [
     source 337
     target 0
   ]
@@ -19879,6 +21187,10 @@ graph [
   edge [
     source 337
     target 10
+  ]
+  edge [
+    source 337
+    target 11
   ]
   edge [
     source 337
@@ -19995,6 +21307,10 @@ graph [
   edge [
     source 337
     target 41
+  ]
+  edge [
+    source 337
+    target 43
   ]
   edge [
     source 337
@@ -20538,6 +21854,10 @@ graph [
   ]
   edge [
     source 337
+    target 187
+  ]
+  edge [
+    source 337
     target 188
   ]
   edge [
@@ -20703,6 +22023,10 @@ graph [
   edge [
     source 337
     target 232
+  ]
+  edge [
+    source 337
+    target 233
   ]
   edge [
     source 337
@@ -21070,11 +22394,19 @@ graph [
   ]
   edge [
     source 337
+    target 327
+  ]
+  edge [
+    source 337
     target 329
   ]
   edge [
     source 337
     target 330
+  ]
+  edge [
+    source 337
+    target 331
   ]
   edge [
     source 337
@@ -21442,6 +22774,10 @@ graph [
   ]
   edge [
     source 337
+    target 431
+  ]
+  edge [
+    source 337
     target 432
   ]
   edge [
@@ -21630,6 +22966,10 @@ graph [
   ]
   edge [
     source 337
+    target 481
+  ]
+  edge [
+    source 337
     target 482
   ]
   edge [
@@ -21643,6 +22983,10 @@ graph [
   edge [
     source 337
     target 485
+  ]
+  edge [
+    source 337
+    target 486
   ]
   edge [
     source 337
@@ -21674,11 +23018,223 @@ graph [
   ]
   edge [
     source 337
+    target 498
+  ]
+  edge [
+    source 337
+    target 499
+  ]
+  edge [
+    source 337
     target 500
   ]
   edge [
     source 337
     target 502
+  ]
+  edge [
+    source 337
+    target 503
+  ]
+  edge [
+    source 337
+    target 504
+  ]
+  edge [
+    source 337
+    target 505
+  ]
+  edge [
+    source 337
+    target 507
+  ]
+  edge [
+    source 337
+    target 508
+  ]
+  edge [
+    source 337
+    target 509
+  ]
+  edge [
+    source 337
+    target 510
+  ]
+  edge [
+    source 337
+    target 511
+  ]
+  edge [
+    source 337
+    target 512
+  ]
+  edge [
+    source 337
+    target 513
+  ]
+  edge [
+    source 337
+    target 514
+  ]
+  edge [
+    source 337
+    target 515
+  ]
+  edge [
+    source 337
+    target 516
+  ]
+  edge [
+    source 337
+    target 517
+  ]
+  edge [
+    source 337
+    target 518
+  ]
+  edge [
+    source 337
+    target 519
+  ]
+  edge [
+    source 337
+    target 520
+  ]
+  edge [
+    source 337
+    target 521
+  ]
+  edge [
+    source 337
+    target 522
+  ]
+  edge [
+    source 337
+    target 523
+  ]
+  edge [
+    source 337
+    target 524
+  ]
+  edge [
+    source 337
+    target 525
+  ]
+  edge [
+    source 337
+    target 526
+  ]
+  edge [
+    source 337
+    target 527
+  ]
+  edge [
+    source 337
+    target 528
+  ]
+  edge [
+    source 337
+    target 529
+  ]
+  edge [
+    source 337
+    target 530
+  ]
+  edge [
+    source 337
+    target 531
+  ]
+  edge [
+    source 337
+    target 532
+  ]
+  edge [
+    source 337
+    target 533
+  ]
+  edge [
+    source 337
+    target 534
+  ]
+  edge [
+    source 337
+    target 535
+  ]
+  edge [
+    source 337
+    target 537
+  ]
+  edge [
+    source 337
+    target 539
+  ]
+  edge [
+    source 337
+    target 543
+  ]
+  edge [
+    source 337
+    target 547
+  ]
+  edge [
+    source 337
+    target 549
+  ]
+  edge [
+    source 337
+    target 550
+  ]
+  edge [
+    source 337
+    target 551
+  ]
+  edge [
+    source 337
+    target 552
+  ]
+  edge [
+    source 337
+    target 553
+  ]
+  edge [
+    source 337
+    target 554
+  ]
+  edge [
+    source 337
+    target 555
+  ]
+  edge [
+    source 337
+    target 556
+  ]
+  edge [
+    source 337
+    target 558
+  ]
+  edge [
+    source 337
+    target 559
+  ]
+  edge [
+    source 337
+    target 561
+  ]
+  edge [
+    source 337
+    target 562
+  ]
+  edge [
+    source 337
+    target 563
+  ]
+  edge [
+    source 337
+    target 564
+  ]
+  edge [
+    source 337
+    target 570
   ]
   edge [
     source 350
@@ -21774,6 +23330,10 @@ graph [
   ]
   edge [
     source 350
+    target 133
+  ]
+  edge [
+    source 350
     target 149
   ]
   edge [
@@ -21783,6 +23343,10 @@ graph [
   edge [
     source 350
     target 153
+  ]
+  edge [
+    source 350
+    target 174
   ]
   edge [
     source 350
@@ -22266,6 +23830,14 @@ graph [
   ]
   edge [
     source 350
+    target 472
+  ]
+  edge [
+    source 350
+    target 473
+  ]
+  edge [
+    source 350
     target 475
   ]
   edge [
@@ -22287,6 +23859,58 @@ graph [
   edge [
     source 350
     target 497
+  ]
+  edge [
+    source 350
+    target 503
+  ]
+  edge [
+    source 350
+    target 504
+  ]
+  edge [
+    source 350
+    target 509
+  ]
+  edge [
+    source 350
+    target 515
+  ]
+  edge [
+    source 350
+    target 529
+  ]
+  edge [
+    source 350
+    target 547
+  ]
+  edge [
+    source 350
+    target 548
+  ]
+  edge [
+    source 350
+    target 550
+  ]
+  edge [
+    source 350
+    target 555
+  ]
+  edge [
+    source 350
+    target 556
+  ]
+  edge [
+    source 350
+    target 560
+  ]
+  edge [
+    source 350
+    target 568
+  ]
+  edge [
+    source 350
+    target 570
   ]
   edge [
     source 367
@@ -22455,6 +24079,10 @@ graph [
   edge [
     source 367
     target 42
+  ]
+  edge [
+    source 367
+    target 43
   ]
   edge [
     source 367
@@ -23590,11 +25218,19 @@ graph [
   ]
   edge [
     source 367
+    target 327
+  ]
+  edge [
+    source 367
     target 329
   ]
   edge [
     source 367
     target 330
+  ]
+  edge [
+    source 367
+    target 331
   ]
   edge [
     source 367
@@ -23970,6 +25606,10 @@ graph [
   ]
   edge [
     source 367
+    target 431
+  ]
+  edge [
+    source 367
     target 432
   ]
   edge [
@@ -24158,6 +25798,10 @@ graph [
   ]
   edge [
     source 367
+    target 481
+  ]
+  edge [
+    source 367
     target 482
   ]
   edge [
@@ -24206,7 +25850,255 @@ graph [
   ]
   edge [
     source 367
+    target 498
+  ]
+  edge [
+    source 367
+    target 499
+  ]
+  edge [
+    source 367
     target 502
+  ]
+  edge [
+    source 367
+    target 503
+  ]
+  edge [
+    source 367
+    target 504
+  ]
+  edge [
+    source 367
+    target 505
+  ]
+  edge [
+    source 367
+    target 506
+  ]
+  edge [
+    source 367
+    target 507
+  ]
+  edge [
+    source 367
+    target 508
+  ]
+  edge [
+    source 367
+    target 509
+  ]
+  edge [
+    source 367
+    target 510
+  ]
+  edge [
+    source 367
+    target 511
+  ]
+  edge [
+    source 367
+    target 512
+  ]
+  edge [
+    source 367
+    target 513
+  ]
+  edge [
+    source 367
+    target 514
+  ]
+  edge [
+    source 367
+    target 515
+  ]
+  edge [
+    source 367
+    target 516
+  ]
+  edge [
+    source 367
+    target 518
+  ]
+  edge [
+    source 367
+    target 520
+  ]
+  edge [
+    source 367
+    target 521
+  ]
+  edge [
+    source 367
+    target 522
+  ]
+  edge [
+    source 367
+    target 523
+  ]
+  edge [
+    source 367
+    target 524
+  ]
+  edge [
+    source 367
+    target 525
+  ]
+  edge [
+    source 367
+    target 526
+  ]
+  edge [
+    source 367
+    target 527
+  ]
+  edge [
+    source 367
+    target 528
+  ]
+  edge [
+    source 367
+    target 529
+  ]
+  edge [
+    source 367
+    target 530
+  ]
+  edge [
+    source 367
+    target 531
+  ]
+  edge [
+    source 367
+    target 532
+  ]
+  edge [
+    source 367
+    target 533
+  ]
+  edge [
+    source 367
+    target 534
+  ]
+  edge [
+    source 367
+    target 535
+  ]
+  edge [
+    source 367
+    target 537
+  ]
+  edge [
+    source 367
+    target 538
+  ]
+  edge [
+    source 367
+    target 539
+  ]
+  edge [
+    source 367
+    target 541
+  ]
+  edge [
+    source 367
+    target 543
+  ]
+  edge [
+    source 367
+    target 545
+  ]
+  edge [
+    source 367
+    target 546
+  ]
+  edge [
+    source 367
+    target 547
+  ]
+  edge [
+    source 367
+    target 548
+  ]
+  edge [
+    source 367
+    target 549
+  ]
+  edge [
+    source 367
+    target 550
+  ]
+  edge [
+    source 367
+    target 551
+  ]
+  edge [
+    source 367
+    target 552
+  ]
+  edge [
+    source 367
+    target 553
+  ]
+  edge [
+    source 367
+    target 554
+  ]
+  edge [
+    source 367
+    target 555
+  ]
+  edge [
+    source 367
+    target 556
+  ]
+  edge [
+    source 367
+    target 557
+  ]
+  edge [
+    source 367
+    target 558
+  ]
+  edge [
+    source 367
+    target 559
+  ]
+  edge [
+    source 367
+    target 560
+  ]
+  edge [
+    source 367
+    target 561
+  ]
+  edge [
+    source 367
+    target 562
+  ]
+  edge [
+    source 367
+    target 563
+  ]
+  edge [
+    source 367
+    target 564
+  ]
+  edge [
+    source 367
+    target 565
+  ]
+  edge [
+    source 367
+    target 566
+  ]
+  edge [
+    source 367
+    target 567
+  ]
+  edge [
+    source 367
+    target 570
   ]
   edge [
     source 447
@@ -24362,7 +26254,15 @@ graph [
   ]
   edge [
     source 447
+    target 41
+  ]
+  edge [
+    source 447
     target 42
+  ]
+  edge [
+    source 447
+    target 43
   ]
   edge [
     source 447
@@ -24463,6 +26363,10 @@ graph [
   edge [
     source 447
     target 70
+  ]
+  edge [
+    source 447
+    target 71
   ]
   edge [
     source 447
@@ -24591,6 +26495,10 @@ graph [
   edge [
     source 447
     target 107
+  ]
+  edge [
+    source 447
+    target 108
   ]
   edge [
     source 447
@@ -24782,6 +26690,10 @@ graph [
   ]
   edge [
     source 447
+    target 159
+  ]
+  edge [
+    source 447
     target 160
   ]
   edge [
@@ -24838,6 +26750,10 @@ graph [
   ]
   edge [
     source 447
+    target 174
+  ]
+  edge [
+    source 447
     target 175
   ]
   edge [
@@ -24875,6 +26791,10 @@ graph [
   edge [
     source 447
     target 186
+  ]
+  edge [
+    source 447
+    target 188
   ]
   edge [
     source 447
@@ -24931,6 +26851,10 @@ graph [
   edge [
     source 447
     target 204
+  ]
+  edge [
+    source 447
+    target 206
   ]
   edge [
     source 447
@@ -25079,6 +27003,14 @@ graph [
   edge [
     source 447
     target 250
+  ]
+  edge [
+    source 447
+    target 251
+  ]
+  edge [
+    source 447
+    target 252
   ]
   edge [
     source 447
@@ -25302,6 +27234,10 @@ graph [
   ]
   edge [
     source 447
+    target 312
+  ]
+  edge [
+    source 447
     target 313
   ]
   edge [
@@ -25350,6 +27286,10 @@ graph [
   ]
   edge [
     source 447
+    target 327
+  ]
+  edge [
+    source 447
     target 329
   ]
   edge [
@@ -25371,6 +27311,10 @@ graph [
   edge [
     source 447
     target 336
+  ]
+  edge [
+    source 447
+    target 337
   ]
   edge [
     source 447
@@ -25483,6 +27427,10 @@ graph [
   edge [
     source 447
     target 366
+  ]
+  edge [
+    source 447
+    target 367
   ]
   edge [
     source 447
@@ -25882,6 +27830,10 @@ graph [
   ]
   edge [
     source 447
+    target 471
+  ]
+  edge [
+    source 447
     target 473
   ]
   edge [
@@ -25903,6 +27855,10 @@ graph [
   edge [
     source 447
     target 479
+  ]
+  edge [
+    source 447
+    target 481
   ]
   edge [
     source 447
@@ -25958,6 +27914,10 @@ graph [
   ]
   edge [
     source 447
+    target 498
+  ]
+  edge [
+    source 447
     target 499
   ]
   edge [
@@ -25973,1779 +27933,1979 @@ graph [
     target 502
   ]
   edge [
-    source 503
+    source 447
+    target 503
+  ]
+  edge [
+    source 447
+    target 504
+  ]
+  edge [
+    source 447
+    target 505
+  ]
+  edge [
+    source 447
+    target 506
+  ]
+  edge [
+    source 447
+    target 507
+  ]
+  edge [
+    source 447
+    target 508
+  ]
+  edge [
+    source 447
+    target 509
+  ]
+  edge [
+    source 447
+    target 510
+  ]
+  edge [
+    source 447
+    target 511
+  ]
+  edge [
+    source 447
+    target 512
+  ]
+  edge [
+    source 447
+    target 513
+  ]
+  edge [
+    source 447
+    target 515
+  ]
+  edge [
+    source 447
+    target 520
+  ]
+  edge [
+    source 447
+    target 521
+  ]
+  edge [
+    source 447
+    target 522
+  ]
+  edge [
+    source 447
+    target 524
+  ]
+  edge [
+    source 447
+    target 525
+  ]
+  edge [
+    source 447
+    target 528
+  ]
+  edge [
+    source 447
+    target 529
+  ]
+  edge [
+    source 447
+    target 530
+  ]
+  edge [
+    source 447
+    target 531
+  ]
+  edge [
+    source 447
+    target 532
+  ]
+  edge [
+    source 447
+    target 533
+  ]
+  edge [
+    source 447
+    target 534
+  ]
+  edge [
+    source 447
+    target 535
+  ]
+  edge [
+    source 447
+    target 537
+  ]
+  edge [
+    source 447
+    target 538
+  ]
+  edge [
+    source 447
+    target 539
+  ]
+  edge [
+    source 447
+    target 540
+  ]
+  edge [
+    source 447
+    target 541
+  ]
+  edge [
+    source 447
+    target 542
+  ]
+  edge [
+    source 447
+    target 543
+  ]
+  edge [
+    source 447
+    target 545
+  ]
+  edge [
+    source 447
+    target 546
+  ]
+  edge [
+    source 447
+    target 547
+  ]
+  edge [
+    source 447
+    target 548
+  ]
+  edge [
+    source 447
+    target 550
+  ]
+  edge [
+    source 447
+    target 552
+  ]
+  edge [
+    source 447
+    target 554
+  ]
+  edge [
+    source 447
+    target 555
+  ]
+  edge [
+    source 447
+    target 560
+  ]
+  edge [
+    source 447
+    target 561
+  ]
+  edge [
+    source 447
+    target 562
+  ]
+  edge [
+    source 447
+    target 564
+  ]
+  edge [
+    source 447
+    target 565
+  ]
+  edge [
+    source 447
+    target 566
+  ]
+  edge [
+    source 447
+    target 567
+  ]
+  edge [
+    source 447
+    target 568
+  ]
+  edge [
+    source 447
+    target 569
+  ]
+  edge [
+    source 447
+    target 570
+  ]
+  edge [
+    source 570
     target 0
   ]
   edge [
-    source 503
+    source 570
     target 1
   ]
   edge [
-    source 503
+    source 570
     target 2
   ]
   edge [
-    source 503
+    source 570
     target 3
   ]
   edge [
-    source 503
+    source 570
     target 4
   ]
   edge [
-    source 503
+    source 570
     target 5
   ]
   edge [
-    source 503
+    source 570
     target 6
   ]
   edge [
-    source 503
+    source 570
     target 7
   ]
   edge [
-    source 503
+    source 570
     target 8
   ]
   edge [
-    source 503
+    source 570
     target 9
   ]
   edge [
-    source 503
+    source 570
     target 10
   ]
   edge [
-    source 503
+    source 570
     target 11
   ]
   edge [
-    source 503
+    source 570
     target 12
   ]
   edge [
-    source 503
+    source 570
     target 13
   ]
   edge [
-    source 503
+    source 570
     target 15
   ]
   edge [
-    source 503
+    source 570
     target 18
   ]
   edge [
-    source 503
+    source 570
     target 19
   ]
   edge [
-    source 503
+    source 570
     target 20
   ]
   edge [
-    source 503
+    source 570
     target 21
   ]
   edge [
-    source 503
+    source 570
     target 22
   ]
   edge [
-    source 503
+    source 570
     target 23
   ]
   edge [
-    source 503
+    source 570
     target 24
   ]
   edge [
-    source 503
+    source 570
     target 25
   ]
   edge [
-    source 503
+    source 570
     target 26
   ]
   edge [
-    source 503
+    source 570
     target 27
   ]
   edge [
-    source 503
+    source 570
     target 28
   ]
   edge [
-    source 503
+    source 570
     target 29
   ]
   edge [
-    source 503
+    source 570
     target 30
   ]
   edge [
-    source 503
+    source 570
     target 31
   ]
   edge [
-    source 503
+    source 570
     target 32
   ]
   edge [
-    source 503
+    source 570
     target 33
   ]
   edge [
-    source 503
+    source 570
     target 34
   ]
   edge [
-    source 503
+    source 570
     target 35
   ]
   edge [
-    source 503
+    source 570
     target 39
   ]
   edge [
-    source 503
+    source 570
     target 40
   ]
   edge [
-    source 503
+    source 570
     target 42
   ]
   edge [
-    source 503
+    source 570
     target 43
   ]
   edge [
-    source 503
+    source 570
     target 44
   ]
   edge [
-    source 503
+    source 570
     target 45
   ]
   edge [
-    source 503
+    source 570
     target 46
   ]
   edge [
-    source 503
+    source 570
     target 48
   ]
   edge [
-    source 503
+    source 570
     target 49
   ]
   edge [
-    source 503
+    source 570
     target 50
   ]
   edge [
-    source 503
+    source 570
     target 51
   ]
   edge [
-    source 503
+    source 570
     target 52
   ]
   edge [
-    source 503
+    source 570
     target 53
   ]
   edge [
-    source 503
+    source 570
     target 54
   ]
   edge [
-    source 503
+    source 570
     target 56
   ]
   edge [
-    source 503
+    source 570
     target 57
   ]
   edge [
-    source 503
+    source 570
     target 58
   ]
   edge [
-    source 503
+    source 570
     target 59
   ]
   edge [
-    source 503
+    source 570
     target 60
   ]
   edge [
-    source 503
+    source 570
     target 61
   ]
   edge [
-    source 503
+    source 570
     target 62
   ]
   edge [
-    source 503
+    source 570
     target 63
   ]
   edge [
-    source 503
+    source 570
     target 65
   ]
   edge [
-    source 503
+    source 570
     target 66
   ]
   edge [
-    source 503
+    source 570
     target 67
   ]
   edge [
-    source 503
+    source 570
     target 68
   ]
   edge [
-    source 503
+    source 570
     target 69
   ]
   edge [
-    source 503
+    source 570
     target 70
   ]
   edge [
-    source 503
+    source 570
     target 72
   ]
   edge [
-    source 503
+    source 570
     target 73
   ]
   edge [
-    source 503
+    source 570
     target 74
   ]
   edge [
-    source 503
+    source 570
     target 75
   ]
   edge [
-    source 503
+    source 570
     target 76
   ]
   edge [
-    source 503
+    source 570
     target 77
   ]
   edge [
-    source 503
+    source 570
     target 79
   ]
   edge [
-    source 503
+    source 570
     target 80
   ]
   edge [
-    source 503
+    source 570
     target 81
   ]
   edge [
-    source 503
+    source 570
     target 82
   ]
   edge [
-    source 503
+    source 570
     target 84
   ]
   edge [
-    source 503
+    source 570
     target 85
   ]
   edge [
-    source 503
+    source 570
     target 86
   ]
   edge [
-    source 503
+    source 570
     target 87
   ]
   edge [
-    source 503
+    source 570
     target 88
   ]
   edge [
-    source 503
+    source 570
     target 89
   ]
   edge [
-    source 503
+    source 570
     target 90
   ]
   edge [
-    source 503
+    source 570
     target 91
   ]
   edge [
-    source 503
+    source 570
     target 92
   ]
   edge [
-    source 503
+    source 570
     target 93
   ]
   edge [
-    source 503
+    source 570
     target 94
   ]
   edge [
-    source 503
+    source 570
     target 95
   ]
   edge [
-    source 503
+    source 570
     target 96
   ]
   edge [
-    source 503
+    source 570
     target 97
   ]
   edge [
-    source 503
+    source 570
     target 98
   ]
   edge [
-    source 503
+    source 570
     target 100
   ]
   edge [
-    source 503
+    source 570
     target 101
   ]
   edge [
-    source 503
+    source 570
     target 103
   ]
   edge [
-    source 503
+    source 570
     target 104
   ]
   edge [
-    source 503
+    source 570
     target 107
   ]
   edge [
-    source 503
+    source 570
     target 109
   ]
   edge [
-    source 503
+    source 570
     target 110
   ]
   edge [
-    source 503
+    source 570
     target 111
   ]
   edge [
-    source 503
+    source 570
     target 112
   ]
   edge [
-    source 503
+    source 570
     target 114
   ]
   edge [
-    source 503
+    source 570
     target 115
   ]
   edge [
-    source 503
+    source 570
     target 117
   ]
   edge [
-    source 503
+    source 570
     target 118
   ]
   edge [
-    source 503
+    source 570
     target 119
   ]
   edge [
-    source 503
+    source 570
     target 120
   ]
   edge [
-    source 503
+    source 570
     target 122
   ]
   edge [
-    source 503
+    source 570
     target 123
   ]
   edge [
-    source 503
+    source 570
     target 124
   ]
   edge [
-    source 503
+    source 570
     target 125
   ]
   edge [
-    source 503
+    source 570
     target 126
   ]
   edge [
-    source 503
+    source 570
     target 129
   ]
   edge [
-    source 503
+    source 570
     target 130
   ]
   edge [
-    source 503
+    source 570
     target 131
   ]
   edge [
-    source 503
+    source 570
     target 132
   ]
   edge [
-    source 503
+    source 570
     target 133
   ]
   edge [
-    source 503
+    source 570
     target 134
   ]
   edge [
-    source 503
+    source 570
     target 135
   ]
   edge [
-    source 503
+    source 570
     target 136
   ]
   edge [
-    source 503
+    source 570
     target 137
   ]
   edge [
-    source 503
+    source 570
     target 138
   ]
   edge [
-    source 503
+    source 570
     target 140
   ]
   edge [
-    source 503
+    source 570
     target 141
   ]
   edge [
-    source 503
+    source 570
     target 142
   ]
   edge [
-    source 503
+    source 570
     target 143
   ]
   edge [
-    source 503
+    source 570
     target 144
   ]
   edge [
-    source 503
+    source 570
     target 145
   ]
   edge [
-    source 503
+    source 570
     target 146
   ]
   edge [
-    source 503
+    source 570
     target 147
   ]
   edge [
-    source 503
+    source 570
     target 148
   ]
   edge [
-    source 503
+    source 570
     target 149
   ]
   edge [
-    source 503
+    source 570
     target 150
   ]
   edge [
-    source 503
+    source 570
     target 151
   ]
   edge [
-    source 503
+    source 570
     target 152
   ]
   edge [
-    source 503
+    source 570
     target 153
   ]
   edge [
-    source 503
+    source 570
     target 154
   ]
   edge [
-    source 503
+    source 570
     target 155
   ]
   edge [
-    source 503
+    source 570
     target 156
   ]
   edge [
-    source 503
+    source 570
     target 158
   ]
   edge [
-    source 503
+    source 570
     target 160
   ]
   edge [
-    source 503
+    source 570
     target 161
   ]
   edge [
-    source 503
+    source 570
     target 162
   ]
   edge [
-    source 503
+    source 570
     target 164
   ]
   edge [
-    source 503
+    source 570
     target 165
   ]
   edge [
-    source 503
+    source 570
     target 166
   ]
   edge [
-    source 503
+    source 570
     target 167
   ]
   edge [
-    source 503
+    source 570
     target 169
   ]
   edge [
-    source 503
+    source 570
     target 170
   ]
   edge [
-    source 503
+    source 570
     target 171
   ]
   edge [
-    source 503
+    source 570
     target 172
   ]
   edge [
-    source 503
+    source 570
     target 174
   ]
   edge [
-    source 503
+    source 570
     target 176
   ]
   edge [
-    source 503
+    source 570
     target 177
   ]
   edge [
-    source 503
+    source 570
     target 178
   ]
   edge [
-    source 503
+    source 570
     target 179
   ]
   edge [
-    source 503
+    source 570
     target 180
   ]
   edge [
-    source 503
+    source 570
     target 181
   ]
   edge [
-    source 503
+    source 570
     target 182
   ]
   edge [
-    source 503
+    source 570
     target 184
   ]
   edge [
-    source 503
+    source 570
     target 185
   ]
   edge [
-    source 503
+    source 570
     target 186
   ]
   edge [
-    source 503
+    source 570
     target 187
   ]
   edge [
-    source 503
+    source 570
     target 190
   ]
   edge [
-    source 503
+    source 570
     target 192
   ]
   edge [
-    source 503
+    source 570
     target 193
   ]
   edge [
-    source 503
+    source 570
     target 194
   ]
   edge [
-    source 503
+    source 570
     target 195
   ]
   edge [
-    source 503
+    source 570
     target 196
   ]
   edge [
-    source 503
+    source 570
     target 197
   ]
   edge [
-    source 503
+    source 570
     target 198
   ]
   edge [
-    source 503
+    source 570
     target 199
   ]
   edge [
-    source 503
+    source 570
     target 200
   ]
   edge [
-    source 503
+    source 570
     target 201
   ]
   edge [
-    source 503
+    source 570
     target 202
   ]
   edge [
-    source 503
+    source 570
     target 203
   ]
   edge [
-    source 503
+    source 570
     target 205
   ]
   edge [
-    source 503
+    source 570
     target 207
   ]
   edge [
-    source 503
+    source 570
     target 208
   ]
   edge [
-    source 503
+    source 570
     target 209
   ]
   edge [
-    source 503
+    source 570
     target 210
   ]
   edge [
-    source 503
+    source 570
     target 211
   ]
   edge [
-    source 503
+    source 570
     target 212
   ]
   edge [
-    source 503
+    source 570
     target 214
   ]
   edge [
-    source 503
+    source 570
     target 216
   ]
   edge [
-    source 503
+    source 570
     target 217
   ]
   edge [
-    source 503
+    source 570
     target 218
   ]
   edge [
-    source 503
+    source 570
     target 219
   ]
   edge [
-    source 503
+    source 570
     target 220
   ]
   edge [
-    source 503
+    source 570
     target 221
   ]
   edge [
-    source 503
+    source 570
     target 222
   ]
   edge [
-    source 503
+    source 570
     target 223
   ]
   edge [
-    source 503
+    source 570
     target 224
   ]
   edge [
-    source 503
+    source 570
     target 225
   ]
   edge [
-    source 503
+    source 570
     target 226
   ]
   edge [
-    source 503
+    source 570
     target 227
   ]
   edge [
-    source 503
+    source 570
     target 228
   ]
   edge [
-    source 503
+    source 570
     target 229
   ]
   edge [
-    source 503
+    source 570
     target 232
   ]
   edge [
-    source 503
+    source 570
     target 233
   ]
   edge [
-    source 503
+    source 570
     target 234
   ]
   edge [
-    source 503
+    source 570
     target 235
   ]
   edge [
-    source 503
+    source 570
     target 236
   ]
   edge [
-    source 503
+    source 570
     target 237
   ]
   edge [
-    source 503
+    source 570
     target 239
   ]
   edge [
-    source 503
+    source 570
     target 240
   ]
   edge [
-    source 503
+    source 570
     target 242
   ]
   edge [
-    source 503
+    source 570
     target 243
   ]
   edge [
-    source 503
+    source 570
     target 244
   ]
   edge [
-    source 503
+    source 570
     target 245
   ]
   edge [
-    source 503
+    source 570
     target 246
   ]
   edge [
-    source 503
+    source 570
     target 249
   ]
   edge [
-    source 503
+    source 570
     target 250
   ]
   edge [
-    source 503
+    source 570
     target 251
   ]
   edge [
-    source 503
+    source 570
     target 253
   ]
   edge [
-    source 503
+    source 570
     target 254
   ]
   edge [
-    source 503
+    source 570
     target 255
   ]
   edge [
-    source 503
+    source 570
     target 256
   ]
   edge [
-    source 503
+    source 570
     target 257
   ]
   edge [
-    source 503
+    source 570
     target 258
   ]
   edge [
-    source 503
+    source 570
     target 259
   ]
   edge [
-    source 503
+    source 570
     target 261
   ]
   edge [
-    source 503
+    source 570
     target 262
   ]
   edge [
-    source 503
+    source 570
     target 263
   ]
   edge [
-    source 503
+    source 570
     target 264
   ]
   edge [
-    source 503
+    source 570
     target 265
   ]
   edge [
-    source 503
+    source 570
     target 266
   ]
   edge [
-    source 503
+    source 570
     target 267
   ]
   edge [
-    source 503
+    source 570
     target 268
   ]
   edge [
-    source 503
+    source 570
     target 269
   ]
   edge [
-    source 503
+    source 570
     target 270
   ]
   edge [
-    source 503
+    source 570
     target 271
   ]
   edge [
-    source 503
+    source 570
     target 272
   ]
   edge [
-    source 503
+    source 570
     target 273
   ]
   edge [
-    source 503
+    source 570
     target 274
   ]
   edge [
-    source 503
+    source 570
     target 275
   ]
   edge [
-    source 503
+    source 570
     target 277
   ]
   edge [
-    source 503
+    source 570
     target 279
   ]
   edge [
-    source 503
+    source 570
     target 280
   ]
   edge [
-    source 503
+    source 570
     target 281
   ]
   edge [
-    source 503
+    source 570
     target 282
   ]
   edge [
-    source 503
+    source 570
     target 283
   ]
   edge [
-    source 503
+    source 570
     target 284
   ]
   edge [
-    source 503
+    source 570
     target 285
   ]
   edge [
-    source 503
+    source 570
     target 286
   ]
   edge [
-    source 503
+    source 570
     target 287
   ]
   edge [
-    source 503
+    source 570
     target 288
   ]
   edge [
-    source 503
+    source 570
     target 289
   ]
   edge [
-    source 503
+    source 570
     target 290
   ]
   edge [
-    source 503
+    source 570
     target 291
   ]
   edge [
-    source 503
+    source 570
     target 292
   ]
   edge [
-    source 503
+    source 570
     target 293
   ]
   edge [
-    source 503
+    source 570
     target 294
   ]
   edge [
-    source 503
+    source 570
     target 295
   ]
   edge [
-    source 503
+    source 570
     target 296
   ]
   edge [
-    source 503
+    source 570
     target 298
   ]
   edge [
-    source 503
+    source 570
     target 299
   ]
   edge [
-    source 503
+    source 570
     target 300
   ]
   edge [
-    source 503
+    source 570
     target 301
   ]
   edge [
-    source 503
+    source 570
     target 302
   ]
   edge [
-    source 503
+    source 570
     target 303
   ]
   edge [
-    source 503
+    source 570
     target 304
   ]
   edge [
-    source 503
+    source 570
     target 306
   ]
   edge [
-    source 503
+    source 570
     target 307
   ]
   edge [
-    source 503
+    source 570
     target 308
   ]
   edge [
-    source 503
+    source 570
     target 309
   ]
   edge [
-    source 503
+    source 570
     target 310
   ]
   edge [
-    source 503
+    source 570
     target 311
   ]
   edge [
-    source 503
+    source 570
     target 313
   ]
   edge [
-    source 503
+    source 570
     target 314
   ]
   edge [
-    source 503
+    source 570
     target 315
   ]
   edge [
-    source 503
+    source 570
     target 318
   ]
   edge [
-    source 503
+    source 570
     target 319
   ]
   edge [
-    source 503
+    source 570
     target 321
   ]
   edge [
-    source 503
+    source 570
     target 322
   ]
   edge [
-    source 503
+    source 570
     target 323
   ]
   edge [
-    source 503
+    source 570
     target 324
   ]
   edge [
-    source 503
+    source 570
     target 325
   ]
   edge [
-    source 503
+    source 570
     target 326
   ]
   edge [
-    source 503
+    source 570
     target 329
   ]
   edge [
-    source 503
+    source 570
     target 330
   ]
   edge [
-    source 503
+    source 570
     target 332
   ]
   edge [
-    source 503
+    source 570
     target 333
   ]
   edge [
-    source 503
+    source 570
     target 334
   ]
   edge [
-    source 503
+    source 570
     target 335
   ]
   edge [
-    source 503
+    source 570
     target 336
   ]
   edge [
-    source 503
+    source 570
     target 337
   ]
   edge [
-    source 503
+    source 570
     target 338
   ]
   edge [
-    source 503
+    source 570
     target 339
   ]
   edge [
-    source 503
+    source 570
     target 340
   ]
   edge [
-    source 503
+    source 570
     target 341
   ]
   edge [
-    source 503
+    source 570
     target 342
   ]
   edge [
-    source 503
+    source 570
     target 343
   ]
   edge [
-    source 503
+    source 570
     target 344
   ]
   edge [
-    source 503
+    source 570
     target 345
   ]
   edge [
-    source 503
+    source 570
     target 346
   ]
   edge [
-    source 503
+    source 570
     target 347
   ]
   edge [
-    source 503
+    source 570
     target 348
   ]
   edge [
-    source 503
+    source 570
     target 349
   ]
   edge [
-    source 503
+    source 570
     target 351
   ]
   edge [
-    source 503
+    source 570
     target 352
   ]
   edge [
-    source 503
+    source 570
     target 353
   ]
   edge [
-    source 503
+    source 570
     target 354
   ]
   edge [
-    source 503
+    source 570
     target 355
   ]
   edge [
-    source 503
+    source 570
     target 356
   ]
   edge [
-    source 503
+    source 570
     target 357
   ]
   edge [
-    source 503
+    source 570
     target 358
   ]
   edge [
-    source 503
+    source 570
     target 359
   ]
   edge [
-    source 503
+    source 570
     target 360
   ]
   edge [
-    source 503
+    source 570
     target 361
   ]
   edge [
-    source 503
+    source 570
     target 362
   ]
   edge [
-    source 503
+    source 570
     target 363
   ]
   edge [
-    source 503
+    source 570
     target 364
   ]
   edge [
-    source 503
+    source 570
     target 365
   ]
   edge [
-    source 503
+    source 570
     target 366
   ]
   edge [
-    source 503
+    source 570
     target 367
   ]
   edge [
-    source 503
+    source 570
     target 368
   ]
   edge [
-    source 503
+    source 570
     target 369
   ]
   edge [
-    source 503
+    source 570
     target 370
   ]
   edge [
-    source 503
+    source 570
     target 371
   ]
   edge [
-    source 503
+    source 570
     target 372
   ]
   edge [
-    source 503
+    source 570
     target 373
   ]
   edge [
-    source 503
+    source 570
     target 374
   ]
   edge [
-    source 503
+    source 570
     target 375
   ]
   edge [
-    source 503
+    source 570
     target 376
   ]
   edge [
-    source 503
+    source 570
     target 377
   ]
   edge [
-    source 503
+    source 570
     target 378
   ]
   edge [
-    source 503
+    source 570
     target 379
   ]
   edge [
-    source 503
+    source 570
     target 380
   ]
   edge [
-    source 503
+    source 570
     target 381
   ]
   edge [
-    source 503
+    source 570
     target 382
   ]
   edge [
-    source 503
+    source 570
     target 383
   ]
   edge [
-    source 503
+    source 570
     target 384
   ]
   edge [
-    source 503
+    source 570
     target 385
   ]
   edge [
-    source 503
+    source 570
     target 386
   ]
   edge [
-    source 503
+    source 570
     target 387
   ]
   edge [
-    source 503
+    source 570
     target 388
   ]
   edge [
-    source 503
+    source 570
     target 389
   ]
   edge [
-    source 503
+    source 570
     target 390
   ]
   edge [
-    source 503
+    source 570
     target 391
   ]
   edge [
-    source 503
+    source 570
     target 392
   ]
   edge [
-    source 503
+    source 570
     target 393
   ]
   edge [
-    source 503
+    source 570
     target 394
   ]
   edge [
-    source 503
+    source 570
     target 395
   ]
   edge [
-    source 503
+    source 570
     target 396
   ]
   edge [
-    source 503
+    source 570
     target 397
   ]
   edge [
-    source 503
+    source 570
     target 398
   ]
   edge [
-    source 503
+    source 570
     target 399
   ]
   edge [
-    source 503
+    source 570
     target 400
   ]
   edge [
-    source 503
+    source 570
     target 401
   ]
   edge [
-    source 503
+    source 570
     target 402
   ]
   edge [
-    source 503
+    source 570
     target 403
   ]
   edge [
-    source 503
+    source 570
     target 404
   ]
   edge [
-    source 503
+    source 570
     target 405
   ]
   edge [
-    source 503
+    source 570
     target 406
   ]
   edge [
-    source 503
+    source 570
     target 407
   ]
   edge [
-    source 503
+    source 570
     target 408
   ]
   edge [
-    source 503
+    source 570
     target 409
   ]
   edge [
-    source 503
+    source 570
     target 410
   ]
   edge [
-    source 503
+    source 570
     target 411
   ]
   edge [
-    source 503
+    source 570
     target 412
   ]
   edge [
-    source 503
+    source 570
     target 413
   ]
   edge [
-    source 503
+    source 570
     target 414
   ]
   edge [
-    source 503
+    source 570
     target 415
   ]
   edge [
-    source 503
+    source 570
     target 416
   ]
   edge [
-    source 503
+    source 570
     target 417
   ]
   edge [
-    source 503
+    source 570
     target 418
   ]
   edge [
-    source 503
+    source 570
     target 419
   ]
   edge [
-    source 503
+    source 570
     target 420
   ]
   edge [
-    source 503
+    source 570
     target 421
   ]
   edge [
-    source 503
+    source 570
     target 422
   ]
   edge [
-    source 503
+    source 570
     target 423
   ]
   edge [
-    source 503
+    source 570
     target 424
   ]
   edge [
-    source 503
+    source 570
     target 425
   ]
   edge [
-    source 503
+    source 570
     target 426
   ]
   edge [
-    source 503
+    source 570
     target 427
   ]
   edge [
-    source 503
+    source 570
     target 428
   ]
   edge [
-    source 503
+    source 570
     target 429
   ]
   edge [
-    source 503
+    source 570
     target 430
   ]
   edge [
-    source 503
+    source 570
     target 431
   ]
   edge [
-    source 503
+    source 570
     target 432
   ]
   edge [
-    source 503
+    source 570
     target 433
   ]
   edge [
-    source 503
+    source 570
     target 434
   ]
   edge [
-    source 503
+    source 570
     target 435
   ]
   edge [
-    source 503
+    source 570
     target 436
   ]
   edge [
-    source 503
+    source 570
     target 437
   ]
   edge [
-    source 503
+    source 570
     target 438
   ]
   edge [
-    source 503
+    source 570
     target 439
   ]
   edge [
-    source 503
+    source 570
     target 440
   ]
   edge [
-    source 503
+    source 570
     target 441
   ]
   edge [
-    source 503
+    source 570
     target 442
   ]
   edge [
-    source 503
+    source 570
     target 443
   ]
   edge [
-    source 503
+    source 570
     target 444
   ]
   edge [
-    source 503
+    source 570
     target 445
   ]
   edge [
-    source 503
+    source 570
     target 446
   ]
   edge [
-    source 503
+    source 570
     target 447
   ]
   edge [
-    source 503
+    source 570
     target 448
   ]
   edge [
-    source 503
+    source 570
     target 449
   ]
   edge [
-    source 503
+    source 570
     target 450
   ]
   edge [
-    source 503
+    source 570
     target 451
   ]
   edge [
-    source 503
+    source 570
     target 452
   ]
   edge [
-    source 503
+    source 570
     target 453
   ]
   edge [
-    source 503
+    source 570
     target 454
   ]
   edge [
-    source 503
+    source 570
     target 455
   ]
   edge [
-    source 503
+    source 570
     target 456
   ]
   edge [
-    source 503
+    source 570
     target 457
   ]
   edge [
-    source 503
+    source 570
     target 458
   ]
   edge [
-    source 503
+    source 570
     target 459
   ]
   edge [
-    source 503
+    source 570
     target 460
   ]
   edge [
-    source 503
+    source 570
     target 461
   ]
   edge [
-    source 503
+    source 570
     target 462
   ]
   edge [
-    source 503
+    source 570
     target 463
   ]
   edge [
-    source 503
+    source 570
     target 464
   ]
   edge [
-    source 503
+    source 570
     target 465
   ]
   edge [
-    source 503
+    source 570
     target 466
   ]
   edge [
-    source 503
+    source 570
     target 467
   ]
   edge [
-    source 503
+    source 570
     target 468
   ]
   edge [
-    source 503
+    source 570
     target 469
   ]
   edge [
-    source 503
+    source 570
     target 470
   ]
   edge [
-    source 503
+    source 570
     target 471
   ]
   edge [
-    source 503
+    source 570
     target 472
   ]
   edge [
-    source 503
+    source 570
     target 473
   ]
   edge [
-    source 503
+    source 570
     target 474
   ]
   edge [
-    source 503
+    source 570
     target 475
   ]
   edge [
-    source 503
+    source 570
     target 476
   ]
   edge [
-    source 503
+    source 570
     target 477
   ]
   edge [
-    source 503
+    source 570
     target 478
   ]
   edge [
-    source 503
+    source 570
     target 479
   ]
   edge [
-    source 503
+    source 570
     target 480
   ]
   edge [
-    source 503
+    source 570
     target 481
   ]
   edge [
-    source 503
+    source 570
     target 482
   ]
   edge [
-    source 503
+    source 570
     target 483
   ]
   edge [
-    source 503
+    source 570
     target 484
   ]
   edge [
-    source 503
+    source 570
     target 485
   ]
   edge [
-    source 503
+    source 570
     target 486
   ]
   edge [
-    source 503
+    source 570
     target 487
   ]
   edge [
-    source 503
+    source 570
     target 489
   ]
   edge [
-    source 503
+    source 570
     target 490
   ]
   edge [
-    source 503
+    source 570
     target 491
   ]
   edge [
-    source 503
+    source 570
     target 492
   ]
   edge [
-    source 503
+    source 570
     target 493
   ]
   edge [
-    source 503
+    source 570
     target 494
   ]
   edge [
-    source 503
+    source 570
     target 495
   ]
   edge [
-    source 503
+    source 570
     target 496
   ]
   edge [
-    source 503
+    source 570
     target 497
   ]
   edge [
-    source 503
+    source 570
     target 498
   ]
   edge [
-    source 503
+    source 570
     target 499
   ]
   edge [
-    source 503
+    source 570
     target 500
   ]
   edge [
-    source 503
+    source 570
     target 501
   ]
   edge [
-    source 503
+    source 570
     target 502
   ]
 ]
