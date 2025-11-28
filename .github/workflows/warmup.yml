@@ -48,6 +48,7 @@ jobs:
           EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           RECIPIENT_EMAILS: ${{ secrets.RECIPIENT_EMAILS }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}  # <--- AUTHENTICATION ADDED HERE
         run: python worker.py
 
       # --- STEP 2: WRITE TO NEO4J (The Pump) ---
