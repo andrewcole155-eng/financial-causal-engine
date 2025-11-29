@@ -3504,7 +3504,7 @@ graph [
     id 350
     label "LLY"
     ticker "LLY"
-    market_cap 988405014105.3799
+    market_cap 962565822590.79
     name "Eli Lilly &#38; Co."
     gnn_risk_score 6.703717581046931E-09
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
@@ -4474,7 +4474,7 @@ graph [
     id 447
     label "META"
     ticker "META"
-    market_cap 1597031490735.17
+    market_cap 1633175856476.1501
     name "Meta Platforms, Inc. Class A Common Stock"
     gnn_risk_score 0.9981081485748291
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
