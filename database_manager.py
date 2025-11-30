@@ -19,15 +19,19 @@ logger = logging.getLogger(__name__)
 # --- HELPER FUNCTION ---
 # ==============================================================================
 
-def _clean_properties(properties: Dict[str, Any]) -> Dict[str, Any]:
+def _clean_properties(properties: Any) -> Dict[str, Any]:
     """
     Recursively converts Neo4j/Python complex types (like dates)
-    into simple strings AND removes reserved keywords to prevent frontend errors.
+    into simple strings AND removes reserved keywords.
     """
-    clean_props = {}
+    # Force conversion to dict if it's a Neo4j Entity
+    if hasattr(properties, 'items'):
+        properties = dict(properties)
+    
     if not isinstance(properties, dict):
         return {}
         
+    clean_props = {}
     for key, value in properties.items():
         # pyvis/networkx will pass 'source' and 'target' as positional arguments
         if key.lower() in ["source", "target"]:
@@ -145,6 +149,7 @@ class DatabaseManager:
         if not self.is_connected(): return []
         try:
             with self.neo4j_driver.session() as session:
+                # .data() converts results to a list of dicts
                 result = session.execute_read(self._run_read_tx, query, **params)
                 return result
         except Exception as e:
@@ -271,42 +276,46 @@ class DatabaseManager:
         """Retrieves the most recent significant events from Neo4j."""
         if not self.is_connected(): return []
         
+        # NOTE: Updated to explicit properties return to be safe, though not strictly required for events
         query = """
         MATCH (c:Company)-[:HAD_EVENT]->(e:Event)
         WHERE e.timestamp IS NOT NULL
-        RETURN 
-            c.ticker AS ticker, 
-            e.headline AS headline, 
-            e.score AS score, 
-            e.link AS link, 
-            e.timestamp AS timestamp
+        RETURN properties(c) as c_props, properties(e) as e_props
         ORDER BY e.timestamp DESC
         LIMIT $limit
         """
         results = self.execute_read(query, limit=limit)
-        return [_clean_properties(event) for event in results]
+        
+        clean_events = []
+        for r in results:
+            # Flatten structure
+            evt = _clean_properties(r['e_props'])
+            evt['ticker'] = r['c_props'].get('ticker')
+            clean_events.append(evt)
+            
+        return clean_events
 
     def get_graph_from_db(self, weight_threshold: float = 0.1) -> nx.DiGraph:
         """Fetches the entire graph from Neo4j and converts it to a NetworkX DiGraph."""
         G = nx.DiGraph()
         if not self.is_connected(): return G
             
-        # Get Nodes
-        nodes_query = "MATCH (n:Company) RETURN n"
+        # Get Nodes (Explicit Properties)
+        nodes_query = "MATCH (n:Company) RETURN properties(n) as props"
         nodes_result = self.execute_read(nodes_query)
         for record in nodes_result:
-            node_data = _clean_properties(record["n"]) 
+            node_data = _clean_properties(record["props"]) 
             G.add_node(node_data['ticker'], **node_data)
         
-        # Get Edges
+        # Get Edges (Explicit Properties)
         edges_query = f"""
         MATCH (n:Company)-[r]->(m:Company)
         WHERE r.weight > $weight_threshold
-        RETURN n.ticker AS source, m.ticker AS target, r
+        RETURN n.ticker AS source, m.ticker AS target, properties(r) as props
         """
         edges_result = self.execute_read(edges_query, weight_threshold=weight_threshold)
         for record in edges_result:
-            rel_data = _clean_properties(record["r"]) 
+            rel_data = _clean_properties(record["props"]) 
             G.add_edge(record["source"], record["target"], **rel_data)
             
         return G
@@ -316,10 +325,13 @@ class DatabaseManager:
         G = nx.DiGraph()
         if not self.is_connected(): return G
         
-        # 1. Fetch EVERYTHING.
+        # 1. Fetch EVERYTHING (Duplicates included).
+        # We explicitly request 'properties(r)' to ensure Python gets a Dict, not an Object.
         query = """
         MATCH (c:Company {ticker: $ticker})-[r]-(neighbor:Company)
-        RETURN c, neighbor, r, 
+        RETURN properties(c) as c_props, 
+               properties(neighbor) as n_props, 
+               properties(r) as r_props, 
                startNode(r).ticker AS source_ticker, 
                endNode(r).ticker AS target_ticker
         """
@@ -328,11 +340,11 @@ class DatabaseManager:
             result_list = self.execute_read(query, ticker=company_ticker)
             
             if not result_list:
-                node_data_list = self.execute_read(
-                    "MATCH (c:Company {ticker: $ticker}) RETURN c", ticker=company_ticker
-                )
+                # Handle isolated node case
+                q_node = "MATCH (c:Company {ticker: $ticker}) RETURN properties(c) as c_props"
+                node_data_list = self.execute_read(q_node, ticker=company_ticker)
                 if node_data_list:
-                    node_data = _clean_properties(node_data_list[0]['c'])
+                    node_data = _clean_properties(node_data_list[0]['c_props'])
                     G.add_node(node_data['ticker'], **node_data)
                 return G 
 
@@ -343,12 +355,16 @@ class DatabaseManager:
             for record in result_list:
                 source = record['source_ticker']
                 target = record['target_ticker']
-                rel_data = _clean_properties(record['r'])
                 
-                nodes_map[record['c']['ticker']] = _clean_properties(record['c'])
-                nodes_map[record['neighbor']['ticker']] = _clean_properties(record['neighbor'])
+                # --- DIRECT PROPERTY ACCESS (Cleaned) ---
+                rel_data = _clean_properties(record['r_props'])
+                c_data = _clean_properties(record['c_props'])
+                n_data = _clean_properties(record['n_props'])
+                
+                nodes_map[c_data['ticker']] = c_data
+                nodes_map[n_data['ticker']] = n_data
 
-                # Create a key that is the same for A->B and B->A
+                # Create undirected key (A-B is same as B-A)
                 pair_key = tuple(sorted([source, target]))
                 
                 # LOGIC: Prioritize AI edges above all else
