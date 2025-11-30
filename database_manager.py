@@ -311,15 +311,20 @@ class DatabaseManager:
             
         return G
 
+
     def get_neighborhood_graph(self, company_ticker: str) -> nx.DiGraph:
         """Fetches a 1-hop neighborhood for a specific company."""
         G = nx.DiGraph()
         if not self.is_connected(): return G
         
+        # --- UPDATED QUERY: PRIORITIZE AI EDGES ---
+        # We give 'AI_PROPOSED' edges a fake sorting boost (score 10.0) 
+        # so they appear at the top of the LIMIT 75 list.
         query = """
         MATCH (c:Company {ticker: $ticker})-[r]-(neighbor:Company)
-        WITH c, r, neighbor
-        ORDER BY r.weight DESC
+        WITH c, r, neighbor, 
+             CASE WHEN r.verification_status = 'AI_PROPOSED' THEN 10.0 ELSE r.weight END as sort_score
+        ORDER BY sort_score DESC
         LIMIT 75
         RETURN c, neighbor, r, 
                startNode(r).ticker AS source_ticker, 
