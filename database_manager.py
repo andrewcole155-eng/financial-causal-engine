@@ -312,12 +312,11 @@ class DatabaseManager:
         return G
 
     def get_neighborhood_graph(self, company_ticker: str) -> nx.DiGraph:
-        """Fetches a 1-hop neighborhood with STRICT AI prioritization."""
+        """Fetches a 1-hop neighborhood with UNDIRECTED AI prioritization."""
         G = nx.DiGraph()
         if not self.is_connected(): return G
         
-        # 1. Fetch EVERYTHING (No Limit yet).
-        # We fetch all raw connections so Python can decide the winner.
+        # 1. Fetch EVERYTHING.
         query = """
         MATCH (c:Company {ticker: $ticker})-[r]-(neighbor:Company)
         RETURN c, neighbor, r, 
@@ -328,7 +327,6 @@ class DatabaseManager:
         try:
             result_list = self.execute_read(query, ticker=company_ticker)
             
-            # Handle isolated node case
             if not result_list:
                 node_data_list = self.execute_read(
                     "MATCH (c:Company {ticker: $ticker}) RETURN c", ticker=company_ticker
@@ -338,10 +336,8 @@ class DatabaseManager:
                     G.add_node(node_data['ticker'], **node_data)
                 return G 
 
-            # 2. THE OVERRIDE LOGIC
-            # We use a dictionary keyed by the relationship pair (Start, End).
-            # This guarantees only ONE edge exists per pair.
-            unique_edges = {}
+            # 2. THE UNDIRECTED OVERRIDE LOGIC
+            unique_edges = {} # Key: tuple(sorted([A, B])) -> Value: (source, target, props)
             nodes_map = {}
 
             for record in result_list:
@@ -349,42 +345,46 @@ class DatabaseManager:
                 target = record['target_ticker']
                 rel_data = _clean_properties(record['r'])
                 
-                # Save node data for later
                 nodes_map[record['c']['ticker']] = _clean_properties(record['c'])
                 nodes_map[record['neighbor']['ticker']] = _clean_properties(record['neighbor'])
 
-                edge_key = (source, target)
+                # Create a key that is the same for A->B and B->A
+                pair_key = tuple(sorted([source, target]))
                 
-                # LOGIC: 
-                # 1. If we haven't seen this pair, store it.
-                # 2. If we HAVE seen it, but the NEW one is 'AI_PROPOSED', overwrite the old one.
-                if edge_key not in unique_edges:
-                    unique_edges[edge_key] = rel_data
+                # LOGIC: Prioritize AI edges above all else
+                is_new_ai = rel_data.get('verification_status') == 'AI_PROPOSED'
+                
+                if pair_key not in unique_edges:
+                    unique_edges[pair_key] = (source, target, rel_data)
                 else:
-                    current_status = unique_edges[edge_key].get('verification_status')
-                    new_status = rel_data.get('verification_status')
+                    _, _, existing_data = unique_edges[pair_key]
+                    is_existing_ai = existing_data.get('verification_status') == 'AI_PROPOSED'
                     
-                    if new_status == 'AI_PROPOSED':
-                        unique_edges[edge_key] = rel_data
+                    # Overwrite if new is AI and existing is NOT
+                    if is_new_ai and not is_existing_ai:
+                        unique_edges[pair_key] = (source, target, rel_data)
+                    # If both are verified, usually keep the one with higher weight (optional)
+                    elif not is_new_ai and not is_existing_ai:
+                         if rel_data.get('weight', 0) > existing_data.get('weight', 0):
+                             unique_edges[pair_key] = (source, target, rel_data)
 
-            # 3. SORT & LIMIT (Python Side)
-            # Now we have unique edges. We sort them so AI edges (Score 10) are at the top.
-            sorted_items = sorted(
-                unique_edges.items(), 
-                key=lambda item: 10.0 if item[1].get('verification_status') == 'AI_PROPOSED' else item[1].get('weight', 0.0),
-                reverse=True
-            )
-            
-            # Keep top 75
-            top_edges = sorted_items[:75]
-
-            # 4. BUILD THE GRAPH
+            # 3. BUILD GRAPH
             # Add Nodes
             for ticker, data in nodes_map.items():
                 G.add_node(ticker, **data)
                 
-            # Add Edges
-            for (source, target), data in top_edges:
+            # Add Edges (Convert back to list to sort and limit)
+            all_final_edges = list(unique_edges.values())
+            
+            # Sort: AI edges (10.0) first, then weight
+            sorted_edges = sorted(
+                all_final_edges, 
+                key=lambda x: 10.0 if x[2].get('verification_status') == 'AI_PROPOSED' else x[2].get('weight', 0.0),
+                reverse=True
+            )
+            
+            # Limit to 75 edges to prevent UI lag
+            for source, target, data in sorted_edges[:75]:
                 G.add_edge(source, target, **data)
                 
         except Exception as e:
