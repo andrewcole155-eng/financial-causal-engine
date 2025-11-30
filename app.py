@@ -98,6 +98,8 @@ def generate_ai_analysis(prompt: str) -> str:
 def apply_ai_visual_styles(net: Network, nx_graph: nx.Graph):
     """
     Iterates through the PyVis network and updates edges that were proposed by AI.
+    AI Edges = Dashed Grey Lines.
+    Verified Edges = Solid Lines.
     """
     ai_edge_count = 0
     
@@ -105,39 +107,44 @@ def apply_ai_visual_styles(net: Network, nx_graph: nx.Graph):
         source = edge['from']
         target = edge['to']
         
-        # Get data (handle directionality)
+        # Get data from original graph (handle directionality safety)
         nx_data = nx_graph.get_edge_data(source, target)
         if not nx_data:
              nx_data = nx_graph.get_edge_data(target, source)
 
         if nx_data:
+            # Check for the flag added by daily_batch_ingest.py
             status = nx_data.get('verification_status', 'VERIFIED')
             mechanism = nx_data.get('mechanism', 'Unknown mechanism')
+
+            # --- CRITICAL FIX: SANITIZE TEXT ---
+            # Remove apostrophes and quotes that break the Javascript/HTML rendering
+            if mechanism:
+                mechanism = mechanism.replace("'", "").replace('"', "").replace("\n", " ")
 
             if status == "AI_PROPOSED":
                 ai_edge_count += 1
                 
-                # --- FORCE DASHED STYLE ---
-                # We use a list [10, 10] to force a visible dash pattern
-                edge['dashes'] = [10, 10] 
+                # --- APPLY DASHED STYLE ---
+                # Reverting to True as it is more robust than list format
+                edge['dashes'] = True 
                 
-                # Make it Grey
+                # Make it Grey and distinct
                 edge['color'] = {'color': '#808080', 'highlight': '#a0a0a0', 'hover': '#ffffff'}
-                
-                # Make it THICK enough to see
                 edge['width'] = 3
                 
-                # Update tooltip
-                edge['title'] = f"🤖 AI INFERRED RELATIONSHIP\nMechanism: {mechanism}"
-                
-                # Remove arrows for "Sympathy" moves to imply correlation, not causation (Optional)
-                if "SYMPATHY" in nx_data.get('type', ''):
-                    edge['arrows'] = {'to': {'enabled': False}}
+                # Update tooltip with sanitized text
+                edge['title'] = f"🤖 AI INFERRED: {mechanism}"
+            else:
+                # --- APPLY STANDARD STYLE ---
+                edge['dashes'] = False
+                if mechanism:
+                     edge['title'] = f"✅ VERIFIED: {mechanism}"
 
     # Debug: Show user if we actually found any
     if ai_edge_count > 0:
         st.toast(f"🤖 Visualizing {ai_edge_count} AI-Inferred Relationships", icon="ℹ️")
-        
+
     return net
 
 # ==============================================================================
