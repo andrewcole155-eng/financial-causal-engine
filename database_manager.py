@@ -312,11 +312,12 @@ class DatabaseManager:
         return G
 
     def get_neighborhood_graph(self, company_ticker: str) -> nx.DiGraph:
-        """Fetches a 1-hop neighborhood for a specific company."""
+        """Fetches a 1-hop neighborhood with STRICT AI prioritization."""
         G = nx.DiGraph()
         if not self.is_connected(): return G
         
-        # 1. Fetch ALL relationships (No LIMIT yet, we filter in Python)
+        # 1. Fetch EVERYTHING (No Limit yet).
+        # We fetch all raw connections so Python can decide the winner.
         query = """
         MATCH (c:Company {ticker: $ticker})-[r]-(neighbor:Company)
         RETURN c, neighbor, r, 
@@ -327,11 +328,6 @@ class DatabaseManager:
         try:
             result_list = self.execute_read(query, ticker=company_ticker)
             
-            # Dictionary to store the "Best" edge for each neighbor
-            # Key: Neighbor Ticker -> Value: (RelData, Source, Target)
-            best_edges = {}
-            nodes_map = {} # Store node data to add later
-
             # Handle isolated node case
             if not result_list:
                 node_data_list = self.execute_read(
@@ -342,51 +338,54 @@ class DatabaseManager:
                     G.add_node(node_data['ticker'], **node_data)
                 return G 
 
-            # 2. Iterate through ALL edges and pick the winner
+            # 2. THE OVERRIDE LOGIC
+            # We use a dictionary keyed by the relationship pair (Start, End).
+            # This guarantees only ONE edge exists per pair.
+            unique_edges = {}
+            nodes_map = {}
+
             for record in result_list:
-                center_data = _clean_properties(record['c'])
-                neighbor_data = _clean_properties(record['neighbor'])
-                rel_data = _clean_properties(record['r'])
-                
                 source = record['source_ticker']
                 target = record['target_ticker']
-                neighbor_ticker = neighbor_data['ticker']
+                rel_data = _clean_properties(record['r'])
                 
-                # Store node data
-                nodes_map[center_data['ticker']] = center_data
-                nodes_map[neighbor_ticker] = neighbor_data
+                # Save node data for later
+                nodes_map[record['c']['ticker']] = _clean_properties(record['c'])
+                nodes_map[record['neighbor']['ticker']] = _clean_properties(record['neighbor'])
+
+                edge_key = (source, target)
                 
-                # --- CONFLICT RESOLUTION LOGIC ---
-                is_ai_new = rel_data.get('verification_status') == 'AI_PROPOSED'
-                
-                if neighbor_ticker not in best_edges:
-                    # First time seeing this neighbor? Take the edge.
-                    best_edges[neighbor_ticker] = (rel_data, source, target)
+                # LOGIC: 
+                # 1. If we haven't seen this pair, store it.
+                # 2. If we HAVE seen it, but the NEW one is 'AI_PROPOSED', overwrite the old one.
+                if edge_key not in unique_edges:
+                    unique_edges[edge_key] = rel_data
                 else:
-                    # We already have an edge. Should we swap it?
-                    current_best_rel, _, _ = best_edges[neighbor_ticker]
-                    is_current_ai = current_best_rel.get('verification_status') == 'AI_PROPOSED'
+                    current_status = unique_edges[edge_key].get('verification_status')
+                    new_status = rel_data.get('verification_status')
                     
-                    # If new one is AI and old one is NOT, the new one wins.
-                    if is_ai_new and not is_current_ai:
-                        best_edges[neighbor_ticker] = (rel_data, source, target)
-            
-            # 3. Build the Graph from the winners
-            # Add Nodes
-            for ticker, data in nodes_map.items():
-                G.add_node(ticker, **data)
-            
-            # Add Edges (Limit to top 75 based on AI priority)
-            # We convert dict items to a list and sort them
-            sorted_edges = sorted(
-                best_edges.values(), 
-                key=lambda x: 10.0 if x[0].get('verification_status') == 'AI_PROPOSED' else x[0].get('weight', 0.0),
+                    if new_status == 'AI_PROPOSED':
+                        unique_edges[edge_key] = rel_data
+
+            # 3. SORT & LIMIT (Python Side)
+            # Now we have unique edges. We sort them so AI edges (Score 10) are at the top.
+            sorted_items = sorted(
+                unique_edges.items(), 
+                key=lambda item: 10.0 if item[1].get('verification_status') == 'AI_PROPOSED' else item[1].get('weight', 0.0),
                 reverse=True
             )
             
-            # Take top 75
-            for rel_data, source, target in sorted_edges[:75]:
-                G.add_edge(source, target, **rel_data)
+            # Keep top 75
+            top_edges = sorted_items[:75]
+
+            # 4. BUILD THE GRAPH
+            # Add Nodes
+            for ticker, data in nodes_map.items():
+                G.add_node(ticker, **data)
+                
+            # Add Edges
+            for (source, target), data in top_edges:
+                G.add_edge(source, target, **data)
                 
         except Exception as e:
             logger.error(f"Failed to build neighborhood graph for {company_ticker}: {e}")
