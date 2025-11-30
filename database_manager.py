@@ -316,27 +316,23 @@ class DatabaseManager:
         G = nx.DiGraph()
         if not self.is_connected(): return G
         
-        # --- FIXED QUERY: DEDUPLICATION AT SOURCE ---
-        # 1. Match all edges.
-        # 2. Sort them so AI edges (Score 10) are at the top.
-        # 3. Use 'head(collect(r))' to pick ONLY the top edge and discard duplicates.
+        # 1. Fetch ALL relationships (No LIMIT yet, we filter in Python)
         query = """
         MATCH (c:Company {ticker: $ticker})-[r]-(neighbor:Company)
-        WITH c, neighbor, r
-        ORDER BY (CASE WHEN r.verification_status = 'AI_PROPOSED' THEN 10.0 ELSE coalesce(r.weight, 0.0) END) DESC
-        
-        WITH c, neighbor, head(collect(r)) as best_rel
-        LIMIT 75
-        
-        RETURN c, neighbor, best_rel as r, 
-               startNode(best_rel).ticker AS source_ticker, 
-               endNode(best_rel).ticker AS target_ticker
+        RETURN c, neighbor, r, 
+               startNode(r).ticker AS source_ticker, 
+               endNode(r).ticker AS target_ticker
         """
         
         try:
             result_list = self.execute_read(query, ticker=company_ticker)
-            nodes_added = set()
+            
+            # Dictionary to store the "Best" edge for each neighbor
+            # Key: Neighbor Ticker -> Value: (RelData, Source, Target)
+            best_edges = {}
+            nodes_map = {} # Store node data to add later
 
+            # Handle isolated node case
             if not result_list:
                 node_data_list = self.execute_read(
                     "MATCH (c:Company {ticker: $ticker}) RETURN c", ticker=company_ticker
@@ -346,24 +342,51 @@ class DatabaseManager:
                     G.add_node(node_data['ticker'], **node_data)
                 return G 
 
+            # 2. Iterate through ALL edges and pick the winner
             for record in result_list:
-                center_node_data = _clean_properties(record['c'])
-                neighbor_node_data = _clean_properties(record['neighbor'])
+                center_data = _clean_properties(record['c'])
+                neighbor_data = _clean_properties(record['neighbor'])
                 rel_data = _clean_properties(record['r'])
-                source_ticker = record['source_ticker']
-                target_ticker = record['target_ticker']
                 
-                # Logic to add nodes/edges to NetworkX
-                if center_node_data['ticker'] not in nodes_added:
-                    G.add_node(center_node_data['ticker'], **center_node_data)
-                    nodes_added.add(center_node_data['ticker'])
+                source = record['source_ticker']
+                target = record['target_ticker']
+                neighbor_ticker = neighbor_data['ticker']
+                
+                # Store node data
+                nodes_map[center_data['ticker']] = center_data
+                nodes_map[neighbor_ticker] = neighbor_data
+                
+                # --- CONFLICT RESOLUTION LOGIC ---
+                is_ai_new = rel_data.get('verification_status') == 'AI_PROPOSED'
+                
+                if neighbor_ticker not in best_edges:
+                    # First time seeing this neighbor? Take the edge.
+                    best_edges[neighbor_ticker] = (rel_data, source, target)
+                else:
+                    # We already have an edge. Should we swap it?
+                    current_best_rel, _, _ = best_edges[neighbor_ticker]
+                    is_current_ai = current_best_rel.get('verification_status') == 'AI_PROPOSED'
                     
-                if neighbor_node_data['ticker'] not in nodes_added:
-                    G.add_node(neighbor_node_data['ticker'], **neighbor_node_data)
-                    nodes_added.add(neighbor_node_data['ticker'])
-                
-                # No need to check 'if has_edge' because Neo4j already deduped it
-                G.add_edge(source_ticker, target_ticker, **rel_data)
+                    # If new one is AI and old one is NOT, the new one wins.
+                    if is_ai_new and not is_current_ai:
+                        best_edges[neighbor_ticker] = (rel_data, source, target)
+            
+            # 3. Build the Graph from the winners
+            # Add Nodes
+            for ticker, data in nodes_map.items():
+                G.add_node(ticker, **data)
+            
+            # Add Edges (Limit to top 75 based on AI priority)
+            # We convert dict items to a list and sort them
+            sorted_edges = sorted(
+                best_edges.values(), 
+                key=lambda x: 10.0 if x[0].get('verification_status') == 'AI_PROPOSED' else x[0].get('weight', 0.0),
+                reverse=True
+            )
+            
+            # Take top 75
+            for rel_data, source, target in sorted_edges[:75]:
+                G.add_edge(source, target, **rel_data)
                 
         except Exception as e:
             logger.error(f"Failed to build neighborhood graph for {company_ticker}: {e}")
