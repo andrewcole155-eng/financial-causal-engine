@@ -311,15 +311,12 @@ class DatabaseManager:
             
         return G
 
-
     def get_neighborhood_graph(self, company_ticker: str) -> nx.DiGraph:
         """Fetches a 1-hop neighborhood for a specific company."""
         G = nx.DiGraph()
         if not self.is_connected(): return G
         
-        # --- UPDATED QUERY: PRIORITIZE AI EDGES ---
-        # We give 'AI_PROPOSED' edges a fake sorting boost (score 10.0) 
-        # so they appear at the top of the LIMIT 75 list.
+        # We assume the query sorts by importance (AI edges first)
         query = """
         MATCH (c:Company {ticker: $ticker})-[r]-(neighbor:Company)
         WITH c, r, neighbor, 
@@ -335,7 +332,6 @@ class DatabaseManager:
             result_list = self.execute_read(query, ticker=company_ticker)
             nodes_added = set()
 
-            # Handle isolated node case
             if not result_list:
                 node_data_list = self.execute_read(
                     "MATCH (c:Company {ticker: $ticker}) RETURN c", ticker=company_ticker
@@ -352,6 +348,13 @@ class DatabaseManager:
                 source_ticker = record['source_ticker']
                 target_ticker = record['target_ticker']
                 
+                # --- FIX: PREVENT OVERWRITING ---
+                # Since we sorted by importance (AI first), if an edge already exists,
+                # it means we already added the 'best' version. Skip the duplicate.
+                if G.has_edge(source_ticker, target_ticker):
+                    continue
+                # --------------------------------
+
                 if center_node_data['ticker'] not in nodes_added:
                     G.add_node(center_node_data['ticker'], **center_node_data)
                     nodes_added.add(center_node_data['ticker'])
