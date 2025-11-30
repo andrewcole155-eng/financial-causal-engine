@@ -316,16 +316,21 @@ class DatabaseManager:
         G = nx.DiGraph()
         if not self.is_connected(): return G
         
-        # We assume the query sorts by importance (AI edges first)
+        # --- FIXED QUERY: DEDUPLICATION AT SOURCE ---
+        # 1. Match all edges.
+        # 2. Sort them so AI edges (Score 10) are at the top.
+        # 3. Use 'head(collect(r))' to pick ONLY the top edge and discard duplicates.
         query = """
         MATCH (c:Company {ticker: $ticker})-[r]-(neighbor:Company)
-        WITH c, r, neighbor, 
-             CASE WHEN r.verification_status = 'AI_PROPOSED' THEN 10.0 ELSE r.weight END as sort_score
-        ORDER BY sort_score DESC
+        WITH c, neighbor, r
+        ORDER BY (CASE WHEN r.verification_status = 'AI_PROPOSED' THEN 10.0 ELSE coalesce(r.weight, 0.0) END) DESC
+        
+        WITH c, neighbor, head(collect(r)) as best_rel
         LIMIT 75
-        RETURN c, neighbor, r, 
-               startNode(r).ticker AS source_ticker, 
-               endNode(r).ticker AS target_ticker
+        
+        RETURN c, neighbor, best_rel as r, 
+               startNode(best_rel).ticker AS source_ticker, 
+               endNode(best_rel).ticker AS target_ticker
         """
         
         try:
@@ -348,13 +353,7 @@ class DatabaseManager:
                 source_ticker = record['source_ticker']
                 target_ticker = record['target_ticker']
                 
-                # --- FIX: PREVENT OVERWRITING ---
-                # Since we sorted by importance (AI first), if an edge already exists,
-                # it means we already added the 'best' version. Skip the duplicate.
-                if G.has_edge(source_ticker, target_ticker):
-                    continue
-                # --------------------------------
-
+                # Logic to add nodes/edges to NetworkX
                 if center_node_data['ticker'] not in nodes_added:
                     G.add_node(center_node_data['ticker'], **center_node_data)
                     nodes_added.add(center_node_data['ticker'])
@@ -363,6 +362,7 @@ class DatabaseManager:
                     G.add_node(neighbor_node_data['ticker'], **neighbor_node_data)
                     nodes_added.add(neighbor_node_data['ticker'])
                 
+                # No need to check 'if has_edge' because Neo4j already deduped it
                 G.add_edge(source_ticker, target_ticker, **rel_data)
                 
         except Exception as e:
