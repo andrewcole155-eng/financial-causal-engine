@@ -120,7 +120,7 @@ def apply_ai_visual_styles(net: Network, nx_graph: nx.Graph):
                 # --- APPLY DASHED STYLE ---
                 edge['dashes'] = True
                 edge['color'] = {'color': '#808080', 'highlight': '#a0a0a0'} # Grey
-                edge['width'] = 1
+                edge['width'] = 3
                 # Update tooltip to show it's AI
                 edge['title'] = f"🤖 AI INFERRED RELATIONSHIP\nMechanism: {mechanism}"
             else:
