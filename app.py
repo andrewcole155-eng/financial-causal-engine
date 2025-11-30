@@ -35,17 +35,23 @@ elif "GOOGLE_API_KEY" in st.secrets:
     # Fallback in case you named it GOOGLE_API_KEY in the cloud dashboard
     os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
 else:
-    st.warning("⚠️ API Key not found in Streamlit Cloud Secrets.")
+    # Local fallback checking
+    if "GOOGLE_API_KEY" not in os.environ:
+        st.warning("⚠️ API Key not found in Streamlit Cloud Secrets.")
 
 def setup_genai():
     """Configures Google Gemini API from Streamlit Secrets."""
     try:
-        # Check if key exists in secrets
-        if "GEMINI_API_KEY" in st.secrets:
-            api_key = st.secrets["GEMINI_API_KEY"]
-        elif "general" in st.secrets and "GEMINI_API_KEY" in st.secrets["general"]:
-             api_key = st.secrets["general"]["GEMINI_API_KEY"]
-        else:
+        # Check if key exists in secrets or env
+        api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+        
+        if not api_key:
+            if "GEMINI_API_KEY" in st.secrets:
+                api_key = st.secrets["GEMINI_API_KEY"]
+            elif "general" in st.secrets and "GEMINI_API_KEY" in st.secrets["general"]:
+                 api_key = st.secrets["general"]["GEMINI_API_KEY"]
+        
+        if not api_key:
             return False
 
         genai.configure(api_key=api_key)
@@ -62,7 +68,6 @@ def generate_ai_analysis(prompt: str) -> str:
     """
     try:
         # Check if the prompt indicates missing data (heuristic check)
-        # Your graph usually sends "Upstream Entities: "
         is_sparse_data = "Upstream Entities: ," in prompt or "Upstream Entities: ." in prompt or "Upstream Entities:  " in prompt
         
         final_prompt = prompt
@@ -86,6 +91,45 @@ def generate_ai_analysis(prompt: str) -> str:
         return response.text
     except Exception as e:
         return f"Error generating AI explanation: {str(e)}"
+
+# ==============================================================================
+# --- NEW: VISUALIZATION HELPER (AI EDGE STYLING) ---
+# ==============================================================================
+def apply_ai_visual_styles(net: Network, nx_graph: nx.Graph):
+    """
+    Iterates through the PyVis network and updates edges that were proposed by AI.
+    AI Edges = Dashed Grey Lines.
+    Verified Edges = Solid Lines.
+    """
+    for edge in net.edges:
+        # PyVis edges use 'from' and 'to'. We must match this with NetworkX data.
+        source = edge['from']
+        target = edge['to']
+        
+        # Get data from original graph (handle directionality safety)
+        nx_data = nx_graph.get_edge_data(source, target)
+        if not nx_data:
+             nx_data = nx_graph.get_edge_data(target, source)
+
+        if nx_data:
+            # Check for the flag added by daily_batch_ingest.py
+            status = nx_data.get('verification_status', 'VERIFIED')
+            mechanism = nx_data.get('mechanism', '')
+
+            if status == "AI_PROPOSED":
+                # --- APPLY DASHED STYLE ---
+                edge['dashes'] = True
+                edge['color'] = {'color': '#808080', 'highlight': '#a0a0a0'} # Grey
+                edge['width'] = 1
+                # Update tooltip to show it's AI
+                edge['title'] = f"🤖 AI INFERRED RELATIONSHIP\nMechanism: {mechanism}"
+            else:
+                # --- APPLY STANDARD STYLE ---
+                edge['dashes'] = False
+                if mechanism:
+                     edge['title'] = f"✅ VERIFIED DATA\nMechanism: {mechanism}"
+
+    return net
 
 # ==============================================================================
 # --- UI HELPER & ANALYSIS FUNCTIONS ---
@@ -209,10 +253,6 @@ def analyze_systemic_vulnerability(graph: nx.DiGraph) -> pd.DataFrame:
 def calculate_impact_scores(graph: nx.DiGraph, start_node: str, event_magnitude: float = 1.0) -> Dict[str, dict]:
     """
     Calculates impact scores by propagating an event through the graph.
-    
-    UPDATED: Now propagates BIDIRECTIONALLY (Upstream & Downstream).
-    - If a Supplier fails, the Customer hurts (Forward).
-    - If a Customer fails, the Supplier hurts (Backward).
     """
     if start_node not in graph:
         return {}
@@ -236,7 +276,6 @@ def calculate_impact_scores(graph: nx.DiGraph, start_node: str, event_magnitude:
         if abs(impact_data[current_node]['score']) < 0.01:
             continue
 
-        # We convert to list() to avoid runtime errors if graph changes, though it shouldn't here.
         # 1. Outgoing (Successors)
         successors = list(graph.successors(current_node))
         # 2. Incoming (Predecessors)
@@ -374,15 +413,6 @@ def get_full_graph():
     except FileNotFoundError:
         logger.error(f"FATAL: Graph file not found at {GRAPH_FILE_PATH}.")
         st.error(f"Graph file not found. Looked for: {GRAPH_FILE_PATH}")
-        
-        # Add debugging to show what's in the directory
-        try:
-            st.warning(f"Files found in the script's directory ({SCRIPT_DIR}):")
-            st.code(os.listdir(SCRIPT_DIR))
-        except Exception as e:
-            st.error(f"Could not list directory contents: {e}")
-            
-        st.stop()
         return None
         
     except Exception as e:
@@ -398,28 +428,34 @@ def get_full_graph():
     # ==============================================================================
     # 🧹 NOISE REDUCTION: Prune "Vendor/Infrastructure" Noise
     # ==============================================================================
-    # These companies are often cited as vendors/partners, not causal drivers.
-    # We remove their OUTGOING edges unless the relationship is extremely strong.
     suspicious_parents = ['SNAP', 'V', 'META', 'GOOGL', 'GOOG', 'AWS', 'ADBE', 'CRM', 'MA'] 
     
     edges_to_remove = []
     for u, v, data in graph.edges(data=True):
-        if u in suspicious_parents:
-            # Check weight: If it's weak (< 0.90) or missing, mark for deletion
-            # This allows REAL major news (weight 1.0) to stay, but deletes "vendor noise" (weight 0.5-0.8)
-            weight = data.get('weight', 0.5) 
-            if weight < 0.90: 
+        
+        # Get sector data (safely)
+        sector_u = graph.nodes[u].get('sector', 'Unknown')
+        sector_v = graph.nodes[v].get('sector', 'Unknown')
+        weight = data.get('weight', 0.5)
+
+        # RULE 1: If 'suspicious parent', cut weak links
+        if u in suspicious_parents and weight < 0.90:
+            edges_to_remove.append((u, v))
+            continue
+
+        # RULE 2: Cross-Sector Penalty
+        if sector_u != 'Unknown' and sector_v != 'Unknown':
+            if sector_u != sector_v and weight < 0.75:
                 edges_to_remove.append((u, v))
-    
+
     if edges_to_remove:
         graph.remove_edges_from(edges_to_remove)
-        logger.info(f"🧹 Pruned {len(edges_to_remove)} noisy edges from suspicious parents ({suspicious_parents}).")
+        logger.info(f"🧹 Pruned {len(edges_to_remove)} noisy edges.")
     # ==============================================================================
 
     logger.info(f"Graph structure loaded with {graph.number_of_nodes()} nodes.")
 
     # 2. Inject the Live Risk Data (CSV)
-    # This updates the graph object with the latest numbers before returning it
     graph = inject_live_risk_data(graph, CSV_FILE_PATH)
 
     return graph
@@ -600,6 +636,10 @@ def main():
                                 net = Network(height="750px", width="100%", notebook=True, cdn_resources='in_line', directed=True, bgcolor="#222222", font_color="white")
                                 net.from_nx(graph_for_pyvis)
                                 
+                                # === NEW: APPLY AI VISUAL STYLES ===
+                                # This turns "AI_PROPOSED" edges into dashed grey lines
+                                net = apply_ai_visual_styles(net, graph_for_pyvis)
+                                
                                 risk_map = {
                                     0: {"label": "Low", "color": "#66bb6a"},  # Green
                                     1: {"label": "Medium", "color": "#ffa726"}, # Orange
@@ -665,7 +705,7 @@ def main():
                                     if os.path.exists(html_file):
                                         os.remove(html_file)
                                     
-                                # === CRITICAL FIX (Re-applied) ===
+                                # === REFRESH TO SHOW NEW HTML ===
                                 st.rerun()
 
                             else:
@@ -679,6 +719,7 @@ def main():
                         st.caption(f"⚠️ Currently displaying graph for: {st.session_state.selected_ticker_for_graph}. Click 'Explore Neighborhood' to update.")
                     
                     st.components.v1.html(st.session_state.graph_html, height=800, scrolling=True)
+                    st.caption("ℹ️ **Legend:** Solid Lines = Verified Data. Dashed Grey Lines = **AI Inferred** (Unverified).")
                 else:
                     st.info("Click 'Explore Neighborhood' to generate the graph.")
 
@@ -689,7 +730,7 @@ def main():
                     st.write("Gemini API not active.")
                 elif selected_company:
                     st.write(f"Analyze risks for **{selected_company}**.")
-                    prompt_type = st.selectbox("Query Type:", ["Economic Logic", "Contagion Risk"], key="ai_select")
+                    prompt_type = st.selectbox("Query Type:", ["Economic Logic", "Contagion Risk", "Structural Analysis"], key="ai_select")
                     
                     if st.button("🧠 Generate"):
                         with st.spinner("Consulting Gemini..."):
@@ -698,7 +739,15 @@ def main():
                             neighbors = list(financial_graph.neighbors(selected_company))[:5]
                             neighbor_str = ", ".join(neighbors)
                             
-                            prompt = f"Financial Analysis for {selected_company}. Risk Score: {my_risk}. Upstream Entities: {neighbor_str}. Explain the {prompt_type} of this graph structure."
+                            if prompt_type == "Structural Analysis":
+                                prompt = f"""
+                                **Role:** You are a graph theory expert analyzing {selected_company}.
+                                **Data:** It connects to {neighbor_str}.
+                                **Task:** Identify if {selected_company} is a 'load-bearing' node or a dependency. 
+                                Who relies on it? Who does it rely on?
+                                """
+                            else:
+                                prompt = f"Financial Analysis for {selected_company}. Risk Score: {my_risk}. Upstream Entities: {neighbor_str}. Explain the {prompt_type} of this graph structure."
                             
                             explanation = generate_ai_analysis(prompt)
                             st.success("Generated Insight:")
@@ -832,6 +881,9 @@ def main():
                         })
                     
                     df = pd.DataFrame(df_data)
+                    # Sort by absolute impact
+                    df = df.sort_values(by="Impact Score", key=abs, ascending=False)
+                    
                     st.dataframe(
                         df, 
                         column_config={
@@ -843,6 +895,21 @@ def main():
                     
                     # Store for graph viz
                     st.session_state['sim_impact_nodes'] = list(impact_results.keys())
+
+                    # === NEW: GENERATE CRISIS REPORT ===
+                    if gemini_active:
+                        st.divider()
+                        if st.button("📝 Generate Crisis Report"):
+                            with st.spinner("Writing AI Crisis Report..."):
+                                top_victims = df.head(5)['Ticker'].tolist()
+                                prompt = f"""
+                                **Context:** A simulated shock of {hypothetical_score} hit {selected_company_sim}.
+                                **Data:** The algorithmic impact analysis shows these casualties: {top_victims}.
+                                **Task:** Write a short 'Breaking News' style financial alert explaining the contagion mechanism. Use Wyckoff logic if applicable.
+                                """
+                                report = generate_ai_analysis(prompt)
+                                st.info("🚨 **Breaking Crisis Report**")
+                                st.write(report)
                 
                 else:
                     st.info("No downstream impacts found (Node might be isolated or impact < threshold).")
@@ -886,6 +953,9 @@ def main():
                         font_color="white"
                     )
                     net.from_nx(graph_for_pyvis) 
+                    
+                    # === NEW: APPLY AI VISUAL STYLES HERE TOO ===
+                    net = apply_ai_visual_styles(net, graph_for_pyvis)
                     
                     # --- COLORING & PHYSICS ---
                     for node in net.nodes:
@@ -1109,6 +1179,9 @@ def main():
                             net = Network(height="400px", width="100%", notebook=True, directed=True, bgcolor="#222222", font_color="white")
                             net.from_nx(graph_for_pyvis) 
                             
+                            # === NEW: APPLY AI VISUAL STYLES HERE TOO ===
+                            net = apply_ai_visual_styles(net, graph_for_pyvis)
+                            
                             risk_map = {
                                 0: {"label": "Low", "color": "#66bb6a"}, 
                                 1: {"label": "Medium", "color": "#ffa726"},
@@ -1212,7 +1285,8 @@ def main():
                 * **Size:** Represents **Centrality**. Bigger nodes are "super-spreaders" of volatility.
                 * **Color:** 🟢 Green (Low Risk), 🟠 Orange (Medium Risk), 🔴 Red (High Risk).
             * **Edges (The Arrows):**
-                * **Direction (A → B):** "A causes B." If the arrow points from *Inflation* → *Retail Stocks*, inflation is the driver.
+                * **Solid Line:** Verified data from regulatory filings.
+                * **Dashed Grey Line:** Relationships inferred by AI (High Probability, but unverified).
             """)
         
         elif help_choice == "Simulate Scenarios":
@@ -1223,6 +1297,7 @@ def main():
             **How to Use:**
             * **Systemic Vulnerability:** Click "Analyze Systemic Vulnerability" to find which single company failure would cause the most total damage to the market.
             * **Manual Simulation:** Select a specific company and a hypothetical shock score (e.g., -0.5 for bad news).
+            * **Generate Crisis Report:** Ask the AI to write a narrative explaining the simulation results.
             
             **Interpreting the Data:**
             * **Impact Score:** How strongly a downstream asset reacts to the shock.
@@ -1234,8 +1309,6 @@ def main():
             ### ↔️ Causal Pathfinding Tab
             **Purpose:** To find the hidden "domino effect" between two seemingly unrelated assets and identify contagion risks.
             
-            
-
             **How to Use:**
             1.  **Select Start Company:** The trigger event (e.g., `10Y Treasury Yield`).
             2.  **Check Diagnostics:** The system immediately analyzes connectivity.

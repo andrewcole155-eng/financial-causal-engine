@@ -46,3 +46,5 @@ Thumbs.db
 
 neo4j/neo4j_data_backup/
 neo4j_data_backup/
+
+*.jsonl
