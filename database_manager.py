@@ -647,8 +647,7 @@ class DatabaseManager:
         G = nx.DiGraph()
         if not self.is_connected(): return G
         
-        # 1. Fetch EVERYTHING (Duplicates included).
-        # We explicitly request 'properties(r)' to ensure Python gets a Dict, not an Object.
+        # 1. Fetch EVERYTHING (Limit safety cap to 1000 to prevent massive memory usage)
         query = """
         MATCH (c:Company {ticker: $ticker})-[r]-(neighbor:Company)
         RETURN properties(c) as c_props, 
@@ -656,13 +655,14 @@ class DatabaseManager:
                properties(r) as r_props, 
                startNode(r).ticker AS source_ticker, 
                endNode(r).ticker AS target_ticker
+        LIMIT 1000 
         """
         
         try:
             result_list = self.execute_read(query, ticker=company_ticker)
             
+            # --- Handle Isolated Node Case ---
             if not result_list:
-                # Handle isolated node case
                 q_node = "MATCH (c:Company {ticker: $ticker}) RETURN properties(c) as c_props"
                 node_data_list = self.execute_read(q_node, ticker=company_ticker)
                 if node_data_list:
@@ -670,26 +670,25 @@ class DatabaseManager:
                     G.add_node(node_data['ticker'], **node_data)
                 return G 
 
-            # 2. THE UNDIRECTED OVERRIDE LOGIC
-            unique_edges = {} # Key: tuple(sorted([A, B])) -> Value: (source, target, props)
+            # 2. PROCESS DATA INTO MEMORY (But do NOT add to G yet)
+            unique_edges = {} 
             nodes_map = {}
 
             for record in result_list:
                 source = record['source_ticker']
                 target = record['target_ticker']
                 
-                # --- DIRECT PROPERTY ACCESS (Cleaned) ---
                 rel_data = _clean_properties(record['r_props'])
                 c_data = _clean_properties(record['c_props'])
                 n_data = _clean_properties(record['n_props'])
                 
+                # Store node data for lookup later
                 nodes_map[c_data['ticker']] = c_data
                 nodes_map[n_data['ticker']] = n_data
 
-                # Create undirected key (A-B is same as B-A)
+                # Undirected Logic: A-B is same as B-A
                 pair_key = tuple(sorted([source, target]))
                 
-                # LOGIC: Prioritize AI edges above all else
                 is_new_ai = rel_data.get('verification_status') == 'AI_PROPOSED'
                 
                 if pair_key not in unique_edges:
@@ -698,31 +697,43 @@ class DatabaseManager:
                     _, _, existing_data = unique_edges[pair_key]
                     is_existing_ai = existing_data.get('verification_status') == 'AI_PROPOSED'
                     
-                    # Overwrite if new is AI and existing is NOT
+                    # AI Proposed > Standard Weight
                     if is_new_ai and not is_existing_ai:
                         unique_edges[pair_key] = (source, target, rel_data)
-                    # If both are verified, usually keep the one with higher weight (optional)
                     elif not is_new_ai and not is_existing_ai:
                          if rel_data.get('weight', 0) > existing_data.get('weight', 0):
                              unique_edges[pair_key] = (source, target, rel_data)
 
-            # 3. BUILD GRAPH
-            # Add Nodes
-            for ticker, data in nodes_map.items():
-                G.add_node(ticker, **data)
-                
-            # Add Edges (Convert back to list to sort and limit)
+            # 3. SORT & LIMIT (The Critical Step)
             all_final_edges = list(unique_edges.values())
             
-            # Sort: AI edges (10.0) first, then weight
+            # Sort by Importance (AI first, then Weight)
             sorted_edges = sorted(
                 all_final_edges, 
                 key=lambda x: 10.0 if x[2].get('verification_status') == 'AI_PROPOSED' else x[2].get('weight', 0.0),
                 reverse=True
             )
             
-            # Limit to 75 edges to prevent UI lag
-            for source, target, data in sorted_edges[:75]:
+            # SLICE: Only keep the top 75 edges
+            top_75_edges = sorted_edges[:75]
+            
+            # 4. FILTER NODES (The Fix)
+            # We ONLY add nodes that exist in our top 75 edges.
+            relevant_tickers = set()
+            relevant_tickers.add(company_ticker) # Always include the center node
+            
+            for s, t, _ in top_75_edges:
+                relevant_tickers.add(s)
+                relevant_tickers.add(t)
+
+            # 5. BUILD GRAPH
+            # Add ONLY relevant nodes
+            for ticker in relevant_tickers:
+                if ticker in nodes_map:
+                    G.add_node(ticker, **nodes_map[ticker])
+            
+            # Add ONLY relevant edges
+            for source, target, data in top_75_edges:
                 G.add_edge(source, target, **data)
                 
         except Exception as e:
