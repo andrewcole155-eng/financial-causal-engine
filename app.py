@@ -1244,8 +1244,10 @@ def main():
                     if not is_sink_node:
                          st.warning("Please select two different companies.")
 
+
+
     # ==============================================================================
-    # --- TAB 5: INSTRUCTIONS & GUIDE ---
+    # --- TAB 5: INSTRUCTIONS & GUIDE (UPDATED) ---
     # ==============================================================================
     with tab_help:
         st.header("📘 User Guide & Documentation")
@@ -1262,81 +1264,88 @@ def main():
         if help_choice == "Introduction":
             st.markdown("""
             ### Welcome to the Causal Inference Engine
-            This application allows you to move beyond simple correlations and understand the **causal structure** of the financial markets.
+            This application moves beyond simple price correlations to map the **causal structure** of the financial markets.
             
+
+[Image of financial knowledge graph network]
+
+
             **Key Concepts:**
-            * **Nodes:** Companies, Indices, or Economic Indicators.
-            * **Edges:** The causal direction (e.g., Oil Price → Airline Stocks).
-            * **Sentiment:** Real-time news scoring used to shock the system.
+            * **Nodes (Assets):** Companies, Indices, or Commodities.
+            * **Edges (Relationships):** The causal direction (e.g., *Oil Price* → *Airline Stocks*).
+            * **Real-World Risk:** Nodes are colored based on live **Volatility & RSI** data, not just sentiment.
+            * **AI Inference:** The system uses Gemini AI to "fill in the blanks" where official data is missing.
             """)
         
         elif help_choice == "Recent Events":
             st.markdown("""
             ### 🔔 Recent Events Tab
-            **Purpose:** A real-time feed of market "shocks" and news signals that act as inputs for the causal model.
+            **Purpose:** A feed of market "shocks" (News, Earnings, Macro Data) detected by the ingestion engine.
 
             **How to Use:**
-            * **Refresh Events:** Click the button to reload the latest news from the database.
-            * **Inspect Source:** Click the link icon to read the original news source.
+            * **Refresh Events:** Reloads the latest data from the `significant_events` database.
+            * **Inspect Source:** Click the link to read the original article.
 
             **Interpreting the Data:**
-            * **Sentiment Score (-1 to +1):**
-                * 🔴 **-1.0 (Bearish):** Examples: Regulatory bans, Lawsuits, Missed Earnings.
-                * 🟢 **+1.0 (Bullish):** Examples: Mergers, Record Profits, Rate Cuts.
-                * ⚪ **0.0 (Neutral):** Informational news with no immediate price impact.
+            * **Sentiment Score:** * 🔴 **Negative (-1.0):** Bearish news (Lawsuits, Missed Earnings).
+                * 🟢 **Positive (+1.0):** Bullish news (Mergers, Record Profits).
+            * **Action:** Use these events as inputs in the **Simulate Scenarios** tab to see how they ripple through the network.
             """)
         
         elif help_choice == "Explore Graph":
             st.markdown("""
             ### 🗺️ Explore Graph Tab
-            **Purpose:** Visual map of your financial universe, showing how assets, sectors, and economic factors are interconnected.
+            **Purpose:** Visual map of your financial universe. See how assets are connected and which ones are currently risky.
+            
 
-            **How to Use:**
-            * **Select Company:** Choose an asset from the dropdown to load its "Neighborhood" (Direct parents and children).
-            * **Navigation:** Scroll to zoom, click-and-drag to pan the canvas.
-            * **AI Insight:** Use the sidebar to ask Gemini to explain *why* two nodes are connected.
-
-            **Interpreting the Data:**
+            **Visual Legend:**
             * **Nodes (The Dots):**
-                * **Size:** Represents **Centrality**. Bigger nodes are "super-spreaders" of volatility.
-                * **Color:** 🟢 Green (Low Risk), 🟠 Orange (Medium Risk), 🔴 Red (High Risk).
-            * **Edges (The Arrows):**
-                * **Solid Line:** Verified data from regulatory filings.
-                * **Dashed Grey Line:** Relationships inferred by AI (High Probability, but unverified).
+                * 🔴 **Red:** High Risk (Top 5% Volatility/RSI).
+                * 🟠 **Orange:** Medium Risk.
+                * 🟢 **Green:** Low Risk (Stable).
+            * **Edges (The Lines):**
+                * **Solid Line:** ✅ Verified data (10-K filings, Supplier lists).
+                * **Dashed Grey Line:** 🤖 **AI Inferred** (High probability, but unverified).
+
+            **Interpreting Tooltips:**
+            * Hover over a node to see its **Real-Math Risk Score** (0.0 to 1.0) and Market Cap.
+            * Hover over a dashed line to see the AI's reasoning for that connection.
             """)
         
         elif help_choice == "Simulate Scenarios":
             st.markdown("""
             ### 🔬 Simulate Scenarios Tab
-            **Purpose:** A "Stress Test" lab where you can ask "What If?" questions to forecast future outcomes.
-
-            **How to Use:**
-            * **Systemic Vulnerability:** Click "Analyze Systemic Vulnerability" to find which single company failure would cause the most total damage to the market.
-            * **Manual Simulation:** Select a specific company and a hypothetical shock score (e.g., -0.5 for bad news).
-            * **Generate Crisis Report:** Ask the AI to write a narrative explaining the simulation results.
+            **Purpose:** A "Stress Test" lab. Ask "What If?" questions to forecast contagion.
             
-            **Interpreting the Data:**
-            * **Impact Score:** How strongly a downstream asset reacts to the shock.
-            * **Divergence:** High impact scores indicate a non-obvious trading opportunity (Alpha).
+
+[Image of domino effect contagion]
+
+
+            **Tools:**
+            1.  **🌪️ Systemic Vulnerability (The Butterfly Effect):**
+                * Runs a massive simulation crashing *every* company one by one.
+                * Identifies **"Super Spreaders"**: Companies whose failure would cause the most total damage to the network.
+            
+            2.  **🧪 Manual Simulation:**
+                * Select a specific company and a shock score (e.g., -0.5).
+                * **Visual Graph:** Shows the "Blast Radius" (Source + Top 25 Victims).
+                * **AI Crisis Report:** Generates a "Breaking News" narrative explaining *why* the contagion spread this way.
             """)
 
         elif help_choice == "Causal Pathfinding":
             st.markdown("""
             ### ↔️ Causal Pathfinding Tab
-            **Purpose:** To find the hidden "domino effect" between two seemingly unrelated assets and identify contagion risks.
+            **Purpose:** Find the hidden transmission chains between two assets.
             
-            **How to Use:**
-            1.  **Select Start Company:** The trigger event (e.g., `10Y Treasury Yield`).
-            2.  **Check Diagnostics:** The system immediately analyzes connectivity.
-                * 🚫 **Sink Node:** If you see a red box, it means this company absorbs shocks but doesn't pass them on (e.g., An airline absorbs oil prices).
-                * **Smart Swap:** If a Sink Node is detected, use the **"Analyze Incoming Factors"** button to instantly flip the analysis and see what *drives* that company instead.
-            3.  **Select End Company:** The dropdown automatically filters to only show assets that are *actually reachable* within 5 steps.
 
-            **Interpreting the Data:**
-            * **Mediators:** The nodes *between* your source and target.
-                * *Example:* Bond Yields → Tech Sector → Crypto.
-                * *Insight:* If the Tech Sector is resilient, the Bond Yield shock might never reach Crypto.
-            * **Risk Level:** The cumulative risk score of every company along the chain.
+            **Smart Diagnostics:**
+            * **Dynamic Filtering:** The "End Company" list only shows nodes that are *actually reachable* from your start node.
+            * **🚫 Sink Node Detection:** If you select a company that absorbs shocks but doesn't pass them on (a dead end), the system warns you.
+            * **🔄 Reverse Look:** If you hit a Sink Node, use the **"Analyze Incoming Factors"** button to flip the analysis and see what *drives* that company instead.
+
+            **Interpreting the Path:**
+            * **Risk Level:** The cumulative risk of every node along the chain.
+            * **Mediators:** The nodes in the middle. If a mediator is "Green" (Stable), the shock might be absorbed before it reaches the target.
             """)
 
 if __name__ == "__main__":
