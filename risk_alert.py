@@ -3,7 +3,6 @@
 # ==============================================================================
 import json
 import logging
-import pandas as pd
 import os
 import requests  # <--- Required for Discord
 import time
@@ -26,7 +25,7 @@ def send_discord_alert(webhook_url, ticker, neighbor, score, mechanism, status):
     icon = "🤖" if status == "AI_PROPOSED" else "🔗"
     color_bar = 15158332 # Red color code for Discord embed
     
-    # Discord Embed Structure (Looks professional on mobile)
+    # Discord Embed Structure
     payload = {
         "username": "The Watchman 👁️",
         "embeds": [
@@ -49,19 +48,6 @@ def send_discord_alert(webhook_url, ticker, neighbor, score, mechanism, status):
         response.raise_for_status()
     except Exception as e:
         logger.error(f"❌ Failed to send Discord alert: {e}")
-
-def load_live_risk_scores(csv_path="live_risk_scores.csv"):
-    """Loads the CSV and returns a dictionary: {'TICKER': 0.95, ...}"""
-    if not os.path.exists(csv_path):
-        logger.warning(f"⚠️ Risk CSV not found at {csv_path}. Assuming no external risks.")
-        return {}
-    
-    try:
-        df = pd.read_csv(csv_path)
-        return pd.Series(df.Risk_Score.values, index=df.Ticker).to_dict()
-    except Exception as e:
-        logger.error(f"❌ Failed to load risk scores: {e}")
-        return {}
 
 def run_risk_scan():
     # 1. Load Config
@@ -90,10 +76,6 @@ def run_risk_scan():
         logger.error(f"❌ Database connection failed: {e}")
         return
     
-    # 3. Load Risk Data
-    csv_path = os.path.join(script_dir, "live_risk_scores.csv")
-    risk_map = load_live_risk_scores(csv_path)
-    
     logger.info("---------------------------------------------------")
     logger.info(f"🛡️  STARTING WATCHMAN SCAN FOR: {len(watchlist)} TICKERS")
     logger.info("---------------------------------------------------")
@@ -103,7 +85,8 @@ def run_risk_scan():
     for ticker in watchlist:
         ticker = ticker.upper().strip()
         
-        # Get immediate neighbors (1-hop)
+        # Get immediate neighbors (1-hop) AND their risk scores directly from DB
+        # We assume the neighbor node has 'raw_risk_score' set by market_data.py
         graph = db.get_neighborhood_graph(ticker)
         
         if graph.number_of_nodes() == 0:
@@ -113,7 +96,9 @@ def run_risk_scan():
         for neighbor in graph.nodes():
             if neighbor == ticker: continue 
             
-            neighbor_risk = risk_map.get(neighbor, 0.0)
+            # Retrieve risk score from the node attributes in the graph
+            # Default to 0.0 if not found
+            neighbor_risk = graph.nodes[neighbor].get('raw_risk_score', 0.0)
             
             if neighbor_risk >= RISK_THRESHOLD:
                 # 🚨 HIGH RISK NEIGHBOR FOUND
