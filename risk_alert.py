@@ -7,17 +7,12 @@ import pandas as pd
 import os
 from database_manager import DatabaseManager
 
-# --- CONFIGURATION ---
-# 1. Define your portfolio/watchlist here
-WATCHLIST = ["INTC", "SNAP", "IONQ", "KR", "KO", "OXY", "SIRI", "AMD"]
-
-# 2. Risk Threshold (0.0 to 1.0)
-# Alert if a neighbor's risk score is above this number.
-RISK_THRESHOLD = 0.85 
-
 # Setup Logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 logger = logging.getLogger("RiskAlert")
+
+# 1. Define Thresholds
+RISK_THRESHOLD = 0.85 
 
 def load_live_risk_scores(csv_path="live_risk_scores.csv"):
     """Loads the CSV and returns a dictionary: {'TICKER': 0.95, ...}"""
@@ -36,27 +31,42 @@ def load_live_risk_scores(csv_path="live_risk_scores.csv"):
 def run_risk_scan():
     # 1. Load Config
     try:
-        with open("config.json", 'r') as f:
+        # Determine path relative to this script
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        config_path = os.path.join(script_dir, "config.json")
+        
+        with open(config_path, 'r') as f:
             config = json.load(f)
-    except:
-        logger.error("❌ Config not found.")
+        
+        # --- DYNAMIC WATCHLIST ---
+        # Reads the list you added to config.json
+        watchlist = config.get("target_tickers", [])
+        
+        if not watchlist:
+            logger.warning("⚠️ 'target_tickers' list is empty or missing in config.json. Nothing to scan.")
+            return
+
+    except Exception as e:
+        logger.error(f"❌ Config error: {e}")
         return
 
     # 2. Connect to Database
     db = DatabaseManager(config)
     
     # 3. Load Risk Data
-    risk_map = load_live_risk_scores()
+    csv_path = os.path.join(script_dir, "live_risk_scores.csv")
+    risk_map = load_live_risk_scores(csv_path)
     
     logger.info("---------------------------------------------------")
-    logger.info(f"🛡️  STARTING WATCHMAN SCAN FOR: {len(WATCHLIST)} TICKERS")
+    logger.info(f"🛡️  STARTING WATCHMAN SCAN FOR: {len(watchlist)} TICKERS")
     logger.info("---------------------------------------------------")
     
     alerts_triggered = 0
 
-    for ticker in WATCHLIST:
+    for ticker in watchlist:
+        ticker = ticker.upper().strip() # Safety clean
+        
         # Get immediate neighbors (1-hop)
-        # The Manager handles the "AI Priority" logic automatically now!
         graph = db.get_neighborhood_graph(ticker)
         
         if graph.number_of_nodes() == 0:
@@ -73,7 +83,6 @@ def run_risk_scan():
                 # 🚨 HIGH RISK NEIGHBOR FOUND
                 
                 # Get the edge details (Why are they connected?)
-                # Try both directions
                 edge_data = graph.get_edge_data(ticker, neighbor)
                 if not edge_data:
                     edge_data = graph.get_edge_data(neighbor, ticker)
@@ -83,12 +92,10 @@ def run_risk_scan():
                     mechanism = edge_data.get('mechanism', 'Direct Correlation')
                     status = edge_data.get('verification_status', 'VERIFIED')
                     
-                    # Formatting the Alert
-                    icon = "🤖" if status == "AI_PROPOSED" else "🔗"
-                    
+                    # Log to File/Console
                     print(f"\n🚨 [RISK ALERT] {ticker} is exposed to {neighbor}!")
                     print(f"   🔥 Risk Score: {neighbor_risk:.4f}")
-                    print(f"   {icon} Link Type:  {status}")
+                    print(f"   🔗 Link Type:  {status}")
                     print(f"   📝 Mechanism:  {mechanism}")
                     print("   ---------------------------------------------------")
 
