@@ -173,53 +173,57 @@ def format_market_cap(cap: float) -> str:
 # ==============================================================================
 # --- FUNCTION: Inject Live Risk Scores ---
 # ==============================================================================
-def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = "live_risk_scores.csv") -> nx.DiGraph:
-    if not os.path.exists(csv_path):
-        logger.warning(f"Live risk file {csv_path} not found. Using static graph data.")
+def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = None) -> nx.DiGraph:
+    """
+    Now reads 'raw_risk_score' directly from the node attributes provided by Neo4j.
+    No CSV required.
+    """
+    updated_count = 0
+    
+    # We gather all scores to calculate percentiles dynamically
+    risk_scores = {}
+    
+    # 1. Extract Scores present on the nodes
+    for node, data in graph.nodes(data=True):
+        # The Neo4j query in get_full_graph already pulls all properties, 
+        # including 'raw_risk_score' if market_data.py saved it.
+        score = data.get('raw_risk_score')
+        
+        if score is not None:
+            try:
+                risk_scores[node] = float(score)
+            except ValueError:
+                pass
+
+    if not risk_scores:
+        logger.warning("No risk scores found on graph nodes. Defaulting to Low Risk.")
         return graph
 
-    try:
-        df = pd.read_csv(csv_path)
-        
-        if df.empty:
-            return graph
+    # 2. Calculate Rank Percentiles (0.0 to 1.0) for Coloring
+    # This ensures the top 5% riskiest are always Red, relative to the current market.
+    df = pd.DataFrame(list(risk_scores.items()), columns=['Ticker', 'Score'])
+    df['Rank'] = df['Score'].rank(method='first', pct=True)
+    rank_map = pd.Series(df.Rank.values, index=df.Ticker).to_dict()
 
-        # This breaks ties by forcing a unique rank for every row.
-        # It guarantees we fill the 0-100 percentile range smoothly.
-        df['Risk_Rank'] = df['Risk_Score'].rank(method='first', pct=True)
-
-        # Create dictionaries for lookup
-        score_map = pd.Series(df.Risk_Score.values, index=df.Ticker).to_dict()
-        rank_map = pd.Series(df.Risk_Rank.values, index=df.Ticker).to_dict()
-        
-        updated_count = 0
-        
-        for node in graph.nodes():
-            if node in score_map:
-                raw_score = float(score_map[node])
-                percentile = float(rank_map[node])
+    # 3. Apply Colors
+    for node in graph.nodes():
+        if node in risk_scores:
+            percentile = rank_map.get(node, 0.0)
+            
+            # Top 5% -> RED (High Risk)
+            if percentile >= 0.95:
+                risk_level = 2 
+            # Top 30% -> ORANGE (Medium Risk)
+            elif percentile >= 0.70:
+                risk_level = 1 
+            # Bottom 70% -> GREEN (Low Risk)
+            else:
+                risk_level = 0 
                 
-                graph.nodes[node]['raw_risk_score'] = raw_score
-                
-                # Assign Color based on Forced Percentile
-                # Top 5% -> RED
-                if percentile >= 0.95:
-                    risk_level = 2 
-                # Next 25% (70th to 95th) -> ORANGE
-                elif percentile >= 0.70:
-                    risk_level = 1 
-                # Bottom 70% -> GREEN
-                else:
-                    risk_level = 0 
-                    
-                graph.nodes[node]['predicted_risk'] = risk_level
-                updated_count += 1
-                
-        logger.info(f"Updated {updated_count} nodes using Forced Ranking.")
-        
-    except Exception as e:
-        logger.error(f"Error injecting live risk scores: {e}")
-        
+            graph.nodes[node]['predicted_risk'] = risk_level
+            updated_count += 1
+            
+    logger.info(f"🎨 Colored {updated_count} nodes based on Neo4j risk data.")
     return graph
 
 # ==============================================================================
