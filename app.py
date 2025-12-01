@@ -170,22 +170,31 @@ def format_market_cap(cap: float) -> str:
         return f"${cap / 1_000_000:.2f}M"
     return f"${cap / 1_000:.2f}K"
 
+def get_cloud_config_dict():
+    """Returns a config dictionary from secrets (for use inside cached functions)."""
+    if "neo4j" in st.secrets:
+        return {
+            "neo4j": {
+                "uri": st.secrets["neo4j"]["uri"],
+                "user": st.secrets["neo4j"]["user"],
+                "password": st.secrets["neo4j"]["password"]
+            }
+        }
+    return load_config()
+
 # ==============================================================================
 # --- FUNCTION: Inject Live Risk Scores ---
 # ==============================================================================
-# ==============================================================================
-# --- FUNCTION: Inject Live Risk Scores (DIRECT DB FETCH) ---
-# ==============================================================================
 def inject_live_risk_data(graph: nx.DiGraph) -> nx.DiGraph:
     """
-    Connects to Neo4j to fetch the latest 'raw_risk_score' for every node,
-    overriding the stale data in the GML file.
+    Connects to Neo4j to fetch the latest 'raw_risk_score' for every node.
     """
-    # 1. Fetch Scores from Neo4j
+    updated_count = 0
     try:
-        # We need a temporary DB connection here because this runs inside a cached function
-        # and cannot access the global 'db_manager' from main()
-        config = load_config()
+        # Create a temporary DB connection to fetch fresh scores
+        # We use a temp connection because we can't easily pass the main db_manager 
+        # into this @st.cache_data function without hashing issues.
+        config = get_cloud_config_dict()
         temp_db = DatabaseManager(config)
         
         query = """
@@ -200,41 +209,32 @@ def inject_live_risk_data(graph: nx.DiGraph) -> nx.DiGraph:
             logger.warning("⚠️ No risk scores found in Neo4j. Nodes will be Green.")
             return graph
             
-        # Convert to Dictionary: {'AAPL': 0.85, 'INTC': 0.92}
+        # Convert to Dictionary
         score_map = {row['ticker']: float(row['score']) for row in results}
+        
+        # Calculate Rank Percentiles for Colors
+        df = pd.DataFrame(list(score_map.items()), columns=['Ticker', 'Score'])
+        df['Rank'] = df['Score'].rank(method='first', pct=True)
+        rank_map = pd.Series(df.Rank.values, index=df.Ticker).to_dict()
+
+        # Apply to Graph
+        for node in graph.nodes():
+            if node in score_map:
+                graph.nodes[node]['raw_risk_score'] = score_map[node]
+                
+                percentile = rank_map.get(node, 0.0)
+                if percentile >= 0.95:   risk_level = 2 # Red
+                elif percentile >= 0.70: risk_level = 1 # Orange
+                else:                    risk_level = 0 # Green
+                    
+                graph.nodes[node]['predicted_risk'] = risk_level
+                updated_count += 1
+                
+        logger.info(f"🎨 Successfully painted {updated_count} nodes with fresh Neo4j data.")
         
     except Exception as e:
         logger.error(f"❌ Failed to fetch live risk from DB: {e}")
-        return graph
-
-    # 2. Calculate Rank Percentiles
-    # This guarantees the "Red/Green" distribution is based on CURRENT data
-    df = pd.DataFrame(list(score_map.items()), columns=['Ticker', 'Score'])
-    df['Rank'] = df['Score'].rank(method='first', pct=True)
-    rank_map = pd.Series(df.Rank.values, index=df.Ticker).to_dict()
-
-    updated_count = 0
-
-    # 3. Apply to NetworkX Graph
-    for node in graph.nodes():
-        if node in score_map:
-            # Update the score on the node
-            graph.nodes[node]['raw_risk_score'] = score_map[node]
-            
-            # Determine Color
-            percentile = rank_map.get(node, 0.0)
-            
-            if percentile >= 0.95:   # Top 5% -> Red
-                risk_level = 2
-            elif percentile >= 0.70: # Top 30% -> Orange
-                risk_level = 1
-            else:                    # Bottom 70% -> Green
-                risk_level = 0
-                
-            graph.nodes[node]['predicted_risk'] = risk_level
-            updated_count += 1
-            
-    logger.info(f"🎨 Successfully painted {updated_count} nodes with fresh Neo4j data.")
+        
     return graph
 
 # ==============================================================================
@@ -374,27 +374,18 @@ def calculate_impact_scores(graph: nx.DiGraph, start_node: str, event_magnitude:
 def load_company_names():
     """Loads the dictionary mapping Tickers -> Company Names."""
     try:
-        # Use absolute path to ensure Streamlit Cloud finds it
         SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
         FILE_PATH = os.path.join(SCRIPT_DIR, 'sp500_companies.json')
         
         with open(FILE_PATH, 'r') as f:
             data = json.load(f)
             
-        # --- CRITICAL FIX: Handle List format vs Dictionary format ---
         if isinstance(data, list):
-            # If it's a list like [{"ticker": "AAPL", "name": "Apple"}, ...], 
-            # convert it to {"AAPL": "Apple"}
             return {item['ticker']: item['name'] for item in data if 'ticker' in item and 'name' in item}
-        
         elif isinstance(data, dict):
-            # If it's already {"AAPL": "Apple"}, just return it
             return data
-            
         return {}
-
     except FileNotFoundError:
-        # Fallback if file isn't pushed to git yet
         return {}
 
 @st.cache_resource
@@ -402,7 +393,6 @@ def get_db_manager():
     """Cached function to initialize the database manager once."""
     if "neo4j" not in st.secrets:
         st.error("Neo4j credentials not found in Streamlit Secrets.")
-        st.info("Please add NEO4J_URI, NEO4J_USER, and NEO4J_PASSWORD to your secrets.")
         st.stop()
         
     cloud_config = {
@@ -412,82 +402,54 @@ def get_db_manager():
             "password": st.secrets["neo4j"]["password"]
         }
     }
-    
     return DatabaseManager(cloud_config)
 
 @st.cache_data(ttl=600) # Refresh every 10 mins to pick up new CSV data
 def get_full_graph():
     """
-    Cached function to load the pre-computed graph from a file 
-    AND inject the latest live risk scores.
+    Loads the graph structure (GML) and then paints it with LIVE DB data.
     """
     try:
-        # Get the absolute path of the directory this script is in
         SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-        # Join it with the filenames to get full, robust paths
         GRAPH_FILE_PATH = os.path.join(SCRIPT_DIR, "financial_graph.gml")
-        CSV_FILE_PATH = os.path.join(SCRIPT_DIR, "live_risk_scores.csv")
-        
-    except Exception as e:
-        logger.warning(f"Could not determine script path, falling back to relative path. Error: {e}")
-        # Fallback just in case __file__ is not available
-        SCRIPT_DIR = "."
+    except Exception:
         GRAPH_FILE_PATH = "financial_graph.gml" 
-        CSV_FILE_PATH = "live_risk_scores.csv"
     
-    logger.info(f"Attempting to load pre-computed graph from {GRAPH_FILE_PATH}...")
+    logger.info(f"Loading graph structure from {GRAPH_FILE_PATH}...")
     
     try:
-        # 1. Load the Graph Structure (GML)
         graph = nx.read_gml(GRAPH_FILE_PATH)
-        
-    except FileNotFoundError:
-        logger.error(f"FATAL: Graph file not found at {GRAPH_FILE_PATH}.")
-        st.error(f"Graph file not found. Looked for: {GRAPH_FILE_PATH}")
-        return None
-        
     except Exception as e:
-        logger.error(f"Error loading graph file: {e}")
-        st.error(f"Error loading graph file: {e}")
-        st.stop()
+        logger.error(f"Graph file not found: {e}")
         return None
         
     if graph.number_of_nodes() == 0:
-        logger.warning("Loaded graph is empty.")
         return None
         
     # ==============================================================================
     # 🧹 NOISE REDUCTION: Prune "Vendor/Infrastructure" Noise
     # ==============================================================================
     suspicious_parents = ['SNAP', 'V', 'META', 'GOOGL', 'GOOG', 'AWS', 'ADBE', 'CRM', 'MA'] 
-    
     edges_to_remove = []
     for u, v, data in graph.edges(data=True):
-        
-        # Get sector data (safely)
         sector_u = graph.nodes[u].get('sector', 'Unknown')
         sector_v = graph.nodes[v].get('sector', 'Unknown')
         weight = data.get('weight', 0.5)
 
-        # RULE 1: If 'suspicious parent', cut weak links
         if u in suspicious_parents and weight < 0.90:
             edges_to_remove.append((u, v))
             continue
-
-        # RULE 2: Cross-Sector Penalty
         if sector_u != 'Unknown' and sector_v != 'Unknown':
             if sector_u != sector_v and weight < 0.75:
                 edges_to_remove.append((u, v))
 
     if edges_to_remove:
         graph.remove_edges_from(edges_to_remove)
-        logger.info(f"🧹 Pruned {len(edges_to_remove)} noisy edges.")
-    # ==============================================================================
+    # -----------------------------
 
-    logger.info(f"Graph structure loaded with {graph.number_of_nodes()} nodes.")
-
-    # 2. Inject the Live Risk Data (CSV)
-    graph = inject_live_risk_data(graph, CSV_FILE_PATH)
+    # 2. INJECT LIVE DATA (Corrected Call)
+    # We NO LONGER pass a CSV path here.
+    graph = inject_live_risk_data(graph)
 
     return graph
 
