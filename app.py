@@ -1247,7 +1247,7 @@ def main():
 
 
     # ==============================================================================
-    # --- TAB 5: INSTRUCTIONS & GUIDE (UPDATED) ---
+    # --- TAB 5: INSTRUCTIONS & GUIDE (CORRECTED) ---
     # ==============================================================================
     with tab_help:
         st.header("📘 User Guide & Documentation")
@@ -1265,10 +1265,6 @@ def main():
             st.markdown("""
             ### Welcome to the Causal Inference Engine
             This application moves beyond simple price correlations to map the **causal structure** of the financial markets.
-            
-
-[Image of financial knowledge graph network]
-
 
             **Key Concepts:**
             * **Nodes (Assets):** Companies, Indices, or Commodities.
@@ -1287,7 +1283,8 @@ def main():
             * **Inspect Source:** Click the link to read the original article.
 
             **Interpreting the Data:**
-            * **Sentiment Score:** * 🔴 **Negative (-1.0):** Bearish news (Lawsuits, Missed Earnings).
+            * **Sentiment Score:**
+                * 🔴 **Negative (-1.0):** Bearish news (Lawsuits, Missed Earnings).
                 * 🟢 **Positive (+1.0):** Bullish news (Mergers, Record Profits).
             * **Action:** Use these events as inputs in the **Simulate Scenarios** tab to see how they ripple through the network.
             """)
@@ -1296,7 +1293,6 @@ def main():
             st.markdown("""
             ### 🗺️ Explore Graph Tab
             **Purpose:** Visual map of your financial universe. See how assets are connected and which ones are currently risky.
-            
 
             **Visual Legend:**
             * **Nodes (The Dots):**
@@ -1316,10 +1312,6 @@ def main():
             st.markdown("""
             ### 🔬 Simulate Scenarios Tab
             **Purpose:** A "Stress Test" lab. Ask "What If?" questions to forecast contagion.
-            
-
-[Image of domino effect contagion]
-
 
             **Tools:**
             1.  **🌪️ Systemic Vulnerability (The Butterfly Effect):**
@@ -1336,7 +1328,6 @@ def main():
             st.markdown("""
             ### ↔️ Causal Pathfinding Tab
             **Purpose:** Find the hidden transmission chains between two assets.
-            
 
             **Smart Diagnostics:**
             * **Dynamic Filtering:** The "End Company" list only shows nodes that are *actually reachable* from your start node.
