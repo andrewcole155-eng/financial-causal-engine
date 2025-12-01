@@ -173,57 +173,68 @@ def format_market_cap(cap: float) -> str:
 # ==============================================================================
 # --- FUNCTION: Inject Live Risk Scores ---
 # ==============================================================================
-def inject_live_risk_data(graph: nx.DiGraph, csv_path: str = None) -> nx.DiGraph:
+# ==============================================================================
+# --- FUNCTION: Inject Live Risk Scores (DIRECT DB FETCH) ---
+# ==============================================================================
+def inject_live_risk_data(graph: nx.DiGraph) -> nx.DiGraph:
     """
-    Now reads 'raw_risk_score' directly from the node attributes provided by Neo4j.
-    No CSV required.
+    Connects to Neo4j to fetch the latest 'raw_risk_score' for every node,
+    overriding the stale data in the GML file.
     """
-    updated_count = 0
-    
-    # We gather all scores to calculate percentiles dynamically
-    risk_scores = {}
-    
-    # 1. Extract Scores present on the nodes
-    for node, data in graph.nodes(data=True):
-        # The Neo4j query in get_full_graph already pulls all properties, 
-        # including 'raw_risk_score' if market_data.py saved it.
-        score = data.get('raw_risk_score')
+    # 1. Fetch Scores from Neo4j
+    try:
+        # We need a temporary DB connection here because this runs inside a cached function
+        # and cannot access the global 'db_manager' from main()
+        config = load_config()
+        temp_db = DatabaseManager(config)
         
-        if score is not None:
-            try:
-                risk_scores[node] = float(score)
-            except ValueError:
-                pass
-
-    if not risk_scores:
-        logger.warning("No risk scores found on graph nodes. Defaulting to Low Risk.")
+        query = """
+        MATCH (n:Company) 
+        WHERE n.raw_risk_score IS NOT NULL 
+        RETURN n.ticker as ticker, n.raw_risk_score as score
+        """
+        results = temp_db.execute_read(query)
+        temp_db.close()
+        
+        if not results:
+            logger.warning("⚠️ No risk scores found in Neo4j. Nodes will be Green.")
+            return graph
+            
+        # Convert to Dictionary: {'AAPL': 0.85, 'INTC': 0.92}
+        score_map = {row['ticker']: float(row['score']) for row in results}
+        
+    except Exception as e:
+        logger.error(f"❌ Failed to fetch live risk from DB: {e}")
         return graph
 
-    # 2. Calculate Rank Percentiles (0.0 to 1.0) for Coloring
-    # This ensures the top 5% riskiest are always Red, relative to the current market.
-    df = pd.DataFrame(list(risk_scores.items()), columns=['Ticker', 'Score'])
+    # 2. Calculate Rank Percentiles
+    # This guarantees the "Red/Green" distribution is based on CURRENT data
+    df = pd.DataFrame(list(score_map.items()), columns=['Ticker', 'Score'])
     df['Rank'] = df['Score'].rank(method='first', pct=True)
     rank_map = pd.Series(df.Rank.values, index=df.Ticker).to_dict()
 
-    # 3. Apply Colors
+    updated_count = 0
+
+    # 3. Apply to NetworkX Graph
     for node in graph.nodes():
-        if node in risk_scores:
+        if node in score_map:
+            # Update the score on the node
+            graph.nodes[node]['raw_risk_score'] = score_map[node]
+            
+            # Determine Color
             percentile = rank_map.get(node, 0.0)
             
-            # Top 5% -> RED (High Risk)
-            if percentile >= 0.95:
-                risk_level = 2 
-            # Top 30% -> ORANGE (Medium Risk)
-            elif percentile >= 0.70:
-                risk_level = 1 
-            # Bottom 70% -> GREEN (Low Risk)
-            else:
-                risk_level = 0 
+            if percentile >= 0.95:   # Top 5% -> Red
+                risk_level = 2
+            elif percentile >= 0.70: # Top 30% -> Orange
+                risk_level = 1
+            else:                    # Bottom 70% -> Green
+                risk_level = 0
                 
             graph.nodes[node]['predicted_risk'] = risk_level
             updated_count += 1
             
-    logger.info(f"🎨 Colored {updated_count} nodes based on Neo4j risk data.")
+    logger.info(f"🎨 Successfully painted {updated_count} nodes with fresh Neo4j data.")
     return graph
 
 # ==============================================================================
