@@ -424,54 +424,81 @@ def get_db_manager():
     }
     return DatabaseManager(cloud_config)
 
-@st.cache_data(ttl=600) # Refresh every 10 mins to pick up new CSV data
+@st.cache_data(ttl=600) # Refresh every 10 mins
 def get_full_graph():
     """
-    Loads the graph structure (GML) and then paints it with LIVE DB data.
+    Fetches the graph structure DIRECTLY from Neo4j (Live Mode).
+    This ensures new Macro nodes appear immediately and cleans up sector names.
     """
-    try:
-        SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-        GRAPH_FILE_PATH = os.path.join(SCRIPT_DIR, "financial_graph.gml")
-    except Exception:
-        GRAPH_FILE_PATH = "financial_graph.gml" 
-    
-    logger.info(f"Loading graph structure from {GRAPH_FILE_PATH}...")
+    logger.info("Fetching full graph from Neo4j...")
     
     try:
-        graph = nx.read_gml(GRAPH_FILE_PATH)
+        # Use helper to get config
+        config = get_cloud_config_dict()
+        temp_db = DatabaseManager(config)
+        
+        # 1. Fetch Nodes
+        nodes_query = """
+        MATCH (n:Company) 
+        RETURN n.ticker as id, n.name as name, n.sector as sector, 
+               n.market_cap as market_cap
+        """
+        nodes_data = temp_db.execute_read(nodes_query)
+        
+        # 2. Fetch Edges (Filter weak links for performance)
+        edges_query = """
+        MATCH (n:Company)-[r]->(m:Company)
+        WHERE r.weight > 0.1
+        RETURN n.ticker as source, m.ticker as target, 
+               r.weight as weight, r.mechanism as mechanism, 
+               r.verification_status as verification_status
+        """
+        edges_data = temp_db.execute_read(edges_query)
+        temp_db.close()
+        
+        if not nodes_data:
+            return None
+
+        G = nx.DiGraph()
+        
+        # 3. Add Nodes & CLEAN SECTORS
+        for n in nodes_data:
+            raw_sector = n.get('sector', 'Unknown')
+            
+            # --- SECTOR CLEANING LOGIC ---
+            if raw_sector is None: raw_sector = "Unknown"
+            clean_sector = raw_sector.title() # "pharmaceautical" -> "Pharmaceautical"
+            
+            # Fix specific dirty data found in your DB
+            if "Pharmaceautical" in clean_sector: clean_sector = "Healthcare"
+            if "Services Computer" in clean_sector: clean_sector = "Technology"
+            if "Discovered" in clean_sector: clean_sector = "Watchlist"
+            
+            G.add_node(
+                n['id'], 
+                name=n.get('name', n['id']),
+                sector=clean_sector,
+                market_cap=n.get('market_cap', 0)
+            )
+            
+        # 4. Add Edges
+        for e in edges_data:
+            G.add_edge(
+                e['source'], 
+                e['target'], 
+                weight=e['weight'],
+                mechanism=e.get('mechanism'),
+                verification_status=e.get('verification_status')
+            )
+            
+        logger.info(f"✅ Loaded {G.number_of_nodes()} nodes from Neo4j.")
+        
+        # 5. Inject Risk Colors
+        return inject_live_risk_data(G)
+
     except Exception as e:
-        logger.error(f"Graph file not found: {e}")
+        logger.error(f"Error loading graph from DB: {e}")
         return None
-        
-    if graph.number_of_nodes() == 0:
-        return None
-        
-    # ==============================================================================
-    # 🧹 NOISE REDUCTION: Prune "Vendor/Infrastructure" Noise
-    # ==============================================================================
-    suspicious_parents = ['SNAP', 'V', 'META', 'GOOGL', 'GOOG', 'AWS', 'ADBE', 'CRM', 'MA'] 
-    edges_to_remove = []
-    for u, v, data in graph.edges(data=True):
-        sector_u = graph.nodes[u].get('sector', 'Unknown')
-        sector_v = graph.nodes[v].get('sector', 'Unknown')
-        weight = data.get('weight', 0.5)
-
-        if u in suspicious_parents and weight < 0.90:
-            edges_to_remove.append((u, v))
-            continue
-        if sector_u != 'Unknown' and sector_v != 'Unknown':
-            if sector_u != sector_v and weight < 0.75:
-                edges_to_remove.append((u, v))
-
-    if edges_to_remove:
-        graph.remove_edges_from(edges_to_remove)
-    # -----------------------------
-
-    # 2. INJECT LIVE DATA (Corrected Call)
-    # We NO LONGER pass a CSV path here.
-    graph = inject_live_risk_data(graph)
-
-    return graph
 
 @st.cache_data(ttl=600) 
 def get_top_ripple_effects(all_events: list, threshold: float) -> pd.DataFrame | None:
@@ -585,9 +612,8 @@ def main():
                     st.info(f"To see the potential impact of this event, go to the 'Simulate Scenarios' tab and run a simulation for {event['ticker']}.")
 
     # ==============================================================================
-    # --- TAB 2: EXPLORE GRAPH ---
+    # --- TAB 2: EXPLORE GRAPH (UPDATED) ---
     # ==============================================================================
-
     with tab_explore:
         st.header("🗺️ Interactive Knowledge Graph Explorer")
         st.write("Select a company to load its strongest relationships.") 
@@ -629,9 +655,17 @@ def main():
 
             company_map = load_company_names()
             
-            # Helper to format the display
+            # --- UPDATED FORMATTER ---
+            # This fixes the issue where Macro nodes appeared as tickers (e.g. "CL=F") 
+            # instead of names (e.g. "Crude Oil")
             def format_ticker(ticker):
+                # 1. Try JSON map first (Fastest)
                 name = company_map.get(ticker)
+                
+                # 2. If not in JSON, check the Graph Node attributes (Fallback for Macro/New nodes)
+                if not name and financial_graph.has_node(ticker):
+                    name = financial_graph.nodes[ticker].get('name')
+                
                 if name:
                     return f"{name} ({ticker})"
                 return ticker
@@ -662,11 +696,17 @@ def main():
 
                             if neighborhood_graph.number_of_nodes() > 0:
                                 
-                                # Transfer risk scores from Global Graph to Local Neighborhood Graph
+                                # Transfer risk scores & clean sectors from Global Graph to Local Neighborhood Graph
                                 for node in neighborhood_graph.nodes():
                                     if financial_graph.has_node(node):
+                                        # Sync Risk
                                         neighborhood_graph.nodes[node]['predicted_risk'] = financial_graph.nodes[node].get('predicted_risk', 0)
                                         neighborhood_graph.nodes[node]['raw_risk_score'] = financial_graph.nodes[node].get('raw_risk_score', 0.0)
+                                        # Sync Sector (Cleaned)
+                                        neighborhood_graph.nodes[node]['sector'] = financial_graph.nodes[node].get('sector', 'Unknown')
+                                        # Sync Name (for Tooltip)
+                                        if 'name' not in neighborhood_graph.nodes[node]:
+                                            neighborhood_graph.nodes[node]['name'] = financial_graph.nodes[node].get('name', node)
 
                                 # Manually clean the graph edges of reserved keywords for Pyvis
                                 graph_for_pyvis = neighborhood_graph.copy() 
