@@ -1263,7 +1263,7 @@ def main():
                         st.error(f"Pathfinding Error: {e}")
 
     # ==============================================================================
-    # --- TAB 5: INSTRUCTIONS & GUIDE (UPDATED) ---
+    # --- TAB 5: INSTRUCTIONS & GUIDE ---
     # ==============================================================================
     with tab_help:
         st.header("📘 User Guide & Documentation")
@@ -1283,14 +1283,15 @@ def main():
             This application moves beyond simple price correlations to map the **causal structure** of the financial markets.
 
             **New in this Version:**
-            * **🌍 Macro Intelligence:** The graph now includes "Super Nodes" like **Crude Oil**, **10-Year Treasury Yields**, and **Gold**.
-            * **🧮 Real-Math Risk:** Nodes are colored based on live **Volatility & RSI** data (0.0 to 1.0), not just news sentiment.
-            * **🕵️ Sector Filtering:** You can now filter complex graphs by Industry or Sector.
+            * **🏭 Supply Chain Mining:** The system now reads **SEC 10-K Filings** to find hard supply chain dependencies (e.g., *Apple buys from TSMC*).
+            * **🌍 Macro Intelligence:** The graph includes "Super Nodes" like **Crude Oil** and **10-Year Treasury Yields**.
+            * **🧮 Real-Math Risk:** Nodes are colored based on live **Volatility & RSI** data (0.0 to 1.0).
 
             **Visual Legend:**
             * 🔴 **Red Node:** High Risk (Top 5% Volatility).
             * 🟢 **Green Node:** Low Risk (Stable).
-            * **Solid Line:** ✅ Verified data (Regulatory Filings).
+            * 🔵 **Blue Line:** 📄 **SEC 10-K Filing** (Hard Supply Chain Evidence).
+            * **Solid Line:** ✅ Verified data (Standard).
             * **Dashed Grey Line:** 🤖 AI Inferred (High Probability).
             """)
         
@@ -1317,9 +1318,9 @@ def main():
             * Use the **"Filter by Sector"** dropdown to isolate specific industries (e.g., "Technology", "Energy").
             * Select **"Macro"** to see how global factors like **Oil** or **Bond Yields** connect to the stock market.
 
-            **Interpreting Tooltips:**
-            * Hover over a node to see its **Real-Math Risk Score** and Market Cap.
-            * Hover over a dashed line to see the AI's reasoning for that connection.
+            **Interpreting the Lines:**
+            * **Thick Blue Line:** A relationship explicitly stated in a company's annual report (10-K). This is the highest level of verification.
+            * **Dashed Grey Line:** A relationship inferred by Gemini AI based on news context.
             """)
         
         elif help_choice == "Simulate Scenarios":
