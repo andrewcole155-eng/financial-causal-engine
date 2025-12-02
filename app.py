@@ -97,9 +97,10 @@ def generate_ai_analysis(prompt: str) -> str:
 # ==============================================================================
 def apply_ai_visual_styles(net: Network, nx_graph: nx.Graph):
     """
-    Iterates through the PyVis network and updates edges that were proposed by AI.
-    AI Edges = Dashed Grey Lines.
-    Verified Edges = Solid Lines.
+    Iterates through the PyVis network and updates edges based on their source.
+    - AI Edges = Dashed Grey Lines.
+    - Supply Chain (10-K) = Thick Blue Lines.
+    - Standard Verified = Solid Lines.
     """
     ai_edge_count = 0
     
@@ -113,35 +114,35 @@ def apply_ai_visual_styles(net: Network, nx_graph: nx.Graph):
              nx_data = nx_graph.get_edge_data(target, source)
 
         if nx_data:
-            # Check for the flag added by daily_batch_ingest.py
             status = nx_data.get('verification_status', 'VERIFIED')
             mechanism = nx_data.get('mechanism', 'Unknown mechanism')
 
-            # --- CRITICAL FIX: SANITIZE TEXT ---
-            # Remove apostrophes and quotes that break the Javascript/HTML rendering
+            # Sanitize text
             if mechanism:
                 mechanism = mechanism.replace("'", "").replace('"', "").replace("\n", " ")
 
+            # --- STYLE 1: AI INFERENCE (Dashed Grey) ---
             if status == "AI_PROPOSED":
                 ai_edge_count += 1
-                
-                # --- APPLY DASHED STYLE ---
-                # Reverting to True as it is more robust than list format
                 edge['dashes'] = True 
-                
-                # Make it Grey and distinct
                 edge['color'] = {'color': '#808080', 'highlight': '#a0a0a0', 'hover': '#ffffff'}
                 edge['width'] = 3
-                
-                # Update tooltip with sanitized text
                 edge['title'] = f"🤖 AI INFERRED: {mechanism}"
+
+            # --- STYLE 2: SUPPLY CHAIN / 10-K (Solid Blue) ---
+            elif status == "VERIFIED_FILING" or mechanism == "10-K Disclosure":
+                edge['dashes'] = False
+                # Bright Blue to stand out against the dark background
+                edge['color'] = {'color': '#29b6f6', 'highlight': '#4fc3f7', 'hover': '#ffffff'}
+                edge['width'] = 5 # Thicker than normal lines
+                edge['title'] = f"📄 SEC 10-K FILING: {mechanism}"
+
+            # --- STYLE 3: STANDARD VERIFIED (Solid Default) ---
             else:
-                # --- APPLY STANDARD STYLE ---
                 edge['dashes'] = False
                 if mechanism:
                      edge['title'] = f"✅ VERIFIED: {mechanism}"
 
-    # Debug: Show user if we actually found any
     if ai_edge_count > 0:
         st.toast(f"🤖 Visualizing {ai_edge_count} AI-Inferred Relationships", icon="ℹ️")
 
