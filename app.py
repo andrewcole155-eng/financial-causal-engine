@@ -372,7 +372,13 @@ def calculate_impact_scores(graph: nx.DiGraph, start_node: str, event_magnitude:
 # --- Load Company Names for Dropdown ---
 @st.cache_data
 def load_company_names():
-    """Loads the dictionary mapping Tickers -> Company Names."""
+    """
+    Loads the dictionary mapping Tickers -> Company Names.
+    Also injects the Macro-Economic names so they appear correctly.
+    """
+    mapping = {}
+    
+    # 1. Load Standard Companies from JSON
     try:
         SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
         FILE_PATH = os.path.join(SCRIPT_DIR, 'sp500_companies.json')
@@ -381,12 +387,26 @@ def load_company_names():
             data = json.load(f)
             
         if isinstance(data, list):
-            return {item['ticker']: item['name'] for item in data if 'ticker' in item and 'name' in item}
+            mapping = {item['ticker']: item['name'] for item in data if 'ticker' in item and 'name' in item}
         elif isinstance(data, dict):
-            return data
-        return {}
+            mapping = data
+
     except FileNotFoundError:
-        return {}
+        pass
+
+    # 2. Inject Macro Asset Names (Hardcoded override)
+    # These match the tickers used in macro_ingest.py
+    MACRO_NAMES = {
+        "^TNX":  "10-Year Treasury Yield",
+        "CL=F":  "Crude Oil",
+        "GC=F":  "Gold",
+        "DX-Y.NYB": "US Dollar Index",
+        "^VIX":  "Volatility Index (Fear Gauge)"
+    }
+    
+    mapping.update(MACRO_NAMES)
+    
+    return mapping
 
 @st.cache_resource
 def get_db_manager():
@@ -573,13 +593,40 @@ def main():
         st.write("Select a company to load its strongest relationships.") 
 
         with st.spinner("Loading full graph for explorer..."):
-            # We load the full graph here primarily to get the LIVE RISK SCORES from the CSV
+            # We load the full graph here primarily to get the LIVE RISK SCORES
             financial_graph = get_full_graph()
         
         if financial_graph is None:
                 st.warning("Knowledge graph is empty. Please run `worker.py` (locally) to populate the *cloud* database.")
         else:
+            # --- STEP 1: PREPARE FILTERS ---
+            # Get all unique sectors from the graph data
+            all_sectors = sorted(list(set(
+                financial_graph.nodes[n].get('sector', 'Unknown') 
+                for n in financial_graph.nodes()
+                if financial_graph.nodes[n].get('sector') # filter out empty/None
+            )))
+
+            # Layout: Filter on left, Ticker select on right
+            col_filter, col_select = st.columns([1, 2])
+
+            with col_filter:
+                selected_sector = st.selectbox(
+                    "Filter by Sector:",
+                    ["All Sectors"] + all_sectors,
+                    index=0
+                )
+
+            # --- STEP 2: FILTER NODES ---
             all_nodes = sorted(list(financial_graph.nodes()))
+            
+            if selected_sector != "All Sectors":
+                # Only keep nodes that match the selected sector
+                all_nodes = [
+                    n for n in all_nodes 
+                    if financial_graph.nodes[n].get('sector') == selected_sector
+                ]
+
             company_map = load_company_names()
             
             # Helper to format the display
@@ -589,13 +636,14 @@ def main():
                     return f"{name} ({ticker})"
                 return ticker
 
-            selected_company = st.selectbox(
-                "Select a company to explore:", 
-                all_nodes, 
-                index=all_nodes.index("AAPL") if "AAPL" in all_nodes else 0,
-                format_func=format_ticker,
-                key="explore_select"
-            )
+            with col_select:
+                selected_company = st.selectbox(
+                    "Select a company/asset:", 
+                    all_nodes, 
+                    index=0 if all_nodes else None,
+                    format_func=format_ticker,
+                    key="explore_select"
+                )
             
             show_risk = st.toggle("Show GNN Risk Coloring", value=True)
 
