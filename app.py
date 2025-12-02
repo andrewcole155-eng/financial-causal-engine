@@ -862,7 +862,7 @@ def main():
                             st.write(explanation)
 
     # ==============================================================================
-    # --- TAB 3: SIMULATE SCENARIOS ---
+    # --- TAB 3: SIMULATE SCENARIOS (UPDATED WITH SECTOR FILTER) ---
     # ==============================================================================
     with tab_simulate:
         st.header("🔬 Impact & Contagion Analysis")
@@ -877,6 +877,8 @@ def main():
         company_map = load_company_names()
         def format_ticker(ticker):
             name = company_map.get(ticker)
+            if not name and financial_graph.has_node(ticker):
+                name = financial_graph.nodes[ticker].get('name')
             if name:
                 return f"{name} ({ticker})"
             return ticker
@@ -950,173 +952,149 @@ def main():
 
         st.divider() 
 
-        # --- SECTION 3: MANUAL SIMULATION ---
+        # --- SECTION 3: MANUAL SIMULATION (UPDATED FILTER) ---
         st.subheader("🧪 Manual 'What-If' Simulation")
         
+        # --- 1. Get Sectors for Filter ---
+        all_sectors = sorted(list(set(
+            financial_graph.nodes[n].get('sector', 'Unknown') 
+            for n in financial_graph.nodes()
+        )))
+
+        # --- 2. Layout: Filter | Company Select | Shock Slider ---
+        # We split the layout into 3 columns for a better fit
+        sim_col_filter, sim_col_asset, sim_col_shock = st.columns([1, 2, 1])
+        
+        with sim_col_filter:
+            sim_sector = st.selectbox("Filter Sector:", ["All Sectors"] + all_sectors, key="sim_sector_filter")
+
+        # --- 3. Filter Nodes ---
         all_nodes = sorted(list(financial_graph.nodes()))
-        col1, col2 = st.columns(2)
+        if sim_sector != "All Sectors":
+            all_nodes = [n for n in all_nodes if financial_graph.nodes[n].get('sector') == sim_sector]
+
+        with sim_col_asset:
+            selected_company_sim = st.selectbox(
+                "Trigger Asset:", 
+                all_nodes, 
+                format_func=format_ticker,
+                key="sim_select_company"
+            )
         
-        # UPDATED: Uses format_ticker to show names
-        selected_company_sim = col1.selectbox(
-            "Select a company to trigger an event:", 
-            all_nodes, 
-            format_func=format_ticker,
-            key="sim_select_company"
-        )
-        
-        hypothetical_score = col2.slider(
-            "Select a hypothetical event score:",
-            min_value=-1.0, max_value=1.0, value=-0.5, step=0.05,
-            help="Negative values = Bad News, Positive values = Good News"
-        )
+        with sim_col_shock:
+            hypothetical_score = st.slider(
+                "Shock Score:",
+                min_value=-1.0, max_value=1.0, value=-0.5, step=0.05,
+                help="-1.0 = Total Collapse, +1.0 = Huge Breakout"
+            )
 
         if st.button("💥 Simulate Event", key="btn_manual_sim"):
-            st.subheader(f"Simulating impact of {hypothetical_score} event on {format_ticker(selected_company_sim)}")
-            
-            impact_results = calculate_impact_scores(financial_graph, selected_company_sim, hypothetical_score)
-            
-            sim_col1, sim_col2 = st.columns([1, 2])
-            with sim_col1:
-                st.subheader("Calculated Impacts")
-                if impact_results:
-                    df_data = []
-                    for ticker, data in impact_results.items():
-                        df_data.append({
-                            'Ticker': ticker,
-                            'Name': company_map.get(ticker, ticker), 
-                            'Impact Score': data['score'],
-                            'Causal Path': ' -> '.join(data['path'])
-                        })
-                    
-                    df = pd.DataFrame(df_data)
-                    # Sort by absolute impact
-                    df = df.sort_values(by="Impact Score", key=abs, ascending=False)
-                    
-                    st.dataframe(
-                        df, 
-                        column_config={
-                            "Impact Score": st.column_config.NumberColumn(format="%.4f"),
-                            "Causal Path": st.column_config.TextColumn("Causal Path", max_chars=100)
-                        },
-                        hide_index=True
-                    )
-                    
-                    # Store for graph viz
-                    st.session_state['sim_impact_nodes'] = list(impact_results.keys())
-
-                    # === NEW: GENERATE CRISIS REPORT ===
-                    if gemini_active:
-                        st.divider()
-                        if st.button("📝 Generate Crisis Report"):
-                            with st.spinner("Writing AI Crisis Report..."):
-                                top_victims = df.head(5)['Ticker'].tolist()
-                                prompt = f"""
-                                **Context:** A simulated shock of {hypothetical_score} hit {selected_company_sim}.
-                                **Data:** The algorithmic impact analysis shows these casualties: {top_victims}.
-                                **Task:** Write a short 'Breaking News' style financial alert explaining the contagion mechanism. Use Wyckoff logic if applicable.
-                                """
-                                report = generate_ai_analysis(prompt)
-                                st.info("🚨 **Breaking Crisis Report**")
-                                st.write(report)
+            if not selected_company_sim:
+                st.warning("Please select an asset.")
+            else:
+                st.subheader(f"Simulating impact of {hypothetical_score} event on {format_ticker(selected_company_sim)}")
                 
-                else:
-                    st.info("No downstream impacts found (Node might be isolated or impact < threshold).")
-                    st.session_state['sim_impact_nodes'] = []
-
-            with sim_col2:
-                st.subheader("Visual Impact Graph")
+                impact_results = calculate_impact_scores(financial_graph, selected_company_sim, hypothetical_score)
                 
-                # --- LIMIT VISUALIZATION TO TOP 25 NODES ---
-                # The simulation might hit 500 nodes, creating a 'hairball'.
-                # We only want to visualize the Source + Top 25 Victims.
-                
-                if st.session_state.get('sim_impact_nodes'):
-                    # 1. Sort impacts by magnitude
-                    sorted_nodes = sorted(
-                        impact_results.items(), 
-                        key=lambda item: abs(item[1]['score']), 
-                        reverse=True
-                    )
-                    
-                    # 2. Slice the top 25
-                    top_victims = [n for n, data in sorted_nodes[:25]]
-                    
-                    # 3. Define the subgraph (Source + Top Victims)
-                    nodes_to_include = {selected_company_sim, *top_victims}
-                    subgraph = financial_graph.subgraph(nodes_to_include)
-                    
-                    # Create a clean copy for pyvis
-                    graph_for_pyvis = subgraph.copy()
-                    for u, v, data in graph_for_pyvis.edges(data=True):
-                        data.pop('source', None)
-                        data.pop('target', None)
-
-                    # --- SETUP PYVIS ---
-                    net = Network(
-                        height="500px", 
-                        width="100%", 
-                        notebook=True, 
-                        directed=True, 
-                        bgcolor="#222222", 
-                        font_color="white"
-                    )
-                    net.from_nx(graph_for_pyvis) 
-                    
-                    # === NEW: APPLY AI VISUAL STYLES HERE TOO ===
-                    net = apply_ai_visual_styles(net, graph_for_pyvis)
-                    
-                    # --- COLORING & PHYSICS ---
-                    for node in net.nodes:
-                        nid = node['id']
-                        node['label'] = nid
+                res_col1, res_col2 = st.columns([1, 2])
+                with res_col1:
+                    st.subheader("Calculated Impacts")
+                    if impact_results:
+                        df_data = []
+                        for ticker, data in impact_results.items():
+                            df_data.append({
+                                'Ticker': ticker,
+                                'Name': company_map.get(ticker, ticker), 
+                                'Impact Score': data['score'],
+                                'Causal Path': ' -> '.join(data['path'])
+                            })
                         
-                        # Source Node = RED and BIG
-                        if nid == selected_company_sim:
-                            node['color'] = '#FF4B4B' 
-                            node['size'] = 40
-                            node['shape'] = 'diamond'
+                        df = pd.DataFrame(df_data)
+                        # Sort by absolute impact
+                        df = df.sort_values(by="Impact Score", key=abs, ascending=False)
                         
-                        # Impacted Nodes = ORANGE
-                        elif nid in st.session_state['sim_impact_nodes']:
-                            node['color'] = '#FFA726' 
-                            node['size'] = 20
-                            
-                            # Add tooltip with exact impact score
-                            score = impact_results.get(nid, {}).get('score', 0)
-                            node['title'] = f"Impact: {score:.4f}"
+                        st.dataframe(
+                            df, 
+                            column_config={
+                                "Impact Score": st.column_config.NumberColumn(format="%.4f"),
+                                "Causal Path": st.column_config.TextColumn("Causal Path", max_chars=100)
+                            },
+                            hide_index=True
+                        )
+                        
+                        # Store for graph viz
+                        st.session_state['sim_impact_nodes'] = list(impact_results.keys())
 
-                    # Use BarnesHut physics to push nodes apart so they don't blob
-                    net.set_options("""
-                    {
-                      "physics": {
-                        "barnesHut": {
-                          "gravitationalConstant": -30000,
-                          "centralGravity": 0.3,
-                          "springLength": 100,
-                          "springConstant": 0.05,
-                          "damping": 0.09,
-                          "avoidOverlap": 1
-                        },
-                        "minVelocity": 0.75
-                      }
-                    }
-                    """)
+                        # === GENERATE CRISIS REPORT ===
+                        if gemini_active:
+                            st.divider()
+                            if st.button("📝 Generate Crisis Report"):
+                                with st.spinner("Writing AI Crisis Report..."):
+                                    top_victims = df.head(5)['Ticker'].tolist()
+                                    prompt = f"""
+                                    **Context:** A simulated shock of {hypothetical_score} hit {selected_company_sim}.
+                                    **Data:** The algorithmic impact analysis shows these casualties: {top_victims}.
+                                    **Task:** Write a short 'Breaking News' style financial alert explaining the contagion mechanism. Use Wyckoff logic if applicable.
+                                    """
+                                    report = generate_ai_analysis(prompt)
+                                    st.info("🚨 **Breaking Crisis Report**")
+                                    st.write(report)
                     
-                    html_file = f"temp_graph_{uuid.uuid4().hex}.html"
-                    try:
-                        net.save_graph(html_file)
-                        with open(html_file, 'r', encoding='utf-8') as f:
-                            html_content = f.read()
-                        st.components.v1.html(html_content, height=520, scrolling=True)
-                    except Exception as e:
-                        st.error(f"Graph Error: {e}")
-                    finally:
-                        if os.path.exists(html_file):
-                            os.remove(html_file)
-                else:
-                     st.write("Run a simulation to see the graph.")
+                    else:
+                        st.info("No downstream impacts found (Node might be isolated or impact < threshold).")
+                        st.session_state['sim_impact_nodes'] = []
 
-    # --- TAB 4: CAUSAL PATHFINDING (With Dynamic Filtering & Smart Diagnostics) ---
+                with res_col2:
+                    st.subheader("Visual Impact Graph")
+                    
+                    if st.session_state.get('sim_impact_nodes'):
+                        # Sort impacts
+                        sorted_nodes = sorted(impact_results.items(), key=lambda item: abs(item[1]['score']), reverse=True)
+                        # Slice top 25
+                        top_victims = [n for n, data in sorted_nodes[:25]]
+                        # Define subgraph
+                        nodes_to_include = {selected_company_sim, *top_victims}
+                        subgraph = financial_graph.subgraph(nodes_to_include)
+                        
+                        # Setup Pyvis
+                        graph_for_pyvis = subgraph.copy()
+                        for u, v, data in graph_for_pyvis.edges(data=True):
+                            data.pop('source', None); data.pop('target', None)
+
+                        net = Network(height="500px", width="100%", notebook=True, directed=True, bgcolor="#222222", font_color="white")
+                        net.from_nx(graph_for_pyvis) 
+                        net = apply_ai_visual_styles(net, graph_for_pyvis)
+                        
+                        # Physics to prevent clustering
+                        net.set_options('{"physics": {"barnesHut": {"gravitationalConstant": -10000, "springLength": 150}}}')
+
+                        # Coloring
+                        for node in net.nodes:
+                            nid = node['id']
+                            node['label'] = nid
+                            if nid == selected_company_sim:
+                                node['color'], node['size'], node['shape'] = '#FF4B4B', 40, 'diamond'
+                            elif nid in st.session_state['sim_impact_nodes']:
+                                node['color'], node['size'] = '#FFA726', 20
+                                score = impact_results.get(nid, {}).get('score', 0)
+                                node['title'] = f"Impact: {score:.4f}"
+
+                        # Render
+                        html_file = f"temp_graph_{uuid.uuid4().hex}.html"
+                        try:
+                            net.save_graph(html_file)
+                            with open(html_file, 'r', encoding='utf-8') as f:
+                                st.components.v1.html(f.read(), height=520, scrolling=True)
+                        except Exception as e:
+                            st.error(f"Graph Error: {e}")
+                        finally:
+                            if os.path.exists(html_file): os.remove(html_file)
+                    else:
+                        st.write("Run a simulation to see the graph.")
+
+    # ==============================================================================
+    # --- TAB 4: CAUSAL PATHFINDING (UPDATED WITH SECTOR FILTER) ---
+    # ==============================================================================
     with tab_path:
         st.header("↔️ Causal Pathfinding")
         
@@ -1129,217 +1107,162 @@ def main():
         else:
             st.write(f"Finds the shortest path between two nodes in the pre-filtered graph (the {financial_graph.number_of_edges()} strongest relationships).")
             
+            # Prepare Data
             all_nodes = sorted(list(financial_graph.nodes()))
+            all_sectors = sorted(list(set(financial_graph.nodes[n].get('sector', 'Unknown') for n in all_nodes)))
             company_map = load_company_names()
             
-            # Enhanced Formatter
             def format_ticker(ticker):
                 name = company_map.get(ticker)
-                if name:
-                    return f"{name} ({ticker})"
-                return ticker
+                if not name and financial_graph.has_node(ticker):
+                    name = financial_graph.nodes[ticker].get('name')
+                return f"{name} ({ticker})" if name else ticker
 
             path_col1, path_col2 = st.columns(2)
             
-            # --- COLUMN 1: START NODE & DIAGNOSTICS ---
+            # --- COLUMN 1: START NODE ---
             with path_col1:
+                st.subheader("1. The Trigger")
+                # Filter Start
+                start_sector = st.selectbox("Filter Start Sector:", ["All Sectors"] + all_sectors, key="path_start_filter")
+                start_options = all_nodes
+                if start_sector != "All Sectors":
+                    start_options = [n for n in all_nodes if financial_graph.nodes[n].get('sector') == start_sector]
+
                 start_node = st.selectbox(
-                    "Start Company (The Trigger):", 
-                    all_nodes, 
+                    "Start Company:", 
+                    start_options, 
                     format_func=format_ticker, 
-                    key="path_start",
-                    index=all_nodes.index("AAPL") if "AAPL" in all_nodes else 0
+                    key="path_start"
                 )
 
-                # =========================================================
-                # 📍 DIAGNOSTICS & SMART SWAP LOGIC
-                # =========================================================
-                is_sink_node = False # Flag to control flow
-
+                # DIAGNOSTICS
+                is_sink_node = False 
                 if start_node and start_node in financial_graph:
                     out_degree = financial_graph.out_degree(start_node)
                     in_degree = financial_graph.in_degree(start_node)
+                    st.caption(f"📊 **Node Stats:** `{out_degree} Outgoing` | `{in_degree} Incoming`")
                     
-                    # Visual Stats
-                    st.caption(f"📊 **Node Stats:** `{out_degree} Outgoing` (Causes) | `{in_degree} Incoming` (Effects)")
-                    
-                    # CASE 1: The Dead End (Sink Node)
                     if out_degree == 0:
                         is_sink_node = True
-                        st.error(f"🚫 **Sink Node Detected:** {start_node} absorbs impacts but doesn't cause downstream ripple effects.")
-                        
-                        # If it has parents, offer to Find Causes instead
+                        st.error(f"🚫 **Sink Node:** {start_node} has no outgoing connections.")
                         if in_degree > 0:
-                            st.info(f"💡 However, {start_node} IS affected by {in_degree} other factors.")
-                            
-                            # --- THE MAGIC BUTTON ---
-                            if st.button("🔄 Analyze Incoming Factors (Reverse Look)"):
+                            if st.button("🔄 Reverse Analysis (What drives this?)"):
                                 st.divider()
-                                st.subheader(f"🕵️‍♀️ What influences {start_node}?")
-                                
-                                # Find all predecessors (Parents)
+                                st.subheader(f"🕵️‍♀️ Drivers of {start_node}")
                                 parents = list(financial_graph.predecessors(start_node))
-                                
-                                # Sort parents by risk score
                                 parent_risks = []
                                 for p in parents:
                                     r_score = financial_graph.nodes[p].get('raw_risk_score', 0)
                                     p_name = company_map.get(p, p)
-                                    parent_risks.append({'Ticker': p, 'Name': p_name, 'Risk Score': r_score})
-                                
-                                df_parents = pd.DataFrame(parent_risks).sort_values("Risk Score", ascending=False)
-                                
-                                st.dataframe(
-                                    df_parents, 
-                                    hide_index=True,
-                                    use_container_width=True,
-                                    column_config={
-                                        "Risk Score": st.column_config.ProgressColumn(
-                                            "Risk Impact", 
-                                            format="%.4f",
-                                            min_value=0, 
-                                            max_value=max(df_parents['Risk Score'].max(), 1.0)
-                                        )
-                                    }
-                                )
-                                st.stop() # Stop execution here so we don't show the empty 'End Company' error below
-                    
-                    # CASE 2: The Isolated Island
-                    elif out_degree == 0 and in_degree == 0:
-                         is_sink_node = True
-                         st.warning(f"⚠️ **Ghost Node:** {start_node} is completely disconnected. Check your data ingestion.")
-                # =========================================================
+                                    parent_risks.append({'Ticker': p, 'Name': p_name, 'Risk': r_score})
+                                st.dataframe(pd.DataFrame(parent_risks).sort_values("Risk", ascending=False), hide_index=True)
+                                st.stop() 
 
-            # --- DYNAMIC FILTERING LOGIC ---
-            # We only calculate reachable nodes if it's NOT a sink node
+            # --- DYNAMIC REACHABILITY CALCULATION ---
             reachable_nodes = {}
             if start_node and not is_sink_node:
                 try:
-                    # distinct checking for reachability (fast BFS)
+                    # Find everything reachable within 5 hops
                     reachable_nodes = nx.single_source_shortest_path_length(financial_graph, start_node, cutoff=5)
-                except Exception:
-                    reachable_nodes = {}
+                except: reachable_nodes = {}
             
-            # Create a list of valid targets (exclude the start node itself)
-            valid_targets = sorted([n for n in reachable_nodes.keys() if n != start_node])
+            # Valid targets are nodes that are reachable AND match the end filter
+            valid_targets_raw = sorted([n for n in reachable_nodes.keys() if n != start_node])
 
             # --- COLUMN 2: END NODE ---
             with path_col2:
-                if is_sink_node:
-                    st.info("🚫 Cannot select a target because the Start Company has no outgoing connections.")
-                    end_node = None
+                st.subheader("2. The Target")
                 
-                elif not valid_targets:
-                    st.warning("⚠️ No companies are reachable from this start node within 5 steps.")
+                if is_sink_node:
+                    st.info("🚫 Cannot select target (Dead End).")
+                    end_node = None
+                elif not valid_targets_raw:
+                    st.warning("⚠️ No companies reachable within 5 steps.")
                     end_node = None
                 else:
-                    st.caption(f"✅ Filtered to {len(valid_targets)} companies reachable within 5 steps.")
+                    # Filter End
+                    end_sector = st.selectbox("Filter End Sector:", ["All Sectors"] + all_sectors, key="path_end_filter")
+                    
+                    # Apply both Reachability AND Sector filters
+                    final_end_options = valid_targets_raw
+                    if end_sector != "All Sectors":
+                        final_end_options = [
+                            n for n in valid_targets_raw 
+                            if financial_graph.nodes[n].get('sector') == end_sector
+                        ]
+
+                    st.caption(f"✅ {len(final_end_options)} reachable targets in this sector.")
                     
                     end_node = st.selectbox(
-                        "End Company (Filtered by Reachability):", 
-                        valid_targets, 
+                        "End Company:", 
+                        final_end_options, 
                         format_func=format_ticker, 
                         key="path_end"
                     )
 
             # --- EXECUTE PATHFINDING ---
-            if not is_sink_node and st.button("🗺️ Find Riskiest Path"):
+            st.divider()
+            if not is_sink_node and st.button("🗺️ Find Riskiest Path", use_container_width=True):
                 if start_node and end_node:
                     try:
                         all_paths = list(nx.all_simple_paths(financial_graph, source=start_node, target=end_node, cutoff=5))
                         
                         if not all_paths:
-                            st.error(f"No path found between {start_node} and {end_node} (within 5 steps).")
+                            st.error("No path found.")
                         else:
+                            # Find path with highest cumulative risk
                             best_path = None
                             max_risk_score = -1
-
                             for path in all_paths:
-                                current_risk_score = 0
-                                for node_id in path:
-                                    node_risk = financial_graph.nodes[node_id].get('predicted_risk', 0)
-                                    current_risk_score += node_risk
-                                
+                                current_risk_score = sum([financial_graph.nodes[nid].get('predicted_risk', 0) for nid in path])
                                 if current_risk_score > max_risk_score:
                                     max_risk_score = current_risk_score
                                     best_path = path
                             
-                            st.success(f"Highest-Risk path found: `{' -> '.join(best_path)}`")
-                            st.info(f"Total Path Risk Level: **{max_risk_score}** (Sum of risk levels)")
-
+                            st.success(f"**Highest-Risk Path Found:**")
+                            st.code(' -> '.join(best_path))
+                            
                             # AI Explanation
                             if gemini_active:
-                                if st.button("🧠 Explain this Path Logic"):
-                                    with st.spinner("Analyzing path logic..."):
-                                        path_str = ' -> '.join(best_path)
-                                        prompt = f"Explain the economic logic behind this contagion path: {path_str}."
+                                with st.expander("🧠 Explain this Path Logic", expanded=True):
+                                    with st.spinner("Analyzing..."):
+                                        prompt = f"Explain the economic contagion logic: {' -> '.join(best_path)}."
                                         st.write(generate_ai_analysis(prompt))
 
-                            # Subgraph Visualization
+                            # Visualization
                             path_graph = financial_graph.subgraph(best_path)
-
-                            # Create a clean copy for pyvis
                             graph_for_pyvis = path_graph.copy()
                             for u, v, data in graph_for_pyvis.edges(data=True):
-                                data.pop('source', None)
-                                data.pop('target', None)
+                                data.pop('source', None); data.pop('target', None)
                             
                             net = Network(height="400px", width="100%", notebook=True, directed=True, bgcolor="#222222", font_color="white")
                             net.from_nx(graph_for_pyvis) 
-                            
-                            # === NEW: APPLY AI VISUAL STYLES HERE TOO ===
                             net = apply_ai_visual_styles(net, graph_for_pyvis)
                             
-                            risk_map = {
-                                0: {"label": "Low", "color": "#66bb6a"}, 
-                                1: {"label": "Medium", "color": "#ffa726"},
-                                2: {"label": "High", "color": "#ef5350"} 
-                            }
-
+                            # Color nodes
+                            risk_map = {0: "#66bb6a", 1: "#ffa726", 2: "#ef5350"}
                             for node_id in best_path:
                                 node = net.get_node(node_id)
-                                node_data = financial_graph.nodes[node_id]
-                                
-                                node_risk = node_data.get('predicted_risk', 0)
-                                raw_score = node_data.get('raw_risk_score', 0.0)
-                                
-                                risk_info = risk_map.get(node_risk, risk_map[0])
-                                
-                                node['label'], node['size'] = node_id, 25
-                                
-                                if risk_info:
-                                    node['color'] = risk_info['color']
-                                    node['title'] = f"⚠️ RISK: {raw_score:.4f} ({risk_info['label']})"
-                                
-                                if node_id == start_node: 
-                                    node['color'], node['size'] = '#55a630', 30 
-                                elif node_id == end_node: 
-                                    node['color'], node['size'] = '#e63946', 30
-                            
+                                node_risk = financial_graph.nodes[node_id].get('predicted_risk', 0)
+                                node['color'] = risk_map.get(node_risk, "#66bb6a")
+                                node['label'] = node_id
+                                if node_id == start_node: node['size'] = 30
+                                if node_id == end_node: node['shape'] = 'star'
+
                             net.set_options('{"physics": {"enabled": false}}')
                             
                             html_file = f"temp_graph_{uuid.uuid4().hex}.html"
-                            try:
-                                net.save_graph(html_file)
-                                with open(html_file, 'r', encoding='utf-8') as f:
-                                    html_content = f.read()
-                                st.components.v1.html(html_content, height=420, scrolling=True)
-                            except Exception as e:
-                                st.error(f"Failed to render graph: {e}")
-                            finally:
-                                if os.path.exists(html_file):
-                                    os.remove(html_file)
+                            net.save_graph(html_file)
+                            with open(html_file, 'r', encoding='utf-8') as f:
+                                st.components.v1.html(f.read(), height=420, scrolling=True)
+                            os.remove(html_file)
 
-                    except nx.NodeNotFound:
-                        st.error(f"One of the nodes ({start_node} or {end_node}) was not found in the graph.")
-                else:
-                    if not is_sink_node:
-                         st.warning("Please select two different companies.")
-
-
+                    except Exception as e:
+                        st.error(f"Pathfinding Error: {e}")
 
     # ==============================================================================
-    # --- TAB 5: INSTRUCTIONS & GUIDE (CORRECTED) ---
+    # --- TAB 5: INSTRUCTIONS & GUIDE (UPDATED) ---
     # ==============================================================================
     with tab_help:
         st.header("📘 User Guide & Documentation")
@@ -1358,45 +1281,43 @@ def main():
             ### Welcome to the Causal Inference Engine
             This application moves beyond simple price correlations to map the **causal structure** of the financial markets.
 
-            **Key Concepts:**
-            * **Nodes (Assets):** Companies, Indices, or Commodities.
-            * **Edges (Relationships):** The causal direction (e.g., *Oil Price* → *Airline Stocks*).
-            * **Real-World Risk:** Nodes are colored based on live **Volatility & RSI** data, not just sentiment.
-            * **AI Inference:** The system uses Gemini AI to "fill in the blanks" where official data is missing.
+            **New in this Version:**
+            * **🌍 Macro Intelligence:** The graph now includes "Super Nodes" like **Crude Oil**, **10-Year Treasury Yields**, and **Gold**.
+            * **🧮 Real-Math Risk:** Nodes are colored based on live **Volatility & RSI** data (0.0 to 1.0), not just news sentiment.
+            * **🕵️ Sector Filtering:** You can now filter complex graphs by Industry or Sector.
+
+            **Visual Legend:**
+            * 🔴 **Red Node:** High Risk (Top 5% Volatility).
+            * 🟢 **Green Node:** Low Risk (Stable).
+            * **Solid Line:** ✅ Verified data (Regulatory Filings).
+            * **Dashed Grey Line:** 🤖 AI Inferred (High Probability).
             """)
         
         elif help_choice == "Recent Events":
             st.markdown("""
             ### 🔔 Recent Events Tab
-            **Purpose:** A feed of market "shocks" (News, Earnings, Macro Data) detected by the ingestion engine.
+            **Purpose:** A feed of market "shocks" (News, Earnings, Macro Data) detected by the daily ingestion engine.
 
             **How to Use:**
-            * **Refresh Events:** Reloads the latest data from the `significant_events` database.
+            * **Refresh Events:** Reloads the latest data from the database.
             * **Inspect Source:** Click the link to read the original article.
 
             **Interpreting the Data:**
-            * **Sentiment Score:**
-                * 🔴 **Negative (-1.0):** Bearish news (Lawsuits, Missed Earnings).
-                * 🟢 **Positive (+1.0):** Bullish news (Mergers, Record Profits).
-            * **Action:** Use these events as inputs in the **Simulate Scenarios** tab to see how they ripple through the network.
+            * 🔴 **Negative (-1.0):** Bearish news (Lawsuits, Missed Earnings, Rate Hikes).
+            * 🟢 **Positive (+1.0):** Bullish news (Mergers, Record Profits, Rate Cuts).
             """)
         
         elif help_choice == "Explore Graph":
             st.markdown("""
             ### 🗺️ Explore Graph Tab
-            **Purpose:** Visual map of your financial universe. See how assets are connected and which ones are currently risky.
+            **Purpose:** Visual map of your financial universe.
 
-            **Visual Legend:**
-            * **Nodes (The Dots):**
-                * 🔴 **Red:** High Risk (Top 5% Volatility/RSI).
-                * 🟠 **Orange:** Medium Risk.
-                * 🟢 **Green:** Low Risk (Stable).
-            * **Edges (The Lines):**
-                * **Solid Line:** ✅ Verified data (10-K filings, Supplier lists).
-                * **Dashed Grey Line:** 🤖 **AI Inferred** (High probability, but unverified).
+            **New Feature: Sector Filters**
+            * Use the **"Filter by Sector"** dropdown to isolate specific industries (e.g., "Technology", "Energy").
+            * Select **"Macro"** to see how global factors like **Oil** or **Bond Yields** connect to the stock market.
 
             **Interpreting Tooltips:**
-            * Hover over a node to see its **Real-Math Risk Score** (0.0 to 1.0) and Market Cap.
+            * Hover over a node to see its **Real-Math Risk Score** and Market Cap.
             * Hover over a dashed line to see the AI's reasoning for that connection.
             """)
         
@@ -1411,7 +1332,7 @@ def main():
                 * Identifies **"Super Spreaders"**: Companies whose failure would cause the most total damage to the network.
             
             2.  **🧪 Manual Simulation:**
-                * Select a specific company and a shock score (e.g., -0.5).
+                * Select a trigger asset (e.g., "Crude Oil") and a shock score (e.g., -0.5).
                 * **Visual Graph:** Shows the "Blast Radius" (Source + Top 25 Victims).
                 * **AI Crisis Report:** Generates a "Breaking News" narrative explaining *why* the contagion spread this way.
             """)
@@ -1419,7 +1340,7 @@ def main():
         elif help_choice == "Causal Pathfinding":
             st.markdown("""
             ### ↔️ Causal Pathfinding Tab
-            **Purpose:** Find the hidden transmission chains between two assets.
+            **Purpose:** Find the hidden transmission chains between two assets (e.g., *How does a Bond Yield spike affect Nvidia?*).
 
             **Smart Diagnostics:**
             * **Dynamic Filtering:** The "End Company" list only shows nodes that are *actually reachable* from your start node.
