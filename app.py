@@ -428,12 +428,11 @@ def get_db_manager():
 def get_full_graph():
     """
     Fetches the graph structure DIRECTLY from Neo4j (Live Mode).
-    This ensures new Macro nodes appear immediately and cleans up sector names.
+    Ensures Macro nodes are preserved and sectors are cleaned.
     """
     logger.info("Fetching full graph from Neo4j...")
     
     try:
-        # Use helper to get config
         config = get_cloud_config_dict()
         temp_db = DatabaseManager(config)
         
@@ -441,11 +440,11 @@ def get_full_graph():
         nodes_query = """
         MATCH (n:Company) 
         RETURN n.ticker as id, n.name as name, n.sector as sector, 
-               n.market_cap as market_cap
+               n.market_cap as market_cap, n.is_macro as is_macro
         """
         nodes_data = temp_db.execute_read(nodes_query)
         
-        # 2. Fetch Edges (Filter weak links for performance)
+        # 2. Fetch Edges
         edges_query = """
         MATCH (n:Company)-[r]->(m:Company)
         WHERE r.weight > 0.1
@@ -456,44 +455,72 @@ def get_full_graph():
         edges_data = temp_db.execute_read(edges_query)
         temp_db.close()
         
-        if not nodes_data:
-            return None
+        if not nodes_data: return None
 
         G = nx.DiGraph()
         
         # 3. Add Nodes & CLEAN SECTORS
         for n in nodes_data:
             raw_sector = n.get('sector', 'Unknown')
-            
-            # --- SECTOR CLEANING LOGIC ---
             if raw_sector is None: raw_sector = "Unknown"
-            clean_sector = raw_sector.title() # "pharmaceautical" -> "Pharmaceautical"
             
-            # Fix specific dirty data found in your DB
+            # Basic cleaning
+            clean_sector = raw_sector.title() 
             if "Pharmaceautical" in clean_sector: clean_sector = "Healthcare"
             if "Services Computer" in clean_sector: clean_sector = "Technology"
             if "Discovered" in clean_sector: clean_sector = "Watchlist"
+            
+            # Force "Macro" sector for macro nodes
+            if n.get('is_macro'): clean_sector = "Macro"
             
             G.add_node(
                 n['id'], 
                 name=n.get('name', n['id']),
                 sector=clean_sector,
-                market_cap=n.get('market_cap', 0)
+                market_cap=n.get('market_cap', 0),
+                is_macro=n.get('is_macro', False)
             )
             
         # 4. Add Edges
         for e in edges_data:
             G.add_edge(
-                e['source'], 
-                e['target'], 
+                e['source'], e['target'], 
                 weight=e['weight'],
                 mechanism=e.get('mechanism'),
                 verification_status=e.get('verification_status')
             )
             
+        # ==============================================================================
+        # 🧹 NOISE REDUCTION (UPDATED TO PROTECT MACRO NODES)
+        # ==============================================================================
+        suspicious_parents = ['SNAP', 'V', 'META', 'GOOGL', 'GOOG', 'AMZN', 'ADBE', 'CRM', 'MA'] 
+        edges_to_remove = []
+        
+        for u, v, data in G.edges(data=True):
+            # SKIP check if either node is a Macro node (we want to keep those!)
+            if G.nodes[u].get('is_macro') or G.nodes[v].get('is_macro'):
+                continue
+
+            sector_u = G.nodes[u].get('sector', 'Unknown')
+            sector_v = G.nodes[v].get('sector', 'Unknown')
+            weight = data.get('weight', 0.5)
+
+            if u in suspicious_parents and weight < 0.90:
+                edges_to_remove.append((u, v))
+                continue
+                
+            # Cross-Sector Penalty
+            if sector_u != 'Unknown' and sector_v != 'Unknown':
+                if sector_u != sector_v and weight < 0.75:
+                    edges_to_remove.append((u, v))
+
+        if edges_to_remove:
+            G.remove_edges_from(edges_to_remove)
+            logger.info(f"🧹 Pruned {len(edges_to_remove)} noisy edges (Macro nodes protected).")
+        # ==============================================================================
+
         logger.info(f"✅ Loaded {G.number_of_nodes()} nodes from Neo4j.")
         
-        # 5. Inject Risk Colors
         return inject_live_risk_data(G)
 
     except Exception as e:
