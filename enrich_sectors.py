@@ -1,5 +1,5 @@
 # ==============================================================================
-# --- SECTOR ENRICHMENT SCRIPT ---
+# --- SECTOR ENRICHMENT SCRIPT (Targeted Fix) ---
 # ==============================================================================
 import yfinance as yf
 import json
@@ -13,64 +13,98 @@ logger = logging.getLogger("SectorRepair")
 
 def load_config():
     try:
-        with open("config.json", 'r') as f: return json.load(f)
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        config_path = os.path.join(script_dir, "config.json")
+        with open(config_path, 'r') as f: return json.load(f)
     except: return {}
+
+def clean_ticker_for_yahoo(ticker):
+    """
+    Converts DB format to Yahoo format.
+    Example: 'BRK.B' -> 'BRK-B', 'OTCMKTS:APO' -> 'APO'
+    """
+    # Remove Exchange Prefixes (e.g., "OTCMKTS:APO" -> "APO")
+    if ":" in ticker:
+        ticker = ticker.split(":")[-1]
+    
+    # Fix Berkshire and others with dots
+    ticker = ticker.replace('.', '-')
+    
+    # Specific Manual Fixes
+    if ticker == 'BRK': return 'BRK-B'
+    
+    return ticker
 
 def enrich_sectors():
     config = load_config()
     if not config: return
     db = DatabaseManager(config)
     
-    # 1. Get all companies with missing or 'Unknown' sectors
-    query = "MATCH (c:Company) RETURN c.ticker as ticker"
+    # 1. Target ONLY the problem nodes
+    logger.info("🔍 finding companies with 'Discovered' or 'Unknown' sectors...")
+    query = """
+    MATCH (c:Company) 
+    WHERE c.sector IN ['Discovered', 'Unknown', 'null'] OR c.sector IS NULL
+    RETURN c.ticker as ticker
+    """
     results = db.execute_read(query)
     tickers = [r['ticker'] for r in results]
     
-    logger.info(f"🔍 Scanning {len(tickers)} companies for missing Sector data...")
+    if not tickers:
+        logger.info("✅ No missing sectors found! Your database is clean.")
+        return
+
+    logger.info(f"📉 Found {len(tickers)} companies to fix. Starting batch processing...")
     
     updated_count = 0
     
-    # Process in batches to be polite to Yahoo
+    # Process in batches of 20
     batch_size = 20
     for i in range(0, len(tickers), batch_size):
-        batch = tickers[i:i+batch_size]
+        batch_db_tickers = tickers[i:i+batch_size]
         
-        # Filter out non-stock tickers (Crypto/Forex)
-        clean_batch = [t.replace('.', '-') for t in batch if not any(x in t for x in [':', '='])]
+        # Create a map of YahooTicker -> DBTicker so we can save it back correctly
+        yahoo_map = {clean_ticker_for_yahoo(t): t for t in batch_db_tickers}
+        yahoo_list = list(yahoo_map.keys())
         
-        if not clean_batch: continue
-
         try:
             # Fetch info for the batch
-            tickers_obj = yf.Tickers(" ".join(clean_batch))
+            tickers_obj = yf.Tickers(" ".join(yahoo_list))
             
-            for t_symbol in clean_batch:
+            for y_sym in yahoo_list:
                 try:
-                    info = tickers_obj.tickers[t_symbol].info
+                    # Check if we got data
+                    info = tickers_obj.tickers[y_sym].info
+                    
+                    # Yahoo returns 'sector' and 'industry'
                     sector = info.get('sector')
                     industry = info.get('industry')
                     
                     if sector:
-                        # Map back to DB symbol (swap - back to .)
-                        db_symbol = t_symbol.replace('-', '.')
+                        # Retrieve original DB ticker to ensure we update the right node
+                        original_ticker = yahoo_map[y_sym]
                         
-                        # Update Neo4j
                         update_query = """
                         MATCH (c:Company {ticker: $ticker})
                         SET c.sector = $sector,
                             c.industry = $industry
                         """
-                        db.execute_write(update_query, ticker=db_symbol, sector=sector, industry=industry)
+                        db.execute_write(update_query, ticker=original_ticker, sector=sector, industry=industry)
                         updated_count += 1
-                        print(f"   ✅ {db_symbol}: {sector}")
+                        print(f"   ✅ Fixed {original_ticker}: {sector}")
+                    else:
+                        print(f"   ⚠️ No data for {y_sym}")
                         
                 except Exception:
-                    pass # Ticker might be delisted or data unavailable
+                    pass 
                     
         except Exception as e:
             logger.error(f"Batch failed: {e}")
             
-    logger.info(f"🎉 Finished. Updated sectors for {updated_count} companies.")
+        # Be polite to Yahoo API
+        time.sleep(1)
+            
+    logger.info(f"🎉 Finished. Repaired {updated_count} companies.")
     db.close()
 
 if __name__ == "__main__":

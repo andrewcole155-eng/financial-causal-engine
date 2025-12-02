@@ -1,6 +1,10 @@
 # ==============================================================================
 # --- RISK ALERT SYSTEM ("The Watchman") ---
 # ==============================================================================
+# Handles immediate risk alerts, kill switches, and contagion scanning.
+# Can be run standalone or imported by sentiment_pulse.py for instant triggers.
+# ==============================================================================
+
 import json
 import logging
 import os
@@ -15,12 +19,24 @@ logger = logging.getLogger("RiskAlert")
 
 # 1. Define Thresholds
 RISK_THRESHOLD = 0.85
+PANIC_THRESHOLD = -0.80 # Sentiment scores below this trigger immediate panic
 
 # 2. Status File Path (Shared with Trading Bot)
 STATUS_FILE = "trading_status.json"
 
+def load_config():
+    """Helper to load config from the same directory."""
+    try:
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        config_path = os.path.join(script_dir, "config.json")
+        with open(config_path, 'r') as f: return json.load(f)
+    except: return {}
+
 def update_trading_status(status, reason=None):
-    """Writes the DEFCON level to a JSON file for the trading bot."""
+    """
+    Writes the DEFCON level to a JSON file for the trading bot.
+    status: "GREEN" or "RED"
+    """
     data = {
         "status": status,  # "GREEN" or "RED"
         "last_updated": datetime.now().isoformat(),
@@ -28,7 +44,6 @@ def update_trading_status(status, reason=None):
         "risk_threshold": RISK_THRESHOLD
     }
     
-    # Write safely (atomic write pattern could be used, but this is sufficient for now)
     try:
         script_dir = os.path.dirname(os.path.abspath(__file__))
         file_path = os.path.join(script_dir, STATUS_FILE)
@@ -44,26 +59,64 @@ def update_trading_status(status, reason=None):
     except Exception as e:
         logger.error(f"❌ Failed to update trading status file: {e}")
 
+# --- NEW: IMMEDIATE PANIC TRIGGER ---
+def trigger_panic_mode(ticker, headline, score, url, config=None):
+    """
+    Callable from external scripts (like sentiment_pulse.py) to immediately
+    halt trading and fire a Discord alert.
+    """
+    if config is None:
+        config = load_config()
+
+    webhook_url = config.get("DISCORD_WEBHOOK_URL")
+    
+    # 1. Activate Kill Switch locally
+    reason = f"PANIC: {ticker} Sentiment {score} ({headline[:30]}...)"
+    update_trading_status("RED", reason)
+    
+    # 2. Fire Discord Alert
+    if webhook_url:
+        payload = {
+            "username": "The Watchman 👁️",
+            "embeds": [{
+                "title": f"🚨 MARKET PANIC: {ticker}",
+                "description": f"**CRITICAL NEGATIVE NEWS DETECTED**\n\n**Headline:** {headline}\n**Analysis:** Extreme bearish sentiment identified by AI.",
+                "color": 16711680, # Bright Red (0xFF0000)
+                "fields": [
+                    {"name": "📉 Sentiment Score", "value": f"`{score}`", "inline": True},
+                    {"name": "📰 Source", "value": f"[Read Story]({url})", "inline": True},
+                    {"name": "⛔ ACTION TAKEN", "value": "TRADING HALTED (KILL SWITCH ENGAGED)", "inline": False}
+                ],
+                "footer": {"text": f"Triggered at {datetime.now().strftime('%H:%M:%S')}"}
+            }]
+        }
+        try:
+            requests.post(webhook_url, json=payload)
+            logger.info(f"🚨 Panic Alert Sent to Discord for {ticker}")
+        except Exception as e:
+            logger.error(f"Failed to send Panic Alert: {e}")
+
+# --- EXISTING: CONTAGION ALERT (GRAPH SCAN) ---
 def send_discord_alert(webhook_url, ticker, neighbor, score, mechanism, status):
-    """Sends a formatted alert to Discord."""
+    """Sends a contagion risk alert to Discord."""
     if not webhook_url:
         return
 
     icon = "🤖" if status == "AI_PROPOSED" else "🔗"
-    color_bar = 15158332 # Red
+    color_bar = 15158332 # Orange/Red
     
     payload = {
         "username": "The Watchman 👁️",
         "embeds": [
             {
-                "title": f"🚨 Contagion Alert: {ticker}",
+                "title": f"⚠️ Contagion Warning: {ticker}",
                 "description": f"**{ticker}** is exposed to high-risk asset **{neighbor}**.",
                 "color": color_bar,
                 "fields": [
-                    {"name": "🔥 Threat Level", "value": f"`{score:.4f}` (High Volatility)", "inline": True},
+                    {"name": "🔥 Risk Exposure", "value": f"`{score:.4f}`", "inline": True},
                     {"name": "🔗 Link Type", "value": f"{icon} {status}", "inline": True},
                     {"name": "📝 Mechanism", "value": mechanism, "inline": False},
-                    {"name": "⛔ ACTION TAKEN", "value": "Trading Bot HALTED via Kill Switch.", "inline": False}
+                    {"name": "🛡️ Recommendation", "value": "Reduce position sizing or engage Kill Switch.", "inline": False}
                 ],
                 "footer": {"text": "Knowledge Graph Surveillance System"}
             }
@@ -76,26 +129,18 @@ def send_discord_alert(webhook_url, ticker, neighbor, score, mechanism, status):
         logger.error(f"❌ Failed to send Discord alert: {e}")
 
 def run_risk_scan():
-    # 1. Load Config
-    try:
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        config_path = os.path.join(script_dir, "config.json")
-        
-        with open(config_path, 'r') as f:
-            config = json.load(f)
-        
-        watchlist = config.get("target_tickers", [])
-        webhook_url = config.get("DISCORD_WEBHOOK_URL")
-        
-        if not watchlist:
-            logger.warning("⚠️ Watchlist empty.")
-            return
-
-    except Exception as e:
-        logger.error(f"❌ Config error: {e}")
+    """
+    Main routine: Scans the database for contagion risks (neighbors of watchlist tokens).
+    """
+    config = load_config()
+    watchlist = config.get("target_tickers", [])
+    webhook_url = config.get("DISCORD_WEBHOOK_URL")
+    
+    if not watchlist:
+        logger.warning("⚠️ Watchlist empty.")
         return
 
-    # 2. Connect to Database
+    # Connect to Database
     try:
         db = DatabaseManager(config)
     except Exception as e:
@@ -136,17 +181,19 @@ def run_risk_scan():
                     status = edge_data.get('verification_status', 'VERIFIED')
                     
                     msg = f"{ticker} exposed to {neighbor} (Risk: {neighbor_risk:.2f})"
-                    kill_switch_reason = msg # Save the first reason for the status file
+                    kill_switch_reason = msg
                     
                     print(f"\n🚨 [RISK ALERT] {msg}")
                     send_discord_alert(webhook_url, ticker, neighbor, neighbor_risk, mechanism, status)
                     time.sleep(1) 
 
-    # --- KILL SWITCH LOGIC ---
+    # --- KILL SWITCH LOGIC (SCAN BASED) ---
     if alerts_triggered > 0:
         update_trading_status("RED", kill_switch_reason)
         logger.info(f"\n⚠️ Scan Complete. {alerts_triggered} Alerts. Kill Switch ENGAGED.")
     else:
+        # Only reset to GREEN if we are running the scan and finding nothing
+        # We might optionally check if a "Manual" or "Panic" lock is in place before resetting
         update_trading_status("GREEN", "System Nominal")
         logger.info("✅ Scan Complete. System Nominal.")
 

@@ -1,15 +1,16 @@
 # ==============================================================================
 # --- SENTIMENT PULSE (Real-Time News Stream) ---
 # ==============================================================================
-# Listens to Alpaca's News Feed, updates risk scores, and logs Events to the Graph.
+# Listens to Alpaca's News Feed, updates risk scores via Gemini AI, 
+# and logs Events to the Graph.
 # ==============================================================================
 
 import json
 import logging
 import os
 import asyncio
+import google.generativeai as genai
 from alpaca.data.live import NewsDataStream
-from alpaca.common.exceptions import APIError
 from database_manager import DatabaseManager
 
 # Setup Logging
@@ -23,25 +24,66 @@ def load_config():
         with open(config_path, 'r') as f: return json.load(f)
     except: return {}
 
-# --- DUMMY AI SCORER ---
-# In production, this would call Gemini or FinBERT.
-# Uses simple keyword matching for speed/demo purposes.
-def calculate_sentiment(headline):
-    headline = headline.lower()
-    if any(w in headline for w in ["crash", "plunge", "lawsuit", "ban", "misses", "hacked", "investigation", "fraud"]):
-        return -0.8  # High Risk
-    if any(w in headline for w in ["soars", "record", "beat", "approved", "partnership", "merger", "upgrade"]):
-        return 0.8   # Low Risk / Bullish
-    return 0.0
+# --- AI CONFIGURATION ---
+config = load_config()
+GEMINI_KEY = config.get("GEMINI_API_KEY")
+
+if GEMINI_KEY:
+    genai.configure(api_key=GEMINI_KEY)
+    # Using 'flash' for speed/cost efficiency on high-volume streams
+    model = genai.GenerativeModel('gemini-2.0-flash')
+else:
+    logger.warning("⚠️ No Gemini API Key found. Sentiment will be 0.0")
+    model = None
+
+# --- REAL SCORING SYSTEM (Gemini AI) ---
+def get_ai_score_sync(headline):
+    """
+    Blocking function to query Gemini. 
+    Returns a float between -1.0 (Bearish) and 1.0 (Bullish).
+    """
+    if not model: 
+        return 0.0
+    
+    try:
+        prompt = f"""
+        Analyze the sentiment of this financial news headline.
+        Headline: "{headline}"
+        
+        Return ONLY a JSON object with a single key 'score'.
+        The score must be a float between -1.0 (Catastrophic/Negative) and 1.0 (Excellent/Positive).
+        0.0 is neutral.
+        Example output: {{"score": -0.65}}
+        """
+        
+        response = model.generate_content(prompt)
+        
+        # Clean up response to ensure it's valid JSON
+        text_response = response.text.replace("```json", "").replace("```", "").strip()
+        data = json.loads(text_response)
+        return float(data.get("score", 0.0))
+
+    except Exception as e:
+        logger.error(f"AI Scoring Failed: {e}")
+        return 0.0
+
+async def calculate_sentiment(headline):
+    """
+    Wraps the blocking AI call in an executor to prevent 
+    blocking the Alpaca Websocket heartbeat.
+    """
+    loop = asyncio.get_running_loop()
+    # Run the synchronous API call in a separate thread
+    score = await loop.run_in_executor(None, get_ai_score_sync, headline)
+    return score
 
 async def main():
-    config = load_config()
     if not config: return
 
-    api_key = config.get("ALPACA_API_KEY")
-    secret_key = config.get("ALPACA_SECRET_KEY")
+    alpaca_key = config.get("ALPACA_API_KEY")
+    alpaca_secret = config.get("ALPACA_SECRET_KEY")
     
-    if not api_key or not secret_key:
+    if not alpaca_key or not alpaca_secret:
         logger.error("❌ Alpaca Keys not found in config.json")
         return
 
@@ -51,53 +93,55 @@ async def main():
     # Initialize Alpaca News Stream
     logger.info("🔌 Connecting to Alpaca News Stream...")
     try:
-        news_stream = NewsDataStream(api_key, secret_key)
+        news_stream = NewsDataStream(alpaca_key, alpaca_secret)
     except Exception as e:
         logger.error(f"Failed to connect to Alpaca: {e}")
         return
 
     # --- THE HANDLER ---
-    # This function runs every time a new headline hits the tape
     async def on_news(data):
         try:
-            # Alpaca returns an object, we convert to dict
             news_item = data.__dict__
             
             headline = news_item.get('headline', '')
             symbols = news_item.get('symbols', [])
-            url = news_item.get('url', 'Real-Time Stream') # Alpaca often provides a URL
+            url = news_item.get('url', 'Real-Time Stream')
             
-            if not symbols: return
+            if not symbols or not headline: return
 
-            # 1. Calculate Score
-            score = calculate_sentiment(headline)
+            # 1. Calculate Score (Now Async with Real AI)
+            # We ignore generic updates to save API costs/latency
+            if "market update" in headline.lower(): 
+                return
+
+            score = await calculate_sentiment(headline)
             
-            # Only process significant news
-            if score != 0:
+            # Filter: Only log significant sentiment (Noise Filter)
+            if abs(score) >= 0.2:
                 logger.info(f"⚡ NEWS ({score}): {headline} {symbols}")
                 
-                # 2. Update Graph (Create Event + Update Risk)
+                # 2. Update Graph
                 for ticker in symbols:
                     query = """
                     MATCH (c:Company {ticker: $ticker})
-                    
-                    // 1. Update the Company Risk Profile
                     SET c.sentiment_score = $score,
                         c.last_news_update = datetime()
                         
-                    // 2. Create a Visible Event Node (So it shows in Dashboard)
                     CREATE (e:Event {
                         headline: $headline,
                         score: $score,
-                        source: 'Alpaca_Pulse',
+                        source: 'Alpaca_Gemini',
                         timestamp: datetime(),
                         link: $url
                     })
                     
-                    // 3. Link them
                     MERGE (c)-[:HAD_EVENT]->(e)
                     """
+                    # Note: db.execute_write is usually synchronous in Neo4j driver. 
+                    # If high volume, wrap this in run_in_executor too.
                     db.execute_write(query, ticker=ticker, score=score, headline=headline, url=url)
+            else:
+                logger.info(f"Skipping neutral news ({score}): {headline[:30]}...")
                     
         except Exception as e:
             logger.error(f"Error processing news: {e}")
@@ -105,9 +149,8 @@ async def main():
     # Subscribe to all news ("*")
     news_stream.subscribe_news(on_news, "*")
 
-    logger.info("✅ Pulse is Active. Waiting for news...")
+    logger.info("✅ Pulse is Active (Powered by Gemini). Waiting for news...")
     
-    # Keep running forever
     await news_stream._run_forever()
 
 if __name__ == "__main__":
