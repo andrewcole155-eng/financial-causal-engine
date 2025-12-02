@@ -25,7 +25,7 @@ config.json
 *.sqlite
 *.sqlite3
 financial_data.db
-
+trading_status.json
 Logs
 
 *.log
