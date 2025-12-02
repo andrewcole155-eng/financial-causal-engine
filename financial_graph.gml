@@ -7,10 +7,11 @@ graph [
     market_cap 0
     name "Equity Residential"
     gnn_risk_score 2.9434810144834955E-08
-    raw_risk_score 0.18450971205881928
+    industry "REIT - Residential"
+    raw_risk_score 0.1726930866333236
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 1
@@ -19,6 +20,7 @@ graph [
     market_cap 0
     name "Berkshire Hathaway (Class B)"
     gnn_risk_score 1.1020546253348584E-06
+    industry "Insurance - Diversified"
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
   ]
@@ -29,10 +31,11 @@ graph [
     market_cap 0
     name "Camden Property Trust"
     gnn_risk_score 4.892788183497032E-06
-    raw_risk_score 0.20471737086706632
+    industry "REIT - Residential"
+    raw_risk_score 0.19014584822234698
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 3
@@ -41,10 +44,11 @@ graph [
     market_cap 0
     name "Essex Property Trust"
     gnn_risk_score 2.7964794369061963E-10
-    raw_risk_score 0.10332308082242646
+    industry "REIT - Residential"
+    raw_risk_score 0.0888978672762417
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 4
@@ -53,10 +57,11 @@ graph [
     market_cap 0
     name "Simon Property Group"
     gnn_risk_score 5.67200368095655E-06
-    raw_risk_score 0.13666948524137204
+    industry "REIT - Retail"
+    raw_risk_score 0.12321275102603604
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 5
@@ -65,10 +70,11 @@ graph [
     market_cap 0
     name "Fair Isaac"
     gnn_risk_score 3.385929758792372E-08
-    raw_risk_score 0.21970232850171592
+    industry "Software - Application"
+    raw_risk_score 0.18056220020821967
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 6
@@ -77,10 +83,11 @@ graph [
     market_cap 0
     name "Cadence Design Systems"
     gnn_risk_score 4.318840467476548E-07
-    raw_risk_score 0.2328059918539341
+    industry "Software - Application"
+    raw_risk_score 0.21432897191640454
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 7
@@ -89,10 +96,11 @@ graph [
     market_cap 0
     name "Alexandria Real Estate Equities"
     gnn_risk_score 2.744129119491845E-07
-    raw_risk_score 0.275149360266531
+    industry "REIT - Office"
+    raw_risk_score 0.22790808248893338
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 8
@@ -101,10 +109,11 @@ graph [
     market_cap 0
     name "Allstate"
     gnn_risk_score 0.9977554082870483
-    raw_risk_score 0.17263935939901986
+    industry "Insurance - Property &#38; Casualty"
+    raw_risk_score 0.1676737674481126
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 9
@@ -113,10 +122,11 @@ graph [
     market_cap 0
     name "State Street Corporation"
     gnn_risk_score 2.2978200675538574E-08
-    raw_risk_score 0.14285726543678046
+    industry "Asset Management"
+    raw_risk_score 0.12495457961909517
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 10
@@ -125,10 +135,11 @@ graph [
     market_cap 0
     name "Masco"
     gnn_risk_score 5.538563527807128E-06
-    raw_risk_score 0.2340369427831961
+    industry "Building Products &#38; Equipment"
+    raw_risk_score 0.20946709420006016
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 11
@@ -137,10 +148,11 @@ graph [
     market_cap 0
     name "Wells Fargo"
     gnn_risk_score 1.4505225408356637E-05
-    raw_risk_score 0.10804794302252607
+    industry "Banks - Diversified"
+    raw_risk_score 0.0970788099508322
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 12
@@ -149,10 +161,11 @@ graph [
     market_cap 0
     name "RTX Corporation"
     gnn_risk_score 0.9937133193016052
-    raw_risk_score 0.24059615882566562
+    industry "Aerospace &#38; Defense"
+    raw_risk_score 0.2211712119397562
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 13
@@ -161,10 +174,11 @@ graph [
     market_cap 0
     name "A.O. Smith Corporation"
     gnn_risk_score 6.841156807713134E-11
-    raw_risk_score 0.1254312613443071
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.10676656295747693
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Industrials"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 14
@@ -173,10 +187,11 @@ graph [
     market_cap 0
     name "AbbVie"
     gnn_risk_score 1.0081039336640174E-09
-    raw_risk_score 0.21310737014411874
+    industry "Drug Manufacturers - General"
+    raw_risk_score 0.18330201063153975
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 15
@@ -185,10 +200,11 @@ graph [
     market_cap 0
     name "Accenture"
     gnn_risk_score 0.0006276060012169182
-    raw_risk_score 0.2667288779011332
+    industry "Information Technology Services"
+    raw_risk_score 0.23183984438800054
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 16
@@ -207,10 +223,11 @@ graph [
     market_cap 0
     name "Adobe Inc."
     gnn_risk_score 4.22930088461726E-06
-    raw_risk_score 0.16775262372332123
+    industry "Software - Application"
+    raw_risk_score 0.14546852303708288
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 18
@@ -219,10 +236,11 @@ graph [
     market_cap 0
     name "Automatic Data Processing"
     gnn_risk_score 1.03562793896117E-08
-    raw_risk_score 0.12043004443532185
+    industry "Software - Application"
+    raw_risk_score 0.10664856030051202
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 19
@@ -231,10 +249,11 @@ graph [
     market_cap 0
     name "Advance Auto Parts"
     gnn_risk_score 8.701171338998392E-08
-    raw_risk_score 0.38635219483464556
+    industry "Auto Parts"
+    raw_risk_score 0.33225062680017964
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 20
@@ -243,10 +262,11 @@ graph [
     market_cap 0
     name "AES Corporation"
     gnn_risk_score 1.1902301594091114E-05
-    raw_risk_score 0.20649706916859656
+    industry "Utilities - Diversified"
+    raw_risk_score 0.17523725905168572
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 21
@@ -255,10 +275,11 @@ graph [
     market_cap 0
     name "Aflac"
     gnn_risk_score 9.961878504327615E-07
-    raw_risk_score 0.18836488507157495
+    industry "Insurance - Life"
+    raw_risk_score 0.17404213016512182
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 22
@@ -267,10 +288,11 @@ graph [
     market_cap 0
     name "Agilent Technologies"
     gnn_risk_score 1.7306712507547672E-08
-    raw_risk_score 0.19850144322348479
+    industry "Diagnostics &#38; Research"
+    raw_risk_score 0.16984488191344177
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 23
@@ -279,10 +301,11 @@ graph [
     market_cap 0
     name "Akamai Technologies"
     gnn_risk_score 1.0511424619608079E-08
-    raw_risk_score 0.3982123179374399
+    industry "Software - Infrastructure"
+    raw_risk_score 0.31864389909043694
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 24
@@ -291,10 +314,11 @@ graph [
     market_cap 0
     name "Alaska Air Group"
     gnn_risk_score 2.5518568236293504E-07
-    raw_risk_score 0.28054598571780487
+    industry "Airlines"
+    raw_risk_score 0.2263560456563828
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 25
@@ -303,10 +327,11 @@ graph [
     market_cap 0
     name "Albemarle Corporation"
     gnn_risk_score 6.230140570551157E-06
-    raw_risk_score 0.5896455265029045
+    industry "Specialty Chemicals"
+    raw_risk_score 0.49903293396627557
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 26
@@ -315,10 +340,11 @@ graph [
     market_cap 0
     name "Align Technology"
     gnn_risk_score 1.7185640217576292E-06
-    raw_risk_score 0.32118538548888964
+    industry "Medical Instruments &#38; Supplies"
+    raw_risk_score 0.2729059115322694
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 27
@@ -327,10 +353,11 @@ graph [
     market_cap 0
     name "Alphabet Inc. (Class C)"
     gnn_risk_score 4.22935727328877E-06
-    raw_risk_score 0.3324109943742045
+    industry "Internet Content &#38; Information"
+    raw_risk_score 0.28693942808763995
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 28
@@ -339,10 +366,11 @@ graph [
     market_cap 0
     name "Altria"
     gnn_risk_score 2.2703421365122267E-09
-    raw_risk_score 0.1537600285191968
+    industry "Tobacco"
+    raw_risk_score 0.14531273526099786
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 29
@@ -351,10 +379,11 @@ graph [
     market_cap 0
     name "Amazon"
     gnn_risk_score 2.0918541565606574E-07
-    raw_risk_score 0.29180806215621413
+    industry "Internet Retail"
+    raw_risk_score 0.2537815242948782
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 30
@@ -363,10 +392,11 @@ graph [
     market_cap 0
     name "Amcor"
     gnn_risk_score 1.8766558014249313E-06
-    raw_risk_score 0.13683327045097393
+    industry "Packaging &#38; Containers"
+    raw_risk_score 0.12264979745153314
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 31
@@ -375,10 +405,11 @@ graph [
     market_cap 0
     name "Advanced Micro Devices"
     gnn_risk_score 1.6618347586927484E-08
-    raw_risk_score 0.5069724036980483
+    industry "Semiconductors"
+    raw_risk_score 0.41447042252864286
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 32
@@ -387,10 +418,11 @@ graph [
     market_cap 0
     name "Ameren"
     gnn_risk_score 1.1603109584257254E-08
-    raw_risk_score 0.1396052716104346
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.124324387421856
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 33
@@ -399,10 +431,11 @@ graph [
     market_cap 0
     name "American Airlines Group"
     gnn_risk_score 1.358852932753507E-05
-    raw_risk_score 0.3629186247949605
+    industry "Airlines"
+    raw_risk_score 0.30033764409725683
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 34
@@ -411,10 +444,11 @@ graph [
     market_cap 0
     name "American International Group"
     gnn_risk_score 6.091797288831913E-09
-    raw_risk_score 0.16876750097759968
+    industry "Insurance - Diversified"
+    raw_risk_score 0.14140126489648208
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 35
@@ -423,10 +457,11 @@ graph [
     market_cap 0
     name "American Tower"
     gnn_risk_score 3.771159740040275E-08
-    raw_risk_score 0.16213361118177705
+    industry "REIT - Specialty"
+    raw_risk_score 0.143540489127005
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 36
@@ -445,10 +480,11 @@ graph [
     market_cap 0
     name "Ametek"
     gnn_risk_score 0.00016919268819037825
-    raw_risk_score 0.1195796257900995
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.10826797108507999
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 38
@@ -457,10 +493,11 @@ graph [
     market_cap 0
     name "Amgen"
     gnn_risk_score 6.658628990408033E-07
-    raw_risk_score 0.3057157704505298
+    industry "Drug Manufacturers - General"
+    raw_risk_score 0.263575818459007
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 39
@@ -469,10 +506,11 @@ graph [
     market_cap 0
     name "Amphenol"
     gnn_risk_score 3.108835144871591E-08
-    raw_risk_score 0.2838989562452195
+    industry "Electronic Components"
+    raw_risk_score 0.23726068121908273
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 40
@@ -481,10 +519,11 @@ graph [
     market_cap 0
     name "Analog Devices"
     gnn_risk_score 1.4280212781159207E-06
-    raw_risk_score 0.3734308895684447
+    industry "Semiconductors"
+    raw_risk_score 0.33021274925397337
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 41
@@ -503,10 +542,11 @@ graph [
     market_cap 0
     name "Aon plc"
     gnn_risk_score 1.4560721410816768E-06
-    raw_risk_score 0.14002220550602323
+    industry "Insurance Brokers"
+    raw_risk_score 0.1319031678565594
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 43
@@ -515,10 +555,11 @@ graph [
     market_cap 0
     name "Apple Inc."
     gnn_risk_score 9.611732565417697E-08
-    raw_risk_score 0.207379465412252
+    industry "Consumer Electronics"
+    raw_risk_score 0.19659607823648456
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 44
@@ -527,10 +568,11 @@ graph [
     market_cap 0
     name "Applied Materials"
     gnn_risk_score 1.0311415280739311E-05
-    raw_risk_score 0.38006282361102084
+    industry "Semiconductor Equipment &#38; Materials"
+    raw_risk_score 0.3187205824614334
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 45
@@ -539,10 +581,11 @@ graph [
     market_cap 0
     name "Arista Networks"
     gnn_risk_score 9.230742580257356E-05
-    raw_risk_score 0.37509367547149186
+    industry "Computer Hardware"
+    raw_risk_score 0.31389301198127295
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 46
@@ -551,10 +594,11 @@ graph [
     market_cap 0
     name "Assurant"
     gnn_risk_score 5.2972020057495683E-05
-    raw_risk_score 0.10899611430163456
+    industry "Insurance - Property &#38; Casualty"
+    raw_risk_score 0.08577031766581343
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 47
@@ -563,10 +607,11 @@ graph [
     market_cap 0
     name "AT&#38;T Inc."
     gnn_risk_score 0.9997831583023071
-    raw_risk_score 0.1669244188954154
+    industry "Telecom Services"
+    raw_risk_score 0.1574512513680663
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Communication Services"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 48
@@ -575,10 +620,11 @@ graph [
     market_cap 0
     name "Atmos Energy"
     gnn_risk_score 0.9994868040084839
-    raw_risk_score 0.1735670368826856
+    industry "Utilities - Regulated Gas"
+    raw_risk_score 0.16252338998508542
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 49
@@ -587,10 +633,11 @@ graph [
     market_cap 0
     name "Autodesk"
     gnn_risk_score 1.1128188370790326E-09
-    raw_risk_score 0.15904074011290942
+    industry "Software - Application"
+    raw_risk_score 0.14185955305598388
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 50
@@ -599,10 +646,11 @@ graph [
     market_cap 0
     name "AutoZone"
     gnn_risk_score 2.3921710834429177E-08
-    raw_risk_score 0.25845549963382775
+    industry "Auto Parts"
+    raw_risk_score 0.24171054314161253
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 51
@@ -611,10 +659,11 @@ graph [
     market_cap 0
     name "Avery Dennison"
     gnn_risk_score 2.3444412363460287E-05
-    raw_risk_score 0.12569306450512716
+    industry "Packaging &#38; Containers"
+    raw_risk_score 0.10873842178507005
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 52
@@ -623,10 +672,11 @@ graph [
     market_cap 0
     name "Ball Corporation"
     gnn_risk_score 0.9999994039535522
-    raw_risk_score 0.29145653498156393
+    industry "Packaging &#38; Containers"
+    raw_risk_score 0.26428762256712984
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 53
@@ -635,10 +685,11 @@ graph [
     market_cap 0
     name "Bank of America"
     gnn_risk_score 3.203212202151917E-07
-    raw_risk_score 0.11897202330967774
+    industry "Banks - Diversified"
+    raw_risk_score 0.10232042300229549
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 54
@@ -647,10 +698,11 @@ graph [
     market_cap 0
     name "Bath &#38; Body Works, Inc."
     gnn_risk_score 9.13917028810829E-06
-    raw_risk_score 0.777135709679158
+    industry "Specialty Retail"
+    raw_risk_score 0.626416385439718
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 55
@@ -659,10 +711,11 @@ graph [
     market_cap 0
     name "Baxter International"
     gnn_risk_score 2.2617190609253157E-07
-    raw_risk_score 0.2882262299347605
+    industry "Medical Instruments &#38; Supplies"
+    raw_risk_score 0.24891881001004973
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 56
@@ -671,10 +724,11 @@ graph [
     market_cap 0
     name "Becton Dickinson"
     gnn_risk_score 3.090825657636742E-07
-    raw_risk_score 0.23412556328082984
+    industry "Medical Instruments &#38; Supplies"
+    raw_risk_score 0.2122010561652301
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 57
@@ -683,10 +737,11 @@ graph [
     market_cap 0
     name "W. R. Berkley Corporation"
     gnn_risk_score 7.637680391781032E-05
-    raw_risk_score 0.2485659846801226
+    industry "Insurance - Property &#38; Casualty"
+    raw_risk_score 0.22061271632973145
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 58
@@ -695,10 +750,11 @@ graph [
     market_cap 0
     name "Bio-Rad Laboratories"
     gnn_risk_score 4.1904976710860353E-10
-    raw_risk_score 0.2599608379234637
+    industry "Medical Devices"
+    raw_risk_score 0.22029902813946248
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 59
@@ -707,10 +763,11 @@ graph [
     market_cap 0
     name "Bio-Techne"
     gnn_risk_score 0.7098164558410645
-    raw_risk_score 0.34000461075924293
+    industry "Biotechnology"
+    raw_risk_score 0.296222808165995
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 60
@@ -719,10 +776,11 @@ graph [
     market_cap 0
     name "BNY Mellon"
     gnn_risk_score 2.7981201355942176E-07
-    raw_risk_score 0.12604158437472418
+    industry "Banks - Diversified"
+    raw_risk_score 0.11002028129644241
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 61
@@ -731,10 +789,11 @@ graph [
     market_cap 0
     name "BorgWarner Inc."
     gnn_risk_score 0.00026305863866582513
-    raw_risk_score 0.27091728314673613
+    industry "Auto Parts"
+    raw_risk_score 0.23042329055349248
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 62
@@ -743,10 +802,11 @@ graph [
     market_cap 0
     name "BXP, Inc."
     gnn_risk_score 0.00014101267152000219
-    raw_risk_score 0.140534258309931
+    industry "REIT - Office"
+    raw_risk_score 0.11990188321105669
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 63
@@ -755,10 +815,11 @@ graph [
     market_cap 0
     name "Boston Scientific"
     gnn_risk_score 8.210442501876969E-06
-    raw_risk_score 0.14338650263513794
+    industry "Medical Devices"
+    raw_risk_score 0.11997947285973438
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 64
@@ -767,10 +828,11 @@ graph [
     market_cap 0
     name "Brown &#38; Brown"
     gnn_risk_score 0.004201414063572884
-    raw_risk_score 0.21465420576661115
+    industry "Insurance Brokers"
+    raw_risk_score 0.19481532219677375
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 65
@@ -779,6 +841,7 @@ graph [
     market_cap 0
     name "Brown-Forman Corp (Class B)"
     gnn_risk_score 4.633889005845049E-08
+    industry "Beverages - Wineries &#38; Distilleries"
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
   ]
@@ -789,10 +852,11 @@ graph [
     market_cap 0
     name "C.H. Robinson"
     gnn_risk_score 3.8184167351573706E-05
-    raw_risk_score 0.24059375088082302
+    industry "Integrated Freight &#38; Logistics"
+    raw_risk_score 0.2201255279130328
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 67
@@ -801,10 +865,11 @@ graph [
     market_cap 0
     name "Cardinal Health"
     gnn_risk_score 3.341878937135334E-06
-    raw_risk_score 0.13950691999861753
+    industry "Medical Distribution"
+    raw_risk_score 0.12659495885542785
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 68
@@ -813,10 +878,11 @@ graph [
     market_cap 0
     name "CarMax, Inc."
     gnn_risk_score 4.771709996020945E-07
-    raw_risk_score 0.7921344894970783
+    industry "Auto &#38; Truck Dealerships"
+    raw_risk_score 0.650109074778057
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 69
@@ -825,10 +891,11 @@ graph [
     market_cap 0
     name "Carnival"
     gnn_risk_score 3.3646942938503344E-06
-    raw_risk_score 0.3754098416591627
+    industry "Travel Services"
+    raw_risk_score 0.3064665437196285
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 70
@@ -837,10 +904,11 @@ graph [
     market_cap 0
     name "Carrier Global"
     gnn_risk_score 0.9189554452896118
-    raw_risk_score 0.2546675722844967
+    industry "Building Products &#38; Equipment"
+    raw_risk_score 0.22119643216855978
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 71
@@ -859,10 +927,11 @@ graph [
     market_cap 0
     name "Caterpillar Inc."
     gnn_risk_score 0.9963647127151489
-    raw_risk_score 0.1831578452651357
+    industry "Farm &#38; Heavy Construction Machinery"
+    raw_risk_score 0.1525448990605123
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 73
@@ -871,10 +940,11 @@ graph [
     market_cap 0
     name "Cboe Global Markets"
     gnn_risk_score 5.843202961841598E-05
-    raw_risk_score 0.12450835512490419
+    industry "Financial Data &#38; Stock Exchanges"
+    raw_risk_score 0.11651600230122408
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 74
@@ -883,10 +953,11 @@ graph [
     market_cap 0
     name "CBRE Group"
     gnn_risk_score 7.211271224605298E-08
-    raw_risk_score 0.22540757430619263
+    industry "Real Estate Services"
+    raw_risk_score 0.20222565464370557
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 75
@@ -895,10 +966,11 @@ graph [
     market_cap 0
     name "CDW Corporation"
     gnn_risk_score 2.94306056304941E-13
-    raw_risk_score 0.27381943018474314
+    industry "Information Technology Services"
+    raw_risk_score 0.2212457494702438
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 76
@@ -907,10 +979,11 @@ graph [
     market_cap 0
     name "Centene Corporation"
     gnn_risk_score 8.054507105725861E-08
-    raw_risk_score 0.43599871276642943
+    industry "Healthcare Plans"
+    raw_risk_score 0.3664199001067635
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 77
@@ -919,10 +992,11 @@ graph [
     market_cap 0
     name "CenterPoint Energy"
     gnn_risk_score 1.44484024744429E-08
-    raw_risk_score 0.07802318422974144
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.07164312690674135
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 78
@@ -941,10 +1015,11 @@ graph [
     market_cap 0
     name "CF Industries"
     gnn_risk_score 3.2074033242679434E-06
-    raw_risk_score 0.23321899700530138
+    industry "Agricultural Inputs"
+    raw_risk_score 0.20031627120828946
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 80
@@ -953,10 +1028,11 @@ graph [
     market_cap 0
     name "Charles River Laboratories"
     gnn_risk_score 2.3579846128995996E-06
-    raw_risk_score 0.2808659744270018
+    industry "Diagnostics &#38; Research"
+    raw_risk_score 0.23907200500977918
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 81
@@ -965,10 +1041,11 @@ graph [
     market_cap 0
     name "Charles Schwab Corporation"
     gnn_risk_score 3.1835671876478955E-09
-    raw_risk_score 0.1740724377440267
+    industry "Capital Markets"
+    raw_risk_score 0.15729661857275856
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 82
@@ -977,10 +1054,11 @@ graph [
     market_cap 0
     name "Chipotle Mexican Grill"
     gnn_risk_score 5.8698191423900425E-05
-    raw_risk_score 0.38620481335970197
+    industry "Restaurants"
+    raw_risk_score 0.3329877158209946
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 83
@@ -989,10 +1067,11 @@ graph [
     market_cap 0
     name "Church &#38; Dwight"
     gnn_risk_score 5.8339708175481064E-08
-    raw_risk_score 0.10232261955333265
+    industry "Household &#38; Personal Products"
+    raw_risk_score 0.0896311363747562
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 84
@@ -1001,10 +1080,11 @@ graph [
     market_cap 0
     name "Cigna"
     gnn_risk_score 0.9998378157615662
-    raw_risk_score 0.3187312405831896
+    industry "Healthcare Plans"
+    raw_risk_score 0.2775515081670999
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 85
@@ -1013,10 +1093,11 @@ graph [
     market_cap 0
     name "Cintas"
     gnn_risk_score 8.78343087151734E-09
-    raw_risk_score 0.0868304669813274
+    industry "Specialty Business Services"
+    raw_risk_score 0.07822060871194358
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 86
@@ -1025,10 +1106,11 @@ graph [
     market_cap 0
     name "Citigroup"
     gnn_risk_score 0.9978252053260803
-    raw_risk_score 0.13979196814657557
+    industry "Banks - Diversified"
+    raw_risk_score 0.12130230003228665
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 87
@@ -1037,10 +1119,11 @@ graph [
     market_cap 0
     name "CME Group"
     gnn_risk_score 3.684508476098358E-09
-    raw_risk_score 0.11700648768652541
+    industry "Financial Data &#38; Stock Exchanges"
+    raw_risk_score 0.10247434978864167
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 88
@@ -1049,10 +1132,11 @@ graph [
     market_cap 0
     name "CMS Energy"
     gnn_risk_score 4.101253580302E-05
-    raw_risk_score 0.13744259301522796
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.12207293935810318
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 89
@@ -1061,10 +1145,11 @@ graph [
     market_cap 0
     name "Cognizant"
     gnn_risk_score 1.7070082094505779E-06
-    raw_risk_score 0.26950969019876014
+    industry "Information Technology Services"
+    raw_risk_score 0.24149582225187594
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 90
@@ -1073,10 +1158,11 @@ graph [
     market_cap 0
     name "Conagra Brands"
     gnn_risk_score 1.4842464679531986E-06
-    raw_risk_score 0.21572756762125786
+    industry "Packaged Foods"
+    raw_risk_score 0.1964402630124098
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 91
@@ -1085,10 +1171,11 @@ graph [
     market_cap 0
     name "Constellation Brands"
     gnn_risk_score 3.021168879513425E-07
-    raw_risk_score 0.2546345333539246
+    industry "Beverages - Brewers"
+    raw_risk_score 0.23585753611031585
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 92
@@ -1097,10 +1184,11 @@ graph [
     market_cap 0
     name "Copart"
     gnn_risk_score 2.189695607057729E-07
-    raw_risk_score 0.30809530744467717
+    industry "Specialty Business Services"
+    raw_risk_score 0.2800848478489366
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 93
@@ -1109,10 +1197,11 @@ graph [
     market_cap 0
     name "CoStar Group"
     gnn_risk_score 5.964525939816667E-08
-    raw_risk_score 0.17614507434019966
+    industry "Real Estate Services"
+    raw_risk_score 0.149366250397312
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 94
@@ -1121,10 +1210,11 @@ graph [
     market_cap 0
     name "Coterra"
     gnn_risk_score 8.997352551887161E-08
-    raw_risk_score 0.23967274815768333
+    industry "Oil &#38; Gas E&#38;P"
+    raw_risk_score 0.20417245361751632
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 95
@@ -1133,10 +1223,11 @@ graph [
     market_cap 0
     name "Crown Castle"
     gnn_risk_score 2.8914244332156613E-09
-    raw_risk_score 0.22174563055462332
+    industry "REIT - Specialty"
+    raw_risk_score 0.19453276139699782
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 96
@@ -1145,10 +1236,11 @@ graph [
     market_cap 0
     name "CSX Corporation"
     gnn_risk_score 1.5440553280399172E-09
-    raw_risk_score 0.10773781863784299
+    industry "Railroads"
+    raw_risk_score 0.09418708207078233
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 97
@@ -1157,10 +1249,11 @@ graph [
     market_cap 0
     name "Cummins"
     gnn_risk_score 1.6213246567531314E-07
-    raw_risk_score 0.2427522122298093
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.20611505647923106
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 98
@@ -1169,10 +1262,11 @@ graph [
     market_cap 0
     name "CVS Health"
     gnn_risk_score 0.9998949766159058
-    raw_risk_score 0.16265809178055188
+    industry "Healthcare Plans"
+    raw_risk_score 0.14212683266200687
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 99
@@ -1181,10 +1275,11 @@ graph [
     market_cap 0
     name "D. R. Horton"
     gnn_risk_score 4.513702151598409E-06
-    raw_risk_score 0.34264190889555685
+    industry "Residential Construction"
+    raw_risk_score 0.29752967876461334
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 100
@@ -1193,10 +1288,11 @@ graph [
     market_cap 0
     name "Danaher Corporation"
     gnn_risk_score 1.1688291223777014E-08
-    raw_risk_score 0.2213262054705859
+    industry "Diagnostics &#38; Research"
+    raw_risk_score 0.20495464238040184
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 101
@@ -1205,10 +1301,11 @@ graph [
     market_cap 0
     name "Darden Restaurants"
     gnn_risk_score 0.9998464584350586
-    raw_risk_score 0.1671321467693535
+    industry "Restaurants"
+    raw_risk_score 0.1386894033288723
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 102
@@ -1217,10 +1314,11 @@ graph [
     market_cap 0
     name "DaVita"
     gnn_risk_score 2.4518478312529624E-05
-    raw_risk_score 0.17660128331030145
+    industry "Medical Care Facilities"
+    raw_risk_score 0.14819406252091188
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 103
@@ -1229,10 +1327,11 @@ graph [
     market_cap 0
     name "Dentsply Sirona"
     gnn_risk_score 2.9104768373144907E-07
-    raw_risk_score 0.3924398569536956
+    industry "Medical Instruments &#38; Supplies"
+    raw_risk_score 0.31605571097296226
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 104
@@ -1241,10 +1340,11 @@ graph [
     market_cap 0
     name "Devon Energy"
     gnn_risk_score 8.69891607635509E-08
-    raw_risk_score 0.313743839390223
+    industry "Oil &#38; Gas E&#38;P"
+    raw_risk_score 0.28715938285659903
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 105
@@ -1253,10 +1353,11 @@ graph [
     market_cap 0
     name "DexCom, Inc."
     gnn_risk_score 8.476527924017319E-09
-    raw_risk_score 0.4314726657206206
+    industry "Medical Devices"
+    raw_risk_score 0.3779040751077301
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Healthcare"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 106
@@ -1265,10 +1366,11 @@ graph [
     market_cap 0
     name "Diamondback Energy"
     gnn_risk_score 4.2016927181975916E-05
-    raw_risk_score 0.28359566998668145
+    industry "Oil &#38; Gas E&#38;P"
+    raw_risk_score 0.25483085958241236
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 107
@@ -1277,10 +1379,11 @@ graph [
     market_cap 0
     name "Digital Realty"
     gnn_risk_score 0.0001819676108425483
-    raw_risk_score 0.2802127922608
+    industry "REIT - Specialty"
+    raw_risk_score 0.2590247106926813
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 108
@@ -1299,10 +1402,11 @@ graph [
     market_cap 0
     name "Dollar General"
     gnn_risk_score 1.1341811934073576E-09
-    raw_risk_score 0.34936590325454864
+    industry "Discount Stores"
+    raw_risk_score 0.3108788454313287
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 110
@@ -1311,10 +1415,11 @@ graph [
     market_cap 0
     name "Dollar Tree"
     gnn_risk_score 2.688577751541743E-06
-    raw_risk_score 0.2748347789564435
+    industry "Discount Stores"
+    raw_risk_score 0.22999571129349272
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 111
@@ -1323,10 +1428,11 @@ graph [
     market_cap 0
     name "Domino's"
     gnn_risk_score 1.1214630148970173E-06
-    raw_risk_score 0.20703094530757915
+    industry "Restaurants"
+    raw_risk_score 0.18544419632589282
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 112
@@ -1335,10 +1441,11 @@ graph [
     market_cap 0
     name "Dover Corporation"
     gnn_risk_score 8.016519132070243E-05
-    raw_risk_score 0.15216244997261927
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.13766034998140406
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 113
@@ -1347,10 +1454,11 @@ graph [
     market_cap 0
     name "Dow Inc."
     gnn_risk_score 0.9999566674232483
-    raw_risk_score 0.35874409260132023
+    industry "Chemicals"
+    raw_risk_score 0.30616737640690067
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 114
@@ -1359,10 +1467,11 @@ graph [
     market_cap 0
     name "Duke Energy"
     gnn_risk_score 6.027645440553897E-07
-    raw_risk_score 0.1064681691006639
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.09679131499332905
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 115
@@ -1371,10 +1480,11 @@ graph [
     market_cap 0
     name "Eaton Corporation"
     gnn_risk_score 1.2752659372949893E-08
-    raw_risk_score 0.34038968529890923
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.3002397469057576
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 116
@@ -1383,10 +1493,11 @@ graph [
     market_cap 0
     name "eBay Inc."
     gnn_risk_score 1.696595290923142E-07
-    raw_risk_score 0.2126339232762046
+    industry "Internet Retail"
+    raw_risk_score 0.1835850601540813
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 117
@@ -1395,10 +1506,11 @@ graph [
     market_cap 0
     name "Ecolab"
     gnn_risk_score 3.638231191871455E-06
-    raw_risk_score 0.23034632847987058
+    industry "Specialty Chemicals"
+    raw_risk_score 0.21558744068467275
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 118
@@ -1407,10 +1519,11 @@ graph [
     market_cap 0
     name "Edison International"
     gnn_risk_score 8.894198981579393E-05
-    raw_risk_score 0.14331505224990057
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.12585295946927208
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 119
@@ -1419,10 +1532,11 @@ graph [
     market_cap 0
     name "Edwards Lifesciences"
     gnn_risk_score 2.722420955336702E-09
-    raw_risk_score 0.1503549280978809
+    industry "Medical Devices"
+    raw_risk_score 0.13102141536061046
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 120
@@ -1431,10 +1545,11 @@ graph [
     market_cap 0
     name "Electronic Arts"
     gnn_risk_score 0.9996801018714905
-    raw_risk_score 0.06965419757442591
+    industry "Electronic Gaming &#38; Multimedia"
+    raw_risk_score 0.07680005173591024
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 121
@@ -1443,10 +1558,11 @@ graph [
     market_cap 0
     name "Elevance Health"
     gnn_risk_score 2.022567286985577E-07
-    raw_risk_score 0.30878858716549507
+    industry "Healthcare Plans"
+    raw_risk_score 0.2688211710717864
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 122
@@ -1455,10 +1571,11 @@ graph [
     market_cap 0
     name "Emerson Electric"
     gnn_risk_score 3.5119839481012605E-07
-    raw_risk_score 0.21203446844379192
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.17936093440084633
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 123
@@ -1467,10 +1584,11 @@ graph [
     market_cap 0
     name "Enphase Energy"
     gnn_risk_score 7.826647561159916E-07
-    raw_risk_score 0.5775209471069531
+    industry "Solar"
+    raw_risk_score 0.483424435808192
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 124
@@ -1479,10 +1597,11 @@ graph [
     market_cap 0
     name "Entergy"
     gnn_risk_score 5.001514225000392E-08
-    raw_risk_score 0.1473046098704917
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.13260993354861195
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 125
@@ -1491,10 +1610,11 @@ graph [
     market_cap 0
     name "Est&#233;e Lauder Companies (The)"
     gnn_risk_score 0.9999983310699463
-    raw_risk_score 0.294157047296834
+    industry "Household &#38; Personal Products"
+    raw_risk_score 0.25119363007250867
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 126
@@ -1503,10 +1623,11 @@ graph [
     market_cap 0
     name "Etsy, Inc."
     gnn_risk_score 1.3568208032666007E-06
-    raw_risk_score 0.4495143211020628
+    industry "Internet Retail"
+    raw_risk_score 0.3733748848070792
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 127
@@ -1525,10 +1646,11 @@ graph [
     market_cap 0
     name "Evergy"
     gnn_risk_score 1.3238133760751225E-05
-    raw_risk_score 0.10832055038370642
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.09497945779180429
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 129
@@ -1537,10 +1659,11 @@ graph [
     market_cap 0
     name "Eversource Energy"
     gnn_risk_score 1.7085419585782802E-06
-    raw_risk_score 0.40948953815795086
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.34760768176287427
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 130
@@ -1549,10 +1672,11 @@ graph [
     market_cap 0
     name "Exelon"
     gnn_risk_score 7.90083198864977E-09
-    raw_risk_score 0.12114573712597523
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.10458255578205715
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 131
@@ -1561,10 +1685,11 @@ graph [
     market_cap 0
     name "Expeditors International"
     gnn_risk_score 9.477675533275942E-09
-    raw_risk_score 0.36235149871000344
+    industry "Integrated Freight &#38; Logistics"
+    raw_risk_score 0.316888327008477
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 132
@@ -1573,10 +1698,11 @@ graph [
     market_cap 0
     name "Extra Space Storage"
     gnn_risk_score 4.713107273346395E-07
-    raw_risk_score 0.14893792045731263
+    industry "REIT - Industrial"
+    raw_risk_score 0.129215154765591
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 133
@@ -1585,10 +1711,11 @@ graph [
     market_cap 0
     name "ExxonMobil"
     gnn_risk_score 2.1324744636785908E-07
-    raw_risk_score 0.10718134774217253
+    industry "Oil &#38; Gas Integrated"
+    raw_risk_score 0.0942266492591449
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 134
@@ -1597,10 +1724,11 @@ graph [
     market_cap 0
     name "Fastenal"
     gnn_risk_score 0.9743404388427734
-    raw_risk_score 0.16893311956236404
+    industry "Industrial Distribution"
+    raw_risk_score 0.15622992030379193
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 135
@@ -1609,10 +1737,11 @@ graph [
     market_cap 0
     name "Federal Realty Investment Trust"
     gnn_risk_score 1.0731669997099402E-09
-    raw_risk_score 0.12855228681130576
+    industry "REIT - Retail"
+    raw_risk_score 0.11748933671920993
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 136
@@ -1621,10 +1750,11 @@ graph [
     market_cap 0
     name "FedEx Corporation"
     gnn_risk_score 1.3402659533312544E-05
-    raw_risk_score 0.30846723415444754
+    industry "Integrated Freight &#38; Logistics"
+    raw_risk_score 0.27875434761174483
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Industrials"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 137
@@ -1633,10 +1763,11 @@ graph [
     market_cap 0
     name "Fifth Third Bancorp"
     gnn_risk_score 5.920636897416287E-11
-    raw_risk_score 0.15209306919695237
+    industry "Banks - Regional"
+    raw_risk_score 0.1337084159600798
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 138
@@ -1645,10 +1776,11 @@ graph [
     market_cap 0
     name "Fiserv, Inc."
     gnn_risk_score 0.0012693422613665462
-    raw_risk_score 0.25123461709962036
+    industry "Information Technology Services"
+    raw_risk_score 0.17126902007133568
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 139
@@ -1667,10 +1799,11 @@ graph [
     market_cap 0
     name "FMC Corporation"
     gnn_risk_score 3.446756124958483E-08
-    raw_risk_score 0.40706754456695915
+    industry "Agricultural Inputs"
+    raw_risk_score 0.32658607040933735
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 141
@@ -1679,10 +1812,11 @@ graph [
     market_cap 0
     name "Fortinet"
     gnn_risk_score 9.258551472157706E-07
-    raw_risk_score 0.20628422884697709
+    industry "Software - Infrastructure"
+    raw_risk_score 0.1704193600892418
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 142
@@ -1691,10 +1825,11 @@ graph [
     market_cap 0
     name "Fortive"
     gnn_risk_score 1.2172125707365922E-06
-    raw_risk_score 0.1780214062230402
+    industry "Scientific &#38; Technical Instruments"
+    raw_risk_score 0.1609228723516764
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 143
@@ -1703,10 +1838,11 @@ graph [
     market_cap 0
     name "Franklin Resources"
     gnn_risk_score 0.9976280927658081
-    raw_risk_score 0.17678390597901666
+    industry "Asset Management"
+    raw_risk_score 0.14575042509860742
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 144
@@ -1715,10 +1851,11 @@ graph [
     market_cap 0
     name "Freeport-McMoRan"
     gnn_risk_score 6.747323823219631E-06
-    raw_risk_score 0.3144485145756015
+    industry "Copper"
+    raw_risk_score 0.26487372983452506
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 145
@@ -1727,10 +1864,11 @@ graph [
     market_cap 0
     name "Garmin"
     gnn_risk_score 4.466446625883691E-06
-    raw_risk_score 0.18478175747469322
+    industry "Scientific &#38; Technical Instruments"
+    raw_risk_score 0.16726025445903525
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 146
@@ -1739,10 +1877,11 @@ graph [
     market_cap 0
     name "Gartner"
     gnn_risk_score 7.297954880414181E-07
-    raw_risk_score 0.2865588858880268
+    industry "Information Technology Services"
+    raw_risk_score 0.23390604013943755
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 147
@@ -1751,10 +1890,11 @@ graph [
     market_cap 0
     name "Generac"
     gnn_risk_score 2.150451905436057E-08
-    raw_risk_score 0.357468038430123
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.2936362723681187
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 148
@@ -1763,10 +1903,11 @@ graph [
     market_cap 0
     name "General Mills"
     gnn_risk_score 1.4529878171742894E-05
-    raw_risk_score 0.1489511122891271
+    industry "Packaged Foods"
+    raw_risk_score 0.1345432750403825
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 149
@@ -1775,10 +1916,11 @@ graph [
     market_cap 0
     name "Gilead Sciences"
     gnn_risk_score 0.00011260734754614532
-    raw_risk_score 0.24303201146706782
+    industry "Drug Manufacturers - General"
+    raw_risk_score 0.2144064016861698
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 150
@@ -1787,10 +1929,11 @@ graph [
     market_cap 0
     name "Globe Life Inc."
     gnn_risk_score 2.2617504669142363E-07
-    raw_risk_score 0.09457042766561015
+    industry "Insurance - Life"
+    raw_risk_score 0.08307345938337617
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Financial Services"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 151
@@ -1799,10 +1942,11 @@ graph [
     market_cap 0
     name "Global Payments"
     gnn_risk_score 9.751265395152586E-08
-    raw_risk_score 0.18700293429343254
+    industry "Specialty Business Services"
+    raw_risk_score 0.15601712470480278
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 152
@@ -1811,10 +1955,11 @@ graph [
     market_cap 0
     name "Goldman Sachs"
     gnn_risk_score 3.9659447947926196E-10
-    raw_risk_score 0.19160348723487
+    industry "Capital Markets"
+    raw_risk_score 0.16161826721820477
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 153
@@ -1823,10 +1968,11 @@ graph [
     market_cap 0
     name "W. W. Grainger"
     gnn_risk_score 6.309896605216636E-08
-    raw_risk_score 0.11260834694249423
+    industry "Industrial Distribution"
+    raw_risk_score 0.09901250007484949
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 154
@@ -1835,10 +1981,11 @@ graph [
     market_cap 0
     name "Hartford (The)"
     gnn_risk_score 6.586759582205559E-08
-    raw_risk_score 0.18776777946090073
+    industry "Insurance - Property &#38; Casualty"
+    raw_risk_score 0.19098948053931764
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 155
@@ -1847,10 +1994,11 @@ graph [
     market_cap 0
     name "Hasbro, Inc."
     gnn_risk_score 4.160759736748787E-09
-    raw_risk_score 0.25244861870563234
+    industry "Leisure"
+    raw_risk_score 0.23503450218248897
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Consumer Cyclical"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 156
@@ -1859,10 +2007,11 @@ graph [
     market_cap 0
     name "HCA Healthcare"
     gnn_risk_score 2.699309220588475E-07
-    raw_risk_score 0.31563264696368265
+    industry "Medical Care Facilities"
+    raw_risk_score 0.28954582708693416
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 157
@@ -1881,10 +2030,11 @@ graph [
     market_cap 0
     name "Henry Schein"
     gnn_risk_score 1.1484924471005797E-05
-    raw_risk_score 0.2887870585028935
+    industry "Medical Distribution"
+    raw_risk_score 0.2325304182246696
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 159
@@ -1903,10 +2053,11 @@ graph [
     market_cap 0
     name "Hilton Worldwide"
     gnn_risk_score 2.1049424958619056E-06
-    raw_risk_score 0.2138463704707027
+    industry "Lodging"
+    raw_risk_score 0.18845018020668874
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 161
@@ -1915,10 +2066,11 @@ graph [
     market_cap 0
     name "Hologic"
     gnn_risk_score 2.4441815238418485E-10
-    raw_risk_score 0.08491084125368027
+    industry "Medical Instruments &#38; Supplies"
+    raw_risk_score 0.09258820164011815
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 162
@@ -1927,10 +2079,11 @@ graph [
     market_cap 0
     name "Home Depot (The)"
     gnn_risk_score 5.5618789573941285E-09
-    raw_risk_score 0.25567289344711497
+    industry "Home Improvement Retail"
+    raw_risk_score 0.21695032240442877
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 163
@@ -1939,10 +2092,11 @@ graph [
     market_cap 0
     name "Honeywell"
     gnn_risk_score 0.00012622990470845252
-    raw_risk_score 0.15475279362792832
+    industry "Conglomerates"
+    raw_risk_score 0.13934055479797938
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 164
@@ -1951,10 +2105,11 @@ graph [
     market_cap 0
     name "Hormel Foods Corporation"
     gnn_risk_score 1.1630187657374336E-07
-    raw_risk_score 0.20465823786031856
+    industry "Packaged Foods"
+    raw_risk_score 0.19432928314721876
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Consumer Defensive"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 165
@@ -1963,10 +2118,11 @@ graph [
     market_cap 0
     name "Host Hotels &#38; Resorts"
     gnn_risk_score 2.6261975705210716E-08
-    raw_risk_score 0.281474028001932
+    industry "REIT - Hotel &#38; Motel"
+    raw_risk_score 0.24043539075847276
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 166
@@ -1975,10 +2131,11 @@ graph [
     market_cap 0
     name "Howmet Aerospace"
     gnn_risk_score 1.2708998838206753E-05
-    raw_risk_score 0.2186690090535468
+    industry "Aerospace &#38; Defense"
+    raw_risk_score 0.2003707584118694
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 167
@@ -1987,10 +2144,11 @@ graph [
     market_cap 0
     name "HP Inc."
     gnn_risk_score 2.738664989010431E-06
-    raw_risk_score 0.316569050693049
+    industry "Computer Hardware"
+    raw_risk_score 0.2626870193814011
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 168
@@ -1999,10 +2157,11 @@ graph [
     market_cap 0
     name "Humana"
     gnn_risk_score 9.588746685551541E-09
-    raw_risk_score 0.2909972300635152
+    industry "Healthcare Plans"
+    raw_risk_score 0.23853047821574636
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 169
@@ -2011,10 +2170,11 @@ graph [
     market_cap 0
     name "IBM"
     gnn_risk_score 0.9971138834953308
-    raw_risk_score 0.18518691916531055
+    industry "Information Technology Services"
+    raw_risk_score 0.15586389275395046
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 170
@@ -2023,10 +2183,11 @@ graph [
     market_cap 0
     name "IDEX Corporation"
     gnn_risk_score 2.6044889978038555E-07
-    raw_risk_score 0.21054262877062785
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.18875314607585955
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 171
@@ -2035,10 +2196,11 @@ graph [
     market_cap 0
     name "Idexx Laboratories"
     gnn_risk_score 7.190851646771135E-14
-    raw_risk_score 0.4339349718233547
+    industry "Diagnostics &#38; Research"
+    raw_risk_score 0.35054716069939984
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 172
@@ -2047,10 +2209,11 @@ graph [
     market_cap 0
     name "Illinois Tool Works"
     gnn_risk_score 4.310978596322457E-08
-    raw_risk_score 0.13050549218951632
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.11782021252736177
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 173
@@ -2059,10 +2222,11 @@ graph [
     market_cap 0
     name "Illumina, Inc."
     gnn_risk_score 1.6991692973533645E-05
-    raw_risk_score 0.2870302313727104
+    industry "Diagnostics &#38; Research"
+    raw_risk_score 0.25012727229067394
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 174
@@ -2071,10 +2235,11 @@ graph [
     market_cap 0
     name "Intel"
     gnn_risk_score 2.87124606757061E-07
-    raw_risk_score 0.41286424227085394
+    industry "Semiconductors"
+    raw_risk_score 0.3353117336577632
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 175
@@ -2083,10 +2248,11 @@ graph [
     market_cap 0
     name "Intercontinental Exchange"
     gnn_risk_score 0.9994457960128784
-    raw_risk_score 0.1927875373326069
+    industry "Financial Data &#38; Stock Exchanges"
+    raw_risk_score 0.1802344700087808
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 176
@@ -2095,10 +2261,11 @@ graph [
     market_cap 0
     name "International Paper"
     gnn_risk_score 1.713433164240996E-07
-    raw_risk_score 0.2992306048152226
+    industry "Packaging &#38; Containers"
+    raw_risk_score 0.25534574047981545
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 177
@@ -2107,10 +2274,11 @@ graph [
     market_cap 0
     name "Interpublic Group of Companies (The)"
     gnn_risk_score 2.9608345357701182E-06
-    raw_risk_score 0.19395854199821508
+    industry "Advertising Agencies"
+    raw_risk_score 0.16446049960979095
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 178
@@ -2119,10 +2287,11 @@ graph [
     market_cap 0
     name "International Flavors &#38; Fragrances"
     gnn_risk_score 7.60787699505272E-09
-    raw_risk_score 0.3382250054071923
+    industry "Specialty Chemicals"
+    raw_risk_score 0.2996402406976918
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 179
@@ -2131,10 +2300,11 @@ graph [
     market_cap 0
     name "Intuit"
     gnn_risk_score 1.462014733988326E-05
-    raw_risk_score 0.2096102019688664
+    industry "Software - Application"
+    raw_risk_score 0.18222663617463555
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 180
@@ -2143,10 +2313,11 @@ graph [
     market_cap 0
     name "Intuitive Surgical"
     gnn_risk_score 2.627251305398204E-09
-    raw_risk_score 0.18907553754864162
+    industry "Medical Instruments &#38; Supplies"
+    raw_risk_score 0.16101593505176884
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 181
@@ -2155,10 +2326,11 @@ graph [
     market_cap 0
     name "Invesco"
     gnn_risk_score 7.544121672253823E-06
-    raw_risk_score 0.24150845626586687
+    industry "Asset Management"
+    raw_risk_score 0.20974646915042083
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 182
@@ -2167,10 +2339,11 @@ graph [
     market_cap 0
     name "IQVIA Holdings Inc."
     gnn_risk_score 3.762764606562996E-07
-    raw_risk_score 0.25403776711169895
+    industry "Diagnostics &#38; Research"
+    raw_risk_score 0.23285368878850554
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Healthcare"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 183
@@ -2179,10 +2352,11 @@ graph [
     market_cap 0
     name "Jabil"
     gnn_risk_score 0.9998247027397156
-    raw_risk_score 0.3203654554297809
+    industry "Electronic Components"
+    raw_risk_score 0.26790478339798895
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 184
@@ -2191,10 +2365,11 @@ graph [
     market_cap 0
     name "Jacobs Solutions"
     gnn_risk_score 0.9927002191543579
-    raw_risk_score 0.4475040134391991
+    industry "Engineering &#38; Construction"
+    raw_risk_score 0.3918329059885848
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 185
@@ -2203,10 +2378,11 @@ graph [
     market_cap 0
     name "Johnson &#38; Johnson"
     gnn_risk_score 2.9729619200224988E-05
-    raw_risk_score 0.321251795240289
+    industry "Drug Manufacturers - General"
+    raw_risk_score 0.3118696415413616
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 186
@@ -2215,10 +2391,11 @@ graph [
     market_cap 0
     name "Johnson Controls"
     gnn_risk_score 7.561752113360853E-08
-    raw_risk_score 0.3758240264150255
+    industry "Building Products &#38; Equipment"
+    raw_risk_score 0.3322937438215192
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 187
@@ -2227,10 +2404,11 @@ graph [
     market_cap 0
     name "JPMorgan Chase"
     gnn_risk_score 4.0544978219259065E-06
-    raw_risk_score 0.17027115108102836
+    industry "Banks - Diversified"
+    raw_risk_score 0.15020656222938222
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 188
@@ -2249,10 +2427,11 @@ graph [
     market_cap 0
     name "Kellanova"
     gnn_risk_score 0.9720585346221924
-    raw_risk_score 0.06880757062463251
+    industry "Packaged Foods"
+    raw_risk_score 0.1868146043801545
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 190
@@ -2261,10 +2440,11 @@ graph [
     market_cap 0
     name "Keysight Technologies"
     gnn_risk_score 2.893622877309099E-05
-    raw_risk_score 0.3915622978437009
+    industry "Scientific &#38; Technical Instruments"
+    raw_risk_score 0.33157480284646895
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 191
@@ -2273,10 +2453,11 @@ graph [
     market_cap 0
     name "Kinder Morgan"
     gnn_risk_score 6.461113457589818E-07
-    raw_risk_score 0.115190326696204
+    industry "Oil &#38; Gas Midstream"
+    raw_risk_score 0.10294305636745858
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 192
@@ -2285,10 +2466,11 @@ graph [
     market_cap 0
     name "L3Harris"
     gnn_risk_score 2.5683588589231476E-10
-    raw_risk_score 0.30839374840121164
+    industry "Aerospace &#38; Defense"
+    raw_risk_score 0.2854072265508745
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 193
@@ -2297,10 +2479,11 @@ graph [
     market_cap 0
     name "Labcorp"
     gnn_risk_score 4.443443657464741E-08
-    raw_risk_score 0.21325260576392605
+    industry "Diagnostics &#38; Research"
+    raw_risk_score 0.189042255273906
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 194
@@ -2309,10 +2492,11 @@ graph [
     market_cap 0
     name "Las Vegas Sands"
     gnn_risk_score 3.674888375826413E-07
-    raw_risk_score 0.2516340101441791
+    industry "Resorts &#38; Casinos"
+    raw_risk_score 0.22494533936165573
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 195
@@ -2321,10 +2505,11 @@ graph [
     market_cap 0
     name "Leidos"
     gnn_risk_score 8.723211522010388E-07
-    raw_risk_score 0.24062668192520364
+    industry "Information Technology Services"
+    raw_risk_score 0.21750315011341034
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 196
@@ -2333,10 +2518,11 @@ graph [
     market_cap 0
     name "Lennar"
     gnn_risk_score 6.523301010474825E-08
-    raw_risk_score 0.3298341807161187
+    industry "Residential Construction"
+    raw_risk_score 0.2777250686458956
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 197
@@ -2345,10 +2531,11 @@ graph [
     market_cap 0
     name "Lincoln National Corp"
     gnn_risk_score 4.7350105887744576E-05
-    raw_risk_score 0.1561329900238187
+    industry "Insurance - Life"
+    raw_risk_score 0.13179322807109659
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 198
@@ -2357,10 +2544,11 @@ graph [
     market_cap 0
     name "Linde plc"
     gnn_risk_score 5.355702228371229E-07
-    raw_risk_score 0.17465915789431555
+    industry "Specialty Chemicals"
+    raw_risk_score 0.16485784839415996
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 199
@@ -2369,10 +2557,11 @@ graph [
     market_cap 0
     name "Live Nation Entertainment"
     gnn_risk_score 2.7886337683469264E-09
-    raw_risk_score 0.4303388996874081
+    industry "Entertainment"
+    raw_risk_score 0.37197089778161746
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 200
@@ -2381,10 +2570,11 @@ graph [
     market_cap 0
     name "LKQ Corporation"
     gnn_risk_score 1.774249192010302E-08
-    raw_risk_score 0.250936412455135
+    industry "Auto Parts"
+    raw_risk_score 0.21833424315350963
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 201
@@ -2393,10 +2583,11 @@ graph [
     market_cap 0
     name "Lockheed Martin"
     gnn_risk_score 2.348822272324469E-05
-    raw_risk_score 0.19277390836270253
+    industry "Aerospace &#38; Defense"
+    raw_risk_score 0.15104097896960988
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 202
@@ -2405,10 +2596,11 @@ graph [
     market_cap 0
     name "Loews Corporation"
     gnn_risk_score 0.9964472055435181
-    raw_risk_score 0.17405214348413856
+    industry "Insurance - Property &#38; Casualty"
+    raw_risk_score 0.17171649926432198
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 203
@@ -2417,10 +2609,11 @@ graph [
     market_cap 0
     name "Lowe's Companies Inc."
     gnn_risk_score 0.9913036823272705
-    raw_risk_score 0.25559469204926527
+    industry "Home Improvement Retail"
+    raw_risk_score 0.22256726128719323
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Consumer Cyclical"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 204
@@ -2429,10 +2622,11 @@ graph [
     market_cap 0
     name "Lululemon Athletica"
     gnn_risk_score 4.982303991596382E-08
-    raw_risk_score 0.3310378143475251
+    industry "Apparel Retail"
+    raw_risk_score 0.2878313321694554
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 205
@@ -2441,10 +2635,11 @@ graph [
     market_cap 0
     name "M&#38;T Bank"
     gnn_risk_score 1.9305672616098946E-09
-    raw_risk_score 0.14866463484708348
+    industry "Banks - Regional"
+    raw_risk_score 0.1453140287393468
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 206
@@ -2463,10 +2658,11 @@ graph [
     market_cap 0
     name "Marsh McLennan"
     gnn_risk_score 3.420101620577043E-06
-    raw_risk_score 0.18554023494736416
+    industry "Insurance Brokers"
+    raw_risk_score 0.1704590800699724
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 208
@@ -2475,10 +2671,11 @@ graph [
     market_cap 0
     name "Martin Marietta Materials"
     gnn_risk_score 5.094737502986391E-07
-    raw_risk_score 0.11029689614354657
+    industry "Building Materials"
+    raw_risk_score 0.09159572022049721
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 209
@@ -2487,10 +2684,11 @@ graph [
     market_cap 0
     name "Match Group"
     gnn_risk_score 0.00013409498205874115
-    raw_risk_score 0.21131199341807866
+    industry "Internet Content &#38; Information"
+    raw_risk_score 0.17802238102126652
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 210
@@ -2499,10 +2697,11 @@ graph [
     market_cap 0
     name "McDonald's"
     gnn_risk_score 0.9999997615814209
-    raw_risk_score 0.16005714073152558
+    industry "Restaurants"
+    raw_risk_score 0.15091332353861822
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 211
@@ -2511,10 +2710,11 @@ graph [
     market_cap 0
     name "McKesson Corporation"
     gnn_risk_score 4.7330863139904977E-07
-    raw_risk_score 0.13359344962333908
+    industry "Medical Distribution"
+    raw_risk_score 0.1106836981301799
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 212
@@ -2523,10 +2723,11 @@ graph [
     market_cap 0
     name "Medtronic"
     gnn_risk_score 2.0891479834972415E-06
-    raw_risk_score 0.31769962817292696
+    industry "Medical Devices"
+    raw_risk_score 0.2931248345023243
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 213
@@ -2535,10 +2736,11 @@ graph [
     market_cap 0
     name "Merck &#38; Co."
     gnn_risk_score 6.283694915509841E-07
-    raw_risk_score 0.4034365680484842
+    industry "Drug Manufacturers - General"
+    raw_risk_score 0.35973697586724807
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 214
@@ -2547,10 +2749,11 @@ graph [
     market_cap 0
     name "MetLife"
     gnn_risk_score 0.9916649460792542
-    raw_risk_score 0.17514179505881972
+    industry "Insurance - Life"
+    raw_risk_score 0.14900358958242033
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 215
@@ -2559,10 +2762,11 @@ graph [
     market_cap 0
     name "Mettler Toledo"
     gnn_risk_score 4.201040348927876E-10
-    raw_risk_score 0.17308517212302382
+    industry "Diagnostics &#38; Research"
+    raw_risk_score 0.15270443183160465
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 216
@@ -2571,10 +2775,11 @@ graph [
     market_cap 0
     name "MGM Resorts"
     gnn_risk_score 1.1814581739599817E-05
-    raw_risk_score 0.31523726077589115
+    industry "Resorts &#38; Casinos"
+    raw_risk_score 0.275020558770407
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 217
@@ -2583,10 +2788,11 @@ graph [
     market_cap 0
     name "Microchip Technology"
     gnn_risk_score 1.3724418295169016E-06
-    raw_risk_score 0.2770314987829866
+    industry "Semiconductors"
+    raw_risk_score 0.23041504597283774
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 218
@@ -2595,10 +2801,11 @@ graph [
     market_cap 0
     name "Micron Technology"
     gnn_risk_score 4.153450561261707E-08
-    raw_risk_score 0.5557377639716807
+    industry "Semiconductors"
+    raw_risk_score 0.44534329339040274
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 219
@@ -2607,10 +2814,11 @@ graph [
     market_cap 0
     name "Mohawk Industries"
     gnn_risk_score 1.7386878425895702E-06
-    raw_risk_score 0.31175571482454667
+    industry "Furnishings, Fixtures &#38; Appliances"
+    raw_risk_score 0.2718674997944667
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 220
@@ -2619,10 +2827,11 @@ graph [
     market_cap 0
     name "Molina Healthcare"
     gnn_risk_score 3.2324120979865256E-07
-    raw_risk_score 0.33215375066466374
+    industry "Healthcare Plans"
+    raw_risk_score 0.272794982934094
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 221
@@ -2631,10 +2840,11 @@ graph [
     market_cap 0
     name "Monolithic Power Systems"
     gnn_risk_score 2.6174360456820978E-08
-    raw_risk_score 0.32690280560994855
+    industry "Semiconductors"
+    raw_risk_score 0.27425025858386487
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 222
@@ -2643,10 +2853,11 @@ graph [
     market_cap 0
     name "Monster Beverage"
     gnn_risk_score 9.932108469001832E-10
-    raw_risk_score 0.32392393027723365
+    industry "Beverages - Non-Alcoholic"
+    raw_risk_score 0.2971902031712364
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 223
@@ -2655,10 +2866,11 @@ graph [
     market_cap 0
     name "Moody's Corporation"
     gnn_risk_score 1.5753826687614492E-08
-    raw_risk_score 0.10848100857233114
+    industry "Financial Data &#38; Stock Exchanges"
+    raw_risk_score 0.0965467138214878
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 224
@@ -2667,10 +2879,11 @@ graph [
     market_cap 0
     name "Morgan Stanley"
     gnn_risk_score 0.9449489116668701
-    raw_risk_score 0.1784558445140277
+    industry "Capital Markets"
+    raw_risk_score 0.1533761232255842
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 225
@@ -2679,10 +2892,11 @@ graph [
     market_cap 0
     name "Motorola Solutions"
     gnn_risk_score 1.301908923778683E-05
-    raw_risk_score 0.2824502043297794
+    industry "Communication Equipment"
+    raw_risk_score 0.2677627317331799
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 226
@@ -2691,10 +2905,11 @@ graph [
     market_cap 0
     name "MSCI Inc."
     gnn_risk_score 7.023583066256833E-07
-    raw_risk_score 0.1607035129272329
+    industry "Financial Data &#38; Stock Exchanges"
+    raw_risk_score 0.15215817781666113
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 227
@@ -2703,10 +2918,11 @@ graph [
     market_cap 0
     name "NetApp"
     gnn_risk_score 1.0852185816645488E-09
-    raw_risk_score 0.19014730216232048
+    industry "Software - Infrastructure"
+    raw_risk_score 0.15633970273466538
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 228
@@ -2715,10 +2931,11 @@ graph [
     market_cap 0
     name "Netflix"
     gnn_risk_score 1.2119871826143935E-05
-    raw_risk_score 0.23561851965451774
+    industry "Entertainment"
+    raw_risk_score 0.1968239172800984
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 229
@@ -2727,10 +2944,11 @@ graph [
     market_cap 0
     name "Newmont"
     gnn_risk_score 2.413848960713949E-05
-    raw_risk_score 0.3428058280228181
+    industry "Gold"
+    raw_risk_score 0.2828237819779817
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 230
@@ -2739,10 +2957,11 @@ graph [
     market_cap 0
     name "NextEra Energy"
     gnn_risk_score 8.317689434989006E-07
-    raw_risk_score 0.11764468623682102
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.10250239874054776
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 231
@@ -2751,10 +2970,11 @@ graph [
     market_cap 0
     name "Nike, Inc."
     gnn_risk_score 2.848691792678437E-06
-    raw_risk_score 0.2843165613819852
+    industry "Footwear &#38; Accessories"
+    raw_risk_score 0.2556503883072654
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 232
@@ -2763,10 +2983,11 @@ graph [
     market_cap 0
     name "NiSource"
     gnn_risk_score 0.9999512434005737
-    raw_risk_score 0.13537745160426556
+    industry "Utilities - Regulated Gas"
+    raw_risk_score 0.12198587747431117
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 233
@@ -2775,10 +2996,11 @@ graph [
     market_cap 0
     name "Nordson Corporation"
     gnn_risk_score 3.282482339272974E-07
-    raw_risk_score 0.10199274812229683
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.08831706376989194
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 234
@@ -2787,10 +3009,11 @@ graph [
     market_cap 0
     name "Norfolk Southern"
     gnn_risk_score 2.0579136617016047E-06
-    raw_risk_score 0.1134756998657991
+    industry "Railroads"
+    raw_risk_score 0.10285741660992699
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 235
@@ -2799,10 +3022,11 @@ graph [
     market_cap 0
     name "Northern Trust"
     gnn_risk_score 5.334328179174008E-08
-    raw_risk_score 0.1398628887905293
+    industry "Asset Management"
+    raw_risk_score 0.11971348675567849
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 236
@@ -2811,10 +3035,11 @@ graph [
     market_cap 0
     name "Northrop Grumman"
     gnn_risk_score 5.21146015231011E-10
-    raw_risk_score 0.19601199400227695
+    industry "Aerospace &#38; Defense"
+    raw_risk_score 0.16514422515293994
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 237
@@ -2823,10 +3048,11 @@ graph [
     market_cap 0
     name "Norwegian Cruise Line Holdings"
     gnn_risk_score 8.21116145743872E-07
-    raw_risk_score 0.4457643898608282
+    industry "Travel Services"
+    raw_risk_score 0.3603214066418338
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 238
@@ -2835,10 +3061,11 @@ graph [
     market_cap 0
     name "NRG Energy"
     gnn_risk_score 2.707643034227658E-07
-    raw_risk_score 0.2747198039025989
+    industry "Utilities - Independent Power Producers"
+    raw_risk_score 0.22242018123162458
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 239
@@ -2847,10 +3074,11 @@ graph [
     market_cap 0
     name "Nucor"
     gnn_risk_score 1.2942706462126807E-07
-    raw_risk_score 0.34970413845055215
+    industry "Steel"
+    raw_risk_score 0.3258818540843825
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 240
@@ -2859,10 +3087,11 @@ graph [
     market_cap 0
     name "Nvidia"
     gnn_risk_score 4.1586466977605596E-05
-    raw_risk_score 0.37323555129910496
+    industry "Semiconductors"
+    raw_risk_score 0.3206645596386762
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 241
@@ -2871,10 +3100,11 @@ graph [
     market_cap 0
     name "NVR, Inc."
     gnn_risk_score 0.00019682745914906263
-    raw_risk_score 0.17392605421673846
+    industry "Residential Construction"
+    raw_risk_score 0.15532946697885044
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 242
@@ -2883,10 +3113,11 @@ graph [
     market_cap 0
     name "NXP Semiconductors"
     gnn_risk_score 1.8129744816519633E-08
-    raw_risk_score 0.2317346379446587
+    industry "Semiconductors"
+    raw_risk_score 0.19685131653098656
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 243
@@ -2895,10 +3126,11 @@ graph [
     market_cap 0
     name "O&#8217;Reilly Automotive"
     gnn_risk_score 3.4979036627191817E-06
-    raw_risk_score 0.20525686919205455
+    industry "Auto Parts"
+    raw_risk_score 0.18583238540490377
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 244
@@ -2907,10 +3139,11 @@ graph [
     market_cap 0
     name "Old Dominion"
     gnn_risk_score 2.0055573202171217E-08
-    raw_risk_score 0.24461455168744553
+    industry "Trucking"
+    raw_risk_score 0.2016238176830703
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 245
@@ -2919,10 +3152,11 @@ graph [
     market_cap 0
     name "Omnicom Group"
     gnn_risk_score 4.0585663718673E-09
-    raw_risk_score 0.18700909229896184
+    industry "Advertising Agencies"
+    raw_risk_score 0.15691101990807813
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 246
@@ -2931,10 +3165,11 @@ graph [
     market_cap 0
     name "ON Semiconductor"
     gnn_risk_score 1.7970978980104413E-13
-    raw_risk_score 0.27989515708889645
+    industry "Semiconductors"
+    raw_risk_score 0.23579373403588214
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 247
@@ -2943,10 +3178,11 @@ graph [
     market_cap 0
     name "Oneok"
     gnn_risk_score 3.610313115132158E-08
-    raw_risk_score 0.29381448152687945
+    industry "Oil &#38; Gas Midstream"
+    raw_risk_score 0.27520396032281075
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 248
@@ -2955,10 +3191,11 @@ graph [
     market_cap 0
     name "Organon &#38; Co."
     gnn_risk_score 1.0274880878569093E-05
-    raw_risk_score 0.433238100577454
+    industry "Drug Manufacturers - General"
+    raw_risk_score 0.3459853208691931
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 249
@@ -2967,10 +3204,11 @@ graph [
     market_cap 0
     name "Otis Worldwide"
     gnn_risk_score 6.724523871071142E-08
-    raw_risk_score 0.14520746685812538
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.1327534873653704
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 250
@@ -2979,10 +3217,11 @@ graph [
     market_cap 0
     name "Paccar"
     gnn_risk_score 1.3365458073621994E-07
-    raw_risk_score 0.27600703826242906
+    industry "Farm &#38; Heavy Construction Machinery"
+    raw_risk_score 0.23945208053024808
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 251
@@ -2991,10 +3230,11 @@ graph [
     market_cap 0
     name "Packaging Corporation of America"
     gnn_risk_score 3.6912551877321675E-06
-    raw_risk_score 0.13063404304141085
+    industry "Packaging &#38; Containers"
+    raw_risk_score 0.11619088632196545
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 252
@@ -3013,10 +3253,11 @@ graph [
     market_cap 0
     name "Parker Hannifin"
     gnn_risk_score 4.0250968595501035E-05
-    raw_risk_score 0.23828466779085683
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.20246579374334064
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 254
@@ -3025,10 +3266,11 @@ graph [
     market_cap 0
     name "Paychex"
     gnn_risk_score 7.704635436311946E-07
-    raw_risk_score 0.1411240335833293
+    industry "Software - Application"
+    raw_risk_score 0.12237936347497545
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 255
@@ -3037,10 +3279,11 @@ graph [
     market_cap 0
     name "PAYCOM SOFTWARE, INC."
     gnn_risk_score 2.1941644945400185E-08
-    raw_risk_score 0.33165447868330017
+    industry "Software - Application"
+    raw_risk_score 0.27501897476469006
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Technology"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 256
@@ -3049,10 +3292,11 @@ graph [
     market_cap 0
     name "Pentair"
     gnn_risk_score 8.299204878881028E-09
-    raw_risk_score 0.19255883155403408
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.17267157072597789
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 257
@@ -3061,10 +3305,11 @@ graph [
     market_cap 0
     name "Pfizer"
     gnn_risk_score 6.941318535718744E-15
-    raw_risk_score 0.21963365268219648
+    industry "Drug Manufacturers - General"
+    raw_risk_score 0.18930214314251134
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 258
@@ -3073,10 +3318,11 @@ graph [
     market_cap 0
     name "PG&#38;E Corporation"
     gnn_risk_score 1.7095148905355018E-06
-    raw_risk_score 0.19470224924799212
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.176821714783781
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 259
@@ -3085,10 +3331,11 @@ graph [
     market_cap 0
     name "Philip Morris International"
     gnn_risk_score 0.9995401501655579
-    raw_risk_score 0.15877430759334007
+    industry "Tobacco"
+    raw_risk_score 0.13458821409987803
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 260
@@ -3107,10 +3354,11 @@ graph [
     market_cap 0
     name "Pool Corporation"
     gnn_risk_score 2.646504242420633E-07
-    raw_risk_score 0.21011550733620996
+    industry "Industrial Distribution"
+    raw_risk_score 0.17647502475134416
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 262
@@ -3119,10 +3367,11 @@ graph [
     market_cap 0
     name "PPG Industries"
     gnn_risk_score 1.1840435035992414E-05
-    raw_risk_score 0.2219292931886428
+    industry "Specialty Chemicals"
+    raw_risk_score 0.19823134040713664
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 263
@@ -3131,10 +3380,11 @@ graph [
     market_cap 0
     name "PPL Corporation"
     gnn_risk_score 1.0053649930341635E-05
-    raw_risk_score 0.1684991137504745
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.15488428032467952
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 264
@@ -3143,10 +3393,11 @@ graph [
     market_cap 0
     name "Progressive Corporation"
     gnn_risk_score 6.411528011085466E-05
-    raw_risk_score 0.25190802049666333
+    industry "Insurance - Property &#38; Casualty"
+    raw_risk_score 0.2362095941859539
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 265
@@ -3155,10 +3406,11 @@ graph [
     market_cap 0
     name "Prologis"
     gnn_risk_score 1.6667762565703015E-06
-    raw_risk_score 0.15874965921170098
+    industry "REIT - Industrial"
+    raw_risk_score 0.15161643918912393
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 266
@@ -3167,10 +3419,11 @@ graph [
     market_cap 0
     name "PTC Inc."
     gnn_risk_score 4.5688807404076215E-08
-    raw_risk_score 0.2593626300473509
+    industry "Software - Application"
+    raw_risk_score 0.21552997869676563
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 267
@@ -3179,10 +3432,11 @@ graph [
     market_cap 0
     name "PulteGroup"
     gnn_risk_score 1.3561768597014634E-08
-    raw_risk_score 0.2820165420677592
+    industry "Residential Construction"
+    raw_risk_score 0.24553351900626008
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 268
@@ -3191,10 +3445,11 @@ graph [
     market_cap 0
     name "Qorvo, Inc."
     gnn_risk_score 2.1758106072411465E-07
-    raw_risk_score 0.2531823047231264
+    industry "Semiconductors"
+    raw_risk_score 0.2086676549081491
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 269
@@ -3203,10 +3458,11 @@ graph [
     market_cap 0
     name "Quanta Services"
     gnn_risk_score 6.650533032370731E-05
-    raw_risk_score 0.2307747311254969
+    industry "Engineering &#38; Construction"
+    raw_risk_score 0.18821008143882986
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 270
@@ -3215,10 +3471,11 @@ graph [
     market_cap 0
     name "Qualcomm"
     gnn_risk_score 8.755254725656414E-07
-    raw_risk_score 0.2555653817478838
+    industry "Semiconductors"
+    raw_risk_score 0.21285403739569989
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 271
@@ -3227,10 +3484,11 @@ graph [
     market_cap 0
     name "Ralph Lauren Corporation"
     gnn_risk_score 3.2662128210403374E-12
-    raw_risk_score 0.3186155547847401
+    industry "Apparel Manufacturing"
+    raw_risk_score 0.2803387231149911
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 272
@@ -3239,10 +3497,11 @@ graph [
     market_cap 0
     name "Realty Income"
     gnn_risk_score 0.9740983247756958
-    raw_risk_score 0.1725938253273589
+    industry "REIT - Retail"
+    raw_risk_score 0.15935225019120183
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 273
@@ -3251,10 +3510,11 @@ graph [
     market_cap 0
     name "Regency Centers"
     gnn_risk_score 2.401846083133208E-12
-    raw_risk_score 0.11152898622905633
+    industry "REIT - Retail"
+    raw_risk_score 0.10251526315557521
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 274
@@ -3263,10 +3523,11 @@ graph [
     market_cap 0
     name "Republic Services"
     gnn_risk_score 1.7427487364329863E-07
-    raw_risk_score 0.20956638712528602
+    industry "Waste Management"
+    raw_risk_score 0.19485192253657596
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 275
@@ -3275,10 +3536,11 @@ graph [
     market_cap 0
     name "ResMed Inc."
     gnn_risk_score 3.469195064553787E-07
-    raw_risk_score 0.1418760576552969
+    industry "Medical Instruments &#38; Supplies"
+    raw_risk_score 0.12059346238385686
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Healthcare"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 276
@@ -3287,10 +3549,11 @@ graph [
     market_cap 0
     name "Revvity"
     gnn_risk_score 6.575847066869756E-08
-    raw_risk_score 0.33520705003621765
+    industry "Diagnostics &#38; Research"
+    raw_risk_score 0.2959755050981811
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 277
@@ -3299,10 +3562,11 @@ graph [
     market_cap 0
     name "Robert Half Inc."
     gnn_risk_score 2.2951994083086902E-08
-    raw_risk_score 0.3444355280040803
+    industry "Staffing &#38; Employment Services"
+    raw_risk_score 0.29668339918395104
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 278
@@ -3311,10 +3575,11 @@ graph [
     market_cap 0
     name "Rockwell Automation"
     gnn_risk_score 7.472020513432653E-08
-    raw_risk_score 0.1869792041496399
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.1534067118236211
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 279
@@ -3323,10 +3588,11 @@ graph [
     market_cap 0
     name "Rollins, Inc."
     gnn_risk_score 4.221960114847434E-09
-    raw_risk_score 0.2174460911057634
+    industry "Personal Services"
+    raw_risk_score 0.20636580270377763
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 280
@@ -3335,10 +3601,11 @@ graph [
     market_cap 0
     name "Ross Stores"
     gnn_risk_score 6.598440460692245E-09
-    raw_risk_score 0.3784598558955894
+    industry "Apparel Retail"
+    raw_risk_score 0.3435118336170484
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 281
@@ -3347,10 +3614,11 @@ graph [
     market_cap 0
     name "Royal Caribbean Group"
     gnn_risk_score 1.0738765610085466E-07
-    raw_risk_score 0.289263954341984
+    industry "Travel Services"
+    raw_risk_score 0.23397727297439014
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 282
@@ -3359,10 +3627,11 @@ graph [
     market_cap 0
     name "S&#38;P Global"
     gnn_risk_score 3.2385680803770356E-09
-    raw_risk_score 0.10272210671407823
+    industry "Financial Data &#38; Stock Exchanges"
+    raw_risk_score 0.09151113579592188
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 283
@@ -3371,10 +3640,11 @@ graph [
     market_cap 0
     name "Salesforce"
     gnn_risk_score 3.067474442855489E-12
-    raw_risk_score 0.2462416217213391
+    industry "Software - Application"
+    raw_risk_score 0.21083293995018165
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 284
@@ -3383,10 +3653,11 @@ graph [
     market_cap 0
     name "Seagate Technology"
     gnn_risk_score 1.912287189043127E-05
-    raw_risk_score 0.5232565633449682
+    industry "Computer Hardware"
+    raw_risk_score 0.42656179671715444
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 285
@@ -3395,10 +3666,11 @@ graph [
     market_cap 0
     name "ServiceNow"
     gnn_risk_score 0.9996282458305359
-    raw_risk_score 0.22796190260261928
+    industry "Software - Application"
+    raw_risk_score 0.20638754161464357
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 286
@@ -3407,10 +3679,11 @@ graph [
     market_cap 0
     name "SIGNATURE BANK (NY)"
     gnn_risk_score 9.483883012251226E-09
-    raw_risk_score 0.6273737238730885
+    industry "Banks - Regional"
+    raw_risk_score 0.49817947093594217
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Financial Services"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 287
@@ -3419,10 +3692,11 @@ graph [
     market_cap 0
     name "Skyworks Solutions"
     gnn_risk_score 7.271049980772659E-05
-    raw_risk_score 0.29765821290786615
+    industry "Semiconductors"
+    raw_risk_score 0.24997001262375534
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 288
@@ -3431,10 +3705,11 @@ graph [
     market_cap 0
     name "Stanley Black &#38; Decker"
     gnn_risk_score 9.937637202028782E-08
-    raw_risk_score 0.3002477023287604
+    industry "Tools &#38; Accessories"
+    raw_risk_score 0.26515780425812235
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 289
@@ -3443,10 +3718,11 @@ graph [
     market_cap 0
     name "Stryker Corporation"
     gnn_risk_score 9.10805756575428E-05
-    raw_risk_score 0.20938692692386096
+    industry "Medical Devices"
+    raw_risk_score 0.19016070306219315
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 290
@@ -3455,10 +3731,11 @@ graph [
     market_cap 0
     name "Synopsys"
     gnn_risk_score 1.2763829317918862E-06
-    raw_risk_score 0.38254868604166425
+    industry "Software - Infrastructure"
+    raw_risk_score 0.33404770654747784
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 291
@@ -3467,10 +3744,11 @@ graph [
     market_cap 0
     name "Sysco"
     gnn_risk_score 9.31599686282425E-10
-    raw_risk_score 0.1617555958997649
+    industry "Food Distribution"
+    raw_risk_score 0.1449064047564017
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 292
@@ -3479,10 +3757,11 @@ graph [
     market_cap 0
     name "T-Mobile US"
     gnn_risk_score 3.6540275250018794E-09
-    raw_risk_score 0.16207000605146257
+    industry "Telecom Services"
+    raw_risk_score 0.13893390828220537
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 293
@@ -3491,10 +3770,11 @@ graph [
     market_cap 0
     name "T. Rowe Price"
     gnn_risk_score 7.585746431004736E-08
-    raw_risk_score 0.1606766119410546
+    industry "Asset Management"
+    raw_risk_score 0.13930510430549303
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 294
@@ -3503,10 +3783,11 @@ graph [
     market_cap 0
     name "Take-Two Interactive"
     gnn_risk_score 5.5229916142707225E-06
-    raw_risk_score 0.33903357350530505
+    industry "Electronic Gaming &#38; Multimedia"
+    raw_risk_score 0.2969754773751
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 295
@@ -3515,10 +3796,11 @@ graph [
     market_cap 0
     name "Target Corporation"
     gnn_risk_score 8.041485671128612E-06
-    raw_risk_score 0.2529734358419349
+    industry "Discount Stores"
+    raw_risk_score 0.20912637292790912
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 296
@@ -3527,10 +3809,11 @@ graph [
     market_cap 0
     name "TE Connectivity"
     gnn_risk_score 0.9999991655349731
-    raw_risk_score 0.3646534274268539
+    industry "Electronic Components"
+    raw_risk_score 0.32027998030203386
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 297
@@ -3539,10 +3822,11 @@ graph [
     market_cap 0
     name "Textron"
     gnn_risk_score 1.7482901967014186E-05
-    raw_risk_score 0.08791716441751182
+    industry "Aerospace &#38; Defense"
+    raw_risk_score 0.0773003173730239
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 298
@@ -3551,10 +3835,11 @@ graph [
     market_cap 0
     name "Thermo Fisher Scientific"
     gnn_risk_score 4.4254626629935956E-08
-    raw_risk_score 0.1367363962829464
+    industry "Diagnostics &#38; Research"
+    raw_risk_score 0.12155086026806544
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 299
@@ -3563,10 +3848,11 @@ graph [
     market_cap 0
     name "TJX Companies"
     gnn_risk_score 4.474449269764591E-06
-    raw_risk_score 0.17018185267395441
+    industry "Apparel Retail"
+    raw_risk_score 0.15757517498263635
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 300
@@ -3575,10 +3861,11 @@ graph [
     market_cap 0
     name "Trane Technologies"
     gnn_risk_score 9.794733912826814E-10
-    raw_risk_score 0.23542663826807353
+    industry "Building Products &#38; Equipment"
+    raw_risk_score 0.21243864046534
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 301
@@ -3587,10 +3874,11 @@ graph [
     market_cap 0
     name "Travelers Companies (The)"
     gnn_risk_score 1.2727261022860148E-08
-    raw_risk_score 0.18824010407158467
+    industry "Insurance - Property &#38; Casualty"
+    raw_risk_score 0.1766776000664499
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 302
@@ -3599,10 +3887,11 @@ graph [
     market_cap 0
     name "Tyler Technologies"
     gnn_risk_score 1.0262996511301026E-05
-    raw_risk_score 0.15737273479685404
+    industry "Software - Application"
+    raw_risk_score 0.1313811666715871
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 303
@@ -3611,10 +3900,11 @@ graph [
     market_cap 0
     name "Tyson Foods"
     gnn_risk_score 4.082664872839814E-08
-    raw_risk_score 0.30511864344113193
+    industry "Farm Products"
+    raw_risk_score 0.27865790236841387
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 304
@@ -3623,10 +3913,11 @@ graph [
     market_cap 0
     name "U.S. Bancorp"
     gnn_risk_score 1.7390098037139978E-06
-    raw_risk_score 0.19812707382870798
+    industry "Banks - Regional"
+    raw_risk_score 0.17890692043519377
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 305
@@ -3635,10 +3926,11 @@ graph [
     market_cap 0
     name "UDR, Inc."
     gnn_risk_score 3.224447198135749E-08
-    raw_risk_score 0.21862214692786913
+    industry "REIT - Residential"
+    raw_risk_score 0.20595319938594098
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 306
@@ -3647,10 +3939,11 @@ graph [
     market_cap 0
     name "Valero Energy"
     gnn_risk_score 3.7187842281127814E-06
-    raw_risk_score 0.23187885928835697
+    industry "Oil &#38; Gas Refining &#38; Marketing"
+    raw_risk_score 0.19156335839999664
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 307
@@ -3659,10 +3952,11 @@ graph [
     market_cap 0
     name "Ventas"
     gnn_risk_score 6.519169915009115E-08
-    raw_risk_score 0.2307724976569201
+    industry "REIT - Healthcare Facilities"
+    raw_risk_score 0.22849922202148903
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 308
@@ -3671,10 +3965,11 @@ graph [
     market_cap 0
     name "Verisign"
     gnn_risk_score 3.3571759558981284E-05
-    raw_risk_score 0.16477745091799934
+    industry "Software - Infrastructure"
+    raw_risk_score 0.1454725926824438
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 309
@@ -3683,10 +3978,11 @@ graph [
     market_cap 0
     name "VF Corporation"
     gnn_risk_score 4.0440917281614475E-10
-    raw_risk_score 0.5538667224898912
+    industry "Apparel Manufacturing"
+    raw_risk_score 0.47670431698591087
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 310
@@ -3695,10 +3991,11 @@ graph [
     market_cap 0
     name "Visa Inc."
     gnn_risk_score 0.9282501935958862
-    raw_risk_score 0.11496570742953367
+    industry "Credit Services"
+    raw_risk_score 0.10388152789732474
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 311
@@ -3707,10 +4004,11 @@ graph [
     market_cap 0
     name "Wabtec"
     gnn_risk_score 1.4895194055952743E-07
-    raw_risk_score 0.138186543862893
+    industry "Railroads"
+    raw_risk_score 0.11801789668654632
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 312
@@ -3729,10 +4027,11 @@ graph [
     market_cap 0
     name "Walmart"
     gnn_risk_score 1.8227408418169944E-06
-    raw_risk_score 0.30012731556201433
+    industry "Discount Stores"
+    raw_risk_score 0.2691877237557331
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 314
@@ -3741,10 +4040,11 @@ graph [
     market_cap 0
     name "Waste Management"
     gnn_risk_score 2.5627304012232344E-07
-    raw_risk_score 0.2626079397583366
+    industry "Waste Management"
+    raw_risk_score 0.2450570748931737
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 315
@@ -3753,10 +4053,11 @@ graph [
     market_cap 0
     name "WEC Energy Group"
     gnn_risk_score 2.58480849879561E-06
-    raw_risk_score 0.15599530060498176
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.1462601898541228
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 316
@@ -3765,10 +4066,11 @@ graph [
     market_cap 0
     name "Welltower Inc."
     gnn_risk_score 0.9999998211860657
-    raw_risk_score 0.22039452120737268
+    industry "REIT - Healthcare Facilities"
+    raw_risk_score 0.21191487957117902
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Real Estate"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 317
@@ -3787,10 +4089,11 @@ graph [
     market_cap 0
     name "Williams Companies"
     gnn_risk_score 1.5822473997673114E-08
-    raw_risk_score 0.1935419309360877
+    industry "Oil &#38; Gas Midstream"
+    raw_risk_score 0.16595446231718025
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 319
@@ -3799,10 +4102,11 @@ graph [
     market_cap 0
     name "Wynn Resorts"
     gnn_risk_score 1.6999487684188352E-07
-    raw_risk_score 0.2942270764024194
+    industry "Resorts &#38; Casinos"
+    raw_risk_score 0.24468193522372542
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 320
@@ -3811,10 +4115,11 @@ graph [
     market_cap 0
     name "Xcel Energy"
     gnn_risk_score 2.6824980636774853E-07
-    raw_risk_score 0.10760415036780731
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.09668632591782668
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 321
@@ -3823,10 +4128,11 @@ graph [
     market_cap 0
     name "Xylem Inc."
     gnn_risk_score 6.959376186443933E-09
-    raw_risk_score 0.2693533985674369
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.2569991671261037
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 322
@@ -3835,10 +4141,11 @@ graph [
     market_cap 0
     name "Yum! Brands"
     gnn_risk_score 7.653617331015994E-07
-    raw_risk_score 0.22582541087288838
+    industry "Restaurants"
+    raw_risk_score 0.1913702352057132
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 323
@@ -3847,10 +4154,11 @@ graph [
     market_cap 0
     name "Zebra Technologies"
     gnn_risk_score 6.780581429666199E-08
-    raw_risk_score 0.2914491091892812
+    industry "Communication Equipment"
+    raw_risk_score 0.24471498618643767
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 324
@@ -3859,10 +4167,11 @@ graph [
     market_cap 0
     name "Zimmer Biomet"
     gnn_risk_score 2.1491396182682365E-06
-    raw_risk_score 0.5034434182553666
+    industry "Medical Devices"
+    raw_risk_score 0.42227368412412647
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 325
@@ -3871,10 +4180,11 @@ graph [
     market_cap 0
     name "Zions Bancorporation"
     gnn_risk_score 6.19472530161147E-07
-    raw_risk_score 0.2234565671780832
+    industry "Banks - Regional"
+    raw_risk_score 0.19562446268669131
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 326
@@ -3883,10 +4193,11 @@ graph [
     market_cap 0
     name "ZOETIS INC."
     gnn_risk_score 4.3581036379691795E-07
-    raw_risk_score 0.4763457047585982
+    industry "Drug Manufacturers - Specialty &#38; Generic"
+    raw_risk_score 0.4016078002987538
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Healthcare"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 327
@@ -3895,10 +4206,11 @@ graph [
     market_cap 0
     name "IonQ, Inc."
     gnn_risk_score 3.6492963317869E-08
-    raw_risk_score 0.7330096088897252
+    industry "Computer Hardware"
+    raw_risk_score 0.5920717241421726
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 328
@@ -3907,10 +4219,11 @@ graph [
     market_cap 0
     name "Kroger"
     gnn_risk_score 1.0206709089022326E-10
-    raw_risk_score 0.22306245260160285
+    industry "Grocery Stores"
+    raw_risk_score 0.2021475737334686
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 329
@@ -3919,10 +4232,11 @@ graph [
     market_cap 0
     name "Coca-Cola Company (The)"
     gnn_risk_score 9.79437753123591E-10
-    raw_risk_score 0.15502277759125868
+    industry "Beverages - Non-Alcoholic"
+    raw_risk_score 0.16804322388954462
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 330
@@ -3931,10 +4245,11 @@ graph [
     market_cap 0
     name "Occidental Petroleum"
     gnn_risk_score 1.5867004549363628E-05
-    raw_risk_score 0.16193638249421888
+    industry "Oil &#38; Gas E&#38;P"
+    raw_risk_score 0.140827944653871
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 331
@@ -3943,10 +4258,11 @@ graph [
     market_cap 0
     name "Sirius XM Holdings"
     gnn_risk_score 2.2624190023634583E-05
-    raw_risk_score 0.23357032964446445
+    industry "Entertainment"
+    raw_risk_score 0.20560844347294602
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 332
@@ -3955,10 +4271,11 @@ graph [
     market_cap 0
     name "FactSet"
     gnn_risk_score 1.342968403150735E-06
-    raw_risk_score 0.24915474306408092
+    industry "Financial Data &#38; Stock Exchanges"
+    raw_risk_score 0.21983185923119636
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 333
@@ -3967,10 +4284,11 @@ graph [
     market_cap 0
     name "Microsoft"
     gnn_risk_score 9.575860993038532E-09
-    raw_risk_score 0.18926227378162397
+    industry "Software - Infrastructure"
+    raw_risk_score 0.17028988607296552
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 334
@@ -3979,10 +4297,11 @@ graph [
     market_cap 0
     name "Abbott Laboratories"
     gnn_risk_score 2.379357056270237E-06
-    raw_risk_score 0.15617535840971394
+    industry "Medical Devices"
+    raw_risk_score 0.13713006862772903
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 335
@@ -3991,10 +4310,11 @@ graph [
     market_cap 0
     name "First Solar"
     gnn_risk_score 3.3042431368812686E-07
-    raw_risk_score 0.2991827231084968
+    industry "Solar"
+    raw_risk_score 0.24865833874301457
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 336
@@ -4003,10 +4323,11 @@ graph [
     market_cap 0
     name "FirstEnergy"
     gnn_risk_score 1.5174967302300502E-05
-    raw_risk_score 0.10289052654606531
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.09195671787299287
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 337
@@ -4015,10 +4336,11 @@ graph [
     market_cap 0
     name "Tesla, Inc."
     gnn_risk_score 1.034031527069601E-08
-    raw_risk_score 0.3673669743941287
+    industry "Auto Manufacturers"
+    raw_risk_score 0.30168247221399125
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 338
@@ -4027,10 +4349,11 @@ graph [
     market_cap 0
     name "Air Products"
     gnn_risk_score 4.4158895207147E-08
-    raw_risk_score 0.24998027553536578
+    industry "Specialty Chemicals"
+    raw_risk_score 0.20712496445046413
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 339
@@ -4039,10 +4362,11 @@ graph [
     market_cap 0
     name "Caesars Entertainment"
     gnn_risk_score 7.150976699676903E-08
-    raw_risk_score 0.43303183610300383
+    industry "Resorts &#38; Casinos"
+    raw_risk_score 0.3769784954138312
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 340
@@ -4051,10 +4375,11 @@ graph [
     market_cap 0
     name "Delta Air Lines"
     gnn_risk_score 6.660664207680522E-12
-    raw_risk_score 0.3837261058057776
+    industry "Airlines"
+    raw_risk_score 0.3249269853205045
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 341
@@ -4063,10 +4388,11 @@ graph [
     market_cap 0
     name "Iron Mountain"
     gnn_risk_score 9.702704062419798E-08
-    raw_risk_score 0.455787022813281
+    industry "REIT - Specialty"
+    raw_risk_score 0.40845101813943596
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 342
@@ -4075,10 +4401,11 @@ graph [
     market_cap 0
     name "Palo Alto Networks"
     gnn_risk_score 1.2903274182463065E-07
-    raw_risk_score 0.3869302754248463
+    industry "Software - Infrastructure"
+    raw_risk_score 0.34741234667040294
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 343
@@ -4087,10 +4414,11 @@ graph [
     market_cap 0
     name "Mosaic Company (The)"
     gnn_risk_score 4.5163988033891656E-06
-    raw_risk_score 0.2774556274370871
+    industry "Agricultural Inputs"
+    raw_risk_score 0.23440951721303377
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 344
@@ -4099,10 +4427,11 @@ graph [
     market_cap 0
     name "Sealed Air Corp"
     gnn_risk_score 1.2325968157256284E-07
-    raw_risk_score 0.5513090568925822
+    industry "Packaging &#38; Containers"
+    raw_risk_score 0.4644525475503009
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 345
@@ -4111,10 +4440,11 @@ graph [
     market_cap 0
     name "Southwest Airlines"
     gnn_risk_score 4.159288380378712E-08
-    raw_risk_score 0.33606570123079915
+    industry "Airlines"
+    raw_risk_score 0.28511758177453617
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 346
@@ -4123,10 +4453,11 @@ graph [
     market_cap 0
     name "United Airlines Holdings"
     gnn_risk_score 2.4876355837477604E-06
-    raw_risk_score 0.3715097289743302
+    industry "Airlines"
+    raw_risk_score 0.30609218518500947
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 347
@@ -4135,10 +4466,11 @@ graph [
     market_cap 0
     name "General Motors"
     gnn_risk_score 6.1059899962856434E-06
-    raw_risk_score 0.21791122349097197
+    industry "Auto Manufacturers"
+    raw_risk_score 0.18804934039784044
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 348
@@ -4147,10 +4479,11 @@ graph [
     market_cap 0
     name "ConocoPhillips"
     gnn_risk_score 0.9931273460388184
-    raw_risk_score 0.19535101119856157
+    industry "Oil &#38; Gas E&#38;P"
+    raw_risk_score 0.17174930976661856
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 349
@@ -4159,10 +4492,11 @@ graph [
     market_cap 0
     name "TransDigm Group"
     gnn_risk_score 1.2596768783623702E-06
-    raw_risk_score 0.21149242601207235
+    industry "Aerospace &#38; Defense"
+    raw_risk_score 0.20120149883227217
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 350
@@ -4171,10 +4505,11 @@ graph [
     market_cap 962565822590.79
     name "Eli Lilly &#38; Co."
     gnn_risk_score 6.703717581046931E-09
-    raw_risk_score 0.3140892514588003
+    industry "Drug Manufacturers - General"
+    raw_risk_score 0.2806655326865053
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "PHARMACEUTICAL PREPARATIONS"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 351
@@ -4183,10 +4518,11 @@ graph [
     market_cap 0
     name "AvalonBay Communities"
     gnn_risk_score 6.099390437164232E-11
-    raw_risk_score 0.13688192566782093
+    industry "REIT - Residential"
+    raw_risk_score 0.12962652724285684
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 352
@@ -4195,10 +4531,11 @@ graph [
     market_cap 0
     name "Mid-America Apartment Communities"
     gnn_risk_score 1.538224303487823E-08
-    raw_risk_score 0.2261186739514931
+    industry "REIT - Residential"
+    raw_risk_score 0.2165530591049722
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 353
@@ -4207,10 +4544,11 @@ graph [
     market_cap 0
     name "Phillips 66"
     gnn_risk_score 1.4526763436606416E-07
-    raw_risk_score 0.1782321996034796
+    industry "Oil &#38; Gas Refining &#38; Marketing"
+    raw_risk_score 0.1515913759685982
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 354
@@ -4219,10 +4557,11 @@ graph [
     market_cap 0
     name "Comerica Inc."
     gnn_risk_score 2.5908744305525033E-07
-    raw_risk_score 0.16635035174758203
+    industry "Banks - Regional"
+    raw_risk_score 0.14849493965101757
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 355
@@ -4231,10 +4570,11 @@ graph [
     market_cap 0
     name "Corning Inc."
     gnn_risk_score 4.425456552326068E-07
-    raw_risk_score 0.34286326166718445
+    industry "Electronic Components"
+    raw_risk_score 0.2895449725871327
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 356
@@ -4243,10 +4583,11 @@ graph [
     market_cap 0
     name "Sherwin-Williams"
     gnn_risk_score 2.7742154884435877E-07
-    raw_risk_score 0.12468260401813872
+    industry "Specialty Chemicals"
+    raw_risk_score 0.10554566093879386
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 357
@@ -4255,10 +4596,11 @@ graph [
     market_cap 0
     name "Equifax"
     gnn_risk_score 4.119397800650404E-08
-    raw_risk_score 0.1433650446340928
+    industry "Consulting Services"
+    raw_risk_score 0.12074819265584241
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 358
@@ -4267,10 +4609,11 @@ graph [
     market_cap 0
     name "Mastercard"
     gnn_risk_score 2.2367403573753109E-07
-    raw_risk_score 0.14095587951339444
+    industry "Credit Services"
+    raw_risk_score 0.12501271748198656
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 359
@@ -4279,10 +4622,11 @@ graph [
     market_cap 0
     name "McCormick &#38; Company"
     gnn_risk_score 2.1002766192879108E-09
-    raw_risk_score 0.17450598629833222
+    industry "Packaged Foods"
+    raw_risk_score 0.15824441930671124
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 360
@@ -4291,10 +4635,11 @@ graph [
     market_cap 0
     name "Public Service Enterprise Group"
     gnn_risk_score 0.0005362041410990059
-    raw_risk_score 0.17615522984866594
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.15745336150390066
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 361
@@ -4303,10 +4648,11 @@ graph [
     market_cap 0
     name "Snap-on"
     gnn_risk_score 1.2346955372777302E-05
-    raw_risk_score 0.1075678852126392
+    industry "Tools &#38; Accessories"
+    raw_risk_score 0.09605350681884291
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 362
@@ -4315,10 +4661,11 @@ graph [
     market_cap 0
     name "Willis Towers Watson"
     gnn_risk_score 4.76987452202593E-07
-    raw_risk_score 0.09428430429876108
+    industry "Insurance Brokers"
+    raw_risk_score 0.08396358167179865
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 363
@@ -4327,10 +4674,11 @@ graph [
     market_cap 0
     name "Teledyne Technologies"
     gnn_risk_score 8.519251082361734E-09
-    raw_risk_score 0.22632009062269864
+    industry "Scientific &#38; Technical Instruments"
+    raw_risk_score 0.20688534972161593
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 364
@@ -4339,10 +4687,11 @@ graph [
     market_cap 0
     name "Teleflex Inc."
     gnn_risk_score 6.218389785317413E-07
-    raw_risk_score 0.4438465850369824
+    industry "Medical Instruments &#38; Supplies"
+    raw_risk_score 0.36684984388714237
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 365
@@ -4351,10 +4700,11 @@ graph [
     market_cap 0
     name "Texas Instruments"
     gnn_risk_score 5.1084560193093154E-11
-    raw_risk_score 0.23656296918600536
+    industry "Semiconductors"
+    raw_risk_score 0.20693996091694708
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 366
@@ -4363,10 +4713,11 @@ graph [
     market_cap 0
     name "UnitedHealth Group"
     gnn_risk_score 3.6935765024281864E-07
-    raw_risk_score 0.18615551387971055
+    industry "Healthcare Plans"
+    raw_risk_score 0.1540874082219692
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 367
@@ -4375,10 +4726,11 @@ graph [
     market_cap 0
     name "Alphabet Inc. (Class A)"
     gnn_risk_score 2.1278008688341288E-08
-    raw_risk_score 0.33696041239774965
+    industry "Internet Content &#38; Information"
+    raw_risk_score 0.29015040678350573
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 368
@@ -4387,10 +4739,11 @@ graph [
     market_cap 0
     name "Ameriprise Financial"
     gnn_risk_score 0.4138738811016083
-    raw_risk_score 0.1469664082404979
+    industry "Asset Management"
+    raw_risk_score 0.126325492551067
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 369
@@ -4399,10 +4752,11 @@ graph [
     market_cap 0
     name "Principal Financial Group"
     gnn_risk_score 1.776352974047768E-06
-    raw_risk_score 0.15263002477844426
+    industry "Asset Management"
+    raw_risk_score 0.13179976577732938
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 370
@@ -4411,10 +4765,11 @@ graph [
     market_cap 0
     name "Archer Daniels Midland"
     gnn_risk_score 8.125306862893922E-07
-    raw_risk_score 0.3532736775358896
+    industry "Farm Products"
+    raw_risk_score 0.3122025631622378
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 371
@@ -4423,10 +4778,11 @@ graph [
     market_cap 0
     name "Arch Capital Group"
     gnn_risk_score 3.057625974633993E-08
-    raw_risk_score 0.17811926244407933
+    industry "Insurance - Diversified"
+    raw_risk_score 0.16932458388282434
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 372
@@ -4435,10 +4791,11 @@ graph [
     market_cap 0
     name "Lam Research"
     gnn_risk_score 8.681272589683431E-09
-    raw_risk_score 0.4169835790092745
+    industry "Semiconductor Equipment &#38; Materials"
+    raw_risk_score 0.34401798896528085
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 373
@@ -4447,10 +4804,11 @@ graph [
     market_cap 0
     name "United Parcel Service"
     gnn_risk_score 0.9895485639572144
-    raw_risk_score 0.24183458509834482
+    industry "Integrated Freight &#38; Logistics"
+    raw_risk_score 0.21337601538578727
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 374
@@ -4459,10 +4817,11 @@ graph [
     market_cap 0
     name "GE HealthCare"
     gnn_risk_score 0.0011779330670833588
-    raw_risk_score 0.27124018468404604
+    industry "Health Information Services"
+    raw_risk_score 0.24098529470088945
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 375
@@ -4471,10 +4830,11 @@ graph [
     market_cap 0
     name "Ingersoll Rand"
     gnn_risk_score 1.5672327435822808E-06
-    raw_risk_score 0.20422300003990837
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.1760740467401432
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 376
@@ -4483,10 +4843,11 @@ graph [
     market_cap 0
     name "J.B. Hunt"
     gnn_risk_score 4.416059766754188E-07
-    raw_risk_score 0.2729805214970467
+    industry "Integrated Freight &#38; Logistics"
+    raw_risk_score 0.2408636556146948
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 377
@@ -4495,10 +4856,11 @@ graph [
     market_cap 0
     name "Huntington Bancshares"
     gnn_risk_score 6.52001253911294E-05
-    raw_risk_score 0.22027293460034258
+    industry "Banks - Regional"
+    raw_risk_score 0.2017735589519395
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 378
@@ -4507,10 +4869,11 @@ graph [
     market_cap 0
     name "3M"
     gnn_risk_score 9.673017586919741E-08
-    raw_risk_score 0.16801799004569212
+    industry "Conglomerates"
+    raw_risk_score 0.14959797088776777
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 379
@@ -4519,10 +4882,11 @@ graph [
     market_cap 0
     name "Allegion"
     gnn_risk_score 1.5991096447010023E-08
-    raw_risk_score 0.12698524685087056
+    industry "Security &#38; Protection Services"
+    raw_risk_score 0.11225634456525635
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 380
@@ -4531,10 +4895,11 @@ graph [
     market_cap 0
     name "American Electric Power"
     gnn_risk_score 1.9343694646067888E-08
-    raw_risk_score 0.14326146012525667
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.12953074270353307
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 381
@@ -4543,10 +4908,11 @@ graph [
     market_cap 0
     name "American Express"
     gnn_risk_score 2.7286413128990716E-08
-    raw_risk_score 0.1837250338910331
+    industry "Credit Services"
+    raw_risk_score 0.15834300994400882
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 382
@@ -4555,10 +4921,11 @@ graph [
     market_cap 0
     name "American Water Works"
     gnn_risk_score 1.4737751143911737E-06
-    raw_risk_score 0.18978676455495952
+    industry "Utilities - Regulated Water"
+    raw_risk_score 0.16516878393948492
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 383
@@ -4567,10 +4934,11 @@ graph [
     market_cap 0
     name "Baker Hughes"
     gnn_risk_score 2.90334196506592E-06
-    raw_risk_score 0.23280889609877964
+    industry "Oil &#38; Gas Equipment &#38; Services"
+    raw_risk_score 0.20224745364309243
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 384
@@ -4579,10 +4947,11 @@ graph [
     market_cap 0
     name "Best Buy"
     gnn_risk_score 1.002671501382224E-09
-    raw_risk_score 0.2199978448195687
+    industry "Specialty Retail"
+    raw_risk_score 0.18241006032072749
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 385
@@ -4591,10 +4960,11 @@ graph [
     market_cap 0
     name "Boeing"
     gnn_risk_score 6.739363470842363E-06
-    raw_risk_score 0.2270057090710934
+    industry "Aerospace &#38; Defense"
+    raw_risk_score 0.20312536897901
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 386
@@ -4603,10 +4973,11 @@ graph [
     market_cap 0
     name "Campbell's Company (The)"
     gnn_risk_score 7.613913476234302E-05
-    raw_risk_score 0.1438529408907637
+    industry "Packaged Foods"
+    raw_risk_score 0.1206372985437311
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 387
@@ -4615,10 +4986,11 @@ graph [
     market_cap 0
     name "DXC Technology"
     gnn_risk_score 0.00037966284435242414
-    raw_risk_score 0.2765623320156355
+    industry "Information Technology Services"
+    raw_risk_score 0.2239996131505915
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 388
@@ -4627,10 +4999,11 @@ graph [
     market_cap 0
     name "Clorox Company"
     gnn_risk_score 5.0542494136607274E-06
-    raw_risk_score 0.19763832683080557
+    industry "Household &#38; Personal Products"
+    raw_risk_score 0.1680393593333096
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Consumer Defensive"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 389
@@ -4639,10 +5012,11 @@ graph [
     market_cap 0
     name "Colgate-Palmolive"
     gnn_risk_score 5.435266757558566E-06
-    raw_risk_score 0.16630799734550167
+    industry "Household &#38; Personal Products"
+    raw_risk_score 0.1465452707552279
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 390
@@ -4651,10 +5025,11 @@ graph [
     market_cap 0
     name "Deere &#38; Company"
     gnn_risk_score 1.4805354453528707E-07
-    raw_risk_score 0.18844852908034174
+    industry "Farm &#38; Heavy Construction Machinery"
+    raw_risk_score 0.15973659372669718
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 391
@@ -4663,10 +5038,11 @@ graph [
     market_cap 0
     name "Walt Disney Company (The)"
     gnn_risk_score 0.8773577809333801
-    raw_risk_score 0.276975515577541
+    industry "Entertainment"
+    raw_risk_score 0.23596621118414285
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 392
@@ -4675,10 +5051,11 @@ graph [
     market_cap 0
     name "DTE Energy"
     gnn_risk_score 1.5212395737762563E-05
-    raw_risk_score 0.2333471411148257
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.21961900765499615
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 393
@@ -4687,10 +5064,11 @@ graph [
     market_cap 0
     name "Eastman Chemical"
     gnn_risk_score 1.174170449758094E-07
-    raw_risk_score 0.27940139909464545
+    industry "Specialty Chemicals"
+    raw_risk_score 0.22638086212529668
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 394
@@ -4699,10 +5077,11 @@ graph [
     market_cap 0
     name "Roper Technologies"
     gnn_risk_score 3.7341011193348095E-05
-    raw_risk_score 0.12594432928499805
+    industry "Software - Application"
+    raw_risk_score 0.11391422229182568
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 395
@@ -4711,10 +5090,11 @@ graph [
     market_cap 0
     name "Ford Motor Company"
     gnn_risk_score 0.979694128036499
-    raw_risk_score 0.1653322007418214
+    industry "Auto Manufacturers"
+    raw_risk_score 0.13655601583468321
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 396
@@ -4723,10 +5103,11 @@ graph [
     market_cap 0
     name "Genuine Parts Company"
     gnn_risk_score 1.2521957160060992E-07
-    raw_risk_score 0.21550889715310478
+    industry "Auto Parts"
+    raw_risk_score 0.19633824394661945
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 397
@@ -4735,10 +5116,11 @@ graph [
     market_cap 0
     name "Halliburton"
     gnn_risk_score 1.1104298209829722E-06
-    raw_risk_score 0.21719943463333824
+    industry "Oil &#38; Gas Equipment &#38; Services"
+    raw_risk_score 0.19085931489566682
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 398
@@ -4747,10 +5129,11 @@ graph [
     market_cap 0
     name "Hershey Company (The)"
     gnn_risk_score 2.4101532858367136E-07
-    raw_risk_score 0.37597444864185603
+    industry "Confectioners"
+    raw_risk_score 0.34649253620260334
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 399
@@ -4759,10 +5142,11 @@ graph [
     market_cap 0
     name "Hewlett Packard Enterprise"
     gnn_risk_score 6.365027047650074E-07
-    raw_risk_score 0.3393436614383105
+    industry "Communication Equipment"
+    raw_risk_score 0.2899517965151555
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 400
@@ -4771,10 +5155,11 @@ graph [
     market_cap 0
     name "Kraft Heinz"
     gnn_risk_score 1.2256776038555017E-08
-    raw_risk_score 0.247671497249263
+    industry "Packaged Foods"
+    raw_risk_score 0.23346781919106468
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 401
@@ -4783,10 +5168,11 @@ graph [
     market_cap 0
     name "Molson Coors Beverage Company"
     gnn_risk_score 1.3344230609391161E-08
-    raw_risk_score 0.19276030964778199
+    industry "Beverages - Brewers"
+    raw_risk_score 0.15836457739943044
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 402
@@ -4795,10 +5181,11 @@ graph [
     market_cap 0
     name "Procter &#38; Gamble"
     gnn_risk_score 0.9999305605888367
-    raw_risk_score 0.134687370159382
+    industry "Household &#38; Personal Products"
+    raw_risk_score 0.12054666796354266
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 403
@@ -4807,10 +5194,11 @@ graph [
     market_cap 0
     name "J.M. Smucker Company (The)"
     gnn_risk_score 1.4954079086137995E-09
-    raw_risk_score 0.19567188346599024
+    industry "Packaged Foods"
+    raw_risk_score 0.1700850329293591
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 404
@@ -4819,10 +5207,11 @@ graph [
     market_cap 0
     name "Southern Company"
     gnn_risk_score 9.006782875076169E-09
-    raw_risk_score 0.11323178943000917
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.10318271377886468
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 405
@@ -4831,10 +5220,11 @@ graph [
     market_cap 0
     name "Synchrony Financial"
     gnn_risk_score 5.766869435319677E-06
-    raw_risk_score 0.22980590071775253
+    industry "Credit Services"
+    raw_risk_score 0.201864906000491
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 406
@@ -4843,10 +5233,11 @@ graph [
     market_cap 0
     name "Vulcan Materials Company"
     gnn_risk_score 2.450343750126649E-08
-    raw_risk_score 0.1410194864422251
+    industry "Building Materials"
+    raw_risk_score 0.11943606858473782
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 407
@@ -4855,10 +5246,11 @@ graph [
     market_cap 0
     name "Weyerhaeuser"
     gnn_risk_score 1.916902903076334E-08
-    raw_risk_score 0.165643927262262
+    industry "REIT - Specialty"
+    raw_risk_score 0.14410081191748353
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 408
@@ -4867,10 +5259,11 @@ graph [
     market_cap 0
     name "Keurig Dr Pepper"
     gnn_risk_score 1.228655285151481E-11
-    raw_risk_score 0.25889426888620753
+    industry "Beverages - Non-Alcoholic"
+    raw_risk_score 0.2378194220747965
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 409
@@ -4879,10 +5272,11 @@ graph [
     market_cap 0
     name "Marathon Petroleum"
     gnn_risk_score 0.0003821583522949368
-    raw_risk_score 0.232109356211974
+    industry "Oil &#38; Gas Refining &#38; Marketing"
+    raw_risk_score 0.18933242207274184
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 410
@@ -4891,10 +5285,11 @@ graph [
     market_cap 0
     name "Regeneron Pharmaceuticals"
     gnn_risk_score 1.2838938800996402E-08
-    raw_risk_score 0.35870819618399374
+    industry "Biotechnology"
+    raw_risk_score 0.31592058325298733
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 411
@@ -4903,10 +5298,11 @@ graph [
     market_cap 0
     name "Vertex Pharmaceuticals"
     gnn_risk_score 7.455686557023E-08
-    raw_risk_score 0.15323013638271388
+    industry "Biotechnology"
+    raw_risk_score 0.13213492207470898
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 412
@@ -4915,10 +5311,11 @@ graph [
     market_cap 0
     name "West Pharmaceutical Services"
     gnn_risk_score 1.521075773780467E-06
-    raw_risk_score 0.19755629873043346
+    industry "Medical Instruments &#38; Supplies"
+    raw_risk_score 0.16285361163827752
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 413
@@ -4927,10 +5324,11 @@ graph [
     market_cap 0
     name "MarketAxess"
     gnn_risk_score 2.2929802501181484E-09
-    raw_risk_score 0.24413485228633475
+    industry "Capital Markets"
+    raw_risk_score 0.21782369901523768
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 414
@@ -4939,10 +5337,11 @@ graph [
     market_cap 0
     name "Tractor Supply"
     gnn_risk_score 1.5106870199232958E-09
-    raw_risk_score 0.21867016838325654
+    industry "Specialty Retail"
+    raw_risk_score 0.19118112571632245
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 415
@@ -4951,10 +5350,11 @@ graph [
     market_cap 0
     name "Consolidated Edison"
     gnn_risk_score 0.9413545727729797
-    raw_risk_score 0.12750056351424136
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.10943470185031008
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 416
@@ -4963,10 +5363,11 @@ graph [
     market_cap 0
     name "Alliant Energy"
     gnn_risk_score 1.7541751162752917E-07
-    raw_risk_score 0.11084735036054304
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.10014070847152771
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 417
@@ -4975,10 +5376,11 @@ graph [
     market_cap 0
     name "APA Corporation"
     gnn_risk_score 2.6228625933481797E-14
-    raw_risk_score 0.33010213280671397
+    industry "Oil &#38; Gas E&#38;P"
+    raw_risk_score 0.2729818704981388
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 418
@@ -4987,10 +5389,11 @@ graph [
     market_cap 0
     name "Celanese Corp"
     gnn_risk_score 0.9955822825431824
-    raw_risk_score 0.46071156033080224
+    industry "Chemicals"
+    raw_risk_score 0.3672103065868181
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 419
@@ -4999,10 +5402,11 @@ graph [
     market_cap 0
     name "Chevron Corporation"
     gnn_risk_score 2.1842980757469377E-08
-    raw_risk_score 0.12256191979736614
+    industry "Oil &#38; Gas Integrated"
+    raw_risk_score 0.10827432637486305
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 420
@@ -5011,10 +5415,11 @@ graph [
     market_cap 0
     name "Constellation Energy"
     gnn_risk_score 1.4242798442865023E-06
-    raw_risk_score 0.2761056224954411
+    industry "Utilities - Independent Power Producers"
+    raw_risk_score 0.2229946171858928
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 421
@@ -5023,10 +5428,11 @@ graph [
     market_cap 0
     name "Fox Corporation (Class A)"
     gnn_risk_score 5.928998625392978E-09
-    raw_risk_score 0.09979242683161732
+    industry "Entertainment"
+    raw_risk_score 0.0872412806985217
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 422
@@ -5035,10 +5441,11 @@ graph [
     market_cap 0
     name "Fox Corporation (Class B)"
     gnn_risk_score 0.5431392192840576
-    raw_risk_score 0.13870139259779524
+    industry "Entertainment"
+    raw_risk_score 0.12273675396723255
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 423
@@ -5047,10 +5454,11 @@ graph [
     market_cap 0
     name "General Dynamics"
     gnn_risk_score 1.5945736953071332E-09
-    raw_risk_score 0.22580217099685557
+    industry "Aerospace &#38; Defense"
+    raw_risk_score 0.21424625721194795
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 424
@@ -5059,10 +5467,11 @@ graph [
     market_cap 0
     name "KLA Corporation"
     gnn_risk_score 2.067011894979487E-09
-    raw_risk_score 0.29135507972752206
+    industry "Semiconductor Equipment &#38; Materials"
+    raw_risk_score 0.24628345542635824
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 425
@@ -5071,10 +5480,11 @@ graph [
     market_cap 0
     name "News Corp (Class A)"
     gnn_risk_score 2.2615930461711287E-08
-    raw_risk_score 0.30029085637858355
+    industry "Entertainment"
+    raw_risk_score 0.262520290723148
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 426
@@ -5083,10 +5493,11 @@ graph [
     market_cap 0
     name "News Corp (Class B)"
     gnn_risk_score 4.97700966661796E-07
-    raw_risk_score 0.29818913641295175
+    industry "Entertainment"
+    raw_risk_score 0.2584547804174486
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 427
@@ -5095,10 +5506,11 @@ graph [
     market_cap 0
     name "Pinnacle West Capital"
     gnn_risk_score 2.518486098779249E-06
-    raw_risk_score 0.1388399070749115
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.13065797632789267
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 428
@@ -5107,10 +5519,11 @@ graph [
     market_cap 0
     name "Jack Henry &#38; Associates"
     gnn_risk_score 1.9623027647241997E-09
-    raw_risk_score 0.3070198347856253
+    industry "Information Technology Services"
+    raw_risk_score 0.286285249927428
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 429
@@ -5119,10 +5532,11 @@ graph [
     market_cap 0
     name "Truist Financial"
     gnn_risk_score 1.443379318288862E-07
-    raw_risk_score 0.21024407944250345
+    industry "Banks - Regional"
+    raw_risk_score 0.19751646934325828
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 430
@@ -5131,10 +5545,11 @@ graph [
     market_cap 0
     name "Chubb Limited"
     gnn_risk_score 2.3694286710451706E-07
-    raw_risk_score 0.14597359067176713
+    industry "Insurance - Property &#38; Casualty"
+    raw_risk_score 0.13683242121073994
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 431
@@ -5143,10 +5558,11 @@ graph [
     market_cap 0
     name "Schlumberger"
     gnn_risk_score 4.306526079744799E-06
-    raw_risk_score 0.19407897024994944
+    industry "Oil &#38; Gas Equipment &#38; Services"
+    raw_risk_score 0.16133627766980393
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 432
@@ -5155,10 +5571,11 @@ graph [
     market_cap 0
     name "LyondellBasell"
     gnn_risk_score 1.5010336028353777E-05
-    raw_risk_score 0.3809269148363568
+    industry "Specialty Chemicals"
+    raw_risk_score 0.3580969711346874
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 433
@@ -5167,10 +5584,11 @@ graph [
     market_cap 0
     name "Biogen"
     gnn_risk_score 4.183738383289892E-06
-    raw_risk_score 0.34718419966907366
+    industry "Drug Manufacturers - General"
+    raw_risk_score 0.31596848218488083
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 434
@@ -5179,10 +5597,11 @@ graph [
     market_cap 0
     name "Booking Holdings"
     gnn_risk_score 7.626346814504359E-06
-    raw_risk_score 0.20741371851034784
+    industry "Travel Services"
+    raw_risk_score 0.17295371014605632
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 435
@@ -5191,10 +5610,11 @@ graph [
     market_cap 0
     name "Broadcom"
     gnn_risk_score 1.3995060665905612E-09
-    raw_risk_score 0.41384470934209117
+    industry "Semiconductors"
+    raw_risk_score 0.34216549083551634
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 436
@@ -5203,10 +5623,11 @@ graph [
     market_cap 0
     name "Cisco"
     gnn_risk_score 0.991435170173645
-    raw_risk_score 0.265689088102543
+    industry "Communication Equipment"
+    raw_risk_score 0.23309739419210815
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 437
@@ -5215,10 +5636,11 @@ graph [
     market_cap 0
     name "Cooper Companies (The)"
     gnn_risk_score 7.393830686597269E-11
-    raw_risk_score 0.3123283854160932
+    industry "Medical Instruments &#38; Supplies"
+    raw_risk_score 0.2839081587237837
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 438
@@ -5227,10 +5649,11 @@ graph [
     market_cap 0
     name "Corteva"
     gnn_risk_score 1.3609953839477384E-06
-    raw_risk_score 0.15157570093687006
+    industry "Agricultural Inputs"
+    raw_risk_score 0.13921992528345406
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 439
@@ -5239,10 +5662,11 @@ graph [
     market_cap 0
     name "Dominion Energy"
     gnn_risk_score 1.3250818255983177E-06
-    raw_risk_score 0.12059094308870472
+    industry "Utilities - Regulated Electric"
+    raw_risk_score 0.10260097583378516
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 440
@@ -5251,10 +5675,11 @@ graph [
     market_cap 0
     name "DuPont"
     gnn_risk_score 1.7458461343267118E-07
-    raw_risk_score 0.2750617792078425
+    industry "Specialty Chemicals"
+    raw_risk_score 0.22242133816621482
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 441
@@ -5263,10 +5688,11 @@ graph [
     market_cap 0
     name "Equinix"
     gnn_risk_score 4.201190861863324E-08
-    raw_risk_score 0.3242236112091068
+    industry "REIT - Specialty"
+    raw_risk_score 0.3102959437189558
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 442
@@ -5275,10 +5701,11 @@ graph [
     market_cap 0
     name "Expedia Group"
     gnn_risk_score 2.0590364968597896E-08
-    raw_risk_score 0.5339153345111423
+    industry "Travel Services"
+    raw_risk_score 0.42853716884984816
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 443
@@ -5287,10 +5714,11 @@ graph [
     market_cap 0
     name "F5, Inc."
     gnn_risk_score 2.7735497496905737E-05
-    raw_risk_score 0.17573082547030466
+    industry "Software - Infrastructure"
+    raw_risk_score 0.14839962662217304
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 444
@@ -5299,10 +5727,11 @@ graph [
     market_cap 0
     name "Gen Digital"
     gnn_risk_score 0.9999996423721313
-    raw_risk_score 0.13825386216415034
+    industry "Software - Infrastructure"
+    raw_risk_score 0.11652297711698413
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 445
@@ -5311,10 +5740,11 @@ graph [
     market_cap 0
     name "Invitation Homes"
     gnn_risk_score 6.427971754874306E-08
-    raw_risk_score 0.13232297702880963
+    industry "REIT - Residential"
+    raw_risk_score 0.1150812598380536
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 446
@@ -5323,10 +5753,11 @@ graph [
     market_cap 0
     name "Marriott International"
     gnn_risk_score 0.9996995329856873
-    raw_risk_score 0.2867693286207891
+    industry "Lodging"
+    raw_risk_score 0.255801040760224
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 447
@@ -5335,10 +5766,11 @@ graph [
     market_cap 1633175856476.1501
     name "Meta Platforms, Inc. Class A Common Stock"
     gnn_risk_score 0.9981081485748291
-    raw_risk_score 0.19684150704366132
+    industry "Internet Content &#38; Information"
+    raw_risk_score 0.16627703745715708
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC."
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 448
@@ -5347,10 +5779,11 @@ graph [
     market_cap 0
     name "Moderna"
     gnn_risk_score 0.00044773751869797707
-    raw_risk_score 0.4648028080742126
+    industry "Biotechnology"
+    raw_risk_score 0.3711296210007819
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 449
@@ -5359,10 +5792,11 @@ graph [
     market_cap 0
     name "Nasdaq, Inc."
     gnn_risk_score 1.0896881175170847E-09
-    raw_risk_score 0.1261744150728954
+    industry "Financial Data &#38; Stock Exchanges"
+    raw_risk_score 0.11580475230776219
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 450
@@ -5371,10 +5805,11 @@ graph [
     market_cap 0
     name "PayPal"
     gnn_risk_score 1.1607910892053042E-05
-    raw_risk_score 0.2839058522762008
+    industry "Credit Services"
+    raw_risk_score 0.24412775267367173
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 451
@@ -5383,10 +5818,11 @@ graph [
     market_cap 0
     name "Tapestry, Inc."
     gnn_risk_score 3.60605945104453E-08
-    raw_risk_score 0.3966531963905451
+    industry "Luxury Goods"
+    raw_risk_score 0.3299142270736005
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 452
@@ -5395,10 +5831,11 @@ graph [
     market_cap 0
     name "Teradyne"
     gnn_risk_score 6.058063490854693E-07
-    raw_risk_score 0.3939964806355247
+    industry "Semiconductor Equipment &#38; Materials"
+    raw_risk_score 0.31725949476397336
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 453
@@ -5407,10 +5844,11 @@ graph [
     market_cap 0
     name "Trimble Inc."
     gnn_risk_score 1.2225272350008254E-08
-    raw_risk_score 0.2503440327101654
+    industry "Scientific &#38; Technical Instruments"
+    raw_risk_score 0.20938319106633535
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 454
@@ -5419,10 +5857,11 @@ graph [
     market_cap 0
     name "Ulta Beauty"
     gnn_risk_score 2.8022190235788003E-05
-    raw_risk_score 0.25620659377428784
+    industry "Specialty Retail"
+    raw_risk_score 0.2258660032529664
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 455
@@ -5431,10 +5870,11 @@ graph [
     market_cap 0
     name "Verisk Analytics"
     gnn_risk_score 1.4198755025063292E-06
-    raw_risk_score 0.22741859180868584
+    industry "Consulting Services"
+    raw_risk_score 0.20662276224376414
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 456
@@ -5443,10 +5883,11 @@ graph [
     market_cap 0
     name "Viatris Inc. Common Stock"
     gnn_risk_score 1.1441990466209973E-08
-    raw_risk_score 0.37878470955997584
+    industry "Drug Manufacturers - Specialty &#38; Generic"
+    raw_risk_score 0.3173435520661049
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Healthcare"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 457
@@ -5455,10 +5896,11 @@ graph [
     market_cap 0
     name "VICI Properties Inc. Common Stock"
     gnn_risk_score 8.74572742759483E-06
-    raw_risk_score 0.29309014272214684
+    industry "REIT - Diversified"
+    raw_risk_score 0.2855343172483701
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Real Estate"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 458
@@ -5467,10 +5909,11 @@ graph [
     market_cap 0
     name "Warner Bros. Discovery"
     gnn_risk_score 2.2795231302552565E-07
-    raw_risk_score 0.25070451044373754
+    industry "Entertainment"
+    raw_risk_score 0.21297458389175472
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 459
@@ -5479,10 +5922,11 @@ graph [
     market_cap 0
     name "Citizens Financial Group"
     gnn_risk_score 2.202589222122242E-08
-    raw_risk_score 0.21914147277909202
+    industry "Banks - Regional"
+    raw_risk_score 0.1938390900503053
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 460
@@ -5491,10 +5935,11 @@ graph [
     market_cap 0
     name "Mondelez International"
     gnn_risk_score 0.9999996423721313
-    raw_risk_score 0.1225701251737166
+    industry "Confectioners"
+    raw_risk_score 0.10485091665661865
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 461
@@ -5503,10 +5948,11 @@ graph [
     market_cap 0
     name "Verizon"
     gnn_risk_score 6.077117973291024E-07
-    raw_risk_score 0.1409518218318238
+    industry "Telecom Services"
+    raw_risk_score 0.12920422143385282
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 462
@@ -5515,10 +5961,11 @@ graph [
     market_cap 0
     name "Broadridge Financial Solutions"
     gnn_risk_score 0.00012218252231832594
-    raw_risk_score 0.1360157607892048
+    industry "Information Technology Services"
+    raw_risk_score 0.1291756793737026
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 463
@@ -5527,10 +5974,11 @@ graph [
     market_cap 0
     name "Capital One"
     gnn_risk_score 9.912152165725274E-08
-    raw_risk_score 0.17564152405736955
+    industry "Credit Services"
+    raw_risk_score 0.14583687731356096
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 464
@@ -5539,10 +5987,11 @@ graph [
     market_cap 0
     name "Cincinnati Financial"
     gnn_risk_score 4.8758156623307514E-08
-    raw_risk_score 0.10603131616918883
+    industry "Insurance - Property &#38; Casualty"
+    raw_risk_score 0.0922341393316926
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 465
@@ -5551,10 +6000,11 @@ graph [
     market_cap 0
     name "Fidelity National Information Services"
     gnn_risk_score 1.565001639391994E-06
-    raw_risk_score 0.14996364562034292
+    industry "Information Technology Services"
+    raw_risk_score 0.13024819043604338
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 466
@@ -5563,10 +6013,11 @@ graph [
     market_cap 0
     name "PNC Financial Services"
     gnn_risk_score 5.18506840307964E-06
-    raw_risk_score 0.1825871052618312
+    industry "Banks - Regional"
+    raw_risk_score 0.1681764457684164
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 467
@@ -5575,10 +6026,11 @@ graph [
     market_cap 0
     name "Prudential Financial"
     gnn_risk_score 1.2188418052616612E-09
-    raw_risk_score 0.1635891526733108
+    industry "Insurance - Life"
+    raw_risk_score 0.14950942128999134
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 468
@@ -5587,10 +6039,11 @@ graph [
     market_cap 0
     name "Raymond James Financial"
     gnn_risk_score 8.328682099545404E-08
-    raw_risk_score 0.20543494440004761
+    industry "Asset Management"
+    raw_risk_score 0.1817864386263664
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 469
@@ -5599,10 +6052,11 @@ graph [
     market_cap 0
     name "Arthur J. Gallagher &#38; Co."
     gnn_risk_score 9.145413059741259E-06
-    raw_risk_score 0.20130679791315195
+    industry "Insurance Brokers"
+    raw_risk_score 0.17438422745513107
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 470
@@ -5611,10 +6065,11 @@ graph [
     market_cap 0
     name "Regions Financial Corporation"
     gnn_risk_score 8.633911363631341E-09
-    raw_risk_score 0.1518017648163564
+    industry "Banks - Regional"
+    raw_risk_score 0.15514732653899177
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 471
@@ -5623,10 +6078,11 @@ graph [
     market_cap 0
     name "Union Pacific Corporation"
     gnn_risk_score 5.936261482375471E-10
-    raw_risk_score 0.18888917211299458
+    industry "Railroads"
+    raw_risk_score 0.17708939763649606
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 472
@@ -5635,10 +6091,11 @@ graph [
     market_cap 0
     name "Bristol Myers Squibb"
     gnn_risk_score 0.98972088098526
-    raw_risk_score 0.22872995974528545
+    industry "Drug Manufacturers - General"
+    raw_risk_score 0.19938136579433435
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 473
@@ -5647,10 +6104,11 @@ graph [
     market_cap 0
     name "Charter Communications"
     gnn_risk_score 0.9999991655349731
-    raw_risk_score 0.32224108526545003
+    industry "Telecom Services"
+    raw_risk_score 0.2793011575583057
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 474
@@ -5659,10 +6117,11 @@ graph [
     market_cap 0
     name "Huntington Ingalls Industries"
     gnn_risk_score 2.191395878980984E-06
-    raw_risk_score 0.21471893439787285
+    industry "Aerospace &#38; Defense"
+    raw_risk_score 0.18852568429115843
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 475
@@ -5671,10 +6130,11 @@ graph [
     market_cap 0
     name "SBA Communications"
     gnn_risk_score 2.7132145419273E-07
-    raw_risk_score 0.22450429903561087
+    industry "REIT - Specialty"
+    raw_risk_score 0.20424381945622433
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 476
@@ -5683,10 +6143,11 @@ graph [
     market_cap 0
     name "United Rentals"
     gnn_risk_score 1.5502183980942164E-09
-    raw_risk_score 0.2411035230472227
+    industry "Rental &#38; Leasing Services"
+    raw_risk_score 0.21590686438935236
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 477
@@ -5695,10 +6156,11 @@ graph [
     market_cap 0
     name "Universal Health Services"
     gnn_risk_score 8.434741793905687E-11
-    raw_risk_score 0.2736262810907111
+    industry "Medical Care Facilities"
+    raw_risk_score 0.2505052194816417
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 478
@@ -5707,10 +6169,11 @@ graph [
     market_cap 0
     name "GE Aerospace"
     gnn_risk_score 0.32861411571502686
-    raw_risk_score 0.2651343048655661
+    industry "Aerospace &#38; Defense"
+    raw_risk_score 0.2414750599858444
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 479
@@ -5719,10 +6182,11 @@ graph [
     market_cap 0
     name "Kimberly-Clark"
     gnn_risk_score 2.028981725743506E-06
-    raw_risk_score 0.5028985165213062
+    industry "Household &#38; Personal Products"
+    raw_risk_score 0.4304570054436317
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 480
@@ -5731,10 +6195,11 @@ graph [
     market_cap 0
     name "STERIS plc"
     gnn_risk_score 1.7294680674240226E-06
-    raw_risk_score 0.19745776310577234
+    industry "Medical Devices"
+    raw_risk_score 0.1635035788079143
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Healthcare"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 481
@@ -5743,10 +6208,11 @@ graph [
     market_cap 0
     name "Waters Corporation"
     gnn_risk_score 2.763521024462534E-06
-    raw_risk_score 0.28846285908337943
+    industry "Diagnostics &#38; Research"
+    raw_risk_score 0.2514496236442978
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 482
@@ -5755,10 +6221,11 @@ graph [
     market_cap 0
     name "Western Digital"
     gnn_risk_score 2.0312920696596848E-06
-    raw_risk_score 0.5000844770166563
+    industry "Computer Hardware"
+    raw_risk_score 0.4050843668146076
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 483
@@ -5767,10 +6234,11 @@ graph [
     market_cap 0
     name "PepsiCo"
     gnn_risk_score 0.9999265670776367
-    raw_risk_score 0.21188300077391178
+    industry "Beverages - Non-Alcoholic"
+    raw_risk_score 0.20336254892221858
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 484
@@ -5779,10 +6247,11 @@ graph [
     market_cap 0
     name "Costco Wholesale Corp"
     gnn_risk_score 0.9995920062065125
-    raw_risk_score 0.10390550703368423
+    industry "Discount Stores"
+    raw_risk_score 0.09165764822182647
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
-    sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    sector "Consumer Defensive"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 485
@@ -5791,10 +6260,11 @@ graph [
     market_cap 0
     name "Lamb Weston"
     gnn_risk_score 5.505128797267389E-09
-    raw_risk_score 0.21084584863747702
+    industry "Packaged Foods"
+    raw_risk_score 0.17655228448157456
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 486
@@ -5803,10 +6273,11 @@ graph [
     market_cap 0
     name "Whirlpool Corporation"
     gnn_risk_score 1.9394558421481634E-06
-    raw_risk_score 0.4702270471846973
+    industry "Furnishings, Fixtures &#38; Appliances"
+    raw_risk_score 0.41483858122403705
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 487
@@ -5815,10 +6286,11 @@ graph [
     market_cap 0
     name "Starbucks"
     gnn_risk_score 4.35193072689799E-07
-    raw_risk_score 0.21800566463983012
+    industry "Restaurants"
+    raw_risk_score 0.18068853657206718
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 488
@@ -5827,10 +6299,11 @@ graph [
     market_cap 0
     name "BlackRock"
     gnn_risk_score 1.448704693984837E-07
-    raw_risk_score 0.20064673816999953
+    industry "Asset Management"
+    raw_risk_score 0.18052160664891698
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 489
@@ -5839,10 +6312,11 @@ graph [
     market_cap 0
     name "KeyCorp"
     gnn_risk_score 0.41322728991508484
-    raw_risk_score 0.19457682742731305
+    industry "Banks - Regional"
+    raw_risk_score 0.17189600369508723
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 490
@@ -5851,10 +6325,11 @@ graph [
     market_cap 0
     name "Kimco Realty"
     gnn_risk_score 0.9999991655349731
-    raw_risk_score 0.11780251640424233
+    industry "REIT - Retail"
+    raw_risk_score 0.1042455546217757
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 491
@@ -5863,10 +6338,11 @@ graph [
     market_cap 0
     name "EPAM Systems"
     gnn_risk_score 3.0781830417936362E-09
-    raw_risk_score 0.27899623035960125
+    industry "Information Technology Services"
+    raw_risk_score 0.24642312254647475
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 492
@@ -5875,10 +6351,11 @@ graph [
     market_cap 0
     name "Comcast"
     gnn_risk_score 0.9854258298873901
-    raw_risk_score 0.19314367705194074
+    industry "Telecom Services"
+    raw_risk_score 0.16598733830973017
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 493
@@ -5887,10 +6364,11 @@ graph [
     market_cap 0
     name "EOG Resources"
     gnn_risk_score 3.5550901884562336E-06
-    raw_risk_score 0.1593596372215485
+    industry "Oil &#38; Gas E&#38;P"
+    raw_risk_score 0.14522403395543168
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 494
@@ -5899,10 +6377,11 @@ graph [
     market_cap 0
     name "Incyte"
     gnn_risk_score 9.54683400777867E-06
-    raw_risk_score 0.3172319908047181
+    industry "Biotechnology"
+    raw_risk_score 0.26832088192325615
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 495
@@ -5911,10 +6390,11 @@ graph [
     market_cap 0
     name "Quest Diagnostics"
     gnn_risk_score 1.4441908433582284E-06
-    raw_risk_score 0.13583557055984719
+    industry "Diagnostics &#38; Research"
+    raw_risk_score 0.11518205414676469
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 496
@@ -5923,10 +6403,11 @@ graph [
     market_cap 0
     name "Steel Dynamics"
     gnn_risk_score 4.2746343353883276E-08
-    raw_risk_score 0.3153498462320875
+    industry "Steel"
+    raw_risk_score 0.28878797825144287
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 497
@@ -5935,10 +6416,11 @@ graph [
     market_cap 0
     name "Aptiv"
     gnn_risk_score 7.144297455852211E-07
-    raw_risk_score 0.3135068229044318
+    industry "Auto Parts"
+    raw_risk_score 0.26807197713044717
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 498
@@ -5947,10 +6429,11 @@ graph [
     market_cap 0
     name "EQT Corporation"
     gnn_risk_score 4.6090669059140055E-08
-    raw_risk_score 0.2412825788232057
+    industry "Oil &#38; Gas E&#38;P"
+    raw_risk_score 0.2034492087851871
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 499
@@ -5959,10 +6442,11 @@ graph [
     market_cap 0
     name "Oracle Corporation"
     gnn_risk_score 8.554588148967923E-09
-    raw_risk_score 0.42143023024945636
+    industry "Software - Infrastructure"
+    raw_risk_score 0.36807014984733344
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 500
@@ -5971,10 +6455,11 @@ graph [
     market_cap 0
     name "Public Storage"
     gnn_risk_score 3.7742762515335926E-07
-    raw_risk_score 0.12302002480651697
+    industry "REIT - Industrial"
+    raw_risk_score 0.10726249959017256
     last_risk_update "2025-11-24T09:53:59.584000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 501
@@ -5983,10 +6468,11 @@ graph [
     market_cap 0
     name "Sempra"
     gnn_risk_score 5.525075152945647E-07
-    raw_risk_score 0.14304867889010536
+    industry "Utilities - Diversified"
+    raw_risk_score 0.12643288925676835
     last_risk_update "2025-11-24T09:53:59.584000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 502
@@ -5995,10 +6481,11 @@ graph [
     market_cap 0
     name "Targa Resources"
     gnn_risk_score 3.848691449093167E-06
-    raw_risk_score 0.2694189257085372
+    industry "Oil &#38; Gas Midstream"
+    raw_risk_score 0.2364835927161419
     last_risk_update "2025-11-24T09:53:59.584000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 503
@@ -6022,9 +6509,10 @@ graph [
     ticker "PSKY"
     market_cap 0
     name "Paramount Skydance Corporation"
-    raw_risk_score 0.38806368443705863
+    industry "Entertainment"
+    raw_risk_score 0.31317216060815184
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 506
@@ -6032,9 +6520,10 @@ graph [
     ticker "ERIE"
     market_cap 0
     name "Erie Indemnity"
-    raw_risk_score 0.25929938937816344
+    industry "Insurance Brokers"
+    raw_risk_score 0.2349565034050426
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 507
@@ -6042,9 +6531,10 @@ graph [
     ticker "BG"
     market_cap 0
     name "Bunge Global"
-    raw_risk_score 0.17379022580055015
+    industry "Farm Products"
+    raw_risk_score 0.15156364939177025
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 508
@@ -6060,9 +6550,10 @@ graph [
     ticker "BLDR"
     market_cap 0
     name "Builders FirstSource"
-    raw_risk_score 0.3745230996727761
+    industry "Building Products &#38; Equipment"
+    raw_risk_score 0.3108339032427967
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 510
@@ -6070,9 +6561,10 @@ graph [
     ticker "COR"
     market_cap 0
     name "Cencora (formerly AmerisourceBergen)"
-    raw_risk_score 0.1373242645509917
+    industry "Medical Distribution"
+    raw_risk_score 0.1210767345225641
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 511
@@ -6080,9 +6572,10 @@ graph [
     ticker "EG"
     market_cap 0
     name "Everest Group (formerly RE)"
-    raw_risk_score 0.22711605690555356
+    industry "Insurance - Reinsurance"
+    raw_risk_score 0.20781676687148556
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 512
@@ -6090,9 +6583,10 @@ graph [
     ticker "HUBB"
     market_cap 0
     name "Hubbell Incorporated"
-    raw_risk_score 0.2716889732571084
+    industry "Electrical Equipment &#38; Parts"
+    raw_risk_score 0.24215728930394104
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 513
@@ -6100,9 +6594,10 @@ graph [
     ticker "PODD"
     market_cap 0
     name "Insulet Corporation"
-    raw_risk_score 0.36267854355234713
+    industry "Medical Devices"
+    raw_risk_score 0.29393076058964684
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 514
@@ -6110,9 +6605,10 @@ graph [
     ticker "KVUE"
     market_cap 0
     name "Kenvue"
-    raw_risk_score 0.38047885960306976
+    industry "Household &#38; Personal Products"
+    raw_risk_score 0.32112228214192257
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 515
@@ -6120,9 +6616,10 @@ graph [
     ticker "SW"
     market_cap 0
     name "Smurfit WestRock (formerly WestRock)"
-    raw_risk_score 0.15836939505692707
+    industry "Packaging &#38; Containers"
+    raw_risk_score 0.1327246025320696
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 516
@@ -6130,9 +6627,10 @@ graph [
     ticker "SOLV"
     market_cap 0
     name "Solventum"
-    raw_risk_score 0.49906758336792895
+    industry "Medical Instruments &#38; Supplies"
+    raw_risk_score 0.4574507919660378
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 517
@@ -6140,9 +6638,10 @@ graph [
     ticker "SMCI"
     market_cap 0
     name "Supermicro"
-    raw_risk_score 0.5438958351290958
+    industry "Computer Hardware"
+    raw_risk_score 0.4555946326027581
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 518
@@ -6150,9 +6649,10 @@ graph [
     ticker "TKO"
     market_cap 0
     name "TKO Group Holdings"
-    raw_risk_score 0.3212263633980063
+    industry "Entertainment"
+    raw_risk_score 0.2831674004998455
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 519
@@ -6160,9 +6660,10 @@ graph [
     ticker "UBER"
     market_cap 0
     name "Uber"
-    raw_risk_score 0.3686387532716044
+    industry "Software - Application"
+    raw_risk_score 0.32339617191870224
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 520
@@ -6282,9 +6783,10 @@ graph [
     ticker "BX"
     market_cap 0
     name "Blackstone Inc."
-    raw_risk_score 0.16790111163622845
+    industry "Asset Management"
+    raw_risk_score 0.1439609470926258
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 535
@@ -6292,9 +6794,10 @@ graph [
     ticker "XYZ"
     market_cap 0
     name "Block, Inc."
-    raw_risk_score 0.3790032123849213
+    industry "Software - Infrastructure"
+    raw_risk_score 0.3094580937709473
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 536
@@ -6302,9 +6805,10 @@ graph [
     ticker "CRWD"
     market_cap 0
     name "CrowdStrike"
-    raw_risk_score 0.3266246571972401
+    industry "Software - Infrastructure"
+    raw_risk_score 0.28690901722685697
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 537
@@ -6312,9 +6816,10 @@ graph [
     ticker "DECK"
     market_cap 0
     name "Deckers Brands"
-    raw_risk_score 0.38558705650628766
+    industry "Footwear &#38; Accessories"
+    raw_risk_score 0.3362343360668058
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 538
@@ -6322,9 +6827,10 @@ graph [
     ticker "DOC"
     market_cap 0
     name "Healthpeak Properties (formerly PEAK)"
-    raw_risk_score 0.1967502237159015
+    industry "REIT - Healthcare Facilities"
+    raw_risk_score 0.17826607409683998
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 539
@@ -6332,9 +6838,10 @@ graph [
     ticker "IBKR"
     market_cap 0
     name "Interactive Brokers"
-    raw_risk_score 0.3947493214154285
+    industry "Capital Markets"
+    raw_risk_score 0.336482187338453
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 540
@@ -6342,9 +6849,10 @@ graph [
     ticker "KKR"
     market_cap 0
     name "KKR &#38; Co."
-    raw_risk_score 0.21316121481624423
+    industry "Asset Management"
+    raw_risk_score 0.17900310380054735
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 541
@@ -6352,9 +6860,10 @@ graph [
     ticker "HOOD"
     market_cap 0
     name "Robinhood Markets"
-    raw_risk_score 0.6438368552227888
+    industry "Capital Markets"
+    raw_risk_score 0.5184681675142128
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 542
@@ -6362,9 +6871,10 @@ graph [
     ticker "TTD"
     market_cap 0
     name "Trade Desk (The)"
-    raw_risk_score 0.36030643922162797
+    industry "Advertising Agencies"
+    raw_risk_score 0.31296644680023356
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 543
@@ -6372,9 +6882,10 @@ graph [
     ticker "WDAY"
     market_cap 0
     name "Workday, Inc."
-    raw_risk_score 0.3259868562304722
+    industry "Software - Application"
+    raw_risk_score 0.27596410142721856
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 544
@@ -6382,9 +6893,9 @@ graph [
     ticker "BRK-B"
     market_cap 0
     name "Berkshire Hathaway"
-    raw_risk_score 0.15576793590603133
+    raw_risk_score 0.1455665485762746
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 545
@@ -6392,9 +6903,10 @@ graph [
     ticker "CPAY"
     market_cap 0
     name "Corpay (formerly FLEETCOR/FLT)"
-    raw_risk_score 0.2827686016600111
+    industry "Software - Infrastructure"
+    raw_risk_score 0.24626111103612963
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 546
@@ -6402,9 +6914,10 @@ graph [
     ticker "DAY"
     market_cap 0
     name "Dayforce (formerly Ceridian/CDAY)"
-    raw_risk_score 0.11207213230491594
+    industry "Software - Application"
+    raw_risk_score 0.12085725306684991
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 547
@@ -6420,9 +6933,10 @@ graph [
     ticker "ABNB"
     market_cap 0
     name "Airbnb"
-    raw_risk_score 0.19695726370402178
+    industry "Travel Services"
+    raw_risk_score 0.16466958472670543
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 549
@@ -6430,9 +6944,10 @@ graph [
     ticker "AXON"
     market_cap 0
     name "Axon Enterprise"
-    raw_risk_score 0.457405351716212
+    industry "Aerospace &#38; Defense"
+    raw_risk_score 0.4000782730676977
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 550
@@ -6448,9 +6963,10 @@ graph [
     ticker "DELL"
     market_cap 0
     name "Dell Technologies"
-    raw_risk_score 0.38788113711748473
+    industry "Computer Hardware"
+    raw_risk_score 0.3230232690200291
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 552
@@ -6458,9 +6974,10 @@ graph [
     ticker "PLTR"
     market_cap 0
     name "Palantir Technologies"
-    raw_risk_score 0.5576323133282766
+    industry "Software - Infrastructure"
+    raw_risk_score 0.4707042144792354
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 553
@@ -6468,6 +6985,7 @@ graph [
     ticker "Q"
     market_cap 0
     name "Qnity Electronics"
+    industry "Semiconductor Equipment &#38; Materials"
     sector "Discovered"
   ]
   node [
@@ -6476,9 +6994,10 @@ graph [
     ticker "LII"
     market_cap 0
     name "Lennox International"
-    raw_risk_score 0.18591511062935404
+    industry "Building Products &#38; Equipment"
+    raw_risk_score 0.15246957923545199
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 555
@@ -6486,9 +7005,10 @@ graph [
     ticker "APO"
     market_cap 0
     name "Apollo Global Management"
-    raw_risk_score 0.24389256760115144
+    industry "Asset Management"
+    raw_risk_score 0.1999145190628048
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 556
@@ -6496,9 +7016,10 @@ graph [
     ticker "APP"
     market_cap 0
     name "AppLovin"
-    raw_risk_score 0.4203071594348693
+    industry "Advertising Agencies"
+    raw_risk_score 0.34087423730307065
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 557
@@ -6506,9 +7027,10 @@ graph [
     ticker "COIN"
     market_cap 0
     name "Coinbase"
-    raw_risk_score 0.6036678575883272
+    industry "Financial Data &#38; Stock Exchanges"
+    raw_risk_score 0.5048419008797251
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 558
@@ -6516,9 +7038,10 @@ graph [
     ticker "EXE"
     market_cap 0
     name "Expand Energy"
-    raw_risk_score 0.3037361044765615
+    industry "Oil &#38; Gas E&#38;P"
+    raw_risk_score 0.27050128302806636
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 559
@@ -6526,9 +7049,10 @@ graph [
     ticker "GEV"
     market_cap 0
     name "GE Vernova"
-    raw_risk_score 0.3647803720415569
+    industry "Specialty Industrial Machinery"
+    raw_risk_score 0.2913866073430805
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 560
@@ -6536,9 +7060,10 @@ graph [
     ticker "SOLS"
     market_cap 0
     name "Solstice Advanced Materials"
-    raw_risk_score 0.4165131293692609
+    industry "Specialty Chemicals"
+    raw_risk_score 0.3328686220218329
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 561
@@ -6546,9 +7071,10 @@ graph [
     ticker "TPL"
     market_cap 0
     name "Texas Pacific Land Corporation"
-    raw_risk_score 0.48739458948826114
+    industry "Oil &#38; Gas E&#38;P"
+    raw_risk_score 0.41960295661382097
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 562
@@ -6556,9 +7082,10 @@ graph [
     ticker "WSM"
     market_cap 0
     name "Williams-Sonoma, Inc."
-    raw_risk_score 0.2929649848228522
+    industry "Specialty Retail"
+    raw_risk_score 0.25432435553737187
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 563
@@ -6566,9 +7093,9 @@ graph [
     ticker "BF-B"
     market_cap 0
     name "Brown&#8211;Forman"
-    raw_risk_score 0.282186801065652
+    raw_risk_score 0.2579783654844384
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 564
@@ -6584,9 +7111,10 @@ graph [
     ticker "DASH"
     market_cap 0
     name "DoorDash"
-    raw_risk_score 0.5252563289522756
+    industry "Internet Retail"
+    raw_risk_score 0.41583598631635593
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 566
@@ -6594,9 +7122,10 @@ graph [
     ticker "EME"
     market_cap 0
     name "Emcor"
-    raw_risk_score 0.31346256527939687
+    industry "Engineering &#38; Construction"
+    raw_risk_score 0.27669888297910017
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 567
@@ -6604,9 +7133,10 @@ graph [
     ticker "VLTO"
     market_cap 0
     name "Veralto"
-    raw_risk_score 0.2092539760113024
+    industry "Pollution &#38; Treatment Controls"
+    raw_risk_score 0.1825558745473681
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 568
@@ -6614,9 +7144,10 @@ graph [
     ticker "DDOG"
     market_cap 0
     name "Datadog"
-    raw_risk_score 0.8878957764117659
+    industry "Software - Application"
+    raw_risk_score 0.7540345723389179
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 569
@@ -6624,21 +7155,103 @@ graph [
     ticker "VST"
     market_cap 0
     name "Vistra Corp."
-    raw_risk_score 0.3566161594942098
+    industry "Utilities - Independent Power Producers"
+    raw_risk_score 0.3008804597196377
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
   ]
   node [
     id 570
+    label "^TNX"
+    ticker "^TNX"
+    is_macro 1
+    name "10-Year Treasury Yield"
+    raw_risk_score 0.081581687117216
+    sector "Macro"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
+  ]
+  node [
+    id 571
+    label "CL=F"
+    ticker "CL=F"
+    is_macro 1
+    name "Crude Oil"
+    raw_risk_score 0.12368393818823833
+    sector "Macro"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
+  ]
+  node [
+    id 572
+    label "GC=F"
+    ticker "GC=F"
+    is_macro 1
+    name "Gold"
+    raw_risk_score 0.23857854760341254
+    sector "Macro"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
+  ]
+  node [
+    id 573
+    label "DX-Y.NYB"
+    ticker "DX-Y.NYB"
+    is_macro 1
+    name "US Dollar Index"
+    sector "Macro"
+  ]
+  node [
+    id 574
+    label "^VIX"
+    ticker "^VIX"
+    is_macro 1
+    name "Volatility Index"
+    raw_risk_score 0.7047326987094554
+    sector "Macro"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
+  ]
+  node [
+    id 575
+    label "X"
+    ticker "X"
+    name "X"
+    sector "Unknown"
+  ]
+  node [
+    id 576
+    label "SPOT"
+    ticker "SPOT"
+    name "Spotify"
+    sector "Unknown"
+  ]
+  node [
+    id 577
+    label "BRK"
+    ticker "BRK"
+    name "Berkshire Hathaway Inc."
+    sector "Unknown"
+  ]
+  node [
+    id 578
+    label "OTCMKTS:APO"
+    ticker "OTCMKTS:APO"
+    name "Apollo"
+    sector "Unknown"
+  ]
+  node [
+    id 579
     label "SNAP"
     ticker "SNAP"
     market_cap 0
     name "Snap Inc."
     gnn_risk_score 0.9999158978462219
-    raw_risk_score 0.5151814745359791
+    industry "Internet Content &#38; Information"
+    raw_risk_score 0.44034327491581077
     last_risk_update "2025-11-24T09:53:59.584000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T00:16:06.816000000+00:00"
+    risk_last_updated "2025-12-02T08:16:07.768000000+00:00"
+  ]
+  node [
+    id 580
+    label "TSM"
   ]
   edge [
     source 8
@@ -9026,7 +9639,7 @@ graph [
   ]
   edge [
     source 29
-    target 570
+    target 579
     sentiment -0.8
     weight 0.34
     type "sec_discovered"
@@ -14368,8 +14981,10 @@ graph [
     source 174
     target 167
     sentiment 0.01
-    weight 0.5
+    weight 0.9
     type "sec_discovered"
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
   ]
   edge [
     source 174
@@ -15861,6 +16476,27 @@ graph [
     sentiment 0.01
     weight 0.5
     type "sec_discovered"
+  ]
+  edge [
+    source 174
+    target 551
+    weight 0.9
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+  ]
+  edge [
+    source 174
+    target 578
+    weight 0.9
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+  ]
+  edge [
+    source 174
+    target 580
+    weight 0.9
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
   ]
   edge [
     source 175
@@ -21776,6 +22412,13 @@ graph [
   ]
   edge [
     source 327
+    target 27
+    weight 0.9
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+  ]
+  edge [
+    source 327
     target 28
     sentiment -0.34
     weight 0.43
@@ -21784,8 +22427,10 @@ graph [
   edge [
     source 327
     target 29
-    sentiment 0.35
     weight 0.57
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+    sentiment 0.35
     type "sec_discovered"
   ]
   edge [
@@ -22065,8 +22710,10 @@ graph [
     source 327
     target 169
     sentiment 0.02
-    weight 0.5
+    weight 0.9
     type "sec_discovered"
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
   ]
   edge [
     source 327
@@ -22407,8 +23054,10 @@ graph [
   edge [
     source 327
     target 333
-    sentiment 0.05
     weight 0.51
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+    sentiment 0.05
     type "sec_discovered"
   ]
   edge [
@@ -26174,8 +26823,10 @@ graph [
     source 329
     target 222
     sentiment 0.03
-    weight 0.51
+    weight 0.9
     type "sec_discovered"
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
   ]
   edge [
     source 329
@@ -31388,6 +32039,13 @@ graph [
     type "sec_discovered"
   ]
   edge [
+    source 330
+    target 577
+    weight 0.9
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+  ]
+  edge [
     source 331
     target 2
     sentiment 0.01
@@ -31517,14 +32175,18 @@ graph [
     source 331
     target 27
     sentiment -0.0
-    weight 0.5
+    weight 0.9
     type "sec_discovered"
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
   ]
   edge [
     source 331
     target 29
-    sentiment 0.09
     weight 0.52
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+    sentiment 0.09
     type "sec_discovered"
   ]
   edge [
@@ -31572,8 +32234,10 @@ graph [
   edge [
     source 331
     target 43
-    sentiment 0.02
     weight 0.5
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+    sentiment 0.02
     type "sec_discovered"
   ]
   edge [
@@ -33084,8 +33748,10 @@ graph [
   edge [
     source 331
     target 447
-    sentiment -0.0
     weight 0.5
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+    sentiment -0.0
     type "sec_discovered"
   ]
   edge [
@@ -33283,6 +33949,13 @@ graph [
     sentiment -0.03
     weight 0.49
     type "sec_discovered"
+  ]
+  edge [
+    source 331
+    target 576
+    weight 0.9
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
   ]
   edge [
     source 333
@@ -37899,7 +38572,7 @@ graph [
   ]
   edge [
     source 337
-    target 570
+    target 579
     sentiment -0.02
     weight 0.5
     type "sec_discovered"
@@ -39082,7 +39755,7 @@ graph [
   ]
   edge [
     source 350
-    target 570
+    target 579
     sentiment -0.23
     weight 0.45
     type "sec_discovered"
@@ -42911,7 +43584,7 @@ graph [
   ]
   edge [
     source 367
-    target 570
+    target 579
     sentiment -0.02
     weight 0.5
     type "sec_discovered"
@@ -46491,7 +47164,7 @@ graph [
   ]
   edge [
     source 447
-    target 570
+    target 579
     sentiment -0.4
     weight 0.42
     type "sec_discovered"
@@ -46586,3110 +47259,4035 @@ graph [
   ]
   edge [
     source 570
+    target 5
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 6
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 15
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 17
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 18
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 23
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 31
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 39
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 40
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 43
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 44
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 45
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 49
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 75
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 89
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 123
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 138
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 141
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 142
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 145
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 146
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 167
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 169
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 174
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 179
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 183
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 190
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 195
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 217
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 218
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 221
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 225
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 227
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 240
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 242
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 246
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 254
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 255
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 266
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 268
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 270
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 283
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 284
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 285
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 287
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 290
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 296
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 302
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 308
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 323
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 327
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 333
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 335
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 342
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 355
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 363
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 365
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 372
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 387
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 394
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 399
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 424
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 428
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 435
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 436
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 443
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 444
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 452
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 453
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 462
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 465
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 482
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 491
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 499
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 517
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 519
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 535
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 536
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 543
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 545
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 546
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 551
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 552
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 553
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 568
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 94
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 104
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 106
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 133
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 191
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 247
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 306
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 318
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 330
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 348
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 353
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 383
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 397
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 409
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 417
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 419
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 431
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 493
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 498
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 502
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 558
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 561
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 25
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 79
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 113
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 117
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 140
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 144
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 178
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 198
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 208
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 229
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 239
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 262
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 338
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 343
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 356
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 393
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 406
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 418
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 432
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 438
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 440
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 496
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 560
+    weight 0.7
+    mechanism "Macro-Economic Sector Correlation"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 579
     target 0
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 1
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 2
     sentiment -0.09
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 3
     sentiment -0.09
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 4
     sentiment -0.09
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 5
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 6
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 7
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 8
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 9
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 10
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 11
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 12
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 13
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 15
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 18
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 19
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 20
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 21
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 22
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 23
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 24
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 25
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 26
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 27
     sentiment -0.0
-    weight 0.5
+    weight 0.9
     type "sec_discovered"
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
   ]
   edge [
-    source 570
+    source 579
     target 28
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 29
     sentiment 0.08
     weight 0.52
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 30
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 31
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 32
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 33
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 34
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 35
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 39
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 40
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 42
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 43
-    sentiment 0.08
     weight 0.52
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+    sentiment 0.08
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 44
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 45
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 46
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 48
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 49
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 50
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 51
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 52
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 53
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 54
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 56
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 57
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 58
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 59
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 60
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 61
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 62
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 63
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 65
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 66
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 67
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 68
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 69
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 70
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 72
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 73
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 74
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 75
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 76
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 77
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 79
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 80
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 81
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 82
     sentiment -0.03
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 84
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 85
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 86
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 87
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 88
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 89
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 90
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 91
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 92
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 93
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 94
     sentiment -0.12
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 95
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 96
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 97
     sentiment -0.03
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 98
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 100
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 101
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 103
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 104
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 107
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 109
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 110
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 111
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 112
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 114
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 115
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 117
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 118
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 119
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 120
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 122
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 123
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 124
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 125
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 126
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 129
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 130
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 131
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 132
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 133
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 134
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 135
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 136
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 137
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 138
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 140
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 141
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 142
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 143
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 144
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 145
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 146
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 147
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 148
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 149
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 150
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 151
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 152
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 153
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 154
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 155
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 156
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 158
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 160
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 161
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 162
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 164
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 165
     sentiment -0.12
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 166
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 167
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 169
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 170
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 171
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 172
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 174
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 176
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 177
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 178
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 179
     sentiment -0.09
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 180
     sentiment -0.09
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 181
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 182
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 184
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 185
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 186
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 187
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 190
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 192
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 193
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 194
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 195
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 196
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 197
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 198
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 199
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 200
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 201
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 202
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 203
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 205
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 207
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 208
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 209
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 210
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 211
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 212
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 214
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 216
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 217
     sentiment 0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 218
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 219
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 220
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 221
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 222
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 223
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 224
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 225
     sentiment -0.12
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 226
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 227
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 228
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 229
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 232
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 233
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 234
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 235
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 236
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 237
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 239
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 240
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 242
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 243
     sentiment -0.12
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 244
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 245
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 246
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 249
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 250
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 251
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 253
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 254
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 255
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 256
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 257
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 258
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 259
     sentiment 0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 261
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 262
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 263
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 264
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 265
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 266
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 267
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 268
     sentiment -0.03
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 269
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 270
     sentiment -0.03
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 271
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 272
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 273
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 274
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 275
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 277
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 279
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 280
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 281
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 282
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 283
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 284
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 285
     sentiment -0.09
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 286
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 287
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 288
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 289
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 290
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 291
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 292
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 293
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 294
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 295
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 296
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 298
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 299
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 300
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 301
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 302
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 303
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 304
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 306
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 307
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 308
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 309
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 310
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 311
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 313
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 314
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 315
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 318
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 319
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 321
     sentiment -0.03
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 322
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 323
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 324
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 325
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 326
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 329
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 330
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 332
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 333
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 334
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 335
     sentiment -0.04
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 336
     sentiment -0.04
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 337
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 338
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 339
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 340
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 341
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 342
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 343
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 344
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 345
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 346
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 347
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 348
     sentiment 0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 349
     sentiment -0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 351
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 352
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 353
     sentiment 0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 354
     sentiment -0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 355
     sentiment -0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 356
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 357
     sentiment -0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 358
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 359
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 360
     sentiment -0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 361
     sentiment -0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 362
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 363
     sentiment -0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 364
     sentiment -0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 365
     sentiment -0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 366
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 367
-    sentiment -0.0
     weight 0.5
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+    sentiment -0.0
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 368
     sentiment 0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 369
     sentiment 0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 370
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 371
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 372
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 373
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 374
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 375
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 376
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 377
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 378
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 379
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 380
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 381
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 382
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 383
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 384
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 385
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 386
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 387
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 388
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 389
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 390
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 391
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 392
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 393
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 394
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 395
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 396
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 397
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 398
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 399
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 400
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 401
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 402
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 403
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 404
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 405
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 406
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 407
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 408
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 409
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 410
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 411
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 412
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 413
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 414
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 415
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 416
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 417
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 418
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 419
     sentiment 0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 420
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 421
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 422
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 423
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 424
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 425
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 426
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 427
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 428
     sentiment -0.09
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 429
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 430
     sentiment -0.08
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 431
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 432
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 433
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 434
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 435
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 436
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 437
     sentiment -0.58
     weight 0.38
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 438
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 439
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 440
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 441
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 442
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 443
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 444
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 445
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 446
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 447
-    sentiment 0.12
     weight 0.52
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+    sentiment 0.12
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 448
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 449
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 450
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 451
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 452
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 453
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 454
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 455
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 456
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 457
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 458
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 459
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 460
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 461
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 462
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 463
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 464
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 465
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 466
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 467
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 468
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 469
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 470
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 471
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 472
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 473
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 474
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 475
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 476
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 477
     sentiment -0.04
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 478
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 479
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 480
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 481
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 482
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 483
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 484
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 485
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 486
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 487
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 489
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 490
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 491
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 492
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 493
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 494
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 495
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 496
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 497
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 498
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 499
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 500
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 501
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 570
+    source 579
     target 502
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
+  ]
+  edge [
+    source 579
+    target 575
+    weight 0.9
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
   ]
 ]
