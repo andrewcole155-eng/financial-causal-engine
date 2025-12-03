@@ -190,7 +190,7 @@ def get_cloud_config_dict():
 # ==============================================================================
 # --- NEW: TRUTH LAYER VISUALIZATION ---
 # ==============================================================================
-@st.cache_data(ttl=3600) # <--- CRITICAL: Caches data for 1 hour to prevent 429 errors
+@st.cache_data(ttl=3600)
 def fetch_polygon_price_data(ticker, api_key):
     """
     Separate function to fetch data so Streamlit can cache the result.
@@ -215,13 +215,20 @@ def fetch_polygon_price_data(ticker, api_key):
             {"timestamp": datetime.fromtimestamp(a.timestamp / 1000), "close": a.close} 
             for a in aggs
         ]
-        return pd.DataFrame(data)
+        df = pd.DataFrame(data)
+
+        if not df.empty:
+            # --- FIX: STANDARDIZE TIMEZONES ---
+            # 1. Force to UTC datetime
+            df['timestamp'] = pd.to_datetime(df['timestamp'], utc=True)
+            # 2. Remove timezone info (make it naive) so it compares easily
+            df['timestamp'] = df['timestamp'].dt.tz_localize(None)
+        
+        return df
 
     except Exception as e:
-        # Log the specific error to help debugging
         logger.error(f"Polygon API Error for {ticker}: {e}")
-        return pd.DataFrame() # Return empty on failure
-
+        return pd.DataFrame()
 
 def render_truth_layer(ticker: str, db_manager: DatabaseManager):
     """
@@ -235,12 +242,12 @@ def render_truth_layer(ticker: str, db_manager: DatabaseManager):
 
     st.subheader(f"👁️ The Truth Layer: {ticker} Price vs. Sentiment")
 
-    # 2. Fetch Historical Price Data (Using the CACHED function)
+    # 2. Fetch Historical Price Data
     with st.spinner(f"Fetching market data for {ticker}..."):
         price_df = fetch_polygon_price_data(ticker, api_key)
         
         if price_df.empty:
-            st.warning(f"Could not fetch price data for {ticker}. (You may have hit the API rate limit. Try again in a minute.)")
+            st.warning(f"Could not fetch price data for {ticker}. (API limit or invalid ticker)")
             return
 
     # 3. Fetch System's Detected Events
@@ -262,9 +269,11 @@ def render_truth_layer(ticker: str, db_manager: DatabaseManager):
 
     # Layer B: The Sentiment (Hypothesis)
     if not events_df.empty:
-        # Normalize timestamps
-        if not pd.api.types.is_datetime64_any_dtype(events_df['timestamp']):
-             events_df['timestamp'] = pd.to_datetime(events_df['timestamp'])
+        # --- FIX: STANDARDIZE TIMEZONES FOR EVENTS ---
+        # 1. Force to UTC
+        events_df['timestamp'] = pd.to_datetime(events_df['timestamp'], utc=True)
+        # 2. Remove timezone info to match the Price DataFrame
+        events_df['timestamp'] = events_df['timestamp'].dt.tz_localize(None)
 
         # Color logic
         colors = ['#00CC96' if x > 0 else '#EF553B' for x in events_df['score']]
@@ -273,6 +282,7 @@ def render_truth_layer(ticker: str, db_manager: DatabaseManager):
         y_values = []
         for event_ts in events_df['timestamp']:
             # Find nearest price timestamp
+            # Now both are "naive" datetimes, so this subtraction works!
             nearest_idx = (price_df['timestamp'] - event_ts).abs().idxmin()
             y_values.append(price_df.loc[nearest_idx, 'close'])
 
