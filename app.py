@@ -190,53 +190,60 @@ def get_cloud_config_dict():
 # ==============================================================================
 # --- NEW: TRUTH LAYER VISUALIZATION ---
 # ==============================================================================
-def render_truth_layer(ticker: str, db_manager: DatabaseManager):
+@st.cache_data(ttl=3600) # <--- CRITICAL: Caches data for 1 hour to prevent 429 errors
+def fetch_polygon_price_data(ticker, api_key):
     """
-    Fetches 7-day OHLCV data from Polygon and overlays Neo4j Event markers.
+    Separate function to fetch data so Streamlit can cache the result.
     """
-    # 1. Get API Key
-    api_key = st.secrets.get("POLYGON_API_KEY") or os.environ.get("POLYGON_API_KEY")
-    if not api_key:
-        st.warning("⚠️ POLYGON_API_KEY not found in secrets. Cannot render Price Chart.")
-        return
-
-    st.subheader(f"👁️ The Truth Layer: {ticker} Price vs. Sentiment")
-
-    # 2. Fetch Historical Price Data (OHLCV)
     client = RESTClient(api_key)
     end_date = datetime.now()
     start_date = end_date - timedelta(days=7)
     
-    with st.spinner(f"Fetching market data for {ticker}..."):
-        try:
-            # Fetch 30-minute aggregates for a clear trend line
-            aggs = client.list_aggs(
-                ticker=ticker,
-                multiplier=30,
-                timespan="minute",
-                from_=start_date.strftime("%Y-%m-%d"),
-                to=end_date.strftime("%Y-%m-%d"),
-                limit=50000
-            )
-            
-            # Convert to DataFrame
-            price_data = [
-                {"timestamp": datetime.fromtimestamp(a.timestamp / 1000), "close": a.close} 
-                for a in aggs
-            ]
-            price_df = pd.DataFrame(price_data)
-            
-            if price_df.empty:
-                st.warning(f"No price data found for {ticker} (Last 7 Days).")
-                return
+    try:
+        # Fetch 30-minute aggregates
+        aggs = client.list_aggs(
+            ticker=ticker,
+            multiplier=30,
+            timespan="minute",
+            from_=start_date.strftime("%Y-%m-%d"),
+            to=end_date.strftime("%Y-%m-%d"),
+            limit=50000
+        )
+        
+        # Convert to DataFrame
+        data = [
+            {"timestamp": datetime.fromtimestamp(a.timestamp / 1000), "close": a.close} 
+            for a in aggs
+        ]
+        return pd.DataFrame(data)
 
-        except Exception as e:
-            st.error(f"Error fetching Polygon data: {e}")
+    except Exception as e:
+        # Log the specific error to help debugging
+        logger.error(f"Polygon API Error for {ticker}: {e}")
+        return pd.DataFrame() # Return empty on failure
+
+
+def render_truth_layer(ticker: str, db_manager: DatabaseManager):
+    """
+    Visualizes 7-day Price vs. Sentiment.
+    """
+    # 1. Get API Key
+    api_key = st.secrets.get("POLYGON_API_KEY") or os.environ.get("POLYGON_API_KEY")
+    if not api_key:
+        st.warning("⚠️ POLYGON_API_KEY not found. Cannot render Price Chart.")
+        return
+
+    st.subheader(f"👁️ The Truth Layer: {ticker} Price vs. Sentiment")
+
+    # 2. Fetch Historical Price Data (Using the CACHED function)
+    with st.spinner(f"Fetching market data for {ticker}..."):
+        price_df = fetch_polygon_price_data(ticker, api_key)
+        
+        if price_df.empty:
+            st.warning(f"Could not fetch price data for {ticker}. (You may have hit the API rate limit. Try again in a minute.)")
             return
 
     # 3. Fetch System's Detected Events
-    # We fetch recent events and filter for this ticker in Python for simplicity
-    # (Ideally, add get_events_by_ticker(ticker) to db_manager for efficiency)
     all_events = db_manager.get_recent_events(limit=100)
     ticker_events = [e for e in all_events if e['ticker'] == ticker]
     events_df = pd.DataFrame(ticker_events)
@@ -255,18 +262,17 @@ def render_truth_layer(ticker: str, db_manager: DatabaseManager):
 
     # Layer B: The Sentiment (Hypothesis)
     if not events_df.empty:
-        # Normalize timestamps if they are strings
+        # Normalize timestamps
         if not pd.api.types.is_datetime64_any_dtype(events_df['timestamp']):
              events_df['timestamp'] = pd.to_datetime(events_df['timestamp'])
 
-        # Color logic: Green for Positive, Red for Negative
+        # Color logic
         colors = ['#00CC96' if x > 0 else '#EF553B' for x in events_df['score']]
         
-        # Approximate Y position (place dot on the price line)
-        # We find the price at the time nearest to the event
+        # Align dots to price line
         y_values = []
         for event_ts in events_df['timestamp']:
-            # Find index of nearest time in price_df
+            # Find nearest price timestamp
             nearest_idx = (price_df['timestamp'] - event_ts).abs().idxmin()
             y_values.append(price_df.loc[nearest_idx, 'close'])
 
