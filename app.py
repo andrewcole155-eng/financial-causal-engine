@@ -12,6 +12,7 @@ import networkx as nx
 import streamlit as st
 from pyvis.network import Network
 import google.generativeai as genai 
+import plotly.express as px
 
 # --- Local Imports ---
 from database_manager import DatabaseManager
@@ -645,10 +646,37 @@ def main():
                         st.info("Go to the 'Simulate Scenarios' tab to run this simulation manually.")
 
     # ==============================================================================
-    # --- TAB 2: EXPLORE GRAPH (UPDATED) ---
+    # --- TAB 2: EXPLORE GRAPH ---
     # ==============================================================================
     with tab_explore:
         st.header("🗺️ Interactive Knowledge Graph Explorer")
+        
+        # --- NEW: MARKET WEATHER (SECTOR HEATMAP) ---
+        with st.expander("🌤️ Market Weather (Sector Heatmap)", expanded=True):
+            with st.spinner("Analyzing market sectors..."):
+                sector_data = db_manager.get_sector_risk_data()
+                
+            if not sector_data:
+                st.info("No sector data available yet. Run the worker to populate company nodes.")
+            else:
+                df_sectors = pd.DataFrame(sector_data)
+                
+                # Create Treemap
+                # Size of box = Number of companies in that sector
+                # Color of box = Average Risk (Green=Safe, Red=High Risk)
+                fig = px.treemap(
+                    df_sectors, 
+                    path=[px.Constant("Market"), 'Sector'], 
+                    values='CompanyCount',
+                    color='AvgRisk',
+                    color_continuous_scale=['#2ecc71', '#f1c40f', '#e74c3c'], # Green -> Yellow -> Red
+                    range_color=[-1, 1], # Fix scale from -1 (Bad) to 1 (Good) or 0 to 1 depending on your scoring
+                    title="Market Risk by Sector (Size = Count, Color = Avg Risk)"
+                )
+                fig.update_layout(margin=dict(t=30, l=10, r=10, b=10))
+                st.plotly_chart(fig, use_container_width=True)
+        # ---------------------------------------------
+
         st.write("Select a company to load its strongest relationships.") 
 
         with st.spinner("Loading full graph for explorer..."):

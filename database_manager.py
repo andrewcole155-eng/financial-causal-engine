@@ -191,6 +191,37 @@ class DatabaseManager:
             logger.error(f"Failed to fetch recent events from Neo4j: {e}")
             return []
 
+    def get_sector_risk_data(self) -> List[Dict[str, Any]]:
+        """
+        Aggregates risk scores by Sector for the Market Weather Heatmap.
+        Returns: List of dicts [{'sector': 'Tech', 'avg_risk': 0.8, 'count': 50}, ...]
+        """
+        if not self.is_connected(): return []
+
+        query = """
+        MATCH (n:Company)
+        WHERE n.sector IS NOT NULL AND n.sector <> 'Unknown' AND n.sector <> 'Discovered'
+        WITH n.sector AS sector, 
+             avg(coalesce(n.raw_risk_score, 0.0)) AS avg_risk, 
+             count(n) AS company_count
+        RETURN sector, avg_risk, company_count
+        ORDER BY avg_risk DESC
+        """
+        try:
+            results = self.execute_read(query)
+            clean_data = []
+            for r in results:
+                clean_data.append({
+                    "Sector": r['sector'],
+                    "AvgRisk": float(r['avg_risk']),
+                    "CompanyCount": int(r['company_count'])
+                })
+            return clean_data
+        except Exception as e:
+            logger.error(f"Failed to fetch sector risk data: {e}")
+            return []
+
+
     # ==========================================================================
     # --- NEO4J EXECUTION HELPERS ---
     # ==========================================================================
