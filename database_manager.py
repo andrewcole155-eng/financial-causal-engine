@@ -191,6 +191,22 @@ class DatabaseManager:
             logger.error(f"Failed to fetch recent events from Neo4j: {e}")
             return []
 
+    def get_events_by_ticker(self, ticker, days=7):
+            """
+            Fetches ALL events for a specific ticker over the last X days.
+            """
+            # Calculate the cutoff date
+            cutoff_date = datetime.now() - timedelta(days=days)
+            
+            # SQL query to filter by ticker AND date
+            # (Assuming you are using the SQLite 'events' table you set up in the worker)
+            query = """
+            SELECT timestamp, headline, score, link 
+            FROM events 
+            WHERE ticker = ? AND timestamp >= ? 
+            ORDER BY timestamp DESC
+            """
+            return self.execute_read_sqlite(query, (ticker, cutoff_date))
 
     def get_sector_risk_data(self) -> List[Dict[str, Any]]:
         """

@@ -233,6 +233,7 @@ def fetch_polygon_price_data(ticker, api_key):
 def render_truth_layer(ticker: str, db_manager: DatabaseManager):
     """
     Visualizes 7-day Price vs. Sentiment.
+    Includes logic to fetch specific ticker history and handle timezone mismatches.
     """
     # 1. Get API Key
     api_key = st.secrets.get("POLYGON_API_KEY") or os.environ.get("POLYGON_API_KEY")
@@ -250,10 +251,22 @@ def render_truth_layer(ticker: str, db_manager: DatabaseManager):
             st.warning(f"Could not fetch price data for {ticker}. (API limit or invalid ticker)")
             return
 
-    # 3. Fetch System's Detected Events
-    all_events = db_manager.get_recent_events(limit=100)
-    ticker_events = [e for e in all_events if e['ticker'] == ticker]
-    events_df = pd.DataFrame(ticker_events)
+    # 3. Fetch System's Detected Events (Targeted Query with Fallback)
+    try:
+        # Try to use the specific method if it exists (Fixes the "Limit 100" issue)
+        if hasattr(db_manager, 'get_events_by_ticker'):
+            ticker_events = db_manager.get_events_by_ticker(ticker, days=7)
+        else:
+            # Fallback: Get global recent events and filter manually
+            # We bump limit to 200 to have a better chance of finding relevant news
+            all_events = db_manager.get_recent_events(limit=200)
+            ticker_events = [e for e in all_events if e['ticker'] == ticker]
+            
+        events_df = pd.DataFrame(ticker_events)
+        
+    except Exception as e:
+        st.error(f"Error fetching events: {e}")
+        events_df = pd.DataFrame()
 
     # 4. Create the Combined Chart
     fig = go.Figure()
@@ -269,34 +282,37 @@ def render_truth_layer(ticker: str, db_manager: DatabaseManager):
 
     # Layer B: The Sentiment (Hypothesis)
     if not events_df.empty:
-        # --- FIX: STANDARDIZE TIMEZONES FOR EVENTS ---
-        # 1. Force to UTC
-        events_df['timestamp'] = pd.to_datetime(events_df['timestamp'], utc=True)
-        # 2. Remove timezone info to match the Price DataFrame
-        events_df['timestamp'] = events_df['timestamp'].dt.tz_localize(None)
+        try:
+            # --- FIX: STANDARDIZE TIMEZONES FOR EVENTS ---
+            # 1. Force to UTC datetime
+            events_df['timestamp'] = pd.to_datetime(events_df['timestamp'], utc=True)
+            # 2. Remove timezone info (make it naive) to match the Price DataFrame
+            events_df['timestamp'] = events_df['timestamp'].dt.tz_localize(None)
 
-        # Color logic
-        colors = ['#00CC96' if x > 0 else '#EF553B' for x in events_df['score']]
-        
-        # Align dots to price line
-        y_values = []
-        for event_ts in events_df['timestamp']:
-            # Find nearest price timestamp
-            # Now both are "naive" datetimes, so this subtraction works!
-            nearest_idx = (price_df['timestamp'] - event_ts).abs().idxmin()
-            y_values.append(price_df.loc[nearest_idx, 'close'])
+            # Color logic
+            colors = ['#00CC96' if x > 0 else '#EF553B' for x in events_df['score']]
+            
+            # Align dots to price line
+            y_values = []
+            for event_ts in events_df['timestamp']:
+                # Find nearest price timestamp
+                # Now both are "naive" datetimes, so this subtraction works!
+                nearest_idx = (price_df['timestamp'] - event_ts).abs().idxmin()
+                y_values.append(price_df.loc[nearest_idx, 'close'])
 
-        fig.add_trace(go.Scatter(
-            x=events_df['timestamp'],
-            y=y_values,
-            mode='markers',
-            name='News Event',
-            marker=dict(size=14, color=colors, line=dict(width=2, color='White')),
-            text=events_df['headline'],
-            hovertemplate="<b>%{text}</b><br>Time: %{x}<br>Price: $%{y:.2f}<extra></extra>"
-        ))
+            fig.add_trace(go.Scatter(
+                x=events_df['timestamp'],
+                y=y_values,
+                mode='markers',
+                name='News Event',
+                marker=dict(size=14, color=colors, line=dict(width=2, color='White')),
+                text=events_df['headline'],
+                hovertemplate="<b>%{text}</b><br>Time: %{x}<br>Price: $%{y:.2f}<extra></extra>"
+            ))
+        except Exception as e:
+            st.warning(f"Could not render event dots due to timestamp error: {e}")
     else:
-        st.caption("No significant news events detected for this ticker in the database.")
+        st.caption("No significant news events detected for this ticker in the database (Last 7 Days).")
 
     fig.update_layout(
         template="plotly_dark",
