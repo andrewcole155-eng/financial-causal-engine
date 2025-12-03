@@ -305,7 +305,7 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
                 # 1. WRITE TO GRAPH (Neo4j)
                 db_manager.add_events_batch(significant_events_found)
                 
-                # 2. WRITE TO UI LIST (SQLite) - <--- NEW SECTION
+                # 2. WRITE TO UI LIST (SQLite) - <--- THIS IS THE NEW FIX
                 count_sqlite = 0
                 for event in significant_events_found:
                     db_manager.insert_event(
