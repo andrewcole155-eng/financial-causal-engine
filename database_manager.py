@@ -68,7 +68,8 @@ class DatabaseManager:
 
         # --- Connect to SQLite (Backup/Fail-safe) ---
         try:
-            # FIX: Use absolute path based on this file's location, not the terminal's location
+            # FIX: Use ABSOLUTE PATH based on this file's location
+            # This ensures app.py and worker.py always find the same DB file
             base_dir = os.path.dirname(os.path.abspath(__file__))
             db_dir = os.path.join(base_dir, 'database')
             db_path = os.path.join(db_dir, 'financial_data.db')
@@ -95,8 +96,7 @@ class DatabaseManager:
             neo4j_password = neo4j_config.get("password") or neo4j_config.get("neo4j_password")
 
             if not all([neo4j_uri, neo4j_user, neo4j_password]):
-                # Fallback if config is partial, but allows running just SQLite
-                logger.warning("Neo4j configuration incomplete. Graph features may be disabled.")
+                logger.warning("Neo4j configuration incomplete. Running in SQLite-only mode.")
             else:
                 self.neo4j_driver = GraphDatabase.driver(neo4j_uri, auth=(neo4j_user, neo4j_password))
                 self.neo4j_driver.verify_connectivity()
@@ -155,7 +155,6 @@ class DatabaseManager:
     def get_recent_events(self, limit: int = 50) -> List[Dict[str, Any]]:
         """
         Retrieves recent events from SQLITE (Fast Path).
-        This fixes the issue where the Streamlit UI was empty.
         """
         if not self.sqlite_conn: return []
         

@@ -302,9 +302,21 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
         if significant_events_found:
             logger.info(f"✍️ DB-WRITE: Writing batch of {len(significant_events_found)} new events...")
             try:
-                # --- Perform the single, robust batch write ---
+                # 1. WRITE TO GRAPH (Neo4j)
                 db_manager.add_events_batch(significant_events_found)
-                logger.info("✅ DB-WRITE: Events written to Database successfully.")
+                
+                # 2. WRITE TO UI LIST (SQLite) - <--- NEW SECTION
+                count_sqlite = 0
+                for event in significant_events_found:
+                    db_manager.insert_event(
+                        ticker=event['ticker'], 
+                        headline=event['headline'], 
+                        score=event['score'], 
+                        link=event['link']
+                    )
+                    count_sqlite += 1
+                
+                logger.info(f"✅ DB-WRITE: Wrote {len(significant_events_found)} to Neo4j and {count_sqlite} to SQLite.")
 
                 # Send email only after the database write is confirmed
                 subject = f"Financial KG Summary: {len(significant_events_found)} Significant Events Detected"

@@ -2,7 +2,7 @@
 # --- SENTIMENT PULSE (Real-Time News Stream) ---
 # ==============================================================================
 # Listens to Alpaca's News Feed, updates risk scores via Gemini AI, 
-# and logs Events to the Graph.
+# and logs Events to the Graph AND the Streamlit UI.
 # ==============================================================================
 
 import json
@@ -120,8 +120,18 @@ async def main():
             if abs(score) >= 0.2:
                 logger.info(f"⚡ NEWS ({score}): {headline} {symbols}")
                 
-                # 2. Update Graph
+                # Iterate through all tickers affected by this news
                 for ticker in symbols:
+                    
+                    # === 1. INSERT INTO SQLITE (The Missing Link for UI) ===
+                    db.insert_event(
+                        ticker=ticker,
+                        headline=headline,
+                        score=score,
+                        link=url
+                    )
+
+                    # === 2. UPDATE NEO4J GRAPH (Existing Logic) ===
                     query = """
                     MATCH (c:Company {ticker: $ticker})
                     SET c.sentiment_score = $score,
@@ -138,7 +148,6 @@ async def main():
                     MERGE (c)-[:HAD_EVENT]->(e)
                     """
                     # Note: db.execute_write is usually synchronous in Neo4j driver. 
-                    # If high volume, wrap this in run_in_executor too.
                     db.execute_write(query, ticker=ticker, score=score, headline=headline, url=url)
             else:
                 logger.info(f"Skipping neutral news ({score}): {headline[:30]}...")
