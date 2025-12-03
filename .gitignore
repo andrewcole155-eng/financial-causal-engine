@@ -1,50 +1,46 @@
-Python
-
-pycache/
+# Python
+__pycache__/
 *.py[cod]
 *$py.class
 *.so
 
-IDE / Editor
-
+# IDE / Editor
 .vscode/
 .idea/
 
-Environment
-
+# Environment
 venv/
 .env
 .env.*
 
-Local Data & Config
-
-!! IMPORTANT: Do not upload your secrets or local DB !!
-
+# Local Data & Config
+# !! IMPORTANT: Do not upload your secrets or local DB !!
 config.json
 *.db
 *.sqlite
 *.sqlite3
 financial_data.db
 trading_status.json
-Logs
+*.jsonl
 
+# Logs
 *.log
 worker_cron.log
 
-Reports
-
+# Reports
 reports/
 
-Temporary Files from app.py
-
+# Temporary Files from app.py
 temp_graph_*.html
 
-OS
-
+# OS Files
 .DS_Store
 Thumbs.db
 
+# Database Backups & Data
 neo4j/neo4j_data_backup/
 neo4j_data_backup/
 
-*.jsonl
+# --- Large Data Directories (New) ---
+sec-edgar-filings/
+database/
