@@ -11,7 +11,7 @@ graph [
     raw_risk_score 0.15608699473367915
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 1
@@ -35,7 +35,7 @@ graph [
     raw_risk_score 0.16090914062027728
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 3
@@ -48,7 +48,7 @@ graph [
     raw_risk_score 0.09647896011951718
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 4
@@ -61,7 +61,7 @@ graph [
     raw_risk_score 0.13749399668095655
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 5
@@ -74,7 +74,7 @@ graph [
     raw_risk_score 0.1848998917760304
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 6
@@ -87,7 +87,7 @@ graph [
     raw_risk_score 0.11849937345450008
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 7
@@ -100,7 +100,7 @@ graph [
     raw_risk_score 0.21089461419115535
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 8
@@ -113,7 +113,7 @@ graph [
     raw_risk_score 0.12041550086465709
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 9
@@ -126,7 +126,7 @@ graph [
     raw_risk_score 0.10534781958410702
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 10
@@ -139,7 +139,7 @@ graph [
     raw_risk_score 0.18025054542861593
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 11
@@ -152,7 +152,7 @@ graph [
     raw_risk_score 0.0818230082308943
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 12
@@ -165,7 +165,7 @@ graph [
     raw_risk_score 0.21191273114211817
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 13
@@ -178,7 +178,7 @@ graph [
     raw_risk_score 0.10662389182018513
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 14
@@ -191,7 +191,7 @@ graph [
     raw_risk_score 0.13434781201418283
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 15
@@ -204,7 +204,7 @@ graph [
     raw_risk_score 0.2609104158270102
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 16
@@ -227,7 +227,7 @@ graph [
     raw_risk_score 0.17147742370340924
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 18
@@ -240,7 +240,7 @@ graph [
     raw_risk_score 0.10635796824564159
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 19
@@ -253,7 +253,7 @@ graph [
     raw_risk_score 0.2660136096931076
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 20
@@ -266,7 +266,7 @@ graph [
     raw_risk_score 0.18332567892690235
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 21
@@ -279,7 +279,7 @@ graph [
     raw_risk_score 0.19343437207973418
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 22
@@ -292,7 +292,7 @@ graph [
     raw_risk_score 0.140514068518268
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 23
@@ -305,7 +305,7 @@ graph [
     raw_risk_score 0.38424443952322485
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 24
@@ -318,7 +318,7 @@ graph [
     raw_risk_score 0.23401037875456226
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 25
@@ -333,7 +333,7 @@ graph [
     raw_risk_score 0.49085247175925595
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 26
@@ -346,7 +346,7 @@ graph [
     raw_risk_score 0.2633450311981832
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 27
@@ -359,7 +359,7 @@ graph [
     raw_risk_score 0.28541327731632254
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 28
@@ -372,7 +372,7 @@ graph [
     raw_risk_score 0.09054210317023625
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 29
@@ -387,7 +387,7 @@ graph [
     raw_risk_score 0.23440367322761857
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 30
@@ -400,7 +400,7 @@ graph [
     raw_risk_score 0.11016206400304748
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 31
@@ -413,7 +413,7 @@ graph [
     raw_risk_score 0.4073863313237769
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 32
@@ -426,7 +426,7 @@ graph [
     raw_risk_score 0.18117731576423235
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 33
@@ -439,7 +439,7 @@ graph [
     raw_risk_score 0.3465339511924993
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 34
@@ -452,7 +452,7 @@ graph [
     raw_risk_score 0.1575542691064967
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 35
@@ -465,7 +465,7 @@ graph [
     raw_risk_score 0.23133401863495323
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 36
@@ -488,7 +488,7 @@ graph [
     raw_risk_score 0.07780958092078825
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 38
@@ -501,7 +501,7 @@ graph [
     raw_risk_score 0.19449450674516927
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 39
@@ -514,7 +514,7 @@ graph [
     raw_risk_score 0.21254715860277124
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 40
@@ -527,7 +527,7 @@ graph [
     raw_risk_score 0.3413681547484623
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 41
@@ -550,7 +550,7 @@ graph [
     raw_risk_score 0.11591196301694257
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 43
@@ -563,7 +563,7 @@ graph [
     raw_risk_score 0.18072869065822522
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 44
@@ -578,7 +578,7 @@ graph [
     raw_risk_score 0.3795716033299058
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 45
@@ -591,7 +591,7 @@ graph [
     raw_risk_score 0.3036548587350206
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 46
@@ -604,7 +604,7 @@ graph [
     raw_risk_score 0.13741767031486757
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 47
@@ -617,7 +617,7 @@ graph [
     raw_risk_score 0.10304625749754355
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 48
@@ -630,7 +630,7 @@ graph [
     raw_risk_score 0.20150956055843994
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 49
@@ -643,7 +643,7 @@ graph [
     raw_risk_score 0.15622706245723628
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 50
@@ -656,7 +656,7 @@ graph [
     raw_risk_score 0.13853549187632758
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 51
@@ -669,7 +669,7 @@ graph [
     raw_risk_score 0.12039992568316982
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 52
@@ -682,7 +682,7 @@ graph [
     raw_risk_score 0.21311790730822466
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 53
@@ -697,7 +697,7 @@ graph [
     raw_risk_score 0.1119688485508028
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 54
@@ -710,7 +710,7 @@ graph [
     raw_risk_score 0.6226790414382256
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 55
@@ -723,7 +723,7 @@ graph [
     raw_risk_score 0.20708883155726138
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 56
@@ -736,7 +736,7 @@ graph [
     raw_risk_score 0.13005248112723794
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 57
@@ -749,7 +749,7 @@ graph [
     raw_risk_score 0.24450003135597428
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 58
@@ -762,7 +762,7 @@ graph [
     raw_risk_score 0.18456580054458352
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 59
@@ -775,7 +775,7 @@ graph [
     raw_risk_score 0.2529811154718808
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 60
@@ -788,7 +788,7 @@ graph [
     raw_risk_score 0.10922067838419154
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 61
@@ -801,7 +801,7 @@ graph [
     raw_risk_score 0.23192431617101578
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 62
@@ -814,7 +814,7 @@ graph [
     raw_risk_score 0.12906885183786032
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 63
@@ -827,7 +827,7 @@ graph [
     raw_risk_score 0.1713500014728191
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 64
@@ -840,7 +840,7 @@ graph [
     raw_risk_score 0.10725206354886817
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 65
@@ -864,7 +864,7 @@ graph [
     raw_risk_score 0.22307133806077128
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 67
@@ -877,7 +877,7 @@ graph [
     raw_risk_score 0.09264327723966499
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 68
@@ -890,7 +890,7 @@ graph [
     raw_risk_score 0.6363778106660631
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 69
@@ -903,7 +903,7 @@ graph [
     raw_risk_score 0.3049041226709477
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 70
@@ -916,7 +916,7 @@ graph [
     raw_risk_score 0.21553918193558214
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 71
@@ -939,7 +939,7 @@ graph [
     raw_risk_score 0.1927990798664325
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 73
@@ -952,7 +952,7 @@ graph [
     raw_risk_score 0.12799224466491232
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 74
@@ -965,7 +965,7 @@ graph [
     raw_risk_score 0.17046337325196692
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 75
@@ -978,7 +978,7 @@ graph [
     raw_risk_score 0.23659688616885338
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 76
@@ -991,7 +991,7 @@ graph [
     raw_risk_score 0.3584055724964423
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 77
@@ -1004,7 +1004,7 @@ graph [
     raw_risk_score 0.15137813826555552
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 78
@@ -1027,7 +1027,7 @@ graph [
     raw_risk_score 0.22972775317460792
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 80
@@ -1040,7 +1040,7 @@ graph [
     raw_risk_score 0.19122198209255722
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 81
@@ -1055,7 +1055,7 @@ graph [
     raw_risk_score 0.18064294715972867
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 82
@@ -1068,7 +1068,7 @@ graph [
     raw_risk_score 0.3568220285166414
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 83
@@ -1081,7 +1081,7 @@ graph [
     raw_risk_score 0.13252019143065064
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 84
@@ -1094,7 +1094,7 @@ graph [
     raw_risk_score 0.1963172232258241
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 85
@@ -1107,7 +1107,7 @@ graph [
     raw_risk_score 0.08521032830087186
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 86
@@ -1120,7 +1120,7 @@ graph [
     raw_risk_score 0.14068915067294116
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 87
@@ -1133,7 +1133,7 @@ graph [
     raw_risk_score 0.09922267390488189
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 88
@@ -1146,7 +1146,7 @@ graph [
     raw_risk_score 0.1655473886865895
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 89
@@ -1159,7 +1159,7 @@ graph [
     raw_risk_score 0.2406396945220987
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 90
@@ -1172,7 +1172,7 @@ graph [
     raw_risk_score 0.12423753015242779
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 91
@@ -1185,7 +1185,7 @@ graph [
     raw_risk_score 0.20326296070500155
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 92
@@ -1198,7 +1198,7 @@ graph [
     raw_risk_score 0.2830979411030381
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 93
@@ -1211,7 +1211,7 @@ graph [
     raw_risk_score 0.13396792808157762
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 94
@@ -1224,7 +1224,7 @@ graph [
     raw_risk_score 0.16919163844237595
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 95
@@ -1237,7 +1237,7 @@ graph [
     raw_risk_score 0.26120633388560865
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 96
@@ -1250,7 +1250,7 @@ graph [
     raw_risk_score 0.09250345139917039
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 97
@@ -1263,7 +1263,7 @@ graph [
     raw_risk_score 0.24986475569475125
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 98
@@ -1276,7 +1276,7 @@ graph [
     raw_risk_score 0.1647916768616955
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 99
@@ -1289,7 +1289,7 @@ graph [
     raw_risk_score 0.2807950871669592
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 100
@@ -1302,7 +1302,7 @@ graph [
     raw_risk_score 0.19202872916841612
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 101
@@ -1315,7 +1315,7 @@ graph [
     raw_risk_score 0.16256067232325339
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 102
@@ -1328,7 +1328,7 @@ graph [
     raw_risk_score 0.18196426543367084
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 103
@@ -1341,7 +1341,7 @@ graph [
     raw_risk_score 0.309361369971047
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 104
@@ -1354,7 +1354,7 @@ graph [
     raw_risk_score 0.22737093685437365
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 105
@@ -1369,7 +1369,7 @@ graph [
     raw_risk_score 0.3448529956444989
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 106
@@ -1382,7 +1382,7 @@ graph [
     raw_risk_score 0.2258411346999239
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 107
@@ -1395,7 +1395,7 @@ graph [
     raw_risk_score 0.2503388790327574
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 108
@@ -1418,7 +1418,7 @@ graph [
     raw_risk_score 0.28054199165606847
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 110
@@ -1431,7 +1431,7 @@ graph [
     raw_risk_score 0.2221068506522436
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 111
@@ -1444,7 +1444,7 @@ graph [
     raw_risk_score 0.18047089794762344
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 112
@@ -1457,7 +1457,7 @@ graph [
     raw_risk_score 0.14079350965601017
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 113
@@ -1470,7 +1470,7 @@ graph [
     raw_risk_score 0.2930991497068833
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 114
@@ -1483,7 +1483,7 @@ graph [
     raw_risk_score 0.13575100849389404
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 115
@@ -1496,7 +1496,7 @@ graph [
     raw_risk_score 0.28756888467411235
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 116
@@ -1509,7 +1509,7 @@ graph [
     raw_risk_score 0.23339094234566155
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 117
@@ -1522,7 +1522,7 @@ graph [
     raw_risk_score 0.17244224601090008
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 118
@@ -1535,7 +1535,7 @@ graph [
     raw_risk_score 0.12142931129481002
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 119
@@ -1548,7 +1548,7 @@ graph [
     raw_risk_score 0.11493833210610725
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 120
@@ -1561,7 +1561,7 @@ graph [
     raw_risk_score 0.08055438581749895
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 121
@@ -1574,7 +1574,7 @@ graph [
     raw_risk_score 0.236548340632945
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 122
@@ -1587,7 +1587,7 @@ graph [
     raw_risk_score 0.18302356612911247
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 123
@@ -1600,7 +1600,7 @@ graph [
     raw_risk_score 0.4123087084899092
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 124
@@ -1613,7 +1613,7 @@ graph [
     raw_risk_score 0.16030446403320495
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 125
@@ -1626,7 +1626,7 @@ graph [
     raw_risk_score 0.2918917216372658
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 126
@@ -1639,7 +1639,7 @@ graph [
     raw_risk_score 0.4467396151564771
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 127
@@ -1662,7 +1662,7 @@ graph [
     raw_risk_score 0.1368628136802641
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 129
@@ -1675,7 +1675,7 @@ graph [
     raw_risk_score 0.3668696048961599
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 130
@@ -1688,7 +1688,7 @@ graph [
     raw_risk_score 0.11489305224536153
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 131
@@ -1701,7 +1701,7 @@ graph [
     raw_risk_score 0.33355916370025795
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 132
@@ -1714,7 +1714,7 @@ graph [
     raw_risk_score 0.12765782652889232
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 133
@@ -1727,7 +1727,7 @@ graph [
     raw_risk_score 0.1527528845337598
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 134
@@ -1740,7 +1740,7 @@ graph [
     raw_risk_score 0.12987153415735875
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 135
@@ -1753,7 +1753,7 @@ graph [
     raw_risk_score 0.1218723129960943
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 136
@@ -1766,7 +1766,7 @@ graph [
     raw_risk_score 0.16662820632078781
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 137
@@ -1779,7 +1779,7 @@ graph [
     raw_risk_score 0.13876073932924313
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 138
@@ -1789,10 +1789,10 @@ graph [
     name "Fiserv, Inc."
     gnn_risk_score 0.0012693422613665462
     industry "Information Technology Services"
-    raw_risk_score 0.1706576037673066
+    raw_risk_score 0.16296674337623493
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 139
@@ -1815,7 +1815,7 @@ graph [
     raw_risk_score 0.3007219582636348
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 141
@@ -1828,7 +1828,7 @@ graph [
     raw_risk_score 0.17591567518807583
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 142
@@ -1841,7 +1841,7 @@ graph [
     raw_risk_score 0.15361606675563388
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 143
@@ -1854,7 +1854,7 @@ graph [
     raw_risk_score 0.17510160955316723
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 144
@@ -1867,7 +1867,7 @@ graph [
     raw_risk_score 0.25636583789217515
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 145
@@ -1880,7 +1880,7 @@ graph [
     raw_risk_score 0.12858739767847924
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 146
@@ -1893,7 +1893,7 @@ graph [
     raw_risk_score 0.23933275947413493
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 147
@@ -1906,7 +1906,7 @@ graph [
     raw_risk_score 0.2767051835380004
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 148
@@ -1919,7 +1919,7 @@ graph [
     raw_risk_score 0.13284933806168436
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 149
@@ -1932,7 +1932,7 @@ graph [
     raw_risk_score 0.15243497622836202
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 150
@@ -1945,7 +1945,7 @@ graph [
     raw_risk_score 0.10185669382496666
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 151
@@ -1958,7 +1958,7 @@ graph [
     raw_risk_score 0.1840904942201853
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 152
@@ -1968,10 +1968,10 @@ graph [
     name "Goldman Sachs"
     gnn_risk_score 3.9659447947926196E-10
     industry "Capital Markets"
-    raw_risk_score 0.14750068975694505
+    raw_risk_score 0.15438838983195383
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 153
@@ -1984,7 +1984,7 @@ graph [
     raw_risk_score 0.12638328046884595
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 154
@@ -1997,7 +1997,7 @@ graph [
     raw_risk_score 0.17523743127972874
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 155
@@ -2010,7 +2010,7 @@ graph [
     raw_risk_score 0.19696006398309907
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 156
@@ -2023,7 +2023,7 @@ graph [
     raw_risk_score 0.26964604784279533
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 157
@@ -2046,7 +2046,7 @@ graph [
     raw_risk_score 0.2694055849918051
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 159
@@ -2069,7 +2069,7 @@ graph [
     raw_risk_score 0.18133086064566925
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 161
@@ -2082,7 +2082,7 @@ graph [
     raw_risk_score 0.050483750430057844
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 162
@@ -2097,7 +2097,7 @@ graph [
     raw_risk_score 0.2423695223746531
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 163
@@ -2110,7 +2110,7 @@ graph [
     raw_risk_score 0.15681885414298188
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 164
@@ -2123,7 +2123,7 @@ graph [
     raw_risk_score 0.1396313686271036
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 165
@@ -2136,7 +2136,7 @@ graph [
     raw_risk_score 0.22219092991952175
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 166
@@ -2149,7 +2149,7 @@ graph [
     raw_risk_score 0.21056323443925978
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 167
@@ -2162,7 +2162,7 @@ graph [
     raw_risk_score 0.24612981260408298
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 168
@@ -2175,7 +2175,7 @@ graph [
     raw_risk_score 0.22414800484769035
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 169
@@ -2188,7 +2188,7 @@ graph [
     raw_risk_score 0.19979603791293293
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 170
@@ -2201,7 +2201,7 @@ graph [
     raw_risk_score 0.1794390973879218
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 171
@@ -2214,7 +2214,7 @@ graph [
     raw_risk_score 0.20472006059209175
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 172
@@ -2227,7 +2227,7 @@ graph [
     raw_risk_score 0.11526094032150824
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 173
@@ -2240,7 +2240,7 @@ graph [
     raw_risk_score 0.21425209012985214
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 174
@@ -2253,7 +2253,7 @@ graph [
     raw_risk_score 0.43685707466403834
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 175
@@ -2266,7 +2266,7 @@ graph [
     raw_risk_score 0.13012096192640177
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 176
@@ -2279,7 +2279,7 @@ graph [
     raw_risk_score 0.18544292005075252
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 177
@@ -2292,7 +2292,7 @@ graph [
     raw_risk_score 0.16382228724510303
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 178
@@ -2305,7 +2305,7 @@ graph [
     raw_risk_score 0.24115898836983696
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 179
@@ -2318,7 +2318,7 @@ graph [
     raw_risk_score 0.17160868568774085
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 180
@@ -2331,7 +2331,7 @@ graph [
     raw_risk_score 0.14438244249814264
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 181
@@ -2344,7 +2344,7 @@ graph [
     raw_risk_score 0.1780600687882547
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 182
@@ -2357,7 +2357,7 @@ graph [
     raw_risk_score 0.17096067201703818
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 183
@@ -2370,7 +2370,7 @@ graph [
     raw_risk_score 0.2233646767891829
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 184
@@ -2380,10 +2380,10 @@ graph [
     name "Jacobs Solutions"
     gnn_risk_score 0.9927002191543579
     industry "Engineering &#38; Construction"
-    raw_risk_score 0.3745311739124678
+    raw_risk_score 0.3719009728707402
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 185
@@ -2396,7 +2396,7 @@ graph [
     raw_risk_score 0.2852375126649034
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 186
@@ -2409,7 +2409,7 @@ graph [
     raw_risk_score 0.3140372744190263
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 187
@@ -2424,7 +2424,7 @@ graph [
     raw_risk_score 0.1483273745520093
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 188
@@ -2447,7 +2447,7 @@ graph [
     raw_risk_score 0.19839572192513366
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 190
@@ -2460,7 +2460,7 @@ graph [
     raw_risk_score 0.3553426604863663
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 191
@@ -2473,7 +2473,7 @@ graph [
     raw_risk_score 0.09430907973520966
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 192
@@ -2486,7 +2486,7 @@ graph [
     raw_risk_score 0.3223149167328254
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 193
@@ -2499,7 +2499,7 @@ graph [
     raw_risk_score 0.13674713669646796
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 194
@@ -2512,7 +2512,7 @@ graph [
     raw_risk_score 0.1625401982589854
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 195
@@ -2525,7 +2525,7 @@ graph [
     raw_risk_score 0.24693808729990718
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 196
@@ -2538,7 +2538,7 @@ graph [
     raw_risk_score 0.2480792567780445
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 197
@@ -2551,7 +2551,7 @@ graph [
     raw_risk_score 0.11739951829464686
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 198
@@ -2564,7 +2564,7 @@ graph [
     raw_risk_score 0.2036029284322582
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 199
@@ -2577,7 +2577,7 @@ graph [
     raw_risk_score 0.3777203533436833
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 200
@@ -2590,7 +2590,7 @@ graph [
     raw_risk_score 0.2104838732869175
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 201
@@ -2603,7 +2603,7 @@ graph [
     raw_risk_score 0.16369501473772455
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 202
@@ -2616,7 +2616,7 @@ graph [
     raw_risk_score 0.14984128653698517
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 203
@@ -2629,7 +2629,7 @@ graph [
     raw_risk_score 0.19236214902465298
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 204
@@ -2642,7 +2642,7 @@ graph [
     raw_risk_score 0.2821153242443241
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 205
@@ -2655,7 +2655,7 @@ graph [
     raw_risk_score 0.1709639948432849
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T23:16:14.215000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 206
@@ -2678,7 +2678,7 @@ graph [
     raw_risk_score 0.11221362973028384
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 208
@@ -2691,7 +2691,7 @@ graph [
     raw_risk_score 0.13340228000729176
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 209
@@ -2704,7 +2704,7 @@ graph [
     raw_risk_score 0.19949974464391307
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 210
@@ -2717,7 +2717,7 @@ graph [
     raw_risk_score 0.1406325034738254
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 211
@@ -2730,7 +2730,7 @@ graph [
     raw_risk_score 0.1723604398912266
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 212
@@ -2743,7 +2743,7 @@ graph [
     raw_risk_score 0.23962323770350624
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 213
@@ -2756,7 +2756,7 @@ graph [
     raw_risk_score 0.29711760152776134
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 214
@@ -2769,7 +2769,7 @@ graph [
     raw_risk_score 0.16573991703418772
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 215
@@ -2782,7 +2782,7 @@ graph [
     raw_risk_score 0.1130576031767201
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 216
@@ -2795,7 +2795,7 @@ graph [
     raw_risk_score 0.26921105085944524
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 217
@@ -2808,7 +2808,7 @@ graph [
     raw_risk_score 0.27894359157417065
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 218
@@ -2821,7 +2821,7 @@ graph [
     raw_risk_score 0.40682745511957846
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 219
@@ -2834,7 +2834,7 @@ graph [
     raw_risk_score 0.24469672836791434
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 220
@@ -2847,7 +2847,7 @@ graph [
     raw_risk_score 0.24900275907927893
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 221
@@ -2860,7 +2860,7 @@ graph [
     raw_risk_score 0.22576788473245682
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 222
@@ -2873,7 +2873,7 @@ graph [
     raw_risk_score 0.21841189996518479
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 223
@@ -2886,7 +2886,7 @@ graph [
     raw_risk_score 0.1015012416283008
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 224
@@ -2901,7 +2901,7 @@ graph [
     raw_risk_score 0.1460948900258347
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 225
@@ -2914,7 +2914,7 @@ graph [
     raw_risk_score 0.18499842890426263
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 226
@@ -2927,7 +2927,7 @@ graph [
     raw_risk_score 0.2500629190632826
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 227
@@ -2940,7 +2940,7 @@ graph [
     raw_risk_score 0.2254329148295533
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 228
@@ -2953,7 +2953,7 @@ graph [
     raw_risk_score 0.20818497136356282
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 229
@@ -2966,7 +2966,7 @@ graph [
     raw_risk_score 0.2526999249047962
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 230
@@ -2979,7 +2979,7 @@ graph [
     raw_risk_score 0.10770392876853956
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 231
@@ -2992,7 +2992,7 @@ graph [
     raw_risk_score 0.19813456800209694
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 232
@@ -3005,7 +3005,7 @@ graph [
     raw_risk_score 0.1681216333419754
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 233
@@ -3018,7 +3018,7 @@ graph [
     raw_risk_score 0.0845392946320512
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 234
@@ -3031,7 +3031,7 @@ graph [
     raw_risk_score 0.11283748510161637
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 235
@@ -3044,7 +3044,7 @@ graph [
     raw_risk_score 0.10691129165332151
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 236
@@ -3057,7 +3057,7 @@ graph [
     raw_risk_score 0.17706478216441174
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 237
@@ -3070,7 +3070,7 @@ graph [
     raw_risk_score 0.3538320334695216
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 238
@@ -3083,7 +3083,7 @@ graph [
     raw_risk_score 0.22008003065599555
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 239
@@ -3096,7 +3096,7 @@ graph [
     raw_risk_score 0.3176070500502225
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 240
@@ -3111,7 +3111,7 @@ graph [
     raw_risk_score 0.2803761774842671
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 241
@@ -3124,7 +3124,7 @@ graph [
     raw_risk_score 0.17891498795991623
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 242
@@ -3137,7 +3137,7 @@ graph [
     raw_risk_score 0.28181200819300695
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 243
@@ -3150,7 +3150,7 @@ graph [
     raw_risk_score 0.10677786318188418
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 244
@@ -3163,7 +3163,7 @@ graph [
     raw_risk_score 0.19808268421332192
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 245
@@ -3176,7 +3176,7 @@ graph [
     raw_risk_score 0.16601477796985484
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 246
@@ -3189,7 +3189,7 @@ graph [
     raw_risk_score 0.26163452337133497
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 247
@@ -3202,7 +3202,7 @@ graph [
     raw_risk_score 0.22887528290898126
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 248
@@ -3215,7 +3215,7 @@ graph [
     raw_risk_score 0.3357459762372785
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 249
@@ -3228,7 +3228,7 @@ graph [
     raw_risk_score 0.14185952833315707
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 250
@@ -3241,7 +3241,7 @@ graph [
     raw_risk_score 0.27525278889135457
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 251
@@ -3254,7 +3254,7 @@ graph [
     raw_risk_score 0.2204932640473404
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 252
@@ -3277,7 +3277,7 @@ graph [
     raw_risk_score 0.16237376716722196
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 254
@@ -3290,7 +3290,7 @@ graph [
     raw_risk_score 0.11682833152998676
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 255
@@ -3303,7 +3303,7 @@ graph [
     raw_risk_score 0.31598970708159807
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 256
@@ -3316,7 +3316,7 @@ graph [
     raw_risk_score 0.16297837826274097
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 257
@@ -3329,7 +3329,7 @@ graph [
     raw_risk_score 0.16538999957982475
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 258
@@ -3342,7 +3342,7 @@ graph [
     raw_risk_score 0.23089082475441186
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 259
@@ -3355,7 +3355,7 @@ graph [
     raw_risk_score 0.1506010641183231
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 260
@@ -3378,7 +3378,7 @@ graph [
     raw_risk_score 0.19552774032402181
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 262
@@ -3391,7 +3391,7 @@ graph [
     raw_risk_score 0.1893600923936766
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 263
@@ -3404,7 +3404,7 @@ graph [
     raw_risk_score 0.18669875996722113
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 264
@@ -3417,7 +3417,7 @@ graph [
     raw_risk_score 0.21938717695640633
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 265
@@ -3430,7 +3430,7 @@ graph [
     raw_risk_score 0.12805550300925284
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 266
@@ -3443,7 +3443,7 @@ graph [
     raw_risk_score 0.2040721010096274
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 267
@@ -3456,7 +3456,7 @@ graph [
     raw_risk_score 0.22503062561299597
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 268
@@ -3469,7 +3469,7 @@ graph [
     raw_risk_score 0.2234138471296694
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 269
@@ -3482,7 +3482,7 @@ graph [
     raw_risk_score 0.1980293840932196
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 270
@@ -3495,7 +3495,7 @@ graph [
     raw_risk_score 0.21303769043245954
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 271
@@ -3508,7 +3508,7 @@ graph [
     raw_risk_score 0.24637372080483663
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 272
@@ -3521,7 +3521,7 @@ graph [
     raw_risk_score 0.12368636138136177
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 273
@@ -3534,7 +3534,7 @@ graph [
     raw_risk_score 0.12979722706248287
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 274
@@ -3547,7 +3547,7 @@ graph [
     raw_risk_score 0.14753423980831862
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 275
@@ -3560,7 +3560,7 @@ graph [
     raw_risk_score 0.11924647019669045
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 276
@@ -3573,7 +3573,7 @@ graph [
     raw_risk_score 0.2805287953755424
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 277
@@ -3586,7 +3586,7 @@ graph [
     raw_risk_score 0.2120187650045527
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 278
@@ -3599,7 +3599,7 @@ graph [
     raw_risk_score 0.15213672930188366
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 279
@@ -3612,7 +3612,7 @@ graph [
     raw_risk_score 0.1865876706237068
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 280
@@ -3625,7 +3625,7 @@ graph [
     raw_risk_score 0.33871843552135505
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 281
@@ -3638,7 +3638,7 @@ graph [
     raw_risk_score 0.22607604801962683
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 282
@@ -3651,7 +3651,7 @@ graph [
     raw_risk_score 0.10260383459747072
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 283
@@ -3666,7 +3666,7 @@ graph [
     raw_risk_score 0.2175235123677014
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 284
@@ -3679,7 +3679,7 @@ graph [
     raw_risk_score 0.41414714168174366
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 285
@@ -3692,7 +3692,7 @@ graph [
     raw_risk_score 0.19180376137852673
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 286
@@ -3702,10 +3702,10 @@ graph [
     name "SIGNATURE BANK (NY)"
     gnn_risk_score 9.483883012251226E-09
     industry "Banks - Regional"
-    raw_risk_score 0.49606166777798316
+    raw_risk_score 0.4540534648120079
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 287
@@ -3718,7 +3718,7 @@ graph [
     raw_risk_score 0.21704706099011278
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 288
@@ -3731,7 +3731,7 @@ graph [
     raw_risk_score 0.2756225936101807
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 289
@@ -3744,7 +3744,7 @@ graph [
     raw_risk_score 0.12370268356549806
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 290
@@ -3757,7 +3757,7 @@ graph [
     raw_risk_score 0.3806288676626911
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 291
@@ -3770,7 +3770,7 @@ graph [
     raw_risk_score 0.13230193506980775
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 292
@@ -3785,7 +3785,7 @@ graph [
     raw_risk_score 0.11535624615198845
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 293
@@ -3798,7 +3798,7 @@ graph [
     raw_risk_score 0.13447195906803944
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 294
@@ -3811,7 +3811,7 @@ graph [
     raw_risk_score 0.23308260809334247
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 295
@@ -3824,7 +3824,7 @@ graph [
     raw_risk_score 0.18619200931670654
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 296
@@ -3837,7 +3837,7 @@ graph [
     raw_risk_score 0.2907408200682543
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 297
@@ -3850,7 +3850,7 @@ graph [
     raw_risk_score 0.07291498204231471
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 298
@@ -3863,7 +3863,7 @@ graph [
     raw_risk_score 0.114225862196268
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 299
@@ -3876,7 +3876,7 @@ graph [
     raw_risk_score 0.14908922436499367
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 300
@@ -3889,7 +3889,7 @@ graph [
     raw_risk_score 0.1670613993812588
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 301
@@ -3902,7 +3902,7 @@ graph [
     raw_risk_score 0.11167922927445625
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 302
@@ -3915,7 +3915,7 @@ graph [
     raw_risk_score 0.15697025309537507
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 303
@@ -3928,7 +3928,7 @@ graph [
     raw_risk_score 0.2231058153727421
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 304
@@ -3941,7 +3941,7 @@ graph [
     raw_risk_score 0.18504456927099172
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 305
@@ -3954,7 +3954,7 @@ graph [
     raw_risk_score 0.19058765399608035
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 306
@@ -3967,7 +3967,7 @@ graph [
     raw_risk_score 0.18364550743081134
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 307
@@ -3980,7 +3980,7 @@ graph [
     raw_risk_score 0.20705256886342294
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 308
@@ -3993,7 +3993,7 @@ graph [
     raw_risk_score 0.15421978295546976
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 309
@@ -4006,7 +4006,7 @@ graph [
     raw_risk_score 0.44660113281962655
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 310
@@ -4019,7 +4019,7 @@ graph [
     raw_risk_score 0.1412009617976098
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 311
@@ -4032,7 +4032,7 @@ graph [
     raw_risk_score 0.11406185337710593
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 312
@@ -4055,7 +4055,7 @@ graph [
     raw_risk_score 0.26747549590599523
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 314
@@ -4068,7 +4068,7 @@ graph [
     raw_risk_score 0.2053950957146704
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 315
@@ -4081,7 +4081,7 @@ graph [
     raw_risk_score 0.17779044018688778
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 316
@@ -4094,7 +4094,7 @@ graph [
     raw_risk_score 0.19436919067181185
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 317
@@ -4117,7 +4117,7 @@ graph [
     raw_risk_score 0.14744010969055166
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 319
@@ -4130,7 +4130,7 @@ graph [
     raw_risk_score 0.25344313793121775
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 320
@@ -4143,7 +4143,7 @@ graph [
     raw_risk_score 0.14247019555117668
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 321
@@ -4156,7 +4156,7 @@ graph [
     raw_risk_score 0.24642419081479167
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 322
@@ -4166,10 +4166,10 @@ graph [
     name "Yum! Brands"
     gnn_risk_score 7.653617331015994E-07
     industry "Restaurants"
-    raw_risk_score 0.2065906756150831
+    raw_risk_score 0.19556757775680633
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 323
@@ -4182,7 +4182,7 @@ graph [
     raw_risk_score 0.20667930739119406
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 324
@@ -4195,7 +4195,7 @@ graph [
     raw_risk_score 0.41148979026033894
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 325
@@ -4208,7 +4208,7 @@ graph [
     raw_risk_score 0.1917363443495183
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 326
@@ -4221,7 +4221,7 @@ graph [
     raw_risk_score 0.3484581783519669
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 327
@@ -4234,7 +4234,7 @@ graph [
     raw_risk_score 0.5746825513455001
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 328
@@ -4247,7 +4247,7 @@ graph [
     raw_risk_score 0.17390835216942735
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 329
@@ -4260,7 +4260,7 @@ graph [
     raw_risk_score 0.0987501609764641
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 330
@@ -4273,7 +4273,7 @@ graph [
     raw_risk_score 0.11745013580291298
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 331
@@ -4286,7 +4286,7 @@ graph [
     raw_risk_score 0.20165805988241817
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 332
@@ -4299,7 +4299,7 @@ graph [
     raw_risk_score 0.19079322305012153
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 333
@@ -4314,7 +4314,7 @@ graph [
     raw_risk_score 0.16863776106259312
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 334
@@ -4327,7 +4327,7 @@ graph [
     raw_risk_score 0.11703192735266765
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 335
@@ -4340,7 +4340,7 @@ graph [
     raw_risk_score 0.2166621326792609
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 336
@@ -4353,7 +4353,7 @@ graph [
     raw_risk_score 0.11119253775794262
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 337
@@ -4368,7 +4368,7 @@ graph [
     raw_risk_score 0.2834488772005239
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 338
@@ -4381,7 +4381,7 @@ graph [
     raw_risk_score 0.2352006967542144
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 339
@@ -4394,7 +4394,7 @@ graph [
     raw_risk_score 0.40146973919321
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 340
@@ -4407,7 +4407,7 @@ graph [
     raw_risk_score 0.35022637333961815
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 341
@@ -4420,7 +4420,7 @@ graph [
     raw_risk_score 0.4018737452150139
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-02T23:16:14.215000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 342
@@ -4433,7 +4433,7 @@ graph [
     raw_risk_score 0.34604363094596874
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 343
@@ -4446,7 +4446,7 @@ graph [
     raw_risk_score 0.2532603315796388
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 344
@@ -4459,7 +4459,7 @@ graph [
     raw_risk_score 0.4591171409185719
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 345
@@ -4472,7 +4472,7 @@ graph [
     raw_risk_score 0.3315972168347335
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 346
@@ -4485,7 +4485,7 @@ graph [
     raw_risk_score 0.343551811159519
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 347
@@ -4498,7 +4498,7 @@ graph [
     raw_risk_score 0.19565547944386788
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 348
@@ -4511,7 +4511,7 @@ graph [
     raw_risk_score 0.13178917184814576
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 349
@@ -4524,7 +4524,7 @@ graph [
     raw_risk_score 0.16652045981644498
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 350
@@ -4537,7 +4537,7 @@ graph [
     raw_risk_score 0.23184284502593183
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "PHARMACEUTICAL PREPARATIONS"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 351
@@ -4550,7 +4550,7 @@ graph [
     raw_risk_score 0.11774715869009451
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 352
@@ -4563,7 +4563,7 @@ graph [
     raw_risk_score 0.17936596808376715
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 353
@@ -4576,7 +4576,7 @@ graph [
     raw_risk_score 0.15101452100280183
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 354
@@ -4589,7 +4589,7 @@ graph [
     raw_risk_score 0.1499424973256225
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 355
@@ -4602,7 +4602,7 @@ graph [
     raw_risk_score 0.2686665396164646
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 356
@@ -4615,7 +4615,7 @@ graph [
     raw_risk_score 0.1459954496047595
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 357
@@ -4628,7 +4628,7 @@ graph [
     raw_risk_score 0.1466733032229606
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 358
@@ -4641,7 +4641,7 @@ graph [
     raw_risk_score 0.13528756712258466
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 359
@@ -4654,7 +4654,7 @@ graph [
     raw_risk_score 0.10618208269172916
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 360
@@ -4667,7 +4667,7 @@ graph [
     raw_risk_score 0.19950241575766642
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 361
@@ -4680,7 +4680,7 @@ graph [
     raw_risk_score 0.07796780181176796
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 362
@@ -4693,7 +4693,7 @@ graph [
     raw_risk_score 0.14529586818774642
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 363
@@ -4706,7 +4706,7 @@ graph [
     raw_risk_score 0.17565141852438765
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 364
@@ -4719,7 +4719,7 @@ graph [
     raw_risk_score 0.34563879024246047
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 365
@@ -4732,7 +4732,7 @@ graph [
     raw_risk_score 0.2729735813912854
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 366
@@ -4745,7 +4745,7 @@ graph [
     raw_risk_score 0.1544485885850009
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 367
@@ -4758,7 +4758,7 @@ graph [
     raw_risk_score 0.2884731852312669
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 368
@@ -4771,7 +4771,7 @@ graph [
     raw_risk_score 0.14247316449698694
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 369
@@ -4784,7 +4784,7 @@ graph [
     raw_risk_score 0.10830915684360269
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 370
@@ -4797,7 +4797,7 @@ graph [
     raw_risk_score 0.2740985382687072
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 371
@@ -4810,7 +4810,7 @@ graph [
     raw_risk_score 0.13215766484049007
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 372
@@ -4823,7 +4823,7 @@ graph [
     raw_risk_score 0.28950044245897943
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 373
@@ -4836,7 +4836,7 @@ graph [
     raw_risk_score 0.17733770986958888
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 374
@@ -4851,7 +4851,7 @@ graph [
     raw_risk_score 0.25241734102553615
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 375
@@ -4864,7 +4864,7 @@ graph [
     raw_risk_score 0.17328028815938765
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 376
@@ -4877,7 +4877,7 @@ graph [
     raw_risk_score 0.2837344874127157
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 377
@@ -4890,7 +4890,7 @@ graph [
     raw_risk_score 0.20119308637224745
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 378
@@ -4903,7 +4903,7 @@ graph [
     raw_risk_score 0.13623547265330477
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 379
@@ -4916,7 +4916,7 @@ graph [
     raw_risk_score 0.13387821360626753
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 380
@@ -4929,7 +4929,7 @@ graph [
     raw_risk_score 0.15682441414972065
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 381
@@ -4942,7 +4942,7 @@ graph [
     raw_risk_score 0.16719508298151575
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 382
@@ -4955,7 +4955,7 @@ graph [
     raw_risk_score 0.14003195862932524
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 383
@@ -4968,7 +4968,7 @@ graph [
     raw_risk_score 0.16618949574733785
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 384
@@ -4981,7 +4981,7 @@ graph [
     raw_risk_score 0.21710417604008064
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 385
@@ -4994,7 +4994,7 @@ graph [
     raw_risk_score 0.2852292245499989
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 386
@@ -5007,7 +5007,7 @@ graph [
     raw_risk_score 0.22443115726783663
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 387
@@ -5020,7 +5020,7 @@ graph [
     raw_risk_score 0.1834020907486042
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 388
@@ -5033,7 +5033,7 @@ graph [
     raw_risk_score 0.1433668523401627
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 389
@@ -5046,7 +5046,7 @@ graph [
     raw_risk_score 0.1135150915404282
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 390
@@ -5059,7 +5059,7 @@ graph [
     raw_risk_score 0.16958102850338275
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 391
@@ -5072,7 +5072,7 @@ graph [
     raw_risk_score 0.28824075680586264
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 392
@@ -5085,7 +5085,7 @@ graph [
     raw_risk_score 0.259499965784974
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 393
@@ -5098,7 +5098,7 @@ graph [
     raw_risk_score 0.2140869007179369
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 394
@@ -5111,7 +5111,7 @@ graph [
     raw_risk_score 0.08427325296184998
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 395
@@ -5124,7 +5124,7 @@ graph [
     raw_risk_score 0.1762161341191269
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 396
@@ -5137,7 +5137,7 @@ graph [
     raw_risk_score 0.12309050378685442
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 397
@@ -5150,7 +5150,7 @@ graph [
     raw_risk_score 0.1945514535172473
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 398
@@ -5163,7 +5163,7 @@ graph [
     raw_risk_score 0.25370664767254947
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 399
@@ -5176,7 +5176,7 @@ graph [
     raw_risk_score 0.2535169741186764
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 400
@@ -5189,7 +5189,7 @@ graph [
     raw_risk_score 0.1558211102420948
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 401
@@ -5202,7 +5202,7 @@ graph [
     raw_risk_score 0.18001519351761758
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 402
@@ -5215,7 +5215,7 @@ graph [
     raw_risk_score 0.1348146628707017
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 403
@@ -5228,7 +5228,7 @@ graph [
     raw_risk_score 0.22082530690578084
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 404
@@ -5241,7 +5241,7 @@ graph [
     raw_risk_score 0.1134709138385773
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 405
@@ -5254,7 +5254,7 @@ graph [
     raw_risk_score 0.2204414907399918
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 406
@@ -5267,7 +5267,7 @@ graph [
     raw_risk_score 0.1509256206135221
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 407
@@ -5280,7 +5280,7 @@ graph [
     raw_risk_score 0.16244776467277822
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 408
@@ -5293,7 +5293,7 @@ graph [
     raw_risk_score 0.20145965140739114
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 409
@@ -5306,7 +5306,7 @@ graph [
     raw_risk_score 0.2315862982203381
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 410
@@ -5319,7 +5319,7 @@ graph [
     raw_risk_score 0.2806286891080999
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 411
@@ -5332,7 +5332,7 @@ graph [
     raw_risk_score 0.13394284474553417
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 412
@@ -5345,7 +5345,7 @@ graph [
     raw_risk_score 0.17916547246679757
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 413
@@ -5358,7 +5358,7 @@ graph [
     raw_risk_score 0.23769042187688438
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 414
@@ -5371,7 +5371,7 @@ graph [
     raw_risk_score 0.21426239365617533
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 415
@@ -5384,7 +5384,7 @@ graph [
     raw_risk_score 0.1398786327821867
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 416
@@ -5397,7 +5397,7 @@ graph [
     raw_risk_score 0.1375238142579743
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 417
@@ -5410,7 +5410,7 @@ graph [
     raw_risk_score 0.26791975813639346
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 418
@@ -5423,7 +5423,7 @@ graph [
     raw_risk_score 0.349618002888775
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 419
@@ -5436,7 +5436,7 @@ graph [
     raw_risk_score 0.1397275714325278
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 420
@@ -5449,7 +5449,7 @@ graph [
     raw_risk_score 0.2555182621023304
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 421
@@ -5462,7 +5462,7 @@ graph [
     raw_risk_score 0.08250176385515673
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 422
@@ -5475,7 +5475,7 @@ graph [
     raw_risk_score 0.11728486697368501
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 423
@@ -5488,7 +5488,7 @@ graph [
     raw_risk_score 0.20997176966230013
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 424
@@ -5501,7 +5501,7 @@ graph [
     raw_risk_score 0.19859162020836377
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 425
@@ -5514,7 +5514,7 @@ graph [
     raw_risk_score 0.26737450406743085
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 426
@@ -5527,7 +5527,7 @@ graph [
     raw_risk_score 0.25219596536117916
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 427
@@ -5540,7 +5540,7 @@ graph [
     raw_risk_score 0.06680154872178612
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 428
@@ -5550,10 +5550,10 @@ graph [
     name "Jack Henry &#38; Associates"
     gnn_risk_score 1.9623027647241997E-09
     industry "Information Technology Services"
-    raw_risk_score 0.22811849700196954
+    raw_risk_score 0.24042308808163915
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 429
@@ -5566,7 +5566,7 @@ graph [
     raw_risk_score 0.18024539023453856
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 430
@@ -5579,7 +5579,7 @@ graph [
     raw_risk_score 0.09839845305541953
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 431
@@ -5592,7 +5592,7 @@ graph [
     raw_risk_score 0.19003611731403572
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 432
@@ -5605,7 +5605,7 @@ graph [
     raw_risk_score 0.3392904084885427
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 433
@@ -5618,7 +5618,7 @@ graph [
     raw_risk_score 0.3040028371126561
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 434
@@ -5631,7 +5631,7 @@ graph [
     raw_risk_score 0.19908159639705283
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 435
@@ -5646,7 +5646,7 @@ graph [
     raw_risk_score 0.3442628160051368
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 436
@@ -5659,7 +5659,7 @@ graph [
     raw_risk_score 0.25248771973692313
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 437
@@ -5672,7 +5672,7 @@ graph [
     raw_risk_score 0.2295042836501141
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 438
@@ -5685,7 +5685,7 @@ graph [
     raw_risk_score 0.1040981025891471
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 439
@@ -5698,7 +5698,7 @@ graph [
     raw_risk_score 0.13109157733078752
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 440
@@ -5711,7 +5711,7 @@ graph [
     raw_risk_score 0.24479704148399906
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 441
@@ -5724,7 +5724,7 @@ graph [
     raw_risk_score 0.3076279910419371
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 442
@@ -5737,7 +5737,7 @@ graph [
     raw_risk_score 0.3945498194067091
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 443
@@ -5750,7 +5750,7 @@ graph [
     raw_risk_score 0.1288416663194275
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 444
@@ -5763,7 +5763,7 @@ graph [
     raw_risk_score 0.17854031876930437
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 445
@@ -5776,7 +5776,7 @@ graph [
     raw_risk_score 0.15502566760053924
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 446
@@ -5789,7 +5789,7 @@ graph [
     raw_risk_score 0.2538853777415873
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 447
@@ -5802,7 +5802,7 @@ graph [
     raw_risk_score 0.19101375041793034
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC."
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 448
@@ -5815,7 +5815,7 @@ graph [
     raw_risk_score 0.3886746008354682
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 449
@@ -5828,7 +5828,7 @@ graph [
     raw_risk_score 0.09209147360995905
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 450
@@ -5841,7 +5841,7 @@ graph [
     raw_risk_score 0.26498386635657445
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 451
@@ -5854,7 +5854,7 @@ graph [
     raw_risk_score 0.34254464598504003
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 452
@@ -5869,7 +5869,7 @@ graph [
     raw_risk_score 0.36736482349821437
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 453
@@ -5882,7 +5882,7 @@ graph [
     raw_risk_score 0.2186065043798285
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 454
@@ -5895,7 +5895,7 @@ graph [
     raw_risk_score 0.21252840564820175
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 455
@@ -5908,7 +5908,7 @@ graph [
     raw_risk_score 0.19230750457489917
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 456
@@ -5921,7 +5921,7 @@ graph [
     raw_risk_score 0.30639131307917133
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 457
@@ -5934,7 +5934,7 @@ graph [
     raw_risk_score 0.33172436839376224
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 458
@@ -5947,7 +5947,7 @@ graph [
     raw_risk_score 0.24003126992143214
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 459
@@ -5960,7 +5960,7 @@ graph [
     raw_risk_score 0.19943444092385165
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 460
@@ -5973,7 +5973,7 @@ graph [
     raw_risk_score 0.14207305745554666
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 461
@@ -5986,7 +5986,7 @@ graph [
     raw_risk_score 0.08346678085800553
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 462
@@ -5999,7 +5999,7 @@ graph [
     raw_risk_score 0.15117522623500299
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 463
@@ -6012,7 +6012,7 @@ graph [
     raw_risk_score 0.1679360951475538
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 464
@@ -6025,7 +6025,7 @@ graph [
     raw_risk_score 0.12581430735883686
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 465
@@ -6038,7 +6038,7 @@ graph [
     raw_risk_score 0.11876675036446
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 466
@@ -6051,7 +6051,7 @@ graph [
     raw_risk_score 0.16699308220724693
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 467
@@ -6064,7 +6064,7 @@ graph [
     raw_risk_score 0.14627762625849766
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 468
@@ -6077,7 +6077,7 @@ graph [
     raw_risk_score 0.2033638955151307
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 469
@@ -6090,7 +6090,7 @@ graph [
     raw_risk_score 0.2233747430905374
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 470
@@ -6103,7 +6103,7 @@ graph [
     raw_risk_score 0.1591169903855425
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 471
@@ -6116,7 +6116,7 @@ graph [
     raw_risk_score 0.17435144052811424
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 472
@@ -6129,7 +6129,7 @@ graph [
     raw_risk_score 0.15926359669883525
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 473
@@ -6142,7 +6142,7 @@ graph [
     raw_risk_score 0.24836057104217213
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 474
@@ -6155,7 +6155,7 @@ graph [
     raw_risk_score 0.22374841368756973
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 475
@@ -6168,7 +6168,7 @@ graph [
     raw_risk_score 0.26127623261147376
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 476
@@ -6181,7 +6181,7 @@ graph [
     raw_risk_score 0.22021066130024372
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 477
@@ -6194,7 +6194,7 @@ graph [
     raw_risk_score 0.23247108876994138
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 478
@@ -6207,7 +6207,7 @@ graph [
     raw_risk_score 0.23122109690231463
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 479
@@ -6220,7 +6220,7 @@ graph [
     raw_risk_score 0.184745802614747
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 480
@@ -6233,7 +6233,7 @@ graph [
     raw_risk_score 0.21796017470253282
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 481
@@ -6246,7 +6246,7 @@ graph [
     raw_risk_score 0.2184333578693271
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 482
@@ -6259,7 +6259,7 @@ graph [
     raw_risk_score 0.3924320280307226
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 483
@@ -6272,7 +6272,7 @@ graph [
     raw_risk_score 0.1375995035586184
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 484
@@ -6285,7 +6285,7 @@ graph [
     raw_risk_score 0.09884568242657912
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 485
@@ -6298,7 +6298,7 @@ graph [
     raw_risk_score 0.1764303929811871
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 486
@@ -6311,7 +6311,7 @@ graph [
     raw_risk_score 0.40964024021418166
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 487
@@ -6324,7 +6324,7 @@ graph [
     raw_risk_score 0.1755443888488618
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 488
@@ -6339,7 +6339,7 @@ graph [
     raw_risk_score 0.18648459346565766
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 489
@@ -6349,10 +6349,10 @@ graph [
     name "KeyCorp"
     gnn_risk_score 0.41322728991508484
     industry "Banks - Regional"
-    raw_risk_score 0.1413317837946077
+    raw_risk_score 0.1600332886199694
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 490
@@ -6365,7 +6365,7 @@ graph [
     raw_risk_score 0.13270150868889052
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 491
@@ -6378,7 +6378,7 @@ graph [
     raw_risk_score 0.29769661803284786
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 492
@@ -6391,7 +6391,7 @@ graph [
     raw_risk_score 0.14975227793640583
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 493
@@ -6404,7 +6404,7 @@ graph [
     raw_risk_score 0.09345843079168262
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 494
@@ -6417,7 +6417,7 @@ graph [
     raw_risk_score 0.250496985314418
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 495
@@ -6430,7 +6430,7 @@ graph [
     raw_risk_score 0.18784717882318153
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 496
@@ -6443,7 +6443,7 @@ graph [
     raw_risk_score 0.28816626816226054
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 497
@@ -6456,7 +6456,7 @@ graph [
     raw_risk_score 0.24795701738441292
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 498
@@ -6469,7 +6469,7 @@ graph [
     raw_risk_score 0.21252085889213923
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 499
@@ -6482,7 +6482,7 @@ graph [
     raw_risk_score 0.3579306234532036
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 500
@@ -6495,7 +6495,7 @@ graph [
     raw_risk_score 0.14019101390845357
     last_risk_update "2025-11-24T09:53:59.584000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 501
@@ -6508,7 +6508,7 @@ graph [
     raw_risk_score 0.15028066272722934
     last_risk_update "2025-11-24T09:53:59.584000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 502
@@ -6521,7 +6521,7 @@ graph [
     raw_risk_score 0.1781290631058046
     last_risk_update "2025-11-24T09:53:59.584000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 503
@@ -6548,7 +6548,7 @@ graph [
     industry "Entertainment"
     raw_risk_score 0.3431356225190419
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 506
@@ -6559,7 +6559,7 @@ graph [
     industry "Insurance Brokers"
     raw_risk_score 0.21180874605774908
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 507
@@ -6570,7 +6570,7 @@ graph [
     industry "Farm Products"
     raw_risk_score 0.11929550469635296
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 508
@@ -6589,7 +6589,7 @@ graph [
     industry "Building Products &#38; Equipment"
     raw_risk_score 0.2953010392635038
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 510
@@ -6600,7 +6600,7 @@ graph [
     industry "Medical Distribution"
     raw_risk_score 0.18523036581603347
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 511
@@ -6611,7 +6611,7 @@ graph [
     industry "Insurance - Reinsurance"
     raw_risk_score 0.1873504907391798
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 512
@@ -6622,7 +6622,7 @@ graph [
     industry "Electrical Equipment &#38; Parts"
     raw_risk_score 0.21411297917150968
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 513
@@ -6633,7 +6633,7 @@ graph [
     industry "Medical Devices"
     raw_risk_score 0.30990630476234654
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 514
@@ -6644,7 +6644,7 @@ graph [
     industry "Household &#38; Personal Products"
     raw_risk_score 0.15125511127053504
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 515
@@ -6655,7 +6655,7 @@ graph [
     industry "Packaging &#38; Containers"
     raw_risk_score 0.19303235783114417
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 516
@@ -6668,7 +6668,7 @@ graph [
     industry "Medical Instruments &#38; Supplies"
     raw_risk_score 0.44824632693943456
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 517
@@ -6679,7 +6679,7 @@ graph [
     industry "Computer Hardware"
     raw_risk_score 0.44441873424817613
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 518
@@ -6690,7 +6690,7 @@ graph [
     industry "Entertainment"
     raw_risk_score 0.28282302887309985
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 519
@@ -6701,7 +6701,7 @@ graph [
     industry "Software - Application"
     raw_risk_score 0.28203320924791203
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 520
@@ -6824,7 +6824,7 @@ graph [
     industry "Asset Management"
     raw_risk_score 0.13962146104691855
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 535
@@ -6835,7 +6835,7 @@ graph [
     industry "Software - Infrastructure"
     raw_risk_score 0.36363753179490554
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 536
@@ -6846,7 +6846,7 @@ graph [
     industry "Software - Infrastructure"
     raw_risk_score 0.2554358041198235
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 537
@@ -6857,7 +6857,7 @@ graph [
     industry "Footwear &#38; Accessories"
     raw_risk_score 0.31158876682091724
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 538
@@ -6868,7 +6868,7 @@ graph [
     industry "REIT - Healthcare Facilities"
     raw_risk_score 0.13081768986534487
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 539
@@ -6879,7 +6879,7 @@ graph [
     industry "Capital Markets"
     raw_risk_score 0.317290148057657
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 540
@@ -6890,7 +6890,7 @@ graph [
     industry "Asset Management"
     raw_risk_score 0.16995229336856993
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 541
@@ -6901,7 +6901,7 @@ graph [
     industry "Capital Markets"
     raw_risk_score 0.49065143439872316
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 542
@@ -6912,7 +6912,7 @@ graph [
     industry "Advertising Agencies"
     raw_risk_score 0.3400147274745565
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 543
@@ -6923,7 +6923,7 @@ graph [
     industry "Software - Application"
     raw_risk_score 0.27246949858355873
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 544
@@ -6934,7 +6934,7 @@ graph [
     industry "Insurance - Diversified"
     raw_risk_score 0.1306675525604779
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 545
@@ -6945,7 +6945,7 @@ graph [
     industry "Software - Infrastructure"
     raw_risk_score 0.19064127544742412
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 546
@@ -6956,7 +6956,7 @@ graph [
     industry "Software - Application"
     raw_risk_score 0.08614578296062873
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 547
@@ -6975,7 +6975,7 @@ graph [
     industry "Travel Services"
     raw_risk_score 0.19814650183354723
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 549
@@ -6986,7 +6986,7 @@ graph [
     industry "Aerospace &#38; Defense"
     raw_risk_score 0.35818309943115645
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 550
@@ -7005,7 +7005,7 @@ graph [
     industry "Computer Hardware"
     raw_risk_score 0.2840078684233543
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 552
@@ -7016,7 +7016,7 @@ graph [
     industry "Software - Infrastructure"
     raw_risk_score 0.4320922129453012
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 553
@@ -7036,7 +7036,7 @@ graph [
     industry "Building Products &#38; Equipment"
     raw_risk_score 0.146977707714542
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 555
@@ -7047,7 +7047,7 @@ graph [
     industry "Asset Management"
     raw_risk_score 0.19039787206873163
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 556
@@ -7058,7 +7058,7 @@ graph [
     industry "Advertising Agencies"
     raw_risk_score 0.39510237009712684
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 557
@@ -7069,7 +7069,7 @@ graph [
     industry "Financial Data &#38; Stock Exchanges"
     raw_risk_score 0.4712333522394046
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 558
@@ -7080,7 +7080,7 @@ graph [
     industry "Oil &#38; Gas E&#38;P"
     raw_risk_score 0.13076386311060542
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 559
@@ -7091,7 +7091,7 @@ graph [
     industry "Specialty Industrial Machinery"
     raw_risk_score 0.3270125215059081
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 560
@@ -7102,7 +7102,7 @@ graph [
     industry "Specialty Chemicals"
     raw_risk_score 0.3310645084296272
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 561
@@ -7115,7 +7115,7 @@ graph [
     industry "Oil &#38; Gas E&#38;P"
     raw_risk_score 0.3978400953694169
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 562
@@ -7126,7 +7126,7 @@ graph [
     industry "Specialty Retail"
     raw_risk_score 0.2634310728058415
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 563
@@ -7137,7 +7137,7 @@ graph [
     industry "Beverages - Wineries &#38; Distilleries"
     raw_risk_score 0.24590502103395223
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 564
@@ -7156,7 +7156,7 @@ graph [
     industry "Internet Retail"
     raw_risk_score 0.47871883317987146
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 566
@@ -7167,7 +7167,7 @@ graph [
     industry "Engineering &#38; Construction"
     raw_risk_score 0.2530694291540575
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 567
@@ -7178,7 +7178,7 @@ graph [
     industry "Pollution &#38; Treatment Controls"
     raw_risk_score 0.20380726940853988
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 568
@@ -7189,7 +7189,7 @@ graph [
     industry "Software - Application"
     raw_risk_score 0.7516221298903623
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 569
@@ -7200,7 +7200,7 @@ graph [
     industry "Utilities - Independent Power Producers"
     raw_risk_score 0.2580570643227276
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 570
@@ -7210,7 +7210,7 @@ graph [
     name "10-Year Treasury Yield"
     raw_risk_score 0.09576394182530154
     sector "Macro"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 571
@@ -7218,9 +7218,9 @@ graph [
     ticker "CL=F"
     is_macro 1
     name "Crude Oil"
-    raw_risk_score 0.14352747360162027
+    raw_risk_score 0.13434168019368062
     sector "Macro"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 572
@@ -7228,9 +7228,9 @@ graph [
     ticker "GC=F"
     is_macro 1
     name "Gold"
-    raw_risk_score 0.23689755786218716
+    raw_risk_score 0.23328258986478578
     sector "Macro"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 573
@@ -7248,7 +7248,7 @@ graph [
     name "Volatility Index"
     raw_risk_score 0.7089416917334025
     sector "Macro"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 575
@@ -7265,7 +7265,7 @@ graph [
     industry "Internet Content &#38; Information"
     raw_risk_score 0.29820121878417627
     sector "Communication Services"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 577
@@ -7291,7 +7291,7 @@ graph [
     industry "Semiconductors"
     raw_risk_score 0.15141542920609757
     sector "Technology"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 580
@@ -7308,7 +7308,7 @@ graph [
     industry "Consumer Electronics"
     raw_risk_score 0.19817445519269844
     sector "Technology"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   node [
     id 582
@@ -7321,7 +7321,7 @@ graph [
     raw_risk_score 0.45549751694577456
     last_risk_update "2025-11-24T09:53:59.584000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-03T00:16:15.814000000+00:00"
+    risk_last_updated "2025-12-03T08:16:11.267000000+00:00"
   ]
   edge [
     source 8
