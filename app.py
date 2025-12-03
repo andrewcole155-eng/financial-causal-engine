@@ -6,7 +6,6 @@ import logging
 import os
 import glob
 import uuid
-import sqlite3
 from typing import Dict, Any, List
 import pandas as pd
 import networkx as nx
@@ -620,44 +619,12 @@ def main():
         st.header("🔔 Recently Detected Significant Events")
         st.write("These events are automatically detected and saved by the background worker.")
         
-        # --- NEW: DEBUG DATABASE SECTION ---
-        with st.expander("🛠️ Debug Database Connection"):
-            try:
-                # Force absolute path check to see where Streamlit is looking
-                base_dir = os.path.dirname(os.path.abspath(__file__))
-                expected_db_path = os.path.join(base_dir, 'database', 'financial_data.db')
-                
-                st.write(f"📂 **Script Location:** `{base_dir}`")
-                st.write(f"📂 **Looking for DB at:** `{expected_db_path}`")
-                
-                if os.path.exists(expected_db_path):
-                    st.success("✅ Database file FOUND at expected path.")
-                    
-                    # Direct SQL check (bypassing manager to verify raw file content)
-                    conn = sqlite3.connect(expected_db_path)
-                    cursor = conn.cursor()
-                    cursor.execute("SELECT count(*) FROM significant_events")
-                    row_count = cursor.fetchone()[0]
-                    conn.close()
-                    
-                    st.metric(label="Total Saved Events", value=row_count)
-                    
-                    if row_count > 0:
-                        st.success(f"✅ The database contains {row_count} rows. They should appear below.")
-                    else:
-                        st.warning("⚠️ The database exists but is EMPTY. Run worker.py again.")
-                else:
-                    st.error("❌ Database file NOT FOUND. Check your file structure.")
-            except Exception as e:
-                st.error(f"Debug check failed: {e}")
-        # -----------------------------------
-
         if st.button("🔄 Refresh Events"):
             st.cache_data.clear() 
             st.cache_resource.clear()
             st.rerun()
 
-        # This function is NOT cached, it runs live and should be fast.
+        # Fetch Data (Now pulling correctly from Neo4j Cloud)
         recent_events = db_manager.get_recent_events(limit=50)
         
         if not recent_events:
@@ -668,10 +635,14 @@ def main():
             for event in recent_events:
                 score = event.get('score', 0.0)
                 event_type = "Positive📈" if score > 0 else "Negative📉"
+                
                 with st.expander(f"**{event.get('timestamp', 'No Date')} - {event_type} for {event['ticker']}**: {event['headline']}"):
                     st.markdown(f"**Sentiment Score:** `{score:.2f}`")
                     st.markdown(f"[Read Full Article]({event['link']})", unsafe_allow_html=True)
-                    st.info(f"To see the potential impact of this event, go to the 'Simulate Scenarios' tab and run a simulation for {event['ticker']}.")
+                    
+                    # Add a quick action button for simulation
+                    if st.button(f"🔬 Simulate Impact for {event['ticker']}", key=f"btn_{event['ticker']}_{uuid.uuid4()}"):
+                        st.info("Go to the 'Simulate Scenarios' tab to run this simulation manually.")
 
     # ==============================================================================
     # --- TAB 2: EXPLORE GRAPH (UPDATED) ---
