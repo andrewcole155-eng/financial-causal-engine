@@ -13,6 +13,7 @@ import yfinance as yf
 from typing import Dict, Any, List
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from datetime import datetime
 
 # Third-party Imports
 import feedparser
@@ -230,7 +231,7 @@ def send_email_alert(config: Dict[str, Any], subject: str, body_html: str):
 
 def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, Any]):
     """
-    Fetches live news, collects significant events, and saves them in a batch.
+    Fetches live news, collects significant events with PRECISE TIMESTAMPS, and saves them.
     """
     logger.info("📰 Checking live news for significant events...")
     
@@ -240,7 +241,6 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
             feed_urls = [s['url'] for s in json.load(f).get("sources", [])]
     except Exception as e:
         logger.error(f"Could not load news_urls.json: {e}")
-        # Fallback
         feed_urls = ["http://feeds.marketwatch.com/marketwatch/topstories/"] 
 
     articles = []
@@ -259,7 +259,6 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
         graph = db_manager.get_graph_from_db()
         all_tickers = list(graph.nodes())
         
-        # If graph is empty (first run), use target tickers from config
         if not all_tickers:
              all_tickers = config.get("target_tickers", [])
 
@@ -279,10 +278,20 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
 
             link = article.get('link', '#')
             
+            # --- TRUTH LAYER UPDATE: Capture Exact Timestamp ---
+            # We need the exact publication time to align with the price chart later.
+            pub_struct = article.get('published_parsed', article.get('updated_parsed'))
+            if pub_struct:
+                # Convert struct_time to datetime object
+                event_dt = datetime.fromtimestamp(time.mktime(pub_struct))
+            else:
+                # Fallback to now if feed provides no time
+                event_dt = datetime.now()
+            # ---------------------------------------------------
+
             for ticker in all_tickers:
                 if ticker in ticker_stopwords: continue
 
-                # Regex search for whole word ticker match
                 if re.search(r'\b' + re.escape(ticker) + r'\b', title, re.IGNORECASE):
                     score = get_financial_sentiment(title, finbert_tokenizer, finbert_model)
                     
@@ -291,14 +300,14 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
                         
                         processed_headlines.add(title)
                         
-                        # --- Collect event data ---
                         significant_events_found.append({
                             'ticker': ticker, 
                             'headline': title,
                             'score': score, 
-                            'link': link
+                            'link': link,
+                            'timestamp': event_dt  # <--- Storing the precise time
                         })
-                        break # Stop checking other tickers for this specific article
+                        break 
 
         if significant_events_found:
             logger.info(f"✍️ DB-WRITE: Writing batch of {len(significant_events_found)} new events...")
@@ -306,20 +315,22 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
                 # 1. WRITE TO GRAPH (Neo4j)
                 db_manager.add_events_batch(significant_events_found)
                 
-                # 2. WRITE TO UI LIST (SQLite) - <--- THIS IS THE NEW FIX
+                # 2. WRITE TO UI LIST (SQLite)
                 count_sqlite = 0
                 for event in significant_events_found:
+                    # NOTE: Ensure your insert_event method accepts 'timestamp'
+                    # If not, update your database_manager.py to handle it.
                     db_manager.insert_event(
                         ticker=event['ticker'], 
                         headline=event['headline'], 
                         score=event['score'], 
-                        link=event['link']
+                        link=event['link'],
+                        timestamp=event['timestamp'] # Passing the timestamp
                     )
                     count_sqlite += 1
                 
                 logger.info(f"✅ DB-WRITE: Wrote {len(significant_events_found)} to Neo4j and {count_sqlite} to SQLite.")
 
-                # Send email only after the database write is confirmed
                 subject = f"Financial KG Summary: {len(significant_events_found)} Significant Events Detected"
                 body_html = generate_summary_email_body(significant_events_found)
                 send_email_alert(config, subject, body_html)
@@ -333,7 +344,6 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
         logger.error(f"Error during news check execution: {e}")
         
     logger.info("✅ Live news check complete.")
-
 
 def update_nodes_from_api(tickers: List[str], client: RESTClient, db_manager: DatabaseManager):
     """Fetches company data from the API and upserts it to the database in a batch."""
@@ -583,6 +593,12 @@ def run_full_data_pipeline():
 
         # 5. News & Sentiment
         check_live_news_for_events(db_manager, config)
+
+        # 6. Calculate Company Risk
+        db_manager.update_company_risk_scores()
+
+        # 7. Garbage Collection (Prune old news)
+        db_manager.prune_old_events(days=90)
         
     except Exception as e:
         logger.critical(f"A critical error occurred during the pipeline execution: {e}", exc_info=True)

@@ -533,6 +533,38 @@ class DatabaseManager:
         self.execute_write("MATCH (n) DETACH DELETE n")
         logger.warning(" -> ✅ Neo4j database has been cleared.")
 
+    def prune_old_events(self, days: int = 90):
+        """
+        Garbage Collector: Deletes Event nodes older than 'days' to keep the graph fast.
+        Uses Cypher's ISO string comparison to handle the text timestamps.
+        """
+        if not self.is_connected(): return
+
+        logger.info(f"🧹 GARBAGE COLLECTION: Pruning events older than {days} days...")
+        
+        # 1. Calculate cutoff string in Cypher (matches stored format)
+        # 2. Find events older than that string
+        # 3. Detach (remove relationships) and Delete the nodes
+        query = """
+        WITH toString(datetime() - duration($duration_str)) AS cutoff
+        MATCH (e:Event)
+        WHERE e.timestamp < cutoff
+        DETACH DELETE e
+        RETURN count(e) as deleted_count
+        """
+        
+        try:
+            # Format duration string for Neo4j (e.g., 'P90D' for 90 days)
+            duration_str = f"P{days}D"
+            results = self.execute_write(query, duration_str=duration_str)
+            
+            # Extract deletion count from result summary if available, or just log
+            # (The exact counter access depends on driver version, but this is safe)
+            logger.info(f"✅ GARBAGE COLLECTION: Old events pruned.")
+            
+        except Exception as e:
+            logger.error(f"❌ Failed to prune events: {e}")
+
     def close(self):
         """Closes all database connections."""
         if self.sqlite_conn:

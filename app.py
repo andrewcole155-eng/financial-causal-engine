@@ -13,6 +13,8 @@ import streamlit as st
 from pyvis.network import Network
 import google.generativeai as genai 
 import plotly.express as px
+import plotly.graph_objects as go
+from polygon import RESTClient
 
 # --- Local Imports ---
 from database_manager import DatabaseManager
@@ -183,6 +185,111 @@ def get_cloud_config_dict():
             }
         }
     return load_config()
+
+# ==============================================================================
+# --- NEW: TRUTH LAYER VISUALIZATION ---
+# ==============================================================================
+def render_truth_layer(ticker: str, db_manager: DatabaseManager):
+    """
+    Fetches 7-day OHLCV data from Polygon and overlays Neo4j Event markers.
+    """
+    # 1. Get API Key
+    api_key = st.secrets.get("POLYGON_API_KEY") or os.environ.get("POLYGON_API_KEY")
+    if not api_key:
+        st.warning("⚠️ POLYGON_API_KEY not found in secrets. Cannot render Price Chart.")
+        return
+
+    st.subheader(f"👁️ The Truth Layer: {ticker} Price vs. Sentiment")
+
+    # 2. Fetch Historical Price Data (OHLCV)
+    client = RESTClient(api_key)
+    end_date = datetime.now()
+    start_date = end_date - timedelta(days=7)
+    
+    with st.spinner(f"Fetching market data for {ticker}..."):
+        try:
+            # Fetch 30-minute aggregates for a clear trend line
+            aggs = client.list_aggs(
+                ticker=ticker,
+                multiplier=30,
+                timespan="minute",
+                from_=start_date.strftime("%Y-%m-%d"),
+                to=end_date.strftime("%Y-%m-%d"),
+                limit=50000
+            )
+            
+            # Convert to DataFrame
+            price_data = [
+                {"timestamp": datetime.fromtimestamp(a.timestamp / 1000), "close": a.close} 
+                for a in aggs
+            ]
+            price_df = pd.DataFrame(price_data)
+            
+            if price_df.empty:
+                st.warning(f"No price data found for {ticker} (Last 7 Days).")
+                return
+
+        except Exception as e:
+            st.error(f"Error fetching Polygon data: {e}")
+            return
+
+    # 3. Fetch System's Detected Events
+    # We fetch recent events and filter for this ticker in Python for simplicity
+    # (Ideally, add get_events_by_ticker(ticker) to db_manager for efficiency)
+    all_events = db_manager.get_recent_events(limit=100)
+    ticker_events = [e for e in all_events if e['ticker'] == ticker]
+    events_df = pd.DataFrame(ticker_events)
+
+    # 4. Create the Combined Chart
+    fig = go.Figure()
+
+    # Layer A: The Price (Truth)
+    fig.add_trace(go.Scatter(
+        x=price_df['timestamp'],
+        y=price_df['close'],
+        mode='lines',
+        name='Market Price',
+        line=dict(color='#636EFA', width=2)
+    ))
+
+    # Layer B: The Sentiment (Hypothesis)
+    if not events_df.empty:
+        # Normalize timestamps if they are strings
+        if not pd.api.types.is_datetime64_any_dtype(events_df['timestamp']):
+             events_df['timestamp'] = pd.to_datetime(events_df['timestamp'])
+
+        # Color logic: Green for Positive, Red for Negative
+        colors = ['#00CC96' if x > 0 else '#EF553B' for x in events_df['score']]
+        
+        # Approximate Y position (place dot on the price line)
+        # We find the price at the time nearest to the event
+        y_values = []
+        for event_ts in events_df['timestamp']:
+            # Find index of nearest time in price_df
+            nearest_idx = (price_df['timestamp'] - event_ts).abs().idxmin()
+            y_values.append(price_df.loc[nearest_idx, 'close'])
+
+        fig.add_trace(go.Scatter(
+            x=events_df['timestamp'],
+            y=y_values,
+            mode='markers',
+            name='News Event',
+            marker=dict(size=14, color=colors, line=dict(width=2, color='White')),
+            text=events_df['headline'],
+            hovertemplate="<b>%{text}</b><br>Time: %{x}<br>Price: $%{y:.2f}<extra></extra>"
+        ))
+    else:
+        st.caption("No significant news events detected for this ticker in the database.")
+
+    fig.update_layout(
+        template="plotly_dark",
+        height=450,
+        hovermode="x unified",
+        margin=dict(l=20, r=20, t=40, b=20),
+        legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01)
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
 
 # ==============================================================================
 # --- FUNCTION: Inject Live Risk Scores ---
@@ -896,7 +1003,7 @@ def main():
                             st.write(explanation)
 
     # ==============================================================================
-    # --- TAB 3: SIMULATE SCENARIOS (UPDATED WITH SECTOR FILTER) ---
+    # --- TAB 3: SIMULATE SCENARIOS (UPDATED WITH TRUTH LAYER) ---
     # ==============================================================================
     with tab_simulate:
         st.header("🔬 Impact & Contagion Analysis")
@@ -918,76 +1025,40 @@ def main():
             return ticker
 
         # --- SECTION 1: SYSTEMIC VULNERABILITY ---
-        st.subheader("🌪️ Systemic Vulnerability (The 'Butterfly Effect')")
-        st.write("Identify 'Super Spreader' nodes. This simulation crashes every single company one by one to see which failure causes the most damage to the entire network.")
-        
-        if st.button("🚀 Analyze Systemic Vulnerability"):
-            with st.spinner("Running stress tests on all nodes..."):
-                vuln_df = analyze_systemic_vulnerability(financial_graph)
-                
-                # Merge with company names for better display
-                vuln_df['Company Name'] = vuln_df['Ticker'].map(company_map).fillna(vuln_df['Ticker'])
-                
-                # Format for display
-                st.success("Analysis Complete. These companies pose the highest systemic risk.")
-                
-                # Top 10 Chart
-                top_10 = vuln_df.head(10).copy()
-                # Make damage positive for easier bar chart reading (Magnitude of Damage)
-                top_10['Damage Magnitude'] = top_10['Systemic_Damage'].abs()
-                
-                st.bar_chart(top_10, x="Ticker", y="Damage Magnitude", color="#FF4B4B")
-                
-                # Full Data Table
-                st.dataframe(
-                    vuln_df[['Ticker', 'Company Name', 'Systemic_Damage', ' impacted_count']], 
-                    use_container_width=True,
-                    column_config={
-                        "Systemic_Damage": st.column_config.NumberColumn("Total Network Loss", format="%.2f"),
-                        " impacted_count": st.column_config.NumberColumn("Companies Affected")
-                    }
-                )
+        with st.expander("🌪️ Systemic Vulnerability (The 'Butterfly Effect')", expanded=False):
+            st.write("Identify 'Super Spreader' nodes. This simulation crashes every single company one by one to see which failure causes the most damage to the entire network.")
+            
+            if st.button("🚀 Analyze Systemic Vulnerability"):
+                with st.spinner("Running stress tests on all nodes..."):
+                    vuln_df = analyze_systemic_vulnerability(financial_graph)
+                    
+                    # Merge with company names for better display
+                    vuln_df['Company Name'] = vuln_df['Ticker'].map(company_map).fillna(vuln_df['Ticker'])
+                    
+                    # Format for display
+                    st.success("Analysis Complete. These companies pose the highest systemic risk.")
+                    
+                    # Top 10 Chart
+                    top_10 = vuln_df.head(10).copy()
+                    # Make damage positive for easier bar chart reading (Magnitude of Damage)
+                    top_10['Damage Magnitude'] = top_10['Systemic_Damage'].abs()
+                    
+                    st.bar_chart(top_10, x="Ticker", y="Damage Magnitude", color="#FF4B4B")
+                    
+                    # Full Data Table
+                    st.dataframe(
+                        vuln_df[['Ticker', 'Company Name', 'Systemic_Damage', ' impacted_count']], 
+                        use_container_width=True,
+                        column_config={
+                            "Systemic_Damage": st.column_config.NumberColumn("Total Network Loss", format="%.2f"),
+                            " impacted_count": st.column_config.NumberColumn("Companies Affected")
+                        }
+                    )
 
         st.divider()
 
-        # --- SECTION 2: AUTOMATED EVENT ANALYSIS ---
-        st.subheader("🔔 Real-World Event Ripple Effects")
-        st.write("Analyze recent negative news events to find contagion risks.")
-        
-        sensitivity_threshold = st.slider(
-            "Event Score Sensitivity (find events with a score *below* this value)",
-            min_value=-1.0, max_value=0.0, value=-0.2, step=0.05
-        )
-        
-        all_recent_events = db_manager.get_recent_events()
-        
-        if not all_recent_events:
-            st.info("No recent events found in the database.")
-        else:
-            with st.spinner("Calculating ripple effects..."):
-                # Pass the graph explicitly to avoid reloading
-                top_impacts_df = get_top_ripple_effects(all_recent_events, sensitivity_threshold)
-            
-            if top_impacts_df is None or top_impacts_df.empty:
-                st.info(f"No ripple effects found. (No events scored below {sensitivity_threshold:.2f} or no connections found).")
-            else:
-                st.warning("Found the following potential contagion risks:")
-                # Format floats for display
-                top_impacts_df['Worst Impact Score'] = top_impacts_df['Worst Impact Score'].apply(lambda x: f"{x:.4f}")
-                
-                st.dataframe(
-                    top_impacts_df, 
-                    use_container_width=True, 
-                    column_config={
-                        "Source Event Headline": st.column_config.TextColumn("Source Event Headline", max_chars=100),
-                        "Causal Path": st.column_config.TextColumn("Causal Path", max_chars=100)
-                    }
-                )
-
-        st.divider() 
-
-        # --- SECTION 3: MANUAL SIMULATION (UPDATED FILTER) ---
-        st.subheader("🧪 Manual 'What-If' Simulation")
+        # --- SECTION 2: MANUAL SIMULATION & TRUTH LAYER ---
+        st.subheader("🧪 Manual Simulation & Reality Check")
         
         # --- 1. Get Sectors for Filter ---
         all_sectors = sorted(list(set(
@@ -996,7 +1067,6 @@ def main():
         )))
 
         # --- 2. Layout: Filter | Company Select | Shock Slider ---
-        # We split the layout into 3 columns for a better fit
         sim_col_filter, sim_col_asset, sim_col_shock = st.columns([1, 2, 1])
         
         with sim_col_filter:
@@ -1009,7 +1079,7 @@ def main():
 
         with sim_col_asset:
             selected_company_sim = st.selectbox(
-                "Trigger Asset:", 
+                "Target Asset:", 
                 all_nodes, 
                 format_func=format_ticker,
                 key="sim_select_company"
@@ -1017,12 +1087,18 @@ def main():
         
         with sim_col_shock:
             hypothetical_score = st.slider(
-                "Shock Score:",
+                "Hypothetical Shock:",
                 min_value=-1.0, max_value=1.0, value=-0.5, step=0.05,
                 help="-1.0 = Total Collapse, +1.0 = Huge Breakout"
             )
 
-        if st.button("💥 Simulate Event", key="btn_manual_sim"):
+        # --- THE TRUTH LAYER (CHART) ---
+        if selected_company_sim:
+            render_truth_layer(selected_company_sim, db_manager)
+
+        st.divider()
+
+        if st.button("💥 Simulate Event", key="btn_manual_sim", type="primary"):
             if not selected_company_sim:
                 st.warning("Please select an asset.")
             else:
