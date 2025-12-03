@@ -615,8 +615,10 @@ def main():
         "🔔 Recent Events", "🗺️ Explore Graph", "🔬 Simulate Scenarios", "↔️ Causal Pathfinding", "📘 Help & Guide"
     ])
 
-        # --- TAB 1: RECENT EVENTS ---with tab_events:
+    # --- TAB 1: RECENT EVENTS ---
+    with tab_events:
         st.header("🔔 Recently Detected Significant Events")
+        st.write("These events are automatically detected and saved by the background worker.")
         
         # --- NEW: DEBUG DATABASE SECTION ---
         with st.expander("🛠️ Debug Database Connection"):
@@ -650,38 +652,26 @@ def main():
                 st.error(f"Debug check failed: {e}")
         # -----------------------------------
 
-        col_btn, col_txt = st.columns([1, 4])
-        with col_btn:
-            if st.button("🔄 Refresh Events"):
-                st.cache_data.clear() 
-                st.cache_resource.clear()
-                st.rerun()
+        if st.button("🔄 Refresh Events"):
+            st.cache_data.clear() 
+            st.cache_resource.clear()
+            st.rerun()
 
-        # Fetch Data
+        # This function is NOT cached, it runs live and should be fast.
         recent_events = db_manager.get_recent_events(limit=50)
         
         if not recent_events:
-            st.info("No significant events have been detected by the worker yet.")
+            st.info("No significant events have been detected by the worker yet. Check the worker's logs.")
         else:
-            st.write(f"Showing last {len(recent_events)} events.")
-            
-            for event in recent_events:
-                # Determine Color
-                score = event.get('score', 0.0)
-                if score > 0:
-                    color = "green"
-                    icon = "📈"
-                else:
-                    color = "red"
-                    icon = "📉"
+            st.info(f"Displaying the {len(recent_events)} most recent events.")
 
-                with st.expander(f"{icon} **{event['ticker']}**: {event['headline']}"):
-                    st.markdown(f"**Sentiment Score:** :{color}[{score:.2f}]")
-                    st.markdown(f"**Date:** {event.get('timestamp', 'N/A')}")
-                    st.markdown(f"[🔗 Read Source Article]({event['link']})")
-                    
-                    if st.button(f"🔬 Simulate Impact for {event['ticker']}", key=f"btn_{event['ticker']}_{uuid.uuid4()}"):
-                        st.info("Go to 'Simulate Scenarios' tab to run this simulation.")
+            for event in recent_events:
+                score = event.get('score', 0.0)
+                event_type = "Positive📈" if score > 0 else "Negative📉"
+                with st.expander(f"**{event.get('timestamp', 'No Date')} - {event_type} for {event['ticker']}**: {event['headline']}"):
+                    st.markdown(f"**Sentiment Score:** `{score:.2f}`")
+                    st.markdown(f"[Read Full Article]({event['link']})", unsafe_allow_html=True)
+                    st.info(f"To see the potential impact of this event, go to the 'Simulate Scenarios' tab and run a simulation for {event['ticker']}.")
 
     # ==============================================================================
     # --- TAB 2: EXPLORE GRAPH (UPDATED) ---
