@@ -9,6 +9,7 @@ import glob
 import logging
 import sys
 import smtplib
+import yfinance as yf
 from typing import Dict, Any, List
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -465,6 +466,80 @@ def discover_relations_from_filings(tickers: List[str], db_manager: DatabaseMana
 
     logger.info("✅ SEC relationship discovery complete.")
 
+# ==============================================================================
+# --- SECTOR ENRICHMENT (AUTO-REPAIR) ---
+# ==============================================================================
+def clean_ticker_for_yahoo(ticker):
+    """Converts DB format to Yahoo format (e.g. BRK.B -> BRK-B)."""
+    if ":" in ticker:
+        ticker = ticker.split(":")[-1]
+    ticker = ticker.replace('.', '-')
+    if ticker == 'BRK': return 'BRK-B'
+    return ticker
+
+def enrich_sectors_automatically(db_manager: DatabaseManager):
+    """
+    Finds nodes with 'Discovered' or 'Unknown' sectors and fixes them using yfinance.
+    Run this at the end of the pipeline to ensure the graph is clean.
+    """
+    logger.info("🧹 SECTOR CLEANUP: Checking for companies with missing sector data...")
+    
+    # 1. Find the problem nodes
+    query = """
+    MATCH (c:Company) 
+    WHERE c.sector IN ['Discovered', 'Unknown', 'null'] OR c.sector IS NULL
+    RETURN c.ticker as ticker
+    """
+    results = db_manager.execute_read(query)
+    tickers = [r['ticker'] for r in results]
+    
+    if not tickers:
+        logger.info("   -> ✅ No missing sectors found. Database is clean.")
+        return
+
+    logger.info(f"   -> 📉 Found {len(tickers)} companies to fix. Fetching data from Yahoo Finance...")
+    
+    updated_count = 0
+    batch_size = 20
+    
+    for i in range(0, len(tickers), batch_size):
+        batch = tickers[i:i+batch_size]
+        yahoo_map = {clean_ticker_for_yahoo(t): t for t in batch}
+        yahoo_list = list(yahoo_map.keys())
+        
+        try:
+            # Fetch batch data
+            tickers_obj = yf.Tickers(" ".join(yahoo_list))
+            
+            for y_sym in yahoo_list:
+                try:
+                    info = tickers_obj.tickers[y_sym].info
+                    sector = info.get('sector')
+                    industry = info.get('industry')
+                    
+                    if sector:
+                        original_ticker = yahoo_map[y_sym]
+                        
+                        # Update Neo4j
+                        update_query = """
+                        MATCH (c:Company {ticker: $ticker})
+                        SET c.sector = $sector,
+                            c.industry = $industry
+                        """
+                        db_manager.execute_write(update_query, ticker=original_ticker, sector=sector, industry=industry)
+                        updated_count += 1
+                        logger.info(f"      -> Fixed {original_ticker}: {sector}")
+                except Exception:
+                    continue
+                    
+        except Exception as e:
+            logger.error(f"      -> Batch failed: {e}")
+        
+        time.sleep(1) # Polite delay
+        
+    logger.info(f"✅ SECTOR CLEANUP: Repaired {updated_count} companies.")
+
+
 
 # ==============================================================================
 # --- MAIN WORKER ORCHESTRATION ---
@@ -493,19 +568,28 @@ def run_full_data_pipeline():
     
     logger.info("\n" + "="*60 + f"\n🚀 STARTING DATA REFRESH PIPELINE\n" + "="*60)
     try:
+        # 1. Update Core Node Data (Polygon)
         if client:
             update_nodes_from_api(tickers, client, db_manager)
         
+        # 2. Add Hardcoded Relationships
         add_manual_relationships(db_manager)
+        
+        # 3. Discovery (Creates 'Discovered' nodes)
         discover_relations_from_filings(tickers, db_manager, dl)
+        
+        # 4. *** NEW *** Auto-Repair Sectors (Fixes 'Discovered' nodes)
+        enrich_sectors_automatically(db_manager)
+
+        # 5. News & Sentiment
         check_live_news_for_events(db_manager, config)
+        
     except Exception as e:
         logger.critical(f"A critical error occurred during the pipeline execution: {e}", exc_info=True)
     finally:
         db_manager.close() # Close database connection
     
     logger.info("\n" + "="*60 + f"\n✅ PIPELINE COMPLETE\n" + "="*60 + "\n")
-
 
 if __name__ == "__main__":
     # This script is designed to be run once by a scheduler (like cron).

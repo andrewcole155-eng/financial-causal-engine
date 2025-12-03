@@ -670,7 +670,7 @@ def main():
                     values='CompanyCount',
                     color='AvgRisk',
                     color_continuous_scale=['#2ecc71', '#f1c40f', '#e74c3c'], # Green -> Yellow -> Red
-                    range_color=[-1, 1], # Fix scale from -1 (Bad) to 1 (Good) or 0 to 1 depending on your scoring
+                    range_color=[-0.5, 0.5], # Fix scale from -0.5 (Bad) to 0.5 (Good) or 0 to 1 depending on your scoring
                     title="Market Risk by Sector (Size = Count, Color = Avg Risk)"
                 )
                 fig.update_layout(margin=dict(t=30, l=10, r=10, b=10))

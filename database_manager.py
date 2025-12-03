@@ -191,24 +191,59 @@ class DatabaseManager:
             logger.error(f"Failed to fetch recent events from Neo4j: {e}")
             return []
 
+
     def get_sector_risk_data(self) -> List[Dict[str, Any]]:
         """
         Aggregates risk scores by Sector for the Market Weather Heatmap.
-        Returns: List of dicts [{'sector': 'Tech', 'avg_risk': 0.8, 'count': 50}, ...]
+        **UPDATED:** Calculates 'Active Risk' by ignoring companies with 0.0 score.
         """
         if not self.is_connected(): return []
 
+        # Logic Change: We use avg() on n.raw_risk_score directly.
+        # Neo4j's avg() function automatically skips NULL values.
+        # We also filter out strict 0.0s to prevent dilution.
         query = """
         MATCH (n:Company)
         WHERE n.sector IS NOT NULL AND n.sector <> 'Unknown' AND n.sector <> 'Discovered'
+        
+        // Calculate stats for the whole sector
         WITH n.sector AS sector, 
-             avg(coalesce(n.raw_risk_score, 0.0)) AS avg_risk, 
-             count(n) AS company_count
-        RETURN sector, avg_risk, company_count
+             count(n) AS total_count,
+             // Collect only non-zero risks for averaging
+             [score in collect(n.raw_risk_score) WHERE score <> 0.0] as active_scores
+             
+        // If no active scores, risk is 0. Otherwise, average the active ones.
+        WITH sector, total_count, 
+             CASE WHEN size(active_scores) > 0 
+                  THEN apoc.coll.avg(active_scores) 
+                  ELSE 0.0 
+             END as avg_risk
+             
+        RETURN sector, avg_risk, total_count as company_count
         ORDER BY avg_risk DESC
         """
+        # Note: If you don't have APOC installed in Neo4j, use this simpler standard Cypher version instead:
+        query_standard = """
+        MATCH (n:Company)
+        WHERE n.sector IS NOT NULL AND n.sector <> 'Unknown' AND n.sector <> 'Discovered'
+        
+        // 1. Get Sector Totals
+        WITH n.sector as sector, count(n) as total_count
+        
+        // 2. Get Average of ACTIVE risks only (non-zero)
+        OPTIONAL MATCH (r:Company)
+        WHERE r.sector = sector AND r.raw_risk_score IS NOT NULL AND r.raw_risk_score <> 0.0
+        WITH sector, total_count, avg(r.raw_risk_score) as risk_calc
+        
+        RETURN sector, 
+               coalesce(risk_calc, 0.0) as avg_risk, 
+               total_count as company_count
+        ORDER BY avg_risk DESC
+        """
+        
         try:
-            results = self.execute_read(query)
+            # Using standard query to be safe against missing plugins
+            results = self.execute_read(query_standard)
             clean_data = []
             for r in results:
                 clean_data.append({
@@ -220,7 +255,6 @@ class DatabaseManager:
         except Exception as e:
             logger.error(f"Failed to fetch sector risk data: {e}")
             return []
-
 
     # ==========================================================================
     # --- NEO4J EXECUTION HELPERS ---
