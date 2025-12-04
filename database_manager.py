@@ -7,7 +7,6 @@ from typing import Dict, Any, List, Optional
 import re
 import os
 import networkx as nx
-from datetime import datetime
 
 # --- FIX: Import the module explicitly to avoid 'module has no attribute now' error ---
 import datetime 
@@ -215,7 +214,7 @@ class DatabaseManager:
             """
             # Calculate the cutoff date
             # --- FIX: Uses datetime.datetime.now() and datetime.timedelta ---
-            cutoff_date = (datetime.now() - timedelta(days=days)).isoformat()
+            cutoff_date = (datetime.datetime.now() - datetime.timedelta(days=days)).isoformat()
             
             # SQL query to filter by ticker AND date
             # (Assuming you are using the SQLite 'events' table you set up in the worker)
