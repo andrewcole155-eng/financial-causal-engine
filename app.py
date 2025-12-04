@@ -197,7 +197,7 @@ def fetch_polygon_price_data(ticker, api_key):
     """
     client = RESTClient(api_key)
     end_date = datetime.now()
-    start_date = end_date - timedelta(days=7)
+    start_date = end_date - timedelta(days=90)
     
     try:
         # Fetch 30-minute aggregates
@@ -255,7 +255,7 @@ def render_truth_layer(ticker: str, db_manager: DatabaseManager):
     try:
         # Try to use the specific method if it exists (Fixes the "Limit 100" issue)
         if hasattr(db_manager, 'get_events_by_ticker'):
-            ticker_events = db_manager.get_events_by_ticker(ticker, days=7)
+            ticker_events = db_manager.get_events_by_ticker(ticker, days=90)
         else:
             # Fallback: Get global recent events and filter manually
             # We bump limit to 200 to have a better chance of finding relevant news
