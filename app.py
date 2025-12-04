@@ -5,7 +5,6 @@ import json
 import logging
 import os
 import time
-import datetime
 import glob
 import uuid
 from datetime import datetime, timedelta
