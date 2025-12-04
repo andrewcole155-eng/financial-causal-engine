@@ -32,7 +32,7 @@ def load_config():
 
 config = load_config()
 GEMINI_KEY = config.get("GEMINI_API_KEY")
-POLYGON_KEY = config.get("POLYGON_API_KEY") # Ensure this is in your config.json
+POLYGON_KEY = config.get("polygon_api_key") # Ensure this is in your config.json
 
 # --- AI SETUP ---
 if GEMINI_KEY:
