@@ -210,28 +210,43 @@ class DatabaseManager:
 
     def get_events_by_ticker(self, ticker, days=90):
             """
-            Fetches ALL events for a specific ticker over the last X days.
+            Fetches ALL events for a specific ticker from Neo4j (Cloud).
+            Updated to fix empty charts by ignoring the empty local SQLite file.
             """
-            # Calculate the cutoff date
-            # --- FIX: Uses datetime.datetime.now() and datetime.timedelta ---
+            if not self.is_connected(): 
+                return []
+
+            # Calculate cutoff date
             cutoff_date = (datetime.datetime.now() - datetime.timedelta(days=days)).isoformat()
             
-            # SQL query to filter by ticker AND date
-            # (Assuming you are using the SQLite 'events' table you set up in the worker)
+            # Query Neo4j instead of SQLite
             query = """
-            SELECT timestamp, headline, score, link 
-            FROM significant_events 
-            WHERE ticker = ? AND timestamp >= ? 
-            ORDER BY timestamp DESC
+            MATCH (c:Company {ticker: $ticker})-[:HAD_EVENT]->(e:Event)
+            WHERE e.timestamp >= $cutoff_date
+            RETURN e.headline as headline, 
+                e.score as score, 
+                e.link as link, 
+                e.timestamp as timestamp
+            ORDER BY e.timestamp DESC
             """
-            if not self.sqlite_conn: return []
+            
             try:
-                cursor = self.sqlite_conn.cursor()
-                cursor.execute(query, (ticker, cutoff_date))
-                # Convert rows to list of dicts
-                return [dict(row) for row in cursor.fetchall()]
+                results = self.execute_read(query, ticker=ticker, cutoff_date=cutoff_date)
+                
+                # Format the results cleanly
+                clean_events = []
+                for r in results:
+                    clean_events.append({
+                        "ticker": ticker,
+                        "headline": r.get('headline'),
+                        "score": float(r.get('score', 0.0)),
+                        "link": r.get('link', '#'),
+                        "timestamp": r.get('timestamp')
+                    })
+                return clean_events
+
             except Exception as e:
-                logger.error(f"Failed to fetch ticker events from SQLite: {e}")
+                logger.error(f"Failed to fetch ticker events from Neo4j: {e}")
                 return []
 
     def get_sector_risk_data(self) -> List[Dict[str, Any]]:
