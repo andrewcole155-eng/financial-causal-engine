@@ -31,7 +31,7 @@ def load_config():
     except: return {}
 
 config = load_config()
-GEMINI_KEY = config.get("GEMINI_API_KEY")
+GEMINI_KEY = config.get("GOOGLE_API_KEY")
 POLYGON_KEY = config.get("polygon_api_key") # Ensure this is in your config.json
 
 # --- AI SETUP ---
