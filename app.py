@@ -305,7 +305,8 @@ def render_truth_layer(ticker: str, db_manager: DatabaseManager):
         try:
             # --- FIX: STANDARDIZE TIMEZONES FOR EVENTS ---
             # 1. Force to UTC datetime
-            events_df['timestamp'] = pd.to_datetime(events_df['timestamp'], utc=True)
+            # The 'mixed' format tells Pandas to handle different ISO formats (like 'Z' suffixes) gracefully
+            events_df['timestamp'] = pd.to_datetime(events_df['timestamp'], format='mixed', utc=True)
             # 2. Remove timezone info (make it naive) to match the Price DataFrame
             events_df['timestamp'] = events_df['timestamp'].dt.tz_localize(None)
 
