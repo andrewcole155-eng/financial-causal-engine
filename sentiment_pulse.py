@@ -43,20 +43,38 @@ else:
     model = None
 
 # --- AI SCORING (Sync) ---
-def get_ai_score_sync(headline):
-    if not model: return 0.0
+# --- UPDATED AI SCORING (With Relevance/Confidence) ---
+def get_ai_analysis(headline, tickers):
+    """
+    Returns a tuple: (sentiment_score, relevance_score)
+    """
+    if not model: return 0.0, 0.0
     try:
+        # We pass the tickers so the AI knows who the news SHOULD be about
         prompt = f"""
-        Analyze the sentiment of this financial news headline.
+        Analyze this financial news headline for the specific tickers: {tickers}.
         Headline: "{headline}"
-        Return ONLY a JSON object with a single key 'score' (float -1.0 to 1.0).
+
+        Task:
+        1. Calculate Sentiment Score (-1.0 Negative to 1.0 Positive).
+        2. Calculate Relevance Score (0.0 to 1.0). 
+           - Ask yourself: Is this news REALLY about the company {tickers}?
+           - Example of LOW relevance: "Top cop retired" (Police) tagged for ticker "COP" (ConocoPhillips).
+           - Example of LOW relevance: "ServiceNow brand voice" tagged for ticker "NOW".
+
+        Return ONLY a JSON object with keys 'score' and 'relevance'.
+        Example: {{"score": -0.5, "relevance": 0.1}}
         """
+        
         response = model.generate_content(prompt)
         text = response.text.replace("```json", "").replace("```", "").strip()
-        return float(json.loads(text).get("score", 0.0))
+        data = json.loads(text)
+        
+        return float(data.get("score", 0.0)), float(data.get("relevance", 0.0))
+        
     except Exception as e:
         logger.error(f"AI Scoring Failed: {e}")
-        return 0.0
+        return 0.0, 0.0
 
 # --- MAIN LOOP ---
 def main():
@@ -69,21 +87,26 @@ def main():
     client = RESTClient(api_key=POLYGON_KEY)
     
     # Track seen articles to prevent duplicates
-    # (We store the last 100 IDs in memory)
     seen_news_ids = set()
     
-    logger.info("✅ Pulse Active (Polygon Mode). Polling every 15s to adhere to API limits.")
-    logger.info("ℹ️  Note: This monitors news 24/7. Ensure Trading Bot runs during market hours.")
+    logger.info("✅ Pulse Active (Polygon Mode). Polling every 25s.")
+    logger.info("ℹ️  Confidence Filter Active: Events with < 50% relevance will be discarded.")
 
     while True:
         try:
-            # 1. Poll Polygon for latest news (Limit 10 to catch bursts)
-            # This counts as 1 API Call. Safe limit is 5/min.
-            # We poll every 15s = 4 calls/min.
-            response = client.list_ticker_news(limit=10)
-
-            # Process from oldest to newest in this batch to maintain timeline
-            articles = reversed(list(response)) 
+            # 1. Fetch the generator (Limit 10 to catch bursts)
+            news_generator = client.list_ticker_news(limit=10)
+            
+            # 2. Manually take only the first 10 items to avoid infinite pagination
+            latest_batch = []
+            try:
+                for _ in range(10):
+                    latest_batch.append(next(news_generator))
+            except StopIteration:
+                pass # Less than 10 items available
+            
+            # 3. Reverse to process oldest -> newest
+            articles = reversed(latest_batch)
 
             for item in articles:
                 # Deduplication check
@@ -102,12 +125,18 @@ def main():
                 if not tickers or not headline: 
                     continue
 
-                # 2. Get Sentiment Score
-                score = get_ai_score_sync(headline)
+                # 4. Get Score AND Relevance (Metacognition)
+                score, relevance = get_ai_analysis(headline, tickers)
 
-                # 3. Filter Noise (Only log significant news)
+                # 5. The Confidence Filter
+                # If the AI thinks this is irrelevant noise (< 50% confidence), dump it.
+                if relevance < 0.5:
+                    logger.info(f"🗑️ REJECTED (Noise): {headline[:30]}... (Rel: {relevance:.2f})")
+                    continue
+
+                # 6. Filter Noise (Only log significant sentiment)
                 if abs(score) >= 0.15:
-                    logger.info(f"⚡ NEWS ({score}): {headline[:50]}... {tickers}")
+                    logger.info(f"⚡ NEWS (Sc: {score} | Rel: {relevance}): {headline[:50]}... {tickers}")
                     
                     for ticker in tickers:
                         # Insert into SQLite (for UI)
@@ -127,22 +156,21 @@ def main():
                         CREATE (e:Event {
                             headline: $headline,
                             score: $score,
+                            relevance: $relevance,
                             source: 'Polygon_Gemini',
                             timestamp: datetime(),
                             link: $url
                         })
                         MERGE (c)-[:HAD_EVENT]->(e)
                         """
-                        db.execute_write(query, ticker=ticker, score=score, headline=headline, url=url)
+                        db.execute_write(query, ticker=ticker, score=score, relevance=relevance, headline=headline, url=url)
             
-            # 4. Rate Limit Wait (CRITICAL)
-            # Free Tier Limit: 5 req/min. 
-            # Sleep 15s ensures max 4 req/min.
-            time.sleep(15)
+            # 7. Rate Limit Wait (CRITICAL)
+            time.sleep(25)
 
         except Exception as e:
             logger.error(f"Polling Error: {e}")
-            time.sleep(15) # Wait before retrying
+            time.sleep(25) # Wait before retrying
 
 if __name__ == "__main__":
     try:

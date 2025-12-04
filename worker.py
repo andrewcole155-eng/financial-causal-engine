@@ -14,6 +14,7 @@ from typing import Dict, Any, List
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from datetime import datetime
+import google.generativeai as genai
 
 # Third-party Imports
 import feedparser
@@ -79,10 +80,12 @@ def get_worker_config() -> Dict[str, Any]:
         config["neo4j_user"] = os.environ.get("NEO4J_USER")
     if os.environ.get("NEO4J_PASSWORD"):
         config["neo4j_password"] = os.environ.get("NEO4J_PASSWORD")
-    
+
     # APIs
     if os.environ.get("POLYGON_API_KEY"):
         config["polygon_api_key"] = os.environ.get("POLYGON_API_KEY")
+    if os.environ.get("GOOGLE_API_KEY"):
+        config["google_api_key"] = os.environ.get("GOOGLE_API_KEY")
 
     # Email - Server Config
     if os.environ.get("EMAIL_SERVER"):
@@ -108,6 +111,21 @@ def get_worker_config() -> Dict[str, Any]:
         config["recipient_emails"] = [email.strip() for email in raw_recipients.split(",") if email.strip()]
 
     return config
+
+# ==============================================================================
+# --- AI MODEL SETUP (Gemini) ---
+# ==============================================================================
+# Load config temporarily to get key for global setup
+_temp_config = get_worker_config()
+GOOGLE_KEY = _temp_config.get("google_api_key") # <--- Changed to google_api_key
+
+if GOOGLE_KEY:
+    genai.configure(api_key=GOOGLE_KEY)
+    gemini_model = genai.GenerativeModel('gemini-2.0-flash')
+    logger.info("✅ Gemini AI Model loaded for Relevance Analysis.")
+else:
+    gemini_model = None
+    logger.warning("⚠️ No GOOGLE_API_KEY found. Worker will revert to basic FinBERT.")
 
 # ==============================================================================
 # --- GLOBAL NLP MODEL LOADING ---
@@ -225,6 +243,40 @@ def send_email_alert(config: Dict[str, Any], subject: str, body_html: str):
     except Exception as e:
         logger.error(f"Could not send email alert. Reason: {e}")
 
+def get_ai_analysis(headline, tickers):
+    """
+    Uses Gemini to get both Sentiment AND Relevance.
+    Returns: (sentiment_score, relevance_score)
+    """
+    if not gemini_model: 
+        return 0.0, 0.0
+    
+    try:
+        prompt = f"""
+        Analyze this financial news headline for the specific tickers: {tickers}.
+        Headline: "{headline}"
+
+        Task:
+        1. Calculate Sentiment Score (-1.0 Negative to 1.0 Positive).
+        2. Calculate Relevance Score (0.0 to 1.0). 
+           - Ask yourself: Is this news REALLY about the company {tickers}?
+           - Example of LOW relevance: "Top cop retired" (Police) tagged for ticker "COP" (ConocoPhillips).
+           - Example of LOW relevance: "ServiceNow brand voice" tagged for ticker "NOW".
+
+        Return ONLY a JSON object with keys 'score' and 'relevance'.
+        Example: {{"score": -0.5, "relevance": 0.1}}
+        """
+        
+        response = gemini_model.generate_content(prompt)
+        text = response.text.replace("```json", "").replace("```", "").strip()
+        data = json.loads(text)
+        
+        return float(data.get("score", 0.0)), float(data.get("relevance", 0.0))
+        
+    except Exception as e:
+        logger.error(f"Gemini Analysis Failed: {e}")
+        return 0.0, 0.0
+
 # ==============================================================================
 # --- DATA PIPELINE FUNCTIONS ---
 # ==============================================================================
@@ -282,21 +334,34 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
             # We need the exact publication time to align with the price chart later.
             pub_struct = article.get('published_parsed', article.get('updated_parsed'))
             if pub_struct:
-                # Convert struct_time to datetime object
                 event_dt = datetime.fromtimestamp(time.mktime(pub_struct))
             else:
-                # Fallback to now if feed provides no time
                 event_dt = datetime.now()
-            # ---------------------------------------------------
 
+            # --- MODIFIED LOGIC START ---
             for ticker in all_tickers:
                 if ticker in ticker_stopwords: continue
 
+                # Strict Regex Match to find ticker in headline
                 if re.search(r'\b' + re.escape(ticker) + r'\b', title, re.IGNORECASE):
-                    score = get_financial_sentiment(title, finbert_tokenizer, finbert_model)
                     
+                    # 1. Decide which model to use
+                    if gemini_model:
+                        # USE GEMINI (Smart Relevance Filter)
+                        score, relevance = get_ai_analysis(title, [ticker])
+                        
+                        # THE FILTER: Discard noise
+                        if relevance < 0.5:
+                            logger.info(f"🗑️ REJECTED (Noise): {title[:30]}... for {ticker} (Rel: {relevance:.2f})")
+                            continue # Skip this loop iteration
+                    else:
+                        # FALLBACK TO FINBERT (If no API Key)
+                        score = get_financial_sentiment(title, finbert_tokenizer, finbert_model)
+                        relevance = 1.0 # Assume 100% relevant if we can't check
+                    
+                    # 2. Check Sentiment Threshold
                     if abs(score) >= sentiment_threshold:
-                        logger.warning(f"🚨 Significant event FOUND for {ticker}! Score: {score:.2f}, Headline: {title}")
+                        logger.warning(f"🚨 Significant event: {ticker} | Score: {score:.2f} | Rel: {relevance:.2f} | {title}")
                         
                         processed_headlines.add(title)
                         
@@ -304,10 +369,12 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
                             'ticker': ticker, 
                             'headline': title,
                             'score': score, 
+                            'relevance': relevance, # <--- Added Relevance
                             'link': link,
-                            'timestamp': event_dt  # <--- Storing the precise time
+                            'timestamp': event_dt
                         })
                         break 
+            # --- MODIFIED LOGIC END ---
 
         if significant_events_found:
             logger.info(f"✍️ DB-WRITE: Writing batch of {len(significant_events_found)} new events...")
