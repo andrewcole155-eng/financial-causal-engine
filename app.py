@@ -194,41 +194,60 @@ def get_cloud_config_dict():
 def fetch_polygon_price_data(ticker, api_key):
     """
     Separate function to fetch data so Streamlit can cache the result.
+    Includes RETRY LOGIC for Rate Limits (Fixes the INTC error).
     """
     client = RESTClient(api_key)
     end_date = datetime.now()
-    start_date = end_date - timedelta(days=90)
+    # Ensure this matches your backfill window (90 Days)
+    start_date = end_date - timedelta(days=90) 
     
-    try:
-        # Fetch 30-minute aggregates
-        aggs = client.list_aggs(
-            ticker=ticker,
-            multiplier=30,
-            timespan="minute",
-            from_=start_date.strftime("%Y-%m-%d"),
-            to=end_date.strftime("%Y-%m-%d"),
-            limit=50000
-        )
-        
-        # Convert to DataFrame
-        data = [
-            {"timestamp": datetime.fromtimestamp(a.timestamp / 1000), "close": a.close} 
-            for a in aggs
-        ]
-        df = pd.DataFrame(data)
+    # --- RETRY LOGIC for Free Tier Limits (5 req/min) ---
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            # Fetch 30-minute aggregates
+            # Note: We iterate immediately to trigger the API call inside the try block
+            aggs = []
+            for a in client.list_aggs(
+                ticker=ticker,
+                multiplier=30,
+                timespan="minute",
+                from_=start_date.strftime("%Y-%m-%d"),
+                to=end_date.strftime("%Y-%m-%d"),
+                limit=50000
+            ):
+                aggs.append(a)
+            
+            # Convert to DataFrame
+            data = [
+                {"timestamp": datetime.fromtimestamp(a.timestamp / 1000), "close": a.close} 
+                for a in aggs
+            ]
+            df = pd.DataFrame(data)
 
-        if not df.empty:
-            # --- FIX: STANDARDIZE TIMEZONES ---
-            # 1. Force to UTC datetime
-            df['timestamp'] = pd.to_datetime(df['timestamp'], utc=True)
-            # 2. Remove timezone info (make it naive) so it compares easily
-            df['timestamp'] = df['timestamp'].dt.tz_localize(None)
-        
-        return df
+            if not df.empty:
+                # 1. Force to UTC datetime
+                df['timestamp'] = pd.to_datetime(df['timestamp'], utc=True)
+                # 2. Remove timezone info (make it naive) so it compares easily
+                df['timestamp'] = df['timestamp'].dt.tz_localize(None)
+            
+            return df
 
-    except Exception as e:
-        logger.error(f"Polygon API Error for {ticker}: {e}")
-        return pd.DataFrame()
+        except Exception as e:
+            # Check if it's a Rate Limit error (usually contains "429" or "Too Many Requests")
+            error_msg = str(e).lower()
+            if "429" in error_msg or "too many requests" in error_msg:
+                if attempt < max_retries - 1:
+                    logger.warning(f"⚠️ Rate limit hit for {ticker}. Retrying in 15s... (Attempt {attempt+1}/{max_retries})")
+                    # Wait 15s to clear the 5/min bucket (60s / 4 = 15s buffer)
+                    time.sleep(15) 
+                    continue
+            
+            # If it's a different error, log and return empty
+            logger.error(f"Polygon API Error for {ticker}: {e}")
+            return pd.DataFrame()
+    
+    return pd.DataFrame()
 
 def render_truth_layer(ticker: str, db_manager: DatabaseManager):
     """

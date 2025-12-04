@@ -208,13 +208,13 @@ class DatabaseManager:
             logger.error(f"Failed to fetch recent events from Neo4j: {e}")
             return []
 
-    def get_events_by_ticker(self, ticker, days=7):
+    def get_events_by_ticker(self, ticker, days=90):
             """
             Fetches ALL events for a specific ticker over the last X days.
             """
             # Calculate the cutoff date
             # --- FIX: Uses datetime.datetime.now() and datetime.timedelta ---
-            cutoff_date = datetime.datetime.now() - datetime.timedelta(days=days)
+            cutoff_date = (datetime.now() - timedelta(days=days)).isoformat()
             
             # SQL query to filter by ticker AND date
             # (Assuming you are using the SQLite 'events' table you set up in the worker)
