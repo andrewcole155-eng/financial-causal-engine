@@ -42,7 +42,7 @@ def get_backfill_config() -> Dict[str, Any]:
     config = {
         "news_sentiment_threshold": 0.5, # Lower threshold for backfill to get more data
         "target_tickers": ["AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "TSLA", "META"],
-        "backfill_limit": 50, # Articles per ticker
+        "backfill_limit": 45, # Articles per ticker
         "recipient_emails": [],
         "smtp_server": "smtp.gmail.com",
         "smtp_port": 587,
@@ -107,20 +107,28 @@ except Exception as e:
 # ==============================================================================
 
 def fetch_polygon_history(ticker: str, limit: int, api_key: str) -> List[Dict]:
-    """Fetches historical news via Polygon.io."""
+    """Fetches historical news via Polygon.io with a HARD LIMIT to prevent pagination."""
     logger.info(f" 📡 Fetching history for {ticker} via Polygon API...")
     client = RESTClient(api_key)
     articles = []
     try:
-        # Fetch news list
-        response = client.list_ticker_news(ticker, limit=limit, order="desc", sort="published_utc")
-        for item in response:
+        # We ask for a limit, but the generator yields ALL history.
+        # We must manually break the loop to stop it from fetching Page 2.
+        response_iterator = client.list_ticker_news(ticker, limit=limit, order="desc", sort="published_utc")
+        
+        count = 0
+        for item in response_iterator:
             articles.append({
                 'title': item.title,
-                'published': item.published_utc, # String ISO format
+                'published': item.published_utc,
                 'link': item.article_url,
                 'summary': item.description
             })
+            count += 1
+            # --- THE CRITICAL FIX ---
+            if count >= limit:
+                break # Stop before the library fetches the next page
+                
     except Exception as e:
         logger.error(f"Polygon API failed for {ticker}: {e}")
     return articles
@@ -280,7 +288,7 @@ def run_backfill_process():
             all_processed_events.extend(batch_events)
             logger.info(f" -> 💾 Saved {len(batch_events)} events for {ticker}.")
         
-        logger.info("⏳ Sleeping 15s to respect Polygon API rate limits...")
+        logger.info("⏳ Sleeping 25s to respect Polygon API rate limits...")
         time.sleep(25) # Be polite to APIs
 
     # 4. Post-Processing: Fix Sectors

@@ -7,8 +7,10 @@ from typing import Dict, Any, List, Optional
 import re
 import os
 import networkx as nx
-# --- FIX: Standardized imports to match app.py and backfill.py ---
-from datetime import datetime, timedelta, date, time
+
+# --- FIX: Import the module explicitly to avoid 'module has no attribute now' error ---
+import datetime 
+
 from neo4j import GraphDatabase, exceptions
 from neo4j.time import Date, DateTime, Time
 
@@ -38,10 +40,10 @@ def _clean_properties(properties: Any) -> Dict[str, Any]:
         if key.lower() in ["source", "target"]:
             continue
             
-        # FIX: Check against specific classes imported above
-        if isinstance(value, (Date, DateTime, date, datetime)):
+        # FIX: explicitly check against datetime.date and datetime.datetime
+        if isinstance(value, (Date, DateTime, datetime.date, datetime.datetime)):
             clean_props[key] = value.isoformat()
-        elif isinstance(value, (Time, time)):
+        elif isinstance(value, (Time, datetime.time)):
             clean_props[key] = value.isoformat()
         elif isinstance(value, (int, float, str, bool)) or value is None:
             clean_props[key] = value
@@ -154,7 +156,8 @@ class DatabaseManager:
 
         # Use provided timestamp or fallback to now
         if not timestamp:
-            timestamp = datetime.now()
+            # FIX: Use datetime.datetime.now()
+            timestamp = datetime.datetime.now()
 
         try:
             cursor = self.sqlite_conn.cursor()
@@ -210,8 +213,8 @@ class DatabaseManager:
             Fetches ALL events for a specific ticker over the last X days.
             """
             # Calculate the cutoff date
-            # --- FIX: Uses direct datetime/timedelta imports ---
-            cutoff_date = datetime.now() - timedelta(days=days)
+            # --- FIX: Uses datetime.datetime.now() and datetime.timedelta ---
+            cutoff_date = datetime.datetime.now() - datetime.timedelta(days=days)
             
             # SQL query to filter by ticker AND date
             # (Assuming you are using the SQLite 'events' table you set up in the worker)
@@ -434,8 +437,8 @@ class DatabaseManager:
                 # Ensure timestamp is string for Neo4j
                 for event in batch:
                     if not isinstance(event['timestamp'], str):
-                         event['timestamp'] = str(event['timestamp'])
-                         
+                          event['timestamp'] = str(event['timestamp'])
+                          
                 self.execute_write(query, events=batch)
                 logger.info(f"    -> Wrote event batch {i // batch_size + 1}")
             except Exception as e:
