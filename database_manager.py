@@ -77,6 +77,13 @@ class DatabaseManager:
             os.makedirs(db_dir, exist_ok=True) 
             self.sqlite_conn = sqlite3.connect(db_path, check_same_thread=False)
             self.sqlite_conn.row_factory = sqlite3.Row
+            # --- 🛡️ CONCURRENCY FIX STARTS HERE ---
+            # 1. Enable Write-Ahead Logging (Allows reading while writing)
+            self.sqlite_conn.execute("PRAGMA journal_mode=WAL;")
+            
+            # 2. Set a "Busy Timeout" (Waits 5 seconds if DB is locked instead of crashing immediately)
+            self.sqlite_conn.execute("PRAGMA busy_timeout=5000;")
+            # --------------------------------------
             self._create_sqlite_tables()
             logger.info(f" -> ✅ Connected to local SQLite backup at {db_path}")
         except Exception as e:
@@ -136,18 +143,23 @@ class DatabaseManager:
     # --- SQLITE METHODS (THE FIX FOR YOUR UI) ---
     # ==========================================================================
     
-    def insert_event(self, ticker: str, headline: str, score: float, link: str = "#"):
+    def insert_event(self, ticker: str, headline: str, score: float, link: str = "#", timestamp=None):
         """
         Inserts a high-speed pulse event directly into SQLite.
         Used by the websocket worker to save data immediately.
         """
         if not self.sqlite_conn: return
+
+        # Use provided timestamp or fallback to now
+        if not timestamp:
+            timestamp = datetime.datetime.now()
+
         try:
             cursor = self.sqlite_conn.cursor()
             cursor.execute("""
                 INSERT INTO significant_events (ticker, headline, score, link, timestamp)
                 VALUES (?, ?, ?, ?, ?)
-            """, (ticker, headline, score, link, datetime.datetime.now()))
+            """, (ticker, headline, score, link, timestamp))
             self.sqlite_conn.commit()
         except Exception as e:
             logger.error(f"Failed to insert SQLite event: {e}")
@@ -196,17 +208,25 @@ class DatabaseManager:
             Fetches ALL events for a specific ticker over the last X days.
             """
             # Calculate the cutoff date
-            cutoff_date = datetime.now() - timedelta(days=days)
+            cutoff_date = datetime.datetime.now() - datetime.timedelta(days=days)
             
             # SQL query to filter by ticker AND date
             # (Assuming you are using the SQLite 'events' table you set up in the worker)
             query = """
             SELECT timestamp, headline, score, link 
-            FROM events 
+            FROM significant_events 
             WHERE ticker = ? AND timestamp >= ? 
             ORDER BY timestamp DESC
             """
-            return self.execute_read_sqlite(query, (ticker, cutoff_date))
+            if not self.sqlite_conn: return []
+            try:
+                cursor = self.sqlite_conn.cursor()
+                cursor.execute(query, (ticker, cutoff_date))
+                # Convert rows to list of dicts
+                return [dict(row) for row in cursor.fetchall()]
+            except Exception as e:
+                logger.error(f"Failed to fetch ticker events from SQLite: {e}")
+                return []
 
     def get_sector_risk_data(self) -> List[Dict[str, Any]]:
         """
@@ -271,6 +291,20 @@ class DatabaseManager:
         except Exception as e:
             logger.error(f"Failed to fetch sector risk data: {e}")
             return []
+            
+    def update_company_risk_scores(self):
+        """Calculates risk scores for companies based on events."""
+        if not self.is_connected(): return
+        
+        # Simple risk score calculation: Average of negative event scores
+        query = """
+        MATCH (c:Company)
+        OPTIONAL MATCH (c)-[:HAD_EVENT]->(e:Event)
+        WITH c, avg(e.score) as avg_sentiment
+        SET c.raw_risk_score = -1 * coalesce(avg_sentiment, 0.0)
+        """
+        self.execute_write(query)
+        logger.info("Updated company risk scores based on event sentiment.")
 
     # ==========================================================================
     # --- NEO4J EXECUTION HELPERS ---
@@ -382,7 +416,7 @@ class DatabaseManager:
         ON CREATE SET
             e.headline = event.headline,
             e.score = event.score,
-            e.timestamp = toString(datetime()) 
+            e.timestamp = toString(event.timestamp) 
         ON MATCH SET
             e.score = event.score
             
@@ -394,6 +428,11 @@ class DatabaseManager:
         for i in range(0, total, batch_size):
             batch = events[i : i + batch_size]
             try:
+                # Ensure timestamp is string for Neo4j
+                for event in batch:
+                    if not isinstance(event['timestamp'], str):
+                         event['timestamp'] = str(event['timestamp'])
+                         
                 self.execute_write(query, events=batch)
                 logger.info(f"    -> Wrote event batch {i // batch_size + 1}")
             except Exception as e:
@@ -572,7 +611,7 @@ class DatabaseManager:
         try:
             # Format duration string for Neo4j (e.g., 'P90D' for 90 days)
             duration_str = f"P{days}D"
-            results = self.execute_write(query, duration_str=duration_str)
+            self.execute_write(query, duration_str=duration_str)
             
             # Extract deletion count from result summary if available, or just log
             # (The exact counter access depends on driver version, but this is safe)
