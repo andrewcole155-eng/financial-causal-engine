@@ -7,7 +7,8 @@ from typing import Dict, Any, List, Optional
 import re
 import os
 import networkx as nx
-import datetime
+# --- FIX: Standardized imports to match app.py and backfill.py ---
+from datetime import datetime, timedelta, date, time
 from neo4j import GraphDatabase, exceptions
 from neo4j.time import Date, DateTime, Time
 
@@ -37,9 +38,10 @@ def _clean_properties(properties: Any) -> Dict[str, Any]:
         if key.lower() in ["source", "target"]:
             continue
             
-        if isinstance(value, (Date, DateTime, datetime.date, datetime.datetime)):
+        # FIX: Check against specific classes imported above
+        if isinstance(value, (Date, DateTime, date, datetime)):
             clean_props[key] = value.isoformat()
-        elif isinstance(value, (Time, datetime.time)):
+        elif isinstance(value, (Time, time)):
             clean_props[key] = value.isoformat()
         elif isinstance(value, (int, float, str, bool)) or value is None:
             clean_props[key] = value
@@ -69,7 +71,6 @@ class DatabaseManager:
         # --- Connect to SQLite (Backup/Fail-safe) ---
         try:
             # FIX: Use ABSOLUTE PATH based on this file's location
-            # This ensures app.py and worker.py always find the same DB file
             base_dir = os.path.dirname(os.path.abspath(__file__))
             db_dir = os.path.join(base_dir, 'database')
             db_path = os.path.join(db_dir, 'financial_data.db')
@@ -77,13 +78,13 @@ class DatabaseManager:
             os.makedirs(db_dir, exist_ok=True) 
             self.sqlite_conn = sqlite3.connect(db_path, check_same_thread=False)
             self.sqlite_conn.row_factory = sqlite3.Row
-            # --- 🛡️ CONCURRENCY FIX STARTS HERE ---
+            
+            # --- 🛡️ CONCURRENCY FIX ---
             # 1. Enable Write-Ahead Logging (Allows reading while writing)
             self.sqlite_conn.execute("PRAGMA journal_mode=WAL;")
-            
-            # 2. Set a "Busy Timeout" (Waits 5 seconds if DB is locked instead of crashing immediately)
+            # 2. Set a "Busy Timeout" (Waits 5 seconds if DB is locked)
             self.sqlite_conn.execute("PRAGMA busy_timeout=5000;")
-            # --------------------------------------
+            
             self._create_sqlite_tables()
             logger.info(f" -> ✅ Connected to local SQLite backup at {db_path}")
         except Exception as e:
@@ -140,9 +141,10 @@ class DatabaseManager:
             conn.commit()
 
     # ==========================================================================
-    # --- SQLITE METHODS (THE FIX FOR YOUR UI) ---
+    # --- SQLITE METHODS ---
     # ==========================================================================
     
+    # --- FIX: Added timestamp=None to signature ---
     def insert_event(self, ticker: str, headline: str, score: float, link: str = "#", timestamp=None):
         """
         Inserts a high-speed pulse event directly into SQLite.
@@ -152,7 +154,7 @@ class DatabaseManager:
 
         # Use provided timestamp or fallback to now
         if not timestamp:
-            timestamp = datetime.datetime.now()
+            timestamp = datetime.now()
 
         try:
             cursor = self.sqlite_conn.cursor()
@@ -208,7 +210,8 @@ class DatabaseManager:
             Fetches ALL events for a specific ticker over the last X days.
             """
             # Calculate the cutoff date
-            cutoff_date = datetime.datetime.now() - datetime.timedelta(days=days)
+            # --- FIX: Uses direct datetime/timedelta imports ---
+            cutoff_date = datetime.now() - timedelta(days=days)
             
             # SQL query to filter by ticker AND date
             # (Assuming you are using the SQLite 'events' table you set up in the worker)

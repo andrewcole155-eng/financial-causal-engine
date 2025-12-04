@@ -188,7 +188,7 @@ def enrich_sectors_automatically(db_manager: DatabaseManager):
                         )
                         logger.info(f"    -> Fixed {original_ticker}: {sector}")
             except Exception: continue
-            time.sleep(1)
+            time.sleep(25)
     except Exception as e:
         logger.error(f"Sector enrichment failed: {e}")
 
@@ -281,7 +281,7 @@ def run_backfill_process():
             logger.info(f" -> 💾 Saved {len(batch_events)} events for {ticker}.")
         
         logger.info("⏳ Sleeping 15s to respect Polygon API rate limits...")
-        time.sleep(15) # Be polite to APIs
+        time.sleep(25) # Be polite to APIs
 
     # 4. Post-Processing: Fix Sectors
     enrich_sectors_automatically(db_manager)
