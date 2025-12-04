@@ -89,22 +89,36 @@ def main():
     # Track seen articles to prevent duplicates
     seen_news_ids = set()
     
-    logger.info("✅ Pulse Active (Polygon Mode). Polling every 25s.")
+    # We increase the default poll to 35s to be safe on Free Tier
+    POLL_INTERVAL = 35 
+    
+    logger.info(f"✅ Pulse Active (Polygon Mode). Polling every {POLL_INTERVAL}s.")
     logger.info("ℹ️  Confidence Filter Active: Events with < 50% relevance will be discarded.")
 
     while True:
         try:
             # 1. Fetch the generator (Limit 10 to catch bursts)
-            news_generator = client.list_ticker_news(limit=10)
-            
-            # 2. Manually take only the first 10 items to avoid infinite pagination
-            latest_batch = []
+            # We wrap this specifically to catch connection/rate limit errors early
             try:
+                news_generator = client.list_ticker_news(limit=10)
+                
+                # 2. Manually take only the first 10 items
+                latest_batch = []
                 for _ in range(10):
-                    latest_batch.append(next(news_generator))
-            except StopIteration:
-                pass # Less than 10 items available
+                    try:
+                        latest_batch.append(next(news_generator))
+                    except StopIteration:
+                        break # End of available news
             
+            except Exception as api_error:
+                # Check for Rate Limit (429) specifically
+                if "429" in str(api_error) or "Max retries" in str(api_error):
+                    logger.warning("🛑 Hit Polygon Rate Limit (429). Sleeping 60s to reset...")
+                    time.sleep(60)
+                    continue # Skip the rest of this loop and try again
+                else:
+                    raise api_error # Re-raise other errors to be caught below
+
             # 3. Reverse to process oldest -> newest
             articles = reversed(latest_batch)
 
@@ -118,7 +132,6 @@ def main():
                     seen_news_ids.pop()
 
                 headline = item.title
-                # Polygon gives tickers as a list ["AAPL", "MSFT"]
                 tickers = item.tickers if item.tickers else []
                 url = item.article_url
 
@@ -126,10 +139,10 @@ def main():
                     continue
 
                 # 4. Get Score AND Relevance (Metacognition)
+                # Note: Ensure get_ai_analysis catches its own errors internally if possible
                 score, relevance = get_ai_analysis(headline, tickers)
 
                 # 5. The Confidence Filter
-                # If the AI thinks this is irrelevant noise (< 50% confidence), dump it.
                 if relevance < 0.5:
                     logger.info(f"🗑️ REJECTED (Noise): {headline[:30]}... (Rel: {relevance:.2f})")
                     continue
@@ -138,8 +151,9 @@ def main():
                 if abs(score) >= 0.15:
                     logger.info(f"⚡ NEWS (Sc: {score} | Rel: {relevance}): {headline[:50]}... {tickers}")
                     
+                    # Update Database and Graph
                     for ticker in tickers:
-                        # Insert into SQLite (for UI)
+                        # Insert into SQLite
                         db.insert_event(
                             ticker=ticker,
                             headline=headline,
@@ -165,12 +179,18 @@ def main():
                         """
                         db.execute_write(query, ticker=ticker, score=score, relevance=relevance, headline=headline, url=url)
             
-            # 7. Rate Limit Wait (CRITICAL)
-            time.sleep(25)
+            # 7. Standard Rate Limit Wait
+            # Using 35s ensures we never accidentally hit the 5 calls/min limit
+            time.sleep(POLL_INTERVAL)
+
+        except (RequestException, MaxRetryError, NewConnectionError) as e:
+            logger.error(f"❌ Connection/API Error: {e}")
+            logger.info("💤 Network unstable. Sleeping 60s...")
+            time.sleep(60)
 
         except Exception as e:
-            logger.error(f"Polling Error: {e}")
-            time.sleep(25) # Wait before retrying
+            logger.error(f"❌ Unexpected Polling Error: {e}")
+            time.sleep(35) # Wait before retrying
 
 if __name__ == "__main__":
     try:
