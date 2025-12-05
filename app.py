@@ -776,34 +776,122 @@ def main():
         "🔔 Recent Events", "🗺️ Explore Graph", "🔬 Simulate Scenarios", "↔️ Causal Pathfinding", "📘 Help & Guide"
     ])
 
-    # --- TAB 1: RECENT EVENTS ---
+    # --- TAB 1: RECENT EVENTS (UPDATED WITH FILTERS) ---
     with tab_events:
         st.header("🔔 Recently Detected Significant Events")
-        st.write("These events are automatically detected and saved by the background worker.")
         
-        if st.button("🔄 Refresh Events"):
-            st.cache_data.clear() 
-            st.cache_resource.clear()
-            st.rerun()
-
-        # Fetch Data (Now pulling correctly from Neo4j Cloud)
-        recent_events = db_manager.get_recent_events(limit=50)
+        # --- 1. Load Data for Filters ---
+        # We need the graph to know which companies belong to which sectors
+        financial_graph = get_full_graph()
         
-        if not recent_events:
-            st.info("No significant events have been detected by the worker yet. Check the worker's logs.")
+        # Prepare lists for dropdowns
+        if financial_graph is None:
+            all_sectors = []
+            all_nodes = []
         else:
-            st.info(f"Displaying the {len(recent_events)} most recent events.")
+            all_sectors = sorted(list(set(
+                financial_graph.nodes[n].get('sector', 'Unknown') 
+                for n in financial_graph.nodes()
+                if financial_graph.nodes[n].get('sector')
+            )))
+            all_nodes = sorted(list(financial_graph.nodes()))
 
-            for event in recent_events:
+        # Helper to format names (Reused from other tabs)
+        company_map = load_company_names()
+        def format_ticker_events(ticker):
+            if ticker == "All Companies": return "All Companies"
+            name = company_map.get(ticker)
+            if not name and financial_graph and financial_graph.has_node(ticker):
+                name = financial_graph.nodes[ticker].get('name')
+            return f"{name} ({ticker})" if name else ticker
+
+        # --- 2. Filter Layout ---
+        col_ev_filter, col_ev_select, col_ev_refresh = st.columns([1, 2, 1])
+
+        with col_ev_filter:
+            selected_sector_ev = st.selectbox(
+                "Filter by Sector:", 
+                ["All Sectors"] + all_sectors,
+                key="event_sector_filter"
+            )
+
+        with col_ev_select:
+            # Filter the company list based on the sector selected above
+            filtered_nodes = all_nodes
+            if selected_sector_ev != "All Sectors" and financial_graph:
+                filtered_nodes = [
+                    n for n in all_nodes 
+                    if financial_graph.nodes[n].get('sector') == selected_sector_ev
+                ]
+            
+            selected_ticker_ev = st.selectbox(
+                "Filter by Company:", 
+                ["All Companies"] + filtered_nodes,
+                format_func=format_ticker_events,
+                key="event_ticker_select"
+            )
+
+        with col_ev_refresh:
+            st.write("") # Spacer to align button
+            st.write("") 
+            if st.button("🔄 Refresh Events", use_container_width=True):
+                st.cache_data.clear() 
+                st.cache_resource.clear() 
+                st.rerun()
+
+        st.divider()
+
+        # --- 3. Fetch Data based on Selection ---
+        events_to_display = []
+        
+        if selected_ticker_ev != "All Companies":
+            # CASE A: Specific Ticker Selected -> Fetch specific events
+            try:
+                # Try to use the optimized method if it exists
+                if hasattr(db_manager, 'get_events_by_ticker'):
+                    events_to_display = db_manager.get_events_by_ticker(selected_ticker_ev, days=90)
+                else:
+                    # Fallback: Fetch all and filter (Slower, but safe)
+                    all_events = db_manager.get_recent_events(limit=500)
+                    events_to_display = [e for e in all_events if e['ticker'] == selected_ticker_ev]
+                    
+                st.info(f"Showing events for: **{format_ticker_events(selected_ticker_ev)}**")
+            except Exception as e:
+                st.error(f"Error fetching specific events: {e}")
+        else:
+            # CASE B: No Filter -> Fetch global recent events
+            events_to_display = db_manager.get_recent_events(limit=50)
+            st.write("Displaying the 50 most recent events across the market.")
+
+        # --- 4. Render List ---
+        if not events_to_display:
+            if selected_ticker_ev != "All Companies":
+                st.warning(f"No significant events found for {selected_ticker_ev} in the database.")
+            else:
+                st.info("No events detected yet.")
+        else:
+            for event in events_to_display:
                 score = event.get('score', 0.0)
-                event_type = "Positive📈" if score > 0 else "Negative📉"
+                # Determine emoji based on score
+                if score > 0:
+                    event_type = "Positive📈"
+                    color_border = "green"
+                elif score < 0:
+                    event_type = "Negative📉"
+                    color_border = "red"
+                else:
+                    event_type = "Neutral😐"
+                    color_border = "grey"
                 
-                with st.expander(f"**{event.get('timestamp', 'No Date')} - {event_type} for {event['ticker']}**: {event['headline']}"):
+                # Check for timestamp presence
+                ts = event.get('timestamp', 'No Date')
+                
+                with st.expander(f"**{ts} - {event_type} for {event['ticker']}**: {event['headline']}"):
                     st.markdown(f"**Sentiment Score:** `{score:.2f}`")
                     st.markdown(f"[Read Full Article]({event['link']})", unsafe_allow_html=True)
                     
-                    # Add a quick action button for simulation
-                    if st.button(f"🔬 Simulate Impact for {event['ticker']}", key=f"btn_{event['ticker']}_{uuid.uuid4()}"):
+                    # Simulation Button
+                    if st.button(f"🔬 Simulate Impact for {event['ticker']}", key=f"btn_{event.get('id', uuid.uuid4())}"):
                         st.info("Go to the 'Simulate Scenarios' tab to run this simulation manually.")
 
     # ==============================================================================
