@@ -153,9 +153,12 @@ def main():
                     
                     # Update Database and Graph
                     for ticker in tickers:
+                        # --- FIX: Sanitize Ticker (BRK.B -> BRK-B) ---
+                        safe_ticker = ticker.replace('.', '-') 
+                        
                         # Insert into SQLite
                         db.insert_event(
-                            ticker=ticker,
+                            ticker=safe_ticker,  # Use safe_ticker
                             headline=headline,
                             score=score,
                             link=url
@@ -164,20 +167,10 @@ def main():
                         # Update Neo4j Graph
                         query = """
                         MATCH (c:Company {ticker: $ticker})
-                        SET c.sentiment_score = $score,
-                            c.last_news_update = datetime()
-                        
-                        CREATE (e:Event {
-                            headline: $headline,
-                            score: $score,
-                            relevance: $relevance,
-                            source: 'Polygon_Gemini',
-                            timestamp: datetime(),
-                            link: $url
-                        })
-                        MERGE (c)-[:HAD_EVENT]->(e)
+                        ...
                         """
-                        db.execute_write(query, ticker=ticker, score=score, relevance=relevance, headline=headline, url=url)
+                        # Pass safe_ticker to the query
+                        db.execute_write(query, ticker=safe_ticker, score=score, relevance=relevance, headline=headline, url=url)
             
             # 7. Standard Rate Limit Wait
             # Using 35s ensures we never accidentally hit the 5 calls/min limit
