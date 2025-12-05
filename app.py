@@ -812,7 +812,7 @@ def main():
     with tab_explore:
         st.header("🗺️ Interactive Knowledge Graph Explorer")
         
-        # --- NEW: MARKET WEATHER (SECTOR HEATMAP) ---
+    # --- NEW: MARKET WEATHER (SECTOR HEATMAP) - Z-SCORE EDITION ---
         with st.expander("🌤️ Market Weather (Sector Heatmap)", expanded=True):
             with st.spinner("Analyzing market sectors..."):
                 sector_data = db_manager.get_sector_risk_data()
@@ -822,21 +822,41 @@ def main():
             else:
                 df_sectors = pd.DataFrame(sector_data)
                 
-                # Create Treemap
-                # Size of box = Number of companies in that sector
-                # Color of box = Average Risk (Green=Safe, Red=High Risk)
+                # --- CALCULATION: Z-SCORE (Relative Risk) ---
+                # 1. Calculate Market Mean and Standard Deviation
+                mu = df_sectors['AvgRisk'].mean()
+                sigma = df_sectors['AvgRisk'].std()
+
+                # 2. Compute Z-Score: (Value - Mean) / StdDev
+                # This tells us how many "deviations" a sector is away from the average.
+                if sigma == 0:
+                    df_sectors['Z_Score'] = 0 # Avoid division by zero if all sectors are identical
+                else:
+                    df_sectors['Z_Score'] = (df_sectors['AvgRisk'] - mu) / sigma
+
+                # 3. Create Treemap
                 fig = px.treemap(
                     df_sectors, 
                     path=[px.Constant("Market"), 'Sector'], 
                     values='CompanyCount',
-                    color='AvgRisk',
-                    color_continuous_scale=['#2ecc71', '#f1c40f', '#e74c3c'], # Green -> Yellow -> Red
-                    range_color=[-0.5, 0.5], # Fix scale from -0.5 (Bad) to 0.5 (Good) or 0 to 1 depending on your scoring
-                    title="Market Risk by Sector (Size = Count, Color = Avg Risk)"
+                    color='Z_Score', 
+                    # RdYlGn_r = Red-Yellow-Green (Reversed). 
+                    # High Positive Z (Riskier than avg) -> Red
+                    # 0 (Average) -> Yellow
+                    # Low Negative Z (Safer than avg) -> Green
+                    color_continuous_scale='RdYlGn_r', 
+                    color_continuous_midpoint=0, # Force the scale to center on the Market Average
+                    custom_data=['AvgRisk'], # Pass the RAW risk score to the tooltip
+                    title="Relative Sector Risk (Z-Score)"
                 )
+                
+                # 4. Update Tooltip so you see the REAL risk score, not just the Z-score
+                fig.update_traces(
+                    hovertemplate='<b>%{label}</b><br>Companies: %{value}<br>Relative Risk (Z): %{color:.2f} σ<br><b>Actual Risk: %{customdata[0]:.4f}</b>'
+                )
+
                 fig.update_layout(margin=dict(t=30, l=10, r=10, b=10))
                 st.plotly_chart(fig, use_container_width=True)
-        # ---------------------------------------------
 
         st.write("Select a company to load its strongest relationships.") 
 

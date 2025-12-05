@@ -43,4 +43,5 @@ neo4j_data_backup/
 
 # --- Large Data Directories (New) ---
 sec-edgar-filings/
-database/
+database/neo4j/data/
+neo4j/data/
