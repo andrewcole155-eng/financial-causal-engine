@@ -245,13 +245,15 @@ def send_email_alert(config: Dict[str, Any], subject: str, body_html: str):
 
 def get_ai_analysis(headline, tickers):
     """
-    Uses Gemini to get both Sentiment AND Relevance.
-    Returns: (sentiment_score, relevance_score)
+    Uses Gemini to determine:
+    1. Sentiment (-1 to 1)
+    2. Relevance (0 to 1) - Detecting False Positives (Metacognition)
     """
     if not gemini_model: 
         return 0.0, 0.0
     
     try:
+        # --- IMPLEMENTING LOGIC FROM SCREENSHOT ---
         prompt = f"""
         Analyze this financial news headline for the specific tickers: {tickers}.
         Headline: "{headline}"
@@ -259,9 +261,9 @@ def get_ai_analysis(headline, tickers):
         Task:
         1. Calculate Sentiment Score (-1.0 Negative to 1.0 Positive).
         2. Calculate Relevance Score (0.0 to 1.0). 
-           - Ask yourself: Is this news REALLY about the company {tickers}?
-           - Example of LOW relevance: "Top cop retired" (Police) tagged for ticker "COP" (ConocoPhillips).
-           - Example of LOW relevance: "ServiceNow brand voice" tagged for ticker "NOW".
+           - CRITICAL: Ask yourself, is this news REALLY about the company {tickers}?
+           - 0.0 (False Positive): Ticker appears as a common word (e.g. 'COP' the police vs 'COP' the oil company, 'NOW' vs ServiceNow, 'L' vs Loews).
+           - 1.0 (Relevant): The news explicitly mentions the company or its products.
 
         Return ONLY a JSON object with keys 'score' and 'relevance'.
         Example: {{"score": -0.5, "relevance": 0.1}}
@@ -271,6 +273,7 @@ def get_ai_analysis(headline, tickers):
         text = response.text.replace("```json", "").replace("```", "").strip()
         data = json.loads(text)
         
+        # Return both values
         return float(data.get("score", 0.0)), float(data.get("relevance", 0.0))
         
     except Exception as e:
@@ -338,7 +341,6 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
             else:
                 event_dt = datetime.now()
 
-            # --- MODIFIED LOGIC START ---
             for ticker in all_tickers:
                 if ticker in ticker_stopwords: continue
 
@@ -347,21 +349,22 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
                     
                     # 1. Decide which model to use
                     if gemini_model:
-                        # USE GEMINI (Smart Relevance Filter)
+                        # USE GEMINI (Metacognition Enabled)
                         score, relevance = get_ai_analysis(title, [ticker])
                         
-                        # THE FILTER: Discard noise
+                        # --- IMPLEMENTING ACTION FROM SCREENSHOT ---
+                        # "Action: If Relevance < 50%, discard the event entirely."
                         if relevance < 0.5:
                             logger.info(f"🗑️ REJECTED (Noise): {title[:30]}... for {ticker} (Rel: {relevance:.2f})")
-                            continue # Skip this loop iteration
+                            continue # Skip this loop iteration, do not save to DB
                     else:
-                        # FALLBACK TO FINBERT (If no API Key)
+                        # Fallback for FinBERT (No relevance check available)
                         score = get_financial_sentiment(title, finbert_tokenizer, finbert_model)
-                        relevance = 1.0 # Assume 100% relevant if we can't check
+                        relevance = 1.0 
                     
-                    # 2. Check Sentiment Threshold
+                    # 2. Check Sentiment Threshold (Existing logic)
                     if abs(score) >= sentiment_threshold:
-                        logger.warning(f"🚨 Significant event: {ticker} | Score: {score:.2f} | Rel: {relevance:.2f} | {title}")
+                        logger.info(f"🚨 Significant event: {ticker} | Score: {score:.2f} | Rel: {relevance:.2f} | {title}")
                         
                         processed_headlines.add(title)
                         
