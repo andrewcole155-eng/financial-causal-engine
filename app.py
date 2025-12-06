@@ -1361,11 +1361,11 @@ def main():
                             st.write(explanation)
 
     # ==============================================================================
-    # --- TAB 3: SIMULATE SCENARIOS (FINAL VISUAL FIX) ---
+    # --- TAB 3: SIMULATE SCENARIOS (MOBILE OPTIMIZED) ---
     # ==============================================================================
     with tab_simulate:
         st.header("🔬 Causal Simulation Engine")
-        st.caption("Simulate market shocks, Sahm Rule triggers, and Seasonality effects.")
+        st.caption("Simulate market shocks. Adjust 'Max Nodes' if viewing on mobile.")
 
         financial_graph = get_full_graph()
         if financial_graph is None:
@@ -1387,48 +1387,46 @@ def main():
         # ==========================================================================
         with col_inputs:
             st.subheader("🎛️ Scenario Controls")
-            sim_mode = st.radio("Mode:", ["🌍 Macro Stress Test", "🎯 Single Asset Shock"], horizontal=True)
-            st.divider()
+            
+            # --- NEW: PERFORMANCE CONTROL ---
+            # This fixes the Mobile Crash issue. Default to 50 for safety.
+            max_display_nodes = st.slider("📉 Max Nodes (Performance)", 10, 200, 60, help="Lower this if on mobile.")
 
+            st.divider()
+            
+            sim_mode = st.radio("Mode:", ["🌍 Macro Stress Test", "🎯 Single Asset Shock"], horizontal=True)
+            
             simulation_inputs = {} 
 
             if sim_mode == "🌍 Macro Stress Test":
-                # Fed & Economy
                 st.markdown("### 🏛️ Federal Reserve")
                 sim_rate = st.slider("Fed Funds Rate (%)", 0.0, 10.0, float(real_macro.get('interest_rate', 5.33)), 0.25)
-                
                 sim_sahm = st.slider("Sahm Signal", 0.0, 2.0, float(real_macro.get('sahm_signal_value', 0.0)))
+                
                 is_recession = sim_sahm >= 0.50
-                if is_recession:
-                    st.error(f"📉 RECESSION (Signal: {sim_sahm:.2f})")
-                else:
-                    st.success(f"📈 Growth (Signal: {sim_sahm:.2f})")
+                if is_recession: st.error(f"📉 RECESSION (Signal: {sim_sahm:.2f})")
+                else: st.success(f"📈 Growth (Signal: {sim_sahm:.2f})")
 
-                # Commodities
                 st.markdown("### 🛢️ Market Drivers")
                 macro_drivers = {"CL=F": "Crude Oil", "^VIX": "Volatility (VIX)", "DX-Y.NYB": "US Dollar"}
                 for ticker, label in macro_drivers.items():
                     val = st.slider(f"{label} Shock (%)", -30.0, 30.0, 0.0, 1.0, key=f"mac_{ticker}")
                     if val != 0: simulation_inputs[ticker] = val / 100.0
 
-                # Seasonality
                 st.markdown("### 🗓️ Seasonality")
                 force_q4 = st.checkbox("Force Q4 'Retail Season'", value=bool(real_macro.get('is_q4_retail', 0)))
 
                 # Process Inputs
                 rate_diff = (sim_rate - real_macro.get('interest_rate', 5.33)) / 100.0
                 if rate_diff != 0: simulation_inputs["^TNX"] = rate_diff 
-                
                 if is_recession:
                     if "^VIX" not in simulation_inputs: simulation_inputs["^VIX"] = 0.50 
                     if "CL=F" not in simulation_inputs: simulation_inputs["CL=F"] = -0.20
-                
                 if force_q4:
                      simulation_inputs["AMZN"] = 0.05
                      simulation_inputs["WMT"] = 0.03
 
             else:
-                # Single Asset Mode
                 st.info("Shock a specific company.")
                 company_map = load_company_names()
                 def format_asset_label(ticker):
@@ -1467,22 +1465,29 @@ def main():
                             for node, data in impacts.items():
                                 aggregated_impacts[node] = aggregated_impacts.get(node, 0.0) + data['score']
                         
-                    # --- CRITICAL FIX: HIGHER THRESHOLD ---
-                    # We increased this from 0.005 (0.5%) to 0.015 (1.5%)
-                    # This filters out the "noise" so only truly impacted companies show up.
-                    threshold = 0.015 
+                    # --- CRITICAL FIX: SORT & LIMIT NODES ---
+                    # 1. Sort all impacts by absolute magnitude (biggest impact first)
+                    sorted_impacts = sorted(aggregated_impacts.items(), key=lambda x: abs(x[1]), reverse=True)
                     
-                    sig_nodes = [n for n, s in aggregated_impacts.items() if abs(s) > threshold]
-                    sig_nodes.extend(simulation_inputs.keys()) 
+                    # 2. Slice the Top N (defined by slider)
+                    top_impacts = sorted_impacts[:max_display_nodes]
+                    
+                    # 3. Extract tickers
+                    sig_nodes = [n[0] for n in top_impacts]
+                    
+                    # 4. ALWAYS include the drivers (so they don't disappear)
+                    sig_nodes.extend(simulation_inputs.keys())
+                    
+                    # 5. Remove Duplicates & Verify existence
                     sig_nodes = list(set(sig_nodes))
                     sig_nodes = [n for n in sig_nodes if n in financial_graph]
 
-                    # Store
+                    # Store Results
                     st.session_state.sim_results = {
                         "impacts": aggregated_impacts, "nodes": sig_nodes, "drivers": simulation_inputs
                     }
 
-                    # --- CRITICAL FIX: PHYSICS ---
+                    # --- VISUALIZATION ---
                     if sig_nodes:
                         subgraph = financial_graph.subgraph(sig_nodes)
                         viz_graph = subgraph.copy()
@@ -1495,29 +1500,33 @@ def main():
                         for node in net.nodes:
                             nid = node['id']
                             impact = aggregated_impacts.get(nid, 0.0)
-                            node['size'] = 20 + (abs(impact) * 80)
                             
+                            # Size: Drivers are big, Victims depend on impact
                             if nid in simulation_inputs:
-                                node['color'] = "#ffffff"; node['shape'] = "diamond"; node['size'] = 40
-                            elif impact < 0: node['color'] = "#ff4b4b" 
-                            else: node['color'] = "#00c853" 
+                                node['size'] = 40
+                                node['color'] = "#ffffff"
+                                node['shape'] = "diamond"
+                            else:
+                                node['size'] = 15 + (abs(impact) * 60)
+                                if impact < 0: node['color'] = "#ff4b4b"
+                                else: node['color'] = "#00c853"
                             
                             node['title'] = f"Impact: {impact:.2%}"
 
-                        # NUCLEAR PHYSICS OPTION: High Repulsion to force the "Flower" open
+                        # PHYSICS: Strong Repulsion to prevent "Flower" clumping
                         net.set_options("""
                         var options = {
-                          "nodes": { "font": { "size": 16, "color": "#ffffff" } },
+                          "nodes": { "font": { "size": 14, "color": "#ffffff" } },
                           "physics": {
-                            "barnesHut": {
-                              "gravitationalConstant": -80000,
-                              "centralGravity": 0.001,
-                              "springLength": 250,
-                              "springConstant": 0.01,
-                              "damping": 0.09,
+                            "forceAtlas2Based": {
+                              "gravitationalConstant": -100,
+                              "centralGravity": 0.01,
+                              "springLength": 100,
+                              "springConstant": 0.08,
                               "avoidOverlap": 1
                             },
-                            "minVelocity": 0.75
+                            "minVelocity": 0.75,
+                            "solver": "forceAtlas2Based"
                           }
                         }
                         """)
@@ -1528,7 +1537,7 @@ def main():
                         if os.path.exists(html_path): os.remove(html_path)
                     else:
                         st.session_state.sim_fig_html = None
-                        st.warning("Impact was too low to generate a graph. Try a larger shock.")
+                        st.warning("Impact was too low to generate a graph.")
 
         # ==========================================================================
         # --- COLUMN 2: VISUAL ---
@@ -1554,11 +1563,10 @@ def main():
 
                 st.metric("Confidence", "87%")
                 
-                # Filter out drivers to show real victims
                 sorted_impacts = sorted(
                     [x for x in impacts.items() if x[0] not in drivers], 
                     key=lambda x: abs(x[1]), reverse=True
-                )[:10] # Show Top 10
+                )[:10]
 
                 if sorted_impacts:
                     st.markdown("**Top Impacted Assets:**")
