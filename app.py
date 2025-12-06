@@ -901,6 +901,34 @@ def fetch_aligned_history(ticker_treatment, ticker_outcome):
     return aligned_df
 
 # ==============================================================================
+# --- NEW: CAUSAL DATA PREPARATION ---
+# ==============================================================================
+def fetch_aligned_history(ticker_treatment, ticker_outcome):
+    """
+    Fetches historical price data for two assets and merges them into a 
+    single DataFrame for DoWhy Causal Inference.
+    """
+    api_key = st.secrets.get("POLYGON_API_KEY") or os.environ.get("POLYGON_API_KEY")
+    if not api_key:
+        return None
+
+    # Reuse existing fetch function
+    df_x = fetch_polygon_price_data(ticker_treatment, api_key)
+    df_y = fetch_polygon_price_data(ticker_outcome, api_key)
+
+    if df_x.empty or df_y.empty:
+        return None
+
+    # Rename columns to match Tickers (DoWhy needs column names = node names)
+    df_x = df_x[['timestamp', 'close']].rename(columns={'close': ticker_treatment})
+    df_y = df_y[['timestamp', 'close']].rename(columns={'close': ticker_outcome})
+
+    # Merge on Timestamp to ensure alignment (remove days where one market was closed)
+    aligned_df = pd.merge(df_x, df_y, on='timestamp', how='inner')
+    
+    return aligned_df
+
+# ==============================================================================
 # --- MAIN STREAMLIT APPLICATION ---
 # ==============================================================================
 def main():
@@ -1332,7 +1360,7 @@ def main():
                             st.write(explanation)
 
     # ==============================================================================
-    # --- TAB 3: SIMULATE SCENARIOS (UPDATED WITH COUNTERFACTUALS) ---
+    # --- TAB 3: SIMULATE SCENARIOS (UPDATED WITH CAUSAL ENGINE) ---
     # ==============================================================================
     with tab_simulate:
         st.header("🔬 Impact & Contagion Analysis")
@@ -1346,6 +1374,15 @@ def main():
         # --- Load Company Names for Dropdowns ---
         company_map = load_company_names()
         
+        # Helper to format names
+        def format_ticker(ticker):
+            name = company_map.get(ticker)
+            if not name and financial_graph.has_node(ticker):
+                name = financial_graph.nodes[ticker].get('name')
+            if name:
+                return f"{name} ({ticker})"
+            return ticker
+
         # Helper to filter nodes
         all_nodes = sorted(list(financial_graph.nodes()))
         all_sectors = sorted(list(set(
@@ -1412,7 +1449,7 @@ def main():
                 filtered_nodes = [n for n in all_nodes if financial_graph.nodes[n].get('sector') == sim_sector]
 
             with col_sim_2:
-                selected_company_sim = st.selectbox("Target Asset:", filtered_nodes, format_func=lambda x: f"{company_map.get(x, x)} ({x})", key="sim_select_company")
+                selected_company_sim = st.selectbox("Target Asset:", filtered_nodes, format_func=format_ticker, key="sim_select_company")
             
             with col_sim_3:
                 hypothetical_score = st.slider("Shock Magnitude:", -1.0, 1.0, -0.5, 0.1)
@@ -1444,12 +1481,44 @@ def main():
                 with res_col2:
                     st.subheader("Visual Impact Graph")
                     if st.session_state.get('sim_impact_nodes'):
-                        # ... [Visual rendering code same as before, omitted for brevity but presumed kept] ...
-                        # (Reuse the PyVis code from your original file here)
-                        pass
+                        # Define subgraph
+                        nodes_to_include = {selected_company_sim, *st.session_state['sim_impact_nodes']}
+                        subgraph = financial_graph.subgraph(nodes_to_include)
+                        
+                        # Reuse visualization logic
+                        graph_for_pyvis = subgraph.copy()
+                        for u, v, data in graph_for_pyvis.edges(data=True):
+                            data.pop('source', None); data.pop('target', None)
+
+                        net = Network(height="500px", width="100%", notebook=True, directed=True, bgcolor="#222222", font_color="white")
+                        net.from_nx(graph_for_pyvis) 
+                        net = apply_ai_visual_styles(net, graph_for_pyvis)
+                        net.set_options('{"physics": {"barnesHut": {"gravitationalConstant": -10000, "springLength": 150}}}')
+
+                        # Coloring
+                        for node in net.nodes:
+                            nid = node['id']
+                            node['label'] = nid
+                            if nid == selected_company_sim:
+                                node['color'], node['size'], node['shape'] = '#FF4B4B', 40, 'diamond'
+                            elif nid in st.session_state['sim_impact_nodes']:
+                                node['color'], node['size'] = '#FFA726', 20
+                                score = impact_results.get(nid, {}).get('score', 0)
+                                node['title'] = f"Impact: {score:.4f}"
+
+                        # Render
+                        html_file = f"temp_graph_{uuid.uuid4().hex}.html"
+                        try:
+                            net.save_graph(html_file)
+                            with open(html_file, 'r', encoding='utf-8') as f:
+                                st.components.v1.html(f.read(), height=520, scrolling=True)
+                        except Exception as e:
+                            st.error(f"Graph Error: {e}")
+                        finally:
+                            if os.path.exists(html_file): os.remove(html_file)
 
         # ==========================================================================
-        # MODE 3: COUNTERFACTUAL REASONING (UPDATED WITH NAME FORMATTING)
+        # MODE 3: COUNTERFACTUAL REASONING (UPDATED WITH FILTERS & FORMATTING)
         # ==========================================================================
         elif "Counterfactual Reasoning" in sim_mode:
             st.subheader("🔮 Counterfactual 'What-If' Simulator")
@@ -1483,7 +1552,7 @@ def main():
                     "Select Treatment Node:", 
                     options_x, 
                     index=0,
-                    format_func=format_ticker,  # <--- FIXED: Displays "Agilent (A)"
+                    format_func=format_ticker, # Displays Name + Ticker
                     key="do_node_x"
                 )
 
@@ -1511,7 +1580,7 @@ def main():
                     "Select Outcome Node:", 
                     options_y, 
                     index=0, 
-                    format_func=format_ticker, # <--- FIXED: Displays "American Airlines (AAL)"
+                    format_func=format_ticker, # Displays Name + Ticker
                     key="do_node_y"
                 )
 
@@ -1536,7 +1605,7 @@ def main():
             # --- EXECUTION LOGIC ---
             if run_btn:
                 st.divider()
-                # Format names for the status message too
+                # Format names for the status message
                 t_name = format_ticker(treatment_node)
                 o_name = format_ticker(outcome_node)
                 
@@ -1592,10 +1661,11 @@ def main():
 
                             # Validity Check
                             st.subheader("Statistical Validation")
+                            p_val = result['validity_p_value']
                             if result['is_statistically_significant']:
-                                st.success(f"✅ **Validated:** The causal link is statistically significant (p-value: {result['validity_p_value']:.4f}).")
+                                st.success(f"✅ **Validated:** The causal link is statistically significant (p-value: {p_val:.4f}).")
                             else:
-                                st.error(f"❌ **Refuted:** The effect is indistinguishable from random noise (p-value: {result['validity_p_value']:.4f}).")
+                                st.error(f"❌ **Refuted:** The effect is indistinguishable from random noise (p-value: {p_val:.4f}).")
                                 
                         except Exception as e:
                             st.error(f"Causal Inference Failed: {str(e)}")
