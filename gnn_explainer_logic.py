@@ -90,13 +90,16 @@ def extract_narrative_triples(G_expl, ticker_map, event_map=None):
     NOW SUPPORTS: resolving 'Event_123' -> 'Fed Rate Hike (Event)'
     """
     triples = []
-    if event_map is None: event_map = {}
+    # If no map provided, use empty dict to prevent errors
+    if event_map is None: 
+        event_map = {}
     
     for u, v, data in G_expl.edges(data=True):
         weight = data.get('weight', 0)
         
-        # Filter noise
-        if weight < 0.05: continue
+        # Filter noise (ignore very weak edges)
+        if weight < 0.05: 
+            continue
 
         # --- Helper to Resolve Names ---
         def resolve(node_id):
@@ -105,33 +108,38 @@ def extract_narrative_triples(G_expl, ticker_map, event_map=None):
             # 1. Resolve Company Tickers (Company_4 -> AAPL)
             if "Company_" in node_str:
                 try:
+                    # Extract index "Company_4" -> 4
                     idx = int(node_str.split('_')[1])
                     if 0 <= idx < len(ticker_map):
                         return f"{ticker_map[idx]} (Company)"
-                except: pass
+                except: 
+                    pass
             
             # 2. Resolve Event Descriptions (Event_1922 -> "Tech Selloff")
             if "Event_" in node_str:
-                # Try to find the description in the map
+                # Try to find the description in the map using the full string
                 if node_str in event_map:
                     return f"'{event_map[node_str]}' (Event)"
                 
-                # If map fails, try to parse ID and look it up
+                # If map fails, try to parse ID and look it up by integer
                 try:
                     event_id = int(node_str.split('_')[1])
                     if event_id in event_map:
                          return f"'{event_map[event_id]}' (Event)"
-                except: pass
+                except: 
+                    pass
                 
             return node_str
 
         source = resolve(u)
         target = resolve(v)
         
-        relation = "strongly correlates with" if weight > 0.5 else "is linked to"
+        # Use descriptive verbs based on weight
+        relation = "strongly influences" if weight > 0.5 else "is related to"
         
         # Format: (Source) --[influences]--> (Target)
         triple = f"- {source} {relation} {target} (Importance: {weight:.2f})"
         triples.append(triple)
         
+    # Sort by importance (Highest first)
     return sorted(triples, key=lambda x: float(x.split('Importance: ')[1][:-1]), reverse=True)
