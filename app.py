@@ -1575,7 +1575,7 @@ def main():
                 st.caption("Nodes colored by Net Impact: 🟢 Positive | 🔴 Negative | ⚪ Driver")
             else:
                 st.info("Run a simulation to see the graph.")
-                 = "https://placehold.co/600x400/1e1e1e/FFF?text=Waiting+for+Simulation..." 
+                # This ensures there is no hanging '=' sign or placeholder text
                 st.image("https://placehold.co/600x400/1e1e1e/FFF?text=Waiting...", use_container_width=True)
 
         # ==========================================================================
