@@ -217,3 +217,24 @@ class GNNPipeline:
             
         except Exception as e:
             logger.error(f"❌ Failed to write risk scores to Neo4j: {e}")
+
+    def export_dag_for_dowhy(self):
+        """
+        Converts internal GNN structure to NetworkX for Causal Inference.
+        """
+        import networkx as nx
+        G = nx.DiGraph()
+        
+        # Iterate over your edge_index to build the standard graph
+        # edge_index is usually [2, num_edges]
+        sources = self.data.edge_index[0].numpy()
+        targets = self.data.edge_index[1].numpy()
+        
+        for u, v in zip(sources, targets):
+            # Map indices to node names (e.g., 0 -> 'Interest Rates')
+            u_name = self.node_map[u]
+            v_name = self.node_map[v]
+            G.add_edge(u_name, v_name)
+            
+        return G
+

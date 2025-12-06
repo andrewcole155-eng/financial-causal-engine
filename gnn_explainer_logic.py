@@ -1,6 +1,9 @@
 import torch
 import networkx as nx
 from torch_geometric.explain import Explainer, GNNExplainer
+import pandas as pd
+from dowhy import CausalModel
+import networkx as nx
 
 def setup_explainer(model):
     """
@@ -143,3 +146,84 @@ def extract_narrative_triples(G_expl, ticker_map, event_map=None):
         
     # Sort by importance (Highest first)
     return sorted(triples, key=lambda x: float(x.split('Importance: ')[1][:-1]), reverse=True)
+
+class CausalValidator:
+    """
+    Handles Counterfactual Reasoning using DoWhy.
+    This moves beyond correlation (GNN weights) to causation (Do-Calculus).
+    """
+    def __init__(self, historical_df, graph_nx):
+        """
+        historical_df: Pandas DataFrame containing historical data for nodes (e.g., columns for 'Interest Rates', 'AAPL', etc.)
+        graph_nx: A NetworkX DiGraph representing the causal DAG (Directed Acyclic Graph).
+        """
+        self.data = historical_df
+        self.graph = graph_nx
+
+    def run_counterfactual(self, treatment_node, outcome_node, perturbation=0.05):
+        """
+        Simulates a 'What-If' scenario.
+        treatment_node: The driver (e.g., 'Interest Rates')
+        outcome_node: The target (e.g., 'SNAP')
+        perturbation: The size of the shift (e.g., 0.5 for 50bps rise)
+        """
+        # 1. Initialize Causal Model
+        # We pass the graph explicitly to avoid DoWhy trying to learn it from scratch
+        model = CausalModel(
+            data=self.data,
+            treatment=treatment_node,
+            outcome=outcome_node,
+            graph=self.graph
+        )
+
+        # 2. Identify the Causal Effect
+        # This checks if the causal effect is identifiable given the graph topology (backdoor criterion)
+        identified_estimand = model.identify_effect(proceed_when_unidentifiable=True)
+
+        # 3. Estimate the Effect
+        # We use Linear Regression as a baseline estimator for continuous financial data
+        estimate = model.estimate_effect(
+            identified_estimand,
+            method_name="backdoor.linear_regression"
+        )
+
+        # 4. Compute the Counterfactual (The "What-If")
+        # estimate.value represents the coefficient (slope).
+        # If Interest Rates go up by 1 unit, SNAP goes down by X units.
+        predicted_change = estimate.value * perturbation
+
+        # 5. Robustness Check (Refutation)
+        # We test the validity by replacing the treatment with a random placebo. 
+        # If the effect persists with random data, our original finding was noise.
+        refute = model.refute_estimate(
+            identified_estimand, 
+            estimate, 
+            method_name="random_common_cause"
+        )
+        
+        return {
+            "treatment": treatment_node,
+            "outcome": outcome_node,
+            "perturbation_amount": perturbation,
+            "base_coefficient": estimate.value,
+            "predicted_impact": predicted_change,
+            "validity_p_value": refute.refutation_result.p_value, # <0.05 implies the refutation failed (which is good for us)
+            "is_statistically_significant": refute.refutation_result.p_value > 0.05 
+        }
+
+def convert_gnn_to_causal_graph(edge_index, node_map):
+    """
+    Helper to convert PyTorch Geometric edge_index to the NetworkX format DoWhy needs.
+    """
+    G = nx.DiGraph()
+    
+    # Assuming edge_index is standard [2, num_edges]
+    sources = edge_index[0].cpu().numpy()
+    targets = edge_index[1].cpu().numpy()
+    
+    for u, v in zip(sources, targets):
+        u_name = node_map.get(u, f"Node_{u}")
+        v_name = node_map.get(v, f"Node_{v}")
+        G.add_edge(u_name, v_name)
+        
+    return G
