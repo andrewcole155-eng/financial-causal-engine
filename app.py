@@ -1407,20 +1407,36 @@ def main():
                     val = st.slider(f"{label} (%)", -20.0, 20.0, 0.0, 0.5, key=f"mac_{ticker}")
                     if val != 0: simulation_inputs[ticker] = val / 100.0
 
-            # --- MODE B: SINGLE ASSET SHOCK (RESTORED) ---
+            # --- MODE B: SINGLE ASSET SHOCK (FIXED FORMATTING) ---
             else:
                 st.info("Shock a specific company to trace its supply chain impact.")
                 
-                # Filter/Search logic
+                # 1. Formatting Helper (Matches Tab 2)
+                company_map = load_company_names()
+                def format_asset_label(ticker):
+                    name = company_map.get(ticker)
+                    if not name and financial_graph.has_node(ticker):
+                        name = financial_graph.nodes[ticker].get('name')
+                    return f"{name} ({ticker})" if name else ticker
+
+                # 2. Sector Filter
                 all_sectors = sorted(list(set(financial_graph.nodes[n].get('sector', 'Unknown') for n in financial_graph.nodes())))
                 sec_filter = st.selectbox("Filter Sector:", ["All"] + all_sectors)
                 
+                # 3. Filtered List
                 node_opts = sorted(list(financial_graph.nodes()))
                 if sec_filter != "All":
                     node_opts = [n for n in node_opts if financial_graph.nodes[n].get('sector') == sec_filter]
 
-                target_asset = st.selectbox("Select Asset:", node_opts, key="single_asset_select")
-                shock_val = st.slider(f"Shock {target_asset} (%)", -50.0, 50.0, -10.0, 1.0)
+                # 4. Dropdown with Formatter
+                target_asset = st.selectbox(
+                    "Select Asset:", 
+                    node_opts, 
+                    format_func=format_asset_label,  # <--- APPLIED HERE
+                    key="single_asset_select"
+                )
+                
+                shock_val = st.slider(f"Shock Magnitude (%)", -50.0, 50.0, -10.0, 1.0)
                 
                 if target_asset:
                     simulation_inputs[target_asset] = shock_val / 100.0
@@ -1498,7 +1514,7 @@ def main():
                 st.image("https://placehold.co/600x400/1e1e1e/FFF?text=Waiting...", use_container_width=True)
 
         # ==========================================================================
-        # --- COLUMN 3: ANALYSIS (FIXED) ---
+        # --- COLUMN 3: ANALYSIS ---
         # ==========================================================================
         with col_explain:
             st.subheader("📝 Analyst Report")
@@ -1521,6 +1537,8 @@ def main():
 
                 if sorted_impacts:
                     st.markdown("**Top Impacted Assets:**")
+                    # Use formatted names here too for consistency if desired, or just Ticker
+                    # For clarity in the table, Ticker is often cleaner, but let's stick to Ticker for now.
                     df_imp = pd.DataFrame(sorted_impacts, columns=['Ticker', 'Impact'])
                     st.dataframe(df_imp.style.format({'Impact': '{:.2%}'}), hide_index=True)
                 else:
