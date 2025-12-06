@@ -1449,18 +1449,18 @@ def main():
                         pass
 
         # ==========================================================================
-        # MODE 3: COUNTERFACTUAL REASONING (UPDATED WITH FILTERS)
+        # MODE 3: COUNTERFACTUAL REASONING (UPDATED WITH NAME FORMATTING)
         # ==========================================================================
         elif "Counterfactual Reasoning" in sim_mode:
             st.subheader("🔮 Counterfactual 'What-If' Simulator")
             st.markdown("""
             **Validating Causality with Do-Calculus ($P(Y | do(X))$).**
-                        Unlike standard simulation (which follows graph edges), this module uses **historical data** and **DoWhy** to estimate the *true causal effect* of one variable on another, separating correlation from causation.
+            Unlike standard simulation (which follows graph edges), this module uses **historical data** and **DoWhy** to estimate the *true causal effect* of one variable on another, separating correlation from causation.
             """)
 
             st.divider()
 
-            # --- Layout: 3 Columns (Driver Selection | Outcome Selection | Simulation Params) ---
+            # --- Layout: 3 Columns ---
             col_do_1, col_do_2, col_do_3 = st.columns(3)
 
             # --- COLUMN 1: TREATMENT (DRIVER) ---
@@ -1471,8 +1471,7 @@ def main():
                 sector_x = st.selectbox(
                     "Filter Sector (X):", 
                     ["All Sectors"] + all_sectors, 
-                    key="do_sector_x",
-                    help="Filter the list of Driver nodes by sector."
+                    key="do_sector_x"
                 )
 
                 # Filter the Node List based on Sector X
@@ -1483,7 +1482,8 @@ def main():
                 treatment_node = st.selectbox(
                     "Select Treatment Node:", 
                     options_x, 
-                    index=0, 
+                    index=0,
+                    format_func=format_ticker,  # <--- FIXED: Displays "Agilent (A)"
                     key="do_node_x"
                 )
 
@@ -1495,8 +1495,7 @@ def main():
                 sector_y = st.selectbox(
                     "Filter Sector (Y):", 
                     ["All Sectors"] + all_sectors, 
-                    key="do_sector_y",
-                    help="Filter the list of Outcome nodes by sector."
+                    key="do_sector_y"
                 )
 
                 # Filter the Node List based on Sector Y
@@ -1504,22 +1503,22 @@ def main():
                 if sector_y != "All Sectors":
                     options_y = [n for n in all_nodes if financial_graph.nodes[n].get('sector') == sector_y]
                 
-                # Ensure we don't pick the same node for X and Y (optional UX polish)
+                # Ensure we don't pick the same node for X and Y
                 if treatment_node in options_y:
-                    # Create a new list without the treatment node if it exists in this sector
                     options_y = [n for n in options_y if n != treatment_node]
 
                 outcome_node = st.selectbox(
                     "Select Outcome Node:", 
                     options_y, 
                     index=0, 
+                    format_func=format_ticker, # <--- FIXED: Displays "American Airlines (AAL)"
                     key="do_node_y"
                 )
 
             # --- COLUMN 3: INTERVENTION PARAMETERS ---
             with col_do_3:
                 st.markdown("#### 3. The Shift")
-                st.write("") # Spacer for visual alignment
+                st.write("") 
                 st.write("") 
                 
                 perturbation = st.number_input(
@@ -1531,13 +1530,17 @@ def main():
                     help="Simulate a change of this magnitude (e.g., +1.0 %)."
                 )
                 
-                st.write("") # Spacer
+                st.write("") 
                 run_btn = st.button("🚀 Run Causal Model", type="primary", use_container_width=True)
 
-            # --- EXECUTION LOGIC (UNCHANGED) ---
+            # --- EXECUTION LOGIC ---
             if run_btn:
                 st.divider()
-                st.write(f"**Hypothesis:** If we intervene on **{treatment_node}** by **{perturbation}**, what happens to **{outcome_node}**?")
+                # Format names for the status message too
+                t_name = format_ticker(treatment_node)
+                o_name = format_ticker(outcome_node)
+                
+                st.write(f"**Hypothesis:** If we intervene on **{t_name}** by **{perturbation}**, what happens to **{o_name}**?")
                 
                 # 1. Fetch Data
                 with st.spinner(f"Fetching aligned history for {treatment_node} and {outcome_node}..."):
