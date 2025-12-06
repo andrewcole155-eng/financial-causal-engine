@@ -1449,43 +1449,104 @@ def main():
                         pass
 
         # ==========================================================================
-        # MODE 3: COUNTERFACTUAL REASONING (NEW FEATURE)
+        # MODE 3: COUNTERFACTUAL REASONING (UPDATED WITH FILTERS)
         # ==========================================================================
         elif "Counterfactual Reasoning" in sim_mode:
             st.subheader("🔮 Counterfactual 'What-If' Simulator")
             st.markdown("""
             **Validating Causality with Do-Calculus ($P(Y | do(X))$).**
-            
-            Unlike standard simulation (which follows graph edges), this module uses **historical data** and **DoWhy** to estimate the *true causal effect* of one variable on another, separating correlation from causation.
+                        Unlike standard simulation (which follows graph edges), this module uses **historical data** and **DoWhy** to estimate the *true causal effect* of one variable on another, separating correlation from causation.
             """)
 
+            st.divider()
+
+            # --- Layout: 3 Columns (Driver Selection | Outcome Selection | Simulation Params) ---
             col_do_1, col_do_2, col_do_3 = st.columns(3)
 
+            # --- COLUMN 1: TREATMENT (DRIVER) ---
             with col_do_1:
-                treatment_node = st.selectbox("Treatment (Driver X)", all_nodes, index=0, help="The variable we intervene on.")
-            
+                st.markdown("#### 1. The Driver (X)")
+                
+                # Sector Filter for Treatment
+                sector_x = st.selectbox(
+                    "Filter Sector (X):", 
+                    ["All Sectors"] + all_sectors, 
+                    key="do_sector_x",
+                    help="Filter the list of Driver nodes by sector."
+                )
+
+                # Filter the Node List based on Sector X
+                options_x = all_nodes
+                if sector_x != "All Sectors":
+                    options_x = [n for n in all_nodes if financial_graph.nodes[n].get('sector') == sector_x]
+                
+                treatment_node = st.selectbox(
+                    "Select Treatment Node:", 
+                    options_x, 
+                    index=0, 
+                    key="do_node_x"
+                )
+
+            # --- COLUMN 2: OUTCOME (TARGET) ---
             with col_do_2:
-                # Filter Outcome to exclude Treatment
-                outcome_options = [n for n in all_nodes if n != treatment_node]
-                outcome_node = st.selectbox("Outcome (Target Y)", outcome_options, index=0, help="The variable we want to measure.")
+                st.markdown("#### 2. The Target (Y)")
 
+                # Sector Filter for Outcome
+                sector_y = st.selectbox(
+                    "Filter Sector (Y):", 
+                    ["All Sectors"] + all_sectors, 
+                    key="do_sector_y",
+                    help="Filter the list of Outcome nodes by sector."
+                )
+
+                # Filter the Node List based on Sector Y
+                options_y = all_nodes
+                if sector_y != "All Sectors":
+                    options_y = [n for n in all_nodes if financial_graph.nodes[n].get('sector') == sector_y]
+                
+                # Ensure we don't pick the same node for X and Y (optional UX polish)
+                if treatment_node in options_y:
+                    # Create a new list without the treatment node if it exists in this sector
+                    options_y = [n for n in options_y if n != treatment_node]
+
+                outcome_node = st.selectbox(
+                    "Select Outcome Node:", 
+                    options_y, 
+                    index=0, 
+                    key="do_node_y"
+                )
+
+            # --- COLUMN 3: INTERVENTION PARAMETERS ---
             with col_do_3:
-                perturbation = st.number_input("Intervention Amount", min_value=-10.0, max_value=10.0, value=1.0, step=0.5, help="Simulate a +1.0 unit increase.")
+                st.markdown("#### 3. The Shift")
+                st.write("") # Spacer for visual alignment
+                st.write("") 
+                
+                perturbation = st.number_input(
+                    "Intervention Amount:", 
+                    min_value=-10.0, 
+                    max_value=10.0, 
+                    value=1.0, 
+                    step=0.5, 
+                    help="Simulate a change of this magnitude (e.g., +1.0 %)."
+                )
+                
+                st.write("") # Spacer
+                run_btn = st.button("🚀 Run Causal Model", type="primary", use_container_width=True)
 
-            st.warning(f"⚠️ This requires fetching historical data for **{treatment_node}** and **{outcome_node}** from Polygon.io.")
-
-            if st.button("Run Causal Intervention (Do-Operator)"):
+            # --- EXECUTION LOGIC (UNCHANGED) ---
+            if run_btn:
+                st.divider()
+                st.write(f"**Hypothesis:** If we intervene on **{treatment_node}** by **{perturbation}**, what happens to **{outcome_node}**?")
                 
                 # 1. Fetch Data
-                with st.spinner("Fetching and aligning historical data..."):
+                with st.spinner(f"Fetching aligned history for {treatment_node} and {outcome_node}..."):
                     historical_df = fetch_aligned_history(treatment_node, outcome_node)
 
                 if historical_df is None or len(historical_df) < 50:
-                    st.error("Insufficient historical data found to run causal inference. (Need > 50 aligned data points).")
+                    st.error("Insufficient historical data found (Need > 50 aligned days). Check Polygon API key.")
                 else:
-                    # 2. Build Minimal Causal Graph (NetworkX)
-                    # We create a subgraph of just the relevant nodes + common ancestors if possible
-                    # For this demo, we pass the direct relationship to test specific causality
+                    # 2. Build Minimal Causal Graph
                     causal_graph_nx = nx.DiGraph()
                     causal_graph_nx.add_node(treatment_node)
                     causal_graph_nx.add_node(outcome_node)
@@ -1493,11 +1554,11 @@ def main():
                     
                     # 3. Initialize Validator
                     with st.status("Computing Causal Effect...", expanded=True) as status:
-                        status.write("Initializing Causal Model...")
+                        status.write("Initializing DoWhy Causal Model...")
                         validator = CausalValidator(historical_df, causal_graph_nx)
                         
                         status.write(f"Applying Do-Operator: do({treatment_node} += {perturbation})...")
-                        # Run Logic
+                        
                         try:
                             result = validator.run_counterfactual(
                                 treatment_node=treatment_node,
@@ -1508,33 +1569,31 @@ def main():
                             
                             # 4. Display Results
                             st.divider()
-                            r_col1, r_col2 = st.columns([1, 1])
+                            r_col1, r_col2 = st.columns(2)
                             
                             with r_col1:
                                 st.metric(
-                                    label="Causal Coefficient", 
+                                    label="Causal Coefficient (Beta)", 
                                     value=f"{result['base_coefficient']:.4f}",
-                                    help="Change in Y given 1 unit change in X (Linear Reg)"
+                                    help="The raw slope of the causal relationship."
                                 )
                             
                             with r_col2:
                                 impact_val = result['predicted_impact']
                                 st.metric(
-                                    label=f"Impact of {perturbation} Unit Shift", 
+                                    label=f"Predicted Impact on {outcome_node}", 
                                     value=f"{impact_val:.4f}",
-                                    delta="Predicted Change",
+                                    delta=f"{perturbation} unit shift in {treatment_node}",
                                     delta_color="off"
                                 )
 
                             # Validity Check
-                            st.subheader("Robustness Check")
+                            st.subheader("Statistical Validation")
                             if result['is_statistically_significant']:
-                                st.success(f"✅ **Validated:** The effect is statistically significant (p-value: {result['validity_p_value']:.4f}).")
+                                st.success(f"✅ **Validated:** The causal link is statistically significant (p-value: {result['validity_p_value']:.4f}).")
                             else:
-                                st.error(f"❌ **Refuted:** The effect disappears when tested against random noise (p-value: {result['validity_p_value']:.4f}).")
+                                st.error(f"❌ **Refuted:** The effect is indistinguishable from random noise (p-value: {result['validity_p_value']:.4f}).")
                                 
-                            st.info(f"**Interpretation:** If **{treatment_node}** changes by **{perturbation}**, **{outcome_node}** is expected to move by **{impact_val:.4f}** (holding other factors constant).")
-
                         except Exception as e:
                             st.error(f"Causal Inference Failed: {str(e)}")
                             logger.error(f"DoWhy Error: {e}")
