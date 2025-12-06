@@ -25,4 +25,3 @@ pyopenssl
 service-identity
 plotly
 yfinance
-py2neo>=2021.2.3
