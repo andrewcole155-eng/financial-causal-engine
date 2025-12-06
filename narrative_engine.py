@@ -59,7 +59,7 @@ def generate_financial_narrative(ticker, prediction_label, triples):
 
     try:
         # Use Flash for speed/cost efficiency
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.0-flash')
         response = model.generate_content(prompt)
         return response.text
         
