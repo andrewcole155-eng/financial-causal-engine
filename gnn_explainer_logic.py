@@ -162,13 +162,9 @@ class CausalValidator:
 
     def run_counterfactual(self, treatment_node, outcome_node, perturbation=0.05):
         """
-        Simulates a 'What-If' scenario.
-        treatment_node: The driver (e.g., 'Interest Rates')
-        outcome_node: The target (e.g., 'SNAP')
-        perturbation: The size of the shift (e.g., 0.5 for 50bps rise)
+        Simulates a 'What-If' scenario using DoWhy.
         """
         # 1. Initialize Causal Model
-        # We pass the graph explicitly to avoid DoWhy trying to learn it from scratch
         model = CausalModel(
             data=self.data,
             treatment=treatment_node,
@@ -177,38 +173,53 @@ class CausalValidator:
         )
 
         # 2. Identify the Causal Effect
-        # This checks if the causal effect is identifiable given the graph topology (backdoor criterion)
         identified_estimand = model.identify_effect(proceed_when_unidentifiable=True)
 
-        # 3. Estimate the Effect
-        # We use Linear Regression as a baseline estimator for continuous financial data
+        # 3. Estimate the Effect (Linear Regression)
         estimate = model.estimate_effect(
             identified_estimand,
             method_name="backdoor.linear_regression"
         )
 
         # 4. Compute the Counterfactual (The "What-If")
-        # estimate.value represents the coefficient (slope).
-        # If Interest Rates go up by 1 unit, SNAP goes down by X units.
         predicted_change = estimate.value * perturbation
 
         # 5. Robustness Check (Refutation)
-        # We test the validity by replacing the treatment with a random placebo. 
-        # If the effect persists with random data, our original finding was noise.
         refute = model.refute_estimate(
             identified_estimand, 
             estimate, 
             method_name="random_common_cause"
         )
         
+        # --- FIX STARTS HERE ---
+        # The error "dict object has no attribute p_value" happened here.
+        # We now safely extract the p-value whether it's in a dict or an object.
+        p_value = None
+        
+        if hasattr(refute, "refutation_result") and isinstance(refute.refutation_result, dict):
+            # If it's a dictionary (causing your error), use ["p_value"]
+            p_value = refute.refutation_result.get("p_value")
+        elif hasattr(refute, "refutation_result") and hasattr(refute.refutation_result, "p_value"):
+            # If it's an object, use .p_value
+            p_value = refute.refutation_result.p_value
+        else:
+            # Fallback: sometimes the refute object itself holds the p_value
+            p_value = getattr(refute, "p_value", None)
+            
+        # Interpretation: 
+        # For "Random Common Cause", a HIGH p-value (>0.05) is GOOD.
+        # It means adding random noise did NOT significantly change our estimate (so it's robust).
+        is_robust = (p_value > 0.05) if p_value is not None else False
+        # --- FIX ENDS HERE ---
+
         return {
             "treatment": treatment_node,
             "outcome": outcome_node,
             "perturbation_amount": perturbation,
             "base_coefficient": estimate.value,
             "predicted_impact": predicted_change,
-            "validity_p_value": refute.refutation_result.p_value, # <0.05 implies the refutation failed (which is good for us)
-            "is_statistically_significant": refute.refutation_result.p_value > 0.05 
+            "validity_p_value": p_value,
+            "is_statistically_significant": is_robust 
         }
 
 def convert_gnn_to_causal_graph(edge_index, node_map):
