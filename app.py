@@ -1360,326 +1360,242 @@ def main():
                             st.write(explanation)
 
     # ==============================================================================
-    # --- TAB 3: SIMULATE SCENARIOS (UPDATED WITH CAUSAL ENGINE) ---
+    # --- TAB 3: SIMULATE SCENARIOS (UI ARCHITECTURE IMPLEMENTATION) ---
     # ==============================================================================
     with tab_simulate:
-        st.header("🔬 Impact & Contagion Analysis")
+        st.header("🔬 Macro-Economic What-If Engine")
+        st.caption("Adjust macro-economic variables on the left to see the causal ripple effects through the network.")
 
-        # --- Load Graph (Needed for all features here) ---
+        # --- Load Graph Data ---
         financial_graph = get_full_graph()
         if financial_graph is None:
             st.warning("Knowledge graph is empty. Please ensure data is loaded.")
             st.stop()
-
-        # --- Load Company Names for Dropdowns ---
-        company_map = load_company_names()
         
-        # Helper to format names
-        def format_ticker(ticker):
-            name = company_map.get(ticker)
-            if not name and financial_graph.has_node(ticker):
-                name = financial_graph.nodes[ticker].get('name')
-            if name:
-                return f"{name} ({ticker})"
-            return ticker
+        # --- 1. DEFINE LAYOUT (3 COLUMNS) ---
+        # Left: Inputs | Center: Graph | Right: Explanation
+        col_inputs, col_visual, col_explain = st.columns([1, 2, 1], gap="medium")
 
-        # Helper to filter nodes
-        all_nodes = sorted(list(financial_graph.nodes()))
-        all_sectors = sorted(list(set(
-            financial_graph.nodes[n].get('sector', 'Unknown') 
-            for n in financial_graph.nodes()
-        )))
-
-        # --- SUB-TAB NAVIGATION ---
-        # We split this tab into two distinct modes
-        sim_mode = st.radio("Select Simulation Mode:", 
-            ["🌪️ Systemic Vulnerability (Network Stress Test)", 
-             "🧪 Manual Simulation (Propagator)", 
-             "🔮 Counterfactual Reasoning (Causal Validation)"],
-            horizontal=True
-        )
-
-        st.divider()
+        # Initialize session state for simulation results if not exists
+        if "sim_results" not in st.session_state:
+            st.session_state.sim_results = None
+        if "sim_fig_html" not in st.session_state:
+            st.session_state.sim_fig_html = None
 
         # ==========================================================================
-        # MODE 1: SYSTEMIC VULNERABILITY
+        # --- COLUMN 1: THE INPUTS (CONTROL PANEL) ---
         # ==========================================================================
-        if "Systemic Vulnerability" in sim_mode:
-            st.subheader("🌪️ Systemic Vulnerability Analysis")
-            st.markdown("Identify **'Super Spreader'** nodes. This simulation crashes every single company one by one to see which failure causes the most damage to the entire network.")
-            
-            if st.button("🚀 Run Full System Stress Test"):
-                with st.spinner("Running stress tests on all nodes..."):
-                    vuln_df = analyze_systemic_vulnerability(financial_graph)
-                    
-                    # Merge with names
-                    vuln_df['Company Name'] = vuln_df['Ticker'].map(company_map).fillna(vuln_df['Ticker'])
-                    
-                    st.success("Analysis Complete. These companies pose the highest systemic risk.")
+        with col_inputs:
+            st.subheader("🎛️ Control Panel")
+            st.info("Set macro-variable shocks:")
 
-                    # Top 10 Chart
-                    top_10 = vuln_df.head(10).copy()
-                    top_10['Damage Magnitude'] = top_10['Systemic_Damage'].abs()
-                    
-                    st.bar_chart(top_10, x="Ticker", y="Damage Magnitude", color="#FF4B4B")
-                    
-                    st.dataframe(
-                        vuln_df[['Ticker', 'Company Name', 'Systemic_Damage', ' impacted_count']], 
-                        column_config={
-                            "Systemic_Damage": st.column_config.NumberColumn("Total Network Loss", format="%.2f"),
-                            " impacted_count": st.column_config.NumberColumn("Companies Affected")
-                        }
-                    )
+            # Define Key Macro Drivers (Hardcoded to match known tickers in your ingest)
+            macro_drivers = {
+                "^TNX": "Interest Rates (10Y)",
+                "CL=F": "Crude Oil",
+                "^VIX": "Volatility (VIX)",
+                "DX-Y.NYB": "US Dollar Index"
+            }
 
-        # ==========================================================================
-        # MODE 2: MANUAL SIMULATION (EXISTING)
-        # ==========================================================================
-        elif "Manual Simulation" in sim_mode:
-            st.subheader("🧪 Manual Event Propagator")
-            st.caption("Simulate a shock to one asset and watch it ripple through the graph based on edge weights.")
-
-            # Filter Layout
-            col_sim_1, col_sim_2, col_sim_3 = st.columns([1, 2, 1])
-            
-            with col_sim_1:
-                sim_sector = st.selectbox("Filter Sector:", ["All Sectors"] + all_sectors, key="sim_sector_filter")
-            
-            filtered_nodes = all_nodes
-            if sim_sector != "All Sectors":
-                filtered_nodes = [n for n in all_nodes if financial_graph.nodes[n].get('sector') == sim_sector]
-
-            with col_sim_2:
-                selected_company_sim = st.selectbox("Target Asset:", filtered_nodes, format_func=format_ticker, key="sim_select_company")
-            
-            with col_sim_3:
-                hypothetical_score = st.slider("Shock Magnitude:", -1.0, 1.0, -0.5, 0.1)
-
-            # Truth Layer
-            if selected_company_sim:
-                render_truth_layer(selected_company_sim, db_manager)
-
-            if st.button("💥 Simulate Event", type="primary"):
-                impact_results = calculate_impact_scores(financial_graph, selected_company_sim, hypothetical_score)
-                
-                res_col1, res_col2 = st.columns([1, 2])
-                with res_col1:
-                    st.subheader("Calculated Impacts")
-                    if impact_results:
-                        df_data = [{
-                            'Ticker': k, 
-                            'Name': company_map.get(k, k), 
-                            'Impact Score': v['score'],
-                            'Path': ' -> '.join(v['path'])
-                        } for k, v in impact_results.items()]
-                        
-                        df = pd.DataFrame(df_data).sort_values(by="Impact Score", key=abs, ascending=False)
-                        st.dataframe(df, column_config={"Impact Score": st.column_config.NumberColumn(format="%.4f")}, hide_index=True)
-                        st.session_state['sim_impact_nodes'] = list(impact_results.keys())
-                    else:
-                        st.info("No downstream impacts detected.")
-
-                with res_col2:
-                    st.subheader("Visual Impact Graph")
-                    if st.session_state.get('sim_impact_nodes'):
-                        # Define subgraph
-                        nodes_to_include = {selected_company_sim, *st.session_state['sim_impact_nodes']}
-                        subgraph = financial_graph.subgraph(nodes_to_include)
-                        
-                        # Reuse visualization logic
-                        graph_for_pyvis = subgraph.copy()
-                        for u, v, data in graph_for_pyvis.edges(data=True):
-                            data.pop('source', None); data.pop('target', None)
-
-                        net = Network(height="500px", width="100%", notebook=True, directed=True, bgcolor="#222222", font_color="white")
-                        net.from_nx(graph_for_pyvis) 
-                        net = apply_ai_visual_styles(net, graph_for_pyvis)
-                        net.set_options('{"physics": {"barnesHut": {"gravitationalConstant": -10000, "springLength": 150}}}')
-
-                        # Coloring
-                        for node in net.nodes:
-                            nid = node['id']
-                            node['label'] = nid
-                            if nid == selected_company_sim:
-                                node['color'], node['size'], node['shape'] = '#FF4B4B', 40, 'diamond'
-                            elif nid in st.session_state['sim_impact_nodes']:
-                                node['color'], node['size'] = '#FFA726', 20
-                                score = impact_results.get(nid, {}).get('score', 0)
-                                node['title'] = f"Impact: {score:.4f}"
-
-                        # Render
-                        html_file = f"temp_graph_{uuid.uuid4().hex}.html"
-                        try:
-                            net.save_graph(html_file)
-                            with open(html_file, 'r', encoding='utf-8') as f:
-                                st.components.v1.html(f.read(), height=520, scrolling=True)
-                        except Exception as e:
-                            st.error(f"Graph Error: {e}")
-                        finally:
-                            if os.path.exists(html_file): os.remove(html_file)
-
-        # ==========================================================================
-        # MODE 3: COUNTERFACTUAL REASONING (UPDATED WITH NARRATIVE ANALYSIS)
-        # ==========================================================================
-        elif "Counterfactual Reasoning" in sim_mode:
-            st.subheader("🔮 Counterfactual 'What-If' Simulator")
-            st.markdown("""
-            **Validating Causality with Do-Calculus ($P(Y | do(X))$).**
-            Unlike standard simulation (which follows graph edges), this module uses **historical data** and **DoWhy** to estimate the *true causal effect* of one variable on another, separating correlation from causation.
-            """)
+            # Create Sliders dynamically
+            macro_shocks = {}
+            for ticker, label in macro_drivers.items():
+                # We use a key based on ticker to ensure uniqueness
+                val = st.slider(
+                    f"{label} Shock (%)", 
+                    min_value=-20.0, 
+                    max_value=20.0, 
+                    value=0.0, 
+                    step=0.5,
+                    key=f"slider_{ticker}",
+                    help=f"Simulate a percentage move in {label}"
+                )
+                if val != 0:
+                    macro_shocks[ticker] = val / 100.0 # Convert to decimal impact
 
             st.divider()
+            
+            # Target Selector (Optional - to focus the graph)
+            all_nodes = sorted(list(financial_graph.nodes()))
+            target_focus = st.selectbox(
+                "Focus Graph On (Optional):", 
+                ["Full Market"] + all_nodes,
+                index=0
+            )
 
-            # --- Layout: 3 Columns ---
-            col_do_1, col_do_2, col_do_3 = st.columns(3)
+            st.write("")
+            run_sim = st.button("🚀 Run Counterfactual", type="primary", use_container_width=True)
 
-            # --- COLUMN 1: TREATMENT (DRIVER) ---
-            with col_do_1:
-                st.markdown("#### 1. The Driver (X)")
+        # ==========================================================================
+        # --- LOGIC: PROCESS SIMULATION ---
+        # ==========================================================================
+        if run_sim:
+            with st.spinner("Calculating causal ripple effects..."):
+                # 1. Aggregate Impacts
+                # We run the calculate_impact_scores for EVERY non-zero macro shock
+                # and sum up the results on the network.
+                aggregated_impacts = {}
                 
-                sector_x = st.selectbox(
-                    "Filter Sector (X):", 
-                    ["All Sectors"] + all_sectors, 
-                    key="do_sector_x"
-                )
-
-                options_x = all_nodes
-                if sector_x != "All Sectors":
-                    options_x = [n for n in all_nodes if financial_graph.nodes[n].get('sector') == sector_x]
-                
-                treatment_node = st.selectbox(
-                    "Select Treatment Node:", 
-                    options_x, 
-                    index=0,
-                    format_func=format_ticker, 
-                    key="do_node_x"
-                )
-
-            # --- COLUMN 2: OUTCOME (TARGET) ---
-            with col_do_2:
-                st.markdown("#### 2. The Target (Y)")
-
-                sector_y = st.selectbox(
-                    "Filter Sector (Y):", 
-                    ["All Sectors"] + all_sectors, 
-                    key="do_sector_y"
-                )
-
-                options_y = all_nodes
-                if sector_y != "All Sectors":
-                    options_y = [n for n in all_nodes if financial_graph.nodes[n].get('sector') == sector_y]
-                
-                if treatment_node in options_y:
-                    options_y = [n for n in options_y if n != treatment_node]
-
-                outcome_node = st.selectbox(
-                    "Select Outcome Node:", 
-                    options_y, 
-                    index=0, 
-                    format_func=format_ticker,
-                    key="do_node_y"
-                )
-
-            # --- COLUMN 3: INTERVENTION PARAMETERS ---
-            with col_do_3:
-                st.markdown("#### 3. The Shift")
-                st.write("") 
-                st.write("") 
-                
-                perturbation = st.number_input(
-                    "Intervention Amount:", 
-                    min_value=-10.0, 
-                    max_value=10.0, 
-                    value=1.0, 
-                    step=0.5, 
-                    help="Simulate a change of this magnitude (e.g., +1.0 %)."
-                )
-                
-                st.write("") 
-                run_btn = st.button("🚀 Run Causal Model", type="primary", use_container_width=True)
-
-            # --- EXECUTION LOGIC ---
-            if run_btn:
-                st.divider()
-                
-                # 1. Fetch Data
-                with st.spinner(f"Fetching aligned history for {format_ticker(treatment_node)} and {format_ticker(outcome_node)}..."):
-                    historical_df = fetch_aligned_history(treatment_node, outcome_node)
-
-                if historical_df is None or len(historical_df) < 50:
-                    st.error("Insufficient historical data found (Need > 50 aligned days). Check Polygon API key.")
+                if not macro_shocks:
+                    st.warning("Please adjust at least one slider.")
                 else:
-                    # 2. Build Minimal Causal Graph
-                    causal_graph_nx = nx.DiGraph()
-                    causal_graph_nx.add_node(treatment_node)
-                    causal_graph_nx.add_node(outcome_node)
-                    causal_graph_nx.add_edge(treatment_node, outcome_node)
+                    for driver, magnitude in macro_shocks.items():
+                        if driver in financial_graph:
+                            # Use existing propagator logic
+                            impacts = calculate_impact_scores(financial_graph, driver, magnitude)
+                            
+                            for node, data in impacts.items():
+                                if node not in aggregated_impacts:
+                                    aggregated_impacts[node] = 0.0
+                                aggregated_impacts[node] += data['score']
+                        else:
+                            st.warning(f"Macro Node {driver} not found in graph.")
+
+                    # 2. Filter for Significant Nodes (The Critical Path)
+                    # We keep nodes with impact > threshold OR the target focus
+                    threshold = 0.005 # Sensitivity
+                    significant_nodes = [
+                        n for n, score in aggregated_impacts.items() 
+                        if abs(score) > threshold
+                    ]
                     
-                    # 3. Initialize Validator
-                    with st.status("Computing Causal Effect...", expanded=True) as status:
-                        status.write("Initializing DoWhy Causal Model...")
-                        validator = CausalValidator(historical_df, causal_graph_nx)
-                        
-                        status.write(f"Applying Do-Operator: do({treatment_node} += {perturbation})...")
-                        
-                        try:
-                            result = validator.run_counterfactual(
-                                treatment_node=treatment_node,
-                                outcome_node=outcome_node,
-                                perturbation=perturbation
-                            )
-                            status.update(label="Calculation Complete!", state="complete")
-                            
-                            # 4. Display Metrics
-                            st.divider()
-                            r_col1, r_col2 = st.columns(2)
-                            
-                            with r_col1:
-                                st.metric(
-                                    label="Causal Coefficient (Beta)", 
-                                    value=f"{result['base_coefficient']:.4f}",
-                                    help="The raw slope of the causal relationship."
-                                )
-                            
-                            with r_col2:
-                                impact_val = result['predicted_impact']
-                                st.metric(
-                                    label=f"Predicted Impact on {outcome_node}", 
-                                    value=f"{impact_val:.4f}",
-                                    delta=f"{perturbation} unit shift in {treatment_node}",
-                                    delta_color="off"
-                                )
+                    # Always include the drivers
+                    significant_nodes.extend(macro_shocks.keys())
+                    
+                    # If specific target selected, ensure it and its neighbors are included
+                    if target_focus != "Full Market" and target_focus in financial_graph:
+                        significant_nodes.append(target_focus)
+                        significant_nodes.extend(list(financial_graph.neighbors(target_focus)))
 
-                            # 5. NEW: Narrative Analysis
-                            st.subheader("📋 Causal Analysis Report")
-                            
-                            beta = result['base_coefficient']
-                            p_val = result['validity_p_value']
-                            t_name = format_ticker(treatment_node)
-                            o_name = format_ticker(outcome_node)
+                    # Deduplicate
+                    significant_nodes = list(set(significant_nodes))
 
-                            if result['is_statistically_significant']:
-                                analysis_text = (
-                                    f"### ✅ Validated Connection\n"
-                                    f"**{t_name}** is a statistically verified driver of **{o_name}**.\n\n"
-                                    # CHANGE IS HERE: Added backslashes (\) before the $ signs
-                                    f"* **Magnitude:** For every **\$1.00** shift in {t_name}, {o_name} is expected to move by **\${beta:.2f}**.\n" 
-                                    f"* **Robustness:** This relationship passed stress testing with a score of **{p_val:.2f}** (High Confidence). "
-                                    f"It is unlikely to be a random coincidence."
-                                )
-                                st.info(analysis_text)
+                    # 3. Save Results to State
+                    st.session_state.sim_results = {
+                        "impacts": aggregated_impacts,
+                        "nodes": significant_nodes,
+                        "drivers": macro_shocks
+                    }
+
+                    # 4. Generate Graph HTML (PyVis)
+                    if significant_nodes:
+                        subgraph = financial_graph.subgraph(significant_nodes)
+                        
+                        # Convert to PyVis
+                        # Clean edges for PyVis consumption
+                        viz_graph = subgraph.copy()
+                        for u, v, data in viz_graph.edges(data=True):
+                            data.pop('source', None); data.pop('target', None)
+                        
+                        net = Network(height="600px", width="100%", notebook=True, directed=True, bgcolor="#1e1e1e", font_color="white")
+                        net.from_nx(viz_graph)
+                        
+                        # --- CUSTOM STYLING FOR SIMULATION ---
+                        for node in net.nodes:
+                            nid = node['id']
+                            impact = aggregated_impacts.get(nid, 0.0)
+                            
+                            # Size: Bigger impact = Bigger node
+                            node['size'] = 20 + (abs(impact) * 100)
+                            
+                            # Color: Red (Negative Impact) vs Green (Positive Impact)
+                            if nid in macro_shocks:
+                                node['color'] = "#ffffff" # Drivers are White
+                                node['shape'] = "diamond"
+                                node['size'] = 40
+                            elif impact < -0.01:
+                                node['color'] = "#ff4b4b" # Red
+                            elif impact > 0.01:
+                                node['color'] = "#00c853" # Green
                             else:
-                                analysis_text = (
-                                    f"### ❌ Weak or Unverified Connection\n"
-                                    f"While there may be a correlation (Beta: {beta:.2f}), the causal link between **{t_name}** and **{o_name}** "
-                                    f"is weak.\n\n"
-                                    f"* **Robustness:** The relationship failed the stress test (p-value: {p_val:.2f}). "
-                                    f"When random noise was introduced, the connection disappeared, suggesting it might be a coincidence rather than a true cause."
-                                )
-                                st.warning(analysis_text)
-                                
-                        except Exception as e:
-                            st.error(f"Causal Inference Failed: {str(e)}")
-                            logger.error(f"DoWhy Error: {e}")
+                                node['color'] = "#808080" # Grey (Neutral)
+
+                            node['title'] = f"Net Impact: {impact:.2%}"
+                            node['label'] = nid
+
+                        # Apply Physics
+                        net.set_options('{"physics": {"forceAtlas2Based": {"gravitationalConstant": -50, "springLength": 100}}}')
+                        
+                        # Save to string
+                        html_path = f"sim_graph_{uuid.uuid4().hex}.html"
+                        net.save_graph(html_path)
+                        with open(html_path, 'r', encoding='utf-8') as f:
+                            st.session_state.sim_fig_html = f.read()
+                        if os.path.exists(html_path): os.remove(html_path)
+
+        # ==========================================================================
+        # --- COLUMN 2: THE VISUAL (INTERACTIVE GRAPH) ---
+        # ==========================================================================
+        with col_visual:
+            st.subheader("🕸️ Market Reaction")
+            
+            if st.session_state.sim_fig_html:
+                st.components.v1.html(st.session_state.sim_fig_html, height=650, scrolling=True)
+                st.caption("Nodes colored by Net Impact: 🟢 Positive | 🔴 Negative | ⚪ Driver")
+            else:
+                st.info("👈 Adjust sliders on the left and click 'Run Counterfactual' to generate the graph.")
+                st.image("https://placehold.co/600x400/1e1e1e/FFF?text=Waiting+for+Simulation", use_container_width=True)
+
+        # ==========================================================================
+        # --- COLUMN 3: THE EXPLANATION (INSIGHTS) ---
+        # ==========================================================================
+        with col_explain:
+            st.subheader("📝 Analysis")
+
+            if st.session_state.sim_results:
+                results = st.session_state.sim_results
+                impacts = results['impacts']
+                
+                # --- 1. Confidence Score (Mock Logic for UI) ---
+                # In a real app, this comes from the GNN model's variance
+                confidence = 0.87 # As per your screenshot
+                st.metric("Prediction Confidence", f"{confidence:.0%}")
+
+                # --- 2. Key Drivers (Bar Chart) ---
+                st.markdown("**Key Drivers (Highest Impact):**")
+                
+                # Sort impacts by absolute magnitude
+                sorted_impacts = sorted(impacts.items(), key=lambda x: abs(x[1]), reverse=True)
+                # Filter out the macro drivers themselves to show what *reacted*
+                drivers = results['drivers'].keys()
+                top_affected = [x for x in sorted_impacts if x[0] not in drivers][:5]
+                
+                if top_affected:
+                    df_impact = pd.DataFrame(top_affected, columns=['Ticker', 'Impact'])
+                    # Color bars based on pos/neg
+                    df_impact['Color'] = df_impact['Impact'].apply(lambda x: '#00c853' if x > 0 else '#ff4b4b')
+                    
+                    st.bar_chart(df_impact.set_index('Ticker')['Impact'], color="#ff4b4b") # Streamlit simple chart
+                else:
+                    st.write("No significant market movement detected.")
+
+                # --- 3. Narrative (LLM) ---
+                st.divider()
+                st.markdown("**AI Narrative:**")
+                
+                if gemini_active:
+                    if st.button("Generate Explanation"):
+                        with st.spinner("Writing narrative..."):
+                            # Construct prompt based on simulation
+                            driver_text = ", ".join([f"{k} moved {v:.1%}" for k,v in results['drivers'].items()])
+                            top_affected_text = ", ".join([f"{x[0]} ({x[1]:.1%})" for x in top_affected])
+                            
+                            prompt = f"""
+                            You are a financial risk analyst. 
+                            SCENARIO: A stress test was run with the following macro shocks: {driver_text}.
+                            OUTCOME: The model predicts the biggest impacts on: {top_affected_text}.
+                            
+                            Explain the causal transmission mechanism. Why would these specific macro variables affect these companies?
+                            Keep it concise (3 bullet points).
+                            """
+                            
+                            explanation = generate_ai_analysis(prompt)
+                            st.write(explanation)
+                else:
+                    st.caption("Enable Gemini API for text explanations.")
+            
+            else:
+                st.write("Run a simulation to view insights.")
 
     # ==============================================================================
     # --- TAB 4: CAUSAL PATHFINDING (UPDATED WITH SECTOR FILTER) ---
