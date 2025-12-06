@@ -19,15 +19,15 @@ def setup_explainer(model):
         model_config=dict(
             mode='multiclass_classification',
             task_level='node',
-            return_type='raw',  # Your model returns logits
+            return_type='raw',
         ),
     )
     return explainer
 
-def explain_prediction(explainer, data, target_node_idx):
+def explain_prediction(explainer, data, target_node_idx, top_k=20):
     """
-    Runs optimization to find the subgraph that contributed to the prediction.
-    Returns: A NetworkX DiGraph of the 'Why'.
+    Runs optimization and returns ONLY the top_k most important edges.
+    This prevents the "Hairball" visualization.
     """
     # 1. Run the explanation
     explanation = explainer(
@@ -42,34 +42,44 @@ def explain_prediction(explainer, data, target_node_idx):
     target_name = f"Company_{target_node_idx}"
     G_expl.add_node(target_name, type="Target", color="red", label="TARGET")
 
-    # 3. Filter for important edges (>50% contribution)
-    threshold = 0.5 
+    # 3. Collect ALL edges with their importance scores
+    all_edges = []
+    
     edge_mask_dict = explanation.edge_mask_dict
     
     for edge_type, mask in edge_mask_dict.items():
         src_type, rel, dst_type = edge_type
         
-        # Get indices of important edges
-        important_indices = torch.where(mask > threshold)[0]
+        # Get indices where mask is non-zero
+        indices = torch.where(mask > 0.01)[0] # minimal filter
         
-        if len(important_indices) > 0:
-            src_nodes = data.edge_index_dict[edge_type][0][important_indices]
-            dst_nodes = data.edge_index_dict[edge_type][1][important_indices]
+        if len(indices) > 0:
+            src_nodes = data.edge_index_dict[edge_type][0][indices]
+            dst_nodes = data.edge_index_dict[edge_type][1][indices]
+            weights = mask[indices]
             
             for i in range(len(src_nodes)):
-                u_idx = src_nodes[i].item()
-                v_idx = dst_nodes[i].item()
-                
-                # Naming convention: Type_Index
-                u = f"{src_type}_{u_idx}"
-                v = f"{dst_type}_{v_idx}"
-                
-                # Add nodes
-                if u not in G_expl: G_expl.add_node(u, type=src_type)
-                if v not in G_expl: G_expl.add_node(v, type=dst_type)
-                
-                # Add edge with weight
-                weight = mask[important_indices[i]].item()
-                G_expl.add_edge(u, v, label=rel, weight=f"{weight:.2f}")
+                edge_info = {
+                    'u': f"{src_type}_{src_nodes[i].item()}",
+                    'v': f"{dst_type}_{dst_nodes[i].item()}",
+                    'u_type': src_type,
+                    'v_type': dst_type,
+                    'rel': rel,
+                    'weight': weights[i].item()
+                }
+                all_edges.append(edge_info)
+
+    # 4. Sort by importance (Descending) and slice Top K
+    all_edges.sort(key=lambda x: x['weight'], reverse=True)
+    top_edges = all_edges[:top_k]
+
+    # 5. Construct the clean Graph
+    for e in top_edges:
+        # Add nodes if missing
+        if e['u'] not in G_expl: G_expl.add_node(e['u'], type=e['u_type'])
+        if e['v'] not in G_expl: G_expl.add_node(e['v'], type=e['v_type'])
+        
+        # Add Weighted Edge
+        G_expl.add_edge(e['u'], e['v'], label=e['rel'], weight=e['weight'])
 
     return G_expl

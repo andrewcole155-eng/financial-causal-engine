@@ -1645,7 +1645,6 @@ def main():
         """)
 
         # 1. Load Data for Filters & Indexing
-        # We need the Graph for Sector data, and the Sorted List for Indexing
         financial_graph = get_full_graph()
         full_sorted_tickers = get_sorted_tickers() 
         
@@ -1659,27 +1658,20 @@ def main():
                 if financial_graph.nodes[n].get('sector')
             )))
 
-            # 3. Layout: Filter | Select | Action
+            # 3. Filter Layout
             col_xr_filter, col_xr_sel, col_xr_act = st.columns([1, 2, 1])
 
             with col_xr_filter:
-                selected_sector_xr = st.selectbox(
-                    "Filter Sector:", 
-                    ["All Sectors"] + all_sectors, 
-                    key="xray_sector_filter"
-                )
+                selected_sector_xr = st.selectbox("Filter Sector:", ["All Sectors"] + all_sectors, key="xray_sector_filter")
 
-            # 4. Filter Logic
-            # We filter the list shown to the user, but we MUST map it back to the full list index later
+            # Filter Logic
             display_tickers = full_sorted_tickers
-            
             if selected_sector_xr != "All Sectors":
                 display_tickers = [
                     n for n in full_sorted_tickers 
                     if financial_graph.has_node(n) and financial_graph.nodes[n].get('sector') == selected_sector_xr
                 ]
 
-            # Formatter for nice names
             company_map = load_company_names()
             def format_xray_ticker(ticker):
                 name = company_map.get(ticker)
@@ -1688,31 +1680,24 @@ def main():
                 return f"{name} ({ticker})" if name else ticker
 
             with col_xr_sel:
-                xray_ticker = st.selectbox(
-                    "Select Company to Explain:", 
-                    display_tickers, 
-                    format_func=format_xray_ticker,
-                    key="xray_ticker"
-                )
+                xray_ticker = st.selectbox("Select Company to Explain:", display_tickers, format_func=format_xray_ticker, key="xray_ticker_box")
             
             with col_xr_act:
-                st.write("") # Spacer
+                st.write("") 
                 st.write("") 
                 run_xray = st.button("🔍 Run Explainability Engine", type="primary")
 
-            # 5. Execution Logic
+            # --- EXECUTION LOGIC (WITH SESSION STATE) ---
+            
+            # If button clicked, run math and SAVE to session state
             if run_xray and xray_ticker:
                 try:
-                    # CRITICAL STEP: Map the ticker back to the Global Index
-                    # The GNN model relies on the exact index from the full sorted list
                     if xray_ticker not in full_sorted_tickers:
                         st.error("Ticker not found in global mapping.")
                     else:
                         target_idx = full_sorted_tickers.index(xray_ticker)
                         
                         with st.status("Running Mathematical Explanation...", expanded=True) as status:
-                            
-                            # A. Load Model Resources (Cached via predict.py helper)
                             status.write("🧠 Loading Neural Network & Graph Data...")
                             model, data, config = get_inference_resources()
                             
@@ -1720,54 +1705,67 @@ def main():
                                 status.update(label="Error loading model.", state="error")
                                 st.stop()
                                 
-                            # B. Setup Explainer
                             status.write("⚙️ Configuring GNNExplainer Mask...")
                             explainer = setup_explainer(model)
                             
-                            # C. Run Optimization
                             status.write(f"📉 Optimizing Mask for Node {target_idx} ({xray_ticker})...")
+                            # Step 2: Run explanation (It now returns Top-20 edges only)
                             subgraph = explain_prediction(explainer, data, target_idx)
                             
                             status.update(label="Explanation Complete!", state="complete")
                         
-                        # 6. Visualize
-                        if subgraph.number_of_nodes() == 0:
-                            st.warning("The model did not find any specific neighbors that strongly influenced this prediction (Low Confidence or Isolated Node).")
-                        else:
-                            st.subheader(f"The 'Why' for {xray_ticker}")
-                            st.caption("Gold/Red edges represent the **Strongest Causal Factors** used by the AI.")
-                            
-                            # Pass the FULL list to visualizer so it can map indexes correctly
-                            html_file = visualize_explanation(subgraph, full_sorted_tickers)
-                            
-                            with open(html_file, 'r', encoding='utf-8') as f:
-                                st.components.v1.html(f.read(), height=600, scrolling=True)
-                            
-                            # Cleanup temp file
-                            if os.path.exists(html_file): os.remove(html_file)
+                        # SAVE RESULTS TO STATE
+                        st.session_state['xray_subgraph'] = subgraph
+                        st.session_state['xray_target_ticker'] = xray_ticker
 
-                            # 7. AI Interpretation of the Explanation
-                            if gemini_active:
-                                st.divider()
-                                if st.button("🤖 Interpret this Subgraph"):
-                                    with st.spinner("Analyzing causal structure..."):
-                                        factor_nodes = [n for n in subgraph.nodes if "Company" in str(n) or "Event" in str(n)]
-                                        # Remap for prompt
-                                        readable_factors = []
-                                        for f in factor_nodes:
-                                            if "Company_" in f:
-                                                idx = int(f.split("_")[1])
-                                                if idx < len(full_sorted_tickers): 
-                                                    readable_factors.append(full_sorted_tickers[idx])
-                                            else:
-                                                readable_factors.append(f)
-                                        
-                                        prompt = f"""
-                                        The GNN model predicted a risk score for {xray_ticker}. 
-                                        The 'Explainability' engine identified these specific nodes as the mathematical drivers of that decision: {readable_factors}.
-                                        Explain WHY these specific connections likely drove the risk calculation.
-                                        """
-                                        st.write(generate_ai_analysis(prompt))
+                except Exception as e:
+                    st.error(f"X-Ray Failed: {e}")
+                    logger.error(f"X-Ray Error: {e}")
+
+            # --- DISPLAY LOGIC (CHECKS SESSION STATE) ---
+            # This runs on every reload, keeping the graph visible
+            if 'xray_subgraph' in st.session_state and st.session_state['xray_subgraph'] is not None:
+                
+                subgraph = st.session_state['xray_subgraph']
+                target = st.session_state['xray_target_ticker']
+                
+                if subgraph.number_of_nodes() == 0:
+                    st.warning("The model did not find specific neighbors that strongly influenced this prediction.")
+                else:
+                    st.divider()
+                    st.subheader(f"The 'Why' for {target}")
+                    st.caption("Showing the **Top 20** mathematical factors driving the risk score.")
+                    
+                    html_file = visualize_explanation(subgraph, full_sorted_tickers)
+                    with open(html_file, 'r', encoding='utf-8') as f:
+                        st.components.v1.html(f.read(), height=600, scrolling=True)
+                    if os.path.exists(html_file): os.remove(html_file)
+
+                    # --- AI INTERPRETATION ---
+                    st.divider()
+                    if gemini_active:
+                        if st.button("🤖 Interpret this Subgraph"):
+                            with st.spinner("Analyzing causal structure..."):
+                                factor_nodes = [n for n in subgraph.nodes if "Company" in str(n) or "Event" in str(n)]
+                                readable_factors = []
+                                for f in factor_nodes:
+                                    if "Company_" in f:
+                                        try:
+                                            idx = int(f.split("_")[1])
+                                            if idx < len(full_sorted_tickers): 
+                                                readable_factors.append(full_sorted_tickers[idx])
+                                        except: pass
+                                    else:
+                                        readable_factors.append(f)
+                                
+                                prompt = f"""
+                                The GNN model predicted a risk score for {target}. 
+                                The 'Explainability' engine identified these specific nodes as the mathematical drivers of that decision: {readable_factors}.
+                                Explain WHY these specific connections likely drove the risk calculation.
+                                """
+                                explanation = generate_ai_analysis(prompt)
+                                st.info("🤖 **Gemini Analysis**")
+                                st.write(explanation)
 
                 except Exception as e:
                     st.error(f"X-Ray Failed: {e}")
