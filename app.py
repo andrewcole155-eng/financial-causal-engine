@@ -1595,9 +1595,41 @@ def main():
                 results = st.session_state.sim_results
                 impacts = results['impacts']
                 drivers = results['drivers']
+                nodes_involved = len(results['nodes'])
 
-                st.metric("Confidence", "87%")
+                # --- DYNAMIC CONFIDENCE CALCULATION ---
+                base_confidence = 0.95
                 
+                # Penalty 1: Extreme Shocks (Extrapolation Risk)
+                # If you shock something by > 20%, models get less reliable
+                max_shock_val = 0.0
+                if drivers:
+                    max_shock_val = max([abs(v) for v in drivers.values()])
+                
+                shock_penalty = 0.0
+                if max_shock_val > 0.10: shock_penalty += 0.05
+                if max_shock_val > 0.30: shock_penalty += 0.15 # Huge penalty for extreme shocks
+                
+                # Penalty 2: System Chaos (Too many ripples)
+                # More than 50 nodes moving means high complexity/uncertainty
+                chaos_penalty = min(nodes_involved * 0.001, 0.10)
+                
+                # Penalty 3: Geopolitical Uncertainty
+                # If GPR/Defense/Oil are the main drivers, reduce confidence
+                geo_penalty = 0.0
+                if "LMT" in drivers or "RTX" in drivers: 
+                    geo_penalty = 0.08 # War is unpredictable
+                
+                final_confidence = base_confidence - shock_penalty - chaos_penalty - geo_penalty
+                final_confidence = max(0.40, min(0.99, final_confidence)) # Cap between 40% and 99%
+
+                # Display Dynamic Metric
+                st.metric("Model Confidence", f"{final_confidence:.1%}", delta=f"{(final_confidence-0.90):.1%}")
+                
+                if final_confidence < 0.70:
+                    st.caption("⚠️ Low confidence due to extreme simulation parameters.")
+
+                # --- TOP IMPACTS TABLE ---
                 sorted_impacts = sorted(
                     [x for x in impacts.items() if x[0] not in drivers], 
                     key=lambda x: abs(x[1]), reverse=True
@@ -1615,7 +1647,7 @@ def main():
                     with st.spinner("Analyzing..."):
                         driver_str = ", ".join([f"{k} ({v:.1%})" for k,v in drivers.items()])
                         outcome_str = ", ".join([f"{x[0]} ({x[1]:.1%})" for x in sorted_impacts]) if sorted_impacts else "Minimal."
-                        prompt = f"Explain the logic. Input: {driver_str}. Outcome: {outcome_str}."
+                        prompt = f"Explain the logic. Input: {driver_str}. Outcome: {outcome_str}. Confidence: {final_confidence:.1%}."
                         st.write(generate_ai_analysis(prompt))
             else:
                 st.write("Awaiting results...")
