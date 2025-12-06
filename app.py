@@ -1661,7 +1661,8 @@ def main():
                                 analysis_text = (
                                     f"### ✅ Validated Connection\n"
                                     f"**{t_name}** is a statistically verified driver of **{o_name}**.\n\n"
-                                    f"* **Magnitude:** For every **$1.00** shift in {t_name}, {o_name} is expected to move by **${beta:.2f}**.\n"
+                                    # CHANGE IS HERE: Added backslashes (\) before the $ signs
+                                    f"* **Magnitude:** For every **\$1.00** shift in {t_name}, {o_name} is expected to move by **\${beta:.2f}**.\n" 
                                     f"* **Robustness:** This relationship passed stress testing with a score of **{p_val:.2f}** (High Confidence). "
                                     f"It is unlikely to be a random coincidence."
                                 )
