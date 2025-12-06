@@ -29,19 +29,56 @@ def add_unique_company_features(data: HeteroData) -> HeteroData:
     Injects the same shape of random features so the model structure matches.
     """
     logger.info("--- Injecting Unique Random Features for Inference ---")
+    
+    # --- NEW: Set Seed for Consistency ---
+    # This ensures that when the Explainer runs later, it sees the exact same 
+    # "random" features as the Inference engine did.
+    torch.manual_seed(42)
+    
     num_companies = data['Company'].num_nodes
     
     # Must match the embedding_dim from train.py (16)
     embedding_dim = 16
     
-    # Note: Since we are using random noise, the specific values will differ 
-    # from training unless we saved them to DB. For the purpose of "breaking clumping"
-    # and getting the model to run, this is acceptable. 
     unique_features = torch.randn(num_companies, embedding_dim)
     
     data['Company'].x = unique_features
     logger.info(f"Assigned random feature vectors of shape {unique_features.shape}")
     return data
+
+def get_inference_resources():
+    """
+    --- NEW HELPER FOR STREAMLIT / EXPLAINER ---
+    Loads the Data and the Model and returns them.
+    Does NOT run the full batch prediction or CSV export.
+    This allows the App to 'borrow' the model for explanation purposes.
+    """
+    config = load_config()
+    if not config: return None, None, None
+
+    # 1. Load Data
+    pipeline = GNNPipeline(config)
+    data = pipeline.get_graph_data()
+    if data is None: return None, None, None
+
+    # 2. Inject Features (Using the fixed seed)
+    data = add_unique_company_features(data)
+
+    # 3. Load Model
+    model_path = "gnn_risk_model.pth"
+    if not os.path.exists(model_path):
+        logger.error(f"FATAL: Model file '{model_path}' not found.")
+        return None, None, None
+
+    try:
+        # hidden_dim=32 matches your train.py
+        model = create_hetero_model(data, hidden_dim=32, out_dim=3)
+        model.load_state_dict(torch.load(model_path))
+        model.eval()
+        return model, data, config
+    except Exception as e:
+        logger.error(f"Error loading model resources: {e}")
+        return None, None, None
 
 def export_to_csv(config: Dict[str, Any], filename="live_risk_scores.csv"):
     """
@@ -112,7 +149,7 @@ def export_to_csv(config: Dict[str, Any], filename="live_risk_scores.csv"):
             df.to_csv(filename, index=False)
             logger.info(f"✅ CSV Export Successful: Saved {len(df)} clean records to {filename}")
             
-            # Log how many Zombies were killed
+            # Log how many Zombies were killed (Restored this logic)
             zombies_killed = len(raw_data) - len(clean_data)
             if zombies_killed > 0:
                 logger.info(f"👻 Removed {zombies_killed} 'Zombie' tickers (e.g., ATVI, ABC) from export.")
@@ -128,36 +165,9 @@ def run_inference():
     """
     logger.info("🚀 Starting GNN inference script...")
     
-    config = load_config()
-    if not config:
-        return
-
-    # --- 1. Load Graph Data ---
-    pipeline = GNNPipeline(config)
-    data = pipeline.get_graph_data()
-    
-    if data is None:
-        logger.error("Failed to load graph data. Exiting.")
-        return
-
-    # --- 2. Inject Features (CRITICAL FIX) ---
-    # We must do this BEFORE creating the model so input dimensions match the saved file.
-    data = add_unique_company_features(data)
-
-    # --- 3. Initialize Model ---
-    # CRITICAL: hidden_dim must be 32 to match train.py (was 64)
-    model_path = "gnn_risk_model.pth"
-    if not os.path.exists(model_path):
-        logger.error(f"FATAL: Model file '{model_path}' not found.")
-        return
-
-    try:
-        model = create_hetero_model(data, hidden_dim=32, out_dim=3)
-        model.load_state_dict(torch.load(model_path))
-        model.eval()
-        logger.info(f"Successfully loaded model from {model_path}")
-    except Exception as e:
-        logger.error(f"Error loading model: {e}")
+    # --- CHANGED: Use the helper to get resources ---
+    model, data, config = get_inference_resources()
+    if model is None:
         return
 
     # --- 4. Run Inference ---
@@ -200,6 +210,9 @@ def run_inference():
         logger.info(f"Generated risk scores for {len(risk_scores)} companies.")
 
         # --- 5. Write Predictions ---
+        # We need to re-init pipeline here just to access the save method
+        # (Or we could have returned pipeline from get_resources, but this is fine)
+        pipeline = GNNPipeline(config)
         pipeline.save_predictions(risk_scores)
 
         # --- 6. Export ---

@@ -17,6 +17,9 @@ import google.generativeai as genai
 import plotly.express as px
 import plotly.graph_objects as go 
 from polygon import RESTClient
+import torch
+from gnn_explainer_logic import setup_explainer, explain_prediction
+from predict import get_inference_resources
 
 # --- Local Imports ---
 from database_manager import DatabaseManager
@@ -739,6 +742,87 @@ def get_top_ripple_effects(all_events: list, threshold: float) -> pd.DataFrame |
     return df
 
 # ==============================================================================
+# --- GNN EXPLAINER HELPERS ---
+# ==============================================================================
+@st.cache_data
+def get_sorted_tickers():
+    """
+    CRITICAL: Fetches all tickers sorted alphabetically.
+    This enables us to map 'AAPL' -> Index 4 for the GNN.
+    MUST match the sorting logic used in train.py/gnn_pipeline.py.
+    """
+    config = get_cloud_config_dict()
+    db = DatabaseManager(config)
+    # Ensure we sort ASCending to match standard LabelEncoder behavior
+    query = "MATCH (c:Company) RETURN c.ticker as ticker ORDER BY c.ticker ASC"
+    res = db.execute_read(query)
+    db.close()
+    return [r['ticker'] for r in res]
+
+def visualize_explanation(explainer_graph: nx.DiGraph, node_map_list: list):
+    """
+    Renders the subgraph returned by GNNExplainer.
+    Maps 'Company_123' back to 'AAPL' using the node_map_list.
+    """
+    # 1. Remap Labels (Index -> Ticker)
+    mapping = {}
+    for node in explainer_graph.nodes():
+        if "Company_" in node:
+            try:
+                # Extract index "Company_42" -> 42
+                idx = int(node.split("_")[1])
+                if 0 <= idx < len(node_map_list):
+                    mapping[node] = node_map_list[idx]
+                else:
+                    mapping[node] = f"Unknown_{idx}"
+            except:
+                mapping[node] = node
+        else:
+            mapping[node] = node # Event nodes or other types
+            
+    # Apply mapping
+    G_remapped = nx.relabel_nodes(explainer_graph, mapping)
+    
+    # 2. PyVis Setup
+    net = Network(height="600px", width="100%", notebook=True, directed=True, bgcolor="#111111", font_color="white")
+    net.from_nx(G_remapped)
+    
+    # 3. Style based on Importance
+    for edge in net.edges:
+        # The explainer logic puts 'weight' as the importance score (0.0 - 1.0)
+        # We retrieve it (PyVis sometimes moves attributes around)
+        try:
+            importance = float(edge.get('weight', 0.5)) 
+        except:
+            importance = 0.5
+
+        edge['value'] = importance # Thickness based on importance
+        edge['title'] = f"Importance: {importance:.2%}"
+        
+        # Color gradient: Low importance = Grey, High = Red/Gold
+        if importance > 0.8:
+            edge['color'] = "#FFD700" # Gold
+        elif importance > 0.6:
+            edge['color'] = "#FF4500" # RedOrange
+        else:
+            edge['color'] = "#777777" # Grey
+            
+    # 4. Style Nodes
+    for node in net.nodes:
+        # If it's a Ticker (exists in our map), color it Blue
+        if node['id'] in mapping.values():
+            node['color'] = "#00BFFF" # Deep Sky Blue for Companies
+            node['size'] = 25
+            node['shape'] = 'dot'
+            
+    net.set_options('{"physics": {"forceAtlas2Based": {"gravitationalConstant": -50, "springLength": 100}}}')
+    
+    # Save
+    html_file = f"explainer_{uuid.uuid4().hex}.html"
+    net.save_graph(html_file)
+    return html_file
+
+# ==============================================================================
 # --- MAIN STREAMLIT APPLICATION ---
 # ==============================================================================
 def main():
@@ -772,9 +856,10 @@ def main():
         st.rerun()
 
     # --- UPDATED TABS DEFINITION ---
-    tab_events, tab_explore, tab_simulate, tab_path, tab_help = st.tabs([
-        "🔔 Recent Events", "🗺️ Explore Graph", "🔬 Simulate Scenarios", "↔️ Causal Pathfinding", "📘 Help & Guide"
+    tab_events, tab_explore, tab_simulate, tab_path, tab_xray, tab_help = st.tabs([
+        "🔔 Recent Events", "🗺️ Explore Graph", "🔬 Simulate Scenarios", "↔️ Causal Pathfinding", "🔮 GNN X-Ray", "📘 Help & Guide"
     ])
+
 
     # --- TAB 1: RECENT EVENTS (UPDATED WITH FILTERS) ---
     with tab_events:
@@ -1534,7 +1619,97 @@ def main():
                         st.error(f"Pathfinding Error: {e}")
 
     # ==============================================================================
-    # --- TAB 5: INSTRUCTIONS & GUIDE ---
+    # --- TAB 5: GNN X-RAY (EXPLAINABILITY) ---
+    # ==============================================================================
+    with tab_xray:
+        st.header("🔮 GNN X-Ray: Why did the model predict this?")
+        st.markdown("""
+        This tool uses **GNNExplainer** to mathematically identify the specific sub-graph that contributed most to a prediction.
+        It answers: *"Did the model flag this company because of its own financials, or because of a supplier crash?"*
+        """)
+
+        # 1. Select Company
+        all_tickers = get_sorted_tickers()
+        
+        col_xr_sel, col_xr_act = st.columns([2, 1])
+        with col_xr_sel:
+            xray_ticker = st.selectbox("Select Company to Explain:", all_tickers, index=0, key="xray_ticker")
+        
+        with col_xr_act:
+            st.write("") # Spacer
+            st.write("") 
+            run_xray = st.button("🔍 Run Explainability Engine", type="primary")
+
+        if run_xray and xray_ticker:
+            try:
+                # 2. Find Index
+                if xray_ticker not in all_tickers:
+                    st.error("Ticker not found in mapping.")
+                else:
+                    target_idx = all_tickers.index(xray_ticker)
+                    
+                    with st.status("Running Mathematical Explanation...", expanded=True) as status:
+                        
+                        # A. Load Model Resources (Cached via predict.py helper)
+                        status.write("🧠 Loading Neural Network & Graph Data...")
+                        model, data, config = get_inference_resources()
+                        
+                        if model is None:
+                            status.update(label="Error loading model.", state="error")
+                            st.stop()
+                            
+                        # B. Setup Explainer
+                        status.write("⚙️ Configuring GNNExplainer Mask...")
+                        explainer = setup_explainer(model)
+                        
+                        # C. Run Optimization
+                        status.write(f"📉 Optimizing Mask for Node {target_idx} ({xray_ticker})...")
+                        subgraph = explain_prediction(explainer, data, target_idx)
+                        
+                        status.update(label="Explanation Complete!", state="complete")
+                    
+                    # 3. Visualize
+                    if subgraph.number_of_nodes() == 0:
+                        st.warning("The model did not find any specific neighbors that strongly influenced this prediction (Low Confidence or Isolated Node).")
+                    else:
+                        st.subheader(f"The 'Why' for {xray_ticker}")
+                        st.caption("Gold/Red edges represent the **Strongest Causal Factors** used by the AI.")
+                        
+                        html_file = visualize_explanation(subgraph, all_tickers)
+                        
+                        with open(html_file, 'r', encoding='utf-8') as f:
+                            st.components.v1.html(f.read(), height=600, scrolling=True)
+                        
+                        # Cleanup temp file
+                        if os.path.exists(html_file): os.remove(html_file)
+
+                        # 4. AI Interpretation of the Explanation
+                        if gemini_active:
+                            st.divider()
+                            if st.button("🤖 Interpret this Subgraph"):
+                                factor_nodes = [n for n in subgraph.nodes if "Company" in str(n) or "Event" in str(n)]
+                                # Remap for prompt
+                                readable_factors = []
+                                for f in factor_nodes:
+                                    if "Company_" in f:
+                                        idx = int(f.split("_")[1])
+                                        if idx < len(all_tickers): readable_factors.append(all_tickers[idx])
+                                    else:
+                                        readable_factors.append(f)
+                                
+                                prompt = f"""
+                                The GNN model predicted a risk score for {xray_ticker}. 
+                                The 'Explainability' engine identified these specific nodes as the mathematical drivers of that decision: {readable_factors}.
+                                Explain WHY these specific connections likely drove the risk calculation.
+                                """
+                                st.write(generate_ai_analysis(prompt))
+
+            except Exception as e:
+                st.error(f"X-Ray Failed: {e}")
+                logger.error(f"X-Ray Error: {e}")
+
+    # ==============================================================================
+    # --- TAB 6: INSTRUCTIONS & GUIDE ---
     # ==============================================================================
     with tab_help:
         st.header("📘 User Guide & Documentation")
@@ -1542,7 +1717,7 @@ def main():
         # Sidebar for quick navigation within the Help tab
         help_choice = st.radio(
             "Navigate Guide:",
-            ["Introduction", "Recent Events", "Explore Graph", "Simulate Scenarios", "Causal Pathfinding"],
+            ["Introduction", "Recent Events", "Explore Graph", "Simulate Scenarios", "Causal Pathfinding", "GNN X-Ray"],
             horizontal=True
         )
         
@@ -1554,9 +1729,9 @@ def main():
             This application moves beyond simple price correlations to map the **causal structure** of the financial markets.
 
             **New in this Version:**
-            * **🏭 Supply Chain Mining:** The system now reads **SEC 10-K Filings** to find hard supply chain dependencies (e.g., *Apple buys from TSMC*).
+            * **🔮 GNN X-Ray:** A "Glass Box" tool that explains *why* the AI predicted a specific risk score.
+            * **🏭 Supply Chain Mining:** The system reads **SEC 10-K Filings** to find hard supply chain dependencies.
             * **🌍 Macro Intelligence:** The graph includes "Super Nodes" like **Crude Oil** and **10-Year Treasury Yields**.
-            * **🧮 Real-Math Risk:** Nodes are colored based on live **Volatility & RSI** data (0.0 to 1.0).
 
             **Visual Legend:**
             * 🔴 **Red Node:** High Risk (Top 5% Volatility).
@@ -1586,11 +1761,11 @@ def main():
             **Purpose:** Visual map of your financial universe.
 
             **New Feature: Sector Filters**
-            * Use the **"Filter by Sector"** dropdown to isolate specific industries (e.g., "Technology", "Energy").
+            * Use the **"Filter by Sector"** dropdown to isolate specific industries.
             * Select **"Macro"** to see how global factors like **Oil** or **Bond Yields** connect to the stock market.
 
             **Interpreting the Lines:**
-            * **Thick Blue Line:** A relationship explicitly stated in a company's annual report (10-K). This is the highest level of verification.
+            * **Thick Blue Line:** A relationship explicitly stated in a company's annual report (10-K).
             * **Dashed Grey Line:** A relationship inferred by Gemini AI based on news context.
             """)
         
@@ -1600,14 +1775,8 @@ def main():
             **Purpose:** A "Stress Test" lab. Ask "What If?" questions to forecast contagion.
 
             **Tools:**
-            1.  **🌪️ Systemic Vulnerability (The Butterfly Effect):**
-                * Runs a massive simulation crashing *every* company one by one.
-                * Identifies **"Super Spreaders"**: Companies whose failure would cause the most total damage to the network.
-            
-            2.  **🧪 Manual Simulation:**
-                * Select a trigger asset (e.g., "Crude Oil") and a shock score (e.g., -0.5).
-                * **Visual Graph:** Shows the "Blast Radius" (Source + Top 25 Victims).
-                * **AI Crisis Report:** Generates a "Breaking News" narrative explaining *why* the contagion spread this way.
+            1.  **🌪️ Systemic Vulnerability:** Identifies **"Super Spreaders"**—companies whose failure would cause the most total damage to the network.
+            2.  **🧪 Manual Simulation:** Select a trigger asset and a shock score to see the "Blast Radius" and generate an AI Crisis Report.
             """)
 
         elif help_choice == "Causal Pathfinding":
@@ -1616,13 +1785,24 @@ def main():
             **Purpose:** Find the hidden transmission chains between two assets (e.g., *How does a Bond Yield spike affect Nvidia?*).
 
             **Smart Diagnostics:**
-            * **Dynamic Filtering:** The "End Company" list only shows nodes that are *actually reachable* from your start node.
-            * **🚫 Sink Node Detection:** If you select a company that absorbs shocks but doesn't pass them on (a dead end), the system warns you.
-            * **🔄 Reverse Look:** If you hit a Sink Node, use the **"Analyze Incoming Factors"** button to flip the analysis and see what *drives* that company instead.
+            * **Dynamic Filtering:** Only shows nodes that are *actually reachable* from your start node.
+            * **🚫 Sink Node Detection:** Warns you if a company is a "dead end" (absorbs shocks but doesn't pass them on).
+            """)
 
-            **Interpreting the Path:**
-            * **Risk Level:** The cumulative risk of every node along the chain.
-            * **Mediators:** The nodes in the middle. If a mediator is "Green" (Stable), the shock might be absorbed before it reaches the target.
+        elif help_choice == "GNN X-Ray":
+            st.markdown("""
+            ### 🔮 GNN X-Ray (Explainability) Tab
+            **Purpose:** The "Why" button for Artificial Intelligence. 
+            
+            Standard AI gives you a score (e.g., "High Risk"), but acts like a Black Box. This tool turns it into a **Glass Box**.
+
+            **How it Works (The Math):**
+            * It uses **GNNExplainer**, a state-of-the-art algorithm that mathematically "masks" parts of the graph to see what changes the prediction.
+            * It asks: *"If I hide this Supplier relationship, does the risk score change?"* If yes, that supplier is critical.
+
+            **Visual Legend:**
+            * 🟡 **Gold / 🔴 Red Edges:** The **"Smoking Gun."** These are the critical connections that drove the AI's decision.
+            * ⚪ **Grey/Thin Edges:** Background noise. The AI ignored these relationships for this specific prediction.
             """)
 
 if __name__ == "__main__":
