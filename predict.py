@@ -28,7 +28,6 @@ def inject_inference_features(data: HeteroData) -> HeteroData:
     Must match train.py logic!
     Injects random noise features to match the model's input dimension (16).
     """
-    logger.info("--- Injecting Unique Random Features for Inference ---")
     # Use a fixed seed to ensure consistent features if run multiple times
     torch.manual_seed(42)
     
@@ -38,13 +37,19 @@ def inject_inference_features(data: HeteroData) -> HeteroData:
     # Generate random features [N, 16]
     unique_features = torch.randn(num_companies, embedding_dim)
     data['Company'].x = unique_features
-    logger.info(f"Assigned random feature vectors of shape {unique_features.shape}")
     return data
 
-def run_inference():
-    logger.info("🚀 Starting GNN inference script...")
+# ==============================================================================
+# --- RESTORED HELPER FUNCTION FOR APP.PY ---
+# ==============================================================================
+def get_inference_resources():
+    """
+    Loads the Pipeline, Model, and Data objects and returns them.
+    Used by Streamlit (app.py) to visualize the model without re-running predictions.
+    """
+    logger.info("🔌 App requested inference resources...")
 
-    # 1. Load Configuration
+    # 1. Load Config
     config = {}
     neo4j_uri = os.environ.get('NEO4J_URI')
     neo4j_user = os.environ.get('NEO4J_USER')
@@ -55,36 +60,46 @@ def run_inference():
     else:
         loaded = load_local_config()
         config = loaded if "neo4j" in loaded else {"neo4j": loaded}
-
+    
     if not config or "neo4j" not in config:
-        logger.critical("❌ No valid configuration found.")
-        sys.exit(1)
+        raise ValueError("Configuration not found.")
 
-    # 2. Initialize Pipeline ONCE (Critical for ID mapping)
+    # 2. Initialize Pipeline & Fetch Data
     pipeline = GNNPipeline(config)
     data = pipeline.get_graph_data()
-
+    
     if data is None:
-        logger.error("Failed to fetch graph data.")
-        return
+        raise ValueError("Failed to load graph data.")
 
-    # 3. Inject Features (Must match training)
+    # 3. Prepare Data (Inject Features)
     data = inject_inference_features(data)
 
     # 4. Load Model
-    # Hidden dim must match train.py (32)
     model = create_hetero_model(data, hidden_dim=32, out_dim=3)
-    
     script_dir = os.path.dirname(os.path.abspath(__file__))
     model_path = os.path.join(script_dir, "gnn_risk_model.pth")
     
-    try:
-        model.load_state_dict(torch.load(model_path))
+    if os.path.exists(model_path):
+        model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
         model.eval()
-        logger.info(f"✅ Model loaded from {model_path}")
+        logger.info("✅ Model loaded successfully for App.")
+    else:
+        raise FileNotFoundError(f"Model file not found at {model_path}")
+
+    return pipeline, model, data
+
+# ==============================================================================
+# --- MAIN SCRIPT EXECUTION ---
+# ==============================================================================
+def run_inference():
+    logger.info("🚀 Starting GNN inference script...")
+
+    try:
+        # Reuse the logic above to get resources
+        pipeline, model, data = get_inference_resources()
     except Exception as e:
-        logger.error(f"❌ Failed to load model: {e}")
-        return
+        logger.critical(f"❌ Initialization failed: {e}")
+        sys.exit(1)
 
     # 5. Run Prediction
     logger.info("🔮 Running model to generate risk scores...")
@@ -98,12 +113,12 @@ def run_inference():
         std_dev = risk_scores.std().item()
         logger.info(f"Model Score Std Dev: {std_dev:.6f} (Higher is better)")
 
-    # 6. Save to Neo4j AND Get Results
-    # This uses the SAME pipeline instance, so ticker_to_id is valid
+    # 6. Save to Neo4j
     updates = pipeline.save_predictions(risk_scores)
 
-    # 7. Export to CSV (Robust)
+    # 7. Export to CSV
     if updates:
+        script_dir = os.path.dirname(os.path.abspath(__file__))
         csv_path = os.path.join(script_dir, "live_risk_scores.csv")
         try:
             df = pd.DataFrame(updates)
