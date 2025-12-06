@@ -348,8 +348,6 @@ def render_truth_layer(ticker: str, db_manager: DatabaseManager):
 
     st.plotly_chart(fig)
 
-# ==========================
-====================================================
 # --- FUNCTION: Inject Live Risk Scores ---
 # ==============================================================================
 def inject_live_risk_data(graph: nx.DiGraph) -> nx.DiGraph:
