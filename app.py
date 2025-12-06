@@ -101,6 +101,16 @@ def generate_ai_analysis(prompt: str) -> str:
         return f"Error generating AI explanation: {str(e)}"
 
 # ==============================================================================
+# --- CRITICAL: INJECT SECRETS FOR PREDICT.PY ---
+# ==============================================================================
+# predict.py looks for env vars or config.json. On the cloud, config.json is missing.
+# We must manually inject the secrets into os.environ so the pipeline can connect.
+if "neo4j" in st.secrets:
+    os.environ["NEO4J_URI"] = st.secrets["neo4j"]["uri"]
+    os.environ["NEO4J_USER"] = st.secrets["neo4j"]["user"]
+    os.environ["NEO4J_PASSWORD"] = st.secrets["neo4j"]["password"]
+
+# ==============================================================================
 # --- NEW: VISUALIZATION HELPER (AI EDGE STYLING) ---
 # ==============================================================================
 def apply_ai_visual_styles(net: Network, nx_graph: nx.Graph):
