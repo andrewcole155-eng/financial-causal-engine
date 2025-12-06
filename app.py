@@ -1634,7 +1634,7 @@ def main():
                     except Exception as e:
                         st.error(f"Pathfinding Error: {e}")
 
-    # ==============================================================================
+# ==============================================================================
     # --- TAB 5: GNN X-RAY (EXPLAINABILITY) ---
     # ==============================================================================
     with tab_xray:
@@ -1688,7 +1688,6 @@ def main():
                 run_xray = st.button("🔍 Run Explainability Engine", type="primary")
 
             # --- EXECUTION LOGIC (WITH SESSION STATE) ---
-            
             # If button clicked, run math and SAVE to session state
             if run_xray and xray_ticker:
                 try:
@@ -1709,7 +1708,7 @@ def main():
                             explainer = setup_explainer(model)
                             
                             status.write(f"📉 Optimizing Mask for Node {target_idx} ({xray_ticker})...")
-                            # Step 2: Run explanation (It now returns Top-20 edges only)
+                            # Step 2: Run explanation (Returns Top-20 edges)
                             subgraph = explain_prediction(explainer, data, target_idx)
                             
                             status.update(label="Explanation Complete!", state="complete")
@@ -1723,7 +1722,7 @@ def main():
                     logger.error(f"X-Ray Error: {e}")
 
             # --- DISPLAY LOGIC (CHECKS SESSION STATE) ---
-            # This runs on every reload, keeping the graph visible
+            # This is OUTSIDE the try/except block so it runs on every reload
             if 'xray_subgraph' in st.session_state and st.session_state['xray_subgraph'] is not None:
                 
                 subgraph = st.session_state['xray_subgraph']
@@ -1766,10 +1765,6 @@ def main():
                                 explanation = generate_ai_analysis(prompt)
                                 st.info("🤖 **Gemini Analysis**")
                                 st.write(explanation)
-
-                except Exception as e:
-                    st.error(f"X-Ray Failed: {e}")
-                    logger.error(f"X-Ray Error: {e}")
 
     # ==============================================================================
     # --- TAB 6: INSTRUCTIONS & GUIDE ---
