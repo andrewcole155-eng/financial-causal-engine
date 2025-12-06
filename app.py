@@ -1389,7 +1389,7 @@ def main():
             st.subheader("🎛️ Control Panel")
             st.info("Set macro-variable shocks:")
 
-            # Define Key Macro Drivers (Hardcoded to match known tickers in your ingest)
+            # Define Key Macro Drivers
             macro_drivers = {
                 "^TNX": "Interest Rates (10Y)",
                 "CL=F": "Crude Oil",
@@ -1400,7 +1400,6 @@ def main():
             # Create Sliders dynamically
             macro_shocks = {}
             for ticker, label in macro_drivers.items():
-                # We use a key based on ticker to ensure uniqueness
                 val = st.slider(
                     f"{label} Shock (%)", 
                     min_value=-20.0, 
@@ -1411,17 +1410,55 @@ def main():
                     help=f"Simulate a percentage move in {label}"
                 )
                 if val != 0:
-                    macro_shocks[ticker] = val / 100.0 # Convert to decimal impact
+                    macro_shocks[ticker] = val / 100.0 
 
             st.divider()
             
-            # Target Selector (Optional - to focus the graph)
-            all_nodes = sorted(list(financial_graph.nodes()))
-            target_focus = st.selectbox(
-                "Focus Graph On (Optional):", 
-                ["Full Market"] + all_nodes,
-                index=0
+            # --- NEW: SECTOR & ASSET SELECTION LOGIC ---
+            st.markdown("### 🎯 Focus Graph")
+
+            # 1. Prepare Data for Dropdowns
+            # Get unique sectors
+            all_sectors = sorted(list(set(
+                financial_graph.nodes[n].get('sector', 'Unknown') 
+                for n in financial_graph.nodes()
+                if financial_graph.nodes[n].get('sector')
+            )))
+            
+            # Helper for name formatting
+            company_map = load_company_names()
+            def format_sim_ticker(ticker):
+                if ticker == "Full Market": return "Full Market"
+                name = company_map.get(ticker)
+                if not name and financial_graph.has_node(ticker):
+                    name = financial_graph.nodes[ticker].get('name')
+                return f"{name} ({ticker})" if name else ticker
+
+            # 2. Sector Dropdown
+            selected_sim_sector = st.selectbox(
+                "Filter by Sector:", 
+                ["All Sectors"] + all_sectors,
+                key="sim_sector_select"
             )
+
+            # 3. Filter the List based on Sector
+            sim_node_options = sorted(list(financial_graph.nodes()))
+            
+            if selected_sim_sector != "All Sectors":
+                sim_node_options = [
+                    n for n in sim_node_options 
+                    if financial_graph.nodes[n].get('sector') == selected_sim_sector
+                ]
+            
+            # 4. Asset Dropdown (Updated with Filter)
+            target_focus = st.selectbox(
+                "Focus Graph On (Asset):", 
+                ["Full Market"] + sim_node_options,
+                index=0,
+                format_func=format_sim_ticker,
+                key="sim_asset_select"
+            )
+            # -------------------------------------------
 
             st.write("")
             run_sim = st.button("🚀 Run Counterfactual", type="primary", use_container_width=True)
