@@ -1361,7 +1361,7 @@ def main():
                             st.write(explanation)
 
 # ==============================================================================
-    # --- TAB 3: SIMULATE SCENARIOS (FULL MACRO + GEOPOLITICS) ---
+    # --- TAB 3: SIMULATE SCENARIOS (EVOLVED SINGLE ASSET + MACRO) ---
     # ==============================================================================
     with tab_simulate:
         st.header("🔬 Causal Simulation Engine")
@@ -1396,6 +1396,7 @@ def main():
             
             simulation_inputs = {} 
 
+            # --- MODE A: MACRO STRESS TEST ---
             if sim_mode == "🌍 Macro Stress Test":
                 # 1. Fed & Economy
                 st.markdown("### 🏛️ Economy")
@@ -1405,11 +1406,9 @@ def main():
                 if sim_sahm >= 0.50: st.error(f"📉 RECESSION (Signal: {sim_sahm:.2f})")
                 else: st.success(f"📈 Growth (Signal: {sim_sahm:.2f})")
 
-                # 2. NEW: GEOPOLITICAL SHOCKS (From your Image C)
+                # 2. Geopolitical Shocks
                 st.markdown("### ⚔️ Geopolitical Risk (GPR)")
-                # Normal State = 100. Ukraine War Start ~= 300.
                 gpr_index = st.slider("GPR Index (War Risk)", 50, 500, 100, 50, help="100=Normal, 300+=Major Conflict")
-                
                 if gpr_index > 200: st.warning("⚠️ High Conflict Risk Active")
 
                 # 3. Market Drivers
@@ -1429,51 +1428,35 @@ def main():
                     force_earnings = st.checkbox("📊 Earnings Season", value=bool(real_macro.get('is_earnings_season', 0)))
                     force_lull = st.checkbox("🏖️ Summer Lull", value=bool(real_macro.get('is_summer_lull', 0)))
 
-                # --- LOGIC PROCESSING ---
-                # A. Fed Rate
+                # --- MACRO LOGIC PROCESSING ---
                 rate_diff = (sim_rate - real_macro.get('interest_rate', 5.33)) / 100.0
                 if rate_diff != 0: simulation_inputs["^TNX"] = rate_diff 
                 
-                # B. Recession Logic
                 if sim_sahm >= 0.50:
                     if "^VIX" not in simulation_inputs: simulation_inputs["^VIX"] = 0.50 
-                    if "CL=F" not in simulation_inputs: simulation_inputs["CL=F"] = -0.20 # Demand destruction
+                    if "CL=F" not in simulation_inputs: simulation_inputs["CL=F"] = -0.20 
                 
-                # C. GEOPOLITICAL LOGIC (The New Enhancement)
-                # If GPR is high, we shock Oil (Supply fears) and Defense Stocks
                 if gpr_index > 120:
-                    # Calculate shock magnitude relative to baseline of 100
-                    war_shock = (gpr_index - 100) / 100.0 * 0.10 # Scale factor
-                    
-                    # 1. Boost Oil (if not manually set)
-                    if "CL=F" not in simulation_inputs: 
-                        simulation_inputs["CL=F"] = war_shock 
-                    
-                    # 2. Boost Defense Contractors (Hardcoded Tickers)
+                    war_shock = (gpr_index - 100) / 100.0 * 0.10
+                    if "CL=F" not in simulation_inputs: simulation_inputs["CL=F"] = war_shock 
                     defense_tickers = ["LMT", "RTX", "NOC", "GD", "LHX"]
-                    for dt in defense_tickers:
-                        simulation_inputs[dt] = war_shock * 1.5 # Defense stocks rally harder
-                    
-                    # 3. Spike VIX (Fear)
-                    if "^VIX" not in simulation_inputs:
-                        simulation_inputs["^VIX"] = war_shock * 2.0
+                    for dt in defense_tickers: simulation_inputs[dt] = war_shock * 1.5
+                    if "^VIX" not in simulation_inputs: simulation_inputs["^VIX"] = war_shock * 2.0
 
-                # D. Seasonality Logic
                 if force_q4:
-                     simulation_inputs["AMZN"] = 0.05
-                     simulation_inputs["WMT"] = 0.03
+                     simulation_inputs["AMZN"] = 0.05; simulation_inputs["WMT"] = 0.03
                 if force_school:
-                    simulation_inputs["AAPL"] = 0.03
-                    simulation_inputs["TGT"] = 0.04
+                    simulation_inputs["AAPL"] = 0.03; simulation_inputs["TGT"] = 0.04
                 if force_earnings and "^VIX" not in simulation_inputs:
                     simulation_inputs["^VIX"] = 0.15
                 if force_lull:
-                    simulation_inputs["NVDA"] = -0.02
-                    simulation_inputs["TSLA"] = -0.02
+                    simulation_inputs["NVDA"] = -0.02; simulation_inputs["TSLA"] = -0.02
 
+            # --- MODE B: EVOLVED SINGLE ASSET SHOCK ---
             else:
-                # Single Asset Mode
-                st.info("Shock a specific company.")
+                st.info("Simulate a specific corporate event with economic context.")
+                
+                # 1. Asset Selection
                 company_map = load_company_names()
                 def format_asset_label(ticker):
                     name = company_map.get(ticker)
@@ -1487,9 +1470,44 @@ def main():
                 if sec_filter != "All":
                     node_opts = [n for n in node_opts if financial_graph.nodes[n].get('sector') == sec_filter]
 
-                target_asset = st.selectbox("Asset:", node_opts, format_func=format_asset_label)
-                shock_val = st.slider("Shock Magnitude (%)", -50.0, 50.0, -10.0, 1.0)
-                if target_asset: simulation_inputs[target_asset] = shock_val / 100.0
+                target_asset = st.selectbox("Target Asset:", node_opts, format_func=format_asset_label)
+
+                st.divider()
+
+                # 2. Scenario Presets (The "Why")
+                st.markdown("### 💥 Event Scenario")
+                scenario_type = st.selectbox(
+                    "Event Type:", 
+                    ["Custom Input", "📉 Earnings Miss (-15%)", "🚀 Earnings Beat (+15%)", "⚖️ Regulatory Fine (-8%)", "⛓️ Supply Chain Failure (-10%)", "🤝 Acquisition Rumor (+12%)"]
+                )
+                
+                # Smart Defaults
+                default_shock = 0.0
+                if "Earnings Miss" in scenario_type: default_shock = -15.0
+                elif "Earnings Beat" in scenario_type: default_shock = 15.0
+                elif "Regulatory" in scenario_type: default_shock = -8.0
+                elif "Supply Chain" in scenario_type: default_shock = -10.0
+                elif "Acquisition" in scenario_type: default_shock = 12.0
+                elif "Custom" in scenario_type: default_shock = -5.0
+                
+                shock_val = st.slider(f"Shock Magnitude for {target_asset} (%)", -50.0, 50.0, default_shock, 0.5)
+                
+                if target_asset: 
+                    simulation_inputs[target_asset] = shock_val / 100.0
+
+                # 3. Background Economy (The Context)
+                st.markdown("### 🌍 Background Economy")
+                with st.expander("Adjust Market Conditions (Optional)", expanded=False):
+                    st.caption("A shock hits harder during a recession. Configure the background here.")
+                    bg_col1, bg_col2 = st.columns(2)
+                    with bg_col1:
+                        bg_rate = st.slider("Fed Rates (%)", 0.0, 10.0, float(real_macro.get('interest_rate', 5.33)), 0.25, key="bg_rate")
+                        rate_diff = (bg_rate - 5.33) / 100.0
+                        if rate_diff != 0: simulation_inputs["^TNX"] = rate_diff
+                    with bg_col2:
+                        bg_vix = st.slider("Market Fear (VIX)", 10.0, 80.0, 15.0, 1.0, key="bg_vix")
+                        vix_shock = (bg_vix - 15.0) / 100.0
+                        if vix_shock != 0: simulation_inputs["^VIX"] = vix_shock
 
             st.divider()
             run_btn = st.button("🚀 Run Simulation", type="primary", use_container_width=True)
@@ -1506,7 +1524,6 @@ def main():
                 else:
                     # 1. Propagate
                     for driver, magnitude in simulation_inputs.items():
-                        # Handle case where driver isn't in graph (like implicit Defense tickers not loaded yet)
                         if driver in financial_graph:
                             impacts = calculate_impact_scores(financial_graph, driver, magnitude)
                             for node, data in impacts.items():
@@ -1600,30 +1617,26 @@ def main():
                 # --- DYNAMIC CONFIDENCE CALCULATION ---
                 base_confidence = 0.95
                 
-                # Penalty 1: Extreme Shocks (Extrapolation Risk)
-                # If you shock something by > 20%, models get less reliable
+                # Penalty 1: Extreme Shocks
                 max_shock_val = 0.0
                 if drivers:
                     max_shock_val = max([abs(v) for v in drivers.values()])
                 
                 shock_penalty = 0.0
                 if max_shock_val > 0.10: shock_penalty += 0.05
-                if max_shock_val > 0.30: shock_penalty += 0.15 # Huge penalty for extreme shocks
+                if max_shock_val > 0.30: shock_penalty += 0.15 
                 
-                # Penalty 2: System Chaos (Too many ripples)
-                # More than 50 nodes moving means high complexity/uncertainty
+                # Penalty 2: System Chaos
                 chaos_penalty = min(nodes_involved * 0.001, 0.10)
                 
                 # Penalty 3: Geopolitical Uncertainty
-                # If GPR/Defense/Oil are the main drivers, reduce confidence
                 geo_penalty = 0.0
                 if "LMT" in drivers or "RTX" in drivers: 
-                    geo_penalty = 0.08 # War is unpredictable
+                    geo_penalty = 0.08 
                 
                 final_confidence = base_confidence - shock_penalty - chaos_penalty - geo_penalty
-                final_confidence = max(0.40, min(0.99, final_confidence)) # Cap between 40% and 99%
+                final_confidence = max(0.40, min(0.99, final_confidence))
 
-                # Display Dynamic Metric
                 st.metric("Model Confidence", f"{final_confidence:.1%}", delta=f"{(final_confidence-0.90):.1%}")
                 
                 if final_confidence < 0.70:
