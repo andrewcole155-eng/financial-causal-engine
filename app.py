@@ -1360,12 +1360,12 @@ def main():
                             st.success("Generated Insight:")
                             st.write(explanation)
 
-    # ==============================================================================
-    # --- TAB 3: SIMULATE SCENARIOS (MOBILE OPTIMIZED) ---
+# ==============================================================================
+    # --- TAB 3: SIMULATE SCENARIOS (FULL MACRO-CAUSAL ENGINE) ---
     # ==============================================================================
     with tab_simulate:
         st.header("🔬 Causal Simulation Engine")
-        st.caption("Simulate market shocks. Adjust 'Max Nodes' if viewing on mobile.")
+        st.caption("Simulate market shocks, Sahm Rule triggers, and Seasonality effects.")
 
         financial_graph = get_full_graph()
         if financial_graph is None:
@@ -1388,8 +1388,7 @@ def main():
         with col_inputs:
             st.subheader("🎛️ Scenario Controls")
             
-            # --- NEW: PERFORMANCE CONTROL ---
-            # This fixes the Mobile Crash issue. Default to 50 for safety.
+            # --- PERFORMANCE CONTROL (Mobile Fix) ---
             max_display_nodes = st.slider("📉 Max Nodes (Performance)", 10, 200, 60, help="Lower this if on mobile.")
 
             st.divider()
@@ -1399,6 +1398,7 @@ def main():
             simulation_inputs = {} 
 
             if sim_mode == "🌍 Macro Stress Test":
+                # 1. Fed & Economy
                 st.markdown("### 🏛️ Federal Reserve")
                 sim_rate = st.slider("Fed Funds Rate (%)", 0.0, 10.0, float(real_macro.get('interest_rate', 5.33)), 0.25)
                 sim_sahm = st.slider("Sahm Signal", 0.0, 2.0, float(real_macro.get('sahm_signal_value', 0.0)))
@@ -1407,26 +1407,46 @@ def main():
                 if is_recession: st.error(f"📉 RECESSION (Signal: {sim_sahm:.2f})")
                 else: st.success(f"📈 Growth (Signal: {sim_sahm:.2f})")
 
+                # 2. Market Drivers
                 st.markdown("### 🛢️ Market Drivers")
                 macro_drivers = {"CL=F": "Crude Oil", "^VIX": "Volatility (VIX)", "DX-Y.NYB": "US Dollar"}
                 for ticker, label in macro_drivers.items():
                     val = st.slider(f"{label} Shock (%)", -30.0, 30.0, 0.0, 1.0, key=f"mac_{ticker}")
                     if val != 0: simulation_inputs[ticker] = val / 100.0
 
-                st.markdown("### 🗓️ Seasonality")
-                force_q4 = st.checkbox("Force Q4 'Retail Season'", value=bool(real_macro.get('is_q4_retail', 0)))
+                # 3. Expanded Seasonality
+                st.markdown("### 🗓️ Market Cycles")
+                sea_col1, sea_col2 = st.columns(2)
+                with sea_col1:
+                    force_q4 = st.checkbox("🎄 Q4 Retail", value=bool(real_macro.get('is_q4_retail', 0)))
+                    force_school = st.checkbox("🎒 Back-to-School", value=bool(real_macro.get('is_back_to_school', 0)))
+                with sea_col2:
+                    force_earnings = st.checkbox("📊 Earnings Season", value=bool(real_macro.get('is_earnings_season', 0)))
+                    force_lull = st.checkbox("🏖️ Summer Lull", value=bool(real_macro.get('is_summer_lull', 0)))
 
-                # Process Inputs
+                # --- PROCESS INPUTS ---
                 rate_diff = (sim_rate - real_macro.get('interest_rate', 5.33)) / 100.0
                 if rate_diff != 0: simulation_inputs["^TNX"] = rate_diff 
+                
                 if is_recession:
                     if "^VIX" not in simulation_inputs: simulation_inputs["^VIX"] = 0.50 
                     if "CL=F" not in simulation_inputs: simulation_inputs["CL=F"] = -0.20
+                
+                # Seasonality Logic Injection
                 if force_q4:
                      simulation_inputs["AMZN"] = 0.05
                      simulation_inputs["WMT"] = 0.03
+                if force_school:
+                    simulation_inputs["AAPL"] = 0.03
+                    simulation_inputs["TGT"] = 0.04
+                if force_earnings and "^VIX" not in simulation_inputs:
+                    simulation_inputs["^VIX"] = 0.15
+                if force_lull:
+                    simulation_inputs["NVDA"] = -0.02
+                    simulation_inputs["TSLA"] = -0.02
 
             else:
+                # Single Asset Mode
                 st.info("Shock a specific company.")
                 company_map = load_company_names()
                 def format_asset_label(ticker):
@@ -1465,20 +1485,12 @@ def main():
                             for node, data in impacts.items():
                                 aggregated_impacts[node] = aggregated_impacts.get(node, 0.0) + data['score']
                         
-                    # --- CRITICAL FIX: SORT & LIMIT NODES ---
-                    # 1. Sort all impacts by absolute magnitude (biggest impact first)
+                    # --- OPTIMIZATION: SORT & LIMIT NODES ---
                     sorted_impacts = sorted(aggregated_impacts.items(), key=lambda x: abs(x[1]), reverse=True)
-                    
-                    # 2. Slice the Top N (defined by slider)
                     top_impacts = sorted_impacts[:max_display_nodes]
                     
-                    # 3. Extract tickers
                     sig_nodes = [n[0] for n in top_impacts]
-                    
-                    # 4. ALWAYS include the drivers (so they don't disappear)
-                    sig_nodes.extend(simulation_inputs.keys())
-                    
-                    # 5. Remove Duplicates & Verify existence
+                    sig_nodes.extend(simulation_inputs.keys()) # Keep drivers
                     sig_nodes = list(set(sig_nodes))
                     sig_nodes = [n for n in sig_nodes if n in financial_graph]
 
@@ -1501,11 +1513,9 @@ def main():
                             nid = node['id']
                             impact = aggregated_impacts.get(nid, 0.0)
                             
-                            # Size: Drivers are big, Victims depend on impact
+                            # Styling
                             if nid in simulation_inputs:
-                                node['size'] = 40
-                                node['color'] = "#ffffff"
-                                node['shape'] = "diamond"
+                                node['size'] = 40; node['color'] = "#ffffff"; node['shape'] = "diamond"
                             else:
                                 node['size'] = 15 + (abs(impact) * 60)
                                 if impact < 0: node['color'] = "#ff4b4b"
@@ -1513,7 +1523,7 @@ def main():
                             
                             node['title'] = f"Impact: {impact:.2%}"
 
-                        # PHYSICS: Strong Repulsion to prevent "Flower" clumping
+                        # PHYSICS: ForceAtlas2 (Web-like layout)
                         net.set_options("""
                         var options = {
                           "nodes": { "font": { "size": 14, "color": "#ffffff" } },

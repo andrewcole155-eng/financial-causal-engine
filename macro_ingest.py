@@ -94,26 +94,41 @@ def calculate_sahm_rule():
 # ==============================================================================
 def get_cyclical_seasonality():
     """
-    Encodes the current date into Sine/Cosine features.
-    This helps the model understand that December (12) is close to January (1).
-    Also flags the "Q4 Retail Season".
+    Encodes date into Sine/Cosine and detects major market cycles:
+    1. Q4 Retail (Christmas)
+    2. Earnings Season (Quarterly reporting months)
+    3. Summer Lull (Low volume/vacation months)
+    4. Back to School (August/Sept retail boost)
     """
     today = datetime.now()
     month = today.month
     
-    # Mathematical encoding: sin(2 * pi * month / 12)
+    # 1. Math Encoding
     month_sin = np.sin(2 * np.pi * month / 12)
     month_cos = np.cos(2 * np.pi * month / 12)
     
-    # Check for Retail Season (Oct, Nov, Dec)
+    # 2. Cycle Detection
+    # Q4 Retail: Oct, Nov, Dec
     is_q4_retail = 1 if month in [10, 11, 12] else 0
+    
+    # Earnings Season: Usually the month after quarter end (Jan, Apr, Jul, Oct)
+    is_earnings_season = 1 if month in [1, 4, 7, 10] else 0
+    
+    # Summer Lull: June, July, August (Vacation season, lower volume)
+    is_summer_lull = 1 if month in [6, 7, 8] else 0
+    
+    # Back to School: August, September
+    is_back_to_school = 1 if month in [8, 9] else 0
     
     return {
         "seasonality_sin": month_sin,
         "seasonality_cos": month_cos,
-        "is_q4_retail": is_q4_retail
+        "is_q4_retail": is_q4_retail,
+        "is_earnings_season": is_earnings_season,
+        "is_summer_lull": is_summer_lull,
+        "is_back_to_school": is_back_to_school
     }
-
+    
 # ==============================================================================
 # --- 4. MASTER FETCH FUNCTION ---
 # ==============================================================================
