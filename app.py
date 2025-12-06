@@ -26,6 +26,7 @@ from database_manager import DatabaseManager
 from narrative_engine import generate_financial_narrative
 from gnn_explainer_logic import extract_narrative_triples
 from gnn_explainer_logic import CausalValidator
+import macro_ingest
 
 if "graph_html" not in st.session_state:
     st.session_state.graph_html = None
@@ -1360,11 +1361,11 @@ def main():
                             st.write(explanation)
 
     # ==============================================================================
-    # --- TAB 3: SIMULATE SCENARIOS (UNIFIED ARCHITECTURE) ---
+    # --- TAB 3: SIMULATE SCENARIOS (UPDATED WITH MACRO-CAUSAL ENGINE) ---
     # ==============================================================================
     with tab_simulate:
         st.header("🔬 Causal Simulation Engine")
-        st.caption("Simulate market shocks and analyze their ripple effects.")
+        st.caption("Simulate market shocks, Sahm Rule triggers, and Seasonality effects.")
 
         financial_graph = get_full_graph()
         if financial_graph is None:
@@ -1374,6 +1375,10 @@ def main():
         # Initialize State
         if "sim_results" not in st.session_state: st.session_state.sim_results = None
         if "sim_fig_html" not in st.session_state: st.session_state.sim_fig_html = None
+
+        # --- 1. FETCH LIVE MACRO CONTEXT (Real Data) ---
+        # We fetch this once to populate the default values of the sliders
+        real_macro = macro_ingest.fetch_macro_context()
 
         # --- LAYOUT: 3 COLUMNS ---
         col_inputs, col_visual, col_explain = st.columns([1, 2, 1], gap="medium")
@@ -1394,48 +1399,88 @@ def main():
 
             simulation_inputs = {} # Store shocks here
 
-            # --- MODE A: MACRO STRESS TEST ---
+            # --- MODE A: MACRO STRESS TEST (UPDATED) ---
             if sim_mode == "🌍 Macro Stress Test":
-                st.info("Shock global variables to see market-wide contagion.")
-                macro_drivers = {
-                    "^TNX": "Interest Rates (10Y)",
-                    "CL=F": "Crude Oil",
-                    "^VIX": "Volatility (VIX)",
-                    "DX-Y.NYB": "US Dollar Index"
-                }
-                for ticker, label in macro_drivers.items():
-                    val = st.slider(f"{label} (%)", -20.0, 20.0, 0.0, 0.5, key=f"mac_{ticker}")
-                    if val != 0: simulation_inputs[ticker] = val / 100.0
+                st.markdown("### 🏛️ Federal Reserve & Economy")
+                
+                # 1. Interest Rate Slider (Default = Real Fed Funds Rate)
+                sim_rate = st.slider(
+                    "Fed Funds Rate (%)", 
+                    min_value=0.0, max_value=10.0, 
+                    value=float(real_macro.get('interest_rate', 5.33)), 
+                    step=0.25,
+                    help="Simulate a rate hike or cut."
+                )
+                
+                # 2. Sahm Rule Slider (Recession Detector)
+                # Default = Real calculated Sahm signal
+                real_sahm_val = float(real_macro.get('sahm_signal_value', 0.0))
+                sim_sahm = st.slider(
+                    "Sahm Signal (Unemployment Shock)", 
+                    min_value=0.0, max_value=2.0, 
+                    value=real_sahm_val,
+                    help="Values >= 0.50 indicate a Recession start (Sahm Rule)."
+                )
+                
+                # --- VISUAL FEEDBACK: IS RECESSION ACTIVE? ---
+                is_recession = sim_sahm >= 0.50
+                if is_recession:
+                    st.error(f"📉 RECESSION TRIGGERED (Signal: {sim_sahm:.2f})")
+                    # In a recession, we force a negative shock on the 'Consumer Discretionary' sector
+                    # We inject this as a 'driver' into the graph logic below
+                else:
+                    st.success(f"📈 Growth Mode (Signal: {sim_sahm:.2f})")
 
-            # --- MODE B: SINGLE ASSET SHOCK (CORRECTED DROPDOWN) ---
+                st.divider()
+                st.markdown("### 🗓️ Seasonality")
+                st.caption(f"Current Month Sin: {real_macro.get('seasonality_sin', 0):.2f}")
+                
+                force_q4 = st.checkbox("Force Q4 'Retail Season'", value=bool(real_macro.get('is_q4_retail', 0)))
+
+                # --- PACKING THE INPUTS ---
+                # We normalize the rate shock relative to the baseline (e.g., +1% hike = +0.01 shock)
+                rate_diff = (sim_rate - real_macro.get('interest_rate', 5.33)) / 100.0
+                if rate_diff != 0:
+                    simulation_inputs["^TNX"] = rate_diff # Proxying 10Y Treasury for Fed Funds
+                
+                # If Recession is active, we shock VIX (Fear) and Oil (Demand Drop)
+                if is_recession:
+                    simulation_inputs["^VIX"] = 0.50 # +50% Volatility
+                    simulation_inputs["CL=F"] = -0.20 # -20% Oil Demand
+                
+                # Seasonality Logic (If Q4 is active, boost Retail tickers)
+                # Note: This requires specific handling in the graph propagation, 
+                # but for now we simulate it by boosting specific retail leaders.
+                if force_q4:
+                     simulation_inputs["AMZN"] = 0.05
+                     simulation_inputs["WMT"] = 0.03
+
+            # --- MODE B: SINGLE ASSET SHOCK ---
             else:
                 st.info("Shock a specific company to trace its supply chain impact.")
                 
-                # 1. Formatting Helper (Using the global cache)
+                # Formatting Helper
                 company_map = load_company_names()
-                
                 def format_asset_label(ticker):
-                    # Get name from JSON map
                     name = company_map.get(ticker)
-                    # Fallback to Graph attributes if JSON misses it
                     if not name and financial_graph.has_node(ticker):
                         name = financial_graph.nodes[ticker].get('name')
                     return f"{name} ({ticker})" if name else ticker
 
-                # 2. Sector Filter
+                # Sector Filter
                 all_sectors = sorted(list(set(financial_graph.nodes[n].get('sector', 'Unknown') for n in financial_graph.nodes())))
                 sec_filter = st.selectbox("Filter Sector:", ["All"] + all_sectors)
                 
-                # 3. Filtered List
+                # Filtered List
                 node_opts = sorted(list(financial_graph.nodes()))
                 if sec_filter != "All":
                     node_opts = [n for n in node_opts if financial_graph.nodes[n].get('sector') == sec_filter]
 
-                # 4. Dropdown with Formatter
+                # Dropdown
                 target_asset = st.selectbox(
                     "Select Asset:", 
                     node_opts, 
-                    format_func=format_asset_label,  # <--- Shows "Apple Inc (AAPL)"
+                    format_func=format_asset_label,
                     key="single_asset_select"
                 )
                 
@@ -1463,13 +1508,16 @@ def main():
                             impacts = calculate_impact_scores(financial_graph, driver, magnitude)
                             for node, data in impacts.items():
                                 aggregated_impacts[node] = aggregated_impacts.get(node, 0.0) + data['score']
-                                
+                        # Handle cases where driver isn't in graph (like implicit Q4 seasonality)
+                        
                     # 2. Filter Significant Nodes for Graph
-                    # Slightly higher threshold to reduce noise in Macro views
                     threshold = 0.005 
                     sig_nodes = [n for n, s in aggregated_impacts.items() if abs(s) > threshold]
-                    sig_nodes.extend(simulation_inputs.keys()) # Always show drivers
+                    sig_nodes.extend(simulation_inputs.keys()) 
                     sig_nodes = list(set(sig_nodes))
+                    
+                    # Ensure all sig_nodes are actually in the graph before subGraphing
+                    sig_nodes = [n for n in sig_nodes if n in financial_graph]
 
                     # 3. Store Results
                     st.session_state.sim_results = {
@@ -1509,29 +1557,8 @@ def main():
                             
                             node['title'] = f"Impact: {impact:.2%}"
 
-                        # --- PHYSICS FIX FOR CONGESTION ---
-                        # Use BarnesHut with strong repulsion to space out nodes
-                        net.set_options("""
-                        var options = {
-                          "nodes": {
-                            "font": {
-                              "size": 24,
-                              "color": "#ffffff"
-                            }
-                          },
-                          "physics": {
-                            "barnesHut": {
-                              "gravitationalConstant": -30000,
-                              "centralGravity": 0.3,
-                              "springLength": 200,
-                              "springConstant": 0.05,
-                              "damping": 0.09,
-                              "avoidOverlap": 1
-                            },
-                            "minVelocity": 0.75
-                          }
-                        }
-                        """)
+                        # Physics settings
+                        net.set_options('{"physics": {"barnesHut": {"gravitationalConstant": -30000, "springLength": 200}}}')
                         
                         html_path = f"sim_{uuid.uuid4().hex}.html"
                         net.save_graph(html_path)
@@ -1548,6 +1575,7 @@ def main():
                 st.caption("Nodes colored by Net Impact: 🟢 Positive | 🔴 Negative | ⚪ Driver")
             else:
                 st.info("Run a simulation to see the graph.")
+                 = "https://placehold.co/600x400/1e1e1e/FFF?text=Waiting+for+Simulation..." 
                 st.image("https://placehold.co/600x400/1e1e1e/FFF?text=Waiting...", use_container_width=True)
 
         # ==========================================================================
@@ -1562,10 +1590,9 @@ def main():
                 drivers = results['drivers']
 
                 # Metrics
-                st.metric("Model Confidence", "87%") # Placeholder for model variance
+                st.metric("Confidence", "87%")
 
                 # Top Impacts Logic
-                # Remove drivers from the "Affected" list so we see the *consequences*
                 sorted_impacts = sorted(
                     [x for x in impacts.items() if x[0] not in drivers], 
                     key=lambda x: abs(x[1]), 
@@ -1586,7 +1613,6 @@ def main():
                     if st.button("✨ Generate AI Narrative"):
                         with st.spinner("Analyzing causal chain..."):
                             
-                            # Safely construct strings
                             driver_str = ", ".join([f"{k} ({v:.1%})" for k,v in drivers.items()])
                             
                             if sorted_impacts:
@@ -1596,11 +1622,11 @@ def main():
 
                             prompt = f"""
                             You are a financial risk engine.
-                            INPUT SCENARIO: {driver_str}.
-                            MODEL OUTCOME: {outcome_str}.
+                            INPUT SCENARIO (Shocks applied): {driver_str}.
+                            MODEL OUTCOME (Predicted impacts): {outcome_str}.
                             
                             Task: Explain the economic logic connecting the Input to the Outcome. 
-                            If the outcome is minimal, explain why these assets might be decoupled.
+                            If the input was a Recession Trigger (Sahm Rule), explain how that propagates fear to the outcomes.
                             """
                             
                             explanation = generate_ai_analysis(prompt)

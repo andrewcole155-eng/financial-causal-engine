@@ -26,3 +26,5 @@ service-identity
 plotly
 yfinance
 dowhy
+fredapi
+numpy
