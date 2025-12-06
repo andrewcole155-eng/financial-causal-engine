@@ -30,7 +30,7 @@ def add_unique_company_features(data: HeteroData) -> HeteroData:
     """
     logger.info("--- Injecting Unique Random Features for Inference ---")
     
-    # --- NEW: Set Seed for Consistency ---
+    # --- Set Seed for Consistency ---
     # This ensures that when the Explainer runs later, it sees the exact same 
     # "random" features as the Inference engine did.
     torch.manual_seed(42)
@@ -73,8 +73,17 @@ def get_inference_resources():
     try:
         # hidden_dim=32 matches your train.py
         model = create_hetero_model(data, hidden_dim=32, out_dim=3)
+        
+        # --- CRITICAL FIX: INITIALIZE LAZY LAYERS ---
+        # We must run a 'dry run' forward pass to initialize the model parameter shapes
+        # BEFORE loading the state dictionary. Otherwise, PyTorch throws a key error.
+        with torch.no_grad():
+            model(data.x_dict, data.edge_index_dict)
+            
+        # NOW we can safely load the weights
         model.load_state_dict(torch.load(model_path))
         model.eval()
+        
         return model, data, config
     except Exception as e:
         logger.error(f"Error loading model resources: {e}")
@@ -138,8 +147,6 @@ def export_to_csv(config: Dict[str, Any], filename="live_risk_scores.csv"):
             # (Optional) Clean up 'Discovered' sector if possible, 
             # otherwise keep what is in DB.
             if row['Sector'] == 'Discovered':
-                # Placeholder: In the future, your JSON should include sectors 
-                # to fix this properly. For now, we leave it or set to 'Unknown'.
                 pass 
 
             clean_data.append(row)
@@ -149,7 +156,7 @@ def export_to_csv(config: Dict[str, Any], filename="live_risk_scores.csv"):
             df.to_csv(filename, index=False)
             logger.info(f"✅ CSV Export Successful: Saved {len(df)} clean records to {filename}")
             
-            # Log how many Zombies were killed (Restored this logic)
+            # Log how many Zombies were killed
             zombies_killed = len(raw_data) - len(clean_data)
             if zombies_killed > 0:
                 logger.info(f"👻 Removed {zombies_killed} 'Zombie' tickers (e.g., ATVI, ABC) from export.")
@@ -210,8 +217,6 @@ def run_inference():
         logger.info(f"Generated risk scores for {len(risk_scores)} companies.")
 
         # --- 5. Write Predictions ---
-        # We need to re-init pipeline here just to access the save method
-        # (Or we could have returned pipeline from get_resources, but this is fine)
         pipeline = GNNPipeline(config)
         pipeline.save_predictions(risk_scores)
 
