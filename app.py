@@ -1561,16 +1561,23 @@ def main():
                         # to prevent the "flower/clump" effect.
                         net.set_options("""
                         var options = {
+                          "nodes": {
+                            "font": {
+                              "size": 20,
+                              "color": "#ffffff"
+                            }
+                          },
                           "physics": {
-                            "barnesHut": {
-                              "gravitationalConstant": -50000,
+                            "forceAtlas2Based": {
+                              "gravitationalConstant": -100,
                               "centralGravity": 0.005,
-                              "springLength": 250,
-                              "springConstant": 0.01,
-                              "damping": 0.09,
+                              "springLength": 200,
+                              "springConstant": 0.05,
+                              "damping": 0.4,
                               "avoidOverlap": 1
                             },
-                            "minVelocity": 0.75
+                            "minVelocity": 0.75,
+                            "solver": "forceAtlas2Based"
                           }
                         }
                         """)
