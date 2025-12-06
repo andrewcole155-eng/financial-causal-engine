@@ -1361,7 +1361,7 @@ def main():
                             st.write(explanation)
 
     # ==============================================================================
-    # --- TAB 3: SIMULATE SCENARIOS (CORRECTED & RESTORED) ---
+    # --- TAB 3: SIMULATE SCENARIOS (FINAL VISUAL FIX) ---
     # ==============================================================================
     with tab_simulate:
         st.header("🔬 Causal Simulation Engine")
@@ -1376,99 +1376,60 @@ def main():
         if "sim_results" not in st.session_state: st.session_state.sim_results = None
         if "sim_fig_html" not in st.session_state: st.session_state.sim_fig_html = None
 
-        # --- 1. FETCH LIVE MACRO CONTEXT (Real Data) ---
+        # --- 1. FETCH LIVE MACRO CONTEXT ---
         real_macro = macro_ingest.fetch_macro_context()
 
-        # --- LAYOUT: 3 COLUMNS ---
+        # --- LAYOUT ---
         col_inputs, col_visual, col_explain = st.columns([1, 2, 1], gap="medium")
 
         # ==========================================================================
-        # --- COLUMN 1: CONTROL PANEL ---
+        # --- COLUMN 1: CONTROLS ---
         # ==========================================================================
         with col_inputs:
             st.subheader("🎛️ Scenario Controls")
-            
-            # --- MODE SELECTION ---
-            sim_mode = st.radio(
-                "Simulation Mode:",
-                ["🌍 Macro Stress Test", "🎯 Single Asset Shock"],
-                horizontal=True
-            )
+            sim_mode = st.radio("Mode:", ["🌍 Macro Stress Test", "🎯 Single Asset Shock"], horizontal=True)
             st.divider()
 
-            simulation_inputs = {} # Store shocks here
+            simulation_inputs = {} 
 
-            # --- MODE A: MACRO STRESS TEST ---
             if sim_mode == "🌍 Macro Stress Test":
-                # 1. FEDERAL RESERVE & SAHM RULE
-                st.markdown("### 🏛️ Federal Reserve & Economy")
+                # Fed & Economy
+                st.markdown("### 🏛️ Federal Reserve")
+                sim_rate = st.slider("Fed Funds Rate (%)", 0.0, 10.0, float(real_macro.get('interest_rate', 5.33)), 0.25)
                 
-                # Interest Rate Slider
-                sim_rate = st.slider(
-                    "Fed Funds Rate (%)", 
-                    min_value=0.0, max_value=10.0, 
-                    value=float(real_macro.get('interest_rate', 5.33)), 
-                    step=0.25,
-                    help="Simulate a rate hike or cut."
-                )
-                
-                # Sahm Rule Slider
-                real_sahm_val = float(real_macro.get('sahm_signal_value', 0.0))
-                sim_sahm = st.slider(
-                    "Sahm Signal (Unemployment Shock)", 
-                    min_value=0.0, max_value=2.0, 
-                    value=real_sahm_val,
-                    help="Values >= 0.50 indicate a Recession start (Sahm Rule)."
-                )
-                
-                # Recession Feedback
+                sim_sahm = st.slider("Sahm Signal", 0.0, 2.0, float(real_macro.get('sahm_signal_value', 0.0)))
                 is_recession = sim_sahm >= 0.50
                 if is_recession:
-                    st.error(f"📉 RECESSION TRIGGERED (Signal: {sim_sahm:.2f})")
+                    st.error(f"📉 RECESSION (Signal: {sim_sahm:.2f})")
                 else:
-                    st.success(f"📈 Growth Mode (Signal: {sim_sahm:.2f})")
+                    st.success(f"📈 Growth (Signal: {sim_sahm:.2f})")
 
-                # 2. RESTORED MACRO SCALES (Oil, VIX, Dollar)
-                st.markdown("### 🛢️ Commodities & Volatility")
-                
-                # Define the extra macros to restore
-                macro_drivers = {
-                    "CL=F": "Crude Oil",
-                    "^VIX": "Volatility (VIX)",
-                    "DX-Y.NYB": "US Dollar Index",
-                    "^TNX": "10-Year Treasury" # Added explicit override if needed
-                }
-                
+                # Commodities
+                st.markdown("### 🛢️ Market Drivers")
+                macro_drivers = {"CL=F": "Crude Oil", "^VIX": "Volatility (VIX)", "DX-Y.NYB": "US Dollar"}
                 for ticker, label in macro_drivers.items():
-                    # Default is 0.0% shock
                     val = st.slider(f"{label} Shock (%)", -30.0, 30.0, 0.0, 1.0, key=f"mac_{ticker}")
-                    if val != 0:
-                        simulation_inputs[ticker] = val / 100.0
+                    if val != 0: simulation_inputs[ticker] = val / 100.0
 
-                # 3. SEASONALITY
+                # Seasonality
                 st.markdown("### 🗓️ Seasonality")
                 force_q4 = st.checkbox("Force Q4 'Retail Season'", value=bool(real_macro.get('is_q4_retail', 0)))
 
-                # --- PROCESSING INPUTS ---
-                # Rate Logic: Normalize relative to baseline
+                # Process Inputs
                 rate_diff = (sim_rate - real_macro.get('interest_rate', 5.33)) / 100.0
-                if rate_diff != 0:
-                    simulation_inputs["^TNX"] = rate_diff 
+                if rate_diff != 0: simulation_inputs["^TNX"] = rate_diff 
                 
-                # Sahm Logic: If Recession, shock VIX and Oil automatically (if not manually overridden)
                 if is_recession:
                     if "^VIX" not in simulation_inputs: simulation_inputs["^VIX"] = 0.50 
                     if "CL=F" not in simulation_inputs: simulation_inputs["CL=F"] = -0.20
                 
-                # Seasonality Logic
                 if force_q4:
                      simulation_inputs["AMZN"] = 0.05
                      simulation_inputs["WMT"] = 0.03
 
-            # --- MODE B: SINGLE ASSET SHOCK ---
             else:
-                st.info("Shock a specific company to trace its supply chain impact.")
-                
+                # Single Asset Mode
+                st.info("Shock a specific company.")
                 company_map = load_company_names()
                 def format_asset_label(ticker):
                     name = company_map.get(ticker)
@@ -1477,23 +1438,14 @@ def main():
                     return f"{name} ({ticker})" if name else ticker
 
                 all_sectors = sorted(list(set(financial_graph.nodes[n].get('sector', 'Unknown') for n in financial_graph.nodes())))
-                sec_filter = st.selectbox("Filter Sector:", ["All"] + all_sectors)
-                
+                sec_filter = st.selectbox("Sector:", ["All"] + all_sectors)
                 node_opts = sorted(list(financial_graph.nodes()))
                 if sec_filter != "All":
                     node_opts = [n for n in node_opts if financial_graph.nodes[n].get('sector') == sec_filter]
 
-                target_asset = st.selectbox(
-                    "Select Asset:", 
-                    node_opts, 
-                    format_func=format_asset_label,
-                    key="single_asset_select"
-                )
-                
-                shock_val = st.slider(f"Shock Magnitude (%)", -50.0, 50.0, -10.0, 1.0)
-                
-                if target_asset:
-                    simulation_inputs[target_asset] = shock_val / 100.0
+                target_asset = st.selectbox("Asset:", node_opts, format_func=format_asset_label)
+                shock_val = st.slider("Shock Magnitude (%)", -50.0, 50.0, -10.0, 1.0)
+                if target_asset: simulation_inputs[target_asset] = shock_val / 100.0
 
             st.divider()
             run_btn = st.button("🚀 Run Simulation", type="primary", use_container_width=True)
@@ -1502,35 +1454,35 @@ def main():
         # --- LOGIC: ENGINE ---
         # ==========================================================================
         if run_btn:
-            with st.spinner("Calculating causal propagation..."):
+            with st.spinner("Calculating propagation..."):
                 aggregated_impacts = {}
                 
                 if not simulation_inputs:
-                    st.warning("No shocks applied. Adjust sliders.")
+                    st.warning("No shocks applied.")
                 else:
-                    # 1. Propagate Shocks
+                    # 1. Propagate
                     for driver, magnitude in simulation_inputs.items():
                         if driver in financial_graph:
                             impacts = calculate_impact_scores(financial_graph, driver, magnitude)
                             for node, data in impacts.items():
                                 aggregated_impacts[node] = aggregated_impacts.get(node, 0.0) + data['score']
                         
-                    # 2. Filter Significant Nodes
-                    threshold = 0.005 
+                    # --- CRITICAL FIX: HIGHER THRESHOLD ---
+                    # We increased this from 0.005 (0.5%) to 0.015 (1.5%)
+                    # This filters out the "noise" so only truly impacted companies show up.
+                    threshold = 0.015 
+                    
                     sig_nodes = [n for n, s in aggregated_impacts.items() if abs(s) > threshold]
                     sig_nodes.extend(simulation_inputs.keys()) 
                     sig_nodes = list(set(sig_nodes))
-                    
                     sig_nodes = [n for n in sig_nodes if n in financial_graph]
 
-                    # 3. Store Results
+                    # Store
                     st.session_state.sim_results = {
-                        "impacts": aggregated_impacts,
-                        "nodes": sig_nodes,
-                        "drivers": simulation_inputs
+                        "impacts": aggregated_impacts, "nodes": sig_nodes, "drivers": simulation_inputs
                     }
 
-                    # 4. Generate PyVis (UPDATED PHYSICS)
+                    # --- CRITICAL FIX: PHYSICS ---
                     if sig_nodes:
                         subgraph = financial_graph.subgraph(sig_nodes)
                         viz_graph = subgraph.copy()
@@ -1546,38 +1498,26 @@ def main():
                             node['size'] = 20 + (abs(impact) * 80)
                             
                             if nid in simulation_inputs:
-                                node['color'] = "#ffffff" 
-                                node['shape'] = "diamond"
-                                node['size'] = 40
-                            elif impact < 0: 
-                                node['color'] = "#ff4b4b" 
-                            else: 
-                                node['color'] = "#00c853" 
+                                node['color'] = "#ffffff"; node['shape'] = "diamond"; node['size'] = 40
+                            elif impact < 0: node['color'] = "#ff4b4b" 
+                            else: node['color'] = "#00c853" 
                             
                             node['title'] = f"Impact: {impact:.2%}"
 
-                        # === UPDATED PHYSICS ENGINE ===
-                        # Stronger repulsion (-50000) and lower central gravity (0.005)
-                        # to prevent the "flower/clump" effect.
+                        # NUCLEAR PHYSICS OPTION: High Repulsion to force the "Flower" open
                         net.set_options("""
                         var options = {
-                          "nodes": {
-                            "font": {
-                              "size": 20,
-                              "color": "#ffffff"
-                            }
-                          },
+                          "nodes": { "font": { "size": 16, "color": "#ffffff" } },
                           "physics": {
-                            "forceAtlas2Based": {
-                              "gravitationalConstant": -100,
-                              "centralGravity": 0.005,
-                              "springLength": 200,
-                              "springConstant": 0.05,
-                              "damping": 0.4,
+                            "barnesHut": {
+                              "gravitationalConstant": -80000,
+                              "centralGravity": 0.001,
+                              "springLength": 250,
+                              "springConstant": 0.01,
+                              "damping": 0.09,
                               "avoidOverlap": 1
                             },
-                            "minVelocity": 0.75,
-                            "solver": "forceAtlas2Based"
+                            "minVelocity": 0.75
                           }
                         }
                         """)
@@ -1586,6 +1526,9 @@ def main():
                         net.save_graph(html_path)
                         with open(html_path, 'r', encoding='utf-8') as f: st.session_state.sim_fig_html = f.read()
                         if os.path.exists(html_path): os.remove(html_path)
+                    else:
+                        st.session_state.sim_fig_html = None
+                        st.warning("Impact was too low to generate a graph. Try a larger shock.")
 
         # ==========================================================================
         # --- COLUMN 2: VISUAL ---
@@ -1604,19 +1547,18 @@ def main():
         # ==========================================================================
         with col_explain:
             st.subheader("📝 Analyst Report")
-            
             if st.session_state.sim_results:
                 results = st.session_state.sim_results
                 impacts = results['impacts']
                 drivers = results['drivers']
 
                 st.metric("Confidence", "87%")
-
+                
+                # Filter out drivers to show real victims
                 sorted_impacts = sorted(
                     [x for x in impacts.items() if x[0] not in drivers], 
-                    key=lambda x: abs(x[1]), 
-                    reverse=True
-                )[:5]
+                    key=lambda x: abs(x[1]), reverse=True
+                )[:10] # Show Top 10
 
                 if sorted_impacts:
                     st.markdown("**Top Impacted Assets:**")
@@ -1626,21 +1568,12 @@ def main():
                     st.caption("No significant downstream impacts detected.")
 
                 st.divider()
-
-                if gemini_active:
-                    if st.button("✨ Generate AI Narrative"):
-                        with st.spinner("Analyzing causal chain..."):
-                            driver_str = ", ".join([f"{k} ({v:.1%})" for k,v in drivers.items()])
-                            outcome_str = ", ".join([f"{x[0]} ({x[1]:.1%})" for x in sorted_impacts]) if sorted_impacts else "Minimal volatility."
-
-                            prompt = f"""
-                            You are a financial risk engine.
-                            INPUT SCENARIO: {driver_str}.
-                            MODEL OUTCOME: {outcome_str}.
-                            Task: Explain the economic logic connecting the Input to the Outcome.
-                            """
-                            explanation = generate_ai_analysis(prompt)
-                            st.write(explanation)
+                if gemini_active and st.button("✨ Generate AI Narrative"):
+                    with st.spinner("Analyzing..."):
+                        driver_str = ", ".join([f"{k} ({v:.1%})" for k,v in drivers.items()])
+                        outcome_str = ", ".join([f"{x[0]} ({x[1]:.1%})" for x in sorted_impacts]) if sorted_impacts else "Minimal."
+                        prompt = f"Explain the logic. Input: {driver_str}. Outcome: {outcome_str}."
+                        st.write(generate_ai_analysis(prompt))
             else:
                 st.write("Awaiting results...")
 
