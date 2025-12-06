@@ -11,13 +11,13 @@ def load_api_key():
     """Loads Google API Key from config.json or Environment."""
     try:
         # Priority 1: Check Environment
-        if os.getenv("GOOGLE_API_KEY"):
-            return os.getenv("GOOGLE_API_KEY")
+        if os.getenv("GEMINI_API_KEY"):
+            return os.getenv("GEMINI_API_KEY")
             
         # Priority 2: Check Config File
         with open('config.json', 'r') as f:
             config = json.load(f)
-            return config.get('GOOGLE_API_KEY')
+            return config.get('GEMINI_API_KEY')
     except Exception:
         return None
 
@@ -27,7 +27,7 @@ def generate_financial_narrative(ticker, prediction_label, triples):
     """
     api_key = load_api_key()
     if not api_key:
-        return "⚠️ Error: GOOGLE_API_KEY not found in config.json or environment."
+        return "⚠️ Error: GEMINI_API_KEY not found in config.json or environment."
 
     genai.configure(api_key=api_key)
 
