@@ -83,3 +83,86 @@ def explain_prediction(explainer, data, target_node_idx, top_k=20):
         G_expl.add_edge(e['u'], e['v'], label=e['rel'], weight=e['weight'])
 
     return G_expl
+
+def format_graph_for_llm(G_expl, ticker_map):
+    """
+    Converts the explanation subgraph into a list of text triples 
+    for the LLM, resolving Ticker IDs to names.
+    """
+    narrative_triples = []
+    
+    # Iterate over all edges in the explanation graph
+    for u, v, data in G_expl.edges(data=True):
+        
+        # --- Helper to resolve Node Names ---
+        def resolve_name(node_id):
+            # node_id format is like "Company_12" or "Event_45"
+            parts = node_id.split('_')
+            node_type = parts[0]
+            idx = int(parts[1])
+            
+            if node_type == "Company":
+                # Safe lookup in the map
+                if 0 <= idx < len(ticker_map):
+                    return f"Company ({ticker_map[idx]})"
+                return f"Company (ID {idx})"
+            
+            elif node_type == "Event":
+                # Currently we only have the score (implicit in the ID/Type)
+                # Future: Lookup event description from a separate map if available
+                return "Macro Event"
+                
+            return node_id
+
+        # --- Build the Triple ---
+        source = resolve_name(u)
+        target = resolve_name(v)
+        relation = data.get('label', 'related_to')
+        weight = data.get('weight', 0)
+        
+        # Only include meaningful edges (sanity check)
+        if weight > 0:
+            triple = f"({source}) --[{relation}, importance={weight:.2f}]--> ({target})"
+            narrative_triples.append(triple)
+            
+    return narrative_triples
+
+def extract_narrative_triples(G_expl, ticker_map):
+    """
+    Converts the explanation subgraph into text triples for the LLM.
+    e.g. "Company_4" -> "Apple"
+    """
+    triples = []
+    
+    for u, v, data in G_expl.edges(data=True):
+        weight = data.get('weight', 0)
+        
+        # Filter out weak connections to reduce noise for the LLM
+        if weight < 0.05: 
+            continue
+
+        # --- Helper to Resolve Names ---
+        def resolve(node_id):
+            if isinstance(node_id, str) and "Company_" in node_id:
+                try:
+                    idx = int(node_id.split('_')[1])
+                    if 0 <= idx < len(ticker_map):
+                        return ticker_map[idx] # Return Ticker (e.g., AAPL)
+                except:
+                    pass
+            # Fallback for Event nodes or raw strings
+            return str(node_id)
+
+        source = resolve(u)
+        target = resolve(v)
+        
+        # Determine relationship verb
+        # In the future, you can pull 'mechanism' from the edge data if available
+        relation = "strongly influences" if weight > 0.5 else "is related to"
+        
+        # Format: (Source) --[influences]--> (Target)
+        triple = f"- {source} {relation} {target} (Importance: {weight:.2f})"
+        triples.append(triple)
+        
+    # Sort by importance so the LLM sees the biggest drivers first
+    return sorted(triples, key=lambda x: float(x.split('Importance: ')[1][:-1]), reverse=True)

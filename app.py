@@ -23,6 +23,9 @@ from predict import get_inference_resources
 
 # --- Local Imports ---
 from database_manager import DatabaseManager
+from narrative_engine import generate_financial_narrative
+from gnn_explainer_logic import extract_narrative_triples
+
 
 if "graph_html" not in st.session_state:
     st.session_state.graph_html = None
@@ -1634,7 +1637,7 @@ def main():
                     except Exception as e:
                         st.error(f"Pathfinding Error: {e}")
 
-# ==============================================================================
+    # ==============================================================================
     # --- TAB 5: GNN X-RAY (EXPLAINABILITY) ---
     # ==============================================================================
     with tab_xray:
@@ -1688,7 +1691,6 @@ def main():
                 run_xray = st.button("🔍 Run Explainability Engine", type="primary")
 
             # --- EXECUTION LOGIC (WITH SESSION STATE) ---
-            # If button clicked, run math and SAVE to session state
             if run_xray and xray_ticker:
                 try:
                     if xray_ticker not in full_sorted_tickers:
@@ -1722,7 +1724,6 @@ def main():
                     logger.error(f"X-Ray Error: {e}")
 
             # --- DISPLAY LOGIC (CHECKS SESSION STATE) ---
-            # This is OUTSIDE the try/except block so it runs on every reload
             if 'xray_subgraph' in st.session_state and st.session_state['xray_subgraph'] is not None:
                 
                 subgraph = st.session_state['xray_subgraph']
@@ -1732,39 +1733,40 @@ def main():
                     st.warning("The model did not find specific neighbors that strongly influenced this prediction.")
                 else:
                     st.divider()
-                    st.subheader(f"The 'Why' for {target}")
-                    st.caption("Showing the **Top 20** mathematical factors driving the risk score.")
                     
-                    html_file = visualize_explanation(subgraph, full_sorted_tickers)
-                    with open(html_file, 'r', encoding='utf-8') as f:
-                        st.components.v1.html(f.read(), height=600, scrolling=True)
-                    if os.path.exists(html_file): os.remove(html_file)
+                    # --- LAYOUT: GRAPH (Left) vs NARRATIVE (Right) ---
+                    col_viz, col_narrative = st.columns([2, 1])
+                    
+                    with col_viz:
+                        st.subheader(f"The Mathematical Subgraph")
+                        st.caption("Showing the **Top 20** weighted connections driving the risk score.")
+                        html_file = visualize_explanation(subgraph, full_sorted_tickers)
+                        with open(html_file, 'r', encoding='utf-8') as f:
+                            st.components.v1.html(f.read(), height=600, scrolling=True)
+                        if os.path.exists(html_file): os.remove(html_file)
 
-                    # --- AI INTERPRETATION ---
-                    st.divider()
-                    if gemini_active:
-                        if st.button("🤖 Interpret this Subgraph"):
-                            with st.spinner("Analyzing causal structure..."):
-                                factor_nodes = [n for n in subgraph.nodes if "Company" in str(n) or "Event" in str(n)]
-                                readable_factors = []
-                                for f in factor_nodes:
-                                    if "Company_" in f:
-                                        try:
-                                            idx = int(f.split("_")[1])
-                                            if idx < len(full_sorted_tickers): 
-                                                readable_factors.append(full_sorted_tickers[idx])
-                                        except: pass
-                                    else:
-                                        readable_factors.append(f)
+                    with col_narrative:
+                        st.subheader("📝 Analyst Narrative")
+                        
+                        # Calculate Risk Label for context
+                        risk_score = financial_graph.nodes[target].get('raw_risk_score', 0)
+                        prediction_label = "HIGH RISK" if risk_score > 0.7 else ("MEDIUM RISK" if risk_score > 0.4 else "LOW RISK")
+                        
+                        if st.button("Generate Narrative Analysis ✨"):
+                            with st.spinner("Translating Math to English..."):
+                                # 1. Extract Triples
+                                triples = extract_narrative_triples(subgraph, full_sorted_tickers)
                                 
-                                prompt = f"""
-                                The GNN model predicted a risk score for {target}. 
-                                The 'Explainability' engine identified these specific nodes as the mathematical drivers of that decision: {readable_factors}.
-                                Explain WHY these specific connections likely drove the risk calculation.
-                                """
-                                explanation = generate_ai_analysis(prompt)
-                                st.info("🤖 **Gemini Analysis**")
-                                st.write(explanation)
+                                # 2. Call LLM
+                                narrative = generate_financial_narrative(target, prediction_label, triples)
+                                
+                                st.success("Analysis Generated")
+                                st.markdown(f"**Analyst Report for {target}:**")
+                                st.info(narrative)
+                                
+                                # Optional: Show the raw data used
+                                with st.expander("View Raw Causal Factors"):
+                                    st.code("\n".join(triples))
 
     # ==============================================================================
     # --- TAB 6: INSTRUCTIONS & GUIDE ---
