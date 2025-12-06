@@ -14,13 +14,18 @@ import os
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+# --- CRITICAL: GET ABSOLUTE PATH TO SCRIPT DIRECTORY ---
+# This ensures we find files even if Streamlit runs from a different folder
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
 def load_config() -> Dict[str, Any]:
-    """Loads config.json from the same directory."""
+    """Loads config.json from the same directory as this script."""
+    config_path = os.path.join(SCRIPT_DIR, 'config.json')
     try:
-        with open('config.json', 'r') as f:
+        with open(config_path, 'r') as f:
             return json.load(f)
     except Exception as e:
-        logger.error(f"Error loading config.json: {e}")
+        logger.error(f"Error loading config.json at {config_path}: {e}")
         return {}
 
 def add_unique_company_features(data: HeteroData) -> HeteroData:
@@ -64,10 +69,13 @@ def get_inference_resources():
     # 2. Inject Features (Using the fixed seed)
     data = add_unique_company_features(data)
 
-    # 3. Load Model
-    model_path = "gnn_risk_model.pth"
+    # 3. Load Model using ABSOLUTE PATH
+    model_path = os.path.join(SCRIPT_DIR, "gnn_risk_model.pth")
+    
     if not os.path.exists(model_path):
-        logger.error(f"FATAL: Model file '{model_path}' not found.")
+        logger.error(f"FATAL: Model file not found at: {model_path}")
+        # Debugging aid: Print what IS in the directory
+        logger.error(f"Contents of {SCRIPT_DIR}: {os.listdir(SCRIPT_DIR)}")
         return None, None, None
 
     try:
@@ -81,7 +89,7 @@ def get_inference_resources():
             model(data.x_dict, data.edge_index_dict)
             
         # NOW we can safely load the weights
-        model.load_state_dict(torch.load(model_path))
+        model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
         model.eval()
         
         return model, data, config
@@ -96,7 +104,8 @@ def export_to_csv(config: Dict[str, Any], filename="live_risk_scores.csv"):
     """
     try:
         # 1. Load the "Guest List" (Clean JSON)
-        json_file = 'sp500_companies.json'
+        json_file = os.path.join(SCRIPT_DIR, 'sp500_companies.json')
+        
         if os.path.exists(json_file):
             with open(json_file, 'r') as f:
                 clean_map = json.load(f) # {'AAPL': 'Apple Inc.', ...}
@@ -147,16 +156,19 @@ def export_to_csv(config: Dict[str, Any], filename="live_risk_scores.csv"):
             # (Optional) Clean up 'Discovered' sector if possible, 
             # otherwise keep what is in DB.
             if row['Sector'] == 'Discovered':
+                # Placeholder: In the future, your JSON should include sectors 
+                # to fix this properly. For now, we leave it or set to 'Unknown'.
                 pass 
 
             clean_data.append(row)
 
         if clean_data:
+            out_path = os.path.join(SCRIPT_DIR, filename)
             df = pd.DataFrame(clean_data)
-            df.to_csv(filename, index=False)
-            logger.info(f"✅ CSV Export Successful: Saved {len(df)} clean records to {filename}")
+            df.to_csv(out_path, index=False)
+            logger.info(f"✅ CSV Export Successful: Saved {len(df)} clean records to {out_path}")
             
-            # Log how many Zombies were killed
+            # Log how many Zombies were killed (RESTORED LOGIC)
             zombies_killed = len(raw_data) - len(clean_data)
             if zombies_killed > 0:
                 logger.info(f"👻 Removed {zombies_killed} 'Zombie' tickers (e.g., ATVI, ABC) from export.")
@@ -217,6 +229,8 @@ def run_inference():
         logger.info(f"Generated risk scores for {len(risk_scores)} companies.")
 
         # --- 5. Write Predictions ---
+        # We need to re-init pipeline here just to access the save method
+        # (Or we could have returned pipeline from get_resources, but this is fine)
         pipeline = GNNPipeline(config)
         pipeline.save_predictions(risk_scores)
 
