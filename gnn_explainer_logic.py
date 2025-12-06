@@ -84,42 +84,54 @@ def explain_prediction(explainer, data, target_node_idx, top_k=20):
 
     return G_expl
 
-def extract_narrative_triples(G_expl, ticker_map):
+def extract_narrative_triples(G_expl, ticker_map, event_map=None):
     """
     Converts the explanation subgraph into text triples for the LLM.
-    e.g. "Company_4" -> "Apple"
+    NOW SUPPORTS: resolving 'Event_123' -> 'Fed Rate Hike (Event)'
     """
     triples = []
+    if event_map is None: event_map = {}
     
     for u, v, data in G_expl.edges(data=True):
         weight = data.get('weight', 0)
         
-        # Filter out weak connections to reduce noise for the LLM
-        if weight < 0.05: 
-            continue
+        # Filter noise
+        if weight < 0.05: continue
 
         # --- Helper to Resolve Names ---
         def resolve(node_id):
-            if isinstance(node_id, str) and "Company_" in node_id:
+            node_str = str(node_id)
+            
+            # 1. Resolve Company Tickers (Company_4 -> AAPL)
+            if "Company_" in node_str:
                 try:
-                    idx = int(node_id.split('_')[1])
+                    idx = int(node_str.split('_')[1])
                     if 0 <= idx < len(ticker_map):
-                        return ticker_map[idx] # Return Ticker (e.g., AAPL)
-                except:
-                    pass
-            # Fallback for Event nodes or raw strings
-            return str(node_id)
+                        return f"{ticker_map[idx]} (Company)"
+                except: pass
+            
+            # 2. Resolve Event Descriptions (Event_1922 -> "Tech Selloff")
+            if "Event_" in node_str:
+                # Try to find the description in the map
+                if node_str in event_map:
+                    return f"'{event_map[node_str]}' (Event)"
+                
+                # If map fails, try to parse ID and look it up
+                try:
+                    event_id = int(node_str.split('_')[1])
+                    if event_id in event_map:
+                         return f"'{event_map[event_id]}' (Event)"
+                except: pass
+                
+            return node_str
 
         source = resolve(u)
         target = resolve(v)
         
-        # Determine relationship verb
-        # In the future, you can pull 'mechanism' from the edge data if available
-        relation = "strongly influences" if weight > 0.5 else "is related to"
+        relation = "strongly correlates with" if weight > 0.5 else "is linked to"
         
         # Format: (Source) --[influences]--> (Target)
         triple = f"- {source} {relation} {target} (Importance: {weight:.2f})"
         triples.append(triple)
         
-    # Sort by importance so the LLM sees the biggest drivers first
     return sorted(triples, key=lambda x: float(x.split('Importance: ')[1][:-1]), reverse=True)

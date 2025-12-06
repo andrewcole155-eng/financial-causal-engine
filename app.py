@@ -204,6 +204,43 @@ def get_cloud_config_dict():
         }
     return load_config()
 
+@st.cache_data(ttl=600)
+def get_event_mapping():
+    """
+    Fetches a mapping of { 'Event_123': 'Headline Text' } from Neo4j.
+    This gives the LLM the context it needs to write good narratives.
+    """
+    config = get_cloud_config_dict()
+    db = DatabaseManager(config)
+    
+    # We grab the Neo4j internal ID and the Headline
+    query = """
+    MATCH (e:Event)
+    RETURN id(e) as id, e.headline as headline, e.type as type
+    """
+    try:
+        results = db.execute_read(query)
+        db.close()
+        
+        # Create two mappings to be safe (Int ID and String ID)
+        mapping = {}
+        for row in results:
+            # Clean the headline to be concise
+            text = row.get('headline', 'Unknown Event')
+            evt_type = row.get('type', '')
+            if len(text) > 50: text = text[:50] + "..."
+            
+            label = f"{evt_type}: {text}" if evt_type else text
+            
+            # Map both "1922" (int) and "Event_1922" (str) to the text
+            mapping[row['id']] = label
+            mapping[f"Event_{row['id']}"] = label
+            
+        return mapping
+    except Exception as e:
+        logger.error(f"Failed to load event map: {e}")
+        return {}
+
 # ==============================================================================
 # --- NEW: TRUTH LAYER VISUALIZATION ---
 # ==============================================================================
@@ -1754,10 +1791,14 @@ def main():
                         
                         if st.button("Generate Narrative Analysis ✨"):
                             with st.spinner("Translating Math to English..."):
-                                # 1. Extract Triples
-                                triples = extract_narrative_triples(subgraph, full_sorted_tickers)
                                 
-                                # 2. Call LLM
+                                # 1. NEW: Fetch Event Headlines
+                                event_map = get_event_mapping()
+                                
+                                # 2. Extract Triples (Now passing the event_map!)
+                                triples = extract_narrative_triples(subgraph, full_sorted_tickers, event_map)
+                                
+                                # 3. Call LLM
                                 narrative = generate_financial_narrative(target, prediction_label, triples)
                                 
                                 st.success("Analysis Generated")
