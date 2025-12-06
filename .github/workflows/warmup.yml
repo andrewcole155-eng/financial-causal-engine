@@ -49,7 +49,7 @@ jobs:
           EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           RECIPIENT_EMAILS: ${{ secrets.RECIPIENT_EMAILS }}
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}  # <--- AUTHENTICATION ADDED HERE
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: python worker.py
 
       # --- STEP 2: WRITE TO NEO4J (The Pump) ---
@@ -73,9 +73,11 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # 1. Add only the graph file we care about
           git add financial_graph.gml
           
-          # Check if there are changes; if not, exit cleanly
+          # 2. Check if there are changes to that file; if not, exit cleanly
           if git diff --staged --quiet; then
             echo "No changes to commit"
             exit 0
@@ -83,8 +85,11 @@ jobs:
           
           git commit -m "Update pre-computed graph with fresh data"
           
-          # Pull the latest changes from remote and reapply our commit on top
-          # This prevents the "race condition" error
+          # 3. CRITICAL FIX: Stash (hide) any other dirty files (pycache, logs)
+          # This ensures the directory is clean so rebase works.
+          git stash --include-untracked
+          
+          # 4. Pull the latest changes from remote and reapply our commit on top
           git pull --rebase origin main
           
           git push

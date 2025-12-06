@@ -45,3 +45,31 @@ neo4j_data_backup/
 sec-edgar-filings/
 database/neo4j/data/
 neo4j/data/
+
+# --- Jupyter Notebooks ---
+# (Common if you experiment with data in notebooks)
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# --- Common Data Formats ---
+# (Prevent accidental commit of raw downloaded sheets)
+*.csv
+*.xlsx
+*.xls
+*.pdf
+
+# --- Testing & Coverage ---
+# (If you run pytest or coverage tools later)
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Neo4j Extras ---
+# (If you mount these in Docker, exclude them too)
+neo4j/logs/
+neo4j/import/
+neo4j/plugins/
+
+# --- Docker ---
+# (If you use Docker Compose, usually ignore the override file)
+docker-compose.override.yml
