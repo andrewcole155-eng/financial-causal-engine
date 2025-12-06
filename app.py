@@ -1379,7 +1379,7 @@ def main():
         col_inputs, col_visual, col_explain = st.columns([1, 2, 1], gap="medium")
 
         # ==========================================================================
-        # --- COLUMN 1: CONTROL PANEL (RESTORED MODES) ---
+        # --- COLUMN 1: CONTROL PANEL ---
         # ==========================================================================
         with col_inputs:
             st.subheader("🎛️ Scenario Controls")
@@ -1407,14 +1407,17 @@ def main():
                     val = st.slider(f"{label} (%)", -20.0, 20.0, 0.0, 0.5, key=f"mac_{ticker}")
                     if val != 0: simulation_inputs[ticker] = val / 100.0
 
-            # --- MODE B: SINGLE ASSET SHOCK (FIXED FORMATTING) ---
+            # --- MODE B: SINGLE ASSET SHOCK (CORRECTED DROPDOWN) ---
             else:
                 st.info("Shock a specific company to trace its supply chain impact.")
                 
-                # 1. Formatting Helper (Matches Tab 2)
+                # 1. Formatting Helper (Using the global cache)
                 company_map = load_company_names()
+                
                 def format_asset_label(ticker):
+                    # Get name from JSON map
                     name = company_map.get(ticker)
+                    # Fallback to Graph attributes if JSON misses it
                     if not name and financial_graph.has_node(ticker):
                         name = financial_graph.nodes[ticker].get('name')
                     return f"{name} ({ticker})" if name else ticker
@@ -1432,7 +1435,7 @@ def main():
                 target_asset = st.selectbox(
                     "Select Asset:", 
                     node_opts, 
-                    format_func=format_asset_label,  # <--- APPLIED HERE
+                    format_func=format_asset_label,  # <--- Shows "Apple Inc (AAPL)"
                     key="single_asset_select"
                 )
                 
@@ -1462,7 +1465,8 @@ def main():
                                 aggregated_impacts[node] = aggregated_impacts.get(node, 0.0) + data['score']
                                 
                     # 2. Filter Significant Nodes for Graph
-                    threshold = 0.005
+                    # Slightly higher threshold to reduce noise in Macro views
+                    threshold = 0.005 
                     sig_nodes = [n for n, s in aggregated_impacts.items() if abs(s) > threshold]
                     sig_nodes.extend(simulation_inputs.keys()) # Always show drivers
                     sig_nodes = list(set(sig_nodes))
@@ -1478,25 +1482,57 @@ def main():
                     if sig_nodes:
                         subgraph = financial_graph.subgraph(sig_nodes)
                         viz_graph = subgraph.copy()
+                        # Clean attributes for PyVis
                         for u, v, d in viz_graph.edges(data=True):
                             d.pop('source', None); d.pop('target', None)
                         
                         net = Network(height="600px", width="100%", notebook=True, directed=True, bgcolor="#1e1e1e", font_color="white")
                         net.from_nx(viz_graph)
 
+                        # Color/Size Nodes based on Impact
                         for node in net.nodes:
                             nid = node['id']
                             impact = aggregated_impacts.get(nid, 0.0)
+                            
+                            # Dynamic Sizing
                             node['size'] = 20 + (abs(impact) * 80)
                             
+                            # Driver vs Victim Coloring
                             if nid in simulation_inputs:
-                                node['color'], node['shape'], node['size'] = "#ffffff", "diamond", 40
-                            elif impact < 0: node['color'] = "#ff4b4b"
-                            else: node['color'] = "#00c853"
+                                node['color'] = "#ffffff" # White
+                                node['shape'] = "diamond"
+                                node['size'] = 40
+                            elif impact < 0: 
+                                node['color'] = "#ff4b4b" # Red
+                            else: 
+                                node['color'] = "#00c853" # Green
                             
                             node['title'] = f"Impact: {impact:.2%}"
 
-                        net.set_options('{"physics": {"forceAtlas2Based": {"gravitationalConstant": -50}}}')
+                        # --- PHYSICS FIX FOR CONGESTION ---
+                        # Use BarnesHut with strong repulsion to space out nodes
+                        net.set_options("""
+                        var options = {
+                          "nodes": {
+                            "font": {
+                              "size": 24,
+                              "color": "#ffffff"
+                            }
+                          },
+                          "physics": {
+                            "barnesHut": {
+                              "gravitationalConstant": -30000,
+                              "centralGravity": 0.3,
+                              "springLength": 200,
+                              "springConstant": 0.05,
+                              "damping": 0.09,
+                              "avoidOverlap": 1
+                            },
+                            "minVelocity": 0.75
+                          }
+                        }
+                        """)
+                        
                         html_path = f"sim_{uuid.uuid4().hex}.html"
                         net.save_graph(html_path)
                         with open(html_path, 'r', encoding='utf-8') as f: st.session_state.sim_fig_html = f.read()
@@ -1509,6 +1545,7 @@ def main():
             st.subheader("🕸️ Market Reaction")
             if st.session_state.sim_fig_html:
                 st.components.v1.html(st.session_state.sim_fig_html, height=650)
+                st.caption("Nodes colored by Net Impact: 🟢 Positive | 🔴 Negative | ⚪ Driver")
             else:
                 st.info("Run a simulation to see the graph.")
                 st.image("https://placehold.co/600x400/1e1e1e/FFF?text=Waiting...", use_container_width=True)
@@ -1537,8 +1574,6 @@ def main():
 
                 if sorted_impacts:
                     st.markdown("**Top Impacted Assets:**")
-                    # Use formatted names here too for consistency if desired, or just Ticker
-                    # For clarity in the table, Ticker is often cleaner, but let's stick to Ticker for now.
                     df_imp = pd.DataFrame(sorted_impacts, columns=['Ticker', 'Impact'])
                     st.dataframe(df_imp.style.format({'Impact': '{:.2%}'}), hide_index=True)
                 else:
@@ -1546,7 +1581,7 @@ def main():
 
                 st.divider()
 
-                # --- AI NARRATIVE (FIXED PROMPT) ---
+                # --- AI NARRATIVE ---
                 if gemini_active:
                     if st.button("✨ Generate AI Narrative"):
                         with st.spinner("Analyzing causal chain..."):
