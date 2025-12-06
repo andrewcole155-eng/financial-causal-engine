@@ -1361,11 +1361,11 @@ def main():
                             st.write(explanation)
 
 # ==============================================================================
-    # --- TAB 3: SIMULATE SCENARIOS (FULL MACRO-CAUSAL ENGINE) ---
+    # --- TAB 3: SIMULATE SCENARIOS (FULL MACRO + GEOPOLITICS) ---
     # ==============================================================================
     with tab_simulate:
         st.header("🔬 Causal Simulation Engine")
-        st.caption("Simulate market shocks, Sahm Rule triggers, and Seasonality effects.")
+        st.caption("Simulate market shocks, Geopolitical events, and Seasonality.")
 
         financial_graph = get_full_graph()
         if financial_graph is None:
@@ -1388,9 +1388,8 @@ def main():
         with col_inputs:
             st.subheader("🎛️ Scenario Controls")
             
-            # --- PERFORMANCE CONTROL (Mobile Fix) ---
-            max_display_nodes = st.slider("📉 Max Nodes (Performance)", 10, 200, 60, help="Lower this if on mobile.")
-
+            # Performance Slider
+            max_display_nodes = st.slider("📉 Max Nodes (Mobile Fix)", 10, 200, 60)
             st.divider()
             
             sim_mode = st.radio("Mode:", ["🌍 Macro Stress Test", "🎯 Single Asset Shock"], horizontal=True)
@@ -1399,23 +1398,29 @@ def main():
 
             if sim_mode == "🌍 Macro Stress Test":
                 # 1. Fed & Economy
-                st.markdown("### 🏛️ Federal Reserve")
+                st.markdown("### 🏛️ Economy")
                 sim_rate = st.slider("Fed Funds Rate (%)", 0.0, 10.0, float(real_macro.get('interest_rate', 5.33)), 0.25)
                 sim_sahm = st.slider("Sahm Signal", 0.0, 2.0, float(real_macro.get('sahm_signal_value', 0.0)))
                 
-                is_recession = sim_sahm >= 0.50
-                if is_recession: st.error(f"📉 RECESSION (Signal: {sim_sahm:.2f})")
+                if sim_sahm >= 0.50: st.error(f"📉 RECESSION (Signal: {sim_sahm:.2f})")
                 else: st.success(f"📈 Growth (Signal: {sim_sahm:.2f})")
 
-                # 2. Market Drivers
-                st.markdown("### 🛢️ Market Drivers")
-                macro_drivers = {"CL=F": "Crude Oil", "^VIX": "Volatility (VIX)", "DX-Y.NYB": "US Dollar"}
+                # 2. NEW: GEOPOLITICAL SHOCKS (From your Image C)
+                st.markdown("### ⚔️ Geopolitical Risk (GPR)")
+                # Normal State = 100. Ukraine War Start ~= 300.
+                gpr_index = st.slider("GPR Index (War Risk)", 50, 500, 100, 50, help="100=Normal, 300+=Major Conflict")
+                
+                if gpr_index > 200: st.warning("⚠️ High Conflict Risk Active")
+
+                # 3. Market Drivers
+                st.markdown("### 🛢️ Commodities")
+                macro_drivers = {"CL=F": "Crude Oil", "^VIX": "Volatility", "DX-Y.NYB": "US Dollar"}
                 for ticker, label in macro_drivers.items():
                     val = st.slider(f"{label} Shock (%)", -30.0, 30.0, 0.0, 1.0, key=f"mac_{ticker}")
                     if val != 0: simulation_inputs[ticker] = val / 100.0
 
-                # 3. Expanded Seasonality
-                st.markdown("### 🗓️ Market Cycles")
+                # 4. Seasonality
+                st.markdown("### 🗓️ Cycles")
                 sea_col1, sea_col2 = st.columns(2)
                 with sea_col1:
                     force_q4 = st.checkbox("🎄 Q4 Retail", value=bool(real_macro.get('is_q4_retail', 0)))
@@ -1424,15 +1429,36 @@ def main():
                     force_earnings = st.checkbox("📊 Earnings Season", value=bool(real_macro.get('is_earnings_season', 0)))
                     force_lull = st.checkbox("🏖️ Summer Lull", value=bool(real_macro.get('is_summer_lull', 0)))
 
-                # --- PROCESS INPUTS ---
+                # --- LOGIC PROCESSING ---
+                # A. Fed Rate
                 rate_diff = (sim_rate - real_macro.get('interest_rate', 5.33)) / 100.0
                 if rate_diff != 0: simulation_inputs["^TNX"] = rate_diff 
                 
-                if is_recession:
+                # B. Recession Logic
+                if sim_sahm >= 0.50:
                     if "^VIX" not in simulation_inputs: simulation_inputs["^VIX"] = 0.50 
-                    if "CL=F" not in simulation_inputs: simulation_inputs["CL=F"] = -0.20
+                    if "CL=F" not in simulation_inputs: simulation_inputs["CL=F"] = -0.20 # Demand destruction
                 
-                # Seasonality Logic Injection
+                # C. GEOPOLITICAL LOGIC (The New Enhancement)
+                # If GPR is high, we shock Oil (Supply fears) and Defense Stocks
+                if gpr_index > 120:
+                    # Calculate shock magnitude relative to baseline of 100
+                    war_shock = (gpr_index - 100) / 100.0 * 0.10 # Scale factor
+                    
+                    # 1. Boost Oil (if not manually set)
+                    if "CL=F" not in simulation_inputs: 
+                        simulation_inputs["CL=F"] = war_shock 
+                    
+                    # 2. Boost Defense Contractors (Hardcoded Tickers)
+                    defense_tickers = ["LMT", "RTX", "NOC", "GD", "LHX"]
+                    for dt in defense_tickers:
+                        simulation_inputs[dt] = war_shock * 1.5 # Defense stocks rally harder
+                    
+                    # 3. Spike VIX (Fear)
+                    if "^VIX" not in simulation_inputs:
+                        simulation_inputs["^VIX"] = war_shock * 2.0
+
+                # D. Seasonality Logic
                 if force_q4:
                      simulation_inputs["AMZN"] = 0.05
                      simulation_inputs["WMT"] = 0.03
@@ -1480,17 +1506,18 @@ def main():
                 else:
                     # 1. Propagate
                     for driver, magnitude in simulation_inputs.items():
+                        # Handle case where driver isn't in graph (like implicit Defense tickers not loaded yet)
                         if driver in financial_graph:
                             impacts = calculate_impact_scores(financial_graph, driver, magnitude)
                             for node, data in impacts.items():
                                 aggregated_impacts[node] = aggregated_impacts.get(node, 0.0) + data['score']
                         
-                    # --- OPTIMIZATION: SORT & LIMIT NODES ---
+                    # 2. Sort & Limit
                     sorted_impacts = sorted(aggregated_impacts.items(), key=lambda x: abs(x[1]), reverse=True)
                     top_impacts = sorted_impacts[:max_display_nodes]
                     
                     sig_nodes = [n[0] for n in top_impacts]
-                    sig_nodes.extend(simulation_inputs.keys()) # Keep drivers
+                    sig_nodes.extend(simulation_inputs.keys()) 
                     sig_nodes = list(set(sig_nodes))
                     sig_nodes = [n for n in sig_nodes if n in financial_graph]
 
@@ -1513,7 +1540,6 @@ def main():
                             nid = node['id']
                             impact = aggregated_impacts.get(nid, 0.0)
                             
-                            # Styling
                             if nid in simulation_inputs:
                                 node['size'] = 40; node['color'] = "#ffffff"; node['shape'] = "diamond"
                             else:
@@ -1523,7 +1549,6 @@ def main():
                             
                             node['title'] = f"Impact: {impact:.2%}"
 
-                        # PHYSICS: ForceAtlas2 (Web-like layout)
                         net.set_options("""
                         var options = {
                           "nodes": { "font": { "size": 14, "color": "#ffffff" } },
