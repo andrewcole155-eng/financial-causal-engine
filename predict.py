@@ -15,17 +15,22 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # --- CRITICAL: GET ABSOLUTE PATH TO SCRIPT DIRECTORY ---
-# This ensures we find files even if Streamlit runs from a different folder
+# This ensures we find files even if Streamlit runs from a different folder (root vs mount)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def load_config() -> Dict[str, Any]:
-    """Loads config.json from the same directory as this script."""
+    """
+    Loads config.json from the same directory as this script.
+    On Streamlit Cloud, this file might not exist (ignored by git).
+    In that case, we return an empty dict and rely on Environment Variables.
+    """
     config_path = os.path.join(SCRIPT_DIR, 'config.json')
     try:
         with open(config_path, 'r') as f:
             return json.load(f)
-    except Exception as e:
-        logger.error(f"Error loading config.json at {config_path}: {e}")
+    except Exception:
+        # This is expected behavior on Cloud deployments using Secrets
+        logger.warning(f"Config file not found at {config_path}. Assuming Environment Variables (Secrets) are set.")
         return {}
 
 def add_unique_company_features(data: HeteroData) -> HeteroData:
@@ -35,7 +40,7 @@ def add_unique_company_features(data: HeteroData) -> HeteroData:
     """
     logger.info("--- Injecting Unique Random Features for Inference ---")
     
-    # --- Set Seed for Consistency ---
+    # --- CRITICAL: Set Seed for Consistency ---
     # This ensures that when the Explainer runs later, it sees the exact same 
     # "random" features as the Inference engine did.
     torch.manual_seed(42)
@@ -58,37 +63,41 @@ def get_inference_resources():
     Does NOT run the full batch prediction or CSV export.
     This allows the App to 'borrow' the model for explanation purposes.
     """
+    # 1. Load Config (Might be empty on Cloud)
     config = load_config()
-    if not config: return None, None, None
 
-    # 1. Load Data
+    # 2. Load Data via Pipeline
+    # The pipeline is smart enough to check os.environ if config is empty
     pipeline = GNNPipeline(config)
     data = pipeline.get_graph_data()
-    if data is None: return None, None, None
+    
+    if data is None:
+        logger.error("Failed to load graph data. Check Neo4j connection in Secrets.")
+        return None, None, None
 
-    # 2. Inject Features (Using the fixed seed)
+    # 3. Inject Features (Using the fixed seed)
     data = add_unique_company_features(data)
 
-    # 3. Load Model using ABSOLUTE PATH
+    # 4. Load Model using ABSOLUTE PATH
+    # This fixes the "Error loading model" issue on Cloud
     model_path = os.path.join(SCRIPT_DIR, "gnn_risk_model.pth")
     
     if not os.path.exists(model_path):
         logger.error(f"FATAL: Model file not found at: {model_path}")
-        # Debugging aid: Print what IS in the directory
-        logger.error(f"Contents of {SCRIPT_DIR}: {os.listdir(SCRIPT_DIR)}")
+        logger.error("Did you push 'gnn_risk_model.pth' to GitHub?")
         return None, None, None
 
     try:
         # hidden_dim=32 matches your train.py
         model = create_hetero_model(data, hidden_dim=32, out_dim=3)
         
-        # --- CRITICAL FIX: INITIALIZE LAZY LAYERS ---
+        # --- CRITICAL FIX: INITIALIZE LAZY LAYERS (Dry Run) ---
         # We must run a 'dry run' forward pass to initialize the model parameter shapes
         # BEFORE loading the state dictionary. Otherwise, PyTorch throws a key error.
         with torch.no_grad():
             model(data.x_dict, data.edge_index_dict)
             
-        # NOW we can safely load the weights
+        # NOW we can safely load the weights (Mapped to CPU for Cloud compatibility)
         model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
         model.eval()
         
@@ -104,6 +113,7 @@ def export_to_csv(config: Dict[str, Any], filename="live_risk_scores.csv"):
     """
     try:
         # 1. Load the "Guest List" (Clean JSON)
+        # Use absolute path to ensure we find it
         json_file = os.path.join(SCRIPT_DIR, 'sp500_companies.json')
         
         if os.path.exists(json_file):
@@ -116,9 +126,13 @@ def export_to_csv(config: Dict[str, Any], filename="live_risk_scores.csv"):
             clean_map = {}
             valid_tickers = None
 
-        # 2. Connect to Neo4j
-        uri = config.get("neo4j_uri", "bolt://localhost:7687")
-        auth = (config.get("neo4j_user", "neo4j"), config.get("neo4j_password", "password"))
+        # 2. Connect to Neo4j (Handling Env Vars for Cloud)
+        # Priority: Environment Variable -> Config File -> Default
+        uri = os.environ.get("NEO4J_URI", config.get("neo4j_uri", "bolt://localhost:7687"))
+        user = os.environ.get("NEO4J_USER", config.get("neo4j_user", "neo4j"))
+        pwd = os.environ.get("NEO4J_PASSWORD", config.get("neo4j_password", "password"))
+        
+        auth = (user, pwd)
         
         driver = GraphDatabase.driver(uri, auth=auth)
         
@@ -168,7 +182,7 @@ def export_to_csv(config: Dict[str, Any], filename="live_risk_scores.csv"):
             df.to_csv(out_path, index=False)
             logger.info(f"✅ CSV Export Successful: Saved {len(df)} clean records to {out_path}")
             
-            # Log how many Zombies were killed (RESTORED LOGIC)
+            # Log how many Zombies were killed
             zombies_killed = len(raw_data) - len(clean_data)
             if zombies_killed > 0:
                 logger.info(f"👻 Removed {zombies_killed} 'Zombie' tickers (e.g., ATVI, ABC) from export.")
@@ -180,13 +194,17 @@ def export_to_csv(config: Dict[str, Any], filename="live_risk_scores.csv"):
 
 def run_inference():
     """
+    Main execution function.
     Loads model, predicts risk, applies Contrast Stretching if needed, and saves.
     """
     logger.info("🚀 Starting GNN inference script...")
     
     # --- CHANGED: Use the helper to get resources ---
+    # This prevents code duplication and ensures App and Script use same logic
     model, data, config = get_inference_resources()
+    
     if model is None:
+        logger.error("Inference aborted due to missing resources.")
         return
 
     # --- 4. Run Inference ---
@@ -229,8 +247,6 @@ def run_inference():
         logger.info(f"Generated risk scores for {len(risk_scores)} companies.")
 
         # --- 5. Write Predictions ---
-        # We need to re-init pipeline here just to access the save method
-        # (Or we could have returned pipeline from get_resources, but this is fine)
         pipeline = GNNPipeline(config)
         pipeline.save_predictions(risk_scores)
 
