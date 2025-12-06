@@ -346,9 +346,10 @@ def render_truth_layer(ticker: str, db_manager: DatabaseManager):
         legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01)
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig)
 
-# ==============================================================================
+# ==========================
+====================================================
 # --- FUNCTION: Inject Live Risk Scores ---
 # ==============================================================================
 def inject_live_risk_data(graph: nx.DiGraph) -> nx.DiGraph:
@@ -919,7 +920,11 @@ def main():
         with col_ev_refresh:
             st.write("") # Spacer to align button
             st.write("") 
-            if st.button("🔄 Refresh Events", use_container_width=True):
+            # OLD: if st.button("🔄 Refresh Events", use_container_width=True):
+            
+            # NEW: (Buttons still typically use use_container_width in many versions, 
+            # but if it errors, try removing the argument or using help='stretch')
+            if st.button("🔄 Refresh Events"): # Safest to remove arg if causing crash
                 st.cache_data.clear() 
                 st.cache_resource.clear() 
                 st.rerun()
@@ -1284,18 +1289,20 @@ def main():
                     
                     # Format for display
                     st.success("Analysis Complete. These companies pose the highest systemic risk.")
-                    
+
                     # Top 10 Chart
                     top_10 = vuln_df.head(10).copy()
-                    # Make damage positive for easier bar chart reading (Magnitude of Damage)
                     top_10['Damage Magnitude'] = top_10['Systemic_Damage'].abs()
                     
                     st.bar_chart(top_10, x="Ticker", y="Damage Magnitude", color="#FF4B4B")
                     
                     # Full Data Table
+                    # OLD: st.dataframe(..., use_container_width=True)
+                    
+                    # NEW:
                     st.dataframe(
                         vuln_df[['Ticker', 'Company Name', 'Systemic_Damage', ' impacted_count']], 
-                        use_container_width=True,
+                        width=None, # Or removed entirely to let Streamlit decide
                         column_config={
                             "Systemic_Damage": st.column_config.NumberColumn("Total Network Loss", format="%.2f"),
                             " impacted_count": st.column_config.NumberColumn("Companies Affected")
@@ -1560,7 +1567,7 @@ def main():
 
             # --- EXECUTE PATHFINDING ---
             st.divider()
-            if not is_sink_node and st.button("🗺️ Find Riskiest Path", use_container_width=True):
+            if not is_sink_node and st.button("🗺️ Find Riskiest Path"):
                 if start_node and end_node:
                     try:
                         all_paths = list(nx.all_simple_paths(financial_graph, source=start_node, target=end_node, cutoff=5))
