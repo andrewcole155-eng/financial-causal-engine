@@ -1518,7 +1518,7 @@ def main():
                             if os.path.exists(html_file): os.remove(html_file)
 
         # ==========================================================================
-        # MODE 3: COUNTERFACTUAL REASONING (UPDATED WITH FILTERS & FORMATTING)
+        # MODE 3: COUNTERFACTUAL REASONING (UPDATED WITH NARRATIVE ANALYSIS)
         # ==========================================================================
         elif "Counterfactual Reasoning" in sim_mode:
             st.subheader("🔮 Counterfactual 'What-If' Simulator")
@@ -1536,14 +1536,12 @@ def main():
             with col_do_1:
                 st.markdown("#### 1. The Driver (X)")
                 
-                # Sector Filter for Treatment
                 sector_x = st.selectbox(
                     "Filter Sector (X):", 
                     ["All Sectors"] + all_sectors, 
                     key="do_sector_x"
                 )
 
-                # Filter the Node List based on Sector X
                 options_x = all_nodes
                 if sector_x != "All Sectors":
                     options_x = [n for n in all_nodes if financial_graph.nodes[n].get('sector') == sector_x]
@@ -1552,7 +1550,7 @@ def main():
                     "Select Treatment Node:", 
                     options_x, 
                     index=0,
-                    format_func=format_ticker, # Displays Name + Ticker
+                    format_func=format_ticker, 
                     key="do_node_x"
                 )
 
@@ -1560,19 +1558,16 @@ def main():
             with col_do_2:
                 st.markdown("#### 2. The Target (Y)")
 
-                # Sector Filter for Outcome
                 sector_y = st.selectbox(
                     "Filter Sector (Y):", 
                     ["All Sectors"] + all_sectors, 
                     key="do_sector_y"
                 )
 
-                # Filter the Node List based on Sector Y
                 options_y = all_nodes
                 if sector_y != "All Sectors":
                     options_y = [n for n in all_nodes if financial_graph.nodes[n].get('sector') == sector_y]
                 
-                # Ensure we don't pick the same node for X and Y
                 if treatment_node in options_y:
                     options_y = [n for n in options_y if n != treatment_node]
 
@@ -1580,7 +1575,7 @@ def main():
                     "Select Outcome Node:", 
                     options_y, 
                     index=0, 
-                    format_func=format_ticker, # Displays Name + Ticker
+                    format_func=format_ticker,
                     key="do_node_y"
                 )
 
@@ -1605,14 +1600,9 @@ def main():
             # --- EXECUTION LOGIC ---
             if run_btn:
                 st.divider()
-                # Format names for the status message
-                t_name = format_ticker(treatment_node)
-                o_name = format_ticker(outcome_node)
-                
-                st.write(f"**Hypothesis:** If we intervene on **{t_name}** by **{perturbation}**, what happens to **{o_name}**?")
                 
                 # 1. Fetch Data
-                with st.spinner(f"Fetching aligned history for {treatment_node} and {outcome_node}..."):
+                with st.spinner(f"Fetching aligned history for {format_ticker(treatment_node)} and {format_ticker(outcome_node)}..."):
                     historical_df = fetch_aligned_history(treatment_node, outcome_node)
 
                 if historical_df is None or len(historical_df) < 50:
@@ -1639,7 +1629,7 @@ def main():
                             )
                             status.update(label="Calculation Complete!", state="complete")
                             
-                            # 4. Display Results
+                            # 4. Display Metrics
                             st.divider()
                             r_col1, r_col2 = st.columns(2)
                             
@@ -1659,13 +1649,32 @@ def main():
                                     delta_color="off"
                                 )
 
-                            # Validity Check
-                            st.subheader("Statistical Validation")
+                            # 5. NEW: Narrative Analysis
+                            st.subheader("📋 Causal Analysis Report")
+                            
+                            beta = result['base_coefficient']
                             p_val = result['validity_p_value']
+                            t_name = format_ticker(treatment_node)
+                            o_name = format_ticker(outcome_node)
+
                             if result['is_statistically_significant']:
-                                st.success(f"✅ **Validated:** The causal link is statistically significant (p-value: {p_val:.4f}).")
+                                analysis_text = (
+                                    f"### ✅ Validated Connection\n"
+                                    f"**{t_name}** is a statistically verified driver of **{o_name}**.\n\n"
+                                    f"* **Magnitude:** For every **$1.00** shift in {t_name}, {o_name} is expected to move by **${beta:.2f}**.\n"
+                                    f"* **Robustness:** This relationship passed stress testing with a score of **{p_val:.2f}** (High Confidence). "
+                                    f"It is unlikely to be a random coincidence."
+                                )
+                                st.info(analysis_text)
                             else:
-                                st.error(f"❌ **Refuted:** The effect is indistinguishable from random noise (p-value: {p_val:.4f}).")
+                                analysis_text = (
+                                    f"### ❌ Weak or Unverified Connection\n"
+                                    f"While there may be a correlation (Beta: {beta:.2f}), the causal link between **{t_name}** and **{o_name}** "
+                                    f"is weak.\n\n"
+                                    f"* **Robustness:** The relationship failed the stress test (p-value: {p_val:.2f}). "
+                                    f"When random noise was introduced, the connection disappeared, suggesting it might be a coincidence rather than a true cause."
+                                )
+                                st.warning(analysis_text)
                                 
                         except Exception as e:
                             st.error(f"Causal Inference Failed: {str(e)}")
