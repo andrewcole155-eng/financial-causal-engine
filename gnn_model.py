@@ -1,11 +1,12 @@
 import torch
 import torch.nn.functional as F
-from torch_geometric.nn import SAGEConv, HeteroConv
+# UPDATE: We import GATv2Conv for the Attention mechanism
+from torch_geometric.nn import SAGEConv, HeteroConv, GATv2Conv
 from torch_geometric.data import HeteroData
 
 # 1. The Main HeteroGNN Model
-# We removed the 'GNNBlock' class because we now define the layers 
-# explicitly inside HeteroConv. This is much more stable.
+# We use GATv2 (Graph Attention) to allow the model to learn "sensitivity" (Edge Weights).
+# This allows the model to decide that "Interest Rates" matter more for Tech than Energy.
 class HeteroGNN(torch.nn.Module):
     def __init__(self, metadata, hidden_dim, out_dim):
         super().__init__()
@@ -13,27 +14,28 @@ class HeteroGNN(torch.nn.Module):
         # metadata[0] = node_types (e.g., ['Company', 'Event'])
         # metadata[1] = edge_types (e.g., [('Company', 'HAD_EVENT', 'Event'), ...])
         
-        # --- Layer 1 ---
-        # We create a dictionary where every edge type gets its own SAGEConv.
-        # (-1, -1) means "auto-detect input size" for both source and target nodes.
+        # --- Layer 1: Attention Layer ---
+        # We replace SAGEConv with GATv2Conv.
+        # - heads=1: Keeps output dimension equal to hidden_dim (simplifies stacking).
+        # - add_self_loops=False: CRITICAL for Hetero graphs to prevent shape mismatch errors.
         self.conv1 = HeteroConv({
-            edge_type: SAGEConv((-1, -1), hidden_dim)
+            edge_type: GATv2Conv((-1, -1), hidden_dim, heads=1, add_self_loops=False)
             for edge_type in metadata[1]
         }, aggr='sum')
 
-        # --- Layer 2 ---
+        # --- Layer 2: Refinement Layer ---
         self.conv2 = HeteroConv({
-            edge_type: SAGEConv((-1, -1), hidden_dim)
+            edge_type: GATv2Conv((-1, -1), hidden_dim, heads=1, add_self_loops=False)
             for edge_type in metadata[1]
         }, aggr='sum')
 
         # --- Final Output Layer ---
-        # We only want to classify 'Company' nodes
+        # We only want to classify 'Company' nodes (Low/Med/High Risk)
         self.output_layer = torch.nn.Linear(hidden_dim, out_dim)
 
     def forward(self, x_dict, edge_index_dict):
         # --- Run Layer 1 ---
-        # HeteroConv expects x_dict and edge_index_dict directly
+        # The GAT layer automatically calculates attention weights (alphas) during this pass.
         x_dict = self.conv1(x_dict, edge_index_dict)
         
         # Apply ReLU to every node type in the dictionary
@@ -48,7 +50,7 @@ class HeteroGNN(torch.nn.Module):
         # --- Get Company Output ---
         # We isolate the 'Company' nodes for the final prediction
         if 'Company' not in x_dict:
-            # Safety check: if Company nodes got filtered out or lost (unlikely)
+            # Safety check: if Company nodes got filtered out or lost
             raise ValueError("Company nodes missing from message passing output!")
             
         company_x = x_dict['Company']

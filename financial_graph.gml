@@ -6,12 +6,13 @@ graph [
     ticker "EQR"
     market_cap 0
     name "Equity Residential"
-    gnn_risk_score 2.9434810144834955E-08
+    gnn_risk_score 1.4570922246548434E-07
     industry "REIT - Residential"
-    raw_risk_score 0.22331668984949954
+    raw_risk_score 0.17073264234007926
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 1
@@ -21,11 +22,12 @@ graph [
     market_cap 0
     last_news_update "2025-12-05T03:01:06.073000000+00:00"
     name "Berkshire Hathaway (Class B)"
-    gnn_risk_score 1.1020546253348584E-06
+    gnn_risk_score 1.0115320947079454E-05
     industry "Insurance - Diversified"
     raw_risk_score -0.7
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 2
@@ -33,12 +35,13 @@ graph [
     ticker "CPT"
     market_cap 0
     name "Camden Property Trust"
-    gnn_risk_score 4.892788183497032E-06
+    gnn_risk_score 8.642336979391985E-06
     industry "REIT - Residential"
-    raw_risk_score 0.18410026559473813
+    raw_risk_score 0.12382558397993973
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 3
@@ -46,12 +49,13 @@ graph [
     ticker "ESS"
     market_cap 0
     name "Essex Property Trust"
-    gnn_risk_score 2.7964794369061963E-10
+    gnn_risk_score 4.4017167965648696E-05
     industry "REIT - Residential"
-    raw_risk_score 0.13761237636719933
+    raw_risk_score 0.0954713177514439
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 4
@@ -59,12 +63,13 @@ graph [
     ticker "SPG"
     market_cap 0
     name "Simon Property Group"
-    gnn_risk_score 5.67200368095655E-06
+    gnn_risk_score 3.5870161951834234E-08
     industry "REIT - Retail"
-    raw_risk_score 0.07629181042660227
+    raw_risk_score 0.07659137897865852
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 5
@@ -72,12 +77,13 @@ graph [
     ticker "FICO"
     market_cap 0
     name "Fair Isaac"
-    gnn_risk_score 3.385929758792372E-08
+    gnn_risk_score 0.5131595730781555
     industry "Software - Application"
-    raw_risk_score 0.19900606110388244
+    raw_risk_score 0.21539941018102962
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 6
@@ -85,12 +91,13 @@ graph [
     ticker "CDNS"
     market_cap 0
     name "Cadence Design Systems"
-    gnn_risk_score 4.318840467476548E-07
+    gnn_risk_score 1.1105942121503176E-07
     industry "Software - Application"
-    raw_risk_score 0.2595679395886047
+    raw_risk_score 0.27024828965743997
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 7
@@ -100,12 +107,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T17:06:49.025000000+00:00"
     name "Alexandria Real Estate Equities"
-    gnn_risk_score 2.744129119491845E-07
+    gnn_risk_score 0.9249265193939209
     industry "REIT - Office"
-    raw_risk_score 0.37372484156158436
+    raw_risk_score 0.39574463873957505
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 8
@@ -113,12 +121,13 @@ graph [
     ticker "ALL"
     market_cap 0
     name "Allstate"
-    gnn_risk_score 0.9977554082870483
+    gnn_risk_score 0.9932883977890015
     industry "Insurance - Property &#38; Casualty"
-    raw_risk_score 0.14172715705997752
+    raw_risk_score 0.23767366652877567
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 9
@@ -126,12 +135,13 @@ graph [
     ticker "STT"
     market_cap 0
     name "State Street Corporation"
-    gnn_risk_score 2.2978200675538574E-08
+    gnn_risk_score 3.911222279384674E-08
     industry "Asset Management"
-    raw_risk_score 0.16849276713021294
+    raw_risk_score 0.2263562116267857
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 10
@@ -139,12 +149,13 @@ graph [
     ticker "MAS"
     market_cap 0
     name "Masco"
-    gnn_risk_score 5.538563527807128E-06
+    gnn_risk_score 0.0008249115198850632
     industry "Building Products &#38; Equipment"
-    raw_risk_score 0.1961756411722005
+    raw_risk_score 0.1934746519589887
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 11
@@ -152,12 +163,13 @@ graph [
     ticker "WFC"
     market_cap 0
     name "Wells Fargo"
-    gnn_risk_score 1.4505225408356637E-05
+    gnn_risk_score 1.0072538316308055E-05
     industry "Banks - Diversified"
-    raw_risk_score 0.23190486052757406
+    raw_risk_score 0.21614217711258568
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 12
@@ -165,12 +177,13 @@ graph [
     ticker "RTX"
     market_cap 0
     name "RTX Corporation"
-    gnn_risk_score 0.9937133193016052
+    gnn_risk_score 0.9989898204803467
     industry "Aerospace &#38; Defense"
-    raw_risk_score 0.1375812654889578
+    raw_risk_score 0.1645630872530529
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 13
@@ -178,12 +191,13 @@ graph [
     ticker "AOS"
     market_cap 0
     name "A. O. Smith"
-    gnn_risk_score 6.841156807713134E-11
+    gnn_risk_score 5.326722316567611E-07
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.14172594918074155
+    raw_risk_score 0.213539550990208
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 14
@@ -193,12 +207,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T12:02:50.171000000+00:00"
     name "AbbVie"
-    gnn_risk_score 1.0081039336640174E-09
+    gnn_risk_score 3.543998536770232E-05
     industry "Drug Manufacturers - General"
-    raw_risk_score 0.16923884253782645
+    raw_risk_score 0.1938517955835405
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 15
@@ -208,12 +223,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T19:01:25.199000000+00:00"
     name "Accenture"
-    gnn_risk_score 0.0006276060012169182
+    gnn_risk_score 0.0002121583529515192
     industry "Information Technology Services"
-    raw_risk_score 0.2797792419446976
+    raw_risk_score 0.2745902677621162
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 16
@@ -221,10 +237,11 @@ graph [
     ticker "ATVI"
     market_cap 0
     name "N/A"
-    gnn_risk_score 1.3660863942277501E-06
+    gnn_risk_score 1.385992959512805E-06
     raw_risk_score -0.0
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 17
@@ -232,12 +249,13 @@ graph [
     ticker "ADBE"
     market_cap 0
     name "Adobe Inc."
-    gnn_risk_score 4.22930088461726E-06
+    gnn_risk_score 2.7493973675518646E-07
     industry "Software - Application"
-    raw_risk_score 0.1508855901930107
+    raw_risk_score 0.2236700158066121
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 18
@@ -245,12 +263,13 @@ graph [
     ticker "ADP"
     market_cap 0
     name "Automatic Data Processing"
-    gnn_risk_score 1.03562793896117E-08
+    gnn_risk_score 0.9967525005340576
     industry "Software - Application"
-    raw_risk_score 0.13933583960399828
+    raw_risk_score 0.16090665679143795
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 19
@@ -258,12 +277,13 @@ graph [
     ticker "AAP"
     market_cap 0
     name "Advance Auto Parts"
-    gnn_risk_score 8.701171338998392E-08
+    gnn_risk_score 0.9999599456787109
     industry "Auto Parts"
-    raw_risk_score 0.29442869812106476
+    raw_risk_score 0.29970251083058475
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 20
@@ -271,12 +291,13 @@ graph [
     ticker "AES"
     market_cap 0
     name "AES Corporation"
-    gnn_risk_score 1.1902301594091114E-05
+    gnn_risk_score 3.0253386285039596E-07
     industry "Utilities - Diversified"
-    raw_risk_score 0.1420545963358126
+    raw_risk_score 0.12256624812158491
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 21
@@ -284,12 +305,13 @@ graph [
     ticker "AFL"
     market_cap 0
     name "Aflac"
-    gnn_risk_score 9.961878504327615E-07
+    gnn_risk_score 0.9943859577178955
     industry "Insurance - Life"
-    raw_risk_score 0.20957262357797019
+    raw_risk_score 0.18566535926592065
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 22
@@ -297,12 +319,13 @@ graph [
     ticker "A"
     market_cap 0
     name "Agilent Technologies"
-    gnn_risk_score 1.7306712507547672E-08
+    gnn_risk_score 2.567281171650393E-06
     industry "Diagnostics &#38; Research"
-    raw_risk_score 0.1578891633251169
+    raw_risk_score 0.16432839318538386
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 23
@@ -310,12 +333,13 @@ graph [
     ticker "AKAM"
     market_cap 0
     name "Akamai Technologies"
-    gnn_risk_score 1.0511424619608079E-08
+    gnn_risk_score 2.4270545395665977E-07
     industry "Software - Infrastructure"
-    raw_risk_score 0.35597651300735456
+    raw_risk_score 0.4021724302873051
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 24
@@ -323,12 +347,13 @@ graph [
     ticker "ALK"
     market_cap 0
     name "Alaska Air Group"
-    gnn_risk_score 2.5518568236293504E-07
+    gnn_risk_score 0.00022077916946727782
     industry "Airlines"
-    raw_risk_score 0.3602136449532217
+    raw_risk_score 0.420679781984473
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 25
@@ -338,12 +363,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-02T13:43:42.264000000+00:00"
     name "Albemarle Corporation"
-    gnn_risk_score 6.230140570551157E-06
+    gnn_risk_score 0.00020436094200704247
     industry "Specialty Chemicals"
-    raw_risk_score 0.36331641007768956
+    raw_risk_score 0.4066070660982429
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 26
@@ -351,27 +377,29 @@ graph [
     ticker "ALGN"
     market_cap 0
     name "Align Technology"
-    gnn_risk_score 1.7185640217576292E-06
+    gnn_risk_score 0.9999478459358215
     industry "Medical Instruments &#38; Supplies"
-    raw_risk_score 0.36464101149023187
+    raw_risk_score 0.3942043716128516
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 27
     label "GOOG"
-    sentiment_score -0.6
+    sentiment_score 0.3
     ticker "GOOG"
     market_cap 0
-    last_news_update "2025-12-05T06:01:10.573000000+00:00"
+    last_news_update "2025-12-06T07:02:08.829000000+00:00"
     name "Alphabet Inc. (Class C)"
-    gnn_risk_score 4.22935727328877E-06
+    gnn_risk_score 0.00111586379352957
     industry "Internet Content &#38; Information"
-    raw_risk_score 0.3570539973698681
+    raw_risk_score 0.3835263483684602
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 28
@@ -379,27 +407,29 @@ graph [
     ticker "MO"
     market_cap 0
     name "Altria"
-    gnn_risk_score 2.2703421365122267E-09
+    gnn_risk_score 0.9983739256858826
     industry "Tobacco"
-    raw_risk_score 0.10060632544659585
+    raw_risk_score 0.08602102375002407
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 29
     label "AMZN"
-    sentiment_score -0.3
+    sentiment_score 0.7
     ticker "AMZN"
     market_cap 0
-    last_news_update "2025-12-04T18:02:53.985000000+00:00"
+    last_news_update "2025-12-06T07:01:24.934000000+00:00"
     name "Amazon"
-    gnn_risk_score 2.0918541565606574E-07
+    gnn_risk_score 0.9999851584434509
     industry "Internet Retail"
-    raw_risk_score 0.21062296760508323
+    raw_risk_score 0.1871751820242265
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 30
@@ -407,27 +437,29 @@ graph [
     ticker "AMCR"
     market_cap 0
     name "Amcor"
-    gnn_risk_score 1.8766558014249313E-06
+    gnn_risk_score 5.0704165310833105E-09
     industry "Packaging &#38; Containers"
-    raw_risk_score 0.1716801704548008
+    raw_risk_score 0.14948459827591798
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 31
     label "AMD"
-    sentiment_score 0.7
+    sentiment_score 0.2
     ticker "AMD"
     market_cap 0
-    last_news_update "2025-12-04T12:07:48.989000000+00:00"
+    last_news_update "2025-12-05T23:01:36.070000000+00:00"
     name "Advanced Micro Devices"
-    gnn_risk_score 1.6618347586927484E-08
+    gnn_risk_score 0.9990767240524292
     industry "Semiconductors"
-    raw_risk_score 0.4694582970508863
+    raw_risk_score 0.44437521853269013
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 32
@@ -435,12 +467,13 @@ graph [
     ticker "AEE"
     market_cap 0
     name "Ameren"
-    gnn_risk_score 1.1603109584257254E-08
+    gnn_risk_score 4.139481291076663E-07
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.1981785209483064
+    raw_risk_score 0.22543983526617833
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 33
@@ -448,12 +481,13 @@ graph [
     ticker "AAL"
     market_cap 0
     name "American Airlines Group"
-    gnn_risk_score 1.358852932753507E-05
+    gnn_risk_score 1.487839654146228E-06
     industry "Airlines"
-    raw_risk_score 0.32494553115250246
+    raw_risk_score 0.39094871433533873
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 34
@@ -461,12 +495,13 @@ graph [
     ticker "AIG"
     market_cap 0
     name "American International Group"
-    gnn_risk_score 6.091797288831913E-09
+    gnn_risk_score 1.3036558357271133E-06
     industry "Insurance - Diversified"
-    raw_risk_score 0.12375319307209628
+    raw_risk_score 0.11374516385820295
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 35
@@ -474,12 +509,13 @@ graph [
     ticker "AMT"
     market_cap 0
     name "American Tower"
-    gnn_risk_score 3.771159740040275E-08
+    gnn_risk_score 3.6697229006676935E-06
     industry "REIT - Specialty"
-    raw_risk_score 0.13510772468489235
+    raw_risk_score 0.18417628308846706
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 36
@@ -487,10 +523,11 @@ graph [
     ticker "ABC"
     market_cap 0
     name "N/A"
-    gnn_risk_score 0.9999114274978638
+    gnn_risk_score 0.992753803730011
     raw_risk_score 0.7479171575726691
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 37
@@ -498,12 +535,13 @@ graph [
     ticker "AME"
     market_cap 0
     name "Ametek"
-    gnn_risk_score 0.00016919268819037825
+    gnn_risk_score 8.620389735369827E-08
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.14548771688661863
+    raw_risk_score 0.1692285523385874
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 38
@@ -513,12 +551,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T12:02:49.400000000+00:00"
     name "Amgen"
-    gnn_risk_score 6.658628990408033E-07
+    gnn_risk_score 0.0012301538372412324
     industry "Drug Manufacturers - General"
-    raw_risk_score 0.16980756375071365
+    raw_risk_score 0.170786087206188
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 39
@@ -526,12 +565,13 @@ graph [
     ticker "APH"
     market_cap 0
     name "Amphenol"
-    gnn_risk_score 3.108835144871591E-08
+    gnn_risk_score 3.32191945062732E-08
     industry "Electronic Components"
-    raw_risk_score 0.2367309384326645
+    raw_risk_score 0.2582732021551334
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 40
@@ -541,12 +581,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T12:30:15.692000000+00:00"
     name "Analog Devices"
-    gnn_risk_score 1.4280212781159207E-06
+    gnn_risk_score 0.001591534004546702
     industry "Semiconductors"
-    raw_risk_score 0.35572518550025645
+    raw_risk_score 0.38111517987138016
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 41
@@ -554,10 +595,11 @@ graph [
     ticker "ANSS"
     market_cap 0
     name "ANSYS Inc."
-    gnn_risk_score 5.514609711099183E-07
+    gnn_risk_score 9.329798444923654E-08
     raw_risk_score -0.0
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 42
@@ -565,25 +607,29 @@ graph [
     ticker "AON"
     market_cap 0
     name "Aon plc"
-    gnn_risk_score 1.4560721410816768E-06
+    gnn_risk_score 7.781539856921427E-09
     industry "Insurance Brokers"
-    raw_risk_score 0.10346183551875181
+    raw_risk_score 0.11981980265497014
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 43
     label "AAPL"
+    sentiment_score 0.5
     ticker "AAPL"
     market_cap 0
+    last_news_update "2025-12-06T05:00:44.445000000+00:00"
     name "Apple Inc."
-    gnn_risk_score 9.611732565417697E-08
+    gnn_risk_score 0.9992618560791016
     industry "Consumer Electronics"
-    raw_risk_score 0.15413108650790674
+    raw_risk_score 0.14402883847758816
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 44
@@ -593,12 +639,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-02T13:43:39.105000000+00:00"
     name "Applied Materials"
-    gnn_risk_score 1.0311415280739311E-05
+    gnn_risk_score 0.5070672631263733
     industry "Semiconductor Equipment &#38; Materials"
-    raw_risk_score 0.4129108255567694
+    raw_risk_score 0.39747857960659694
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 45
@@ -606,12 +653,13 @@ graph [
     ticker "ANET"
     market_cap 0
     name "Arista Networks"
-    gnn_risk_score 9.230742580257356E-05
+    gnn_risk_score 3.527650846990582E-07
     industry "Computer Hardware"
-    raw_risk_score 0.22094838582651227
+    raw_risk_score 0.21878033396969962
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 46
@@ -619,12 +667,13 @@ graph [
     ticker "AIZ"
     market_cap 0
     name "Assurant"
-    gnn_risk_score 5.2972020057495683E-05
+    gnn_risk_score 8.553903171559796E-06
     industry "Insurance - Property &#38; Casualty"
-    raw_risk_score 0.11551173632602063
+    raw_risk_score 0.15780595739668993
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 47
@@ -634,12 +683,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T12:07:59.519000000+00:00"
     name "AT&#38;T Inc."
-    gnn_risk_score 0.9997831583023071
+    gnn_risk_score 0.9999999403953552
     industry "Telecom Services"
-    raw_risk_score 0.11361764844422237
+    raw_risk_score 0.11140541434576812
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 48
@@ -647,12 +697,13 @@ graph [
     ticker "ATO"
     market_cap 0
     name "Atmos Energy"
-    gnn_risk_score 0.9994868040084839
+    gnn_risk_score 0.9999977946281433
     industry "Utilities - Regulated Gas"
-    raw_risk_score 0.17711114558563323
+    raw_risk_score 0.128234332526841
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 49
@@ -660,12 +711,13 @@ graph [
     ticker "ADSK"
     market_cap 0
     name "Autodesk"
-    gnn_risk_score 1.1128188370790326E-09
+    gnn_risk_score 5.731415786414118E-09
     industry "Software - Application"
-    raw_risk_score 0.16472875023769473
+    raw_risk_score 0.15180077597036676
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 50
@@ -673,12 +725,13 @@ graph [
     ticker "AZO"
     market_cap 0
     name "AutoZone"
-    gnn_risk_score 2.3921710834429177E-08
+    gnn_risk_score 1.168861899714102E-06
     industry "Auto Parts"
-    raw_risk_score 0.1054390282262327
+    raw_risk_score 0.11788106655101778
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 51
@@ -686,12 +739,13 @@ graph [
     ticker "AVY"
     market_cap 0
     name "Avery Dennison"
-    gnn_risk_score 2.3444412363460287E-05
+    gnn_risk_score 2.938826071385847E-07
     industry "Packaging &#38; Containers"
-    raw_risk_score 0.11774829275171661
+    raw_risk_score 0.1978734949385445
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 52
@@ -699,12 +753,13 @@ graph [
     ticker "BALL"
     market_cap 0
     name "Ball Corporation"
-    gnn_risk_score 0.9999994039535522
+    gnn_risk_score 0.9997969269752502
     industry "Packaging &#38; Containers"
-    raw_risk_score 0.21782180941937135
+    raw_risk_score 0.24939477609852356
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 53
@@ -714,12 +769,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-02T17:52:10.789000000+00:00"
     name "Bank of America"
-    gnn_risk_score 3.203212202151917E-07
+    gnn_risk_score 0.5015833377838135
     industry "Banks - Diversified"
-    raw_risk_score 0.15183912331917404
+    raw_risk_score 0.16646694840721055
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 54
@@ -727,27 +783,29 @@ graph [
     ticker "BBWI"
     market_cap 0
     name "Bath &#38; Body Works, Inc."
-    gnn_risk_score 9.13917028810829E-06
+    gnn_risk_score 2.370782539173888E-07
     industry "Specialty Retail"
-    raw_risk_score 0.6453475906360513
+    raw_risk_score 0.6630520066594517
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 55
     label "BAX"
-    sentiment_score -0.3
+    sentiment_score -0.7
     ticker "BAX"
     market_cap 0
-    last_news_update "2025-12-04T23:02:53.592000000+00:00"
+    last_news_update "2025-12-05T18:06:38.748000000+00:00"
     name "Baxter International"
-    gnn_risk_score 2.2617190609253157E-07
+    gnn_risk_score 0.9998253583908081
     industry "Medical Instruments &#38; Supplies"
-    raw_risk_score 0.19541527142819884
+    raw_risk_score 0.19346646948759016
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 56
@@ -755,12 +813,13 @@ graph [
     ticker "BDX"
     market_cap 0
     name "Becton Dickinson"
-    gnn_risk_score 3.090825657636742E-07
+    gnn_risk_score 8.735197098985736E-08
     industry "Medical Instruments &#38; Supplies"
-    raw_risk_score 0.12375557302597978
+    raw_risk_score 0.12990689497299818
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 57
@@ -768,12 +827,13 @@ graph [
     ticker "WRB"
     market_cap 0
     name "W. R. Berkley Corporation"
-    gnn_risk_score 7.637680391781032E-05
+    gnn_risk_score 3.4369045920357166E-07
     industry "Insurance - Property &#38; Casualty"
-    raw_risk_score 0.29654010378631396
+    raw_risk_score 0.3776423569686341
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 58
@@ -781,12 +841,13 @@ graph [
     ticker "BIO"
     market_cap 0
     name "Bio-Rad Laboratories"
-    gnn_risk_score 4.1904976710860353E-10
+    gnn_risk_score 0.9999735355377197
     industry "Medical Devices"
-    raw_risk_score 0.18985354437183435
+    raw_risk_score 0.2011430373273382
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 59
@@ -794,12 +855,13 @@ graph [
     ticker "TECH"
     market_cap 0
     name "Bio-Techne"
-    gnn_risk_score 0.7098164558410645
+    gnn_risk_score 0.9990143179893494
     industry "Biotechnology"
-    raw_risk_score 0.24781431155982825
+    raw_risk_score 0.2422921954886186
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 60
@@ -807,12 +869,13 @@ graph [
     ticker "BK"
     market_cap 0
     name "BNY Mellon"
-    gnn_risk_score 2.7981201355942176E-07
+    gnn_risk_score 3.8839766602905E-07
     industry "Banks - Diversified"
-    raw_risk_score 0.16054379838883082
+    raw_risk_score 0.17917959812734435
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 61
@@ -820,12 +883,13 @@ graph [
     ticker "BWA"
     market_cap 0
     name "BorgWarner Inc."
-    gnn_risk_score 0.00026305863866582513
+    gnn_risk_score 1.3938151823822409E-06
     industry "Auto Parts"
-    raw_risk_score 0.22323450503594938
+    raw_risk_score 0.21354497560402075
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 62
@@ -833,12 +897,13 @@ graph [
     ticker "BXP"
     market_cap 0
     name "BXP, Inc."
-    gnn_risk_score 0.00014101267152000219
+    gnn_risk_score 9.083289675970718E-09
     industry "REIT - Office"
-    raw_risk_score 0.12065751561199545
+    raw_risk_score 0.16072531502957416
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 63
@@ -846,12 +911,13 @@ graph [
     ticker "BSX"
     market_cap 0
     name "Boston Scientific"
-    gnn_risk_score 8.210442501876969E-06
+    gnn_risk_score 7.157816526159877E-07
     industry "Medical Devices"
-    raw_risk_score 0.24541815206592382
+    raw_risk_score 0.22574075101382068
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 64
@@ -859,12 +925,13 @@ graph [
     ticker "BRO"
     market_cap 0
     name "Brown &#38; Brown"
-    gnn_risk_score 0.004201414063572884
+    gnn_risk_score 5.378381501941476E-06
     industry "Insurance Brokers"
-    raw_risk_score 0.11375421491146419
+    raw_risk_score 0.17523761686268863
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 65
@@ -872,37 +939,44 @@ graph [
     ticker "BF.B"
     market_cap 0
     name "Brown-Forman Corp (Class B)"
-    gnn_risk_score 4.633889005845049E-08
+    gnn_risk_score 2.7114074327982962E-06
     industry "Beverages - Wineries &#38; Distilleries"
     raw_risk_score -0.0
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 66
     label "CHRW"
+    sentiment_score 0.4
     ticker "CHRW"
     market_cap 0
+    last_news_update "2025-12-05T16:05:18.919000000+00:00"
     name "C.H. Robinson"
-    gnn_risk_score 3.8184167351573706E-05
+    gnn_risk_score 1.4533438688624223E-11
     industry "Integrated Freight &#38; Logistics"
-    raw_risk_score 0.2057451042943686
+    raw_risk_score 0.17138839722700722
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 67
     label "CAH"
+    sentiment_score 0.7
     ticker "CAH"
     market_cap 0
+    last_news_update "2025-12-06T00:01:26.803000000+00:00"
     name "Cardinal Health"
-    gnn_risk_score 3.341878937135334E-06
+    gnn_risk_score 0.002272616373375058
     industry "Medical Distribution"
-    raw_risk_score 0.1841639089342262
+    raw_risk_score 0.18360761552111585
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 68
@@ -910,27 +984,31 @@ graph [
     sentiment_score -0.7
     ticker "KMX"
     market_cap 0
-    last_news_update "2025-12-04T20:05:30.115000000+00:00"
+    last_news_update "2025-12-05T19:06:32.313000000+00:00"
     name "CarMax, Inc."
-    gnn_risk_score 4.771709996020945E-07
+    gnn_risk_score 0.9999986886978149
     industry "Auto &#38; Truck Dealerships"
-    raw_risk_score 0.6520717320441335
+    raw_risk_score 0.36254797079336165
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 69
     label "CCL"
+    sentiment_score 0.3
     ticker "CCL"
     market_cap 0
+    last_news_update "2025-12-06T08:00:43.308000000+00:00"
     name "Carnival"
-    gnn_risk_score 3.3646942938503344E-06
+    gnn_risk_score 2.373526042376284E-09
     industry "Travel Services"
-    raw_risk_score 0.23263314621575765
+    raw_risk_score 0.2298081320866556
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 70
@@ -938,12 +1016,13 @@ graph [
     ticker "CARR"
     market_cap 0
     name "Carrier Global"
-    gnn_risk_score 0.9189554452896118
+    gnn_risk_score 0.9724645018577576
     industry "Building Products &#38; Equipment"
-    raw_risk_score 0.17156874801139416
+    raw_risk_score 0.16550439115376747
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 71
@@ -951,10 +1030,11 @@ graph [
     ticker "CTLT"
     market_cap 0
     name "Catalent, Inc."
-    gnn_risk_score 1.290989985136548E-05
+    gnn_risk_score 3.6393196296558017E-06
     raw_risk_score -0.0
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 72
@@ -962,12 +1042,13 @@ graph [
     ticker "CAT"
     market_cap 0
     name "Caterpillar Inc."
-    gnn_risk_score 0.9963647127151489
+    gnn_risk_score 0.9999999403953552
     industry "Farm &#38; Heavy Construction Machinery"
-    raw_risk_score 0.2689587389957113
+    raw_risk_score 0.27834257375383337
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 73
@@ -975,12 +1056,13 @@ graph [
     ticker "CBOE"
     market_cap 0
     name "Cboe Global Markets"
-    gnn_risk_score 5.843202961841598E-05
+    gnn_risk_score 2.4232733153439767E-07
     industry "Financial Data &#38; Stock Exchanges"
-    raw_risk_score 0.13257995026360037
+    raw_risk_score 0.141730629483787
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 74
@@ -988,12 +1070,13 @@ graph [
     ticker "CBRE"
     market_cap 0
     name "CBRE Group"
-    gnn_risk_score 7.211271224605298E-08
+    gnn_risk_score 3.223581188649405E-07
     industry "Real Estate Services"
-    raw_risk_score 0.223623315055052
+    raw_risk_score 0.214172496600283
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 75
@@ -1001,12 +1084,13 @@ graph [
     ticker "CDW"
     market_cap 0
     name "CDW Corporation"
-    gnn_risk_score 2.94306056304941E-13
+    gnn_risk_score 3.6835007932722874E-08
     industry "Information Technology Services"
-    raw_risk_score 0.15932703451527422
+    raw_risk_score 0.15232048350624927
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 76
@@ -1014,25 +1098,29 @@ graph [
     ticker "CNC"
     market_cap 0
     name "Centene Corporation"
-    gnn_risk_score 8.054507105725861E-08
+    gnn_risk_score 0.9999258518218994
     industry "Healthcare Plans"
-    raw_risk_score 0.34699708328611734
+    raw_risk_score 0.3338220305094435
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 77
     label "CNP"
+    sentiment_score 0.7
     ticker "CNP"
     market_cap 0
+    last_news_update "2025-12-05T11:02:39.777000000+00:00"
     name "CenterPoint Energy"
-    gnn_risk_score 1.44484024744429E-08
+    gnn_risk_score 0.0011685342760756612
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.13126756882210253
+    raw_risk_score 0.1532336923706924
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 78
@@ -1040,10 +1128,11 @@ graph [
     ticker "CDAY"
     market_cap 0
     name "N/A"
-    gnn_risk_score 3.088260200456716E-05
+    gnn_risk_score 3.224589306682901E-07
     raw_risk_score -0.0
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 79
@@ -1051,12 +1140,13 @@ graph [
     ticker "CF"
     market_cap 0
     name "CF Industries"
-    gnn_risk_score 3.2074033242679434E-06
+    gnn_risk_score 3.3724762982245693E-09
     industry "Agricultural Inputs"
-    raw_risk_score 0.2285804886237307
+    raw_risk_score 0.2826238020987406
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 80
@@ -1064,12 +1154,13 @@ graph [
     ticker "CRL"
     market_cap 0
     name "Charles River Laboratories"
-    gnn_risk_score 2.3579846128995996E-06
+    gnn_risk_score 8.953958996471556E-08
     industry "Diagnostics &#38; Research"
-    raw_risk_score 0.2963264997780753
+    raw_risk_score 0.31622659037474576
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 81
@@ -1079,12 +1170,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-02T17:52:14.227000000+00:00"
     name "Charles Schwab Corporation"
-    gnn_risk_score 3.1835671876478955E-09
+    gnn_risk_score 0.9986485838890076
     industry "Capital Markets"
-    raw_risk_score 0.10813115900555881
+    raw_risk_score 0.12632696712381314
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 82
@@ -1092,12 +1184,13 @@ graph [
     ticker "CMG"
     market_cap 0
     name "Chipotle Mexican Grill"
-    gnn_risk_score 5.8698191423900425E-05
+    gnn_risk_score 3.762730216294585E-08
     industry "Restaurants"
-    raw_risk_score 0.3310993856600697
+    raw_risk_score 0.30326992923923624
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 83
@@ -1105,12 +1198,13 @@ graph [
     ticker "CHD"
     market_cap 0
     name "Church &#38; Dwight"
-    gnn_risk_score 5.8339708175481064E-08
+    gnn_risk_score 5.961790172648307E-09
     industry "Household &#38; Personal Products"
-    raw_risk_score 0.10663994897190554
+    raw_risk_score 0.10135570734479825
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 84
@@ -1118,12 +1212,13 @@ graph [
     ticker "CI"
     market_cap 0
     name "Cigna"
-    gnn_risk_score 0.9998378157615662
+    gnn_risk_score 0.9999568462371826
     industry "Healthcare Plans"
-    raw_risk_score 0.15484952850721923
+    raw_risk_score 0.1717644208116569
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 85
@@ -1131,12 +1226,13 @@ graph [
     ticker "CTAS"
     market_cap 0
     name "Cintas"
-    gnn_risk_score 8.78343087151734E-09
+    gnn_risk_score 2.183109609177336E-05
     industry "Specialty Business Services"
-    raw_risk_score 0.12519465127316995
+    raw_risk_score 0.07459263144674723
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 86
@@ -1146,12 +1242,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-05T04:03:33.572000000+00:00"
     name "Citigroup"
-    gnn_risk_score 0.9978252053260803
+    gnn_risk_score 0.9991995692253113
     industry "Banks - Diversified"
-    raw_risk_score 0.23906641734204093
+    raw_risk_score 0.2599647896569027
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 87
@@ -1159,12 +1256,13 @@ graph [
     ticker "CME"
     market_cap 0
     name "CME Group"
-    gnn_risk_score 3.684508476098358E-09
+    gnn_risk_score 0.9992974400520325
     industry "Financial Data &#38; Stock Exchanges"
-    raw_risk_score 0.1806629587153688
+    raw_risk_score 0.21144574422568307
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 88
@@ -1172,12 +1270,13 @@ graph [
     ticker "CMS"
     market_cap 0
     name "CMS Energy"
-    gnn_risk_score 4.101253580302E-05
+    gnn_risk_score 1.8590431238862948E-07
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.17396287270439548
+    raw_risk_score 0.19354874934213528
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 89
@@ -1185,12 +1284,13 @@ graph [
     ticker "CTSH"
     market_cap 0
     name "Cognizant"
-    gnn_risk_score 1.7070082094505779E-06
+    gnn_risk_score 5.406431228038855E-06
     industry "Information Technology Services"
-    raw_risk_score 0.2830935135733649
+    raw_risk_score 0.3104282179921969
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 90
@@ -1198,12 +1298,13 @@ graph [
     ticker "CAG"
     market_cap 0
     name "Conagra Brands"
-    gnn_risk_score 1.4842464679531986E-06
+    gnn_risk_score 0.9999479651451111
     industry "Packaged Foods"
-    raw_risk_score 0.1782243391836284
+    raw_risk_score 0.1625797844152312
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 91
@@ -1211,12 +1312,13 @@ graph [
     ticker "STZ"
     market_cap 0
     name "Constellation Brands"
-    gnn_risk_score 3.021168879513425E-07
+    gnn_risk_score 5.954184985057509E-07
     industry "Beverages - Brewers"
-    raw_risk_score 0.2582550831374258
+    raw_risk_score 0.3077170290785261
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 92
@@ -1224,12 +1326,13 @@ graph [
     ticker "CPRT"
     market_cap 0
     name "Copart"
-    gnn_risk_score 2.189695607057729E-07
+    gnn_risk_score 5.619830858449859E-07
     industry "Specialty Business Services"
-    raw_risk_score 0.32344995094458356
+    raw_risk_score 0.28424471015709973
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 93
@@ -1237,12 +1340,13 @@ graph [
     ticker "CSGP"
     market_cap 0
     name "CoStar Group"
-    gnn_risk_score 5.964525939816667E-08
+    gnn_risk_score 3.2485722840647213E-06
     industry "Real Estate Services"
-    raw_risk_score 0.14573612978414147
+    raw_risk_score 0.11287288653302043
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 94
@@ -1250,12 +1354,13 @@ graph [
     ticker "CTRA"
     market_cap 0
     name "Coterra"
-    gnn_risk_score 8.997352551887161E-08
+    gnn_risk_score 2.5922824775648223E-08
     industry "Oil &#38; Gas E&#38;P"
-    raw_risk_score 0.2163921183966741
+    raw_risk_score 0.1950254147277694
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 95
@@ -1263,12 +1368,13 @@ graph [
     ticker "CCI"
     market_cap 0
     name "Crown Castle"
-    gnn_risk_score 2.8914244332156613E-09
+    gnn_risk_score 0.999997079372406
     industry "REIT - Specialty"
-    raw_risk_score 0.19375755134042077
+    raw_risk_score 0.205661815142374
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 96
@@ -1276,12 +1382,13 @@ graph [
     ticker "CSX"
     market_cap 0
     name "CSX Corporation"
-    gnn_risk_score 1.5440553280399172E-09
+    gnn_risk_score 0.9981603026390076
     industry "Railroads"
-    raw_risk_score 0.18877914103654533
+    raw_risk_score 0.19548157945268585
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 97
@@ -1289,12 +1396,13 @@ graph [
     ticker "CMI"
     market_cap 0
     name "Cummins"
-    gnn_risk_score 1.6213246567531314E-07
+    gnn_risk_score 7.201179414551007E-06
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.3130278473080169
+    raw_risk_score 0.31465525417633966
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 98
@@ -1302,12 +1410,13 @@ graph [
     ticker "CVS"
     market_cap 0
     name "CVS Health"
-    gnn_risk_score 0.9998949766159058
+    gnn_risk_score 0.9999916553497314
     industry "Healthcare Plans"
-    raw_risk_score 0.18900577048318928
+    raw_risk_score 0.19069591899499272
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 99
@@ -1315,12 +1424,13 @@ graph [
     ticker "DHI"
     market_cap 0
     name "D. R. Horton"
-    gnn_risk_score 4.513702151598409E-06
+    gnn_risk_score 7.039831871225033E-06
     industry "Residential Construction"
-    raw_risk_score 0.33082347805273643
+    raw_risk_score 0.32969163585079425
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 100
@@ -1328,12 +1438,13 @@ graph [
     ticker "DHR"
     market_cap 0
     name "Danaher Corporation"
-    gnn_risk_score 1.1688291223777014E-08
+    gnn_risk_score 0.9980977773666382
     industry "Diagnostics &#38; Research"
-    raw_risk_score 0.15635541158519248
+    raw_risk_score 0.1482039988907345
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 101
@@ -1341,12 +1452,13 @@ graph [
     ticker "DRI"
     market_cap 0
     name "Darden Restaurants"
-    gnn_risk_score 0.9998464584350586
+    gnn_risk_score 0.9999462962150574
     industry "Restaurants"
-    raw_risk_score 0.1488648547167946
+    raw_risk_score 0.1819077055264154
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 102
@@ -1354,12 +1466,13 @@ graph [
     ticker "DVA"
     market_cap 0
     name "DaVita"
-    gnn_risk_score 2.4518478312529624E-05
+    gnn_risk_score 2.3570537882600107E-12
     industry "Medical Care Facilities"
-    raw_risk_score 0.22904928453154952
+    raw_risk_score 0.21345687363530735
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 103
@@ -1367,12 +1480,13 @@ graph [
     ticker "XRAY"
     market_cap 0
     name "Dentsply Sirona"
-    gnn_risk_score 2.9104768373144907E-07
+    gnn_risk_score 1.1654666565164007E-07
     industry "Medical Instruments &#38; Supplies"
-    raw_risk_score 0.3456474175335887
+    raw_risk_score 0.2865389953228232
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 104
@@ -1380,12 +1494,13 @@ graph [
     ticker "DVN"
     market_cap 0
     name "Devon Energy"
-    gnn_risk_score 8.69891607635509E-08
+    gnn_risk_score 5.811368737340672E-06
     industry "Oil &#38; Gas E&#38;P"
-    raw_risk_score 0.25123014752288153
+    raw_risk_score 0.21964052641870063
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 105
@@ -1393,14 +1508,15 @@ graph [
     sentiment_score -0.7
     ticker "DXCM"
     market_cap 0
-    last_news_update "2025-12-04T21:05:48.501000000+00:00"
+    last_news_update "2025-12-05T18:06:47.406000000+00:00"
     name "Dexcom"
-    gnn_risk_score 8.476527924017319E-09
+    gnn_risk_score 0.9622318744659424
     industry "Medical Devices"
-    raw_risk_score 0.3344056573305247
+    raw_risk_score 0.39642467743405263
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 106
@@ -1408,12 +1524,13 @@ graph [
     ticker "FANG"
     market_cap 0
     name "Diamondback Energy"
-    gnn_risk_score 4.2016927181975916E-05
+    gnn_risk_score 1.4849740992417537E-08
     industry "Oil &#38; Gas E&#38;P"
-    raw_risk_score 0.28399552478691736
+    raw_risk_score 0.24139869581945578
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 107
@@ -1421,12 +1538,13 @@ graph [
     ticker "DLR"
     market_cap 0
     name "Digital Realty"
-    gnn_risk_score 0.0001819676108425483
+    gnn_risk_score 0.09997161477804184
     industry "REIT - Specialty"
-    raw_risk_score 0.16326719554960167
+    raw_risk_score 0.2140943218179877
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 108
@@ -1434,10 +1552,11 @@ graph [
     ticker "DFS"
     market_cap 0
     name "Discover Financial Services"
-    gnn_risk_score 3.8088202813924E-08
+    gnn_risk_score 1.2073719801719562E-07
     raw_risk_score -0.0
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 109
@@ -1445,14 +1564,15 @@ graph [
     sentiment_score 0.6
     ticker "DG"
     market_cap 0
-    last_news_update "2025-12-04T22:02:22.972000000+00:00"
+    last_news_update "2025-12-05T13:01:31.572000000+00:00"
     name "Dollar General"
-    gnn_risk_score 1.1341811934073576E-09
+    gnn_risk_score 1.5213086612675397E-07
     industry "Discount Stores"
-    raw_risk_score 0.5150834323078435
+    raw_risk_score 0.5305743768277164
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 110
@@ -1460,12 +1580,13 @@ graph [
     ticker "DLTR"
     market_cap 0
     name "Dollar Tree"
-    gnn_risk_score 2.688577751541743E-06
+    gnn_risk_score 9.205267815559637E-06
     industry "Discount Stores"
-    raw_risk_score 0.32762834805576524
+    raw_risk_score 0.36925400249712936
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 111
@@ -1473,12 +1594,13 @@ graph [
     ticker "DPZ"
     market_cap 0
     name "Domino's"
-    gnn_risk_score 1.1214630148970173E-06
+    gnn_risk_score 1.2589517872640954E-08
     industry "Restaurants"
-    raw_risk_score 0.19825986212925523
+    raw_risk_score 0.1565792465335254
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 112
@@ -1486,12 +1608,13 @@ graph [
     ticker "DOV"
     market_cap 0
     name "Dover Corporation"
-    gnn_risk_score 8.016519132070243E-05
+    gnn_risk_score 4.980359449291427E-07
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.2150499623356448
+    raw_risk_score 0.210218089139128
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 113
@@ -1499,12 +1622,13 @@ graph [
     ticker "DOW"
     market_cap 0
     name "Dow Inc."
-    gnn_risk_score 0.9999566674232483
+    gnn_risk_score 0.9999966621398926
     industry "Chemicals"
-    raw_risk_score 0.23093241739174622
+    raw_risk_score 0.2441878434720654
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 114
@@ -1514,12 +1638,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T21:01:30.208000000+00:00"
     name "Duke Energy"
-    gnn_risk_score 6.027645440553897E-07
+    gnn_risk_score 0.8142583966255188
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.16907297508308683
+    raw_risk_score 0.19650866576994133
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 115
@@ -1529,12 +1654,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T15:03:33.677000000+00:00"
     name "Eaton Corporation"
-    gnn_risk_score 1.2752659372949893E-08
+    gnn_risk_score 4.569527334297163E-07
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.2327745987266451
+    raw_risk_score -0.3
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T08:16:36.219000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 116
@@ -1542,12 +1668,13 @@ graph [
     ticker "EBAY"
     market_cap 0
     name "eBay Inc."
-    gnn_risk_score 1.696595290923142E-07
+    gnn_risk_score 4.7953715665016716E-08
     industry "Internet Retail"
-    raw_risk_score 0.20328148048033085
+    raw_risk_score 0.17876678062381743
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 117
@@ -1555,12 +1682,13 @@ graph [
     ticker "ECL"
     market_cap 0
     name "Ecolab"
-    gnn_risk_score 3.638231191871455E-06
+    gnn_risk_score 5.943757628301682E-07
     industry "Specialty Chemicals"
-    raw_risk_score 0.12761057633768655
+    raw_risk_score 0.11616056944347997
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 118
@@ -1568,12 +1696,13 @@ graph [
     ticker "EIX"
     market_cap 0
     name "Edison International"
-    gnn_risk_score 8.894198981579393E-05
+    gnn_risk_score 2.3533255443908274E-05
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.14229979681641644
+    raw_risk_score 0.11239967469996472
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 119
@@ -1581,12 +1710,13 @@ graph [
     ticker "EW"
     market_cap 0
     name "Edwards Lifesciences"
-    gnn_risk_score 2.722420955336702E-09
+    gnn_risk_score 6.15730277786497E-06
     industry "Medical Devices"
-    raw_risk_score 0.11832119297009845
+    raw_risk_score 0.11650827139045081
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 120
@@ -1596,12 +1726,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T19:06:22.159000000+00:00"
     name "Electronic Arts"
-    gnn_risk_score 0.9996801018714905
+    gnn_risk_score 0.999657392501831
     industry "Electronic Gaming &#38; Multimedia"
-    raw_risk_score 0.13625942368935728
+    raw_risk_score 0.17093442001759954
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 121
@@ -1609,12 +1740,13 @@ graph [
     ticker "ELV"
     market_cap 0
     name "Elevance Health"
-    gnn_risk_score 2.022567286985577E-07
+    gnn_risk_score 5.952260266894882E-07
     industry "Healthcare Plans"
-    raw_risk_score 0.20521780439199416
+    raw_risk_score 0.21658838832048555
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 122
@@ -1622,12 +1754,13 @@ graph [
     ticker "EMR"
     market_cap 0
     name "Emerson Electric"
-    gnn_risk_score 3.5119839481012605E-07
+    gnn_risk_score 1.0
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.2581236626729472
+    raw_risk_score 0.27322316096926225
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 123
@@ -1635,12 +1768,13 @@ graph [
     ticker "ENPH"
     market_cap 0
     name "Enphase Energy"
-    gnn_risk_score 7.826647561159916E-07
+    gnn_risk_score 2.9541381081799045E-05
     industry "Solar"
-    raw_risk_score 0.3797301517344434
+    raw_risk_score 0.4078679981335908
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 124
@@ -1648,12 +1782,13 @@ graph [
     ticker "ETR"
     market_cap 0
     name "Entergy"
-    gnn_risk_score 5.001514225000392E-08
+    gnn_risk_score 1.7844035937741864E-06
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.10136336921404081
+    raw_risk_score 0.12147086716684369
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 125
@@ -1661,12 +1796,13 @@ graph [
     ticker "EL"
     market_cap 0
     name "Est&#233;e Lauder Companies (The)"
-    gnn_risk_score 0.9999983310699463
+    gnn_risk_score 0.9999300837516785
     industry "Household &#38; Personal Products"
-    raw_risk_score 0.34959475688584557
+    raw_risk_score 0.36995689637674023
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 126
@@ -1674,12 +1810,13 @@ graph [
     ticker "ETSY"
     market_cap 0
     name "Etsy, Inc."
-    gnn_risk_score 1.3568208032666007E-06
+    gnn_risk_score 2.75220685352906E-07
     industry "Internet Retail"
-    raw_risk_score 0.42115294085894206
+    raw_risk_score 0.3673585843689417
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 127
@@ -1687,10 +1824,11 @@ graph [
     ticker "RE"
     market_cap 0
     name "N/A"
-    gnn_risk_score 0.9327253103256226
-    raw_risk_score 0.344270871579647
+    gnn_risk_score 0.9991578459739685
+    raw_risk_score 0.36272063652674347
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 128
@@ -1698,12 +1836,13 @@ graph [
     ticker "EVRG"
     market_cap 0
     name "Evergy"
-    gnn_risk_score 1.3238133760751225E-05
+    gnn_risk_score 3.197066575921781E-07
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.1476468874840914
+    raw_risk_score 0.1639909644078119
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 129
@@ -1711,12 +1850,13 @@ graph [
     ticker "ES"
     market_cap 0
     name "Eversource Energy"
-    gnn_risk_score 1.7085419585782802E-06
+    gnn_risk_score 0.9992510080337524
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.3690023968499825
+    raw_risk_score 0.3746689679880976
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 130
@@ -1724,12 +1864,13 @@ graph [
     ticker "EXC"
     market_cap 0
     name "Exelon"
-    gnn_risk_score 7.90083198864977E-09
+    gnn_risk_score 6.713577249684022E-08
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.1639960015401342
+    raw_risk_score 0.1918599546476213
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 131
@@ -1737,12 +1878,13 @@ graph [
     ticker "EXPD"
     market_cap 0
     name "Expeditors International"
-    gnn_risk_score 9.477675533275942E-09
+    gnn_risk_score 8.489705578540452E-06
     industry "Integrated Freight &#38; Logistics"
-    raw_risk_score 0.3061344635853587
+    raw_risk_score 0.3019825939515122
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 132
@@ -1750,12 +1892,13 @@ graph [
     ticker "EXR"
     market_cap 0
     name "Extra Space Storage"
-    gnn_risk_score 4.713107273346395E-07
+    gnn_risk_score 2.3384123082337283E-08
     industry "REIT - Industrial"
-    raw_risk_score 0.12178370182075246
+    raw_risk_score 0.17083693577053694
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 133
@@ -1763,12 +1906,13 @@ graph [
     ticker "XOM"
     market_cap 0
     name "ExxonMobil"
-    gnn_risk_score 2.1324744636785908E-07
+    gnn_risk_score 0.9999498724937439
     industry "Oil &#38; Gas Integrated"
-    raw_risk_score 0.10908565990359301
+    raw_risk_score 0.1567713282199246
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 134
@@ -1776,12 +1920,13 @@ graph [
     ticker "FAST"
     market_cap 0
     name "Fastenal"
-    gnn_risk_score 0.9743404388427734
+    gnn_risk_score 0.9995054006576538
     industry "Industrial Distribution"
-    raw_risk_score 0.14702103204710348
+    raw_risk_score 0.14340878090011325
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 135
@@ -1791,12 +1936,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T12:02:46.179000000+00:00"
     name "Federal Realty Investment Trust"
-    gnn_risk_score 1.0731669997099402E-09
+    gnn_risk_score 3.0539658268935455E-07
     industry "REIT - Retail"
-    raw_risk_score 0.09873325935549228
+    raw_risk_score 0.09064020552246252
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 136
@@ -1804,12 +1950,13 @@ graph [
     ticker "FDX"
     market_cap 0
     name "FedEx"
-    gnn_risk_score 1.3402659533312544E-05
+    gnn_risk_score 3.6518005799734965E-05
     industry "Integrated Freight &#38; Logistics"
-    raw_risk_score 0.20878544491751744
+    raw_risk_score 0.21282893832566277
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 137
@@ -1817,12 +1964,13 @@ graph [
     ticker "FITB"
     market_cap 0
     name "Fifth Third Bancorp"
-    gnn_risk_score 5.920636897416287E-11
+    gnn_risk_score 4.503587206272641E-06
     industry "Banks - Regional"
-    raw_risk_score 0.2523711691215573
+    raw_risk_score 0.25015713953156304
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 138
@@ -1830,12 +1978,13 @@ graph [
     ticker "FI"
     market_cap 0
     name "Fiserv, Inc."
-    gnn_risk_score 0.0012693422613665462
+    gnn_risk_score 0.0032194675877690315
     industry "Information Technology Services"
-    raw_risk_score 0.21162886086758084
+    raw_risk_score 0.23366988842646644
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 139
@@ -1843,10 +1992,11 @@ graph [
     ticker "FLT"
     market_cap 0
     name "N/A"
-    gnn_risk_score 3.267831232278695E-07
+    gnn_risk_score 2.642302909805494E-08
     raw_risk_score -0.0
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 140
@@ -1854,12 +2004,13 @@ graph [
     ticker "FMC"
     market_cap 0
     name "FMC Corporation"
-    gnn_risk_score 3.446756124958483E-08
+    gnn_risk_score 2.923732836279669E-06
     industry "Agricultural Inputs"
-    raw_risk_score 0.3074613700449911
+    raw_risk_score 0.32791196813751267
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 141
@@ -1867,12 +2018,13 @@ graph [
     ticker "FTNT"
     market_cap 0
     name "Fortinet"
-    gnn_risk_score 9.258551472157706E-07
+    gnn_risk_score 1.6332947438968404E-07
     industry "Software - Infrastructure"
-    raw_risk_score 0.2618692680785365
+    raw_risk_score 0.22178373092294368
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 142
@@ -1880,12 +2032,13 @@ graph [
     ticker "FTV"
     market_cap 0
     name "Fortive"
-    gnn_risk_score 1.2172125707365922E-06
+    gnn_risk_score 9.744282181145536E-08
     industry "Scientific &#38; Technical Instruments"
-    raw_risk_score 0.16431708445744078
+    raw_risk_score 0.19559432523233097
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 143
@@ -1893,25 +2046,29 @@ graph [
     ticker "BEN"
     market_cap 0
     name "Franklin Resources"
-    gnn_risk_score 0.9976280927658081
+    gnn_risk_score 0.9999704957008362
     industry "Asset Management"
-    raw_risk_score 0.23146999319345146
+    raw_risk_score 0.26144849398520126
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 144
     label "FCX"
+    sentiment_score -0.7
     ticker "FCX"
     market_cap 0
+    last_news_update "2025-12-06T04:01:56.275000000+00:00"
     name "Freeport-McMoRan"
-    gnn_risk_score 6.747323823219631E-06
+    gnn_risk_score 0.5004384517669678
     industry "Copper"
-    raw_risk_score 0.3175545218215369
+    raw_risk_score 0.32777859044740437
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 145
@@ -1919,12 +2076,13 @@ graph [
     ticker "GRMN"
     market_cap 0
     name "Garmin"
-    gnn_risk_score 4.466446625883691E-06
+    gnn_risk_score 2.1390947324562148E-07
     industry "Scientific &#38; Technical Instruments"
-    raw_risk_score 0.19105958849965934
+    raw_risk_score 0.22304375335419518
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 146
@@ -1932,12 +2090,13 @@ graph [
     ticker "IT"
     market_cap 0
     name "Gartner"
-    gnn_risk_score 7.297954880414181E-07
+    gnn_risk_score 2.00568883883534E-05
     industry "Information Technology Services"
-    raw_risk_score 0.16902309031891735
+    raw_risk_score 0.14207266238413302
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 147
@@ -1945,12 +2104,13 @@ graph [
     ticker "GNRC"
     market_cap 0
     name "Generac"
-    gnn_risk_score 2.150451905436057E-08
+    gnn_risk_score 9.517069088360586E-07
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.31583477286860334
+    raw_risk_score 0.3305151572612124
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 148
@@ -1958,25 +2118,29 @@ graph [
     ticker "GIS"
     market_cap 0
     name "General Mills"
-    gnn_risk_score 1.4529878171742894E-05
+    gnn_risk_score 1.494711909799662E-06
     industry "Packaged Foods"
-    raw_risk_score 0.1754539277944939
+    raw_risk_score 0.1845652904470632
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 149
     label "GILD"
+    sentiment_score 0.3
     ticker "GILD"
     market_cap 0
+    last_news_update "2025-12-05T11:05:39.021000000+00:00"
     name "Gilead Sciences"
-    gnn_risk_score 0.00011260734754614532
+    gnn_risk_score 0.0001221728598466143
     industry "Drug Manufacturers - General"
-    raw_risk_score 0.1817229119518588
+    raw_risk_score 0.20193530565177203
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 150
@@ -1984,12 +2148,13 @@ graph [
     ticker "GL"
     market_cap 0
     name "Globe Life"
-    gnn_risk_score 2.2617504669142363E-07
+    gnn_risk_score 0.00020091209444217384
     industry "Insurance - Life"
-    raw_risk_score 0.12595766620417778
+    raw_risk_score 0.08115982590184023
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 151
@@ -1997,12 +2162,13 @@ graph [
     ticker "GPN"
     market_cap 0
     name "Global Payments"
-    gnn_risk_score 9.751265395152586E-08
+    gnn_risk_score 3.3274531574534194E-07
     industry "Specialty Business Services"
-    raw_risk_score 0.23981904029208512
+    raw_risk_score 0.24031809952445365
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 152
@@ -2010,12 +2176,13 @@ graph [
     ticker "GS"
     market_cap 0
     name "Goldman Sachs"
-    gnn_risk_score 3.9659447947926196E-10
+    gnn_risk_score 7.263579755090177E-05
     industry "Capital Markets"
-    raw_risk_score 0.2268091121325779
+    raw_risk_score 0.2937394823503459
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 153
@@ -2023,12 +2190,13 @@ graph [
     ticker "GWW"
     market_cap 0
     name "W. W. Grainger"
-    gnn_risk_score 6.309896605216636E-08
+    gnn_risk_score 1.3712824511458166E-06
     industry "Industrial Distribution"
-    raw_risk_score 0.1742946901353011
+    raw_risk_score 0.21455525733951014
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 154
@@ -2036,12 +2204,13 @@ graph [
     ticker "HIG"
     market_cap 0
     name "Hartford (The)"
-    gnn_risk_score 6.586759582205559E-08
+    gnn_risk_score 7.71942154642602E-09
     industry "Insurance - Property &#38; Casualty"
-    raw_risk_score 0.10113447812929112
+    raw_risk_score 0.15562470016109728
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 155
@@ -2049,12 +2218,13 @@ graph [
     ticker "HAS"
     market_cap 0
     name "Hasbro"
-    gnn_risk_score 4.160759736748787E-09
+    gnn_risk_score 0.0001418630563421175
     industry "Leisure"
-    raw_risk_score 0.19412167848843975
+    raw_risk_score 0.21285195660040052
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 156
@@ -2062,12 +2232,13 @@ graph [
     ticker "HCA"
     market_cap 0
     name "HCA Healthcare"
-    gnn_risk_score 2.699309220588475E-07
+    gnn_risk_score 1.4922861737431958E-06
     industry "Medical Care Facilities"
-    raw_risk_score 0.19402419277060182
+    raw_risk_score 0.19681350292950328
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 157
@@ -2075,10 +2246,11 @@ graph [
     ticker "PEAK"
     market_cap 0
     name "N/A"
-    gnn_risk_score 0.9873992204666138
-    raw_risk_score 0.7335360737947316
+    gnn_risk_score 0.9997990131378174
+    raw_risk_score 0.7397395531336466
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 158
@@ -2086,12 +2258,13 @@ graph [
     ticker "HSIC"
     market_cap 0
     name "Henry Schein"
-    gnn_risk_score 1.1484924471005797E-05
+    gnn_risk_score 9.705971933726687E-06
     industry "Medical Distribution"
-    raw_risk_score 0.13616809263327717
+    raw_risk_score 0.18509887742449369
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 159
@@ -2099,10 +2272,11 @@ graph [
     ticker "HES"
     market_cap 0
     name "Hess Corporation"
-    gnn_risk_score 1.647637404289526E-08
+    gnn_risk_score 0.9999999403953552
     raw_risk_score 0.8907043933868408
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 160
@@ -2110,12 +2284,13 @@ graph [
     ticker "HLT"
     market_cap 0
     name "Hilton Worldwide"
-    gnn_risk_score 2.1049424958619056E-06
+    gnn_risk_score 6.0105969168944284E-05
     industry "Lodging"
-    raw_risk_score 0.16367914727920435
+    raw_risk_score 0.16128615931271523
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 161
@@ -2123,12 +2298,13 @@ graph [
     ticker "HOLX"
     market_cap 0
     name "Hologic"
-    gnn_risk_score 2.4441815238418485E-10
+    gnn_risk_score 1.8828621932698297E-06
     industry "Medical Instruments &#38; Supplies"
-    raw_risk_score 0.1173110647281026
+    raw_risk_score 0.15506513105445088
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 162
@@ -2138,12 +2314,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-02T14:08:34.609000000+00:00"
     name "Home Depot (The)"
-    gnn_risk_score 5.5618789573941285E-09
+    gnn_risk_score 0.9993559122085571
     industry "Home Improvement Retail"
-    raw_risk_score 0.22554368980510864
+    raw_risk_score 0.19968435663720063
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 163
@@ -2151,12 +2328,13 @@ graph [
     ticker "HON"
     market_cap 0
     name "Honeywell"
-    gnn_risk_score 0.00012622990470845252
+    gnn_risk_score 5.10102644568633E-08
     industry "Conglomerates"
-    raw_risk_score 0.16921980291543592
+    raw_risk_score 0.1844974082339849
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 164
@@ -2164,12 +2342,13 @@ graph [
     ticker "HRL"
     market_cap 0
     name "Hormel Foods"
-    gnn_risk_score 1.1630187657374336E-07
+    gnn_risk_score 1.152041377849855E-07
     industry "Packaged Foods"
-    raw_risk_score 0.24456016930199237
+    raw_risk_score 0.25889179045029226
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 165
@@ -2177,12 +2356,13 @@ graph [
     ticker "HST"
     market_cap 0
     name "Host Hotels &#38; Resorts"
-    gnn_risk_score 2.6261975705210716E-08
+    gnn_risk_score 4.6906563078152885E-09
     industry "REIT - Hotel &#38; Motel"
-    raw_risk_score 0.23914977975175666
+    raw_risk_score 0.18492931474376256
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 166
@@ -2190,12 +2370,13 @@ graph [
     ticker "HWM"
     market_cap 0
     name "Howmet Aerospace"
-    gnn_risk_score 1.2708998838206753E-05
+    gnn_risk_score 1.791431998299231E-07
     industry "Aerospace &#38; Defense"
-    raw_risk_score 0.1575377008443034
+    raw_risk_score 0.22927231092526268
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 167
@@ -2203,12 +2384,13 @@ graph [
     ticker "HPQ"
     market_cap 0
     name "HP Inc."
-    gnn_risk_score 2.738664989010431E-06
+    gnn_risk_score 3.9748392737237737E-05
     industry "Computer Hardware"
-    raw_risk_score 0.26901156665341663
+    raw_risk_score 0.29814699969981306
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 168
@@ -2216,27 +2398,29 @@ graph [
     ticker "HUM"
     market_cap 0
     name "Humana"
-    gnn_risk_score 9.588746685551541E-09
+    gnn_risk_score 1.7150165732005007E-08
     industry "Healthcare Plans"
-    raw_risk_score 0.31799141648120793
+    raw_risk_score 0.3201425177201407
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 169
     label "IBM"
-    sentiment_score -0.8
+    sentiment_score 0.3
     ticker "IBM"
     market_cap 0
-    last_news_update "2025-12-04T12:05:17.045000000+00:00"
+    last_news_update "2025-12-05T11:05:46.875000000+00:00"
     name "IBM"
-    gnn_risk_score 0.9971138834953308
+    gnn_risk_score 0.9995362162590027
     industry "Information Technology Services"
-    raw_risk_score 0.16066565922511453
+    raw_risk_score 0.1557687005942964
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 170
@@ -2244,12 +2428,13 @@ graph [
     ticker "IEX"
     market_cap 0
     name "IDEX Corporation"
-    gnn_risk_score 2.6044889978038555E-07
+    gnn_risk_score 2.69706606559339E-06
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.26354383415693233
+    raw_risk_score 0.28792720792809995
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 171
@@ -2257,12 +2442,13 @@ graph [
     ticker "IDXX"
     market_cap 0
     name "Idexx Laboratories"
-    gnn_risk_score 7.190851646771135E-14
+    gnn_risk_score 1.8094825691150618E-06
     industry "Diagnostics &#38; Research"
-    raw_risk_score 0.20955428866451484
+    raw_risk_score 0.22834974819330106
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 172
@@ -2270,12 +2456,13 @@ graph [
     ticker "ITW"
     market_cap 0
     name "Illinois Tool Works"
-    gnn_risk_score 4.310978596322457E-08
+    gnn_risk_score 1.4316814400672229E-08
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.12853316489764455
+    raw_risk_score 0.1499227033424581
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 173
@@ -2283,25 +2470,29 @@ graph [
     ticker "ILMN"
     market_cap 0
     name "Illumina, Inc."
-    gnn_risk_score 1.6991692973533645E-05
+    gnn_risk_score 5.760505700891372E-06
     industry "Diagnostics &#38; Research"
-    raw_risk_score 0.23275303457998459
+    raw_risk_score 0.23561744877287813
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 174
     label "INTC"
+    sentiment_score 0.6
     ticker "INTC"
     market_cap 0
+    last_news_update "2025-12-06T01:01:36.810000000+00:00"
     name "Intel"
-    gnn_risk_score 2.87124606757061E-07
+    gnn_risk_score 0.9997031688690186
     industry "Semiconductors"
-    raw_risk_score 0.43312410124451484
+    raw_risk_score 0.4580346886034902
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 175
@@ -2309,12 +2500,13 @@ graph [
     ticker "ICE"
     market_cap 0
     name "Intercontinental Exchange"
-    gnn_risk_score 0.9994457960128784
+    gnn_risk_score 0.9999237656593323
     industry "Financial Data &#38; Stock Exchanges"
-    raw_risk_score 0.17601931604518395
+    raw_risk_score 0.16999839077465106
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 176
@@ -2322,12 +2514,13 @@ graph [
     ticker "IP"
     market_cap 0
     name "International Paper"
-    gnn_risk_score 1.713433164240996E-07
+    gnn_risk_score 0.9999749064445496
     industry "Packaging &#38; Containers"
-    raw_risk_score 0.25170468378126637
+    raw_risk_score 0.2584637502155857
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 177
@@ -2335,12 +2528,13 @@ graph [
     ticker "IPG"
     market_cap 0
     name "Interpublic Group of Companies (The)"
-    gnn_risk_score 2.9608345357701182E-06
+    gnn_risk_score 0.9999998807907104
     industry "Advertising Agencies"
-    raw_risk_score 0.171160017594787
+    raw_risk_score 0.17568719881427275
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 178
@@ -2348,12 +2542,13 @@ graph [
     ticker "IFF"
     market_cap 0
     name "International Flavors &#38; Fragrances"
-    gnn_risk_score 7.60787699505272E-09
+    gnn_risk_score 3.4725653677014634E-05
     industry "Specialty Chemicals"
-    raw_risk_score 0.1892344679839444
+    raw_risk_score 0.20035577203852464
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 179
@@ -2361,12 +2556,13 @@ graph [
     ticker "INTU"
     market_cap 0
     name "Intuit"
-    gnn_risk_score 1.462014733988326E-05
+    gnn_risk_score 0.9997969269752502
     industry "Software - Application"
-    raw_risk_score 0.16935574295128622
+    raw_risk_score 0.17318843501846123
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 180
@@ -2374,12 +2570,13 @@ graph [
     ticker "ISRG"
     market_cap 0
     name "Intuitive Surgical"
-    gnn_risk_score 2.627251305398204E-09
+    gnn_risk_score 1.3827362863594317E-06
     industry "Medical Instruments &#38; Supplies"
-    raw_risk_score 0.1422400552543367
+    raw_risk_score 0.23233822526855147
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 181
@@ -2387,12 +2584,13 @@ graph [
     ticker "IVZ"
     market_cap 0
     name "Invesco"
-    gnn_risk_score 7.544121672253823E-06
+    gnn_risk_score 1.564110796437035E-08
     industry "Asset Management"
-    raw_risk_score 0.2428095868050194
+    raw_risk_score 0.31314847942446195
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 182
@@ -2400,12 +2598,13 @@ graph [
     ticker "IQV"
     market_cap 0
     name "IQVIA"
-    gnn_risk_score 3.762764606562996E-07
+    gnn_risk_score 1.2149347412560019E-06
     industry "Diagnostics &#38; Research"
-    raw_risk_score 0.12633346893544087
+    raw_risk_score 0.16670588886480703
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 183
@@ -2413,12 +2612,13 @@ graph [
     ticker "JBL"
     market_cap 0
     name "Jabil"
-    gnn_risk_score 0.9998247027397156
+    gnn_risk_score 0.9999944567680359
     industry "Electronic Components"
-    raw_risk_score 0.32331706519764175
+    raw_risk_score 0.3327499338314981
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 184
@@ -2426,12 +2626,13 @@ graph [
     ticker "J"
     market_cap 0
     name "Jacobs Solutions"
-    gnn_risk_score 0.9927002191543579
+    gnn_risk_score 0.9675532579421997
     industry "Engineering &#38; Construction"
-    raw_risk_score 0.332569492138934
+    raw_risk_score 0.3521538087903802
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 185
@@ -2439,12 +2640,13 @@ graph [
     ticker "JNJ"
     market_cap 0
     name "Johnson &#38; Johnson"
-    gnn_risk_score 2.9729619200224988E-05
+    gnn_risk_score 8.325816452270374E-05
     industry "Drug Manufacturers - General"
-    raw_risk_score 0.20873471973575125
+    raw_risk_score 0.1934618192147971
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 186
@@ -2454,12 +2656,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T16:05:06.765000000+00:00"
     name "Johnson Controls"
-    gnn_risk_score 7.561752113360853E-08
+    gnn_risk_score 0.7801591753959656
     industry "Building Products &#38; Equipment"
-    raw_risk_score 0.21695414940389773
+    raw_risk_score 0.19302060563589474
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 187
@@ -2469,12 +2672,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-05T04:03:28.155000000+00:00"
     name "JPMorgan Chase"
-    gnn_risk_score 4.0544978219259065E-06
+    gnn_risk_score 0.9985806345939636
     industry "Banks - Diversified"
-    raw_risk_score 0.1582035059625164
+    raw_risk_score 0.19996569995571647
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 188
@@ -2482,10 +2686,11 @@ graph [
     ticker "JNPR"
     market_cap 0
     name "Juniper Networks"
-    gnn_risk_score 4.858317197431461E-07
+    gnn_risk_score 1.053362666425528E-05
     raw_risk_score -0.0
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 189
@@ -2493,12 +2698,13 @@ graph [
     ticker "K"
     market_cap 0
     name "Kellanova"
-    gnn_risk_score 0.9720585346221924
+    gnn_risk_score 0.9959821105003357
     industry "Packaged Foods"
-    raw_risk_score 0.2276665564009262
+    raw_risk_score 0.21431859910662904
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 190
@@ -2506,12 +2712,13 @@ graph [
     ticker "KEYS"
     market_cap 0
     name "Keysight Technologies"
-    gnn_risk_score 2.893622877309099E-05
+    gnn_risk_score 2.173163693441893E-06
     industry "Scientific &#38; Technical Instruments"
-    raw_risk_score 0.4177307177057793
+    raw_risk_score 0.42574768288399095
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 191
@@ -2519,12 +2726,13 @@ graph [
     ticker "KMI"
     market_cap 0
     name "Kinder Morgan"
-    gnn_risk_score 6.461113457589818E-07
+    gnn_risk_score 1.6922111854000832E-06
     industry "Oil &#38; Gas Midstream"
-    raw_risk_score 0.16732716925973778
+    raw_risk_score 0.1310161169236581
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 192
@@ -2532,12 +2740,13 @@ graph [
     ticker "LHX"
     market_cap 0
     name "L3Harris"
-    gnn_risk_score 2.5683588589231476E-10
+    gnn_risk_score 5.549154593609273E-07
     industry "Aerospace &#38; Defense"
-    raw_risk_score 0.18786371920310335
+    raw_risk_score 0.21734049160674723
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 193
@@ -2545,12 +2754,13 @@ graph [
     ticker "LH"
     market_cap 0
     name "Labcorp"
-    gnn_risk_score 4.443443657464741E-08
+    gnn_risk_score 2.781173407129245E-06
     industry "Diagnostics &#38; Research"
-    raw_risk_score 0.18368541706123154
+    raw_risk_score 0.20220625701595352
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 194
@@ -2558,12 +2768,13 @@ graph [
     ticker "LVS"
     market_cap 0
     name "Las Vegas Sands"
-    gnn_risk_score 3.674888375826413E-07
+    gnn_risk_score 8.92283787834458E-05
     industry "Resorts &#38; Casinos"
-    raw_risk_score 0.1559908024298842
+    raw_risk_score 0.16253914068780206
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 195
@@ -2571,12 +2782,13 @@ graph [
     ticker "LDOS"
     market_cap 0
     name "Leidos"
-    gnn_risk_score 8.723211522010388E-07
+    gnn_risk_score 4.0027143199949933E-07
     industry "Information Technology Services"
-    raw_risk_score 0.1159381349695476
+    raw_risk_score 0.1659756956227268
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 196
@@ -2584,12 +2796,13 @@ graph [
     ticker "LEN"
     market_cap 0
     name "Lennar"
-    gnn_risk_score 6.523301010474825E-08
+    gnn_risk_score 3.660370451186168E-09
     industry "Residential Construction"
-    raw_risk_score 0.28795432772740787
+    raw_risk_score 0.2767234577205343
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 197
@@ -2597,12 +2810,13 @@ graph [
     ticker "LNC"
     market_cap 0
     name "Lincoln National Corp"
-    gnn_risk_score 4.7350105887744576E-05
+    gnn_risk_score 4.347564754425548E-06
     industry "Insurance - Life"
-    raw_risk_score 0.18200200699165833
+    raw_risk_score 0.19446318238013716
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 198
@@ -2610,12 +2824,13 @@ graph [
     ticker "LIN"
     market_cap 0
     name "Linde plc"
-    gnn_risk_score 5.355702228371229E-07
+    gnn_risk_score 1.4450976777879987E-05
     industry "Specialty Chemicals"
-    raw_risk_score 0.22976052387921692
+    raw_risk_score 0.2296453120818297
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 199
@@ -2623,12 +2838,13 @@ graph [
     ticker "LYV"
     market_cap 0
     name "Live Nation Entertainment"
-    gnn_risk_score 2.7886337683469264E-09
+    gnn_risk_score 1.247806494575343E-06
     industry "Entertainment"
-    raw_risk_score 0.2202015054766401
+    raw_risk_score 0.22797799663635668
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 200
@@ -2636,12 +2852,13 @@ graph [
     ticker "LKQ"
     market_cap 0
     name "LKQ Corporation"
-    gnn_risk_score 1.774249192010302E-08
+    gnn_risk_score 3.43164217042613E-08
     industry "Auto Parts"
-    raw_risk_score 0.2444927821892322
+    raw_risk_score 0.17498925771977478
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 201
@@ -2649,12 +2866,13 @@ graph [
     ticker "LMT"
     market_cap 0
     name "Lockheed Martin"
-    gnn_risk_score 2.348822272324469E-05
+    gnn_risk_score 1.3261816889098554E-07
     industry "Aerospace &#38; Defense"
-    raw_risk_score 0.1311970292116604
+    raw_risk_score 0.16387766654307412
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 202
@@ -2662,12 +2880,13 @@ graph [
     ticker "L"
     market_cap 0
     name "Loews Corporation"
-    gnn_risk_score 0.9964472055435181
+    gnn_risk_score 0.9960787296295166
     industry "Insurance - Property &#38; Casualty"
-    raw_risk_score 0.061065900771346826
+    raw_risk_score 0.10905993438806491
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 203
@@ -2675,12 +2894,13 @@ graph [
     ticker "LOW"
     market_cap 0
     name "Lowe's"
-    gnn_risk_score 0.9913036823272705
+    gnn_risk_score 0.9973573684692383
     industry "Home Improvement Retail"
-    raw_risk_score 0.2342991654060044
+    raw_risk_score 0.26987736605411516
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 204
@@ -2690,12 +2910,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T12:01:49.375000000+00:00"
     name "Lululemon Athletica"
-    gnn_risk_score 4.982303991596382E-08
+    gnn_risk_score 0.0631060004234314
     industry "Apparel Retail"
-    raw_risk_score 0.2770235960164007
+    raw_risk_score 0.30482233867868536
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 205
@@ -2703,12 +2924,13 @@ graph [
     ticker "MTB"
     market_cap 0
     name "M&#38;T Bank"
-    gnn_risk_score 1.9305672616098946E-09
+    gnn_risk_score 7.591127086925553E-07
     industry "Banks - Regional"
-    raw_risk_score 0.23051104774570155
+    raw_risk_score 0.22339415061542608
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 206
@@ -2716,10 +2938,11 @@ graph [
     ticker "MRO"
     market_cap 0
     name "Marathon Oil"
-    gnn_risk_score 8.893381391317234E-07
+    gnn_risk_score 0.004372438881546259
     raw_risk_score -0.9279871582984924
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 207
@@ -2727,12 +2950,13 @@ graph [
     ticker "MMC"
     market_cap 0
     name "Marsh McLennan"
-    gnn_risk_score 3.420101620577043E-06
+    gnn_risk_score 0.9999458193778992
     industry "Insurance Brokers"
-    raw_risk_score 0.09567668179759697
+    raw_risk_score 0.10238432506429473
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 208
@@ -2740,12 +2964,13 @@ graph [
     ticker "MLM"
     market_cap 0
     name "Martin Marietta Materials"
-    gnn_risk_score 5.094737502986391E-07
+    gnn_risk_score 5.5343348321912345E-06
     industry "Building Materials"
-    raw_risk_score 0.15859416086072545
+    raw_risk_score 0.21014672730810532
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 209
@@ -2753,12 +2978,13 @@ graph [
     ticker "MTCH"
     market_cap 0
     name "Match Group"
-    gnn_risk_score 0.00013409498205874115
+    gnn_risk_score 4.206190673539112E-10
     industry "Internet Content &#38; Information"
-    raw_risk_score 0.19978093635062166
+    raw_risk_score 0.25042351724401146
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 210
@@ -2766,12 +2992,13 @@ graph [
     ticker "MCD"
     market_cap 0
     name "McDonald's"
-    gnn_risk_score 0.9999997615814209
+    gnn_risk_score 0.9999602437019348
     industry "Restaurants"
-    raw_risk_score 0.12874884072919124
+    raw_risk_score 0.1425108926894496
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 211
@@ -2779,12 +3006,13 @@ graph [
     ticker "MCK"
     market_cap 0
     name "McKesson Corporation"
-    gnn_risk_score 4.7330863139904977E-07
+    gnn_risk_score 5.745788075728342E-05
     industry "Medical Distribution"
-    raw_risk_score 0.18844142020588092
+    raw_risk_score 0.18935746818379376
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 212
@@ -2794,27 +3022,29 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T22:06:05.625000000+00:00"
     name "Medtronic"
-    gnn_risk_score 2.0891479834972415E-06
+    gnn_risk_score 0.00011739382171072066
     industry "Medical Devices"
-    raw_risk_score 0.2371864102026574
+    raw_risk_score 0.2334959985095612
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 213
     label "MRK"
-    sentiment_score 0.7
+    sentiment_score -0.3
     ticker "MRK"
     market_cap 0
-    last_news_update "2025-12-04T12:02:49.007000000+00:00"
+    last_news_update "2025-12-05T22:02:59.427000000+00:00"
     name "Merck &#38; Co."
-    gnn_risk_score 6.283694915509841E-07
+    gnn_risk_score 0.00308740371838212
     industry "Drug Manufacturers - General"
-    raw_risk_score 0.28027473672983105
+    raw_risk_score 0.27057166894391227
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 214
@@ -2822,12 +3052,13 @@ graph [
     ticker "MET"
     market_cap 0
     name "MetLife"
-    gnn_risk_score 0.9916649460792542
+    gnn_risk_score 0.9985619783401489
     industry "Insurance - Life"
-    raw_risk_score 0.17750748283888867
+    raw_risk_score 0.12194420670641087
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 215
@@ -2835,12 +3066,13 @@ graph [
     ticker "MTD"
     market_cap 0
     name "Mettler Toledo"
-    gnn_risk_score 4.201040348927876E-10
+    gnn_risk_score 3.729494665094535E-06
     industry "Diagnostics &#38; Research"
-    raw_risk_score 0.1286027558802504
+    raw_risk_score 0.1341170818731534
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 216
@@ -2848,12 +3080,13 @@ graph [
     ticker "MGM"
     market_cap 0
     name "MGM Resorts"
-    gnn_risk_score 1.1814581739599817E-05
+    gnn_risk_score 0.9692628383636475
     industry "Resorts &#38; Casinos"
-    raw_risk_score 0.28514550815350326
+    raw_risk_score 0.3251834055598915
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 217
@@ -2861,12 +3094,13 @@ graph [
     ticker "MCHP"
     market_cap 0
     name "Microchip Technology"
-    gnn_risk_score 1.3724418295169016E-06
+    gnn_risk_score 4.527373960172554E-07
     industry "Semiconductors"
-    raw_risk_score 0.4679238380141673
+    raw_risk_score 0.508197756178875
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 218
@@ -2876,12 +3110,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T13:02:05.352000000+00:00"
     name "Micron Technology"
-    gnn_risk_score 4.153450561261707E-08
+    gnn_risk_score 0.8324815034866333
     industry "Semiconductors"
-    raw_risk_score 0.3953060248281053
+    raw_risk_score 0.41643253113964795
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 219
@@ -2889,12 +3124,13 @@ graph [
     ticker "MHK"
     market_cap 0
     name "Mohawk Industries"
-    gnn_risk_score 1.7386878425895702E-06
+    gnn_risk_score 4.223933137836866E-05
     industry "Furnishings, Fixtures &#38; Appliances"
-    raw_risk_score 0.2373653532385995
+    raw_risk_score 0.22813815512140626
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 220
@@ -2902,12 +3138,13 @@ graph [
     ticker "MOH"
     market_cap 0
     name "Molina Healthcare"
-    gnn_risk_score 3.2324120979865256E-07
+    gnn_risk_score 0.9917410612106323
     industry "Healthcare Plans"
-    raw_risk_score 0.33753417801951435
+    raw_risk_score 0.36000656215931875
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 221
@@ -2915,12 +3152,13 @@ graph [
     ticker "MPWR"
     market_cap 0
     name "Monolithic Power Systems"
-    gnn_risk_score 2.6174360456820978E-08
+    gnn_risk_score 9.09090376808308E-05
     industry "Semiconductors"
-    raw_risk_score 0.236648506292018
+    raw_risk_score 0.24455194604085145
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 222
@@ -2928,12 +3166,13 @@ graph [
     ticker "MNST"
     market_cap 0
     name "Monster Beverage"
-    gnn_risk_score 9.932108469001832E-10
+    gnn_risk_score 1.9868125491484534E-06
     industry "Beverages - Non-Alcoholic"
-    raw_risk_score 0.21531024216621708
+    raw_risk_score 0.2152424305773385
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 223
@@ -2941,12 +3180,13 @@ graph [
     ticker "MCO"
     market_cap 0
     name "Moody's Corporation"
-    gnn_risk_score 1.5753826687614492E-08
+    gnn_risk_score 1.0960357030853629E-05
     industry "Financial Data &#38; Stock Exchanges"
-    raw_risk_score 0.08445943882385164
+    raw_risk_score 0.19383539348371093
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 224
@@ -2956,12 +3196,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-02T17:52:13.844000000+00:00"
     name "Morgan Stanley"
-    gnn_risk_score 0.9449489116668701
+    gnn_risk_score 0.9989882707595825
     industry "Capital Markets"
-    raw_risk_score 0.2250580003938081
+    raw_risk_score 0.25886187303012576
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 225
@@ -2969,12 +3210,13 @@ graph [
     ticker "MSI"
     market_cap 0
     name "Motorola Solutions"
-    gnn_risk_score 1.301908923778683E-05
+    gnn_risk_score 2.0511067759798607E-06
     industry "Communication Equipment"
-    raw_risk_score 0.1752259283724245
+    raw_risk_score 0.12240088240849133
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 226
@@ -2982,12 +3224,13 @@ graph [
     ticker "MSCI"
     market_cap 0
     name "MSCI Inc."
-    gnn_risk_score 7.023583066256833E-07
+    gnn_risk_score 1.1067877494497225E-05
     industry "Financial Data &#38; Stock Exchanges"
-    raw_risk_score 0.2432179195034227
+    raw_risk_score 0.22764792354632832
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 227
@@ -2995,25 +3238,29 @@ graph [
     ticker "NTAP"
     market_cap 0
     name "NetApp"
-    gnn_risk_score 1.0852185816645488E-09
+    gnn_risk_score 1.0224463409258533E-07
     industry "Software - Infrastructure"
-    raw_risk_score 0.23385768076605323
+    raw_risk_score 0.2491822607016902
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 228
     label "NFLX"
+    sentiment_score 0.3
     ticker "NFLX"
     market_cap 0
+    last_news_update "2025-12-06T07:02:08.432000000+00:00"
     name "Netflix"
-    gnn_risk_score 1.2119871826143935E-05
+    gnn_risk_score 0.1127646416425705
     industry "Entertainment"
-    raw_risk_score 0.30320971611893566
+    raw_risk_score 0.3085278698850157
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 229
@@ -3021,12 +3268,13 @@ graph [
     ticker "NEM"
     market_cap 0
     name "Newmont"
-    gnn_risk_score 2.413848960713949E-05
+    gnn_risk_score 7.564486281808058E-08
     industry "Gold"
-    raw_risk_score 0.25679393147861773
+    raw_risk_score 0.2795800213445513
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 230
@@ -3034,12 +3282,13 @@ graph [
     ticker "NEE"
     market_cap 0
     name "NextEra Energy"
-    gnn_risk_score 8.317689434989006E-07
+    gnn_risk_score 0.9988346099853516
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.10329548147773622
+    raw_risk_score 0.11100644449274012
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 231
@@ -3047,12 +3296,13 @@ graph [
     ticker "NKE"
     market_cap 0
     name "Nike, Inc."
-    gnn_risk_score 2.848691792678437E-06
+    gnn_risk_score 3.7347506349760806E-06
     industry "Footwear &#38; Accessories"
-    raw_risk_score 0.15367384511411283
+    raw_risk_score 0.21580657096635444
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 232
@@ -3060,12 +3310,13 @@ graph [
     ticker "NI"
     market_cap 0
     name "NiSource"
-    gnn_risk_score 0.9999512434005737
+    gnn_risk_score 0.9999387264251709
     industry "Utilities - Regulated Gas"
-    raw_risk_score 0.14938183573450248
+    raw_risk_score 0.14222436485491025
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 233
@@ -3073,12 +3324,13 @@ graph [
     ticker "NDSN"
     market_cap 0
     name "Nordson Corporation"
-    gnn_risk_score 3.282482339272974E-07
+    gnn_risk_score 2.7631381271930877E-06
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.1468127348504732
+    raw_risk_score 0.19471164680856745
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 234
@@ -3086,12 +3338,13 @@ graph [
     ticker "NSC"
     market_cap 0
     name "Norfolk Southern"
-    gnn_risk_score 2.0579136617016047E-06
+    gnn_risk_score 8.719529986933594E-09
     industry "Railroads"
-    raw_risk_score 0.18368584418713216
+    raw_risk_score 0.17225617036214202
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 235
@@ -3099,12 +3352,13 @@ graph [
     ticker "NTRS"
     market_cap 0
     name "Northern Trust"
-    gnn_risk_score 5.334328179174008E-08
+    gnn_risk_score 0.00012566838995553553
     industry "Asset Management"
-    raw_risk_score 0.18183315722649476
+    raw_risk_score 0.22607159725957132
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 236
@@ -3112,12 +3366,13 @@ graph [
     ticker "NOC"
     market_cap 0
     name "Northrop Grumman"
-    gnn_risk_score 5.21146015231011E-10
+    gnn_risk_score 1.7085360013879836E-05
     industry "Aerospace &#38; Defense"
-    raw_risk_score 0.11061587514613347
+    raw_risk_score 0.13236230608197253
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 237
@@ -3125,12 +3380,13 @@ graph [
     ticker "NCLH"
     market_cap 0
     name "Norwegian Cruise Line Holdings"
-    gnn_risk_score 8.21116145743872E-07
+    gnn_risk_score 6.611977596548968E-07
     industry "Travel Services"
-    raw_risk_score 0.20461381581524288
+    raw_risk_score 0.23502581990731783
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 238
@@ -3138,12 +3394,13 @@ graph [
     ticker "NRG"
     market_cap 0
     name "NRG Energy"
-    gnn_risk_score 2.707643034227658E-07
+    gnn_risk_score 1.1366033731974312E-06
     industry "Utilities - Independent Power Producers"
-    raw_risk_score 0.22973925355375624
+    raw_risk_score 0.23752471832990743
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 239
@@ -3151,27 +3408,29 @@ graph [
     ticker "NUE"
     market_cap 0
     name "Nucor"
-    gnn_risk_score 1.2942706462126807E-07
+    gnn_risk_score 9.102466833610379E-07
     industry "Steel"
-    raw_risk_score 0.32416548326253036
+    raw_risk_score 0.26660174976585127
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 240
     label "NVDA"
-    sentiment_score 0.7
+    sentiment_score 0.3
     ticker "NVDA"
     market_cap 0
-    last_news_update "2025-12-05T02:01:06.841000000+00:00"
+    last_news_update "2025-12-06T07:02:10.030000000+00:00"
     name "Nvidia"
-    gnn_risk_score 4.1586466977605596E-05
+    gnn_risk_score 0.997931182384491
     industry "Semiconductors"
-    raw_risk_score 0.23760693314929657
+    raw_risk_score 0.26186359281170063
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 241
@@ -3179,12 +3438,13 @@ graph [
     ticker "NVR"
     market_cap 0
     name "NVR, Inc."
-    gnn_risk_score 0.00019682745914906263
+    gnn_risk_score 7.791541065671481E-06
     industry "Residential Construction"
-    raw_risk_score 0.1726220947608112
+    raw_risk_score 0.17639747290981378
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 242
@@ -3194,12 +3454,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T12:30:14.535000000+00:00"
     name "NXP Semiconductors"
-    gnn_risk_score 1.8129744816519633E-08
+    gnn_risk_score 6.372068810378551E-07
     industry "Semiconductors"
-    raw_risk_score 0.3508401413812811
+    raw_risk_score 0.38576372331361847
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 243
@@ -3207,12 +3468,13 @@ graph [
     ticker "ORLY"
     market_cap 0
     name "O&#8217;Reilly Automotive"
-    gnn_risk_score 3.4979036627191817E-06
+    gnn_risk_score 1.3356415582907455E-12
     industry "Auto Parts"
-    raw_risk_score 0.12000994914685956
+    raw_risk_score 0.09889348335658033
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 244
@@ -3220,12 +3482,13 @@ graph [
     ticker "ODFL"
     market_cap 0
     name "Old Dominion"
-    gnn_risk_score 2.0055573202171217E-08
+    gnn_risk_score 1.6253476132988E-05
     industry "Trucking"
-    raw_risk_score 0.35652683377709693
+    raw_risk_score 0.39747196774833715
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 245
@@ -3233,12 +3496,13 @@ graph [
     ticker "OMC"
     market_cap 0
     name "Omnicom Group"
-    gnn_risk_score 4.0585663718673E-09
+    gnn_risk_score 9.514892695960953E-08
     industry "Advertising Agencies"
-    raw_risk_score 0.20664115223909088
+    raw_risk_score 0.19918017531046223
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 246
@@ -3246,12 +3510,13 @@ graph [
     ticker "ON"
     market_cap 0
     name "ON Semiconductor"
-    gnn_risk_score 1.7970978980104413E-13
+    gnn_risk_score 5.613293524220353E-06
     industry "Semiconductors"
-    raw_risk_score 0.38634205783181147
+    raw_risk_score 0.41493402183319905
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 247
@@ -3259,12 +3524,13 @@ graph [
     ticker "OKE"
     market_cap 0
     name "Oneok"
-    gnn_risk_score 3.610313115132158E-08
+    gnn_risk_score 6.634334681621112E-07
     industry "Oil &#38; Gas Midstream"
-    raw_risk_score 0.2665089483400587
+    raw_risk_score 0.2536378962254451
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 248
@@ -3272,12 +3538,13 @@ graph [
     ticker "OGN"
     market_cap 0
     name "Organon &#38; Co."
-    gnn_risk_score 1.0274880878569093E-05
+    gnn_risk_score 2.3952436094987206E-05
     industry "Drug Manufacturers - General"
-    raw_risk_score 0.41027708807311636
+    raw_risk_score 0.3993217206092838
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 249
@@ -3285,12 +3552,13 @@ graph [
     ticker "OTIS"
     market_cap 0
     name "Otis Worldwide"
-    gnn_risk_score 6.724523871071142E-08
+    gnn_risk_score 1.7775029448330315E-07
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.16602732460912917
+    raw_risk_score 0.14733664898884583
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 250
@@ -3298,12 +3566,13 @@ graph [
     ticker "PCAR"
     market_cap 0
     name "Paccar"
-    gnn_risk_score 1.3365458073621994E-07
+    gnn_risk_score 2.7230515797782573E-07
     industry "Farm &#38; Heavy Construction Machinery"
-    raw_risk_score 0.3253865916404457
+    raw_risk_score 0.35187155236256257
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 251
@@ -3311,12 +3580,13 @@ graph [
     ticker "PKG"
     market_cap 0
     name "Packaging Corporation of America"
-    gnn_risk_score 3.6912551877321675E-06
+    gnn_risk_score 8.651038219120721E-11
     industry "Packaging &#38; Containers"
-    raw_risk_score 0.16664892688992683
+    raw_risk_score 0.1626250798366172
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 252
@@ -3324,10 +3594,11 @@ graph [
     ticker "PARA"
     market_cap 0
     name "Paramount Global"
-    gnn_risk_score 2.6718776080514317E-09
-    raw_risk_score -0.6741242189156381
+    gnn_risk_score 0.6470144987106323
+    raw_risk_score -0.6787091106176376
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 253
@@ -3335,12 +3606,13 @@ graph [
     ticker "PH"
     market_cap 0
     name "Parker Hannifin"
-    gnn_risk_score 4.0250968595501035E-05
+    gnn_risk_score 0.9999857544898987
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.2673941124424403
+    raw_risk_score 0.2500416835649245
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 254
@@ -3348,12 +3620,13 @@ graph [
     ticker "PAYX"
     market_cap 0
     name "Paychex"
-    gnn_risk_score 7.704635436311946E-07
+    gnn_risk_score 3.539257477314095E-06
     industry "Software - Application"
-    raw_risk_score 0.11517713390116126
+    raw_risk_score 0.10177783557742236
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 255
@@ -3361,12 +3634,13 @@ graph [
     ticker "PAYC"
     market_cap 0
     name "Paycom"
-    gnn_risk_score 2.1941644945400185E-08
+    gnn_risk_score 1.560241071274504E-05
     industry "Software - Application"
-    raw_risk_score 0.2655821687442551
+    raw_risk_score 0.13668081368142013
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 256
@@ -3374,25 +3648,29 @@ graph [
     ticker "PNR"
     market_cap 0
     name "Pentair"
-    gnn_risk_score 8.299204878881028E-09
+    gnn_risk_score 6.362456133501837E-06
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.1496124050456003
+    raw_risk_score 0.1197143364710599
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 257
     label "PFE"
+    sentiment_score -0.3
     ticker "PFE"
     market_cap 0
+    last_news_update "2025-12-05T22:02:58.036000000+00:00"
     name "Pfizer"
-    gnn_risk_score 6.941318535718744E-15
+    gnn_risk_score 0.017702030017971992
     industry "Drug Manufacturers - General"
-    raw_risk_score 0.1525146671973546
+    raw_risk_score 0.22009942016754763
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 258
@@ -3400,12 +3678,13 @@ graph [
     ticker "PCG"
     market_cap 0
     name "PG&#38;E Corporation"
-    gnn_risk_score 1.7095148905355018E-06
+    gnn_risk_score 1.7683551050140522E-05
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.2440135197330064
+    raw_risk_score 0.24838902125428153
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 259
@@ -3413,12 +3692,13 @@ graph [
     ticker "PM"
     market_cap 0
     name "Philip Morris International"
-    gnn_risk_score 0.9995401501655579
+    gnn_risk_score 0.9992735385894775
     industry "Tobacco"
-    raw_risk_score 0.20749427322690384
+    raw_risk_score 0.22042671648554968
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 260
@@ -3426,10 +3706,11 @@ graph [
     ticker "PXD"
     market_cap 0
     name "N/A"
-    gnn_risk_score 1.6907275579569614E-09
+    gnn_risk_score 5.128119664732367E-05
     raw_risk_score -0.0
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 261
@@ -3437,12 +3718,13 @@ graph [
     ticker "POOL"
     market_cap 0
     name "Pool Corporation"
-    gnn_risk_score 2.646504242420633E-07
+    gnn_risk_score 0.9989039897918701
     industry "Industrial Distribution"
-    raw_risk_score 0.17790968451566483
+    raw_risk_score 0.1729224597382079
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 262
@@ -3450,12 +3732,13 @@ graph [
     ticker "PPG"
     market_cap 0
     name "PPG Industries"
-    gnn_risk_score 1.1840435035992414E-05
+    gnn_risk_score 1.5488529243157245E-05
     industry "Specialty Chemicals"
-    raw_risk_score 0.1619910295591394
+    raw_risk_score 0.1949210658561985
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 263
@@ -3463,12 +3746,13 @@ graph [
     ticker "PPL"
     market_cap 0
     name "PPL Corporation"
-    gnn_risk_score 1.0053649930341635E-05
+    gnn_risk_score 7.3355140557396226E-06
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.22476396634181817
+    raw_risk_score 0.2517660385796998
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 264
@@ -3476,12 +3760,13 @@ graph [
     ticker "PGR"
     market_cap 0
     name "Progressive Corporation"
-    gnn_risk_score 6.411528011085466E-05
+    gnn_risk_score 1.108762035073596E-06
     industry "Insurance - Property &#38; Casualty"
-    raw_risk_score 0.14571830316296186
+    raw_risk_score 0.1282279586323488
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 265
@@ -3489,12 +3774,13 @@ graph [
     ticker "PLD"
     market_cap 0
     name "Prologis"
-    gnn_risk_score 1.6667762565703015E-06
+    gnn_risk_score 8.257641638920177E-06
     industry "REIT - Industrial"
-    raw_risk_score 0.17916543181775568
+    raw_risk_score 0.21995184024761705
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 266
@@ -3502,12 +3788,13 @@ graph [
     ticker "PTC"
     market_cap 0
     name "PTC Inc."
-    gnn_risk_score 4.5688807404076215E-08
+    gnn_risk_score 4.3156687752343714E-05
     industry "Software - Application"
-    raw_risk_score 0.23954106504546346
+    raw_risk_score 0.1938708707219554
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 267
@@ -3515,12 +3802,13 @@ graph [
     ticker "PHM"
     market_cap 0
     name "PulteGroup"
-    gnn_risk_score 1.3561768597014634E-08
+    gnn_risk_score 2.74349616802283E-07
     industry "Residential Construction"
-    raw_risk_score 0.28195002860367757
+    raw_risk_score 0.2764978271829452
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 268
@@ -3528,12 +3816,13 @@ graph [
     ticker "QRVO"
     market_cap 0
     name "Qorvo, Inc."
-    gnn_risk_score 2.1758106072411465E-07
+    gnn_risk_score 1.7888022512124735E-06
     industry "Semiconductors"
-    raw_risk_score 0.206577052590982
+    raw_risk_score 0.23865290482761592
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 269
@@ -3541,12 +3830,13 @@ graph [
     ticker "PWR"
     market_cap 0
     name "Quanta Services"
-    gnn_risk_score 6.650533032370731E-05
+    gnn_risk_score 0.9993590712547302
     industry "Engineering &#38; Construction"
-    raw_risk_score 0.2907552457550219
+    raw_risk_score 0.2689609707966666
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 270
@@ -3556,12 +3846,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T14:07:00.770000000+00:00"
     name "Qualcomm"
-    gnn_risk_score 8.755254725656414E-07
+    gnn_risk_score 0.0004907797556370497
     industry "Semiconductors"
-    raw_risk_score 0.17354071893361
+    raw_risk_score 0.17098505084999008
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 271
@@ -3569,25 +3860,29 @@ graph [
     ticker "RL"
     market_cap 0
     name "Ralph Lauren Corporation"
-    gnn_risk_score 3.2662128210403374E-12
+    gnn_risk_score 6.766179581063625E-07
     industry "Apparel Manufacturing"
-    raw_risk_score 0.26336891047991556
+    raw_risk_score 0.305449366933787
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 272
     label "O"
+    sentiment_score 0.6
     ticker "O"
     market_cap 0
+    last_news_update "2025-12-05T13:01:31.111000000+00:00"
     name "Realty Income"
-    gnn_risk_score 0.9740983247756958
+    gnn_risk_score 0.9912749528884888
     industry "REIT - Retail"
-    raw_risk_score 0.17807251353981882
+    raw_risk_score 0.18222423685488126
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 273
@@ -3595,12 +3890,13 @@ graph [
     ticker "REG"
     market_cap 0
     name "Regency Centers"
-    gnn_risk_score 2.401846083133208E-12
+    gnn_risk_score 4.5167947973823175E-05
     industry "REIT - Retail"
-    raw_risk_score 0.11779801652799654
+    raw_risk_score 0.1245221940003346
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 274
@@ -3608,12 +3904,13 @@ graph [
     ticker "RSG"
     market_cap 0
     name "Republic Services"
-    gnn_risk_score 1.7427487364329863E-07
+    gnn_risk_score 7.484343313990394E-07
     industry "Waste Management"
-    raw_risk_score 0.19112788261759758
+    raw_risk_score 0.17112672076737387
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 275
@@ -3621,12 +3918,13 @@ graph [
     ticker "RMD"
     market_cap 0
     name "ResMed"
-    gnn_risk_score 3.469195064553787E-07
+    gnn_risk_score 2.4984865376609378E-05
     industry "Medical Instruments &#38; Supplies"
-    raw_risk_score 0.11949655911629828
+    raw_risk_score 0.22726711097870705
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 276
@@ -3634,12 +3932,13 @@ graph [
     ticker "RVTY"
     market_cap 0
     name "Revvity"
-    gnn_risk_score 6.575847066869756E-08
+    gnn_risk_score 1.1936073860852048E-05
     industry "Diagnostics &#38; Research"
-    raw_risk_score 0.2948001901977569
+    raw_risk_score 0.2703367648738669
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 277
@@ -3647,12 +3946,13 @@ graph [
     ticker "RHI"
     market_cap 0
     name "Robert Half Inc."
-    gnn_risk_score 2.2951994083086902E-08
+    gnn_risk_score 1.6073556707851822E-06
     industry "Staffing &#38; Employment Services"
-    raw_risk_score 0.213065840623423
+    raw_risk_score 0.2604548826407389
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 278
@@ -3660,12 +3960,13 @@ graph [
     ticker "ROK"
     market_cap 0
     name "Rockwell Automation"
-    gnn_risk_score 7.472020513432653E-08
+    gnn_risk_score 3.640692511908128E-06
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.26870123646436406
+    raw_risk_score 0.284313308041305
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 279
@@ -3673,25 +3974,29 @@ graph [
     ticker "ROL"
     market_cap 0
     name "Rollins, Inc."
-    gnn_risk_score 4.221960114847434E-09
+    gnn_risk_score 3.870292974994527E-09
     industry "Personal Services"
-    raw_risk_score 0.20992150457357603
+    raw_risk_score 0.221009380046575
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 280
     label "ROST"
+    sentiment_score 0.6
     ticker "ROST"
     market_cap 0
+    last_news_update "2025-12-05T13:00:53.601000000+00:00"
     name "Ross Stores"
-    gnn_risk_score 6.598440460692245E-09
+    gnn_risk_score 9.721446986077353E-06
     industry "Apparel Retail"
-    raw_risk_score 0.3514710026650897
+    raw_risk_score 0.3819253501535015
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 281
@@ -3699,12 +4004,13 @@ graph [
     ticker "RCL"
     market_cap 0
     name "Royal Caribbean Group"
-    gnn_risk_score 1.0738765610085466E-07
+    gnn_risk_score 0.002167060971260071
     industry "Travel Services"
-    raw_risk_score 0.2035901426164268
+    raw_risk_score 0.21482349780955104
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 282
@@ -3712,27 +4018,29 @@ graph [
     ticker "SPGI"
     market_cap 0
     name "S&#38;P Global"
-    gnn_risk_score 3.2385680803770356E-09
+    gnn_risk_score 8.122164274482202E-08
     industry "Financial Data &#38; Stock Exchanges"
-    raw_risk_score 0.10914161969855407
+    raw_risk_score 0.11517899342987806
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 283
     label "CRM"
-    sentiment_score 0.6
+    sentiment_score 0.7
     ticker "CRM"
     market_cap 0
-    last_news_update "2025-12-04T20:02:30.141000000+00:00"
+    last_news_update "2025-12-05T21:01:30.300000000+00:00"
     name "Salesforce"
-    gnn_risk_score 3.067474442855489E-12
+    gnn_risk_score 0.000777246430516243
     industry "Software - Application"
-    raw_risk_score 0.22053667388781262
+    raw_risk_score 0.26119236067062995
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 284
@@ -3740,12 +4048,13 @@ graph [
     ticker "STX"
     market_cap 0
     name "Seagate Technology"
-    gnn_risk_score 1.912287189043127E-05
+    gnn_risk_score 1.3276478966872673E-05
     industry "Computer Hardware"
-    raw_risk_score 0.32031969159345147
+    raw_risk_score 0.389895485971092
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 285
@@ -3753,12 +4062,13 @@ graph [
     ticker "NOW"
     market_cap 0
     name "ServiceNow"
-    gnn_risk_score 0.9996282458305359
+    gnn_risk_score 0.9999940395355225
     industry "Software - Application"
-    raw_risk_score 0.1373271177767258
+    raw_risk_score 0.12253889660291621
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 286
@@ -3766,12 +4076,13 @@ graph [
     ticker "SBNY"
     market_cap 0
     name "SIGNATURE BANK (NY)"
-    gnn_risk_score 9.483883012251226E-09
+    gnn_risk_score 7.716634442545E-09
     industry "Banks - Regional"
-    raw_risk_score 0.6316477302375643
+    raw_risk_score 0.6578881254648073
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 287
@@ -3779,12 +4090,13 @@ graph [
     ticker "SWKS"
     market_cap 0
     name "Skyworks Solutions"
-    gnn_risk_score 7.271049980772659E-05
+    gnn_risk_score 1.9936308035539696E-06
     industry "Semiconductors"
-    raw_risk_score 0.2239409916805837
+    raw_risk_score 0.2539276347646243
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 288
@@ -3792,12 +4104,13 @@ graph [
     ticker "SWK"
     market_cap 0
     name "Stanley Black &#38; Decker"
-    gnn_risk_score 9.937637202028782E-08
+    gnn_risk_score 4.726944098365493E-05
     industry "Tools &#38; Accessories"
-    raw_risk_score 0.29212888194177583
+    raw_risk_score 0.3319497594729358
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 289
@@ -3805,25 +4118,29 @@ graph [
     ticker "SYK"
     market_cap 0
     name "Stryker Corporation"
-    gnn_risk_score 9.10805756575428E-05
+    gnn_risk_score 0.9998961687088013
     industry "Medical Devices"
-    raw_risk_score 0.1633011899814403
+    raw_risk_score 0.12351245382079053
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 290
     label "SNPS"
+    sentiment_score -0.7
     ticker "SNPS"
     market_cap 0
+    last_news_update "2025-12-06T00:02:06.556000000+00:00"
     name "Synopsys"
-    gnn_risk_score 1.2763829317918862E-06
+    gnn_risk_score 0.5003101229667664
     industry "Software - Infrastructure"
-    raw_risk_score 0.37924597433249196
+    raw_risk_score 0.3899461144241253
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 291
@@ -3831,12 +4148,13 @@ graph [
     ticker "SYY"
     market_cap 0
     name "Sysco"
-    gnn_risk_score 9.31599686282425E-10
+    gnn_risk_score 1.841675612013205E-07
     industry "Food Distribution"
-    raw_risk_score 0.15716783454022282
+    raw_risk_score 0.1600563371647987
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 292
@@ -3846,12 +4164,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T12:08:01.090000000+00:00"
     name "T-Mobile US"
-    gnn_risk_score 3.6540275250018794E-09
+    gnn_risk_score 0.5003747940063477
     industry "Telecom Services"
-    raw_risk_score 0.1833977221099824
+    raw_risk_score 0.1780137569156487
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 293
@@ -3859,38 +4178,45 @@ graph [
     ticker "TROW"
     market_cap 0
     name "T. Rowe Price"
-    gnn_risk_score 7.585746431004736E-08
+    gnn_risk_score 0.00013957233750261366
     industry "Asset Management"
-    raw_risk_score 0.1621176341522636
+    raw_risk_score 0.22353460280227433
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 294
     label "TTWO"
+    sentiment_score 0.2
     ticker "TTWO"
     market_cap 0
+    last_news_update "2025-12-05T22:03:02.708000000+00:00"
     name "Take-Two Interactive"
-    gnn_risk_score 5.5229916142707225E-06
+    gnn_risk_score 0.034429166465997696
     industry "Electronic Gaming &#38; Multimedia"
-    raw_risk_score 0.27130483053802884
+    raw_risk_score 0.306578678731936
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 295
     label "TGT"
+    sentiment_score 0.7
     ticker "TGT"
     market_cap 0
+    last_news_update "2025-12-06T00:01:27.668000000+00:00"
     name "Target Corporation"
-    gnn_risk_score 8.041485671128612E-06
+    gnn_risk_score 6.366956222336739E-05
     industry "Discount Stores"
-    raw_risk_score 0.2016772658273075
+    raw_risk_score 0.21440791801437142
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 296
@@ -3898,12 +4224,13 @@ graph [
     ticker "TEL"
     market_cap 0
     name "TE Connectivity"
-    gnn_risk_score 0.9999991655349731
+    gnn_risk_score 0.9996830224990845
     industry "Electronic Components"
-    raw_risk_score 0.2161762878874609
+    raw_risk_score 0.2176756882604559
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 297
@@ -3911,12 +4238,13 @@ graph [
     ticker "TXT"
     market_cap 0
     name "Textron"
-    gnn_risk_score 1.7482901967014186E-05
+    gnn_risk_score 8.049273310462013E-05
     industry "Aerospace &#38; Defense"
-    raw_risk_score 0.13782717067994624
+    raw_risk_score 0.18017012819938433
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 298
@@ -3924,14 +4252,15 @@ graph [
     sentiment_score 0.3
     ticker "TMO"
     market_cap 0
-    last_news_update "2025-12-04T16:05:05.319000000+00:00"
+    last_news_update "2025-12-05T11:05:41.308000000+00:00"
     name "Thermo Fisher Scientific"
-    gnn_risk_score 4.4254626629935956E-08
+    gnn_risk_score 0.9779746532440186
     industry "Diagnostics &#38; Research"
-    raw_risk_score 0.11737246858747596
+    raw_risk_score 0.12446396064158578
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 299
@@ -3939,12 +4268,13 @@ graph [
     ticker "TJX"
     market_cap 0
     name "TJX Companies"
-    gnn_risk_score 4.474449269764591E-06
+    gnn_risk_score 0.002531273989006877
     industry "Apparel Retail"
-    raw_risk_score 0.15163373797040092
+    raw_risk_score 0.20027364973779932
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 300
@@ -3952,12 +4282,13 @@ graph [
     ticker "TT"
     market_cap 0
     name "Trane Technologies"
-    gnn_risk_score 9.794733912826814E-10
+    gnn_risk_score 1.0887229109357577E-06
     industry "Building Products &#38; Equipment"
-    raw_risk_score 0.15744763306028808
+    raw_risk_score 0.19589551545192302
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 301
@@ -3965,12 +4296,13 @@ graph [
     ticker "TRV"
     market_cap 0
     name "Travelers Companies (The)"
-    gnn_risk_score 1.2727261022860148E-08
+    gnn_risk_score 1.1211389505660918E-07
     industry "Insurance - Property &#38; Casualty"
-    raw_risk_score 0.11415682483949391
+    raw_risk_score 0.13342239688155494
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 302
@@ -3978,12 +4310,13 @@ graph [
     ticker "TYL"
     market_cap 0
     name "Tyler Technologies"
-    gnn_risk_score 1.0262996511301026E-05
+    gnn_risk_score 1.135355898185253E-08
     industry "Software - Application"
-    raw_risk_score 0.12594961484363548
+    raw_risk_score 0.13467507834116854
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 303
@@ -3991,12 +4324,13 @@ graph [
     ticker "TSN"
     market_cap 0
     name "Tyson Foods"
-    gnn_risk_score 4.082664872839814E-08
+    gnn_risk_score 2.7285640413765577E-10
     industry "Farm Products"
-    raw_risk_score 0.23935800540302096
+    raw_risk_score 0.26805388130380686
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 304
@@ -4004,12 +4338,13 @@ graph [
     ticker "USB"
     market_cap 0
     name "U.S. Bancorp"
-    gnn_risk_score 1.7390098037139978E-06
+    gnn_risk_score 0.9999628067016602
     industry "Banks - Regional"
-    raw_risk_score 0.2603388135853971
+    raw_risk_score 0.269952577123316
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 305
@@ -4017,12 +4352,13 @@ graph [
     ticker "UDR"
     market_cap 0
     name "UDR, Inc."
-    gnn_risk_score 3.224447198135749E-08
+    gnn_risk_score 3.0803803383605555E-05
     industry "REIT - Residential"
-    raw_risk_score 0.1492316853522229
+    raw_risk_score 0.13236377712495287
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 306
@@ -4030,12 +4366,13 @@ graph [
     ticker "VLO"
     market_cap 0
     name "Valero Energy"
-    gnn_risk_score 3.7187842281127814E-06
+    gnn_risk_score 1.2151352848377428E-06
     industry "Oil &#38; Gas Refining &#38; Marketing"
-    raw_risk_score 0.18713901026771743
+    raw_risk_score 0.22728851865031685
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 307
@@ -4043,12 +4380,13 @@ graph [
     ticker "VTR"
     market_cap 0
     name "Ventas"
-    gnn_risk_score 6.519169915009115E-08
+    gnn_risk_score 4.683780389314052E-06
     industry "REIT - Healthcare Facilities"
-    raw_risk_score 0.1907794644363479
+    raw_risk_score 0.1765231173768817
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 308
@@ -4056,12 +4394,13 @@ graph [
     ticker "VRSN"
     market_cap 0
     name "Verisign"
-    gnn_risk_score 3.3571759558981284E-05
+    gnn_risk_score 1.4190499314281624E-05
     industry "Software - Infrastructure"
-    raw_risk_score 0.1189616062601826
+    raw_risk_score 0.11874570176374259
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 309
@@ -4069,12 +4408,13 @@ graph [
     ticker "VFC"
     market_cap 0
     name "VF Corporation"
-    gnn_risk_score 4.0440917281614475E-10
+    gnn_risk_score 1.7389220730024135E-08
     industry "Apparel Manufacturing"
-    raw_risk_score 0.4528090775540921
+    raw_risk_score 0.47894368031479884
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 310
@@ -4084,12 +4424,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T19:02:10.565000000+00:00"
     name "Visa Inc."
-    gnn_risk_score 0.9282501935958862
+    gnn_risk_score 0.18033283948898315
     industry "Credit Services"
-    raw_risk_score 0.1476176204354135
+    raw_risk_score 0.09191551538703349
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 311
@@ -4097,12 +4438,13 @@ graph [
     ticker "WAB"
     market_cap 0
     name "Wabtec"
-    gnn_risk_score 1.4895194055952743E-07
+    gnn_risk_score 3.235505516840931E-07
     industry "Railroads"
-    raw_risk_score 0.2264888288687817
+    raw_risk_score 0.23867187666685058
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 312
@@ -4110,23 +4452,27 @@ graph [
     ticker "WBA"
     market_cap 0
     name "Walgreens Boots Alliance"
-    gnn_risk_score 2.2884216743790375E-09
+    gnn_risk_score 5.772250233349041E-07
     raw_risk_score -0.0
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 313
     label "WMT"
+    sentiment_score 0.7
     ticker "WMT"
     market_cap 0
+    last_news_update "2025-12-05T20:01:52.413000000+00:00"
     name "Walmart"
-    gnn_risk_score 1.8227408418169944E-06
+    gnn_risk_score 0.9771855473518372
     industry "Discount Stores"
-    raw_risk_score 0.309450278855018
+    raw_risk_score 0.316897616130525
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 314
@@ -4134,12 +4480,13 @@ graph [
     ticker "WM"
     market_cap 0
     name "Waste Management"
-    gnn_risk_score 2.5627304012232344E-07
+    gnn_risk_score 8.644800431056865E-09
     industry "Waste Management"
-    raw_risk_score 0.18607706927474066
+    raw_risk_score 0.15458209652784355
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 315
@@ -4149,12 +4496,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T22:06:07.050000000+00:00"
     name "WEC Energy Group"
-    gnn_risk_score 2.58480849879561E-06
+    gnn_risk_score 0.0001660609123064205
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.1988959098234857
+    raw_risk_score 0.21328652329464073
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 316
@@ -4162,12 +4510,13 @@ graph [
     ticker "WELL"
     market_cap 0
     name "Welltower"
-    gnn_risk_score 0.9999998211860657
+    gnn_risk_score 0.9980373978614807
     industry "REIT - Healthcare Facilities"
-    raw_risk_score 0.21193174052814184
+    raw_risk_score 0.19955923521019944
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 317
@@ -4175,10 +4524,11 @@ graph [
     ticker "WRK"
     market_cap 0
     name "N/A"
-    gnn_risk_score 5.96650124862208E-07
+    gnn_risk_score 1.8774662748910487E-06
     raw_risk_score -0.0
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 318
@@ -4186,12 +4536,13 @@ graph [
     ticker "WMB"
     market_cap 0
     name "Williams Companies"
-    gnn_risk_score 1.5822473997673114E-08
+    gnn_risk_score 4.5296684447748703E-07
     industry "Oil &#38; Gas Midstream"
-    raw_risk_score 0.23620235902649755
+    raw_risk_score 0.187227962864939
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 319
@@ -4199,12 +4550,13 @@ graph [
     ticker "WYNN"
     market_cap 0
     name "Wynn Resorts"
-    gnn_risk_score 1.6999487684188352E-07
+    gnn_risk_score 5.247471563052386E-05
     industry "Resorts &#38; Casinos"
-    raw_risk_score 0.21742116231350786
+    raw_risk_score 0.23891213940676598
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 320
@@ -4212,12 +4564,13 @@ graph [
     ticker "XEL"
     market_cap 0
     name "Xcel Energy"
-    gnn_risk_score 2.6824980636774853E-07
+    gnn_risk_score 4.895328586940195E-08
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.1535051419077993
+    raw_risk_score 0.1854456834559407
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 321
@@ -4225,12 +4578,13 @@ graph [
     ticker "XYL"
     market_cap 0
     name "Xylem Inc."
-    gnn_risk_score 6.959376186443933E-09
+    gnn_risk_score 1.1831255086747205E-08
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.19272567711843674
+    raw_risk_score 0.16077667039951915
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 322
@@ -4238,12 +4592,13 @@ graph [
     ticker "YUM"
     market_cap 0
     name "Yum! Brands"
-    gnn_risk_score 7.653617331015994E-07
+    gnn_risk_score 1.0552665408170014E-08
     industry "Restaurants"
-    raw_risk_score 0.14410557789704165
+    raw_risk_score 0.14762693075617095
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 323
@@ -4251,12 +4606,13 @@ graph [
     ticker "ZBRA"
     market_cap 0
     name "Zebra Technologies"
-    gnn_risk_score 6.780581429666199E-08
+    gnn_risk_score 8.968004294729326E-06
     industry "Communication Equipment"
-    raw_risk_score 0.3245693766010909
+    raw_risk_score 0.3357987569245888
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 324
@@ -4264,12 +4620,13 @@ graph [
     ticker "ZBH"
     market_cap 0
     name "Zimmer Biomet"
-    gnn_risk_score 2.1491396182682365E-06
+    gnn_risk_score 4.6783588913967833E-07
     industry "Medical Devices"
-    raw_risk_score 0.17479167319640931
+    raw_risk_score 0.20986927179796572
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 325
@@ -4277,12 +4634,13 @@ graph [
     ticker "ZION"
     market_cap 0
     name "Zions Bancorporation"
-    gnn_risk_score 6.19472530161147E-07
+    gnn_risk_score 1.7638970462030557E-07
     industry "Banks - Regional"
-    raw_risk_score 0.29202161058765697
+    raw_risk_score 0.2792148135778547
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 326
@@ -4290,12 +4648,13 @@ graph [
     ticker "ZTS"
     market_cap 0
     name "Zoetis"
-    gnn_risk_score 4.3581036379691795E-07
+    gnn_risk_score 9.970847895601764E-05
     industry "Drug Manufacturers - Specialty &#38; Generic"
-    raw_risk_score 0.16111008378301672
+    raw_risk_score 0.18303164867422672
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 327
@@ -4305,12 +4664,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-05T06:01:09.766000000+00:00"
     name "IonQ, Inc."
-    gnn_risk_score 3.6492963317869E-08
+    gnn_risk_score 0.9999067187309265
     industry "Computer Hardware"
-    raw_risk_score 0.6559391534739538
+    raw_risk_score 0.6356746031415023
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 328
@@ -4320,12 +4680,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T18:02:59.064000000+00:00"
     name "Kroger"
-    gnn_risk_score 1.0206709089022326E-10
+    gnn_risk_score 0.9999935030937195
     industry "Grocery Stores"
-    raw_risk_score 0.20270464787673526
+    raw_risk_score 0.2442149842504377
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 329
@@ -4333,12 +4694,13 @@ graph [
     ticker "KO"
     market_cap 0
     name "Coca-Cola Company (The)"
-    gnn_risk_score 9.79437753123591E-10
+    gnn_risk_score 0.9989246129989624
     industry "Beverages - Non-Alcoholic"
-    raw_risk_score 0.08760382277053455
+    raw_risk_score 0.1142766864035804
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 330
@@ -4346,12 +4708,13 @@ graph [
     ticker "OXY"
     market_cap 0
     name "Occidental Petroleum"
-    gnn_risk_score 1.5867004549363628E-05
+    gnn_risk_score 0.9999498724937439
     industry "Oil &#38; Gas E&#38;P"
-    raw_risk_score 0.13863928220627286
+    raw_risk_score 0.1271725371849895
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 331
@@ -4359,12 +4722,13 @@ graph [
     ticker "SIRI"
     market_cap 0
     name "Sirius XM Holdings"
-    gnn_risk_score 2.2624190023634583E-05
+    gnn_risk_score 0.9999894499778748
     industry "Entertainment"
-    raw_risk_score 0.1398996802796004
+    raw_risk_score 0.17501300606029033
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 332
@@ -4372,40 +4736,45 @@ graph [
     ticker "FDS"
     market_cap 0
     name "FactSet"
-    gnn_risk_score 1.342968403150735E-06
+    gnn_risk_score 1.1911432693523238E-06
     industry "Financial Data &#38; Stock Exchanges"
-    raw_risk_score 0.1567040690807248
+    raw_risk_score 0.26451590968400096
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 333
     label "MSFT"
-    sentiment_score 0.7
+    sentiment_score 0.2
     ticker "MSFT"
     market_cap 0
-    last_news_update "2025-12-04T21:01:35.996000000+00:00"
+    last_news_update "2025-12-06T07:01:31.224000000+00:00"
     name "Microsoft"
-    gnn_risk_score 9.575860993038532E-09
+    gnn_risk_score 0.4981299340724945
     industry "Software - Infrastructure"
-    raw_risk_score 0.19090251154189097
+    raw_risk_score 0.21031732758667407
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 334
     label "ABT"
+    sentiment_score -0.3
     ticker "ABT"
     market_cap 0
+    last_news_update "2025-12-05T19:04:06.159000000+00:00"
     name "Abbott Laboratories"
-    gnn_risk_score 2.379357056270237E-06
+    gnn_risk_score 0.9886023998260498
     industry "Medical Devices"
-    raw_risk_score 0.17070105165823046
+    raw_risk_score 0.206054910914791
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 335
@@ -4413,12 +4782,13 @@ graph [
     ticker "FSLR"
     market_cap 0
     name "First Solar"
-    gnn_risk_score 3.3042431368812686E-07
+    gnn_risk_score 0.00014945759903639555
     industry "Solar"
-    raw_risk_score 0.1972108362361984
+    raw_risk_score 0.22233802734425542
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 336
@@ -4426,12 +4796,13 @@ graph [
     ticker "FE"
     market_cap 0
     name "FirstEnergy"
-    gnn_risk_score 1.5174967302300502E-05
+    gnn_risk_score 0.0019118040800094604
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.11376472853718411
+    raw_risk_score 0.1388904757748445
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 337
@@ -4439,14 +4810,15 @@ graph [
     sentiment_score -0.6
     ticker "TSLA"
     market_cap 0
-    last_news_update "2025-12-05T06:01:08.475000000+00:00"
+    last_news_update "2025-12-05T13:02:47.754000000+00:00"
     name "Tesla, Inc."
-    gnn_risk_score 1.034031527069601E-08
+    gnn_risk_score 0.5032799243927002
     industry "Auto Manufacturers"
-    raw_risk_score 0.41796027022747323
+    raw_risk_score 0.4131378417098318
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 338
@@ -4454,12 +4826,13 @@ graph [
     ticker "APD"
     market_cap 0
     name "Air Products"
-    gnn_risk_score 4.4158895207147E-08
+    gnn_risk_score 5.8364435062685516E-06
     industry "Specialty Chemicals"
-    raw_risk_score 0.20369262879788597
+    raw_risk_score 0.1079280740482136
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 339
@@ -4467,12 +4840,13 @@ graph [
     ticker "CZR"
     market_cap 0
     name "Caesars Entertainment"
-    gnn_risk_score 7.150976699676903E-08
+    gnn_risk_score 4.3889727407986356E-07
     industry "Resorts &#38; Casinos"
-    raw_risk_score 0.37982090630853227
+    raw_risk_score 0.3744192220400483
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 340
@@ -4480,12 +4854,13 @@ graph [
     ticker "DAL"
     market_cap 0
     name "Delta Air Lines"
-    gnn_risk_score 6.660664207680522E-12
+    gnn_risk_score 0.999984085559845
     industry "Airlines"
-    raw_risk_score 0.33143840205392183
+    raw_risk_score 0.3678346362353655
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 341
@@ -4493,12 +4868,13 @@ graph [
     ticker "IRM"
     market_cap 0
     name "Iron Mountain"
-    gnn_risk_score 9.702704062419798E-08
+    gnn_risk_score 7.950903047060365E-09
     industry "REIT - Specialty"
-    raw_risk_score 0.3118334131602883
+    raw_risk_score 0.3243650286525664
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 342
@@ -4508,12 +4884,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T19:01:27.119000000+00:00"
     name "Palo Alto Networks"
-    gnn_risk_score 1.2903274182463065E-07
+    gnn_risk_score 0.9934214949607849
     industry "Software - Infrastructure"
-    raw_risk_score 0.25569263767121075
+    raw_risk_score 0.2435363641652955
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 343
@@ -4521,12 +4898,13 @@ graph [
     ticker "MOS"
     market_cap 0
     name "Mosaic Company (The)"
-    gnn_risk_score 4.5163988033891656E-06
+    gnn_risk_score 0.001514726784080267
     industry "Agricultural Inputs"
-    raw_risk_score 0.25422133957907334
+    raw_risk_score 0.29009194265604116
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 344
@@ -4534,12 +4912,13 @@ graph [
     ticker "SEE"
     market_cap 0
     name "Sealed Air Corp"
-    gnn_risk_score 1.2325968157256284E-07
+    gnn_risk_score 1.7319713151664473E-05
     industry "Packaging &#38; Containers"
-    raw_risk_score 0.3512920878572778
+    raw_risk_score 0.41871953331853834
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 345
@@ -4547,12 +4926,13 @@ graph [
     ticker "LUV"
     market_cap 0
     name "Southwest Airlines"
-    gnn_risk_score 4.159288380378712E-08
+    gnn_risk_score 1.2560580180120962E-11
     industry "Airlines"
-    raw_risk_score 0.29388459537075995
+    raw_risk_score 0.37428380091797464
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 346
@@ -4562,12 +4942,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T12:07:53.410000000+00:00"
     name "United Airlines Holdings"
-    gnn_risk_score 2.4876355837477604E-06
+    gnn_risk_score 0.0005021378747187555
     industry "Airlines"
-    raw_risk_score 0.3075977507986909
+    raw_risk_score 0.338798160099694
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 347
@@ -4575,12 +4956,13 @@ graph [
     ticker "GM"
     market_cap 0
     name "General Motors"
-    gnn_risk_score 6.1059899962856434E-06
+    gnn_risk_score 0.999833345413208
     industry "Auto Manufacturers"
-    raw_risk_score 0.2056765403045238
+    raw_risk_score 0.2657371561223747
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 348
@@ -4588,12 +4970,13 @@ graph [
     ticker "COP"
     market_cap 0
     name "ConocoPhillips"
-    gnn_risk_score 0.9931273460388184
+    gnn_risk_score 0.9931731224060059
     industry "Oil &#38; Gas E&#38;P"
-    raw_risk_score 0.21848324869592572
+    raw_risk_score 0.1919978669289733
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 349
@@ -4601,25 +4984,29 @@ graph [
     ticker "TDG"
     market_cap 0
     name "TransDigm Group"
-    gnn_risk_score 1.2596768783623702E-06
+    gnn_risk_score 1.9645402062451467E-05
     industry "Aerospace &#38; Defense"
-    raw_risk_score 0.13646875423721344
+    raw_risk_score 0.08905499974375414
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 350
     label "LLY"
+    sentiment_score -0.3
     ticker "LLY"
-    market_cap 925055586484.9199
+    market_cap 907987578788.93
+    last_news_update "2025-12-05T22:02:59.834000000+00:00"
     name "Eli Lilly &#38; Co."
-    gnn_risk_score 6.703717581046931E-09
+    gnn_risk_score 0.0023295751307159662
     industry "Drug Manufacturers - General"
-    raw_risk_score 0.17261984788580576
+    raw_risk_score 0.18963596866786248
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "PHARMACEUTICAL PREPARATIONS"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 351
@@ -4627,12 +5014,13 @@ graph [
     ticker "AVB"
     market_cap 0
     name "AvalonBay Communities"
-    gnn_risk_score 6.099390437164232E-11
+    gnn_risk_score 1.9448309558356414E-06
     industry "REIT - Residential"
-    raw_risk_score 0.12455930964163667
+    raw_risk_score 0.07416057856057724
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 352
@@ -4640,12 +5028,13 @@ graph [
     ticker "MAA"
     market_cap 0
     name "Mid-America Apartment Communities"
-    gnn_risk_score 1.538224303487823E-08
+    gnn_risk_score 0.0316188745200634
     industry "REIT - Residential"
-    raw_risk_score 0.1376510088192921
+    raw_risk_score 0.09619289752944618
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 353
@@ -4653,12 +5042,13 @@ graph [
     ticker "PSX"
     market_cap 0
     name "Phillips 66"
-    gnn_risk_score 1.4526763436606416E-07
+    gnn_risk_score 3.545047002262436E-05
     industry "Oil &#38; Gas Refining &#38; Marketing"
-    raw_risk_score 0.14843127247776475
+    raw_risk_score 0.15808621661103653
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 354
@@ -4668,12 +5058,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T19:06:23.375000000+00:00"
     name "Comerica Inc."
-    gnn_risk_score 2.5908744305525033E-07
+    gnn_risk_score 0.00334104779176414
     industry "Banks - Regional"
-    raw_risk_score 0.26000639106455087
+    raw_risk_score 0.2569992947346918
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 355
@@ -4681,12 +5072,13 @@ graph [
     ticker "GLW"
     market_cap 0
     name "Corning Inc."
-    gnn_risk_score 4.425456552326068E-07
+    gnn_risk_score 2.0812962247873656E-05
     industry "Electronic Components"
-    raw_risk_score 0.2817513249878661
+    raw_risk_score 0.2957702123804038
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 356
@@ -4694,12 +5086,13 @@ graph [
     ticker "SHW"
     market_cap 0
     name "Sherwin-Williams"
-    gnn_risk_score 2.7742154884435877E-07
+    gnn_risk_score 5.90013939927303E-07
     industry "Specialty Chemicals"
-    raw_risk_score 0.12169172319305725
+    raw_risk_score 0.11488364356278515
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 357
@@ -4707,12 +5100,13 @@ graph [
     ticker "EFX"
     market_cap 0
     name "Equifax"
-    gnn_risk_score 4.119397800650404E-08
+    gnn_risk_score 9.014626698444772E-07
     industry "Consulting Services"
-    raw_risk_score 0.16877277693310974
+    raw_risk_score 0.1686330246181791
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 358
@@ -4720,12 +5114,13 @@ graph [
     ticker "MA"
     market_cap 0
     name "Mastercard"
-    gnn_risk_score 2.2367403573753109E-07
+    gnn_risk_score 0.00021066705812700093
     industry "Credit Services"
-    raw_risk_score 0.14434637723407512
+    raw_risk_score 0.1057185569700432
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 359
@@ -4733,12 +5128,13 @@ graph [
     ticker "MKC"
     market_cap 0
     name "McCormick &#38; Company"
-    gnn_risk_score 2.1002766192879108E-09
+    gnn_risk_score 6.9381790126499254E-06
     industry "Packaged Foods"
-    raw_risk_score 0.18371802165499562
+    raw_risk_score 0.17241699074384276
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 360
@@ -4746,12 +5142,13 @@ graph [
     ticker "PEG"
     market_cap 0
     name "Public Service Enterprise Group"
-    gnn_risk_score 0.0005362041410990059
+    gnn_risk_score 1.260184603779635E-06
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.15430590294670593
+    raw_risk_score 0.18804918620425978
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 361
@@ -4759,12 +5156,13 @@ graph [
     ticker "SNA"
     market_cap 0
     name "Snap-on"
-    gnn_risk_score 1.2346955372777302E-05
+    gnn_risk_score 6.38509081909433E-05
     industry "Tools &#38; Accessories"
-    raw_risk_score 0.18208361050914984
+    raw_risk_score 0.2673502901748914
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 362
@@ -4772,12 +5170,13 @@ graph [
     ticker "WTW"
     market_cap 0
     name "Willis Towers Watson"
-    gnn_risk_score 4.76987452202593E-07
+    gnn_risk_score 3.639322017079394E-07
     industry "Insurance Brokers"
-    raw_risk_score 0.11517867013705874
+    raw_risk_score 0.08681120958722213
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 363
@@ -4785,12 +5184,13 @@ graph [
     ticker "TDY"
     market_cap 0
     name "Teledyne Technologies"
-    gnn_risk_score 8.519251082361734E-09
+    gnn_risk_score 1.8255113900522701E-06
     industry "Scientific &#38; Technical Instruments"
-    raw_risk_score 0.16920418724219619
+    raw_risk_score 0.2018424113485045
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 364
@@ -4798,27 +5198,29 @@ graph [
     ticker "TFX"
     market_cap 0
     name "Teleflex Inc."
-    gnn_risk_score 6.218389785317413E-07
+    gnn_risk_score 2.420126293145586E-06
     industry "Medical Instruments &#38; Supplies"
-    raw_risk_score 0.4219257212930417
+    raw_risk_score 0.33829412570882766
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 365
     label "TXN"
-    sentiment_score 0.2
+    sentiment_score 0.3
     ticker "TXN"
     market_cap 0
-    last_news_update "2025-12-04T12:30:15.302000000+00:00"
+    last_news_update "2025-12-05T12:04:56.518000000+00:00"
     name "Texas Instruments"
-    gnn_risk_score 5.1084560193093154E-11
+    gnn_risk_score 0.00028365355683490634
     industry "Semiconductors"
-    raw_risk_score 0.29281150725891847
+    raw_risk_score 0.3315005836052788
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 366
@@ -4826,27 +5228,29 @@ graph [
     ticker "UNH"
     market_cap 0
     name "UnitedHealth Group"
-    gnn_risk_score 3.6935765024281864E-07
+    gnn_risk_score 0.9940584301948547
     industry "Healthcare Plans"
-    raw_risk_score 0.18108085073271765
+    raw_risk_score 0.21952941758593414
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 367
     label "GOOGL"
-    sentiment_score -0.6
+    sentiment_score 0.3
     ticker "GOOGL"
     market_cap 0
-    last_news_update "2025-12-05T06:01:10.976000000+00:00"
+    last_news_update "2025-12-06T07:02:09.220000000+00:00"
     name "Alphabet Inc. (Class A)"
-    gnn_risk_score 2.1278008688341288E-08
+    gnn_risk_score 0.9908867478370667
     industry "Internet Content &#38; Information"
-    raw_risk_score 0.35837363219988505
+    raw_risk_score 0.3848033693067544
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 368
@@ -4854,12 +5258,13 @@ graph [
     ticker "AMP"
     market_cap 0
     name "Ameriprise Financial"
-    gnn_risk_score 0.4138738811016083
+    gnn_risk_score 0.00033009261824190617
     industry "Asset Management"
-    raw_risk_score 0.1846426899705632
+    raw_risk_score 0.20464046791388238
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 369
@@ -4867,12 +5272,13 @@ graph [
     ticker "PFG"
     market_cap 0
     name "Principal Financial Group"
-    gnn_risk_score 1.776352974047768E-06
+    gnn_risk_score 1.1149011243105633E-06
     industry "Asset Management"
-    raw_risk_score 0.17115311340673228
+    raw_risk_score 0.2093329015137052
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 370
@@ -4880,12 +5286,13 @@ graph [
     ticker "ADM"
     market_cap 0
     name "Archer Daniels Midland"
-    gnn_risk_score 8.125306862893922E-07
+    gnn_risk_score 0.9999997019767761
     industry "Farm Products"
-    raw_risk_score 0.17013240828644516
+    raw_risk_score 0.1706367753653025
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 371
@@ -4893,25 +5300,29 @@ graph [
     ticker "ACGL"
     market_cap 0
     name "Arch Capital Group"
-    gnn_risk_score 3.057625974633993E-08
+    gnn_risk_score 2.7619027065384216E-08
     industry "Insurance - Diversified"
-    raw_risk_score 0.08348119233071032
+    raw_risk_score 0.10283548676565502
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 372
     label "LRCX"
+    sentiment_score 0.7
     ticker "LRCX"
     market_cap 0
+    last_news_update "2025-12-06T01:01:34.994000000+00:00"
     name "Lam Research"
-    gnn_risk_score 8.681272589683431E-09
+    gnn_risk_score 0.0004119678633287549
     industry "Semiconductor Equipment &#38; Materials"
-    raw_risk_score 0.2933835328113408
+    raw_risk_score 0.3453072435728769
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 373
@@ -4919,12 +5330,13 @@ graph [
     ticker "UPS"
     market_cap 0
     name "United Parcel Service"
-    gnn_risk_score 0.9895485639572144
+    gnn_risk_score 0.9987075328826904
     industry "Integrated Freight &#38; Logistics"
-    raw_risk_score 0.165095055422823
+    raw_risk_score 0.17128139547372395
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 374
@@ -4934,12 +5346,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-02T14:06:33.237000000+00:00"
     name "GE HealthCare"
-    gnn_risk_score 0.0011779330670833588
+    gnn_risk_score 2.4111961465678178E-05
     industry "Health Information Services"
-    raw_risk_score 0.2934659126791872
+    raw_risk_score 0.34017648153968294
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 375
@@ -4947,12 +5360,13 @@ graph [
     ticker "IR"
     market_cap 0
     name "Ingersoll Rand"
-    gnn_risk_score 1.5672327435822808E-06
+    gnn_risk_score 1.4321696051311505E-09
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.22305471214430267
+    raw_risk_score 0.24456123564302257
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 376
@@ -4960,12 +5374,13 @@ graph [
     ticker "JBHT"
     market_cap 0
     name "J.B. Hunt"
-    gnn_risk_score 4.416059766754188E-07
+    gnn_risk_score 4.8348563723266125E-05
     industry "Integrated Freight &#38; Logistics"
-    raw_risk_score 0.3186819722543325
+    raw_risk_score 0.3676726603593792
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 377
@@ -4973,12 +5388,13 @@ graph [
     ticker "HBAN"
     market_cap 0
     name "Huntington Bancshares"
-    gnn_risk_score 6.52001253911294E-05
+    gnn_risk_score 3.636942480511607E-08
     industry "Banks - Regional"
-    raw_risk_score 0.28935687605613664
+    raw_risk_score 0.25914104081415146
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 378
@@ -4986,12 +5402,13 @@ graph [
     ticker "MMM"
     market_cap 0
     name "3M"
-    gnn_risk_score 9.673017586919741E-08
+    gnn_risk_score 1.4358061961594615E-10
     industry "Conglomerates"
-    raw_risk_score 0.1007301056796504
+    raw_risk_score 0.09986818800917455
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 379
@@ -4999,25 +5416,29 @@ graph [
     ticker "ALLE"
     market_cap 0
     name "Allegion"
-    gnn_risk_score 1.5991096447010023E-08
+    gnn_risk_score 1.1984418790689233E-07
     industry "Security &#38; Protection Services"
-    raw_risk_score 0.15159336206787904
+    raw_risk_score 0.13716973896033213
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 380
     label "AEP"
+    sentiment_score 0.3
     ticker "AEP"
     market_cap 0
+    last_news_update "2025-12-05T21:06:28.612000000+00:00"
     name "American Electric Power"
-    gnn_risk_score 1.9343694646067888E-08
+    gnn_risk_score 7.332948137594997E-10
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.1620320301526868
+    raw_risk_score 0.16998830719673635
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 381
@@ -5025,25 +5446,29 @@ graph [
     ticker "AXP"
     market_cap 0
     name "American Express"
-    gnn_risk_score 2.7286413128990716E-08
+    gnn_risk_score 3.0427331694227178E-06
     industry "Credit Services"
-    raw_risk_score 0.16373500058933657
+    raw_risk_score 0.20541747873376626
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 382
     label "AWK"
+    sentiment_score 0.7
     ticker "AWK"
     market_cap 0
+    last_news_update "2025-12-05T15:03:54.072000000+00:00"
     name "American Water Works"
-    gnn_risk_score 1.4737751143911737E-06
+    gnn_risk_score 0.0023666678462177515
     industry "Utilities - Regulated Water"
-    raw_risk_score 0.15511058285868565
+    raw_risk_score 0.1496614296637519
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 383
@@ -5051,12 +5476,13 @@ graph [
     ticker "BKR"
     market_cap 0
     name "Baker Hughes"
-    gnn_risk_score 2.90334196506592E-06
+    gnn_risk_score 1.410450522598694E-06
     industry "Oil &#38; Gas Equipment &#38; Services"
-    raw_risk_score 0.24237109709899018
+    raw_risk_score 0.1489127366557138
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 384
@@ -5064,12 +5490,13 @@ graph [
     ticker "BBY"
     market_cap 0
     name "Best Buy"
-    gnn_risk_score 1.002671501382224E-09
+    gnn_risk_score 3.265818548925381E-08
     industry "Specialty Retail"
-    raw_risk_score 0.2058472181348016
+    raw_risk_score 0.19592617256940809
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 385
@@ -5077,12 +5504,13 @@ graph [
     ticker "BA"
     market_cap 0
     name "Boeing"
-    gnn_risk_score 6.739363470842363E-06
+    gnn_risk_score 3.771104956085125E-12
     industry "Aerospace &#38; Defense"
-    raw_risk_score 0.2699207070888871
+    raw_risk_score 0.2770855496100293
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 386
@@ -5090,12 +5518,13 @@ graph [
     ticker "CPB"
     market_cap 0
     name "Campbell's Company (The)"
-    gnn_risk_score 7.613913476234302E-05
+    gnn_risk_score 2.8083113647880964E-06
     industry "Packaged Foods"
-    raw_risk_score 0.24335129330337946
+    raw_risk_score 0.2345022513990282
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 387
@@ -5103,12 +5532,13 @@ graph [
     ticker "DXC"
     market_cap 0
     name "DXC Technology"
-    gnn_risk_score 0.00037966284435242414
+    gnn_risk_score 5.726843028242001E-06
     industry "Information Technology Services"
-    raw_risk_score 0.24638586827601622
+    raw_risk_score 0.3103848572061551
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 388
@@ -5116,12 +5546,13 @@ graph [
     ticker "CLX"
     market_cap 0
     name "Clorox"
-    gnn_risk_score 5.0542494136607274E-06
+    gnn_risk_score 4.399558292789152E-06
     industry "Household &#38; Personal Products"
-    raw_risk_score 0.14562555928538407
+    raw_risk_score 0.1485015853743632
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 389
@@ -5129,12 +5560,13 @@ graph [
     ticker "CL"
     market_cap 0
     name "Colgate-Palmolive"
-    gnn_risk_score 5.435266757558566E-06
+    gnn_risk_score 5.554161930376722E-07
     industry "Household &#38; Personal Products"
-    raw_risk_score 0.12924530628485192
+    raw_risk_score 0.10086194318230997
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 390
@@ -5142,12 +5574,13 @@ graph [
     ticker "DE"
     market_cap 0
     name "Deere &#38; Company"
-    gnn_risk_score 1.4805354453528707E-07
+    gnn_risk_score 0.0132237384095788
     industry "Farm &#38; Heavy Construction Machinery"
-    raw_risk_score 0.1835252286356065
+    raw_risk_score 0.1603249567594969
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 391
@@ -5157,12 +5590,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T17:02:26.772000000+00:00"
     name "Walt Disney Company (The)"
-    gnn_risk_score 0.8773577809333801
+    gnn_risk_score 0.9999656081199646
     industry "Entertainment"
-    raw_risk_score 0.2257105552876203
+    raw_risk_score 0.2047714781717349
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 392
@@ -5170,12 +5604,13 @@ graph [
     ticker "DTE"
     market_cap 0
     name "DTE Energy"
-    gnn_risk_score 1.5212395737762563E-05
+    gnn_risk_score 5.348717877495801E-06
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.21509208818491965
+    raw_risk_score 0.22266412150753778
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 393
@@ -5183,12 +5618,13 @@ graph [
     ticker "EMN"
     market_cap 0
     name "Eastman Chemical"
-    gnn_risk_score 1.174170449758094E-07
+    gnn_risk_score 4.472522618925723E-07
     industry "Specialty Chemicals"
-    raw_risk_score 0.24447924735795956
+    raw_risk_score 0.2350387191721027
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 394
@@ -5196,12 +5632,13 @@ graph [
     ticker "ROP"
     market_cap 0
     name "Roper Technologies"
-    gnn_risk_score 3.7341011193348095E-05
+    gnn_risk_score 5.105392997251101E-09
     industry "Software - Application"
-    raw_risk_score 0.10988360736679278
+    raw_risk_score 0.10297049113353003
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 395
@@ -5209,12 +5646,13 @@ graph [
     ticker "F"
     market_cap 0
     name "Ford Motor Company"
-    gnn_risk_score 0.979694128036499
+    gnn_risk_score 0.9974271655082703
     industry "Auto Manufacturers"
-    raw_risk_score 0.15100454623342374
+    raw_risk_score 0.158558486228638
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 396
@@ -5222,12 +5660,13 @@ graph [
     ticker "GPC"
     market_cap 0
     name "Genuine Parts Company"
-    gnn_risk_score 1.2521957160060992E-07
+    gnn_risk_score 1.4126572978057084E-06
     industry "Auto Parts"
-    raw_risk_score 0.14047394097163957
+    raw_risk_score 0.16954761484040448
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 397
@@ -5235,12 +5674,13 @@ graph [
     ticker "HAL"
     market_cap 0
     name "Halliburton"
-    gnn_risk_score 1.1104298209829722E-06
+    gnn_risk_score 0.9999947547912598
     industry "Oil &#38; Gas Equipment &#38; Services"
-    raw_risk_score 0.19994435806749744
+    raw_risk_score 0.22480841580763428
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 398
@@ -5248,12 +5688,13 @@ graph [
     ticker "HSY"
     market_cap 0
     name "Hershey Company (The)"
-    gnn_risk_score 2.4101532858367136E-07
+    gnn_risk_score 7.88793659012299E-06
     industry "Confectioners"
-    raw_risk_score 0.1878547316499879
+    raw_risk_score 0.17241505911897304
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 399
@@ -5261,12 +5702,13 @@ graph [
     ticker "HPE"
     market_cap 0
     name "Hewlett Packard Enterprise"
-    gnn_risk_score 6.365027047650074E-07
+    gnn_risk_score 9.275433512812015E-06
     industry "Communication Equipment"
-    raw_risk_score 0.21764328564191698
+    raw_risk_score 0.24920483837598373
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 400
@@ -5274,12 +5716,13 @@ graph [
     ticker "KHC"
     market_cap 0
     name "Kraft Heinz"
-    gnn_risk_score 1.2256776038555017E-08
+    gnn_risk_score 8.63499224124098E-07
     industry "Packaged Foods"
-    raw_risk_score 0.09938808079292452
+    raw_risk_score 0.10697933206782223
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 401
@@ -5287,12 +5730,13 @@ graph [
     ticker "TAP"
     market_cap 0
     name "Molson Coors Beverage Company"
-    gnn_risk_score 1.3344230609391161E-08
+    gnn_risk_score 0.9736428260803223
     industry "Beverages - Brewers"
-    raw_risk_score 0.21376700505688068
+    raw_risk_score 0.19089330424139184
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 402
@@ -5300,12 +5744,13 @@ graph [
     ticker "PG"
     market_cap 0
     name "Procter &#38; Gamble"
-    gnn_risk_score 0.9999305605888367
+    gnn_risk_score 0.9999991059303284
     industry "Household &#38; Personal Products"
-    raw_risk_score 0.1335806134391629
+    raw_risk_score 0.1611531354388327
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 403
@@ -5313,12 +5758,13 @@ graph [
     ticker "SJM"
     market_cap 0
     name "J.M. Smucker Company (The)"
-    gnn_risk_score 1.4954079086137995E-09
+    gnn_risk_score 6.27855797574739E-06
     industry "Packaged Foods"
-    raw_risk_score 0.2708821488842475
+    raw_risk_score 0.2651176954637017
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 404
@@ -5326,12 +5772,13 @@ graph [
     ticker "SO"
     market_cap 0
     name "Southern Company"
-    gnn_risk_score 9.006782875076169E-09
+    gnn_risk_score 2.4249760826933198E-05
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.16798917864014584
+    raw_risk_score 0.1837089527921668
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 405
@@ -5339,12 +5786,13 @@ graph [
     ticker "SYF"
     market_cap 0
     name "Synchrony Financial"
-    gnn_risk_score 5.766869435319677E-06
+    gnn_risk_score 8.453940836261609E-07
     industry "Credit Services"
-    raw_risk_score 0.27767345199852544
+    raw_risk_score 0.3006106470579806
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 406
@@ -5352,12 +5800,13 @@ graph [
     ticker "VMC"
     market_cap 0
     name "Vulcan Materials Company"
-    gnn_risk_score 2.450343750126649E-08
+    gnn_risk_score 1.3453335441226955E-06
     industry "Building Materials"
-    raw_risk_score 0.1917131076745124
+    raw_risk_score 0.2464529555715693
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 407
@@ -5365,12 +5814,13 @@ graph [
     ticker "WY"
     market_cap 0
     name "Weyerhaeuser"
-    gnn_risk_score 1.916902903076334E-08
+    gnn_risk_score 6.599362905035377E-07
     industry "REIT - Specialty"
-    raw_risk_score 0.18726091598424843
+    raw_risk_score 0.14023539839501248
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 408
@@ -5378,12 +5828,13 @@ graph [
     ticker "KDP"
     market_cap 0
     name "Keurig Dr Pepper"
-    gnn_risk_score 1.228655285151481E-11
+    gnn_risk_score 7.777491555316374E-05
     industry "Beverages - Non-Alcoholic"
-    raw_risk_score 0.21357975302338122
+    raw_risk_score 0.21044865105659144
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 409
@@ -5391,12 +5842,13 @@ graph [
     ticker "MPC"
     market_cap 0
     name "Marathon Petroleum"
-    gnn_risk_score 0.0003821583522949368
+    gnn_risk_score 0.9946921467781067
     industry "Oil &#38; Gas Refining &#38; Marketing"
-    raw_risk_score 0.18139733628887325
+    raw_risk_score 0.216218101754379
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 410
@@ -5404,12 +5856,13 @@ graph [
     ticker "REGN"
     market_cap 0
     name "Regeneron Pharmaceuticals"
-    gnn_risk_score 1.2838938800996402E-08
+    gnn_risk_score 1.798780431272462E-05
     industry "Biotechnology"
-    raw_risk_score 0.23151427200648966
+    raw_risk_score 0.23404392461872792
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 411
@@ -5419,25 +5872,29 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T21:01:27.922000000+00:00"
     name "Vertex Pharmaceuticals"
-    gnn_risk_score 7.455686557023E-08
+    gnn_risk_score 1.7112881778302835E-07
     industry "Biotechnology"
-    raw_risk_score 0.2503454970246933
+    raw_risk_score 0.24186055878114193
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 412
     label "WST"
+    sentiment_score 0.3
     ticker "WST"
     market_cap 0
+    last_news_update "2025-12-05T11:05:41.694000000+00:00"
     name "West Pharmaceutical Services"
-    gnn_risk_score 1.521075773780467E-06
+    gnn_risk_score 0.0001757217396516353
     industry "Medical Instruments &#38; Supplies"
-    raw_risk_score 0.2560301078534034
+    raw_risk_score 0.279415425240971
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 413
@@ -5445,12 +5902,13 @@ graph [
     ticker "MKTX"
     market_cap 0
     name "MarketAxess"
-    gnn_risk_score 2.2929802501181484E-09
+    gnn_risk_score 1.668866161708138E-06
     industry "Capital Markets"
-    raw_risk_score 0.22052971294159762
+    raw_risk_score 0.2279756822780376
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 414
@@ -5458,12 +5916,13 @@ graph [
     ticker "TSCO"
     market_cap 0
     name "Tractor Supply"
-    gnn_risk_score 1.5106870199232958E-09
+    gnn_risk_score 3.8730045162083115E-06
     industry "Specialty Retail"
-    raw_risk_score 0.17823283715925728
+    raw_risk_score 0.1651672386391148
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 415
@@ -5471,12 +5930,13 @@ graph [
     ticker "ED"
     market_cap 0
     name "Consolidated Edison"
-    gnn_risk_score 0.9413545727729797
+    gnn_risk_score 0.9921218752861023
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.18128371921334388
+    raw_risk_score 0.19223387755263405
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 416
@@ -5484,12 +5944,13 @@ graph [
     ticker "LNT"
     market_cap 0
     name "Alliant Energy"
-    gnn_risk_score 1.7541751162752917E-07
+    gnn_risk_score 5.068617525694208E-09
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.15228479574559436
+    raw_risk_score 0.15860390602176933
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 417
@@ -5497,12 +5958,13 @@ graph [
     ticker "APA"
     market_cap 0
     name "APA Corporation"
-    gnn_risk_score 2.6228625933481797E-14
+    gnn_risk_score 2.0122415662626736E-05
     industry "Oil &#38; Gas E&#38;P"
-    raw_risk_score 0.33806580170205613
+    raw_risk_score 0.29482617337135675
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 418
@@ -5510,25 +5972,29 @@ graph [
     ticker "CE"
     market_cap 0
     name "Celanese Corp"
-    gnn_risk_score 0.9955822825431824
+    gnn_risk_score 0.9979730844497681
     industry "Chemicals"
-    raw_risk_score 0.37996694659569585
+    raw_risk_score 0.4246052038270599
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 419
     label "CVX"
+    sentiment_score 0.3
     ticker "CVX"
     market_cap 0
+    last_news_update "2025-12-06T06:00:47.385000000+00:00"
     name "Chevron Corporation"
-    gnn_risk_score 2.1842980757469377E-08
+    gnn_risk_score 2.054149489394419E-10
     industry "Oil &#38; Gas Integrated"
-    raw_risk_score 0.11261192001772405
+    raw_risk_score 0.1873920177752484
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 420
@@ -5536,12 +6002,13 @@ graph [
     ticker "CEG"
     market_cap 0
     name "Constellation Energy"
-    gnn_risk_score 1.4242798442865023E-06
+    gnn_risk_score 1.2087779396097176E-05
     industry "Utilities - Independent Power Producers"
-    raw_risk_score 0.32966426723923065
+    raw_risk_score 0.28991175160278526
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 421
@@ -5549,12 +6016,13 @@ graph [
     ticker "FOXA"
     market_cap 0
     name "Fox Corporation (Class A)"
-    gnn_risk_score 5.928998625392978E-09
+    gnn_risk_score 3.816851403826149E-07
     industry "Entertainment"
-    raw_risk_score 0.17648715237580498
+    raw_risk_score 0.22457878371904327
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 422
@@ -5562,12 +6030,13 @@ graph [
     ticker "FOX"
     market_cap 0
     name "Fox Corporation (Class B)"
-    gnn_risk_score 0.5431392192840576
+    gnn_risk_score 0.999997079372406
     industry "Entertainment"
-    raw_risk_score 0.14619716583039655
+    raw_risk_score 0.19654946593375683
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 423
@@ -5575,12 +6044,13 @@ graph [
     ticker "GD"
     market_cap 0
     name "General Dynamics"
-    gnn_risk_score 1.5945736953071332E-09
+    gnn_risk_score 2.691681402211543E-06
     industry "Aerospace &#38; Defense"
-    raw_risk_score 0.10704530113593874
+    raw_risk_score 0.1442697525350116
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 424
@@ -5588,12 +6058,13 @@ graph [
     ticker "KLAC"
     market_cap 0
     name "KLA Corporation"
-    gnn_risk_score 2.067011894979487E-09
+    gnn_risk_score 3.0219959867849866E-09
     industry "Semiconductor Equipment &#38; Materials"
-    raw_risk_score 0.24670562232780985
+    raw_risk_score 0.28892034096032504
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 425
@@ -5601,12 +6072,13 @@ graph [
     ticker "NWSA"
     market_cap 0
     name "News Corp (Class A)"
-    gnn_risk_score 2.2615930461711287E-08
+    gnn_risk_score 5.80293926759623E-05
     industry "Entertainment"
-    raw_risk_score 0.22203962989953618
+    raw_risk_score 0.18115776263785108
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 426
@@ -5614,12 +6086,13 @@ graph [
     ticker "NWS"
     market_cap 0
     name "News Corp (Class B)"
-    gnn_risk_score 4.97700966661796E-07
+    gnn_risk_score 2.837718739101547E-06
     industry "Entertainment"
-    raw_risk_score 0.21006169437492325
+    raw_risk_score 0.1714145184284236
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 427
@@ -5627,12 +6100,13 @@ graph [
     ticker "PNW"
     market_cap 0
     name "Pinnacle West Capital"
-    gnn_risk_score 2.518486098779249E-06
+    gnn_risk_score 2.724494834183133E-06
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.08830053474176136
+    raw_risk_score 0.06703316833495719
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 428
@@ -5640,12 +6114,13 @@ graph [
     ticker "JKHY"
     market_cap 0
     name "Jack Henry &#38; Associates"
-    gnn_risk_score 1.9623027647241997E-09
+    gnn_risk_score 1.8763717246628175E-09
     industry "Information Technology Services"
-    raw_risk_score 0.3095452884978259
+    raw_risk_score 0.3428734445680535
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 429
@@ -5653,12 +6128,13 @@ graph [
     ticker "TFC"
     market_cap 0
     name "Truist Financial"
-    gnn_risk_score 1.443379318288862E-07
+    gnn_risk_score 1.554131267766934E-05
     industry "Banks - Regional"
-    raw_risk_score 0.23482594654285355
+    raw_risk_score 0.23499354272080336
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 430
@@ -5666,12 +6142,13 @@ graph [
     ticker "CB"
     market_cap 0
     name "Chubb Limited"
-    gnn_risk_score 2.3694286710451706E-07
+    gnn_risk_score 0.9998756051063538
     industry "Insurance - Property &#38; Casualty"
-    raw_risk_score 0.07934823484329111
+    raw_risk_score 0.06362198111972266
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 431
@@ -5679,12 +6156,13 @@ graph [
     ticker "SLB"
     market_cap 0
     name "Schlumberger"
-    gnn_risk_score 4.306526079744799E-06
+    gnn_risk_score 1.8428441990181454E-06
     industry "Oil &#38; Gas Equipment &#38; Services"
-    raw_risk_score 0.24070125577243687
+    raw_risk_score 0.23711326885125678
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 432
@@ -5692,25 +6170,29 @@ graph [
     ticker "LYB"
     market_cap 0
     name "LyondellBasell"
-    gnn_risk_score 1.5010336028353777E-05
+    gnn_risk_score 1.9796359538304387E-06
     industry "Specialty Chemicals"
-    raw_risk_score 0.27896648260991835
+    raw_risk_score 0.2673221463031726
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 433
     label "BIIB"
+    sentiment_score -0.4
     ticker "BIIB"
     market_cap 0
+    last_news_update "2025-12-05T17:01:52.058000000+00:00"
     name "Biogen"
-    gnn_risk_score 4.183738383289892E-06
+    gnn_risk_score 0.9997131824493408
     industry "Drug Manufacturers - General"
-    raw_risk_score 0.286571499037241
+    raw_risk_score 0.2670565874367967
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 434
@@ -5718,27 +6200,29 @@ graph [
     ticker "BKNG"
     market_cap 0
     name "Booking Holdings"
-    gnn_risk_score 7.626346814504359E-06
+    gnn_risk_score 2.9664062872747365E-10
     industry "Travel Services"
-    raw_risk_score 0.2011336842974528
+    raw_risk_score 0.24125646008051643
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 435
     label "AVGO"
-    sentiment_score 0.7
+    sentiment_score 0.2
     ticker "AVGO"
     market_cap 0
-    last_news_update "2025-12-04T12:02:04.955000000+00:00"
+    last_news_update "2025-12-06T07:01:30.405000000+00:00"
     name "Broadcom"
-    gnn_risk_score 1.3995060665905612E-09
+    gnn_risk_score 0.00018152744451072067
     industry "Semiconductors"
-    raw_risk_score 0.38830149334858216
+    raw_risk_score 0.40915241895738913
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 436
@@ -5748,25 +6232,29 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T15:03:33.200000000+00:00"
     name "Cisco"
-    gnn_risk_score 0.991435170173645
+    gnn_risk_score 0.00020061578834429383
     industry "Communication Equipment"
-    raw_risk_score 0.15393838086088485
+    raw_risk_score 0.14271957617341946
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 437
     label "COO"
+    sentiment_score 0.4
     ticker "COO"
     market_cap 0
+    last_news_update "2025-12-05T18:04:13.943000000+00:00"
     name "Cooper Companies (The)"
-    gnn_risk_score 7.393830686597269E-11
+    gnn_risk_score 6.943979678908363E-05
     industry "Medical Instruments &#38; Supplies"
-    raw_risk_score 0.2618623310173706
+    raw_risk_score 0.3374699682531085
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 438
@@ -5774,12 +6262,13 @@ graph [
     ticker "CTVA"
     market_cap 0
     name "Corteva"
-    gnn_risk_score 1.3609953839477384E-06
+    gnn_risk_score 6.291447220974078E-07
     industry "Agricultural Inputs"
-    raw_risk_score 0.11507810800733362
+    raw_risk_score 0.11427024637319363
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 439
@@ -5787,12 +6276,13 @@ graph [
     ticker "D"
     market_cap 0
     name "Dominion Energy"
-    gnn_risk_score 1.3250818255983177E-06
+    gnn_risk_score 4.845269359066151E-07
     industry "Utilities - Regulated Electric"
-    raw_risk_score 0.14110942153525927
+    raw_risk_score 0.15456313317642498
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 440
@@ -5800,12 +6290,13 @@ graph [
     ticker "DD"
     market_cap 0
     name "DuPont"
-    gnn_risk_score 1.7458461343267118E-07
+    gnn_risk_score 1.591181785443041E-06
     industry "Specialty Chemicals"
-    raw_risk_score 0.155999781735001
+    raw_risk_score 0.17969733453070794
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 441
@@ -5813,12 +6304,13 @@ graph [
     ticker "EQIX"
     market_cap 0
     name "Equinix"
-    gnn_risk_score 4.201190861863324E-08
+    gnn_risk_score 5.187373517401284E-06
     industry "REIT - Specialty"
-    raw_risk_score 0.265062069116653
+    raw_risk_score 0.2146739338151203
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 442
@@ -5826,12 +6318,13 @@ graph [
     ticker "EXPE"
     market_cap 0
     name "Expedia Group"
-    gnn_risk_score 2.0590364968597896E-08
+    gnn_risk_score 4.990281377104111E-05
     industry "Travel Services"
-    raw_risk_score 0.4464112941986659
+    raw_risk_score 0.42595663484094654
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 443
@@ -5839,12 +6332,13 @@ graph [
     ticker "FFIV"
     market_cap 0
     name "F5, Inc."
-    gnn_risk_score 2.7735497496905737E-05
+    gnn_risk_score 1.941053895393452E-08
     industry "Software - Infrastructure"
-    raw_risk_score 0.15344864610860282
+    raw_risk_score 0.2370873836428497
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 444
@@ -5852,12 +6346,13 @@ graph [
     ticker "GEN"
     market_cap 0
     name "Gen Digital"
-    gnn_risk_score 0.9999996423721313
+    gnn_risk_score 0.9999998807907104
     industry "Software - Infrastructure"
-    raw_risk_score 0.16598867526081065
+    raw_risk_score 0.16876627980455167
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 445
@@ -5865,12 +6360,13 @@ graph [
     ticker "INVH"
     market_cap 0
     name "Invitation Homes"
-    gnn_risk_score 6.427971754874306E-08
+    gnn_risk_score 2.7645214686344843E-06
     industry "REIT - Residential"
-    raw_risk_score 0.1791900497380332
+    raw_risk_score 0.2059229553249345
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 446
@@ -5880,27 +6376,29 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T22:06:04.227000000+00:00"
     name "Marriott International"
-    gnn_risk_score 0.9996995329856873
+    gnn_risk_score 0.999983549118042
     industry "Lodging"
-    raw_risk_score 0.20861876086685952
+    raw_risk_score 0.2012791963382859
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 447
     label "META"
-    sentiment_score -0.3
+    sentiment_score 0.2
     ticker "META"
-    market_cap 1612129451041.2
-    last_news_update "2025-12-04T18:02:54.402000000+00:00"
+    market_cap 1667404621243.41
+    last_news_update "2025-12-06T07:01:30.810000000+00:00"
     name "Meta Platforms, Inc. Class A Common Stock"
-    gnn_risk_score 0.9981081485748291
+    gnn_risk_score 0.8566567897796631
     industry "Internet Content &#38; Information"
-    raw_risk_score 0.27828758558267147
+    raw_risk_score 0.29100244750075877
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC."
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 448
@@ -5908,12 +6406,13 @@ graph [
     ticker "MRNA"
     market_cap 0
     name "Moderna"
-    gnn_risk_score 0.00044773751869797707
+    gnn_risk_score 0.9999814629554749
     industry "Biotechnology"
-    raw_risk_score 0.352117605395871
+    raw_risk_score 0.4530787871694253
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 449
@@ -5921,12 +6420,13 @@ graph [
     ticker "NDAQ"
     market_cap 0
     name "Nasdaq, Inc."
-    gnn_risk_score 1.0896881175170847E-09
+    gnn_risk_score 2.2099622583482414E-05
     industry "Financial Data &#38; Stock Exchanges"
-    raw_risk_score 0.15911719421069018
+    raw_risk_score 0.17634409372414359
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 450
@@ -5934,12 +6434,13 @@ graph [
     ticker "PYPL"
     market_cap 0
     name "PayPal"
-    gnn_risk_score 1.1607910892053042E-05
+    gnn_risk_score 0.9719792604446411
     industry "Credit Services"
-    raw_risk_score 0.23989048237333357
+    raw_risk_score 0.17767151676798756
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 451
@@ -5947,12 +6448,13 @@ graph [
     ticker "TPR"
     market_cap 0
     name "Tapestry, Inc."
-    gnn_risk_score 3.60605945104453E-08
+    gnn_risk_score 2.2572372415652353E-08
     industry "Luxury Goods"
-    raw_risk_score 0.43539336497518355
+    raw_risk_score 0.36309993994186374
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 452
@@ -5962,12 +6464,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-02T16:13:56.025000000+00:00"
     name "Teradyne"
-    gnn_risk_score 6.058063490854693E-07
+    gnn_risk_score 2.551617528379069E-10
     industry "Semiconductor Equipment &#38; Materials"
-    raw_risk_score 0.4224127516074765
+    raw_risk_score 0.43424049430299144
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 453
@@ -5977,25 +6480,29 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T20:01:52.414000000+00:00"
     name "Trimble Inc."
-    gnn_risk_score 1.2225272350008254E-08
+    gnn_risk_score 0.49666258692741394
     industry "Scientific &#38; Technical Instruments"
-    raw_risk_score 0.316169687571215
+    raw_risk_score 0.32621682420970977
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 454
     label "ULTA"
+    sentiment_score 0.6
     ticker "ULTA"
     market_cap 0
+    last_news_update "2025-12-05T23:01:33.325000000+00:00"
     name "Ulta Beauty"
-    gnn_risk_score 2.8022190235788003E-05
+    gnn_risk_score 3.740619285963476E-05
     industry "Specialty Retail"
-    raw_risk_score 0.15405417143307593
+    raw_risk_score 0.41486108205192873
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 455
@@ -6003,12 +6510,13 @@ graph [
     ticker "VRSK"
     market_cap 0
     name "Verisk Analytics"
-    gnn_risk_score 1.4198755025063292E-06
+    gnn_risk_score 6.020599574441121E-10
     industry "Consulting Services"
-    raw_risk_score 0.1374878224954718
+    raw_risk_score 0.1523574346059311
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 456
@@ -6016,12 +6524,13 @@ graph [
     ticker "VTRS"
     market_cap 0
     name "Viatris"
-    gnn_risk_score 1.1441990466209973E-08
+    gnn_risk_score 1.161538421001751E-05
     industry "Drug Manufacturers - Specialty &#38; Generic"
-    raw_risk_score 0.25873411323395584
+    raw_risk_score 0.291653959818887
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 457
@@ -6029,25 +6538,29 @@ graph [
     ticker "VICI"
     market_cap 0
     name "Vici Properties"
-    gnn_risk_score 8.74572742759483E-06
+    gnn_risk_score 7.310775345104048E-07
     industry "REIT - Diversified"
-    raw_risk_score 0.33816571828694786
+    raw_risk_score 0.34057672095593583
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 458
     label "WBD"
+    sentiment_score 0.3
     ticker "WBD"
     market_cap 0
+    last_news_update "2025-12-06T07:02:09.638000000+00:00"
     name "Warner Bros. Discovery"
-    gnn_risk_score 2.2795231302552565E-07
+    gnn_risk_score 0.49870285391807556
     industry "Entertainment"
-    raw_risk_score 0.3087472751493817
+    raw_risk_score 0.36064392974332016
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 459
@@ -6055,12 +6568,13 @@ graph [
     ticker "CFG"
     market_cap 0
     name "Citizens Financial Group"
-    gnn_risk_score 2.202589222122242E-08
+    gnn_risk_score 3.0785940907662734E-08
     industry "Banks - Regional"
-    raw_risk_score 0.26285932142463175
+    raw_risk_score 0.24833324528450462
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 460
@@ -6068,12 +6582,13 @@ graph [
     ticker "MDLZ"
     market_cap 0
     name "Mondelez International"
-    gnn_risk_score 0.9999996423721313
+    gnn_risk_score 0.9997180700302124
     industry "Confectioners"
-    raw_risk_score 0.146727442167143
+    raw_risk_score 0.17777818801325723
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 461
@@ -6083,12 +6598,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T12:07:59.125000000+00:00"
     name "Verizon"
-    gnn_risk_score 6.077117973291024E-07
+    gnn_risk_score 0.5016628503799438
     industry "Telecom Services"
-    raw_risk_score 0.09288227252267396
+    raw_risk_score 0.12391537758109256
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 462
@@ -6096,12 +6612,13 @@ graph [
     ticker "BR"
     market_cap 0
     name "Broadridge Financial Solutions"
-    gnn_risk_score 0.00012218252231832594
+    gnn_risk_score 0.00011508108582347631
     industry "Information Technology Services"
-    raw_risk_score 0.15026621092369802
+    raw_risk_score 0.15803591643027165
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 463
@@ -6109,12 +6626,13 @@ graph [
     ticker "COF"
     market_cap 0
     name "Capital One"
-    gnn_risk_score 9.912152165725274E-08
+    gnn_risk_score 4.2123105231439695E-05
     industry "Credit Services"
-    raw_risk_score 0.2416278769238892
+    raw_risk_score 0.2973358695394451
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 464
@@ -6122,12 +6640,13 @@ graph [
     ticker "CINF"
     market_cap 0
     name "Cincinnati Financial"
-    gnn_risk_score 4.8758156623307514E-08
+    gnn_risk_score 1.0222898936262936E-06
     industry "Insurance - Property &#38; Casualty"
-    raw_risk_score 0.12828186770383626
+    raw_risk_score 0.10972744338336839
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 465
@@ -6135,12 +6654,13 @@ graph [
     ticker "FIS"
     market_cap 0
     name "Fidelity National Information Services"
-    gnn_risk_score 1.565001639391994E-06
+    gnn_risk_score 5.9788326325360686E-05
     industry "Information Technology Services"
-    raw_risk_score 0.1257094437573936
+    raw_risk_score 0.19167759383392827
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 466
@@ -6148,12 +6668,13 @@ graph [
     ticker "PNC"
     market_cap 0
     name "PNC Financial Services"
-    gnn_risk_score 5.18506840307964E-06
+    gnn_risk_score 4.475638348822031E-08
     industry "Banks - Regional"
-    raw_risk_score 0.2565744275284249
+    raw_risk_score 0.2521452031060369
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 467
@@ -6163,12 +6684,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T16:09:58.652000000+00:00"
     name "Prudential Financial"
-    gnn_risk_score 1.2188418052616612E-09
+    gnn_risk_score 0.1884332299232483
     industry "Insurance - Life"
-    raw_risk_score 0.1757433993554806
+    raw_risk_score 0.21907803919949265
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 468
@@ -6176,12 +6698,13 @@ graph [
     ticker "RJF"
     market_cap 0
     name "Raymond James Financial"
-    gnn_risk_score 8.328682099545404E-08
+    gnn_risk_score 9.149909601546824E-05
     industry "Asset Management"
-    raw_risk_score 0.15307764197968618
+    raw_risk_score 0.19245542127090942
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 469
@@ -6189,12 +6712,13 @@ graph [
     ticker "AJG"
     market_cap 0
     name "Arthur J. Gallagher &#38; Co."
-    gnn_risk_score 9.145413059741259E-06
+    gnn_risk_score 2.3051072275848128E-05
     industry "Insurance Brokers"
-    raw_risk_score 0.21271546275001296
+    raw_risk_score 0.2705662561149681
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 470
@@ -6202,12 +6726,13 @@ graph [
     ticker "RF"
     market_cap 0
     name "Regions Financial Corporation"
-    gnn_risk_score 8.633911363631341E-09
+    gnn_risk_score 6.47360776095951E-10
     industry "Banks - Regional"
-    raw_risk_score 0.26325952837147726
+    raw_risk_score 0.25219874949313553
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 471
@@ -6215,25 +6740,29 @@ graph [
     ticker "UNP"
     market_cap 0
     name "Union Pacific Corporation"
-    gnn_risk_score 5.936261482375471E-10
+    gnn_risk_score 1.1130222446809057E-05
     industry "Railroads"
-    raw_risk_score 0.2664658514292443
+    raw_risk_score 0.25030102880209854
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 472
     label "BMY"
+    sentiment_score -0.3
     ticker "BMY"
     market_cap 0
+    last_news_update "2025-12-05T22:02:58.593000000+00:00"
     name "Bristol Myers Squibb"
-    gnn_risk_score 0.98972088098526
+    gnn_risk_score 0.9981592893600464
     industry "Drug Manufacturers - General"
-    raw_risk_score 0.26423374210924
+    raw_risk_score 0.3499018826188679
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 473
@@ -6241,12 +6770,13 @@ graph [
     ticker "CHTR"
     market_cap 0
     name "Charter Communications"
-    gnn_risk_score 0.9999991655349731
+    gnn_risk_score 0.9995732307434082
     industry "Telecom Services"
-    raw_risk_score 0.21688639966575815
+    raw_risk_score 0.1955526224590177
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 474
@@ -6256,12 +6786,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T20:05:34.787000000+00:00"
     name "Huntington Ingalls Industries"
-    gnn_risk_score 2.191395878980984E-06
+    gnn_risk_score 1.2204835002194159E-05
     industry "Aerospace &#38; Defense"
-    raw_risk_score 0.15698020336463858
+    raw_risk_score 0.19310352371962458
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 475
@@ -6269,12 +6800,13 @@ graph [
     ticker "SBAC"
     market_cap 0
     name "SBA Communications"
-    gnn_risk_score 2.7132145419273E-07
+    gnn_risk_score 3.324928599113264E-08
     industry "REIT - Specialty"
-    raw_risk_score 0.16198881706628848
+    raw_risk_score 0.2246802769867594
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 476
@@ -6282,12 +6814,13 @@ graph [
     ticker "URI"
     market_cap 0
     name "United Rentals"
-    gnn_risk_score 1.5502183980942164E-09
+    gnn_risk_score 1.3935837159806397E-05
     industry "Rental &#38; Leasing Services"
-    raw_risk_score 0.2022045379116046
+    raw_risk_score 0.21035116895613898
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 477
@@ -6295,12 +6828,13 @@ graph [
     ticker "UHS"
     market_cap 0
     name "Universal Health Services"
-    gnn_risk_score 8.434741793905687E-11
+    gnn_risk_score 4.879438719740392E-08
     industry "Medical Care Facilities"
-    raw_risk_score 0.16438543923938792
+    raw_risk_score 0.19128422693657965
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 478
@@ -6308,12 +6842,13 @@ graph [
     ticker "GE"
     market_cap 0
     name "GE Aerospace"
-    gnn_risk_score 0.32861411571502686
+    gnn_risk_score 0.9999333620071411
     industry "Aerospace &#38; Defense"
-    raw_risk_score 0.1933118844719966
+    raw_risk_score 0.23933940983999913
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 479
@@ -6321,12 +6856,13 @@ graph [
     ticker "KMB"
     market_cap 0
     name "Kimberly-Clark"
-    gnn_risk_score 2.028981725743506E-06
+    gnn_risk_score 0.0001566680148243904
     industry "Household &#38; Personal Products"
-    raw_risk_score 0.10613404395649215
+    raw_risk_score 0.10335190135586339
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 480
@@ -6334,12 +6870,13 @@ graph [
     ticker "STE"
     market_cap 0
     name "Steris"
-    gnn_risk_score 1.7294680674240226E-06
+    gnn_risk_score 4.184071713098092E-06
     industry "Medical Devices"
-    raw_risk_score 0.1690456269292299
+    raw_risk_score 0.15121336420111403
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 481
@@ -6347,12 +6884,13 @@ graph [
     ticker "WAT"
     market_cap 0
     name "Waters Corporation"
-    gnn_risk_score 2.763521024462534E-06
+    gnn_risk_score 1.9239829729400526E-09
     industry "Diagnostics &#38; Research"
-    raw_risk_score 0.21669635787877634
+    raw_risk_score 0.21030344262267223
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 482
@@ -6360,25 +6898,29 @@ graph [
     ticker "WDC"
     market_cap 0
     name "Western Digital"
-    gnn_risk_score 2.0312920696596848E-06
+    gnn_risk_score 2.8156240659882315E-05
     industry "Computer Hardware"
-    raw_risk_score 0.3748401412473809
+    raw_risk_score 0.42298118958056896
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 483
     label "PEP"
+    sentiment_score 0.7
     ticker "PEP"
     market_cap 0
+    last_news_update "2025-12-06T03:01:11.003000000+00:00"
     name "PepsiCo"
-    gnn_risk_score 0.9999265670776367
+    gnn_risk_score 0.9975923895835876
     industry "Beverages - Non-Alcoholic"
-    raw_risk_score 0.10605377108037928
+    raw_risk_score 0.07812665031178617
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 484
@@ -6386,14 +6928,15 @@ graph [
     sentiment_score 0.3
     ticker "COST"
     market_cap 0
-    last_news_update "2025-12-04T12:07:55.976000000+00:00"
+    last_news_update "2025-12-06T03:01:12.301000000+00:00"
     name "Costco"
-    gnn_risk_score 0.9995920062065125
+    gnn_risk_score 0.9999910593032837
     industry "Discount Stores"
-    raw_risk_score 0.1631195692025141
+    raw_risk_score 0.16187618199778347
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 485
@@ -6401,12 +6944,13 @@ graph [
     ticker "LW"
     market_cap 0
     name "Lamb Weston"
-    gnn_risk_score 5.505128797267389E-09
+    gnn_risk_score 2.542851507314481E-05
     industry "Packaged Foods"
-    raw_risk_score 0.21226167805874938
+    raw_risk_score 0.23881334899048418
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 486
@@ -6414,25 +6958,29 @@ graph [
     ticker "WHR"
     market_cap 0
     name "Whirlpool Corporation"
-    gnn_risk_score 1.9394558421481634E-06
+    gnn_risk_score 1.3428669731752052E-08
     industry "Furnishings, Fixtures &#38; Appliances"
-    raw_risk_score 0.4268588412279713
+    raw_risk_score 0.33943897416143876
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 487
     label "SBUX"
+    sentiment_score 0.3
     ticker "SBUX"
     market_cap 0
+    last_news_update "2025-12-05T15:02:29.533000000+00:00"
     name "Starbucks"
-    gnn_risk_score 4.35193072689799E-07
+    gnn_risk_score 0.8770112991333008
     industry "Restaurants"
-    raw_risk_score 0.17775701522678122
+    raw_risk_score 0.1743634651124505
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 488
@@ -6442,12 +6990,13 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T22:05:57.950000000+00:00"
     name "BlackRock"
-    gnn_risk_score 1.448704693984837E-07
+    gnn_risk_score 0.500740110874176
     industry "Asset Management"
-    raw_risk_score 0.14153479299770702
+    raw_risk_score 0.1689308725499873
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 489
@@ -6455,12 +7004,13 @@ graph [
     ticker "KEY"
     market_cap 0
     name "KeyCorp"
-    gnn_risk_score 0.41322728991508484
+    gnn_risk_score 0.9971008896827698
     industry "Banks - Regional"
-    raw_risk_score 0.2898776050347518
+    raw_risk_score 0.30027454715313084
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 490
@@ -6468,12 +7018,13 @@ graph [
     ticker "KIM"
     market_cap 0
     name "Kimco Realty"
-    gnn_risk_score 0.9999991655349731
+    gnn_risk_score 0.9998005032539368
     industry "REIT - Retail"
-    raw_risk_score 0.09698063368536272
+    raw_risk_score 0.09228048754213243
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 491
@@ -6481,12 +7032,13 @@ graph [
     ticker "EPAM"
     market_cap 0
     name "EPAM Systems"
-    gnn_risk_score 3.0781830417936362E-09
+    gnn_risk_score 8.712032467883546E-06
     industry "Information Technology Services"
-    raw_risk_score 0.3385929515224757
+    raw_risk_score 0.35561556236842196
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 492
@@ -6494,12 +7046,13 @@ graph [
     ticker "CMCSA"
     market_cap 0
     name "Comcast"
-    gnn_risk_score 0.9854258298873901
+    gnn_risk_score 0.998698353767395
     industry "Telecom Services"
-    raw_risk_score 0.1713668571483101
+    raw_risk_score 0.13363109945600685
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 493
@@ -6507,12 +7060,13 @@ graph [
     ticker "EOG"
     market_cap 0
     name "EOG Resources"
-    gnn_risk_score 3.5550901884562336E-06
+    gnn_risk_score 1.8975202920046286E-06
     industry "Oil &#38; Gas E&#38;P"
-    raw_risk_score 0.15391390142490258
+    raw_risk_score 0.13774037313490003
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 494
@@ -6520,12 +7074,13 @@ graph [
     ticker "INCY"
     market_cap 0
     name "Incyte"
-    gnn_risk_score 9.54683400777867E-06
+    gnn_risk_score 1.7081539738228457E-08
     industry "Biotechnology"
-    raw_risk_score 0.2238952788166425
+    raw_risk_score 0.16775782289642585
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 495
@@ -6533,12 +7088,13 @@ graph [
     ticker "DGX"
     market_cap 0
     name "Quest Diagnostics"
-    gnn_risk_score 1.4441908433582284E-06
+    gnn_risk_score 2.329020389879588E-05
     industry "Diagnostics &#38; Research"
-    raw_risk_score 0.15852199771172576
+    raw_risk_score 0.17313115920022576
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 496
@@ -6546,12 +7102,13 @@ graph [
     ticker "STLD"
     market_cap 0
     name "Steel Dynamics"
-    gnn_risk_score 4.2746343353883276E-08
+    gnn_risk_score 1.010579886440155E-08
     industry "Steel"
-    raw_risk_score 0.2809786026671076
+    raw_risk_score 0.24065945358194146
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 497
@@ -6559,12 +7116,13 @@ graph [
     ticker "APTV"
     market_cap 0
     name "Aptiv"
-    gnn_risk_score 7.144297455852211E-07
+    gnn_risk_score 1.5602319763274863E-05
     industry "Auto Parts"
-    raw_risk_score 0.25637556335244993
+    raw_risk_score 0.23519866587652086
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 498
@@ -6572,25 +7130,29 @@ graph [
     ticker "EQT"
     market_cap 0
     name "EQT Corporation"
-    gnn_risk_score 4.6090669059140055E-08
+    gnn_risk_score 0.9998281598091125
     industry "Oil &#38; Gas E&#38;P"
-    raw_risk_score 0.19863865378568005
+    raw_risk_score 0.216003401797611
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 499
     label "ORCL"
+    sentiment_score 0.3
     ticker "ORCL"
     market_cap 0
+    last_news_update "2025-12-05T11:05:46.492000000+00:00"
     name "Oracle Corporation"
-    gnn_risk_score 8.554588148967923E-09
+    gnn_risk_score 2.4833516576450165E-08
     industry "Software - Infrastructure"
-    raw_risk_score 0.26417874988741374
+    raw_risk_score 0.28182399897532207
     last_risk_update "2025-11-24T09:53:59.305000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 500
@@ -6598,12 +7160,13 @@ graph [
     ticker "PSA"
     market_cap 0
     name "Public Storage"
-    gnn_risk_score 3.7742762515335926E-07
+    gnn_risk_score 5.98572398757824E-07
     industry "REIT - Industrial"
-    raw_risk_score 0.1241708031169438
+    raw_risk_score 0.12279468611018099
     last_risk_update "2025-11-24T09:53:59.584000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 501
@@ -6611,12 +7174,13 @@ graph [
     ticker "SRE"
     market_cap 0
     name "Sempra"
-    gnn_risk_score 5.525075152945647E-07
+    gnn_risk_score 9.374575711262878E-06
     industry "Utilities - Diversified"
-    raw_risk_score 0.14841537488894285
+    raw_risk_score 0.13322654030475858
     last_risk_update "2025-11-24T09:53:59.584000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 502
@@ -6624,12 +7188,13 @@ graph [
     ticker "TRGP"
     market_cap 0
     name "Targa Resources"
-    gnn_risk_score 3.848691449093167E-06
+    gnn_risk_score 3.098866585560245E-08
     industry "Oil &#38; Gas Midstream"
-    raw_risk_score 0.24901106820280783
+    raw_risk_score 0.21232887528706157
     last_risk_update "2025-11-24T09:53:59.584000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 503
@@ -6637,8 +7202,10 @@ graph [
     ticker "X:ETHUSD"
     market_cap 0
     name "Ethereum (USD)"
+    gnn_risk_score 1.4834343176062248E-07
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 504
@@ -6646,8 +7213,10 @@ graph [
     ticker "C:EURUSD"
     market_cap 0
     name "Euro / US Dollar"
+    gnn_risk_score 2.3673780713551196E-09
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 505
@@ -6655,10 +7224,12 @@ graph [
     ticker "PSKY"
     market_cap 0
     name "Paramount Skydance Corporation"
+    gnn_risk_score 3.4293233852622507E-07
     industry "Entertainment"
-    raw_risk_score 0.360396860637141
+    raw_risk_score 0.4973477050390107
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 506
@@ -6666,10 +7237,12 @@ graph [
     ticker "ERIE"
     market_cap 0
     name "Erie Indemnity"
+    gnn_risk_score 1.3704600405617384E-06
     industry "Insurance Brokers"
-    raw_risk_score 0.2128944919577886
+    raw_risk_score 0.1829423524044149
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 507
@@ -6677,10 +7250,12 @@ graph [
     ticker "BG"
     market_cap 0
     name "Bunge Global"
+    gnn_risk_score 2.500514462155934E-08
     industry "Farm Products"
-    raw_risk_score 0.15062702616980214
+    raw_risk_score 0.1521587018780853
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 508
@@ -6688,8 +7263,10 @@ graph [
     ticker "C:GBPUSD"
     market_cap 0
     name "British Pound / US Dollar"
+    gnn_risk_score 1.7629706405841716E-07
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 509
@@ -6697,10 +7274,12 @@ graph [
     ticker "BLDR"
     market_cap 0
     name "Builders FirstSource"
+    gnn_risk_score 7.531452411058126E-06
     industry "Building Products &#38; Equipment"
-    raw_risk_score 0.3225521206165583
+    raw_risk_score 0.32212528728863854
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 510
@@ -6708,10 +7287,12 @@ graph [
     ticker "COR"
     market_cap 0
     name "Cencora (formerly AmerisourceBergen)"
+    gnn_risk_score 6.442076028179144E-07
     industry "Medical Distribution"
-    raw_risk_score 0.25116817144264264
+    raw_risk_score 0.22924570504519753
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 511
@@ -6719,10 +7300,12 @@ graph [
     ticker "EG"
     market_cap 0
     name "Everest Group (formerly RE)"
+    gnn_risk_score 2.510649288467448E-08
     industry "Insurance - Reinsurance"
-    raw_risk_score 0.19933446633778554
+    raw_risk_score 0.21503174931304758
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 512
@@ -6730,10 +7313,12 @@ graph [
     ticker "HUBB"
     market_cap 0
     name "Hubbell Incorporated"
+    gnn_risk_score 6.790738552808762E-05
     industry "Electrical Equipment &#38; Parts"
-    raw_risk_score 0.150669950761595
+    raw_risk_score 0.1855190723261365
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 513
@@ -6741,10 +7326,12 @@ graph [
     ticker "PODD"
     market_cap 0
     name "Insulet Corporation"
+    gnn_risk_score 1.1578370049392106E-06
     industry "Medical Devices"
-    raw_risk_score 0.32684125895771865
+    raw_risk_score 0.3609530935331047
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 514
@@ -6752,10 +7339,12 @@ graph [
     ticker "KVUE"
     market_cap 0
     name "Kenvue"
+    gnn_risk_score 3.4213653066217375E-07
     industry "Household &#38; Personal Products"
-    raw_risk_score 0.139040756754973
+    raw_risk_score 0.1472268603335165
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 515
@@ -6763,10 +7352,12 @@ graph [
     ticker "SW"
     market_cap 0
     name "Smurfit WestRock (formerly WestRock)"
+    gnn_risk_score 3.991367520939093E-06
     industry "Packaging &#38; Containers"
-    raw_risk_score 0.22121113952860394
+    raw_risk_score 0.2429040545528559
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 516
@@ -6776,10 +7367,12 @@ graph [
     market_cap 0
     last_news_update "2025-12-02T13:43:43.412000000+00:00"
     name "Solventum"
+    gnn_risk_score 0.0053708855994045734
     industry "Medical Instruments &#38; Supplies"
-    raw_risk_score 0.4374018839110393
+    raw_risk_score 0.43090793437811464
     sector "Healthcare"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 517
@@ -6787,10 +7380,12 @@ graph [
     ticker "SMCI"
     market_cap 0
     name "Supermicro"
+    gnn_risk_score 4.665999767894391E-06
     industry "Computer Hardware"
-    raw_risk_score 0.3141908328525564
+    raw_risk_score 0.34086355374163707
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 518
@@ -6798,23 +7393,27 @@ graph [
     ticker "TKO"
     market_cap 0
     name "TKO Group Holdings"
+    gnn_risk_score 3.4312747629883233E-06
     industry "Entertainment"
-    raw_risk_score 0.31369698666649876
+    raw_risk_score 0.30289103270664536
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 519
     label "UBER"
-    sentiment_score 0.2
+    sentiment_score 0.3
     ticker "UBER"
     market_cap 0
-    last_news_update "2025-12-04T14:01:18.008000000+00:00"
+    last_news_update "2025-12-05T18:04:12.593000000+00:00"
     name "Uber"
+    gnn_risk_score 0.9976733326911926
     industry "Software - Application"
-    raw_risk_score 0.19199294067022585
+    raw_risk_score 0.18969678843904028
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 520
@@ -6822,8 +7421,10 @@ graph [
     ticker "I:DJI"
     market_cap 0
     name "Dow Jones Industrial Average"
+    gnn_risk_score 1.521029417972386E-07
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 521
@@ -6831,8 +7432,10 @@ graph [
     ticker "I:RUT"
     market_cap 0
     name "Russell 2000 Index"
+    gnn_risk_score 2.3447160856449045E-05
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 522
@@ -6840,8 +7443,10 @@ graph [
     ticker "X:BTCUSD"
     market_cap 0
     name "Bitcoin (USD)"
+    gnn_risk_score 1.5742674804641865E-05
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 523
@@ -6849,8 +7454,10 @@ graph [
     ticker "X:SOLUSD"
     market_cap 0
     name "Solana (USD)"
+    gnn_risk_score 5.4923386727523393E-08
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 524
@@ -6858,8 +7465,10 @@ graph [
     ticker "X:ADAUSD"
     market_cap 0
     name "Cardano (USD)"
+    gnn_risk_score 3.604622179409489E-06
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 525
@@ -6867,8 +7476,10 @@ graph [
     ticker "X:DOGEUSD"
     market_cap 0
     name "Dogecoin (USD)"
+    gnn_risk_score 1.0477706382516772E-05
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 526
@@ -6876,8 +7487,10 @@ graph [
     ticker "X:LTCUSD"
     market_cap 0
     name "Litecoin (USD)"
+    gnn_risk_score 2.0799413960048696E-06
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 527
@@ -6885,8 +7498,10 @@ graph [
     ticker "X:MATICUSD"
     market_cap 0
     name "Polygon (USD)"
+    gnn_risk_score 7.252863554185751E-08
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 528
@@ -6894,8 +7509,10 @@ graph [
     ticker "X:DOTUSD"
     market_cap 0
     name "Polkadot (USD)"
+    gnn_risk_score 8.681734470883384E-06
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 529
@@ -6903,8 +7520,10 @@ graph [
     ticker "C:USDJPY"
     market_cap 0
     name "US Dollar / Japanese Yen"
+    gnn_risk_score 1.5175095541053452E-05
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 530
@@ -6912,8 +7531,10 @@ graph [
     ticker "C:AUDUSD"
     market_cap 0
     name "Australian Dollar / US Dollar"
+    gnn_risk_score 1.7578662436790182E-06
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 531
@@ -6921,8 +7542,10 @@ graph [
     ticker "C:USDCAD"
     market_cap 0
     name "US Dollar / Canadian Dollar"
+    gnn_risk_score 3.61192121545173E-07
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 532
@@ -6930,8 +7553,10 @@ graph [
     ticker "C:USDCHF"
     market_cap 0
     name "US Dollar / Swiss Franc"
+    gnn_risk_score 3.6239656765246764E-05
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 533
@@ -6939,8 +7564,10 @@ graph [
     ticker "C:NZDUSD"
     market_cap 0
     name "New Zealand Dollar / US Dollar"
+    gnn_risk_score 1.2913897080579773E-05
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 534
@@ -6948,10 +7575,12 @@ graph [
     ticker "BX"
     market_cap 0
     name "Blackstone Inc."
+    gnn_risk_score 3.3662625355646014E-05
     industry "Asset Management"
-    raw_risk_score 0.2779207616178291
+    raw_risk_score 0.2734517922655743
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 535
@@ -6959,10 +7588,12 @@ graph [
     ticker "XYZ"
     market_cap 0
     name "Block, Inc."
+    gnn_risk_score 4.559915851132246E-06
     industry "Software - Infrastructure"
-    raw_risk_score 0.31237104834448554
+    raw_risk_score 0.3242179219217467
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 536
@@ -6972,10 +7603,12 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T19:01:27.916000000+00:00"
     name "CrowdStrike"
+    gnn_risk_score 0.0023740415927022696
     industry "Software - Infrastructure"
-    raw_risk_score 0.2175592693567996
+    raw_risk_score 0.24417780929316424
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 537
@@ -6983,10 +7616,12 @@ graph [
     ticker "DECK"
     market_cap 0
     name "Deckers Brands"
+    gnn_risk_score 0.5114216804504395
     industry "Footwear &#38; Accessories"
-    raw_risk_score 0.35827594062579804
+    raw_risk_score 0.38181217143957263
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 538
@@ -6994,10 +7629,12 @@ graph [
     ticker "DOC"
     market_cap 0
     name "Healthpeak Properties (formerly PEAK)"
+    gnn_risk_score 0.9980773329734802
     industry "REIT - Healthcare Facilities"
-    raw_risk_score 0.15055361346999754
+    raw_risk_score 0.1612984830331715
     sector "Real Estate"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 539
@@ -7007,10 +7644,12 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T17:02:31.925000000+00:00"
     name "Interactive Brokers"
+    gnn_risk_score 0.0008468664018437266
     industry "Capital Markets"
-    raw_risk_score 0.24666222939353405
+    raw_risk_score 0.2603156814828705
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 540
@@ -7018,10 +7657,12 @@ graph [
     ticker "KKR"
     market_cap 0
     name "KKR &#38; Co."
+    gnn_risk_score 3.7713966776209418E-06
     industry "Asset Management"
-    raw_risk_score 0.2531194302643246
+    raw_risk_score 0.2768520281164865
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 541
@@ -7029,23 +7670,27 @@ graph [
     ticker "HOOD"
     market_cap 0
     name "Robinhood Markets"
+    gnn_risk_score 3.6960506877292687E-10
     industry "Capital Markets"
-    raw_risk_score 0.5520194233816171
+    raw_risk_score 0.49164650829318485
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 542
     label "TTD"
-    sentiment_score 0.6
+    sentiment_score 0.5
     ticker "TTD"
     market_cap 0
-    last_news_update "2025-12-05T04:01:01.286000000+00:00"
+    last_news_update "2025-12-05T17:01:53.403000000+00:00"
     name "Trade Desk (The)"
+    gnn_risk_score 0.0003269004519097507
     industry "Advertising Agencies"
-    raw_risk_score 0.31959136125651844
+    raw_risk_score 0.2757983436827387
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 543
@@ -7053,10 +7698,12 @@ graph [
     ticker "WDAY"
     market_cap 0
     name "Workday, Inc."
+    gnn_risk_score 3.1889570095700037E-07
     industry "Software - Application"
-    raw_risk_score 0.25133965403117436
+    raw_risk_score 0.2742248231916221
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 544
@@ -7064,10 +7711,12 @@ graph [
     ticker "BRK-B"
     market_cap 0
     name "Berkshire Hathaway"
+    gnn_risk_score 8.055798161876737E-07
     industry "Insurance - Diversified"
-    raw_risk_score 0.14528673050452984
+    raw_risk_score 0.10667052295425539
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 545
@@ -7075,10 +7724,12 @@ graph [
     ticker "CPAY"
     market_cap 0
     name "Corpay (formerly FLEETCOR/FLT)"
+    gnn_risk_score 4.173113666183781E-06
     industry "Software - Infrastructure"
-    raw_risk_score 0.26519127468807036
+    raw_risk_score 0.3287158100610707
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 546
@@ -7086,10 +7737,12 @@ graph [
     ticker "DAY"
     market_cap 0
     name "Dayforce (formerly Ceridian/CDAY)"
+    gnn_risk_score 0.9996828436851501
     industry "Software - Application"
-    raw_risk_score 0.07225151174334316
+    raw_risk_score 0.03313217232083847
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 547
@@ -7097,8 +7750,10 @@ graph [
     ticker "I:NDX"
     market_cap 0
     name "Nasdaq 100 Index"
+    gnn_risk_score 2.0360418773179845E-07
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 548
@@ -7106,10 +7761,12 @@ graph [
     ticker "ABNB"
     market_cap 0
     name "Airbnb"
+    gnn_risk_score 2.9185746370785637E-06
     industry "Travel Services"
-    raw_risk_score 0.14951732051363065
+    raw_risk_score 0.18157792916110718
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 549
@@ -7117,10 +7774,12 @@ graph [
     ticker "AXON"
     market_cap 0
     name "Axon Enterprise"
+    gnn_risk_score 5.2849301823698625E-08
     industry "Aerospace &#38; Defense"
-    raw_risk_score 0.21953124355207898
+    raw_risk_score 0.14292999061800354
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 550
@@ -7128,8 +7787,10 @@ graph [
     ticker "I:SPX"
     market_cap 0
     name "S&#38;P 500 Index"
+    gnn_risk_score 1.0604790077195503E-06
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 551
@@ -7137,10 +7798,12 @@ graph [
     ticker "DELL"
     market_cap 0
     name "Dell Technologies"
+    gnn_risk_score 0.9998698830604553
     industry "Computer Hardware"
-    raw_risk_score 0.32110802314101755
+    raw_risk_score 0.3287871117006059
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 552
@@ -7148,12 +7811,14 @@ graph [
     sentiment_score 0.2
     ticker "PLTR"
     market_cap 0
-    last_news_update "2025-12-04T21:01:32.831000000+00:00"
+    last_news_update "2025-12-06T04:01:16.275000000+00:00"
     name "Palantir Technologies"
+    gnn_risk_score 0.4980892539024353
     industry "Software - Infrastructure"
-    raw_risk_score 0.35807238791955354
+    raw_risk_score 0.3514758017294713
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 553
@@ -7161,9 +7826,11 @@ graph [
     ticker "Q"
     market_cap 0
     name "Qnity Electronics"
+    gnn_risk_score 1.3430070794129279E-05
     industry "Semiconductor Equipment &#38; Materials"
     raw_risk_score -0.0
     sector "Technology"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 554
@@ -7171,10 +7838,12 @@ graph [
     ticker "LII"
     market_cap 0
     name "Lennox International"
+    gnn_risk_score 5.162607067177305E-06
     industry "Building Products &#38; Equipment"
-    raw_risk_score 0.23525011560343323
+    raw_risk_score 0.2716029936962725
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 555
@@ -7182,10 +7851,12 @@ graph [
     ticker "APO"
     market_cap 0
     name "Apollo Global Management"
+    gnn_risk_score 6.829291299137452E-11
     industry "Asset Management"
-    raw_risk_score 0.2832220298599972
+    raw_risk_score 0.2671786509745974
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 556
@@ -7193,10 +7864,12 @@ graph [
     ticker "APP"
     market_cap 0
     name "AppLovin"
+    gnn_risk_score 0.9999988079071045
     industry "Advertising Agencies"
-    raw_risk_score 0.5046351686633327
+    raw_risk_score 0.5188178964925303
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 557
@@ -7204,10 +7877,12 @@ graph [
     ticker "COIN"
     market_cap 0
     name "Coinbase"
+    gnn_risk_score 1.0329332326364238E-05
     industry "Financial Data &#38; Stock Exchanges"
-    raw_risk_score 0.4012889876208656
+    raw_risk_score 0.3990754970886476
     sector "Financial Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 558
@@ -7215,10 +7890,12 @@ graph [
     ticker "EXE"
     market_cap 0
     name "Expand Energy"
+    gnn_risk_score 3.0954073736211285E-05
     industry "Oil &#38; Gas E&#38;P"
-    raw_risk_score 0.2077294257397223
+    raw_risk_score 0.23134437749634945
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 559
@@ -7228,10 +7905,12 @@ graph [
     market_cap 0
     last_news_update "2025-12-04T21:01:29.779000000+00:00"
     name "GE Vernova"
+    gnn_risk_score 1.2379794043226866E-06
     industry "Specialty Industrial Machinery"
-    raw_risk_score 0.37840875637498306
+    raw_risk_score 0.3676599542258621
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 560
@@ -7239,10 +7918,12 @@ graph [
     ticker "SOLS"
     market_cap 0
     name "Solstice Advanced Materials"
+    gnn_risk_score 7.320732038351707E-06
     industry "Specialty Chemicals"
-    raw_risk_score 0.2939181860571577
+    raw_risk_score 0.3246153102065312
     sector "Basic Materials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 561
@@ -7252,10 +7933,12 @@ graph [
     market_cap 0
     last_news_update "2025-12-02T11:12:55.374000000+00:00"
     name "Texas Pacific Land Corporation"
+    gnn_risk_score 0.5009502172470093
     industry "Oil &#38; Gas E&#38;P"
-    raw_risk_score 0.3682692227526746
+    raw_risk_score 0.3389466690018603
     sector "Energy"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 562
@@ -7263,10 +7946,12 @@ graph [
     ticker "WSM"
     market_cap 0
     name "Williams-Sonoma, Inc."
+    gnn_risk_score 8.342489309143275E-05
     industry "Specialty Retail"
-    raw_risk_score 0.24367904766650864
+    raw_risk_score 0.19207925017136665
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 563
@@ -7274,10 +7959,12 @@ graph [
     ticker "BF-B"
     market_cap 0
     name "Brown&#8211;Forman"
+    gnn_risk_score 2.967491639083164E-07
     industry "Beverages - Wineries &#38; Distilleries"
-    raw_risk_score 0.23968655466204047
+    raw_risk_score 0.2920185581071768
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 564
@@ -7285,8 +7972,10 @@ graph [
     ticker "I:VIX"
     market_cap 0
     name "CBOE Volatility Index"
+    gnn_risk_score 8.31054137506726E-07
     raw_risk_score -0.0
     sector "Discovered"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 565
@@ -7294,10 +7983,12 @@ graph [
     ticker "DASH"
     market_cap 0
     name "DoorDash"
+    gnn_risk_score 0.9986135959625244
     industry "Internet Retail"
-    raw_risk_score 0.5380319030206152
+    raw_risk_score 0.35651432411687467
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 566
@@ -7305,10 +7996,12 @@ graph [
     ticker "EME"
     market_cap 0
     name "Emcor"
+    gnn_risk_score 7.185931405473411E-09
     industry "Engineering &#38; Construction"
-    raw_risk_score 0.21433921044245408
+    raw_risk_score 0.17921729521700003
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 567
@@ -7316,10 +8009,12 @@ graph [
     ticker "VLTO"
     market_cap 0
     name "Veralto"
+    gnn_risk_score 4.3951555994681257E-07
     industry "Pollution &#38; Treatment Controls"
-    raw_risk_score 0.21820714715715667
+    raw_risk_score 0.2000770978354044
     sector "Industrials"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 568
@@ -7327,10 +8022,12 @@ graph [
     ticker "DDOG"
     market_cap 0
     name "Datadog"
+    gnn_risk_score 0.00041272479575127363
     industry "Software - Application"
-    raw_risk_score 0.7652839498278661
+    raw_risk_score 0.4778301635625333
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 569
@@ -7338,10 +8035,12 @@ graph [
     ticker "VST"
     market_cap 0
     name "Vistra Corp."
+    gnn_risk_score 2.6213922410533996E-06
     industry "Utilities - Independent Power Producers"
-    raw_risk_score 0.25184292441768585
+    raw_risk_score 0.2869311326554307
     sector "Utilities"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 570
@@ -7349,9 +8048,11 @@ graph [
     ticker "^TNX"
     is_macro 1
     name "10-Year Treasury Yield"
-    raw_risk_score 0.07608711770436487
+    gnn_risk_score 1.0941627124338993E-06
+    raw_risk_score 0.0774047226483812
     sector "Macro"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 571
@@ -7359,9 +8060,11 @@ graph [
     ticker "CL=F"
     is_macro 1
     name "Crude Oil"
-    raw_risk_score 0.14803378896447564
+    gnn_risk_score 1.975496104478225E-07
+    raw_risk_score 0.13509963497917118
     sector "Macro"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 572
@@ -7369,9 +8072,11 @@ graph [
     ticker "GC=F"
     is_macro 1
     name "Gold"
-    raw_risk_score 0.2277183952420175
+    gnn_risk_score 3.131827668312326E-07
+    raw_risk_score 0.21063546438517244
     sector "Macro"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 573
@@ -7379,8 +8084,10 @@ graph [
     ticker "DX-Y.NYB"
     is_macro 1
     name "US Dollar Index"
+    gnn_risk_score 2.2752587938157376E-06
     raw_risk_score -0.0
     sector "Macro"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 574
@@ -7388,75 +8095,93 @@ graph [
     ticker "^VIX"
     is_macro 1
     name "Volatility Index"
-    raw_risk_score 0.7596045215116635
+    gnn_risk_score 1.9967553726019105E-06
+    raw_risk_score 0.7618470144523467
     sector "Macro"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 575
     label "X"
     ticker "X"
     name "X"
-    raw_risk_score 0.6242273449897765
+    gnn_risk_score 0.9997863173484802
+    raw_risk_score 0.7291339843169502
     sector "Unknown"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 576
     label "SPOT"
+    sentiment_score 0.7
     ticker "SPOT"
+    last_news_update "2025-12-06T07:01:27.672000000+00:00"
     name "Spotify"
+    gnn_risk_score 0.9999397993087769
     industry "Internet Content &#38; Information"
-    raw_risk_score 0.34672987668854627
+    raw_risk_score 0.32962856758053505
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 577
     label "BRK"
     ticker "BRK"
     name "Berkshire Hathaway Inc."
+    gnn_risk_score 2.0893619876005687E-05
     industry "Insurance - Diversified"
     raw_risk_score -0.0
     sector "Financial Services"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 578
     label "OTCMKTS:APO"
     ticker "OTCMKTS:APO"
     name "Apollo"
+    gnn_risk_score 0.0001286552142119035
     industry "Asset Management"
     raw_risk_score -0.0
     sector "Financial Services"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 579
     label "TSM"
     sentiment_score 0.7
     ticker "TSM"
-    last_news_update "2025-12-04T13:02:05.786000000+00:00"
+    last_news_update "2025-12-05T17:01:58.148000000+00:00"
     name "Taiwan Semiconductor Manufacturing Company Ltd"
+    gnn_risk_score 2.0641339233407052E-06
     industry "Semiconductors"
-    raw_risk_score 0.20372474252517858
+    raw_risk_score 0.20134289372972275
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.633000000+00:00"
   ]
   node [
     id 580
     label "GBLTF"
     ticker "GBLTF"
     name "GLOBALFOUNDRIES Inc."
+    gnn_risk_score 7.558108450211876E-08
     raw_risk_score -0.0
     sector "Unknown"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 581
     label "SONY"
     ticker "SONY"
     name "Sony"
+    gnn_risk_score 0.9991515874862671
     industry "Consumer Electronics"
-    raw_risk_score 0.23896342004662952
+    raw_risk_score 0.2949187685372967
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 582
@@ -7464,9 +8189,11 @@ graph [
     ticker "FISV"
     market_cap 0
     name "Fiserv"
-    raw_risk_score 0.21248692914277223
+    gnn_risk_score 6.57443524687551E-06
+    raw_risk_score 0.2522355154167689
     sector "Discovered"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 583
@@ -7474,23 +8201,28 @@ graph [
     ticker "GDDY"
     market_cap 0
     name "GoDaddy"
+    gnn_risk_score 7.770539696139167E-07
     industry "Software - Infrastructure"
-    raw_risk_score 0.11150899079127732
+    raw_risk_score 0.12473431224996338
     sector "Technology"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   node [
     id 584
     label "SNAP"
+    sentiment_score -0.4
     ticker "SNAP"
     market_cap 0
+    last_news_update "2025-12-05T10:01:43.098000000+00:00"
     name "Snap Inc."
-    gnn_risk_score 0.9999158978462219
+    gnn_risk_score 0.9999805688858032
     industry "Internet Content &#38; Information"
-    raw_risk_score 0.4675997415293094
+    raw_risk_score 0.3606488888901743
     last_risk_update "2025-11-24T09:53:59.584000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-05T06:16:52.379000000+00:00"
+    risk_last_updated "2025-12-06T09:16:36.991000000+00:00"
+    gnn_last_updated "2025-12-06T01:24:59.123000000+00:00"
   ]
   edge [
     source 8
@@ -7707,8 +8439,8 @@ graph [
     sentiment -0.8
     weight 0.7
     type "sec_discovered"
-    last_updated "2025-12-05"
-    mechanism "Both companies compete in cloud computing, smart homes, and AI."
+    last_updated "2025-12-06"
+    mechanism "Both Amazon and Google offer email hosting services and compete for market share."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -8301,8 +9033,8 @@ graph [
     sentiment 0.01
     weight 0.5
     type "sec_discovered"
-    last_updated "2025-12-05"
-    mechanism "All companies compete in the IoT solutions, AI solutions, and cloud."
+    last_updated "2025-12-06"
+    mechanism "IBM provides email and related services, thus competes with Amazon."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -8974,9 +9706,9 @@ graph [
   edge [
     source 29
     target 333
-    last_updated "2025-12-05"
+    last_updated "2025-12-06"
     weight 0.7
-    mechanism "Both companies compete in cloud computing and AI."
+    mechanism "Both Amazon and Microsoft offer email hosting services and compete for market share."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -9539,8 +10271,11 @@ graph [
     source 29
     target 434
     sentiment -0.8
-    weight 0.34
+    weight 0.4
     type "sec_discovered"
+    last_updated "2025-12-06"
+    mechanism "BKNG, as a major player in travel booking, will drive demand for cloud services like AMZN if they grow"
+    verification_status "AI_PROPOSED"
   ]
   edge [
     source 29
@@ -9595,8 +10330,11 @@ graph [
     source 29
     target 442
     sentiment -0.8
-    weight 0.34
+    weight 0.4
     type "sec_discovered"
+    last_updated "2025-12-06"
+    mechanism "EXPE, as a major player in travel booking, will drive demand for cloud services like AMZN if they grow"
+    verification_status "AI_PROPOSED"
   ]
   edge [
     source 29
@@ -9908,6 +10646,14 @@ graph [
   ]
   edge [
     source 29
+    target 519
+    last_updated "2025-12-06"
+    weight 0.3
+    mechanism "Growth in hospitality/travel sector benefits both AMZN (cloud services) and UBER (transportation)."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 29
     target 534
     sentiment -0.8
     weight 0.34
@@ -9938,8 +10684,11 @@ graph [
     source 29
     target 551
     sentiment -0.54
-    weight 0.39
+    weight 0.3
     type "sec_discovered"
+    last_updated "2025-12-06"
+    mechanism "Dell provides IT solutions that can include email services, putting them in competition with Amazon"
+    verification_status "AI_PROPOSED"
   ]
   edge [
     source 29
@@ -10630,7 +11379,7 @@ graph [
   edge [
     source 31
     target 174
-    weight 0.63
+    weight 0.3
     type "sec_discovered"
     data_source "manual"
     last_updated "2025-12-05"
@@ -15333,6 +16082,22 @@ graph [
   ]
   edge [
     source 47
+    target 27
+    last_updated "2025-12-06"
+    weight 0.3
+    mechanism "Increased traffic congestion could increase demand for navigation and traffic apps (like Google Maps)."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 47
+    target 31
+    last_updated "2025-12-06"
+    weight 0.5
+    mechanism "If 'T' is a top chip pick, it may be competing with other major chip manufacturers like AMD."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 47
     target 35
     last_updated "2025-12-01"
     weight 0.3
@@ -15349,10 +16114,50 @@ graph [
   ]
   edge [
     source 47
+    target 133
+    last_updated "2025-12-06"
+    weight 0.3
+    mechanism "Increased traffic congestion could increase demand for gasoline."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 47
+    target 240
+    last_updated "2025-12-06"
+    weight 0.5
+    mechanism "If 'T' is a top chip pick, it may be competing with other major chip manufacturers like NVDA."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 47
     target 270
     last_updated "2025-12-01"
     weight 0.4
     mechanism "Increased demand for smartphones due to promotions could indirectly benefit Qualcomm, a major supplier of chips for these devices."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 47
+    target 333
+    last_updated "2025-12-06"
+    weight 0.6
+    mechanism "Microsoft's partnership with OpenAI means they share risks associated with user perception and ad integration strategies in AI platforms."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 47
+    target 419
+    last_updated "2025-12-06"
+    weight 0.3
+    mechanism "Increased traffic congestion could increase demand for gasoline."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 47
+    target 447
+    last_updated "2025-12-06"
+    weight 0.4
+    mechanism "User concerns about ads in ChatGPT could cause a shift in user attention towards social media platforms like META, and back towards the traditional use of social media for engagement."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -15369,6 +16174,14 @@ graph [
     last_updated "2025-12-01"
     weight 0.7
     mechanism "Comcast (CMCSA), which also offers wireless services, may need to respond with their own promotions to stay competitive."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 47
+    target 519
+    last_updated "2025-12-06"
+    weight 0.4
+    mechanism "Increased traffic congestion could increase demand for ride-sharing services like Uber as people seek alternatives to driving."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -19194,8 +20007,8 @@ graph [
     weight 0.52
     type "sec_discovered"
     data_source "manual"
-    last_updated "2025-12-05"
-    mechanism "General market sentiment towards semiconductor companies often results in sympathy moves. Negative news for one major player (AMD) can lead to a temporary dip for others (INTC)."
+    last_updated "2025-12-06"
+    mechanism "Both companies operate in the semiconductor industry; news affecting one may cause sympathy moves in the other."
     verification_status "AI_PROPOSED"
     sentiment 0.1
   ]
@@ -19978,9 +20791,9 @@ graph [
   edge [
     source 174
     target 240
-    last_updated "2025-12-05"
+    last_updated "2025-12-06"
     weight 0.53
-    mechanism "General market sentiment towards semiconductor companies often results in sympathy moves. Negative news for one major player (NVDA) can lead to a temporary dip for others (INTC)."
+    mechanism "Potential general tech stock slide impacting sentiment."
     verification_status "AI_PROPOSED"
     sentiment 0.13
     type "sec_discovered"
@@ -21496,8 +22309,8 @@ graph [
     sentiment -0.12
     weight 0.3
     type "sec_discovered"
-    last_updated "2025-12-05"
-    mechanism "Both are tech stocks and can be affected by general sentiment regarding the tech sector."
+    last_updated "2025-12-06"
+    mechanism "General tech stock slide impacting sentiment."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -21587,9 +22400,9 @@ graph [
   edge [
     source 174
     target 579
-    last_updated "2025-12-05"
+    last_updated "2025-12-06"
     weight 0.3
-    mechanism "If the trade secret accusations are valid, it could reflect poorly on the sector and damage the reputation of both companies."
+    mechanism "TSMC manufactures chips for Intel. If Intel is facing headwinds, it could reduce orders from TSMC, potentially impacting TSMC's revenue and stock price."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -23591,9 +24404,17 @@ graph [
   edge [
     source 203
     target 162
-    last_updated "2025-12-04"
-    weight 0.7
-    mechanism "Both operate in the home improvement retail sector, facing similar macroeconomic conditions."
+    last_updated "2025-12-06"
+    weight 0.3
+    mechanism "Interest rate cuts in India might signal broader economic trends affecting the home improvement sector globally, potentially influencing the stock performance of major players like Home Depot (HD) due to perceived market sentiment or investor expectations even though the direct link is weak."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 203
+    target 402
+    last_updated "2025-12-06"
+    weight 0.4
+    mechanism "Water shortages could affect demand for cleaning products, potentially impacting companies like PG, though the impact on LOW is indirect."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -25548,7 +26369,7 @@ graph [
     source 240
     target 174
     last_updated "2025-12-05"
-    weight 0.5
+    weight 0.3
     mechanism "Both companies are in the semiconductor industry, so positive news for one may create positive sentiment for the other."
     verification_status "AI_PROPOSED"
     sentiment 0.0
@@ -27561,8 +28382,8 @@ graph [
     sentiment -0.01
     weight 0.6
     type "sec_discovered"
-    last_updated "2025-12-05"
-    mechanism "SMCI (Super Micro Computer) relies on NVDA chips. If NVDA sales are down then SMCI sales may be down."
+    last_updated "2025-12-06"
+    mechanism "AI data center news may indicate broader positive sentiment for companies involved in AI infrastructure."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -59322,10 +60143,34 @@ graph [
   ]
   edge [
     source 373
-    target 136
-    last_updated "2025-12-04"
+    target 29
+    last_updated "2025-12-06"
     weight 0.7
-    mechanism "A plane crash involving UPS could lead to short-term logistical disruptions, potentially benefiting competitor FedEx."
+    mechanism "Snowfall disrupts UPS, potentially delaying deliveries for Amazon, affecting demand for their services."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 373
+    target 133
+    last_updated "2025-12-06"
+    weight 0.3
+    mechanism "Disruptions in delivery services might reduce the demand for fuel."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 373
+    target 136
+    last_updated "2025-12-06"
+    weight 0.9
+    mechanism "Heavy snowfall impacting UPS operations may similarly affect FedEx, a major competitor in the package delivery sector."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 373
+    target 419
+    last_updated "2025-12-06"
+    weight 0.3
+    mechanism "Disruptions in delivery services might reduce the demand for fuel."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -59468,8 +60313,11 @@ graph [
     source 447
     target 17
     sentiment -0.4
-    weight 0.42
+    weight 0.5
     type "sec_discovered"
+    last_updated "2025-12-06"
+    mechanism "Adobe is another tech company that could be affected by regulations."
+    verification_status "AI_PROPOSED"
   ]
   edge [
     source 447
@@ -59540,8 +60388,8 @@ graph [
     sentiment -0.4
     weight 0.7
     type "sec_discovered"
-    last_updated "2025-12-04"
-    mechanism "Both companies compete in the technology sector, particularly in areas like AI and social media platforms. Positive news for one can sometimes indicate sector-wide growth or innovation."
+    last_updated "2025-12-06"
+    mechanism "Both companies face similar regulatory scrutiny regarding AI and data privacy in the EU."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -59554,9 +60402,9 @@ graph [
   edge [
     source 447
     target 29
-    last_updated "2025-12-05"
+    last_updated "2025-12-06"
     weight 0.5
-    mechanism "Layoffs at Amazon may indicate a broader economic downturn or reduced confidence in the tech sector, potentially affecting Meta's stock as well."
+    mechanism "Antitrust scrutiny often affects multiple large tech companies."
     verification_status "AI_PROPOSED"
     sentiment 0.01
     type "sec_discovered"
@@ -59648,9 +60496,9 @@ graph [
   edge [
     source 447
     target 43
-    last_updated "2025-12-03"
+    last_updated "2025-12-06"
     weight 0.42
-    mechanism "Apple is also entering the VR/AR space; lower pricing of Meta's headset could pressure Apple's pricing strategies."
+    mechanism "Both are large-cap tech companies that could be affected by increased regulation and antitrust concerns."
     verification_status "AI_PROPOSED"
     sentiment -0.42
     type "sec_discovered"
@@ -60540,12 +61388,12 @@ graph [
   edge [
     source 447
     target 174
+    sentiment 0.07
+    weight 0.6
+    type "sec_discovered"
     last_updated "2025-12-05"
-    weight 0.51
     mechanism "Intel's layoffs contribute to a negative sentiment around the tech industry, potentially leading to a sympathy move in Meta's stock."
     verification_status "AI_PROPOSED"
-    sentiment 0.07
-    type "sec_discovered"
   ]
   edge [
     source 447
@@ -60922,8 +61770,11 @@ graph [
     source 447
     target 228
     sentiment 0.0
-    weight 0.5
+    weight 0.4
     type "sec_discovered"
+    last_updated "2025-12-06"
+    mechanism "Increased regulatory risk can impact the tech sector broadly."
+    verification_status "AI_PROPOSED"
   ]
   edge [
     source 447
@@ -61629,9 +62480,9 @@ graph [
   edge [
     source 447
     target 333
-    last_updated "2025-12-04"
+    last_updated "2025-12-06"
     weight 0.5
-    mechanism "Microsoft and Meta compete in AI and metaverse, with Meta's success in hiring top talent potentially influencing investor perceptions of Microsoft's AI capabilities."
+    mechanism "Similar to GOOG and AAPL, Microsoft also faces scrutiny and is a large-cap tech company."
     verification_status "AI_PROPOSED"
     sentiment 0.0
     type "sec_discovered"
@@ -63253,9 +64104,9 @@ graph [
   edge [
     source 447
     target 584
-    last_updated "2025-12-04"
+    last_updated "2025-12-06"
     weight 0.42
-    mechanism "Reduced investor confidence in META could spread to other social media companies like SNAP."
+    mechanism "SNAP competes with META for advertising revenue and users, and may benefit if META is restricted."
     verification_status "AI_PROPOSED"
     sentiment -0.4
     type "sec_discovered"
@@ -66068,6 +66919,38 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
+    source 538
+    target 228
+    last_updated "2025-12-06"
+    weight 0.7
+    mechanism "Controversy around DOC (Cond&#233; Nast) could affect Netflix due to association via documentary and potential reputational damage."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 538
+    target 252
+    last_updated "2025-12-06"
+    weight 0.3
+    mechanism "General media sector sentiment could be affected by labor disputes at Cond&#233; Nast."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 538
+    target 422
+    last_updated "2025-12-06"
+    weight 0.3
+    mechanism "General media sector sentiment could be affected by labor disputes at Cond&#233; Nast."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 538
+    target 492
+    last_updated "2025-12-06"
+    weight 0.3
+    mechanism "General media sector sentiment could be affected by labor disputes at Cond&#233; Nast."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
     source 546
     target 185
     last_updated "2025-12-03"
@@ -66109,10 +66992,18 @@ graph [
   ]
   edge [
     source 556
-    target 43
-    last_updated "2025-12-02"
+    target 27
+    last_updated "2025-12-06"
     weight 0.3
-    mechanism "News about an app impacting the financial sector in Japan may cause some sympathy moves with Apple due to its presence in the app ecosystem, although the impact is likely minimal."
+    mechanism "Google's Play Store competes with Apple's App Store"
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 556
+    target 43
+    last_updated "2025-12-06"
+    weight 0.3
+    mechanism "News about app regulations can sometimes lead to investor speculation about similar actions affecting other app ecosystems, including Apple's App Store, even if indirectly."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -66125,6 +67016,14 @@ graph [
   ]
   edge [
     source 556
+    target 333
+    last_updated "2025-12-06"
+    weight 0.2
+    mechanism "Microsoft has mobile apps that compete with Apple's mobile ecosystem"
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 556
     target 450
     last_updated "2025-12-02"
     weight 0.6
@@ -66133,933 +67032,20302 @@ graph [
   ]
   edge [
     source 570
+    target 0
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 1
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 2
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 3
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 4
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
     target 5
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 6
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 7
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 8
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 9
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 10
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 11
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 12
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 13
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 14
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 15
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 16
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 17
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 18
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 19
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 20
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 21
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 22
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 23
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 24
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 25
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 26
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 27
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 28
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 29
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 30
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 31
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 32
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 33
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 34
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 35
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 36
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 37
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 38
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 39
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 40
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 41
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 42
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 43
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 44
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 45
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 46
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 47
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 48
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 49
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 50
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 51
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 52
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 53
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 54
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 55
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 56
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 57
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 58
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 59
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 60
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 61
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 62
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 63
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 64
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 65
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 66
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 67
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 68
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 69
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 70
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 71
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 72
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 73
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 74
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 75
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 76
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 77
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 78
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 79
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 80
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 81
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 82
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 83
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 84
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 85
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 86
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 87
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 88
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 89
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 90
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 91
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 92
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 93
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 94
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 95
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 96
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 97
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 98
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 99
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 100
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 101
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 102
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 103
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 104
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 105
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 106
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 107
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 108
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 109
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 110
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 111
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 112
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 113
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 114
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 115
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 116
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 117
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 118
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 119
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 120
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 121
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 122
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 123
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 124
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 125
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 126
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 127
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 128
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 129
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 130
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 131
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 132
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 133
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 134
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 135
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 136
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 137
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 138
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 139
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 140
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 141
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 142
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 143
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 144
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 145
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 146
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 147
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 148
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 149
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 150
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 151
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 152
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 153
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 154
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 155
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 156
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 157
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 158
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 159
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 160
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 161
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 162
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 163
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 164
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 165
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 166
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 167
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 168
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 169
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 170
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 171
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 172
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 173
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 174
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 175
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 176
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 177
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 178
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 179
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 180
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 181
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 182
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 183
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 184
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 185
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 186
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 187
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 188
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 189
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 190
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 191
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 192
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 193
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 194
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 195
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 196
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 197
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 198
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 199
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 200
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 201
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 202
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 203
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 204
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 205
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 206
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 207
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 208
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 209
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 210
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 211
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 212
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 213
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 214
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 215
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 216
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 217
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 218
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 219
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 220
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 221
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 222
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 223
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 224
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 225
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 226
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 227
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 228
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 229
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 230
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 231
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 232
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 233
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 234
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 235
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 236
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 237
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 238
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 239
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 240
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 241
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 242
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 243
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 244
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 245
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 246
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 247
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 248
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 249
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 250
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 251
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 252
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 253
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 254
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 255
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 256
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 257
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 258
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 259
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 260
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 261
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 262
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 263
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 264
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 265
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 266
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 267
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 268
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 269
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 270
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 271
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 272
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 273
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 274
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 275
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 276
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 277
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 278
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 279
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 280
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 281
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 282
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 283
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 284
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 285
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 286
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 287
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 288
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 289
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 290
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 291
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 292
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 293
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 294
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 295
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 296
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 297
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 298
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 299
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 300
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 301
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 302
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 303
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 304
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 305
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 306
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 307
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 308
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 309
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 310
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 311
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 312
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 313
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 314
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 315
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 316
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 317
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 318
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 319
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 320
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 321
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 322
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 323
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 324
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 325
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 326
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 327
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 328
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 329
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 330
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 331
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 332
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 333
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 334
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 335
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 336
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 337
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 338
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 339
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 340
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 341
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 342
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 343
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 344
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 345
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 346
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 347
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 348
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 349
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 350
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 351
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 352
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 353
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 354
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 355
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 356
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 357
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 358
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 359
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 360
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 361
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 362
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 363
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 364
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 365
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 366
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 367
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 368
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 369
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 370
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 371
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 372
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 373
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 374
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 375
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 376
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 377
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 378
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 379
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 380
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 381
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 382
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 383
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 384
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 385
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 386
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 387
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 388
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 389
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 390
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 391
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 392
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 393
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 394
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 395
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 396
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 397
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 398
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 399
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 400
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 401
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 402
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 403
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 404
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 405
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 406
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 407
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 408
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 409
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 410
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 411
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 412
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 413
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 414
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 415
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 416
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 417
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 418
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 419
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 420
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 421
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 422
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 423
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 424
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 425
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 426
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 427
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 428
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 429
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 430
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 431
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 432
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 433
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 434
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 435
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 436
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 437
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 438
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 439
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 440
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 441
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 442
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 443
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 444
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 445
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 446
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 447
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 448
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 449
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 450
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 451
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 452
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 453
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 454
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 455
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 456
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 457
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 458
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 459
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 460
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 461
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 462
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 463
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 464
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 465
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 466
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 467
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 468
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 469
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 470
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 471
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 472
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 473
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 474
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 475
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 476
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 477
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 478
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 479
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 480
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 481
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 482
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 483
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 484
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 485
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 486
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 487
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 488
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 489
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 490
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 491
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 492
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 493
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 494
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 495
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 496
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 497
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 498
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 499
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 500
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 501
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 502
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 503
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 504
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 505
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 506
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 507
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 508
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 509
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 510
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 511
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 512
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 513
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 514
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 515
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 516
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 517
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 518
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 519
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 520
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 521
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 522
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 523
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 524
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 525
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 526
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 527
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 528
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 529
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 530
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 531
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 532
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 533
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 534
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 535
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 536
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 537
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 538
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 539
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 540
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 541
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 542
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 543
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 544
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 545
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 546
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 547
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 548
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 549
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 550
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 551
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 552
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 553
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 554
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 555
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 556
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 557
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 558
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 559
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 560
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 561
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 562
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 563
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 564
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 565
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 566
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 567
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 568
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 569
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 575
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 576
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 577
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 578
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 579
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 580
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 581
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 582
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 570
     target 583
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 570
+    target 584
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 0
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 1
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 2
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 3
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 4
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 5
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 6
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 7
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 8
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 9
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 10
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 11
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 12
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 13
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 14
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 15
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 16
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 17
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 18
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 19
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 20
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 21
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 22
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 23
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 24
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 25
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 26
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 27
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 28
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 29
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 30
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 31
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 32
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 33
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 34
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 35
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 36
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 37
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 38
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 39
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 40
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 41
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 42
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 43
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 44
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 45
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 46
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 47
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 48
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 49
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 50
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 51
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 52
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 53
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 54
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 55
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 56
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 57
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 58
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 59
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 60
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 61
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 62
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 63
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 64
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 65
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 66
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 67
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 68
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 69
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 70
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 71
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 72
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 73
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 74
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 75
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 76
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 77
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 78
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 79
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 80
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 81
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 82
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 83
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 84
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 85
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 86
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 87
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 88
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 89
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 90
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 91
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 92
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 93
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 94
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 95
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 96
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 97
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 98
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 99
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 100
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 101
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 102
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 103
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 104
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 105
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 106
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 107
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 108
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 109
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 110
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 111
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 112
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 113
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 114
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 115
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 116
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 117
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 118
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 119
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 120
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 121
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 122
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 123
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 124
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 125
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 126
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 127
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 128
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 129
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 130
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 131
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 132
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 133
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 134
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 135
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 136
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 137
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 138
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 139
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 140
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 141
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 142
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 143
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 144
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 145
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 146
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 147
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 148
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 149
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 150
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 151
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 152
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 153
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 154
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 155
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 156
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 157
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 158
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 159
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 160
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 161
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 162
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 163
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 164
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 165
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 166
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 167
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 168
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 169
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 170
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 171
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 172
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 173
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 174
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 175
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 176
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 177
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 178
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 179
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 180
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 181
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 182
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 183
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 184
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 185
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 186
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 187
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 188
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 189
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 190
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 191
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 192
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 193
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 194
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 195
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 196
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 197
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 198
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 199
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 200
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 201
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 202
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 203
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 204
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 205
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 206
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 207
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 208
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 209
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 210
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 211
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 212
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 213
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 214
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 215
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 216
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 217
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 218
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 219
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 220
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 221
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 222
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 223
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 224
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 225
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 226
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 227
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 228
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 229
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 230
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 231
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 232
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 233
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 234
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 235
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 236
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 237
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 238
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 239
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 240
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 241
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 242
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 243
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 244
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 245
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 246
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 247
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 248
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 249
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 250
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 251
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 252
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 253
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 254
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 255
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 256
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 257
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 258
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 259
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 260
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 261
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 262
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 263
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 264
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 265
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 266
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 267
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 268
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 269
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 270
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 271
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 272
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 273
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 274
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 275
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 276
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 277
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 278
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 279
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 280
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 281
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 282
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 283
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 284
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 285
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 286
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 287
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 288
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 289
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 290
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 291
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 292
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 293
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 294
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 295
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 296
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 297
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 298
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 299
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 300
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 301
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 302
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 303
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 304
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 305
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 306
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 307
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 308
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 309
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 310
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 311
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 312
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 313
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 314
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 315
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 316
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 317
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 318
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 319
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 320
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 321
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 322
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 323
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 324
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 325
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 326
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 327
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 328
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 329
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 330
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 331
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 332
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 333
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 334
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 335
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 336
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 337
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 338
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 339
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 340
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 341
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 342
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 343
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 344
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 345
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 346
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 347
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 348
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 349
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 350
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 351
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 352
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 353
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 354
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 355
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 356
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 357
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 358
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 359
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 360
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 361
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 362
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 363
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 364
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 365
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 366
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 367
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 368
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 369
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 370
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 371
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 372
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 373
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 374
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 375
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 376
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 377
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 378
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 379
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 380
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 381
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 382
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 383
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 384
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 385
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 386
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 387
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 388
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 389
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 390
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 391
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 392
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 393
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 394
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 395
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 396
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 397
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 398
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 399
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 400
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 401
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 402
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 403
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 404
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 405
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 406
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 407
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 408
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 409
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 410
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 411
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 412
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 413
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 414
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 415
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 416
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 417
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 418
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 419
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 420
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 421
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 422
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 423
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 424
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 425
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 426
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 427
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 428
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 429
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 430
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 431
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 432
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 433
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 434
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 435
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 436
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 437
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 438
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 439
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 440
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 441
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 442
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 443
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 444
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 445
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 446
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 447
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 448
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 449
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 450
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 451
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 452
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 453
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 454
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 455
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 456
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 457
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 458
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 459
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 460
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 461
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 462
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 463
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 464
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 465
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 466
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 467
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 468
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 469
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 470
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 471
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 472
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 473
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 474
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 475
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 476
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 477
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 478
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 479
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 480
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 481
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 482
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 483
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 484
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 485
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 486
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 487
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 488
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 489
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 490
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 491
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 492
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 493
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 494
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 495
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 496
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 497
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 498
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 499
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 500
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 501
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 502
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 503
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 504
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 505
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 506
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 507
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 508
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 509
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 510
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 511
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 512
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 513
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 514
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 515
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 516
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 517
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 518
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 519
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 520
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 521
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 522
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 523
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 524
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 525
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 526
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 527
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 528
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 529
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 530
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 531
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 532
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 533
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 534
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 535
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 536
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 537
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 538
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 539
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 540
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 541
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 542
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 543
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 544
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 545
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 546
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 547
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 548
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 549
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 550
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 551
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 552
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 553
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 554
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 555
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 556
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 557
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 558
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 559
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 560
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 571
     target 561
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 562
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 563
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 564
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 565
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 566
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 567
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 568
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 569
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 575
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 576
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 577
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 578
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 579
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 580
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 581
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 582
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 583
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 571
+    target 584
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 0
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 1
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 2
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 3
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 4
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 5
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 6
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 7
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 8
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 9
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 10
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 11
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 12
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 13
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 14
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 15
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 16
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 17
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 18
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 19
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 20
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 21
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 22
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 23
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 24
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 25
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 26
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 27
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 28
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 29
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 30
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 31
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 32
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 33
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 34
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 35
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 36
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 37
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 38
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 39
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 40
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 41
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 42
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 43
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 44
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 45
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 46
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 47
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 48
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 49
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 50
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 51
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 52
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 53
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 54
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 55
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 56
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 57
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 58
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 59
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 60
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 61
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 62
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 63
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 64
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 65
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 66
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 67
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 68
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 69
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 70
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 71
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 72
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 73
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 74
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 75
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 76
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 77
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 78
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 79
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 80
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 81
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 82
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 83
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 84
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 85
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 86
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 87
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 88
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 89
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 90
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 91
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 92
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 93
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 94
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 95
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 96
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 97
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 98
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 99
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 100
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 101
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 102
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 103
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 104
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 105
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 106
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 107
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 108
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 109
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 110
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 111
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 112
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 113
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 114
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 115
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 116
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 117
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 118
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 119
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 120
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 121
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 122
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 123
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 124
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 125
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 126
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 127
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 128
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 129
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 130
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 131
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 132
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 133
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 134
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 135
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 136
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 137
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 138
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 139
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 140
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 141
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 142
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 143
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 144
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 145
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 146
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 147
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 148
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 149
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 150
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 151
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 152
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 153
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 154
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 155
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 156
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 157
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 158
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 159
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 160
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 161
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 162
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 163
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 164
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 165
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 166
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 167
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 168
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 169
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 170
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 171
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 172
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 173
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 174
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 175
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 176
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 177
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 178
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 179
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 180
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 181
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 182
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 183
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 184
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 185
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 186
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 187
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 188
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 189
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 190
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 191
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 192
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 193
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 194
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 195
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 196
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 197
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 198
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 199
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 200
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 201
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 202
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 203
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 204
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 205
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 206
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 207
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 208
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 209
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 210
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 211
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 212
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 213
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 214
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 215
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 216
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 217
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 218
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 219
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 220
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 221
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 222
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 223
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 224
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 225
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 226
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 227
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 228
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 229
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 230
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 231
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 232
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 233
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 234
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 235
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 236
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 237
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 238
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 239
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 240
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 241
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 242
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 243
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 244
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 245
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 246
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 247
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 248
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 249
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 250
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 251
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 252
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 253
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 254
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 255
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 256
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 257
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 258
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 259
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 260
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 261
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 262
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 263
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 264
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 265
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 266
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 267
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 268
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 269
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 270
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 271
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 272
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 273
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 274
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 275
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 276
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 277
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 278
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 279
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 280
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 281
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 282
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 283
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 284
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 285
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 286
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 287
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 288
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 289
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 290
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 291
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 292
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 293
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 294
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 295
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 296
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 297
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 298
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 299
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 300
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 301
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 302
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 303
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 304
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 305
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 306
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 307
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 308
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 309
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 310
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 311
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 312
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 313
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 314
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 315
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 316
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 317
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 318
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 319
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 320
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 321
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 322
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 323
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 324
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 325
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 326
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 327
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 328
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 329
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 330
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 331
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 332
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 333
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 334
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 335
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 336
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 337
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 338
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 339
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 340
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 341
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 342
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 343
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 344
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 345
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 346
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 347
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 348
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 349
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 350
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 351
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 352
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 353
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 354
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 355
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 356
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 357
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 358
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 359
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 360
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 361
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 362
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 363
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 364
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 365
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 366
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 367
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 368
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 369
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 370
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 371
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 372
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 373
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 374
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 375
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 376
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 377
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 378
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 379
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 380
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 381
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 382
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 383
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 384
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 385
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 386
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 387
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 388
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 389
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 390
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 391
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 392
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 393
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 394
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 395
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 396
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 397
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 398
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 399
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 400
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 401
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 402
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 403
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 404
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 405
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 406
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 407
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 408
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 409
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 410
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 411
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 412
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 413
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 414
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 415
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 416
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 417
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 418
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 419
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 420
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 421
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 422
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 423
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 424
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 425
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 426
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 427
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 428
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 429
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 430
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 431
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 432
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 433
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 434
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 435
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 436
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 437
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 438
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 439
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 440
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 441
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 442
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 443
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 444
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 445
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 446
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 447
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 448
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 449
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 450
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 451
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 452
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 453
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 454
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 455
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 456
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 457
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 458
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 459
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 460
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 461
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 462
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 463
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 464
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 465
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 466
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 467
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 468
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 469
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 470
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 471
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 472
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 473
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 474
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 475
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 476
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 477
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 478
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 479
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 480
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 481
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 482
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 483
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 484
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 485
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 486
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 487
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 488
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 489
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 490
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 491
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 492
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 493
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 494
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 495
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 496
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 497
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 498
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 499
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 500
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 501
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 502
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 503
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 504
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 505
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 506
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 507
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 508
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 509
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 510
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 511
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 512
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 513
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 514
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 515
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 516
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 517
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 518
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 519
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 520
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 521
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 522
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 523
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 524
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 525
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 526
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 527
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 528
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 529
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 530
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 531
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 532
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 533
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 534
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 535
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 536
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 537
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 538
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 539
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 540
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 541
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 542
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 543
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 544
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 545
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 546
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 547
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 548
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 549
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 550
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 551
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 552
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 553
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 554
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 555
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 556
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 557
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 558
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 559
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 572
     target 560
-    weight 0.7
-    mechanism "Macro-Economic Sector Correlation"
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 561
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 562
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 563
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 564
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 565
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 566
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 567
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 568
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 569
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 575
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 576
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 577
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 578
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 579
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 580
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 581
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 582
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 583
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 572
+    target 584
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 0
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 1
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 2
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 3
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 4
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 5
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 6
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 7
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 8
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 9
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 10
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 11
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 12
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 13
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 14
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 15
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 16
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 17
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 18
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 19
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 20
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 21
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 22
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 23
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 24
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 25
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 26
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 27
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 28
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 29
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 30
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 31
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 32
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 33
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 34
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 35
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 36
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 37
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 38
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 39
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 40
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 41
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 42
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 43
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 44
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 45
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 46
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 47
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 48
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 49
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 50
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 51
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 52
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 53
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 54
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 55
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 56
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 57
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 58
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 59
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 60
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 61
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 62
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 63
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 64
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 65
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 66
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 67
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 68
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 69
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 70
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 71
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 72
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 73
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 74
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 75
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 76
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 77
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 78
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 79
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 80
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 81
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 82
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 83
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 84
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 85
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 86
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 87
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 88
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 89
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 90
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 91
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 92
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 93
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 94
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 95
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 96
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 97
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 98
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 99
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 100
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 101
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 102
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 103
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 104
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 105
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 106
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 107
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 108
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 109
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 110
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 111
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 112
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 113
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 114
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 115
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 116
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 117
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 118
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 119
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 120
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 121
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 122
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 123
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 124
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 125
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 126
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 127
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 128
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 129
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 130
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 131
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 132
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 133
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 134
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 135
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 136
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 137
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 138
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 139
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 140
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 141
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 142
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 143
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 144
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 145
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 146
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 147
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 148
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 149
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 150
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 151
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 152
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 153
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 154
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 155
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 156
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 157
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 158
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 159
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 160
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 161
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 162
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 163
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 164
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 165
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 166
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 167
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 168
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 169
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 170
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 171
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 172
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 173
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 174
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 175
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 176
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 177
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 178
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 179
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 180
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 181
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 182
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 183
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 184
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 185
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 186
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 187
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 188
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 189
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 190
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 191
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 192
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 193
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 194
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 195
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 196
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 197
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 198
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 199
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 200
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 201
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 202
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 203
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 204
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 205
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 206
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 207
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 208
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 209
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 210
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 211
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 212
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 213
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 214
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 215
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 216
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 217
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 218
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 219
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 220
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 221
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 222
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 223
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 224
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 225
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 226
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 227
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 228
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 229
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 230
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 231
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 232
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 233
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 234
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 235
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 236
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 237
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 238
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 239
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 240
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 241
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 242
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 243
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 244
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 245
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 246
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 247
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 248
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 249
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 250
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 251
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 252
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 253
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 254
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 255
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 256
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 257
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 258
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 259
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 260
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 261
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 262
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 263
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 264
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 265
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 266
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 267
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 268
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 269
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 270
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 271
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 272
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 273
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 274
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 275
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 276
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 277
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 278
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 279
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 280
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 281
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 282
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 283
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 284
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 285
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 286
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 287
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 288
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 289
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 290
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 291
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 292
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 293
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 294
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 295
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 296
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 297
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 298
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 299
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 300
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 301
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 302
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 303
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 304
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 305
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 306
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 307
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 308
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 309
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 310
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 311
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 312
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 313
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 314
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 315
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 316
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 317
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 318
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 319
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 320
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 321
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 322
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 323
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 324
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 325
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 326
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 327
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 328
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 329
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 330
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 331
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 332
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 333
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 334
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 335
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 336
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 337
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 338
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 339
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 340
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 341
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 342
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 343
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 344
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 345
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 346
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 347
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 348
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 349
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 350
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 351
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 352
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 353
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 354
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 355
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 356
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 357
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 358
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 359
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 360
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 361
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 362
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 363
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 364
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 365
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 366
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 367
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 368
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 369
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 370
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 371
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 372
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 373
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 374
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 375
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 376
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 377
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 378
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 379
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 380
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 381
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 382
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 383
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 384
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 385
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 386
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 387
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 388
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 389
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 390
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 391
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 392
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 393
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 394
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 395
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 396
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 397
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 398
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 399
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 400
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 401
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 402
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 403
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 404
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 405
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 406
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 407
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 408
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 409
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 410
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 411
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 412
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 413
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 414
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 415
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 416
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 417
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 418
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 419
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 420
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 421
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 422
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 423
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 424
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 425
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 426
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 427
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 428
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 429
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 430
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 431
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 432
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 433
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 434
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 435
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 436
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 437
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 438
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 439
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 440
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 441
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 442
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 443
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 444
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 445
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 446
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 447
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 448
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 449
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 450
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 451
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 452
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 453
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 454
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 455
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 456
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 457
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 458
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 459
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 460
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 461
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 462
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 463
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 464
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 465
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 466
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 467
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 468
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 469
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 470
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 471
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 472
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 473
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 474
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 475
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 476
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 477
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 478
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 479
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 480
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 481
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 482
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 483
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 484
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 485
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 486
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 487
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 488
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 489
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 490
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 491
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 492
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 493
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 494
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 495
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 496
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 497
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 498
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 499
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 500
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 501
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 502
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 503
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 504
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 505
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 506
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 507
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 508
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 509
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 510
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 511
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 512
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 513
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 514
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 515
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 516
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 517
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 518
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 519
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 520
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 521
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 522
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 523
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 524
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 525
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 526
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 527
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 528
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 529
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 530
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 531
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 532
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 533
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 534
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 535
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 536
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 537
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 538
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 539
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 540
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 541
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 542
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 543
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 544
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 545
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 546
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 547
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 548
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 549
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 550
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 551
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 552
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 553
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 554
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 555
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 556
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 557
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 558
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 559
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 560
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 561
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 562
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 563
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 564
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 565
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 566
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 567
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 568
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 569
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 575
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 576
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 577
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 578
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 579
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 580
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 581
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 582
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 583
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 573
+    target 584
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 0
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 1
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 2
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 3
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 4
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 5
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 6
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 7
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 8
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 9
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 10
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 11
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 12
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 13
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 14
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 15
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 16
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 17
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 18
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 19
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 20
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 21
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 22
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 23
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 24
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 25
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 26
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 27
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 28
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 29
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 30
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 31
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 32
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 33
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 34
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 35
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 36
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 37
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 38
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 39
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 40
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 41
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 42
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 43
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 44
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 45
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 46
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 47
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 48
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 49
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 50
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 51
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 52
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 53
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 54
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 55
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 56
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 57
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 58
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 59
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 60
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 61
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 62
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 63
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 64
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 65
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 66
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 67
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 68
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 69
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 70
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 71
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 72
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 73
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 74
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 75
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 76
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 77
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 78
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 79
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 80
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 81
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 82
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 83
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 84
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 85
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 86
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 87
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 88
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 89
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 90
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 91
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 92
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 93
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 94
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 95
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 96
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 97
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 98
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 99
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 100
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 101
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 102
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 103
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 104
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 105
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 106
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 107
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 108
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 109
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 110
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 111
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 112
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 113
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 114
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 115
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 116
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 117
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 118
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 119
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 120
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 121
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 122
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 123
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 124
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 125
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 126
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 127
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 128
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 129
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 130
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 131
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 132
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 133
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 134
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 135
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 136
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 137
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 138
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 139
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 140
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 141
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 142
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 143
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 144
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 145
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 146
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 147
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 148
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 149
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 150
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 151
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 152
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 153
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 154
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 155
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 156
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 157
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 158
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 159
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 160
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 161
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 162
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 163
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 164
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 165
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 166
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 167
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 168
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 169
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 170
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 171
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 172
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 173
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 174
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 175
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 176
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 177
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 178
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 179
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 180
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 181
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 182
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 183
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 184
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 185
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 186
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 187
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 188
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 189
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 190
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 191
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 192
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 193
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 194
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 195
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 196
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 197
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 198
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 199
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 200
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 201
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 202
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 203
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 204
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 205
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 206
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 207
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 208
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 209
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 210
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 211
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 212
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 213
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 214
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 215
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 216
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 217
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 218
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 219
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 220
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 221
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 222
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 223
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 224
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 225
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 226
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 227
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 228
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 229
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 230
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 231
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 232
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 233
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 234
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 235
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 236
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 237
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 238
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 239
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 240
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 241
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 242
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 243
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 244
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 245
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 246
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 247
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 248
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 249
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 250
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 251
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 252
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 253
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 254
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 255
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 256
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 257
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 258
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 259
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 260
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 261
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 262
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 263
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 264
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 265
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 266
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 267
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 268
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 269
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 270
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 271
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 272
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 273
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 274
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 275
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 276
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 277
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 278
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 279
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 280
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 281
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 282
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 283
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 284
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 285
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 286
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 287
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 288
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 289
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 290
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 291
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 292
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 293
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 294
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 295
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 296
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 297
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 298
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 299
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 300
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 301
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 302
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 303
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 304
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 305
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 306
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 307
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 308
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 309
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 310
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 311
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 312
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 313
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 314
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 315
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 316
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 317
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 318
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 319
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 320
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 321
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 322
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 323
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 324
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 325
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 326
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 327
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 328
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 329
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 330
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 331
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 332
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 333
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 334
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 335
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 336
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 337
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 338
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 339
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 340
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 341
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 342
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 343
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 344
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 345
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 346
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 347
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 348
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 349
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 350
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 351
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 352
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 353
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 354
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 355
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 356
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 357
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 358
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 359
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 360
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 361
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 362
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 363
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 364
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 365
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 366
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 367
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 368
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 369
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 370
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 371
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 372
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 373
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 374
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 375
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 376
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 377
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 378
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 379
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 380
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 381
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 382
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 383
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 384
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 385
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 386
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 387
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 388
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 389
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 390
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 391
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 392
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 393
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 394
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 395
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 396
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 397
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 398
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 399
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 400
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 401
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 402
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 403
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 404
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 405
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 406
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 407
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 408
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 409
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 410
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 411
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 412
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 413
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 414
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 415
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 416
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 417
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 418
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 419
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 420
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 421
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 422
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 423
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 424
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 425
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 426
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 427
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 428
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 429
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 430
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 431
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 432
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 433
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 434
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 435
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 436
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 437
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 438
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 439
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 440
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 441
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 442
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 443
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 444
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 445
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 446
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 447
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 448
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 449
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 450
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 451
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 452
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 453
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 454
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 455
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 456
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 457
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 458
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 459
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 460
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 461
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 462
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 463
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 464
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 465
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 466
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 467
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 468
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 469
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 470
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 471
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 472
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 473
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 474
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 475
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 476
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 477
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 478
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 479
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 480
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 481
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 482
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 483
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 484
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 485
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 486
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 487
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 488
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 489
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 490
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 491
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 492
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 493
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 494
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 495
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 496
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 497
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 498
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 499
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 500
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 501
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 502
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 503
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 504
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 505
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 506
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 507
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 508
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 509
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 510
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 511
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 512
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 513
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 514
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 515
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 516
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 517
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 518
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 519
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 520
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 521
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 522
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 523
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 524
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 525
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 526
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 527
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 528
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 529
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 530
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 531
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 532
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 533
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 534
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 535
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 536
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 537
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 538
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 539
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 540
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 541
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 542
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 543
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 544
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 545
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 546
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 547
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 548
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 549
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 550
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 551
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 552
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 553
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 554
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 555
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 556
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 557
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 558
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 559
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 560
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 561
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 562
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 563
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 564
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 565
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 566
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 567
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 568
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 569
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 575
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 576
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 577
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 578
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 579
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 580
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 581
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 582
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 583
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 584
+    weight 0.9
+    mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [

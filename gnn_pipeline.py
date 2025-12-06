@@ -1,240 +1,175 @@
 import logging
-from typing import Dict, Any, List, Optional
-from neo4j import GraphDatabase  # UPDATED: Using official driver
-from torch_geometric.data import HeteroData
 import torch
-import os
+from neo4j import GraphDatabase
+from torch_geometric.data import HeteroData
+import numpy as np
+import sys
 
-# --- Setup structured logging ---
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 class GNNPipeline:
-    """
-    Manages the extraction of graph data from Neo4j and its conversion 
-    into a PyTorch Geometric HeteroData object for the GNN.
-    Also handles writing prediction scores back to Neo4j.
-    """
-
-    def __init__(self, config: Dict[str, Any]):
-        """
-        Initializes the connection to Neo4j using the official driver.
-        """
-        self.driver = None
-        self.company_ticker_map: List[str] = [] # Stores mapping of Index -> Ticker
+    def __init__(self, config):
+        # 1. Robust Credential Extraction
+        # We look for the 'neo4j' block, but default to the root config if missing
+        neo_conf = config.get('neo4j', config)
         
-        try:
-            neo4j_uri = os.getenv("NEO4J_URI", config.get("neo4j_uri"))
-            neo4j_user = os.getenv("NEO4J_USER", config.get("neo4j_user"))
-            neo4j_password = os.getenv("NEO4J_PASSWORD", config.get("neo4j_password"))
+        # Try both naming conventions ('uri' vs 'neo4j_uri')
+        self.uri = neo_conf.get('uri') or neo_conf.get('neo4j_uri')
+        self.user = neo_conf.get('user') or neo_conf.get('neo4j_user')
+        self.password = neo_conf.get('password') or neo_conf.get('neo4j_password')
 
-            if not all([neo4j_uri, neo4j_user, neo4j_password]):
-                # Fallback for Docker secrets or alternative config paths
-                logger.warning("Env vars missing, checking passed config dict...")
-                neo4j_uri = config.get("uri") or config.get("neo4j_uri")
-                neo4j_user = config.get("user") or config.get("neo4j_user")
-                neo4j_password = config.get("password") or config.get("neo4j_password")
+        # validation
+        if not all([self.uri, self.user, self.password]):
+            logger.error(f"❌ Missing Neo4j credentials! Found: URI={self.uri}, User={self.user}")
+            raise ValueError("Invalid Configuration: Missing Neo4j connection details.")
 
-            if not all([neo4j_uri, neo4j_user, neo4j_password]):
-                 raise ValueError("Neo4j connection details not found.")
+        self.driver = GraphDatabase.driver(self.uri, auth=(self.user, self.password))
+        
+        # Mapping tickers to integer IDs for PyTorch
+        self.ticker_to_id = {} 
 
-            # UPDATED: Initialize official driver
-            self.driver = GraphDatabase.driver(neo4j_uri, auth=(neo4j_user, neo4j_password))
-            
-            # Quick connectivity check
-            self.verify_connection()
-            logger.info("✅ GNN Pipeline connected to Neo4j (Official Driver).")
-            
-        except Exception as e:
-            logger.critical(f"❌ GNN Pipeline failed to connect to Neo4j: {e}")
-            self.driver = None
-
-    def verify_connection(self):
-        """Simple check to ensure DB is reachable."""
-        with self.driver.session() as session:
-            session.run("RETURN 1")
-
-    def close(self):
-        if self.driver:
-            self.driver.close()
-
-    def get_graph_data(self) -> Optional[HeteroData]:
-        """
-        Fetches all graph data from Neo4j and constructs a HeteroData object.
-        """
-        if not self.driver:
-            logger.error("No Neo4j connection.")
-            return None
-
+    def get_graph_data(self):
+        logger.info("✅ GNN Pipeline connected to Neo4j (Official Driver).")
         logger.info("Building HeteroData object for GNN...")
+        
         data = HeteroData()
 
         with self.driver.session() as session:
-            # --- 1. Process Company Nodes ---
+            # 1. Fetch ALL Company Nodes (Including Macro Nodes)
             logger.info("Fetching Company nodes and features...")
-            
-            # Note: We return elementId(c) or id(c) depending on Neo4j version. 
-            # Using id(c) for broad compatibility, but elementId is newer standard.
-            company_query = """
+            query_nodes = """
             MATCH (c:Company)
-            RETURN c.ticker AS ticker, c.market_cap AS market_cap, id(c) AS neo4j_id
+            RETURN c.ticker as ticker, 
+                   c.market_cap as market_cap, 
+                   c.is_macro as is_macro
             ORDER BY c.ticker ASC
             """
-            # Added ORDER BY to ensure deterministic mapping every time
+            results = session.run(query_nodes).data()
             
-            result = session.run(company_query)
-            company_nodes = [record.data() for record in result]
-            
-            if not company_nodes:
-                logger.warning("No Company nodes found in Neo4j. GNN Data will be empty.")
+            if not results:
+                logger.error("No nodes found in Neo4j!")
                 return None
 
-            # SAVE THE MAPPING: Index -> Ticker
-            self.company_ticker_map = [node['ticker'] for node in company_nodes]
+            # Create mappings
+            self.ticker_to_id = {row['ticker']: i for i, row in enumerate(results)}
             
-            # Create a mapping: {neo4j_id: pyg_index}
-            company_id_map = {node['neo4j_id']: i for i, node in enumerate(company_nodes)}
-            
-            # Create the feature tensor `x`
-            company_features = [
-                [float(node['market_cap']) if node['market_cap'] is not None else 0.0] 
-                for node in company_nodes
-            ]
-            
-            data['Company'].x = torch.tensor(company_features, dtype=torch.float)
-            data['Company'].num_nodes = len(company_nodes)
-            logger.info(f" -> Processed {data['Company'].num_nodes} Company nodes.")
+            # Create Features
+            # We use Market Cap + Is_Macro flag as basic features
+            features = []
+            for row in results:
+                cap = float(row['market_cap']) if row['market_cap'] else 0.0
+                is_macro = 1.0 if row.get('is_macro') else 0.0
+                # Normalize cap (log scale) to keep it in range
+                cap_norm = np.log1p(cap) 
+                features.append([cap_norm, is_macro])
 
-            # --- 2. Process Event Nodes ---
+            data['Company'].x = torch.tensor(features, dtype=torch.float)
+            data['Company'].num_nodes = len(results)
+            logger.info(f"   -> Processed {len(results)} Company nodes.")
+
+            # 2. Fetch Event Nodes & Relationships (Existing Logic)
             logger.info("Fetching Event nodes and features...")
-            event_query = """
+            query_events = """
             MATCH (e:Event)
-            RETURN e.score AS score, id(e) AS neo4j_id
+            RETURN elementId(e) as id, e.score as score
             """
+            event_results = session.run(query_events).data()
             
-            result = session.run(event_query)
-            event_nodes = [record.data() for record in result]
+            # Map Event IDs
+            event_id_map = {row['id']: i for i, row in enumerate(event_results)}
+            event_features = [[float(r['score'])] for r in event_results]
             
-            # Mapping: {neo4j_id: pyg_index}
-            event_id_map = {node['neo4j_id']: i for i, node in enumerate(event_nodes)}
-            
-            # Feature tensor `x`
-            event_features = [
-                [float(node['score']) if node['score'] is not None else 0.0] 
-                for node in event_nodes
-            ]
-            
-            if event_nodes:
+            if event_features:
                 data['Event'].x = torch.tensor(event_features, dtype=torch.float)
-            else:
-                data['Event'].x = torch.zeros((0, 1), dtype=torch.float)
+                data['Event'].num_nodes = len(event_results)
+            
+                # Fetch HAD_EVENT edges
+                logger.info("Fetching (Company)-[:HAD_EVENT]->(Event) edges...")
+                query_rels = """
+                MATCH (c:Company)-[:HAD_EVENT]->(e:Event)
+                RETURN c.ticker as c_ticker, elementId(e) as e_id
+                """
+                rel_results = session.run(query_rels).data()
                 
-            data['Event'].num_nodes = len(event_nodes)
-            logger.info(f" -> Processed {data['Event'].num_nodes} Event nodes.")
+                sources = []
+                targets = []
+                for r in rel_results:
+                    if r['c_ticker'] in self.ticker_to_id and r['e_id'] in event_id_map:
+                        sources.append(self.ticker_to_id[r['c_ticker']])
+                        targets.append(event_id_map[r['e_id']])
+                
+                edge_index = torch.tensor([sources, targets], dtype=torch.long)
+                data['Company', 'had_event', 'Event'].edge_index = edge_index
+                logger.info(f"   -> Processed {len(rel_results)} news relationships.")
 
-            # --- 3. Process Relationships (Edges) ---
-            logger.info("Fetching (Company)-[:HAD_EVENT]->(Event) edges...")
-            had_event_query = """
-            MATCH (c:Company)-[:HAD_EVENT]->(e:Event)
-            RETURN id(c) AS source_id, id(e) AS target_id
+            # ------------------------------------------------------------------
+            # 3. NEW: Fetch GLOBAL MACRO EDGES
+            # ------------------------------------------------------------------
+            logger.info("Fetching Global Macro Influence edges...")
+            
+            # We fetch ANY relationship where the source is a Macro node
+            # and the target is a regular Company.
+            # We group them all under a single edge type 'macro_influence' for the GNN.
+            query_macro = """
+            MATCH (m:Company)-[r]->(c:Company)
+            WHERE m.is_macro = true 
+            RETURN m.ticker as source, c.ticker as target
             """
+            macro_results = session.run(query_macro).data()
             
-            result = session.run(had_event_query)
-            edges = [record.data() for record in result]
+            m_sources = []
+            m_targets = []
             
-            source_indices = []
-            target_indices = []
-            
-            for edge in edges:
-                source_pyg_id = company_id_map.get(edge['source_id'])
-                target_pyg_id = event_id_map.get(edge['target_id'])
-                
-                if source_pyg_id is not None and target_pyg_id is not None:
-                    source_indices.append(source_pyg_id)
-                    target_indices.append(target_pyg_id)
+            for r in macro_results:
+                if r['source'] in self.ticker_to_id and r['target'] in self.ticker_to_id:
+                    m_sources.append(self.ticker_to_id[r['source']])
+                    m_targets.append(self.ticker_to_id[r['target']])
 
-            if source_indices:
-                edge_index_forward = torch.tensor([source_indices, target_indices], dtype=torch.long)
-                data['Company', 'had_event', 'Event'].edge_index = edge_index_forward
-                
-                # Create Reverse Edges for Message Passing (Event -> Company)
-                edge_index_reverse = torch.tensor([target_indices, source_indices], dtype=torch.long)
-                data['Event', 'is_event_of', 'Company'].edge_index = edge_index_reverse
-                
-                logger.info(f" -> Processed {len(source_indices)} relationships.")
+            if m_sources:
+                macro_edge_index = torch.tensor([m_sources, m_targets], dtype=torch.long)
+                # We define this new edge type in the HeteroData object
+                data['Company', 'macro_influence', 'Company'].edge_index = macro_edge_index
+                logger.info(f"   -> Processed {len(macro_results)} macro relationships.")
             else:
-                logger.warning("No relationships found between Companies and Events.")
-                empty_edge = torch.empty((2, 0), dtype=torch.long)
-                data['Company', 'had_event', 'Event'].edge_index = empty_edge
-                data['Event', 'is_event_of', 'Company'].edge_index = empty_edge
+                logger.warning("   -> ⚠️ No Macro edges found in Neo4j!")
 
         logger.info("✅ HeteroData object successfully created.")
         return data
 
-    def save_predictions(self, predictions: torch.Tensor):
+    def save_predictions(self, risk_scores):
         """
-        Writes the calculated Risk Scores back to the Neo4j database.
+        Writes the calculated risk scores back to Neo4j AND returns them.
         """
-        if not self.driver:
-            logger.error("Cannot save predictions: No database connection.")
-            return
-
-        if not self.company_ticker_map:
-            logger.error("Cannot save predictions: Node mapping is empty. Did you run get_graph_data()?")
-            return
-
         logger.info("💾 Writing GNN Risk Scores back to Neo4j...")
         
-        scores_list = predictions.detach().cpu().flatten().tolist()
+        # Convert tensor to list
+        scores_list = risk_scores.tolist()
         
-        if len(scores_list) != len(self.company_ticker_map):
-            logger.error(f"Mismatch: Generated {len(scores_list)} scores but mapped {len(self.company_ticker_map)} companies.")
-            return
-
-        # Prepare batch for Neo4j
-        batch_data = []
-        for i, score in enumerate(scores_list):
-            ticker = self.company_ticker_map[i]
-            batch_data.append({"ticker": ticker, "score": float(score)})
-
-        update_query = """
-        UNWIND $batch AS row
-        MATCH (c:Company {ticker: row.ticker})
-        SET c.gnn_risk_score = row.score,
-            c.gnn_last_updated = datetime()
-        """
-        # Note: Changed 'last_risk_update' to 'gnn_last_updated' to match your other scripts
+        updates = []
+        # Reverse map ID -> Ticker
+        id_to_ticker = {v: k for k, v in self.ticker_to_id.items()}
         
-        try:
-            with self.driver.session() as session:
-                batch_size = 500
-                for k in range(0, len(batch_data), batch_size):
-                    chunk = batch_data[k:k+batch_size]
-                    session.run(update_query, batch=chunk)
-                    logger.info(f"   -> Updated batch {k // batch_size + 1}")
-                
-            logger.info(f"✅ Successfully updated risk scores for {len(batch_data)} companies.")
-            
-        except Exception as e:
-            logger.error(f"❌ Failed to write risk scores to Neo4j: {e}")
+        for idx, score in enumerate(scores_list):
+            if idx in id_to_ticker:
+                updates.append({
+                    "ticker": id_to_ticker[idx], 
+                    "score": float(score)
+                })
 
-    def export_dag_for_dowhy(self):
-        """
-        Converts internal GNN structure to NetworkX for Causal Inference.
-        """
-        import networkx as nx
-        G = nx.DiGraph()
+        # Batch write
+        batch_size = 500
+        with self.driver.session() as session:
+            for i in range(0, len(updates), batch_size):
+                batch = updates[i:i+batch_size]
+                session.run("""
+                UNWIND $batch as item
+                MATCH (c:Company {ticker: item.ticker})
+                SET c.gnn_risk_score = item.score,
+                    c.last_risk_update = datetime()
+                """, batch=batch)
+                logger.info(f"    -> Updated batch {i//batch_size + 1}")
         
-        # Iterate over your edge_index to build the standard graph
-        # edge_index is usually [2, num_edges]
-        sources = self.data.edge_index[0].numpy()
-        targets = self.data.edge_index[1].numpy()
+        logger.info(f"✅ Successfully updated risk scores for {len(updates)} companies.")
         
-        for u, v in zip(sources, targets):
-            # Map indices to node names (e.g., 0 -> 'Interest Rates')
-            u_name = self.node_map[u]
-            v_name = self.node_map[v]
-            G.add_edge(u_name, v_name)
-            
-        return G
-
+        # --- NEW LINE HERE ---
+        return updates

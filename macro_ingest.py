@@ -1,7 +1,7 @@
 # ==============================================================================
-# --- MACRO-ECONOMIC INGESTION ENGINE ---
+# --- MACRO-ECONOMIC INGESTION ENGINE (GLOBAL STATE UPDATE) ---
 # ==============================================================================
-# Injects Indices, Commodities, and Yields into the Graph as "Super Nodes".
+# Injects Indices as "Super Nodes" that influence the entire graph.
 # ==============================================================================
 
 import yfinance as yf
@@ -16,13 +16,13 @@ logger = logging.getLogger("MacroIngest")
 
 # --- MACRO DEFINITIONS ---
 # Ticker: (Name, Affected_Sector, Relationship_Type)
-# If Sector is "All", it affects the whole market.
+# UPDATED: We set these to "All" to create the Global State Super-Nodes.
 MACRO_ASSETS = {
-    "^TNX":  ("10-Year Treasury Yield", "Technology", "NEGATIVELY_CORRELATED_WITH"), # Rates up, Tech down
-    "CL=F":  ("Crude Oil", "Energy", "POSITIVELY_CORRELATED_WITH"),                 # Oil up, Energy up
-    "GC=F":  ("Gold", "Materials", "POSITIVELY_CORRELATED_WITH"),
-    "DX-Y.NYB": ("US Dollar Index", "All", "AFFECTS_DEMAND_FOR"),                   # Strong dollar affects exports
-    "^VIX":  ("Volatility Index", "All", "INCREASES_RISK_FOR")                      # Fear gauge
+    "^TNX":      ("10-Year Treasury Yield", "All", "GLOBAL_RATE_SENSITIVITY"),
+    "CL=F":      ("Crude Oil", "All", "GLOBAL_COMMODITY_SENSITIVITY"),
+    "GC=F":      ("Gold", "All", "GLOBAL_RISK_OFF_SENTIMENT"),
+    "DX-Y.NYB":  ("US Dollar Index", "All", "GLOBAL_FX_IMPACT"),
+    "^VIX":      ("Volatility Index", "All", "GLOBAL_MARKET_FEAR")
 }
 
 def load_config():
@@ -40,12 +40,12 @@ def ingest_macro_nodes():
     
     logger.info(f"🌍 Ingesting {len(MACRO_ASSETS)} Macro-Economic Assets...")
 
-    # 1. Create/Merge Macro Nodes
+    # Collect all macro tickers so we don't link macros to each other
+    all_macro_tickers = list(MACRO_ASSETS.keys())
+
     for ticker, (name, target_sector, rel_type) in MACRO_ASSETS.items():
         
-        # Upsert the Node
-        # We give it the 'Company' label so market_data.py picks it up for risk scoring!
-        # We also give it a 'Macro' label for filtering.
+        # 1. Create the Node (ensure it is labeled correctly)
         query_node = """
         MERGE (m:Company {ticker: $ticker})
         SET m.name = $name,
@@ -57,23 +57,38 @@ def ingest_macro_nodes():
         """
         db.execute_write(query_node, ticker=ticker, name=name)
         
-        # 2. Create Sector-Wide Relationships
-        # This links the Macro Node to EVERY company in that sector.
+        # 2. Logic Branching
         if target_sector == "All":
-            # Link to major indices or just leave as global node
-            pass 
+            # --- NEW GLOBAL STATE ARCHITECTURE ---
+            # Connects this Macro Node to EVERY single Company node (Asset).
+            # We filter out other Macro nodes to prevent cycles.
+            logger.info(f"   -> ⚡ Wiring {ticker} as a GLOBAL SUPER-NODE...")
+            
+            query_global = f"""
+            MATCH (m:Company {{ticker: $ticker}})
+            MATCH (c:Company) 
+            WHERE NOT c.ticker IN $macro_list AND c.ticker <> $ticker
+            MERGE (m)-[r:{rel_type}]->(c)
+            SET r.weight = 0.9, 
+                r.mechanism = 'Global Macro Influence',
+                r.verification_status = 'VERIFIED'
+            """
+            db.execute_write(query_global, ticker=ticker, macro_list=all_macro_tickers)
+
         else:
-            logger.info(f"   -> Linking {ticker} to all '{target_sector}' companies...")
-            query_link = f"""
+            # --- LEGACY SECTOR SPECIFIC LOGIC ---
+            # Keeps the ability to link specific assets (like just Copper -> Materials)
+            logger.info(f"   -> Linking {ticker} to specific sector '{target_sector}'...")
+            
+            query_sector = f"""
             MATCH (m:Company {{ticker: $ticker}})
             MATCH (c:Company) 
             WHERE c.sector CONTAINS $sector AND c.ticker <> $ticker
             MERGE (m)-[r:{rel_type}]->(c)
-            SET r.weight = 0.7,
-                r.mechanism = 'Macro-Economic Sector Correlation',
-                r.verification_status = 'VERIFIED'
+            SET r.weight = 0.75,
+                r.mechanism = 'Sector Correlation'
             """
-            db.execute_write(query_link, ticker=ticker, sector=target_sector)
+            db.execute_write(query_sector, ticker=ticker, sector=target_sector)
 
     logger.info("✅ Macro Ingestion Complete.")
     db.close()
