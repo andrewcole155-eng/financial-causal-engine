@@ -6,15 +6,21 @@ from gnn_pipeline import GNNPipeline
 from gnn_model import create_hetero_model
 from typing import Dict, Any
 from torch_geometric.data import HeteroData
+import os
 
 # --- Setup logging ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+# --- CRITICAL: GET ABSOLUTE PATH TO SCRIPT DIRECTORY ---
+# This ensures we find files even if Streamlit runs from a different folder
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
 def load_config() -> Dict[str, Any]:
-    """Loads config.json from the same directory."""
+    """Loads config.json from the same directory as this script."""
+    config_path = os.path.join(SCRIPT_DIR, 'config.json')
     try:
-        with open('config.json', 'r') as f:
+        with open(config_path, 'r') as f:
             return json.load(f)
     except Exception as e:
         logger.error(f"Error loading config.json: {e}")
@@ -210,8 +216,10 @@ def run_training():
 
     logger.info("✅ Training complete.")
 
-    # 5. Save Model File
-    torch.save(model.state_dict(), "gnn_risk_model.pth")
+    # 5. Save Model File using ABSOLUTE PATH
+    save_path = os.path.join(SCRIPT_DIR, "gnn_risk_model.pth")
+    torch.save(model.state_dict(), save_path)
+    logger.info(f"💾 Model saved to: {save_path}")
     
     # --- 6. CALCULATE & SAVE RISK SCORES TO NEO4J ---
     logger.info("🔮 Generating final risk scores for database update...")
