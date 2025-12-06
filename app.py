@@ -1970,101 +1970,121 @@ def main():
                                     st.code("\n".join(triples))
 
     # ==============================================================================
-    # --- TAB 6: INSTRUCTIONS & GUIDE ---
+    # --- TAB 6: INSTRUCTIONS & GUIDE (FULLY UPDATED) ---
     # ==============================================================================
     with tab_help:
-        st.header("📘 User Guide & Documentation")
-        
-        # Sidebar for quick navigation within the Help tab
-        help_choice = st.radio(
-            "Navigate Guide:",
-            ["Introduction", "Recent Events", "Explore Graph", "Simulate Scenarios", "Causal Pathfinding", "GNN X-Ray"],
-            horizontal=True
-        )
-        
-        st.divider()
+        st.header("📘 Causal Engine User Manual")
+        st.caption("Mastering the Financial Causal Graph.")
 
-        if help_choice == "Introduction":
-            st.markdown("""
-            ### Welcome to the Causal Inference Engine
-            This application moves beyond simple price correlations to map the **causal structure** of the financial markets.
+        # Layout: Sidebar for navigation, Main panel for content
+        col_nav, col_content = st.columns([1, 3])
 
-            **New in this Version:**
-            * **🔮 GNN X-Ray:** A "Glass Box" tool that explains *why* the AI predicted a specific risk score.
-            * **🏭 Supply Chain Mining:** The system reads **SEC 10-K Filings** to find hard supply chain dependencies.
-            * **🌍 Macro Intelligence:** The graph includes "Super Nodes" like **Crude Oil** and **10-Year Treasury Yields**.
+        with col_nav:
+            st.info("📚 **Navigation**")
+            help_topic = st.radio(
+                "Select Topic:",
+                ["1. Core Concept", "2. Recent Events", "3. Graph Explorer", "4. Simulation Lab", "5. Pathfinding", "6. GNN X-Ray"],
+                label_visibility="collapsed"
+            )
 
-            **Visual Legend:**
-            * 🔴 **Red Node:** High Risk (Top 5% Volatility).
-            * 🟢 **Green Node:** Low Risk (Stable).
-            * 🔵 **Blue Line:** 📄 **SEC 10-K Filing** (Hard Supply Chain Evidence).
-            * **Solid Line:** ✅ Verified data (Standard).
-            * **Dashed Grey Line:** 🤖 AI Inferred (High Probability).
-            """)
-        
-        elif help_choice == "Recent Events":
-            st.markdown("""
-            ### 🔔 Recent Events Tab
-            **Purpose:** A feed of market "shocks" (News, Earnings, Macro Data) detected by the daily ingestion engine.
-
-            **How to Use:**
-            * **Refresh Events:** Reloads the latest data from the database.
-            * **Inspect Source:** Click the link to read the original article.
-
-            **Interpreting the Data:**
-            * 🔴 **Negative (-1.0):** Bearish news (Lawsuits, Missed Earnings, Rate Hikes).
-            * 🟢 **Positive (+1.0):** Bullish news (Mergers, Record Profits, Rate Cuts).
-            """)
-        
-        elif help_choice == "Explore Graph":
-            st.markdown("""
-            ### 🗺️ Explore Graph Tab
-            **Purpose:** Visual map of your financial universe.
-
-            **New Feature: Sector Filters**
-            * Use the **"Filter by Sector"** dropdown to isolate specific industries.
-            * Select **"Macro"** to see how global factors like **Oil** or **Bond Yields** connect to the stock market.
-
-            **Interpreting the Lines:**
-            * **Thick Blue Line:** A relationship explicitly stated in a company's annual report (10-K).
-            * **Dashed Grey Line:** A relationship inferred by Gemini AI based on news context.
-            """)
-        
-        elif help_choice == "Simulate Scenarios":
-            st.markdown("""
-            ### 🔬 Simulate Scenarios Tab
-            **Purpose:** A "Stress Test" lab. Ask "What If?" questions to forecast contagion.
-
-            **Tools:**
-            1.  **🌪️ Systemic Vulnerability:** Identifies **"Super Spreaders"**—companies whose failure would cause the most total damage to the network.
-            2.  **🧪 Manual Simulation:** Select a trigger asset and a shock score to see the "Blast Radius" and generate an AI Crisis Report.
-            """)
-
-        elif help_choice == "Causal Pathfinding":
-            st.markdown("""
-            ### ↔️ Causal Pathfinding Tab
-            **Purpose:** Find the hidden transmission chains between two assets (e.g., *How does a Bond Yield spike affect Nvidia?*).
-
-            **Smart Diagnostics:**
-            * **Dynamic Filtering:** Only shows nodes that are *actually reachable* from your start node.
-            * **🚫 Sink Node Detection:** Warns you if a company is a "dead end" (absorbs shocks but doesn't pass them on).
-            """)
-
-        elif help_choice == "GNN X-Ray":
-            st.markdown("""
-            ### 🔮 GNN X-Ray (Explainability) Tab
-            **Purpose:** The "Why" button for Artificial Intelligence. 
+        with col_content:
+            st.divider()
             
-            Standard AI gives you a score (e.g., "High Risk"), but acts like a Black Box. This tool turns it into a **Glass Box**.
+            # --- TOPIC 1: CORE CONCEPT ---
+            if "1. Core Concept" in help_topic:
+                st.markdown("""
+                ### 🧠 Beyond Correlation
+                Standard financial tools look at **Correlation** (Do A and B move together?). 
+                This engine looks at **Causality** (Does A *cause* B?).
 
-            **How it Works (The Math):**
-            * It uses **GNNExplainer**, a state-of-the-art algorithm that mathematically "masks" parts of the graph to see what changes the prediction.
-            * It asks: *"If I hide this Supplier relationship, does the risk score change?"* If yes, that supplier is critical.
+                It uses a **Knowledge Graph** combined with **Structural Equation Models (SEM)** to understand the physics of the market.
 
-            **Visual Legend:**
-            * 🟡 **Gold / 🔴 Red Edges:** The **"Smoking Gun."** These are the critical connections that drove the AI's decision.
-            * ⚪ **Grey/Thin Edges:** Background noise. The AI ignored these relationships for this specific prediction.
-            """)
+                **Key Terminology:**
+                * **Nodes:** Companies (AAPL), Macro Factors (Oil), or Concepts (Inflation).
+                * **Edges:** The causal links between them (Supply Chain, Competitor, Revenue Driver).
+                * **Shocks:** An external force applied to a node (e.g., "Fed hikes rates").
+                * **Propagation:** How that shock travels through the web to hit other assets.
+                """)
+
+            # --- TOPIC 2: RECENT EVENTS ---
+            elif "2. Recent Events" in help_topic:
+                st.markdown("""
+                ### 🔔 Recent Events Feed
+                This tab is your "Early Warning System." It ingests news, earnings, and macro reports to detect **exogenous shocks**.
+
+                **How to use it:**
+                1.  **Filter by Sector:** Focus on Tech, Energy, or Healthcare.
+                2.  **Analyze Sentiment:**
+                    * 🟢 **Positive (+1.0):** Bullish news (Mergers, Beats).
+                    * 🔴 **Negative (-1.0):** Bearish news (Lawsuits, Misses).
+                3.  **Launch Simulation:** Click the `🔬 Simulate` button on any event to instantly transport that scenario into the Simulation Lab.
+                """)
+
+            # --- TOPIC 3: GRAPH EXPLORER ---
+            elif "3. Graph Explorer" in help_topic:
+                st.markdown("""
+                ### 🗺️ Graph Explorer
+                Visualizes the hidden connections in the market.
+
+                **Features:**
+                * **🌤️ Market Weather (Heatmap):** A Z-Score map showing which sectors are "overheated" (High Risk) vs "cool" (Low Risk) relative to the average.
+                * **🕸️ Node Inspector:** Select any company (e.g., `NVDA`) to see its "Neural Neighborhood"—suppliers, customers, and rivals.
+                
+                **Visual Decoder:**
+                * 🔵 **Blue Line:** **Hard Evidence** (SEC 10-K Filing). "We explicitly depend on Supplier X."
+                * ⚪ **Dashed Line:** **AI Inference**. "Gemini deduced a relationship based on news context."
+                * 🔴 **Red Node:** High Predicted Risk (Top 5% volatility).
+                """)
+
+            # --- TOPIC 4: SIMULATION LAB (THE BIG UPDATE) ---
+            elif "4. Simulation Lab" in help_topic:
+                st.markdown("""
+                ### 🔬 Causal Simulation Engine (The "What If" Machine)
+                This is the most powerful tool in the suite. It allows you to run **Counterfactual Simulations**.
+
+                #### 🅰️ Macro Stress Test
+                Simulate global economic shifts.
+                * **Fed Rates:** Slide to 6%+ to test liquidity crunches.
+                * **Sahm Rule:** Slide to **> 0.50** to trigger a **Recession**. Watch how the graph shifts from "Growth" to "Survival" mode.
+                * **Geopolitics (GPR):** Slide to **300+** to simulate a war (e.g., Ukraine/Gaza scenarios). This shocks Defense stocks (LMT, RTX) and Oil.
+                * **Seasonality:** Force "Q4 Retail" or "Back-to-School" to see cyclical demand boosts.
+
+                #### 🅱️ Single Asset Shock (Evolved)
+                Simulate a specific company event *within* a context.
+                * **Scenario:** Pick a preset like "Earnings Miss (-15%)" or "Supply Chain Failure".
+                * **Context:** Set the background economy. *Example:* "What happens if Apple misses earnings **AND** Interest Rates are 8%?" (The crash will be worse).
+
+                **Interpreting Results:**
+                * **Confidence Score:** If you run an extreme simulation (e.g., 50% rate hike), the confidence score drops because the model is extrapolating into the unknown.
+                """)
+
+            # --- TOPIC 5: PATHFINDING ---
+            elif "5. Pathfinding" in help_topic:
+                st.markdown("""
+                ### ↔️ Causal Pathfinding
+                Finds the "Transmission Chain" between two seemingly unrelated assets.
+
+                **Use Case:**
+                *"How does a spike in **Crude Oil** eventually hurt **Disney**?"*
+                
+                **The Engine:**
+                It runs a shortest-path algorithm weighted by "Risk." It doesn't just find *a* path; it finds the **most dangerous** path of contagion.
+                """)
+
+            # --- TOPIC 6: GNN X-RAY ---
+            elif "6. GNN X-Ray" in help_topic:
+                st.markdown("""
+                ### 🔮 GNN X-Ray (Explainability)
+                AI models are usually "Black Boxes." This tool makes them "Glass Boxes."
+
+                **The Problem:** The model says "High Risk" for Tesla. Why?
+                **The Solution:** GNNExplainer mathematically masks parts of the graph to see what matters.
+
+                **How to read it:**
+                * Select a company.
+                * The tool will highlight a **Sub-Graph**.
+                * **Gold/Red Edges:** These are the "Smoking Guns." The specific relationships that caused the AI to trigger a risk alert.
+                """)
 
 if __name__ == "__main__":
     main()
