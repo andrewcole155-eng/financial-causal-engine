@@ -348,6 +348,7 @@ def render_truth_layer(ticker: str, db_manager: DatabaseManager):
 
     st.plotly_chart(fig)
 
+# ==============================================================================
 # --- FUNCTION: Inject Live Risk Scores ---
 # ==============================================================================
 def inject_live_risk_data(graph: nx.DiGraph) -> nx.DiGraph:
@@ -1633,85 +1634,134 @@ def main():
         It answers: *"Did the model flag this company because of its own financials, or because of a supplier crash?"*
         """)
 
-        # 1. Select Company
-        all_tickers = get_sorted_tickers()
+        # 1. Load Data for Filters & Indexing
+        # We need the Graph for Sector data, and the Sorted List for Indexing
+        financial_graph = get_full_graph()
+        full_sorted_tickers = get_sorted_tickers() 
         
-        col_xr_sel, col_xr_act = st.columns([2, 1])
-        with col_xr_sel:
-            xray_ticker = st.selectbox("Select Company to Explain:", all_tickers, index=0, key="xray_ticker")
-        
-        with col_xr_act:
-            st.write("") # Spacer
-            st.write("") 
-            run_xray = st.button("🔍 Run Explainability Engine", type="primary")
+        if financial_graph is None:
+            st.warning("Knowledge graph is empty. Please ensure data is loaded.")
+        else:
+            # 2. Prepare Sectors
+            all_sectors = sorted(list(set(
+                financial_graph.nodes[n].get('sector', 'Unknown') 
+                for n in financial_graph.nodes()
+                if financial_graph.nodes[n].get('sector')
+            )))
 
-        if run_xray and xray_ticker:
-            try:
-                # 2. Find Index
-                if xray_ticker not in all_tickers:
-                    st.error("Ticker not found in mapping.")
-                else:
-                    target_idx = all_tickers.index(xray_ticker)
-                    
-                    with st.status("Running Mathematical Explanation...", expanded=True) as status:
-                        
-                        # A. Load Model Resources (Cached via predict.py helper)
-                        status.write("🧠 Loading Neural Network & Graph Data...")
-                        model, data, config = get_inference_resources()
-                        
-                        if model is None:
-                            status.update(label="Error loading model.", state="error")
-                            st.stop()
-                            
-                        # B. Setup Explainer
-                        status.write("⚙️ Configuring GNNExplainer Mask...")
-                        explainer = setup_explainer(model)
-                        
-                        # C. Run Optimization
-                        status.write(f"📉 Optimizing Mask for Node {target_idx} ({xray_ticker})...")
-                        subgraph = explain_prediction(explainer, data, target_idx)
-                        
-                        status.update(label="Explanation Complete!", state="complete")
-                    
-                    # 3. Visualize
-                    if subgraph.number_of_nodes() == 0:
-                        st.warning("The model did not find any specific neighbors that strongly influenced this prediction (Low Confidence or Isolated Node).")
+            # 3. Layout: Filter | Select | Action
+            col_xr_filter, col_xr_sel, col_xr_act = st.columns([1, 2, 1])
+
+            with col_xr_filter:
+                selected_sector_xr = st.selectbox(
+                    "Filter Sector:", 
+                    ["All Sectors"] + all_sectors, 
+                    key="xray_sector_filter"
+                )
+
+            # 4. Filter Logic
+            # We filter the list shown to the user, but we MUST map it back to the full list index later
+            display_tickers = full_sorted_tickers
+            
+            if selected_sector_xr != "All Sectors":
+                display_tickers = [
+                    n for n in full_sorted_tickers 
+                    if financial_graph.has_node(n) and financial_graph.nodes[n].get('sector') == selected_sector_xr
+                ]
+
+            # Formatter for nice names
+            company_map = load_company_names()
+            def format_xray_ticker(ticker):
+                name = company_map.get(ticker)
+                if not name and financial_graph.has_node(ticker):
+                    name = financial_graph.nodes[ticker].get('name')
+                return f"{name} ({ticker})" if name else ticker
+
+            with col_xr_sel:
+                xray_ticker = st.selectbox(
+                    "Select Company to Explain:", 
+                    display_tickers, 
+                    format_func=format_xray_ticker,
+                    key="xray_ticker"
+                )
+            
+            with col_xr_act:
+                st.write("") # Spacer
+                st.write("") 
+                run_xray = st.button("🔍 Run Explainability Engine", type="primary")
+
+            # 5. Execution Logic
+            if run_xray and xray_ticker:
+                try:
+                    # CRITICAL STEP: Map the ticker back to the Global Index
+                    # The GNN model relies on the exact index from the full sorted list
+                    if xray_ticker not in full_sorted_tickers:
+                        st.error("Ticker not found in global mapping.")
                     else:
-                        st.subheader(f"The 'Why' for {xray_ticker}")
-                        st.caption("Gold/Red edges represent the **Strongest Causal Factors** used by the AI.")
+                        target_idx = full_sorted_tickers.index(xray_ticker)
                         
-                        html_file = visualize_explanation(subgraph, all_tickers)
-                        
-                        with open(html_file, 'r', encoding='utf-8') as f:
-                            st.components.v1.html(f.read(), height=600, scrolling=True)
-                        
-                        # Cleanup temp file
-                        if os.path.exists(html_file): os.remove(html_file)
-
-                        # 4. AI Interpretation of the Explanation
-                        if gemini_active:
-                            st.divider()
-                            if st.button("🤖 Interpret this Subgraph"):
-                                factor_nodes = [n for n in subgraph.nodes if "Company" in str(n) or "Event" in str(n)]
-                                # Remap for prompt
-                                readable_factors = []
-                                for f in factor_nodes:
-                                    if "Company_" in f:
-                                        idx = int(f.split("_")[1])
-                                        if idx < len(all_tickers): readable_factors.append(all_tickers[idx])
-                                    else:
-                                        readable_factors.append(f)
+                        with st.status("Running Mathematical Explanation...", expanded=True) as status:
+                            
+                            # A. Load Model Resources (Cached via predict.py helper)
+                            status.write("🧠 Loading Neural Network & Graph Data...")
+                            model, data, config = get_inference_resources()
+                            
+                            if model is None:
+                                status.update(label="Error loading model.", state="error")
+                                st.stop()
                                 
-                                prompt = f"""
-                                The GNN model predicted a risk score for {xray_ticker}. 
-                                The 'Explainability' engine identified these specific nodes as the mathematical drivers of that decision: {readable_factors}.
-                                Explain WHY these specific connections likely drove the risk calculation.
-                                """
-                                st.write(generate_ai_analysis(prompt))
+                            # B. Setup Explainer
+                            status.write("⚙️ Configuring GNNExplainer Mask...")
+                            explainer = setup_explainer(model)
+                            
+                            # C. Run Optimization
+                            status.write(f"📉 Optimizing Mask for Node {target_idx} ({xray_ticker})...")
+                            subgraph = explain_prediction(explainer, data, target_idx)
+                            
+                            status.update(label="Explanation Complete!", state="complete")
+                        
+                        # 6. Visualize
+                        if subgraph.number_of_nodes() == 0:
+                            st.warning("The model did not find any specific neighbors that strongly influenced this prediction (Low Confidence or Isolated Node).")
+                        else:
+                            st.subheader(f"The 'Why' for {xray_ticker}")
+                            st.caption("Gold/Red edges represent the **Strongest Causal Factors** used by the AI.")
+                            
+                            # Pass the FULL list to visualizer so it can map indexes correctly
+                            html_file = visualize_explanation(subgraph, full_sorted_tickers)
+                            
+                            with open(html_file, 'r', encoding='utf-8') as f:
+                                st.components.v1.html(f.read(), height=600, scrolling=True)
+                            
+                            # Cleanup temp file
+                            if os.path.exists(html_file): os.remove(html_file)
 
-            except Exception as e:
-                st.error(f"X-Ray Failed: {e}")
-                logger.error(f"X-Ray Error: {e}")
+                            # 7. AI Interpretation of the Explanation
+                            if gemini_active:
+                                st.divider()
+                                if st.button("🤖 Interpret this Subgraph"):
+                                    with st.spinner("Analyzing causal structure..."):
+                                        factor_nodes = [n for n in subgraph.nodes if "Company" in str(n) or "Event" in str(n)]
+                                        # Remap for prompt
+                                        readable_factors = []
+                                        for f in factor_nodes:
+                                            if "Company_" in f:
+                                                idx = int(f.split("_")[1])
+                                                if idx < len(full_sorted_tickers): 
+                                                    readable_factors.append(full_sorted_tickers[idx])
+                                            else:
+                                                readable_factors.append(f)
+                                        
+                                        prompt = f"""
+                                        The GNN model predicted a risk score for {xray_ticker}. 
+                                        The 'Explainability' engine identified these specific nodes as the mathematical drivers of that decision: {readable_factors}.
+                                        Explain WHY these specific connections likely drove the risk calculation.
+                                        """
+                                        st.write(generate_ai_analysis(prompt))
+
+                except Exception as e:
+                    st.error(f"X-Ray Failed: {e}")
+                    logger.error(f"X-Ray Error: {e}")
 
     # ==============================================================================
     # --- TAB 6: INSTRUCTIONS & GUIDE ---
