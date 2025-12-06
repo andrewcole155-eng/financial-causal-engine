@@ -29,6 +29,13 @@ def add_unique_company_features(data: HeteroData) -> HeteroData:
     variance in the final risk scores even for disconnected nodes.
     """
     logger.info("--- SOLUTION B: Injecting Unique Random Features for Companies ---")
+    
+    # --- CRITICAL: Set Seed for Consistency ---
+    # This ensures Training, Inference, and Explainability all see the exact same 
+    # "random" features. Without this, the model is trained on different data 
+    # than it predicts on.
+    torch.manual_seed(42)
+    
     num_companies = data['Company'].num_nodes
     
     # Generate random noise (Unique ID simulation)
@@ -196,7 +203,9 @@ def run_training():
                 val_out = model(data.x_dict, data.edge_index_dict)
                 pred = val_out.argmax(dim=1)
                 correct = (pred[data['Company'].val_mask] == data['Company'].y[data['Company'].val_mask]).sum()
-                acc = int(correct) / int(data['Company'].val_mask.sum())
+                # Safety for empty Val set (small graphs)
+                total_val = int(data['Company'].val_mask.sum())
+                acc = int(correct) / total_val if total_val > 0 else 0.0
                 logger.info(f"Epoch {epoch:03d} | Loss: {loss.item():.4f} | Val Acc: {acc:.4f}")
 
     logger.info("✅ Training complete.")
