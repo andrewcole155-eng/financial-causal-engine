@@ -59,15 +59,27 @@ class GNNPipeline:
             y_risks = []
 
             for row in results:
-                # Features (X)
+                # --- UPDATED FEATURE CONSTRUCTION (Size 6) ---
+                # Matches the logic in generate_real_history.py & train.py
+                
+                # 1. Market Cap (Log Normalized)
                 cap = float(row['market_cap'])
-                is_macro = 1.0 if row['is_macro'] else 0.0
-                price = float(row['close_price'])
-                
                 cap_norm = np.log1p(cap)
-                price_norm = np.log1p(price)
                 
-                features.append([cap_norm, is_macro, price_norm])
+                # 2. Macro Flag
+                is_macro = 1.0 if row['is_macro'] else 0.0
+                
+                # 3-6. DYNAMIC PLACEHOLDERS (Vol, Shock, Trend)
+                # These are 0.0 by default here. 
+                # They MUST be populated by 'enrich_data' in predict.py or generate_history.py
+                # We pad them here so the tensor shape (N, 6) is correct immediately.
+                feat_vol_shock = 0.0
+                feat_sent_shock = 0.0
+                feat_trend = 0.0
+                feat_vol_mag = 0.0
+                
+                # Final Vector: [Cap, Macro, VolShock, SentShock, Trend, VolMag]
+                features.append([cap_norm, is_macro, feat_vol_shock, feat_sent_shock, feat_trend, feat_vol_mag])
                 
                 # Targets (Y)
                 ret = float(row['daily_return'])
@@ -160,11 +172,9 @@ class GNNPipeline:
     def save_predictions(self, predictions_dict):
         logger.info("💾 Writing Multi-Task Predictions back to Neo4j...")
         
-        id_to_ticker = {v: k for k, v in self.ticker_to_id.items()}
         batch_data = []
 
         if isinstance(predictions_dict, list):
-             # Legacy support if needed, or handle appropriately
              pass
         elif isinstance(predictions_dict, dict):
             for ticker, vals in predictions_dict.items():

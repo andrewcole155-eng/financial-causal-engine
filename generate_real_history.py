@@ -7,6 +7,7 @@ import numpy as np
 from datetime import timedelta
 from gnn_pipeline import GNNPipeline
 from market_data import fetch_historical_data
+from feature_engineering import enrich_data  # <--- IMPORTED YOUR NEW LOGIC
 
 # Setup Logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
@@ -22,38 +23,8 @@ def load_local_config():
     except FileNotFoundError: return {}
     except Exception as e: return {}
 
-def calculate_technical_indicators(df):
-    """
-    Calculates RSI, Momentum, and Volatility using pure Pandas.
-    No external 'ta' library needed.
-    """
-    # 1. Momentum (Returns)
-    df['R_5'] = df['Close'].pct_change(5).fillna(0)   # 1 Week Trend
-    df['R_20'] = df['Close'].pct_change(20).fillna(0) # 1 Month Trend
-    
-    # 2. Volatility (Standard Deviation of Price)
-    # Log-normalized to keep scale consistent
-    rolling_std = df['Close'].rolling(window=20).std().fillna(0)
-    df['Vol_20'] = np.log1p(rolling_std)
-
-    # 3. Relative Strength Index (RSI) - 14 Day
-    delta = df['Close'].diff()
-    gain = (delta.where(delta > 0, 0)).rolling(window=14).mean()
-    loss = (-delta.where(delta < 0, 0)).rolling(window=14).mean()
-    
-    rs = gain / loss
-    df['RSI'] = 100 - (100 / (1 + rs))
-    
-    # Fill NaN (RSI is NaN for first 14 days)
-    df['RSI'] = df['RSI'].fillna(50) # Default to neutral
-    
-    # Normalize RSI to 0-1 range for the Neural Network
-    df['RSI_Norm'] = df['RSI'] / 100.0
-    
-    return df
-
 def generate_real_history():
-    logger.info("🚀 Starting Real-World History Generation (Quant Mode)...")
+    logger.info("🚀 Starting Real-World History Generation (Volatility & Shock Mode)...")
 
     # 1. Initialize
     config = load_local_config()
@@ -71,6 +42,7 @@ def generate_real_history():
         return
 
     # 2. Download Data (3 Months)
+    # We fetch 3 months to allow the rolling windows (7d, 30d) in feature_engineering to warm up
     market_df, ticker_map = fetch_historical_data(config, period="3mo")
     
     if market_df is None or market_df.empty:
@@ -84,28 +56,47 @@ def generate_real_history():
 
     generated_count = 0
     
-    # 3. Pre-Calculate Indicators for ALL Tickers
-    # This is much faster than doing it inside the loop
-    logger.info("🧮 Pre-calculating Technical Indicators...")
+    # 3. Pre-Calculate Features using SHARED LOGIC
+    logger.info("⚡ Applying feature_engineering.py to all assets...")
     processed_data = {}
     
     for ticker_yahoo in market_df.columns.levels[0]:
         try:
             df_ticker = market_df[ticker_yahoo].copy()
-            # Handle missing data
+            
+            # Data Cleaning for Feature Engineering
             if df_ticker['Close'].isnull().all(): continue
             
-            # Forward fill missing prices
-            df_ticker['Close'] = df_ticker['Close'].ffill()
+            # 1. Standardize Columns (enrich_data expects lowercase 'close')
+            df_ticker = df_ticker.rename(columns={'Close': 'close', 'Open': 'open', 'High': 'high', 'Low': 'low', 'Volume': 'volume'})
             
-            # Calc Indicators
-            df_ticker = calculate_technical_indicators(df_ticker)
+            # 2. Forward fill missing prices to prevent NaN gaps
+            df_ticker['close'] = df_ticker['close'].ffill()
+            
+            # 3. Handle Missing Sentiment
+            # If your market_data fetcher doesn't provide 'sentiment_score', we mock it
+            # so the script runs. (Ideally, fetch real sentiment here).
+            if 'sentiment_score' not in df_ticker.columns:
+                df_ticker['sentiment_score'] = 0.0 
+            
+            # 4. APPLY THE NEW LOGIC
+            # This adds: volatility_shock, sentiment_shock, trend_deviation, etc.
+            df_ticker = enrich_data(df_ticker)
+            
             processed_data[ticker_yahoo] = df_ticker
-        except Exception:
+            
+        except Exception as e:
+            # logger.warning(f"Skipping {ticker_yahoo}: {e}")
             continue
 
     # 4. Generate Snapshots
-    for i in range(len(dates) - 1):
+    # We skip the first 30 days to ensure the rolling windows have valid data
+    start_index = 30 
+    if len(dates) < start_index + 1:
+        logger.error("Not enough data points for rolling windows.")
+        return
+
+    for i in range(start_index, len(dates) - 1):
         current_date = dates[i]
         next_date = dates[i+1]
         date_str = current_date.strftime("%Y-%m-%d")
@@ -118,12 +109,18 @@ def generate_real_history():
         
         for node_idx in range(num_nodes):
             ticker_db = id_to_ticker.get(node_idx)
+            # Normalize Ticker format (Neo4j 'BRK.B' -> Yahoo 'BRK-B')
             ticker_yahoo = ticker_db.replace('.', '-') if ticker_db else None
             
-            # Defaults
-            feat_mom5 = 0.0; feat_mom20 = 0.0; feat_vol = 0.0; feat_rsi = 0.5
-            ret_next = 0.0; risk_class = 0; close = 100.0
-
+            # Defaults (Neutral values)
+            feat_vol_shock = 0.0
+            feat_sent_shock = 0.0
+            feat_trend = 0.0
+            feat_vol_mag = 0.0
+            
+            ret_next = 0.0
+            risk_class = 1 # Default to Neutral Risk
+            
             # --- EXTRACT FEATURES ---
             if ticker_yahoo and ticker_yahoo in processed_data:
                 try:
@@ -133,51 +130,68 @@ def generate_real_history():
                         today = df.loc[current_date]
                         nxt = df.loc[next_date]
                         
-                        # Features
-                        feat_mom5 = float(today['R_5'])
-                        feat_mom20 = float(today['R_20'])
-                        feat_vol = float(today['Vol_20'])
-                        feat_rsi = float(today['RSI_Norm'])
-                        close = float(today['Close'])
+                        # Extract the exact features created by enrich_data
+                        feat_vol_shock = float(today.get('volatility_shock', 0))
+                        feat_sent_shock = float(today.get('sentiment_shock', 0))
+                        feat_trend = float(today.get('trend_deviation', 0))
+                        feat_vol_mag = float(today.get('volatility_7d', 0))
                         
-                        # Target
+                        close = float(today['close'])
+                        
+                        # Calculate Target (Next Day Return)
                         if close > 0:
-                            ret_next = (float(nxt['Close']) - close) / close
+                            ret_next = (float(nxt['close']) - close) / close
                         
-                        # Risk Class Logic
-                        if ret_next >= 0: risk_class = 0      # Bullish
-                        elif ret_next > -0.02: risk_class = 1 # Neutral/Small Dip
-                        else: risk_class = 2                  # Crash (<-2%)
+                        # Risk Label Logic (Crash Detection)
+                        # We use -2% as the threshold for "High Risk" (Class 2)
+                        if ret_next < -0.02: 
+                            risk_class = 2  # Crash / High Risk
+                        elif ret_next > 0.01: 
+                            risk_class = 0  # Bullish / Low Risk
+                        else: 
+                            risk_class = 1  # Neutral
 
                 except Exception: pass
 
-            # Static Features from Neo4j (Market Cap, Macro Flag)
+            # Static Features from Neo4j (Preserve these context features)
             if base_data['Company'].x is not None:
                 base_feats = base_data['Company'].x[node_idx]
-                cap_norm = float(base_feats[0])
-                is_macro_val = float(base_feats[1])
+                cap_norm = float(base_feats[0])  # Market Cap
+                is_macro_val = float(base_feats[1]) # Macro Flag
             else:
                 cap_norm = 0.0; is_macro_val = 0.0
             
             # *** NEW FEATURE VECTOR (Size 6) ***
-            # [LogCap, IsMacro, Momentum5, Momentum20, Volatility, RSI]
-            new_features.append([cap_norm, is_macro_val, feat_mom5, feat_mom20, feat_vol, feat_rsi])
+            # Matches what we defined in train.py logic
+            # [MarketCap, IsMacro, VolatilityShock, SentimentShock, TrendDeviation, VolatilityMagnitude]
+            new_features.append([
+                cap_norm, 
+                is_macro_val, 
+                feat_vol_shock, 
+                feat_sent_shock, 
+                feat_trend, 
+                feat_vol_mag
+            ])
+            
             targets_return.append([ret_next])
             targets_risk.append(risk_class)
 
-        # Save
+        # Save to Snapshot Object
         daily_snapshot['Company'].x = torch.tensor(new_features, dtype=torch.float)
         daily_snapshot['Company'].y = torch.tensor(targets_return, dtype=torch.float)
         daily_snapshot['Company'].y_class = torch.tensor(targets_risk, dtype=torch.long)
         
+        # Ensure directory exists
+        os.makedirs(pipeline.snapshot_dir, exist_ok=True)
         save_path = os.path.join(pipeline.snapshot_dir, f"graph_snapshot_{date_str}.pt")
+        
         torch.save(daily_snapshot, save_path)
         generated_count += 1
         
         if generated_count % 10 == 0:
-            logger.info(f"   Saved {date_str} ({generated_count}/{len(dates)-1})")
+            logger.info(f"   Saved {date_str} ({generated_count} snapshots generated)")
 
-    logger.info(f"✅ Generated {generated_count} SMART snapshots with Technical Indicators.")
+    logger.info(f"✅ Generated {generated_count} synchronized snapshots ready for training.")
 
 if __name__ == "__main__":
     generate_real_history()
