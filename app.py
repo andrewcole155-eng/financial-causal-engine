@@ -936,8 +936,8 @@ def render_forecast_dashboard():
     """
     Hedge Fund Style Dashboard: 
     1. Top Bullish Picks (Alpha)
-    2. Sector Risk Heatmap (Aggregation - Z-Score Normalized)
-    3. Causal Spotlight (The "Why")
+    2. Top Bearish Picks (Shorts)
+    3. Sector Risk Heatmap
     """
     st.header("⚡ Alpha Command Center")
     st.caption("Market Intelligence & Causal Discovery Engine")
@@ -965,7 +965,7 @@ def render_forecast_dashboard():
 
     # 2. Enrich Data with Graph Metadata
     financial_graph = get_full_graph()
-    company_map = load_company_names() 
+    company_map = load_company_names()
     
     if financial_graph:
         sector_map = {}
@@ -988,9 +988,7 @@ def render_forecast_dashboard():
         df['Market_Cap'] = 10_000_000
         df['Name'] = df['ticker']
 
-    # --- Z-SCORE CALCULATION (The Fix) ---
-    # We calculate how many standard deviations a stock is from the mean risk.
-    # This forces contrast even if all raw scores are tight (e.g. 0.35 - 0.37).
+    # --- Z-SCORE CALCULATION ---
     mu = df['risk_score'].mean()
     sigma = df['risk_score'].std()
     
@@ -1000,38 +998,61 @@ def render_forecast_dashboard():
         df['z_score'] = (df['risk_score'] - mu) / sigma
 
     # ============================================================
-    # LAYOUT ROW 1: METRICS & BULLISH PICKS
+    # LAYOUT ROW 1: METRICS & TABLES
     # ============================================================
-    col_kpi, col_picks = st.columns([1, 2])
+    # We sort the ENTIRE dataframe once
+    df_sorted = df.sort_values(by='forecast_return', ascending=False)
+    
+    # Calculate KPIs
+    if not df_sorted.empty:
+        best_pick = df_sorted.iloc[0]
+        worst_pick = df_sorted.iloc[-1]
+    else:
+        best_pick = worst_pick = None
 
-    with col_kpi:
-        st.subheader("🎯 Key Metrics")
-        
-        df_sorted = df.sort_values(by='forecast_return', ascending=False)
-        if not df_sorted.empty:
-            top_bull = df_sorted.head(1).iloc[0]
-            top_bear = df_sorted.tail(1).iloc[0]
-            
-            st.metric("🚀 Top Alpha Pick", top_bull['ticker'], f"{top_bull['forecast_return']:.2%}")
-            st.metric("📉 Top Short Target", top_bear['ticker'], f"{top_bear['forecast_return']:.2%}")
-        
-        st.metric("⚠️ Avg Market Risk", f"{mu:.2f}", help="Raw average risk score (0-1)")
+    # --- METRICS BAR ---
+    col_m1, col_m2, col_m3 = st.columns(3)
+    with col_m1:
+        if best_pick is not None:
+            st.metric("🚀 Top Long", best_pick['ticker'], f"{best_pick['forecast_return']:.2%}")
+    with col_m2:
+        if worst_pick is not None:
+            st.metric("📉 Top Short", worst_pick['ticker'], f"{worst_pick['forecast_return']:.2%}")
+    with col_m3:
+         st.metric("⚠️ Avg Risk", f"{mu:.2f}", help="Average AI Risk Score (0-1)")
+    
+    st.divider()
 
-    with col_picks:
-        st.subheader("🚀 Top Bullish Picks")
-        st.caption("Assets with highest predicted upside (>0%).")
-        
-        bullish_df = df_sorted[df_sorted['forecast_return'] > 0].head(5)[['ticker', 'Sector', 'forecast_return', 'risk_score']]
+    # --- TABLES: LONG (Left) vs SHORT (Right) ---
+    col_long, col_short = st.columns(2)
+
+    with col_long:
+        st.subheader("🟢 Top Gainers (Forecast)")
+        # Show top 10 highest forecasts, regardless of whether they are > 0
+        long_df = df_sorted.head(10)[['ticker', 'forecast_return', 'risk_score']]
         
         st.dataframe(
-            bullish_df,
+            long_df,
             column_config={
                 "ticker": "Asset",
-                "Sector": "Sector",
                 "forecast_return": st.column_config.NumberColumn("Forecast %", format="%.2f %%"),
-                "risk_score": st.column_config.ProgressColumn(
-                    "Risk Profile", format="%.2f", min_value=0, max_value=1
-                ),
+                "risk_score": st.column_config.ProgressColumn("Risk", format="%.2f", min_value=0, max_value=1),
+            },
+            hide_index=True,
+            use_container_width=True
+        )
+
+    with col_short:
+        st.subheader("🔴 Top Decliners (Forecast)")
+        # Show bottom 10 forecasts (most negative)
+        short_df = df_sorted.tail(10).sort_values(by='forecast_return', ascending=True)[['ticker', 'forecast_return', 'risk_score']]
+        
+        st.dataframe(
+            short_df,
+            column_config={
+                "ticker": "Asset",
+                "forecast_return": st.column_config.NumberColumn("Forecast %", format="%.2f %%"),
+                "risk_score": st.column_config.ProgressColumn("Risk", format="%.2f", min_value=0, max_value=1),
             },
             hide_index=True,
             use_container_width=True
@@ -1047,20 +1068,18 @@ def render_forecast_dashboard():
     col_map, col_details = st.columns([3, 1])
 
     with col_map:
-        # Treemap Logic: Uses Z-SCORE for Color to ensure contrast
         try:
             fig = px.treemap(
                 df, 
                 path=[px.Constant("Market"), 'Sector', 'ticker'], 
                 values='Market_Cap', 
-                color='z_score', # <--- USING Z-SCORE NOW
-                color_continuous_scale='RdYlGn_r', # Red=High Z (Risky), Green=Low Z (Safe)
-                color_continuous_midpoint=0,       # Center on the Average (0)
-                custom_data=['risk_score', 'forecast_return'], # Pass raw data for tooltip
+                color='z_score', 
+                color_continuous_scale='RdYlGn_r', 
+                color_continuous_midpoint=0,       
+                custom_data=['risk_score', 'forecast_return'], 
                 title="Relative Risk Heatmap (Z-Score)"
             )
             
-            # Update tooltip to show REAL score, not just Z-score
             fig.update_traces(
                 hovertemplate='<b>%{label}</b><br>Raw Risk Score: %{customdata[0]:.4f}<br>Relative Deviation (Z): %{color:.2f}σ<br>Return Forecast: %{customdata[1]:.2%}'
             )
@@ -1073,19 +1092,13 @@ def render_forecast_dashboard():
     with col_details:
         st.markdown("### 🕸️ Inspect Causality")
         st.caption("Trace the hidden drivers of any asset.")
-
-        # --- UPDATED FILTER LOGIC (Matches Explore Graph) ---
         
         # 1. Prepare Sector List
         all_sectors = sorted(list(df['Sector'].unique()))
         if "Unknown" in all_sectors: all_sectors.remove("Unknown"); all_sectors.append("Unknown")
         
         # 2. Sector Selection
-        selected_sector_dash = st.selectbox(
-            "Filter by Sector:", 
-            ["All Sectors"] + all_sectors,
-            key="dash_sector_select"
-        )
+        selected_sector_dash = st.selectbox("Filter by Sector:", ["All Sectors"] + all_sectors, key="dash_sector_select")
         
         # 3. Filter Ticker Options
         if selected_sector_dash != "All Sectors":
@@ -1108,7 +1121,7 @@ def render_forecast_dashboard():
             key="dash_ticker_select"
         )
         
-        st.write("") # Spacer
+        st.write("") 
         if st.button("🔎 Explain This Stock", use_container_width=True):
             st.session_state.selected_ticker_for_graph = selected_ticker_dash
             st.toast(f"Loading Causal Graph for {selected_ticker_dash}...", icon="🚀")
