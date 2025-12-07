@@ -653,11 +653,15 @@ def get_full_graph():
         config = get_cloud_config_dict()
         temp_db = DatabaseManager(config)
         
-        # 1. Fetch Nodes
+        # 1. Fetch Nodes (ADDED: n.last_close)
         nodes_query = """
         MATCH (n:Company) 
-        RETURN n.ticker as id, n.name as name, n.sector as sector, 
-               n.market_cap as market_cap, n.is_macro as is_macro
+        RETURN n.ticker as id, 
+               n.name as name, 
+               n.sector as sector, 
+               n.market_cap as market_cap, 
+               n.is_macro as is_macro,
+               COALESCE(n.last_close, 0.0) as last_close
         """
         nodes_data = temp_db.execute_read(nodes_query)
         
@@ -681,13 +685,11 @@ def get_full_graph():
             raw_sector = n.get('sector', 'Unknown')
             if raw_sector is None: raw_sector = "Unknown"
             
-            # Basic cleaning
             clean_sector = raw_sector.title() 
             if "Pharmaceautical" in clean_sector: clean_sector = "Healthcare"
             if "Services Computer" in clean_sector: clean_sector = "Technology"
             if "Discovered" in clean_sector: clean_sector = "Watchlist"
             
-            # Force "Macro" sector for macro nodes
             if n.get('is_macro'): clean_sector = "Macro"
             
             G.add_node(
@@ -695,7 +697,8 @@ def get_full_graph():
                 name=n.get('name', n['id']),
                 sector=clean_sector,
                 market_cap=n.get('market_cap', 0),
-                is_macro=n.get('is_macro', False)
+                is_macro=n.get('is_macro', False),
+                last_close=n.get('last_close', 0.0) # <--- Storing Price Here
             )
             
         # 4. Add Edges
@@ -707,14 +710,11 @@ def get_full_graph():
                 verification_status=e.get('verification_status')
             )
             
-        # ==============================================================================
-        # 🧹 NOISE REDUCTION (UPDATED TO PROTECT MACRO NODES)
-        # ==============================================================================
+        # 5. Noise Reduction (Keep Macro)
         suspicious_parents = ['SNAP', 'V', 'META', 'GOOGL', 'GOOG', 'AMZN', 'ADBE', 'CRM', 'MA'] 
         edges_to_remove = []
         
         for u, v, data in G.edges(data=True):
-            # SKIP check if either node is a Macro node (we want to keep those!)
             if G.nodes[u].get('is_macro') or G.nodes[v].get('is_macro'):
                 continue
 
@@ -726,18 +726,13 @@ def get_full_graph():
                 edges_to_remove.append((u, v))
                 continue
                 
-            # Cross-Sector Penalty
             if sector_u != 'Unknown' and sector_v != 'Unknown':
                 if sector_u != sector_v and weight < 0.75:
                     edges_to_remove.append((u, v))
 
         if edges_to_remove:
             G.remove_edges_from(edges_to_remove)
-            logger.info(f"🧹 Pruned {len(edges_to_remove)} noisy edges (Macro nodes protected).")
-        # ==============================================================================
 
-        logger.info(f"✅ Loaded {G.number_of_nodes()} nodes from Neo4j.")
-        
         return inject_live_risk_data(G)
 
     except Exception as e:
@@ -971,6 +966,7 @@ def render_forecast_dashboard():
         sector_map = {}
         cap_map = {}
         name_map = {}
+        price_map = {} # <--- New Map
         
         for n in financial_graph.nodes():
             sector_map[n] = financial_graph.nodes[n].get('sector', 'Unknown')
@@ -978,14 +974,20 @@ def render_forecast_dashboard():
             if cap is None or cap == 0: cap = 10_000_000 
             cap_map[n] = cap
             name_map[n] = financial_graph.nodes[n].get('name', n)
+            price_map[n] = financial_graph.nodes[n].get('last_close', 0.0) # <--- Get Price
 
         df['Sector'] = df['ticker'].map(sector_map).fillna('Unknown')
         df['Market_Cap'] = df['ticker'].map(cap_map).fillna(10_000_000)
         df['Name'] = df['ticker'].map(name_map).fillna(df['ticker'])
+        df['Current_Price'] = df['ticker'].map(price_map).fillna(0.0)
     else:
         df['Sector'] = 'Unknown'
         df['Market_Cap'] = 10_000_000
         df['Name'] = df['ticker']
+        df['Current_Price'] = 0.0
+
+    # 3. Calculate Target Price
+    df['Target_Price'] = df['Current_Price'] * (1 + df['forecast_return'])
 
     # --- Z-SCORE CALCULATION ---
     mu = df['risk_score'].mean()
@@ -997,23 +999,17 @@ def render_forecast_dashboard():
         df['z_score'] = (df['risk_score'] - mu) / sigma
 
     # ============================================================
-    # 0. DASHBOARD FILTERS (NEW SECTION)
+    # 0. DASHBOARD FILTERS
     # ============================================================
     with st.expander("🔍 Filter Dashboard", expanded=False):
         col_f1, col_f2 = st.columns(2)
         
-        # 1. Sector Filter
         all_sectors = sorted(list(df['Sector'].unique()))
         if "Unknown" in all_sectors: all_sectors.remove("Unknown"); all_sectors.append("Unknown")
         
         with col_f1:
-            selected_sector_view = st.selectbox(
-                "Filter by Sector:", 
-                ["All Sectors"] + all_sectors,
-                key="dash_view_sector"
-            )
+            selected_sector_view = st.selectbox("Filter by Sector:", ["All Sectors"] + all_sectors, key="dash_view_sector")
         
-        # 2. Asset Filter (Dependent on Sector)
         if selected_sector_view != "All Sectors":
             view_df = df[df['Sector'] == selected_sector_view]
         else:
@@ -1033,7 +1029,6 @@ def render_forecast_dashboard():
                 key="dash_view_asset"
             )
 
-        # Apply Filters to the Main DataFrame used for Metrics & Tables
         filtered_main_df = view_df
         if selected_asset_view != "All Assets":
             filtered_main_df = view_df[view_df['ticker'] == selected_asset_view]
@@ -1041,10 +1036,8 @@ def render_forecast_dashboard():
     # ============================================================
     # LAYOUT ROW 1: METRICS & TABLES
     # ============================================================
-    # Use filtered_main_df for sorting and metrics
     df_sorted = filtered_main_df.sort_values(by='forecast_return', ascending=False)
     
-    # Calculate KPIs
     if not df_sorted.empty:
         best_pick = df_sorted.iloc[0]
         worst_pick = df_sorted.iloc[-1]
@@ -1053,7 +1046,6 @@ def render_forecast_dashboard():
         best_pick = worst_pick = None
         avg_risk_val = 0.0
 
-    # --- METRICS BAR ---
     col_m1, col_m2, col_m3 = st.columns(3)
     with col_m1:
         if best_pick is not None:
@@ -1073,56 +1065,45 @@ def render_forecast_dashboard():
     # --- TABLES: LONG (Left) vs SHORT (Right) ---
     col_long, col_short = st.columns(2)
 
+    # Column Config for display
+    # We display: Ticker, Current $, Forecast %, Target $, Risk
+    cols_to_show = ['ticker', 'Sector', 'Current_Price', 'forecast_return', 'Target_Price', 'risk_score']
+    
+    table_config = {
+        "ticker": "Asset",
+        "Current_Price": st.column_config.NumberColumn("Price", format="$%.2f"),
+        "forecast_return": st.column_config.NumberColumn("Forecast %", format="%.2f %%"),
+        "Target_Price": st.column_config.NumberColumn("Target $", format="$%.2f"),
+        "risk_score": st.column_config.ProgressColumn("Risk", format="%.2f", min_value=0, max_value=1),
+    }
+
     with col_long:
         st.subheader("🟢 Top Gainers (Forecast)")
         if not df_sorted.empty:
-            long_df = df_sorted.head(10)[['ticker', 'Sector', 'forecast_return', 'risk_score']]
-            st.dataframe(
-                long_df,
-                column_config={
-                    "ticker": "Asset",
-                    "forecast_return": st.column_config.NumberColumn("Forecast %", format="%.2f %%"),
-                    "risk_score": st.column_config.ProgressColumn("Risk", format="%.2f", min_value=0, max_value=1),
-                },
-                hide_index=True,
-                use_container_width=True
-            )
+            long_df = df_sorted.head(10)[cols_to_show]
+            st.dataframe(long_df, column_config=table_config, hide_index=True, use_container_width=True)
         else:
             st.info("No assets match current filters.")
 
     with col_short:
         st.subheader("🔴 Top Decliners (Forecast)")
         if not df_sorted.empty:
-            short_df = df_sorted.tail(10).sort_values(by='forecast_return', ascending=True)[['ticker', 'Sector', 'forecast_return', 'risk_score']]
-            st.dataframe(
-                short_df,
-                column_config={
-                    "ticker": "Asset",
-                    "forecast_return": st.column_config.NumberColumn("Forecast %", format="%.2f %%"),
-                    "risk_score": st.column_config.ProgressColumn("Risk", format="%.2f", min_value=0, max_value=1),
-                },
-                hide_index=True,
-                use_container_width=True
-            )
+            short_df = df_sorted.tail(10).sort_values(by='forecast_return', ascending=True)[cols_to_show]
+            st.dataframe(short_df, column_config=table_config, hide_index=True, use_container_width=True)
         else:
             st.info("No assets match current filters.")
 
     st.divider()
 
     # ============================================================
-    # LAYOUT ROW 2: RISK HEATMAP & CAUSAL EXPLORER LINK
+    # LAYOUT ROW 2: RISK HEATMAP
     # ============================================================
     st.subheader("🗺️ Sector Risk Map")
-    
     col_map, col_details = st.columns([3, 1])
 
     with col_map:
         try:
-            # We use the FULL DF for the heatmap so context isn't lost, 
-            # unless the user specifically wants to drill down.
-            # Using 'view_df' (Sector filtered) keeps the heatmap relevant to the sector.
             map_data = view_df if not view_df.empty else df
-
             fig = px.treemap(
                 map_data, 
                 path=[px.Constant("Market"), 'Sector', 'ticker'], 
@@ -1130,12 +1111,12 @@ def render_forecast_dashboard():
                 color='z_score', 
                 color_continuous_scale='RdYlGn_r', 
                 color_continuous_midpoint=0,       
-                custom_data=['risk_score', 'forecast_return'], 
+                custom_data=['risk_score', 'forecast_return', 'Current_Price'], # Added Price to tooltip
                 title="Relative Risk Heatmap (Z-Score)"
             )
             
             fig.update_traces(
-                hovertemplate='<b>%{label}</b><br>Raw Risk Score: %{customdata[0]:.4f}<br>Relative Deviation (Z): %{color:.2f}σ<br>Return Forecast: %{customdata[1]:.2%}'
+                hovertemplate='<b>%{label}</b><br>Price: $%{customdata[2]:.2f}<br>Risk Score: %{customdata[0]:.4f}<br>Forecast: %{customdata[1]:.2%}'
             )
             fig.update_layout(template="plotly_dark", margin=dict(t=30, l=0, r=0, b=0), height=450)
             st.plotly_chart(fig, use_container_width=True)
@@ -1145,10 +1126,6 @@ def render_forecast_dashboard():
 
     with col_details:
         st.markdown("### 🕸️ Inspect Causality")
-        st.caption("Trace the hidden drivers of any asset.")
-        
-        # Reuse the filters from above or allow independent selection
-        # Here we default to the dashboard selection to make it smooth
         default_idx = 0
         current_opts = list(view_df['ticker'].unique())
         
