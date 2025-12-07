@@ -1,5 +1,5 @@
 # ==============================================================================
-# --- MARKET DATA ENGINE (Neo4j Direct Write Version) ---
+# --- MARKET DATA ENGINE (Real-World History Version) ---
 # ==============================================================================
 import yfinance as yf
 import pandas as pd
@@ -14,7 +14,8 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 logger = logging.getLogger("MarketData")
 
 # --- CONFIGURATION ---
-HISTORY_PERIOD = "6mo"  # Look back 6 months to judge volatility
+HISTORY_PERIOD = "6mo"  # General lookback for risk scores
+DETAILED_HISTORY = "3mo" # Lookback for GNN training sequences (Need ~60 days)
 RISK_LOOKBACK = 20      # Calculate volatility over the last 20 trading days
 
 def load_config():
@@ -32,7 +33,6 @@ def load_tickers_from_db(config):
     """Fetches all tickers currently in your Neo4j Graph."""
     try:
         db = DatabaseManager(config)
-        # Quick query to get all unique tickers
         query = "MATCH (n:Company) RETURN DISTINCT n.ticker as ticker"
         results = db.execute_read(query)
         db.close()
@@ -63,6 +63,50 @@ def calculate_technical_risk(df):
     
     return current_volatility, current_rsi
 
+# ==============================================================================
+# --- NEW FUNCTION: FETCH FULL HISTORY FOR GNN ---
+# ==============================================================================
+def fetch_historical_data(config=None, period=DETAILED_HISTORY):
+    """
+    Downloads detailed daily OHLCV data for ALL tickers.
+    Returns a pandas DataFrame indexed by Date with MultiIndex columns (Ticker, Price).
+    Used by 'generate_real_history.py'.
+    """
+    if config is None: config = load_config()
+    raw_tickers = load_tickers_from_db(config)
+    
+    if not raw_tickers: return None
+
+    # Clean Tickers
+    yahoo_tickers = []
+    ticker_map = {}
+    for t in raw_tickers:
+        if any(prefix in t for prefix in ["X:", "C:", "I:"]): continue # Skip non-stocks
+        yahoo_t = t.replace('.', '-')
+        yahoo_tickers.append(yahoo_t)
+        ticker_map[yahoo_t] = t
+
+    logger.info(f"⬇️  Fetching {period} of daily history for {len(yahoo_tickers)} assets...")
+    
+    try:
+        # Download all at once
+        data = yf.download(yahoo_tickers, period=period, group_by='ticker', threads=True)
+        
+        # Validation
+        if data.empty:
+            logger.error("❌ YFinance returned empty data.")
+            return None
+            
+        logger.info(f"✅ Downloaded data shape: {data.shape}")
+        return data, ticker_map
+
+    except Exception as e:
+        logger.error(f"❌ History Download failed: {e}")
+        return None, None
+
+# ==============================================================================
+# --- EXISTING FUNCTION: UPDATE CURRENT RISK (Unchanged logic) ---
+# ==============================================================================
 def update_risk_scores():
     # 1. Load Config
     config = load_config()
@@ -78,12 +122,10 @@ def update_risk_scores():
     
     skipped_count = 0
     for t in raw_tickers:
-        # Skip non-stock assets
         if any(prefix in t for prefix in ["X:", "C:", "I:"]):
             skipped_count += 1
             continue 
             
-        # Fix Dot to Dash (BRK.B -> BRK-B)
         yahoo_t = t.replace('.', '-')
         yahoo_tickers.append(yahoo_t)
         ticker_map[yahoo_t] = t 
@@ -147,18 +189,15 @@ def update_risk_scores():
     results_df['Risk_Score'] = (results_df['Vol_Score'] * 0.7) + (results_df['RSI_Risk'] * 0.3)
     results_df['Risk_Score'] = results_df['Risk_Score'].clip(0, 1)
 
-    # 6. WRITE TO NEO4J (Replacing CSV)
+    # 6. WRITE TO NEO4J
     logger.info("💾 Writing risk scores directly to Neo4j...")
     
-    # Convert DataFrame to list of dicts for Cypher UNWIND
-    # We rename columns to match simple variable names for the query
     batch_data = results_df[['Ticker', 'Risk_Score']].rename(
         columns={'Ticker': 'ticker', 'Risk_Score': 'score'}
     ).to_dict('records')
     
     db = DatabaseManager(config)
     
-    # Efficient Batch Update Query
     query = """
     UNWIND $batch AS row
     MATCH (c:Company {ticker: row.ticker})
@@ -169,14 +208,6 @@ def update_risk_scores():
     try:
         db.execute_write(query, batch=batch_data)
         logger.info(f"✅ Successfully updated {len(batch_data)} nodes in Neo4j.")
-        
-        # Log Top/Bottom for sanity check
-        if not results_df.empty:
-            riskiest = results_df.sort_values('Risk_Score', ascending=False).iloc[0]['Ticker']
-            safest = results_df.sort_values('Risk_Score', ascending=True).iloc[0]['Ticker']
-            logger.info(f"🔥 Riskiest: {riskiest}")
-            logger.info(f"🛡️  Safest:   {safest}")
-            
     except Exception as e:
         logger.error(f"❌ Failed to write to Neo4j: {e}")
     finally:

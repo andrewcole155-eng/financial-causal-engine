@@ -1,71 +1,80 @@
 import torch
-import torch.nn.functional as F
-# UPDATE: We import GATv2Conv for the Attention mechanism
-from torch_geometric.nn import SAGEConv, HeteroConv, GATv2Conv
+import torch.nn as nn
+from torch_geometric.nn import HeteroConv, GATv2Conv
 from torch_geometric.data import HeteroData
+from typing import List, Union, Tuple
 
-# 1. The Main HeteroGNN Model
-# We use GATv2 (Graph Attention) to allow the model to learn "sensitivity" (Edge Weights).
-# This allows the model to decide that "Interest Rates" matter more for Tech than Energy.
-class HeteroGNN(torch.nn.Module):
-    def __init__(self, metadata, hidden_dim, out_dim):
+# ---------------------------------------------------------
+# COMPONENT 1: SPATIAL ENCODER (Unchanged)
+# ---------------------------------------------------------
+class SpatialGAT(nn.Module):
+    def __init__(self, metadata, hidden_dim):
         super().__init__()
-        
-        # metadata[0] = node_types (e.g., ['Company', 'Event'])
-        # metadata[1] = edge_types (e.g., [('Company', 'HAD_EVENT', 'Event'), ...])
-        
-        # --- Layer 1: Attention Layer ---
-        # We replace SAGEConv with GATv2Conv.
-        # - heads=1: Keeps output dimension equal to hidden_dim (simplifies stacking).
-        # - add_self_loops=False: CRITICAL for Hetero graphs to prevent shape mismatch errors.
         self.conv1 = HeteroConv({
             edge_type: GATv2Conv((-1, -1), hidden_dim, heads=1, add_self_loops=False)
             for edge_type in metadata[1]
         }, aggr='sum')
 
-        # --- Layer 2: Refinement Layer ---
         self.conv2 = HeteroConv({
             edge_type: GATv2Conv((-1, -1), hidden_dim, heads=1, add_self_loops=False)
             for edge_type in metadata[1]
         }, aggr='sum')
 
-        # --- Final Output Layer ---
-        # We only want to classify 'Company' nodes (Low/Med/High Risk)
-        self.output_layer = torch.nn.Linear(hidden_dim, out_dim)
-
     def forward(self, x_dict, edge_index_dict):
-        # --- Run Layer 1 ---
-        # The GAT layer automatically calculates attention weights (alphas) during this pass.
         x_dict = self.conv1(x_dict, edge_index_dict)
-        
-        # Apply ReLU to every node type in the dictionary
         x_dict = {key: x.relu() for key, x in x_dict.items()}
-
-        # --- Run Layer 2 ---
         x_dict = self.conv2(x_dict, edge_index_dict)
-        
-        # Apply ReLU again
         x_dict = {key: x.relu() for key, x in x_dict.items()}
+        return x_dict
 
-        # --- Get Company Output ---
-        # We isolate the 'Company' nodes for the final prediction
-        if 'Company' not in x_dict:
-            # Safety check: if Company nodes got filtered out or lost
-            raise ValueError("Company nodes missing from message passing output!")
-            
-        company_x = x_dict['Company']
+# ---------------------------------------------------------
+# COMPONENT 2: MULTI-TASK TEMPORAL PREDICTOR
+# ---------------------------------------------------------
+class MultiTaskTemporalGNN(nn.Module):
+    def __init__(self, metadata, hidden_dim, num_risk_classes=3):
+        super().__init__()
+        
+        # Shared Layers (The Brain)
+        self.spatial_encoder = SpatialGAT(metadata, hidden_dim)
+        self.lstm = nn.LSTM(input_size=hidden_dim, 
+                            hidden_size=hidden_dim, 
+                            num_layers=1, 
+                            batch_first=True)
+        
+        # HEAD 1: Forecasting (Regression) -> Output: 1 value (Price Return)
+        self.forecast_head = nn.Linear(hidden_dim, 1)
+        
+        # HEAD 2: Risk (Classification) -> Output: 3 values (Logits for Low/Med/High)
+        self.risk_head = nn.Linear(hidden_dim, num_risk_classes)
 
-        # --- Run Output Layer ---
-        out = self.output_layer(company_x)
+    def forward(self, snapshots: Union[List[HeteroData], HeteroData]) -> Tuple[torch.Tensor, torch.Tensor]:
+        if not isinstance(snapshots, list):
+            snapshots = [snapshots]
 
-        # Return raw logits for CrossEntropyLoss
-        return out
+        temporal_embeddings = []
 
-# 2. Factory function called by train.py
-def create_hetero_model(data: HeteroData, hidden_dim=64, out_dim=3) -> torch.nn.Module:
-    """
-    Helper function to initialize the HeteroGNN.
-    """
-    # Pass metadata (node types and edge types) so the model knows what layers to build
-    model = HeteroGNN(data.metadata(), hidden_dim, out_dim)
+        # 1. Spatial Pass
+        for day_data in snapshots:
+            all_node_embs = self.spatial_encoder(day_data.x_dict, day_data.edge_index_dict)
+            if 'Company' not in all_node_embs:
+                raise ValueError("Company nodes missing!")
+            temporal_embeddings.append(all_node_embs['Company'])
+
+        # 2. Temporal Pass
+        seq_tensor = torch.stack(temporal_embeddings, dim=0).permute(1, 0, 2)
+        _, (hidden_state, _) = self.lstm(seq_tensor)
+        final_embedding = hidden_state[-1] 
+
+        # 3. Multi-Head Output
+        # Forecast: Continuous value
+        forecast_out = self.forecast_head(final_embedding) 
+        
+        # Risk: Class logits
+        risk_out = self.risk_head(final_embedding) 
+        
+        return forecast_out, risk_out
+
+def create_hetero_model(data: HeteroData, hidden_dim=64, out_dim=None) -> nn.Module:
+    # out_dim is ignored here as we hardcode the 2 heads
+    model = MultiTaskTemporalGNN(data.metadata(), hidden_dim, num_risk_classes=3)
     return model
