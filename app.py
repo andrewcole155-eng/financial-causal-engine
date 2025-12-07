@@ -966,20 +966,31 @@ def render_forecast_dashboard():
     # 2. Enrich Data with Graph Metadata (Sectors & Market Cap)
     # We need the graph to know which sector a stock belongs to for the Heatmap
     financial_graph = get_full_graph()
+    company_map = load_company_names() # Load names for the dropdown formatter
     
     if financial_graph:
         # Map Ticker -> Sector & Market Cap
         sector_map = {}
         cap_map = {}
+        name_map = {}
+        
         for n in financial_graph.nodes():
+            # Get Sector
             sector_map[n] = financial_graph.nodes[n].get('sector', 'Unknown')
-            cap_map[n] = financial_graph.nodes[n].get('market_cap', 1000000) # Default small cap if missing
+            # Get Market Cap (Handle 0 or None for visualization)
+            cap = financial_graph.nodes[n].get('market_cap', 0)
+            if cap is None or cap == 0: cap = 10_000_000 # Default visual size for assets without cap (e.g. Indices)
+            cap_map[n] = cap
+            # Get Name
+            name_map[n] = financial_graph.nodes[n].get('name', n)
 
         df['Sector'] = df['ticker'].map(sector_map).fillna('Unknown')
-        df['Market_Cap'] = df['ticker'].map(cap_map).fillna(1000000)
+        df['Market_Cap'] = df['ticker'].map(cap_map).fillna(10_000_000)
+        df['Name'] = df['ticker'].map(name_map).fillna(df['ticker'])
     else:
         df['Sector'] = 'Unknown'
-        df['Market_Cap'] = 1000000
+        df['Market_Cap'] = 10_000_000
+        df['Name'] = df['ticker']
 
     # ============================================================
     # LAYOUT ROW 1: METRICS & BULLISH PICKS
@@ -991,12 +1002,14 @@ def render_forecast_dashboard():
         
         # Sort data
         df_sorted = df.sort_values(by='forecast_return', ascending=False)
-        top_bull = df_sorted.head(1).iloc[0]
-        top_bear = df_sorted.tail(1).iloc[0]
+        if not df_sorted.empty:
+            top_bull = df_sorted.head(1).iloc[0]
+            top_bear = df_sorted.tail(1).iloc[0]
+            
+            # KPI Cards
+            st.metric("🚀 Top Alpha Pick", top_bull['ticker'], f"{top_bull['forecast_return']:.2%}")
+            st.metric("📉 Top Short Target", top_bear['ticker'], f"{top_bear['forecast_return']:.2%}")
         
-        # KPI Cards
-        st.metric("🚀 Top Alpha Pick", top_bull['ticker'], f"{top_bull['forecast_return']:.2%}")
-        st.metric("📉 Top Short Target", top_bear['ticker'], f"{top_bear['forecast_return']:.2%}")
         st.metric("⚠️ Avg Market Risk", f"{df['risk_score'].mean():.2f}", help="0=Safe, 1=Systemic Collapse")
 
     with col_picks:
@@ -1040,19 +1053,30 @@ def render_forecast_dashboard():
         # Treemap Logic
         # Size = Market Cap (Importance), Color = Risk Score (Heat)
         try:
+            # Determine color range dynamically to ensure contrast
+            # If all scores are 0.37, we want to see small variations or default to 0-1
+            min_risk = df['risk_score'].min()
+            max_risk = df['risk_score'].max()
+            
+            # If data is flat (all same risk), fallback to 0-1 to avoid Plotly errors
+            if max_risk == min_risk:
+                c_min, c_max = 0, 1
+            else:
+                c_min, c_max = min_risk, max_risk
+
             fig = px.treemap(
                 df, 
                 path=[px.Constant("Market"), 'Sector', 'ticker'], 
                 values='Market_Cap', 
                 color='risk_score',
                 color_continuous_scale='RdYlGn_r', # Red (High Risk) to Green (Low Risk)
-                color_continuous_midpoint=0.5,
+                range_color=[c_min, c_max],        # Dynamic range to fix "All Green" issue
                 hover_data=['forecast_return'],
-                title="Market Risk Heatmap (Size=Cap, Color=Risk)"
+                title="Market Risk Heatmap (Size=Market Cap, Color=Relative Risk)"
             )
             
             fig.update_traces(
-                hovertemplate='<b>%{label}</b><br>Risk Score: %{color:.2f}<br>Return Forecast: %{customdata[0]:.2%}'
+                hovertemplate='<b>%{label}</b><br>Risk Score: %{color:.4f}<br>Return Forecast: %{customdata[0]:.2%}'
             )
             fig.update_layout(template="plotly_dark", margin=dict(t=30, l=0, r=0, b=0), height=450)
             st.plotly_chart(fig, use_container_width=True)
@@ -1061,23 +1085,49 @@ def render_forecast_dashboard():
             st.error(f"Could not render heatmap: {e}")
 
     with col_details:
-        st.info("ℹ️ **How to read:**")
-        st.markdown("""
-        * **Box Size:** Market Cap (Relative importance).
-        * **Color:** * 🟥 **Red:** High AI Risk Score.
-            * 🟩 **Green:** Low AI Risk Score.
-        """)
-        
         st.markdown("### 🕸️ Inspect Causality")
-        selected_ticker_dash = st.selectbox("Trace specific asset:", df['ticker'].unique())
+        st.caption("Trace the hidden drivers of any asset.")
+
+        # --- UPDATED FILTER LOGIC (Matches Explore Graph) ---
         
-        if st.button("🔎 Explain This Stock"):
+        # 1. Prepare Sector List
+        all_sectors = sorted(list(df['Sector'].unique()))
+        if "Unknown" in all_sectors: all_sectors.remove("Unknown"); all_sectors.append("Unknown")
+        
+        # 2. Sector Selection
+        selected_sector_dash = st.selectbox(
+            "Filter by Sector:", 
+            ["All Sectors"] + all_sectors,
+            key="dash_sector_select"
+        )
+        
+        # 3. Filter Ticker Options
+        if selected_sector_dash != "All Sectors":
+            filtered_df = df[df['Sector'] == selected_sector_dash]
+        else:
+            filtered_df = df
+            
+        # Create formatter for the dropdown
+        def format_dash_ticker(ticker):
+            row = df[df['ticker'] == ticker]
+            if not row.empty:
+                return f"{row.iloc[0]['Name']} ({ticker})"
+            return ticker
+
+        # 4. Ticker Selection
+        selected_ticker_dash = st.selectbox(
+            "Select Asset:", 
+            filtered_df['ticker'].unique(),
+            format_func=format_dash_ticker,
+            key="dash_ticker_select"
+        )
+        
+        st.write("") # Spacer
+        if st.button("🔎 Explain This Stock", use_container_width=True):
             # Set session state to trigger the Explore tab
             st.session_state.selected_ticker_for_graph = selected_ticker_dash
             st.toast(f"Loading Causal Graph for {selected_ticker_dash}...", icon="🚀")
-            # We can't auto-switch tabs in Streamlit easily without custom JS, 
-            # so we give a clear instruction.
-            st.info(f"Go to the **'🗺️ Explore Graph'** tab to see the causal web for **{selected_ticker_dash}**.")
+            st.info(f"Go to the **'🗺️ Explore Graph'** tab to view results.")
 
 # ==============================================================================
 # --- MAIN STREAMLIT APPLICATION ---
