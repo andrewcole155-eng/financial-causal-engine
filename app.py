@@ -936,7 +936,7 @@ def render_forecast_dashboard():
     """
     Hedge Fund Style Dashboard: 
     1. Top Bullish Picks (Alpha)
-    2. Sector Risk Heatmap (Aggregation)
+    2. Sector Risk Heatmap (Aggregation - Z-Score Normalized)
     3. Causal Spotlight (The "Why")
     """
     st.header("⚡ Alpha Command Center")
@@ -963,25 +963,21 @@ def render_forecast_dashboard():
         st.error(f"Error loading forecasts: {e}")
         return
 
-    # 2. Enrich Data with Graph Metadata (Sectors & Market Cap)
-    # We need the graph to know which sector a stock belongs to for the Heatmap
+    # 2. Enrich Data with Graph Metadata
     financial_graph = get_full_graph()
-    company_map = load_company_names() # Load names for the dropdown formatter
+    company_map = load_company_names() 
     
     if financial_graph:
-        # Map Ticker -> Sector & Market Cap
         sector_map = {}
         cap_map = {}
         name_map = {}
         
         for n in financial_graph.nodes():
-            # Get Sector
             sector_map[n] = financial_graph.nodes[n].get('sector', 'Unknown')
-            # Get Market Cap (Handle 0 or None for visualization)
+            # Handle Market Cap for visualization sizing
             cap = financial_graph.nodes[n].get('market_cap', 0)
-            if cap is None or cap == 0: cap = 10_000_000 # Default visual size for assets without cap (e.g. Indices)
+            if cap is None or cap == 0: cap = 10_000_000 
             cap_map[n] = cap
-            # Get Name
             name_map[n] = financial_graph.nodes[n].get('name', n)
 
         df['Sector'] = df['ticker'].map(sector_map).fillna('Unknown')
@@ -992,6 +988,17 @@ def render_forecast_dashboard():
         df['Market_Cap'] = 10_000_000
         df['Name'] = df['ticker']
 
+    # --- Z-SCORE CALCULATION (The Fix) ---
+    # We calculate how many standard deviations a stock is from the mean risk.
+    # This forces contrast even if all raw scores are tight (e.g. 0.35 - 0.37).
+    mu = df['risk_score'].mean()
+    sigma = df['risk_score'].std()
+    
+    if sigma == 0:
+        df['z_score'] = 0
+    else:
+        df['z_score'] = (df['risk_score'] - mu) / sigma
+
     # ============================================================
     # LAYOUT ROW 1: METRICS & BULLISH PICKS
     # ============================================================
@@ -1000,40 +1007,30 @@ def render_forecast_dashboard():
     with col_kpi:
         st.subheader("🎯 Key Metrics")
         
-        # Sort data
         df_sorted = df.sort_values(by='forecast_return', ascending=False)
         if not df_sorted.empty:
             top_bull = df_sorted.head(1).iloc[0]
             top_bear = df_sorted.tail(1).iloc[0]
             
-            # KPI Cards
             st.metric("🚀 Top Alpha Pick", top_bull['ticker'], f"{top_bull['forecast_return']:.2%}")
             st.metric("📉 Top Short Target", top_bear['ticker'], f"{top_bear['forecast_return']:.2%}")
         
-        st.metric("⚠️ Avg Market Risk", f"{df['risk_score'].mean():.2f}", help="0=Safe, 1=Systemic Collapse")
+        st.metric("⚠️ Avg Market Risk", f"{mu:.2f}", help="Raw average risk score (0-1)")
 
     with col_picks:
         st.subheader("🚀 Top Bullish Picks")
         st.caption("Assets with highest predicted upside (>0%).")
         
-        # Filter for positive returns
         bullish_df = df_sorted[df_sorted['forecast_return'] > 0].head(5)[['ticker', 'Sector', 'forecast_return', 'risk_score']]
         
-        # Display as a clean, styled dataframe
         st.dataframe(
             bullish_df,
             column_config={
                 "ticker": "Asset",
                 "Sector": "Sector",
-                "forecast_return": st.column_config.NumberColumn(
-                    "Forecast %",
-                    format="%.2f %%"
-                ),
+                "forecast_return": st.column_config.NumberColumn("Forecast %", format="%.2f %%"),
                 "risk_score": st.column_config.ProgressColumn(
-                    "Risk Profile",
-                    format="%.2f",
-                    min_value=0,
-                    max_value=1,
+                    "Risk Profile", format="%.2f", min_value=0, max_value=1
                 ),
             },
             hide_index=True,
@@ -1050,33 +1047,22 @@ def render_forecast_dashboard():
     col_map, col_details = st.columns([3, 1])
 
     with col_map:
-        # Treemap Logic
-        # Size = Market Cap (Importance), Color = Risk Score (Heat)
+        # Treemap Logic: Uses Z-SCORE for Color to ensure contrast
         try:
-            # Determine color range dynamically to ensure contrast
-            # If all scores are 0.37, we want to see small variations or default to 0-1
-            min_risk = df['risk_score'].min()
-            max_risk = df['risk_score'].max()
-            
-            # If data is flat (all same risk), fallback to 0-1 to avoid Plotly errors
-            if max_risk == min_risk:
-                c_min, c_max = 0, 1
-            else:
-                c_min, c_max = min_risk, max_risk
-
             fig = px.treemap(
                 df, 
                 path=[px.Constant("Market"), 'Sector', 'ticker'], 
                 values='Market_Cap', 
-                color='risk_score',
-                color_continuous_scale='RdYlGn_r', # Red (High Risk) to Green (Low Risk)
-                range_color=[c_min, c_max],        # Dynamic range to fix "All Green" issue
-                hover_data=['forecast_return'],
-                title="Market Risk Heatmap (Size=Market Cap, Color=Relative Risk)"
+                color='z_score', # <--- USING Z-SCORE NOW
+                color_continuous_scale='RdYlGn_r', # Red=High Z (Risky), Green=Low Z (Safe)
+                color_continuous_midpoint=0,       # Center on the Average (0)
+                custom_data=['risk_score', 'forecast_return'], # Pass raw data for tooltip
+                title="Relative Risk Heatmap (Z-Score)"
             )
             
+            # Update tooltip to show REAL score, not just Z-score
             fig.update_traces(
-                hovertemplate='<b>%{label}</b><br>Risk Score: %{color:.4f}<br>Return Forecast: %{customdata[0]:.2%}'
+                hovertemplate='<b>%{label}</b><br>Raw Risk Score: %{customdata[0]:.4f}<br>Relative Deviation (Z): %{color:.2f}σ<br>Return Forecast: %{customdata[1]:.2%}'
             )
             fig.update_layout(template="plotly_dark", margin=dict(t=30, l=0, r=0, b=0), height=450)
             st.plotly_chart(fig, use_container_width=True)
@@ -1107,7 +1093,7 @@ def render_forecast_dashboard():
         else:
             filtered_df = df
             
-        # Create formatter for the dropdown
+        # Create formatter
         def format_dash_ticker(ticker):
             row = df[df['ticker'] == ticker]
             if not row.empty:
@@ -1124,7 +1110,6 @@ def render_forecast_dashboard():
         
         st.write("") # Spacer
         if st.button("🔎 Explain This Stock", use_container_width=True):
-            # Set session state to trigger the Explore tab
             st.session_state.selected_ticker_for_graph = selected_ticker_dash
             st.toast(f"Loading Causal Graph for {selected_ticker_dash}...", icon="🚀")
             st.info(f"Go to the **'🗺️ Explore Graph'** tab to view results.")
