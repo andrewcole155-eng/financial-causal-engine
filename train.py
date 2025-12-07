@@ -64,7 +64,7 @@ class MultiTaskDataset(Dataset):
         return window_graphs, y_return, y_risk
 
 # ---------------------------------------------------------
-# 2. CUSTOM COLLATE FUNCTION (The Fix for the TypeError)
+# 2. CUSTOM COLLATE FUNCTION
 # ---------------------------------------------------------
 def custom_collate(batch):
     """
@@ -88,11 +88,10 @@ def run_training():
     pipeline = GNNPipeline(config)
     
     # --- LOAD REAL SNAPSHOTS FROM DISK ---
-    # This uses the files you generated with 'generate_fake_history.py'
     snapshots = pipeline.load_historical_sequence(days=60)
     
     if len(snapshots) < 6:
-        logger.error("❌ Not enough history files found in 'graph_snapshots/'. Run generate_fake_history.py first!")
+        logger.error("❌ Not enough history files found in 'graph_snapshots/'. Run generate_real_history.py first!")
         return
 
     # Dataset
@@ -111,20 +110,28 @@ def run_training():
     train_loader = DataLoader(train_dataset, batch_size=1, shuffle=False, collate_fn=custom_collate)
     test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False, collate_fn=custom_collate)
 
-    # Model
-    # Use the first valid snapshot to initialize model dimensions
-    model = create_hetero_model(snapshots[0], hidden_dim=64)
+    # Model Initialization
+    first_snapshot = snapshots[0]
+    
+    # CRITICAL: Verify input dimension matches the new features (expected 6)
+    if first_snapshot['Company'].x.shape[1] != 6:
+        logger.warning(f"⚠️ Input feature size is {first_snapshot['Company'].x.shape[1]}, expected 6. Did you run generate_real_history.py?")
+    
+    model = create_hetero_model(first_snapshot, hidden_dim=64)
     DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model.to(DEVICE)
     logger.info(f"Model initialized on {DEVICE}")
 
-    # Optimizers
+    # Optimizers & Scheduler
     optimizer = optim.Adam(model.parameters(), lr=0.001)
+    # Learning Rate Scheduler: Reduce LR by half every 20 epochs
+    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.5)
+    
     loss_fn_forecast = nn.MSELoss()        
-    loss_fn_risk = nn.CrossEntropyLoss()  
+    loss_fn_risk = nn.CrossEntropyLoss()   
 
     # Loop
-    EPOCHS = 10
+    EPOCHS = 100 # Increased to 100 for better convergence
     for epoch in range(1, EPOCHS + 1):
         model.train()
         total_loss = 0
@@ -157,8 +164,12 @@ def run_training():
                 total_loss += loss.item()
                 count += 1
         
+        # Step the scheduler
+        scheduler.step()
+        current_lr = scheduler.get_last_lr()[0]
+        
         avg_loss = total_loss / count if count > 0 else 0
-        logger.info(f"Epoch {epoch:03d} | Total Loss: {avg_loss:.6f}")
+        logger.info(f"Epoch {epoch:03d} | LR: {current_lr:.6f} | Total Loss: {avg_loss:.6f}")
 
     # Save
     torch.save(model.state_dict(), "gnn_multitask_model.pth")

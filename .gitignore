@@ -73,3 +73,35 @@ neo4j/plugins/
 # --- Docker ---
 # (If you use Docker Compose, usually ignore the override file)
 docker-compose.override.yml
+
+# --- Python & System Junk ---
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+.env
+venv/
+.vscode/
+.idea/
+
+# --- Project Specific Data (DO NOT UPLOAD) ---
+# We ignore these because they are large, regenerateable, or sensitive
+graph_snapshots/
+database/
+neo4j_data_backup/
+neo4j/
+sec-edgar-filings/
+backfill.log
+worker_cron.log
+*.log
+
+# --- Generated Output Files ---
+# Optional: Comment these out if you WANT to track your predictions
+live_forecasts.csv
+live_risk_scores.csv
+financial_graph.gml
+gnn_multitask_model.pth
+gnn_risk_model.pth
+
+# --- Docker ---
+.docker/
