@@ -974,7 +974,6 @@ def render_forecast_dashboard():
         
         for n in financial_graph.nodes():
             sector_map[n] = financial_graph.nodes[n].get('sector', 'Unknown')
-            # Handle Market Cap for visualization sizing
             cap = financial_graph.nodes[n].get('market_cap', 0)
             if cap is None or cap == 0: cap = 10_000_000 
             cap_map[n] = cap
@@ -998,28 +997,76 @@ def render_forecast_dashboard():
         df['z_score'] = (df['risk_score'] - mu) / sigma
 
     # ============================================================
+    # 0. DASHBOARD FILTERS (NEW SECTION)
+    # ============================================================
+    with st.expander("🔍 Filter Dashboard", expanded=False):
+        col_f1, col_f2 = st.columns(2)
+        
+        # 1. Sector Filter
+        all_sectors = sorted(list(df['Sector'].unique()))
+        if "Unknown" in all_sectors: all_sectors.remove("Unknown"); all_sectors.append("Unknown")
+        
+        with col_f1:
+            selected_sector_view = st.selectbox(
+                "Filter by Sector:", 
+                ["All Sectors"] + all_sectors,
+                key="dash_view_sector"
+            )
+        
+        # 2. Asset Filter (Dependent on Sector)
+        if selected_sector_view != "All Sectors":
+            view_df = df[df['Sector'] == selected_sector_view]
+        else:
+            view_df = df
+            
+        def format_view_ticker(ticker):
+            row = df[df['ticker'] == ticker]
+            if not row.empty:
+                return f"{row.iloc[0]['Name']} ({ticker})"
+            return ticker
+
+        with col_f2:
+            selected_asset_view = st.selectbox(
+                "Filter by Specific Asset (Optional):", 
+                ["All Assets"] + list(view_df['ticker'].unique()),
+                format_func=lambda x: format_view_ticker(x) if x != "All Assets" else "All Assets",
+                key="dash_view_asset"
+            )
+
+        # Apply Filters to the Main DataFrame used for Metrics & Tables
+        filtered_main_df = view_df
+        if selected_asset_view != "All Assets":
+            filtered_main_df = view_df[view_df['ticker'] == selected_asset_view]
+
+    # ============================================================
     # LAYOUT ROW 1: METRICS & TABLES
     # ============================================================
-    # We sort the ENTIRE dataframe once
-    df_sorted = df.sort_values(by='forecast_return', ascending=False)
+    # Use filtered_main_df for sorting and metrics
+    df_sorted = filtered_main_df.sort_values(by='forecast_return', ascending=False)
     
     # Calculate KPIs
     if not df_sorted.empty:
         best_pick = df_sorted.iloc[0]
         worst_pick = df_sorted.iloc[-1]
+        avg_risk_val = filtered_main_df['risk_score'].mean()
     else:
         best_pick = worst_pick = None
+        avg_risk_val = 0.0
 
     # --- METRICS BAR ---
     col_m1, col_m2, col_m3 = st.columns(3)
     with col_m1:
         if best_pick is not None:
             st.metric("🚀 Top Long", best_pick['ticker'], f"{best_pick['forecast_return']:.2%}")
+        else:
+            st.metric("🚀 Top Long", "N/A", "0.00%")
     with col_m2:
         if worst_pick is not None:
             st.metric("📉 Top Short", worst_pick['ticker'], f"{worst_pick['forecast_return']:.2%}")
+        else:
+             st.metric("📉 Top Short", "N/A", "0.00%")
     with col_m3:
-         st.metric("⚠️ Avg Risk", f"{mu:.2f}", help="Average AI Risk Score (0-1)")
+         st.metric("⚠️ Avg Risk", f"{avg_risk_val:.2f}", help="Average AI Risk Score (0-1)")
     
     st.divider()
 
@@ -1028,35 +1075,37 @@ def render_forecast_dashboard():
 
     with col_long:
         st.subheader("🟢 Top Gainers (Forecast)")
-        # Show top 10 highest forecasts, regardless of whether they are > 0
-        long_df = df_sorted.head(10)[['ticker', 'forecast_return', 'risk_score']]
-        
-        st.dataframe(
-            long_df,
-            column_config={
-                "ticker": "Asset",
-                "forecast_return": st.column_config.NumberColumn("Forecast %", format="%.2f %%"),
-                "risk_score": st.column_config.ProgressColumn("Risk", format="%.2f", min_value=0, max_value=1),
-            },
-            hide_index=True,
-            use_container_width=True
-        )
+        if not df_sorted.empty:
+            long_df = df_sorted.head(10)[['ticker', 'Sector', 'forecast_return', 'risk_score']]
+            st.dataframe(
+                long_df,
+                column_config={
+                    "ticker": "Asset",
+                    "forecast_return": st.column_config.NumberColumn("Forecast %", format="%.2f %%"),
+                    "risk_score": st.column_config.ProgressColumn("Risk", format="%.2f", min_value=0, max_value=1),
+                },
+                hide_index=True,
+                use_container_width=True
+            )
+        else:
+            st.info("No assets match current filters.")
 
     with col_short:
         st.subheader("🔴 Top Decliners (Forecast)")
-        # Show bottom 10 forecasts (most negative)
-        short_df = df_sorted.tail(10).sort_values(by='forecast_return', ascending=True)[['ticker', 'forecast_return', 'risk_score']]
-        
-        st.dataframe(
-            short_df,
-            column_config={
-                "ticker": "Asset",
-                "forecast_return": st.column_config.NumberColumn("Forecast %", format="%.2f %%"),
-                "risk_score": st.column_config.ProgressColumn("Risk", format="%.2f", min_value=0, max_value=1),
-            },
-            hide_index=True,
-            use_container_width=True
-        )
+        if not df_sorted.empty:
+            short_df = df_sorted.tail(10).sort_values(by='forecast_return', ascending=True)[['ticker', 'Sector', 'forecast_return', 'risk_score']]
+            st.dataframe(
+                short_df,
+                column_config={
+                    "ticker": "Asset",
+                    "forecast_return": st.column_config.NumberColumn("Forecast %", format="%.2f %%"),
+                    "risk_score": st.column_config.ProgressColumn("Risk", format="%.2f", min_value=0, max_value=1),
+                },
+                hide_index=True,
+                use_container_width=True
+            )
+        else:
+            st.info("No assets match current filters.")
 
     st.divider()
 
@@ -1069,8 +1118,13 @@ def render_forecast_dashboard():
 
     with col_map:
         try:
+            # We use the FULL DF for the heatmap so context isn't lost, 
+            # unless the user specifically wants to drill down.
+            # Using 'view_df' (Sector filtered) keeps the heatmap relevant to the sector.
+            map_data = view_df if not view_df.empty else df
+
             fig = px.treemap(
-                df, 
+                map_data, 
                 path=[px.Constant("Market"), 'Sector', 'ticker'], 
                 values='Market_Cap', 
                 color='z_score', 
@@ -1093,32 +1147,16 @@ def render_forecast_dashboard():
         st.markdown("### 🕸️ Inspect Causality")
         st.caption("Trace the hidden drivers of any asset.")
         
-        # 1. Prepare Sector List
-        all_sectors = sorted(list(df['Sector'].unique()))
-        if "Unknown" in all_sectors: all_sectors.remove("Unknown"); all_sectors.append("Unknown")
+        # Reuse the filters from above or allow independent selection
+        # Here we default to the dashboard selection to make it smooth
+        default_idx = 0
+        current_opts = list(view_df['ticker'].unique())
         
-        # 2. Sector Selection
-        selected_sector_dash = st.selectbox("Filter by Sector:", ["All Sectors"] + all_sectors, key="dash_sector_select")
-        
-        # 3. Filter Ticker Options
-        if selected_sector_dash != "All Sectors":
-            filtered_df = df[df['Sector'] == selected_sector_dash]
-        else:
-            filtered_df = df
-            
-        # Create formatter
-        def format_dash_ticker(ticker):
-            row = df[df['ticker'] == ticker]
-            if not row.empty:
-                return f"{row.iloc[0]['Name']} ({ticker})"
-            return ticker
-
-        # 4. Ticker Selection
         selected_ticker_dash = st.selectbox(
-            "Select Asset:", 
-            filtered_df['ticker'].unique(),
-            format_func=format_dash_ticker,
-            key="dash_ticker_select"
+            "Select Asset to Explain:", 
+            current_opts,
+            format_func=lambda x: format_view_ticker(x),
+            key="dash_explain_select"
         )
         
         st.write("") 
