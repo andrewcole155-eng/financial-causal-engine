@@ -11,7 +11,7 @@ graph [
     raw_risk_score 0.17073264234007926
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -40,7 +40,7 @@ graph [
     raw_risk_score 0.12382558397993973
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -54,7 +54,7 @@ graph [
     raw_risk_score 0.0954713177514439
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -68,7 +68,7 @@ graph [
     raw_risk_score 0.07659137897865852
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -82,7 +82,7 @@ graph [
     raw_risk_score 0.21539941018102962
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -96,7 +96,7 @@ graph [
     raw_risk_score 0.27024828965743997
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -112,7 +112,7 @@ graph [
     raw_risk_score 0.39574463873957505
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -126,7 +126,7 @@ graph [
     raw_risk_score 0.23767366652877567
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -140,7 +140,7 @@ graph [
     raw_risk_score 0.2263562116267857
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -154,7 +154,7 @@ graph [
     raw_risk_score 0.1934746519589887
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -168,7 +168,7 @@ graph [
     raw_risk_score 0.21614217711258568
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -182,7 +182,7 @@ graph [
     raw_risk_score 0.1645630872530529
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -196,7 +196,7 @@ graph [
     raw_risk_score 0.213539550990208
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -205,14 +205,14 @@ graph [
     sentiment_score 0.7
     ticker "ABBV"
     market_cap 0
-    last_news_update "2025-12-04T12:02:50.171000000+00:00"
+    last_news_update "2025-12-06T15:03:06.764000000+00:00"
     name "AbbVie"
     gnn_risk_score 0.2087913155555725
     industry "Drug Manufacturers - General"
     raw_risk_score 0.1938517955835405
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -228,7 +228,7 @@ graph [
     raw_risk_score 0.2745902677621162
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -254,7 +254,7 @@ graph [
     raw_risk_score 0.2236700158066121
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -268,7 +268,7 @@ graph [
     raw_risk_score 0.16090665679143795
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -282,7 +282,7 @@ graph [
     raw_risk_score 0.29970251083058475
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -296,7 +296,7 @@ graph [
     raw_risk_score 0.12256624812158491
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -310,7 +310,7 @@ graph [
     raw_risk_score 0.18566535926592065
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -324,7 +324,7 @@ graph [
     raw_risk_score 0.16432839318538386
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -338,7 +338,7 @@ graph [
     raw_risk_score 0.4021724302873051
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -352,7 +352,7 @@ graph [
     raw_risk_score 0.420679781984473
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -368,7 +368,7 @@ graph [
     raw_risk_score 0.4066070660982429
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -382,53 +382,55 @@ graph [
     raw_risk_score 0.3942043716128516
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 27
     label "GOOG"
-    sentiment_score 0.4
+    sentiment_score 0.5
     ticker "GOOG"
     market_cap 0
-    last_news_update "2025-12-06T11:01:18.442000000+00:00"
+    last_news_update "2025-12-07T01:01:31.640000000+00:00"
     name "Alphabet Inc. (Class C)"
     gnn_risk_score 0.2087913155555725
     industry "Internet Content &#38; Information"
     raw_risk_score 0.3835263483684602
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 28
     label "MO"
+    sentiment_score 0.3
     ticker "MO"
     market_cap 0
+    last_news_update "2025-12-06T20:03:00.627000000+00:00"
     name "Altria"
     gnn_risk_score 0.2087913155555725
     industry "Tobacco"
     raw_risk_score 0.08602102375002407
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 29
     label "AMZN"
-    sentiment_score 0.7
+    sentiment_score 0.5
     ticker "AMZN"
     market_cap 0
-    last_news_update "2025-12-06T07:01:24.934000000+00:00"
+    last_news_update "2025-12-07T01:01:29.970000000+00:00"
     name "Amazon"
     gnn_risk_score 0.2087913155555725
     industry "Internet Retail"
     raw_risk_score 0.1871751820242265
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -442,23 +444,23 @@ graph [
     raw_risk_score 0.14948459827591798
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 31
     label "AMD"
-    sentiment_score 0.2
+    sentiment_score 0.7
     ticker "AMD"
     market_cap 0
-    last_news_update "2025-12-05T23:01:36.070000000+00:00"
+    last_news_update "2025-12-07T01:01:24.663000000+00:00"
     name "Advanced Micro Devices"
     gnn_risk_score 0.2087913155555725
     industry "Semiconductors"
     raw_risk_score 0.44437521853269013
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -472,7 +474,7 @@ graph [
     raw_risk_score 0.22543983526617833
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -486,7 +488,7 @@ graph [
     raw_risk_score 0.39094871433533873
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -500,7 +502,7 @@ graph [
     raw_risk_score 0.11374516385820295
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -514,7 +516,7 @@ graph [
     raw_risk_score 0.18417628308846706
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -540,23 +542,23 @@ graph [
     raw_risk_score 0.1692285523385874
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 38
     label "AMGN"
-    sentiment_score 0.7
+    sentiment_score 0.3
     ticker "AMGN"
     market_cap 0
-    last_news_update "2025-12-04T12:02:49.400000000+00:00"
+    last_news_update "2025-12-06T15:02:55.792000000+00:00"
     name "Amgen"
     gnn_risk_score 0.2087913155555725
     industry "Drug Manufacturers - General"
     raw_risk_score 0.170786087206188
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -570,7 +572,7 @@ graph [
     raw_risk_score 0.2582732021551334
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -586,7 +588,7 @@ graph [
     raw_risk_score 0.38111517987138016
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -612,23 +614,23 @@ graph [
     raw_risk_score 0.11981980265497014
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 43
     label "AAPL"
-    sentiment_score -0.3
+    sentiment_score 0.5
     ticker "AAPL"
     market_cap 0
-    last_news_update "2025-12-06T13:01:26.905000000+00:00"
+    last_news_update "2025-12-07T01:01:30.798000000+00:00"
     name "Apple Inc."
     gnn_risk_score 0.2087913155555725
     industry "Consumer Electronics"
     raw_risk_score 0.14402883847758816
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -644,7 +646,7 @@ graph [
     raw_risk_score 0.39747857960659694
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -658,7 +660,7 @@ graph [
     raw_risk_score 0.21878033396969962
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -672,7 +674,7 @@ graph [
     raw_risk_score 0.15780595739668993
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -688,7 +690,7 @@ graph [
     raw_risk_score 0.11140541434576812
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -702,7 +704,7 @@ graph [
     raw_risk_score 0.128234332526841
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -716,7 +718,7 @@ graph [
     raw_risk_score 0.15180077597036676
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -730,7 +732,7 @@ graph [
     raw_risk_score 0.11788106655101778
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -744,7 +746,7 @@ graph [
     raw_risk_score 0.1978734949385445
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -758,7 +760,7 @@ graph [
     raw_risk_score 0.24939477609852356
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -774,7 +776,7 @@ graph [
     raw_risk_score 0.16646694840721055
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -788,7 +790,7 @@ graph [
     raw_risk_score 0.6630520066594517
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -804,7 +806,7 @@ graph [
     raw_risk_score 0.19346646948759016
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -818,7 +820,7 @@ graph [
     raw_risk_score 0.12990689497299818
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -832,7 +834,7 @@ graph [
     raw_risk_score 0.3776423569686341
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -846,7 +848,7 @@ graph [
     raw_risk_score 0.2011430373273382
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -860,7 +862,7 @@ graph [
     raw_risk_score 0.2422921954886186
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -874,7 +876,7 @@ graph [
     raw_risk_score 0.17917959812734435
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -888,7 +890,7 @@ graph [
     raw_risk_score 0.21354497560402075
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -902,7 +904,7 @@ graph [
     raw_risk_score 0.16072531502957416
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -916,7 +918,7 @@ graph [
     raw_risk_score 0.22574075101382068
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -930,7 +932,7 @@ graph [
     raw_risk_score 0.17523761686268863
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -959,7 +961,7 @@ graph [
     raw_risk_score 0.17138839722700722
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -975,7 +977,7 @@ graph [
     raw_risk_score 0.18360761552111585
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -991,7 +993,7 @@ graph [
     raw_risk_score 0.36254797079336165
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1007,7 +1009,7 @@ graph [
     raw_risk_score 0.2298081320866556
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1021,7 +1023,7 @@ graph [
     raw_risk_score 0.16550439115376747
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1047,7 +1049,7 @@ graph [
     raw_risk_score 0.27834257375383337
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1061,7 +1063,7 @@ graph [
     raw_risk_score 0.141730629483787
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1075,7 +1077,7 @@ graph [
     raw_risk_score 0.214172496600283
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1089,7 +1091,7 @@ graph [
     raw_risk_score 0.15232048350624927
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1103,7 +1105,7 @@ graph [
     raw_risk_score 0.3338220305094435
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1119,7 +1121,7 @@ graph [
     raw_risk_score 0.1532336923706924
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1145,7 +1147,7 @@ graph [
     raw_risk_score 0.2826238020987406
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1159,7 +1161,7 @@ graph [
     raw_risk_score 0.31622659037474576
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1175,7 +1177,7 @@ graph [
     raw_risk_score 0.12632696712381314
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1189,7 +1191,7 @@ graph [
     raw_risk_score 0.30326992923923624
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1203,7 +1205,7 @@ graph [
     raw_risk_score 0.10135570734479825
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1217,7 +1219,7 @@ graph [
     raw_risk_score 0.1717644208116569
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1231,23 +1233,23 @@ graph [
     raw_risk_score 0.07459263144674723
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 86
     label "C"
-    sentiment_score -0.3
+    sentiment_score 0.3
     ticker "C"
     market_cap 0
-    last_news_update "2025-12-05T04:03:33.572000000+00:00"
+    last_news_update "2025-12-06T17:00:56.700000000+00:00"
     name "Citigroup"
     gnn_risk_score 0.2087913155555725
     industry "Banks - Diversified"
     raw_risk_score 0.2599647896569027
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1263,7 +1265,7 @@ graph [
     raw_risk_score 0.21144574422568307
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1277,7 +1279,7 @@ graph [
     raw_risk_score 0.19354874934213528
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1291,7 +1293,7 @@ graph [
     raw_risk_score 0.3104282179921969
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1305,7 +1307,7 @@ graph [
     raw_risk_score 0.1625797844152312
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1319,7 +1321,7 @@ graph [
     raw_risk_score 0.3077170290785261
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1333,7 +1335,7 @@ graph [
     raw_risk_score 0.28424471015709973
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1347,7 +1349,7 @@ graph [
     raw_risk_score 0.11287288653302043
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1361,7 +1363,7 @@ graph [
     raw_risk_score 0.1950254147277694
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1375,7 +1377,7 @@ graph [
     raw_risk_score 0.205661815142374
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1389,7 +1391,7 @@ graph [
     raw_risk_score 0.19548157945268585
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1403,7 +1405,7 @@ graph [
     raw_risk_score 0.31465525417633966
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1417,7 +1419,7 @@ graph [
     raw_risk_score 0.19069591899499272
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1431,7 +1433,7 @@ graph [
     raw_risk_score 0.32969163585079425
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1445,7 +1447,7 @@ graph [
     raw_risk_score 0.1482039988907345
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1459,7 +1461,7 @@ graph [
     raw_risk_score 0.1819077055264154
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1473,7 +1475,7 @@ graph [
     raw_risk_score 0.21345687363530735
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1487,7 +1489,7 @@ graph [
     raw_risk_score 0.2865389953228232
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -1501,7 +1503,7 @@ graph [
     raw_risk_score 0.21964052641870063
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1510,14 +1512,14 @@ graph [
     sentiment_score -0.7
     ticker "DXCM"
     market_cap 0
-    last_news_update "2025-12-05T18:06:47.406000000+00:00"
+    last_news_update "2025-12-06T22:02:30.872000000+00:00"
     name "Dexcom"
     gnn_risk_score 0.2087913155555725
     industry "Medical Devices"
     raw_risk_score 0.39642467743405263
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1531,7 +1533,7 @@ graph [
     raw_risk_score 0.24139869581945578
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1545,7 +1547,7 @@ graph [
     raw_risk_score 0.2140943218179877
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1573,7 +1575,7 @@ graph [
     raw_risk_score 0.5305743768277164
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1587,7 +1589,7 @@ graph [
     raw_risk_score 0.36925400249712936
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1601,7 +1603,7 @@ graph [
     raw_risk_score 0.1565792465335254
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1615,7 +1617,7 @@ graph [
     raw_risk_score 0.210218089139128
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1629,7 +1631,7 @@ graph [
     raw_risk_score 0.2441878434720654
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1645,7 +1647,7 @@ graph [
     raw_risk_score 0.19650866576994133
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1661,7 +1663,7 @@ graph [
     raw_risk_score 0.23447649396812997
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1675,7 +1677,7 @@ graph [
     raw_risk_score 0.17876678062381743
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1689,7 +1691,7 @@ graph [
     raw_risk_score 0.11616056944347997
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1703,7 +1705,7 @@ graph [
     raw_risk_score 0.11239967469996472
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1717,7 +1719,7 @@ graph [
     raw_risk_score 0.11650827139045081
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1733,7 +1735,7 @@ graph [
     raw_risk_score 0.17093442001759954
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1747,7 +1749,7 @@ graph [
     raw_risk_score 0.21658838832048555
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1761,7 +1763,7 @@ graph [
     raw_risk_score 0.27322316096926225
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1775,7 +1777,7 @@ graph [
     raw_risk_score 0.4078679981335908
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1789,7 +1791,7 @@ graph [
     raw_risk_score 0.12147086716684369
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1803,7 +1805,7 @@ graph [
     raw_risk_score 0.36995689637674023
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1817,7 +1819,7 @@ graph [
     raw_risk_score 0.3673585843689417
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1827,7 +1829,7 @@ graph [
     market_cap 0
     name "N/A"
     gnn_risk_score 0.2087913155555725
-    raw_risk_score 0.36272063652674347
+    raw_risk_score 0.3346201051836427
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
@@ -1843,7 +1845,7 @@ graph [
     raw_risk_score 0.1639909644078119
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1857,7 +1859,7 @@ graph [
     raw_risk_score 0.3746689679880976
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1871,7 +1873,7 @@ graph [
     raw_risk_score 0.1918599546476213
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1885,7 +1887,7 @@ graph [
     raw_risk_score 0.3019825939515122
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1899,7 +1901,7 @@ graph [
     raw_risk_score 0.17083693577053694
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1913,7 +1915,7 @@ graph [
     raw_risk_score 0.1567713282199246
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -1927,7 +1929,7 @@ graph [
     raw_risk_score 0.14340878090011325
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1943,7 +1945,7 @@ graph [
     raw_risk_score 0.09064020552246252
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1957,21 +1959,23 @@ graph [
     raw_risk_score 0.21282893832566277
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 137
     label "FITB"
+    sentiment_score -0.6
     ticker "FITB"
     market_cap 0
+    last_news_update "2025-12-06T18:02:56.086000000+00:00"
     name "Fifth Third Bancorp"
     gnn_risk_score 0.2087913155555725
     industry "Banks - Regional"
     raw_risk_score 0.25015713953156304
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -1985,7 +1989,7 @@ graph [
     raw_risk_score 0.23366988842646644
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2011,7 +2015,7 @@ graph [
     raw_risk_score 0.32791196813751267
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2025,7 +2029,7 @@ graph [
     raw_risk_score 0.22178373092294368
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2039,7 +2043,7 @@ graph [
     raw_risk_score 0.19559432523233097
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2053,7 +2057,7 @@ graph [
     raw_risk_score 0.26144849398520126
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2069,7 +2073,7 @@ graph [
     raw_risk_score 0.32777859044740437
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2083,7 +2087,7 @@ graph [
     raw_risk_score 0.22304375335419518
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2097,7 +2101,7 @@ graph [
     raw_risk_score 0.14207266238413302
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2111,7 +2115,7 @@ graph [
     raw_risk_score 0.3305151572612124
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2125,23 +2129,23 @@ graph [
     raw_risk_score 0.1845652904470632
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 149
     label "GILD"
-    sentiment_score 0.3
+    sentiment_score 0.7
     ticker "GILD"
     market_cap 0
-    last_news_update "2025-12-05T11:05:39.021000000+00:00"
+    last_news_update "2025-12-06T15:02:59.680000000+00:00"
     name "Gilead Sciences"
     gnn_risk_score 0.2087913155555725
     industry "Drug Manufacturers - General"
     raw_risk_score 0.20193530565177203
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2155,7 +2159,7 @@ graph [
     raw_risk_score 0.08115982590184023
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2169,7 +2173,7 @@ graph [
     raw_risk_score 0.24031809952445365
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2183,7 +2187,7 @@ graph [
     raw_risk_score 0.2937394823503459
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2197,7 +2201,7 @@ graph [
     raw_risk_score 0.21455525733951014
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2211,7 +2215,7 @@ graph [
     raw_risk_score 0.15562470016109728
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2225,7 +2229,7 @@ graph [
     raw_risk_score 0.21285195660040052
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2239,7 +2243,7 @@ graph [
     raw_risk_score 0.19681350292950328
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2249,7 +2253,7 @@ graph [
     market_cap 0
     name "N/A"
     gnn_risk_score 0.2087913155555725
-    raw_risk_score 0.7517635747790337
+    raw_risk_score 0.762454513241263
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
@@ -2265,7 +2269,7 @@ graph [
     raw_risk_score 0.18509887742449369
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2291,7 +2295,7 @@ graph [
     raw_risk_score 0.16128615931271523
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2305,7 +2309,7 @@ graph [
     raw_risk_score 0.15506513105445088
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2321,7 +2325,7 @@ graph [
     raw_risk_score 0.19968435663720063
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2335,7 +2339,7 @@ graph [
     raw_risk_score 0.1844974082339849
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2349,7 +2353,7 @@ graph [
     raw_risk_score 0.25889179045029226
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2363,7 +2367,7 @@ graph [
     raw_risk_score 0.18492931474376256
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2377,7 +2381,7 @@ graph [
     raw_risk_score 0.22927231092526268
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2391,7 +2395,7 @@ graph [
     raw_risk_score 0.29814699969981306
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2405,7 +2409,7 @@ graph [
     raw_risk_score 0.3201425177201407
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2421,7 +2425,7 @@ graph [
     raw_risk_score 0.1557687005942964
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2435,7 +2439,7 @@ graph [
     raw_risk_score 0.28792720792809995
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2449,7 +2453,7 @@ graph [
     raw_risk_score 0.22834974819330106
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2463,7 +2467,7 @@ graph [
     raw_risk_score 0.1499227033424581
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2477,23 +2481,23 @@ graph [
     raw_risk_score 0.23561744877287813
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 174
     label "INTC"
-    sentiment_score 0.6
+    sentiment_score 0.5
     ticker "INTC"
     market_cap 0
-    last_news_update "2025-12-06T01:01:36.810000000+00:00"
+    last_news_update "2025-12-06T18:01:39.152000000+00:00"
     name "Intel"
     gnn_risk_score 0.2087913155555725
     industry "Semiconductors"
     raw_risk_score 0.4580346886034902
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2507,7 +2511,7 @@ graph [
     raw_risk_score 0.16999839077465106
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2521,7 +2525,7 @@ graph [
     raw_risk_score 0.2584637502155857
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2535,7 +2539,7 @@ graph [
     raw_risk_score 0.17568719881427275
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2549,7 +2553,7 @@ graph [
     raw_risk_score 0.20035577203852464
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2563,7 +2567,7 @@ graph [
     raw_risk_score 0.17318843501846123
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2577,7 +2581,7 @@ graph [
     raw_risk_score 0.23233822526855147
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2591,7 +2595,7 @@ graph [
     raw_risk_score 0.31314847942446195
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2605,7 +2609,7 @@ graph [
     raw_risk_score 0.16670588886480703
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2619,7 +2623,7 @@ graph [
     raw_risk_score 0.3327499338314981
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2633,21 +2637,23 @@ graph [
     raw_risk_score 0.3521538087903802
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 185
     label "JNJ"
+    sentiment_score 0.7
     ticker "JNJ"
     market_cap 0
+    last_news_update "2025-12-06T15:03:01.569000000+00:00"
     name "Johnson &#38; Johnson"
     gnn_risk_score 0.2087913155555725
     industry "Drug Manufacturers - General"
     raw_risk_score 0.1934618192147971
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2663,23 +2669,23 @@ graph [
     raw_risk_score 0.19302060563589474
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 187
     label "JPM"
-    sentiment_score -0.3
+    sentiment_score 0.3
     ticker "JPM"
     market_cap 0
-    last_news_update "2025-12-05T04:03:28.155000000+00:00"
+    last_news_update "2025-12-06T17:00:58.145000000+00:00"
     name "JPMorgan Chase"
     gnn_risk_score 0.2087913155555725
     industry "Banks - Diversified"
     raw_risk_score 0.19996569995571647
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2705,7 +2711,7 @@ graph [
     raw_risk_score 0.21431859910662904
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2719,7 +2725,7 @@ graph [
     raw_risk_score 0.42574768288399095
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2733,7 +2739,7 @@ graph [
     raw_risk_score 0.1310161169236581
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2747,7 +2753,7 @@ graph [
     raw_risk_score 0.21734049160674723
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2761,7 +2767,7 @@ graph [
     raw_risk_score 0.20220625701595352
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2775,7 +2781,7 @@ graph [
     raw_risk_score 0.16253914068780206
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2789,7 +2795,7 @@ graph [
     raw_risk_score 0.1659756956227268
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2803,7 +2809,7 @@ graph [
     raw_risk_score 0.2767234577205343
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2817,7 +2823,7 @@ graph [
     raw_risk_score 0.19446318238013716
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2831,7 +2837,7 @@ graph [
     raw_risk_score 0.2296453120818297
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2845,7 +2851,7 @@ graph [
     raw_risk_score 0.22797799663635668
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2859,7 +2865,7 @@ graph [
     raw_risk_score 0.17498925771977478
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2873,7 +2879,7 @@ graph [
     raw_risk_score 0.16387766654307412
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2887,7 +2893,7 @@ graph [
     raw_risk_score 0.10905993438806491
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2901,23 +2907,23 @@ graph [
     raw_risk_score 0.26987736605411516
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 204
     label "LULU"
-    sentiment_score 0.4
+    sentiment_score 0.3
     ticker "LULU"
     market_cap 0
-    last_news_update "2025-12-04T12:01:49.375000000+00:00"
+    last_news_update "2025-12-06T20:03:02.000000000+00:00"
     name "Lululemon Athletica"
     gnn_risk_score 0.2087913155555725
     industry "Apparel Retail"
     raw_risk_score 0.30482233867868536
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2931,7 +2937,7 @@ graph [
     raw_risk_score 0.22339415061542608
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2957,7 +2963,7 @@ graph [
     raw_risk_score 0.10238432506429473
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2971,7 +2977,7 @@ graph [
     raw_risk_score 0.21014672730810532
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2985,7 +2991,7 @@ graph [
     raw_risk_score 0.25042351724401146
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -2999,7 +3005,7 @@ graph [
     raw_risk_score 0.1425108926894496
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3013,23 +3019,23 @@ graph [
     raw_risk_score 0.18935746818379376
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 212
     label "MDT"
-    sentiment_score 0.7
+    sentiment_score 0.3
     ticker "MDT"
     market_cap 0
-    last_news_update "2025-12-04T22:06:05.625000000+00:00"
+    last_news_update "2025-12-06T14:03:23.956000000+00:00"
     name "Medtronic"
     gnn_risk_score 0.2087913155555725
     industry "Medical Devices"
     raw_risk_score 0.2334959985095612
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3045,7 +3051,7 @@ graph [
     raw_risk_score 0.27057166894391227
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3059,7 +3065,7 @@ graph [
     raw_risk_score 0.12194420670641087
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3073,7 +3079,7 @@ graph [
     raw_risk_score 0.1341170818731534
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3087,7 +3093,7 @@ graph [
     raw_risk_score 0.3251834055598915
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3101,7 +3107,7 @@ graph [
     raw_risk_score 0.508197756178875
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3110,14 +3116,14 @@ graph [
     sentiment_score 0.7
     ticker "MU"
     market_cap 0
-    last_news_update "2025-12-04T13:02:05.352000000+00:00"
+    last_news_update "2025-12-06T22:01:11.047000000+00:00"
     name "Micron Technology"
     gnn_risk_score 0.2087913155555725
     industry "Semiconductors"
     raw_risk_score 0.41643253113964795
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3131,7 +3137,7 @@ graph [
     raw_risk_score 0.22813815512140626
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3145,7 +3151,7 @@ graph [
     raw_risk_score 0.36000656215931875
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3159,7 +3165,7 @@ graph [
     raw_risk_score 0.24455194604085145
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3173,7 +3179,7 @@ graph [
     raw_risk_score 0.2152424305773385
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3187,7 +3193,7 @@ graph [
     raw_risk_score 0.19383539348371093
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3203,7 +3209,7 @@ graph [
     raw_risk_score 0.25886187303012576
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3217,7 +3223,7 @@ graph [
     raw_risk_score 0.12240088240849133
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3231,7 +3237,7 @@ graph [
     raw_risk_score 0.22764792354632832
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3245,7 +3251,7 @@ graph [
     raw_risk_score 0.2491822607016902
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3261,7 +3267,7 @@ graph [
     raw_risk_score 0.3085278698850157
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3275,7 +3281,7 @@ graph [
     raw_risk_score 0.2795800213445513
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3289,7 +3295,7 @@ graph [
     raw_risk_score 0.11100644449274012
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3303,7 +3309,7 @@ graph [
     raw_risk_score 0.21580657096635444
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3317,7 +3323,7 @@ graph [
     raw_risk_score 0.14222436485491025
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3331,7 +3337,7 @@ graph [
     raw_risk_score 0.19471164680856745
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3345,7 +3351,7 @@ graph [
     raw_risk_score 0.17225617036214202
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3359,7 +3365,7 @@ graph [
     raw_risk_score 0.22607159725957132
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3373,7 +3379,7 @@ graph [
     raw_risk_score 0.13236230608197253
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3387,7 +3393,7 @@ graph [
     raw_risk_score 0.23502581990731783
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3401,7 +3407,7 @@ graph [
     raw_risk_score 0.23752471832990743
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3415,23 +3421,23 @@ graph [
     raw_risk_score 0.26660174976585127
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 240
     label "NVDA"
-    sentiment_score -0.3
+    sentiment_score 0.5
     ticker "NVDA"
     market_cap 0
-    last_news_update "2025-12-06T13:01:26.460000000+00:00"
+    last_news_update "2025-12-07T01:01:30.401000000+00:00"
     name "Nvidia"
     gnn_risk_score 0.2087913155555725
     industry "Semiconductors"
     raw_risk_score 0.26186359281170063
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3445,7 +3451,7 @@ graph [
     raw_risk_score 0.17639747290981378
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3461,7 +3467,7 @@ graph [
     raw_risk_score 0.38576372331361847
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3475,7 +3481,7 @@ graph [
     raw_risk_score 0.09889348335658033
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3489,7 +3495,7 @@ graph [
     raw_risk_score 0.39747196774833715
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3503,7 +3509,7 @@ graph [
     raw_risk_score 0.19918017531046223
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3517,7 +3523,7 @@ graph [
     raw_risk_score 0.41493402183319905
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3531,7 +3537,7 @@ graph [
     raw_risk_score 0.2536378962254451
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3545,7 +3551,7 @@ graph [
     raw_risk_score 0.3993217206092838
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3559,7 +3565,7 @@ graph [
     raw_risk_score 0.14733664898884583
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3573,7 +3579,7 @@ graph [
     raw_risk_score 0.35187155236256257
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3587,7 +3593,7 @@ graph [
     raw_risk_score 0.1626250798366172
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3613,7 +3619,7 @@ graph [
     raw_risk_score 0.2500416835649245
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3627,7 +3633,7 @@ graph [
     raw_risk_score 0.10177783557742236
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3641,7 +3647,7 @@ graph [
     raw_risk_score 0.13668081368142013
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3655,23 +3661,23 @@ graph [
     raw_risk_score 0.1197143364710599
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 257
     label "PFE"
-    sentiment_score -0.3
+    sentiment_score 0.7
     ticker "PFE"
     market_cap 0
-    last_news_update "2025-12-05T22:02:58.036000000+00:00"
+    last_news_update "2025-12-06T15:03:00.077000000+00:00"
     name "Pfizer"
     gnn_risk_score 0.2087913155555725
     industry "Drug Manufacturers - General"
     raw_risk_score 0.22009942016754763
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3685,7 +3691,7 @@ graph [
     raw_risk_score 0.24838902125428153
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3699,7 +3705,7 @@ graph [
     raw_risk_score 0.22042671648554968
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3725,7 +3731,7 @@ graph [
     raw_risk_score 0.1729224597382079
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3739,7 +3745,7 @@ graph [
     raw_risk_score 0.1949210658561985
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3753,7 +3759,7 @@ graph [
     raw_risk_score 0.2517660385796998
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3767,7 +3773,7 @@ graph [
     raw_risk_score 0.1282279586323488
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3781,7 +3787,7 @@ graph [
     raw_risk_score 0.21995184024761705
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3795,7 +3801,7 @@ graph [
     raw_risk_score 0.1938708707219554
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3809,7 +3815,7 @@ graph [
     raw_risk_score 0.2764978271829452
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3823,7 +3829,7 @@ graph [
     raw_risk_score 0.23865290482761592
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3837,7 +3843,7 @@ graph [
     raw_risk_score 0.2689609707966666
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3853,7 +3859,7 @@ graph [
     raw_risk_score 0.17098505084999008
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3867,7 +3873,7 @@ graph [
     raw_risk_score 0.305449366933787
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3883,7 +3889,7 @@ graph [
     raw_risk_score 0.18222423685488126
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3897,7 +3903,7 @@ graph [
     raw_risk_score 0.1245221940003346
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3911,7 +3917,7 @@ graph [
     raw_risk_score 0.17112672076737387
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3925,7 +3931,7 @@ graph [
     raw_risk_score 0.22726711097870705
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3939,7 +3945,7 @@ graph [
     raw_risk_score 0.2703367648738669
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3953,7 +3959,7 @@ graph [
     raw_risk_score 0.2604548826407389
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3967,7 +3973,7 @@ graph [
     raw_risk_score 0.284313308041305
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3981,7 +3987,7 @@ graph [
     raw_risk_score 0.221009380046575
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -3997,7 +4003,7 @@ graph [
     raw_risk_score 0.3819253501535015
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4011,7 +4017,7 @@ graph [
     raw_risk_score 0.21482349780955104
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4025,7 +4031,7 @@ graph [
     raw_risk_score 0.11517899342987806
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4041,7 +4047,7 @@ graph [
     raw_risk_score 0.26119236067062995
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4055,7 +4061,7 @@ graph [
     raw_risk_score 0.389895485971092
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4069,7 +4075,7 @@ graph [
     raw_risk_score 0.12253889660291621
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4083,7 +4089,7 @@ graph [
     raw_risk_score 0.6578881254648073
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4097,7 +4103,7 @@ graph [
     raw_risk_score 0.2539276347646243
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4111,7 +4117,7 @@ graph [
     raw_risk_score 0.3319497594729358
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4125,23 +4131,23 @@ graph [
     raw_risk_score 0.12351245382079053
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 290
     label "SNPS"
-    sentiment_score -0.7
+    sentiment_score 0.6
     ticker "SNPS"
     market_cap 0
-    last_news_update "2025-12-06T00:02:06.556000000+00:00"
+    last_news_update "2025-12-06T16:02:03.819000000+00:00"
     name "Synopsys"
     gnn_risk_score 0.2087913155555725
     industry "Software - Infrastructure"
     raw_risk_score 0.3899461144241253
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4155,7 +4161,7 @@ graph [
     raw_risk_score 0.1600563371647987
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4171,7 +4177,7 @@ graph [
     raw_risk_score 0.1780137569156487
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4185,7 +4191,7 @@ graph [
     raw_risk_score 0.22353460280227433
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4201,7 +4207,7 @@ graph [
     raw_risk_score 0.306578678731936
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4217,7 +4223,7 @@ graph [
     raw_risk_score 0.21440791801437142
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4231,7 +4237,7 @@ graph [
     raw_risk_score 0.2176756882604559
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4245,7 +4251,7 @@ graph [
     raw_risk_score 0.18017012819938433
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4261,7 +4267,7 @@ graph [
     raw_risk_score 0.12446396064158578
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4275,7 +4281,7 @@ graph [
     raw_risk_score 0.20027364973779932
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4289,7 +4295,7 @@ graph [
     raw_risk_score 0.19589551545192302
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4303,7 +4309,7 @@ graph [
     raw_risk_score 0.13342239688155494
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4317,7 +4323,7 @@ graph [
     raw_risk_score 0.13467507834116854
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4331,7 +4337,7 @@ graph [
     raw_risk_score 0.26805388130380686
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4345,7 +4351,7 @@ graph [
     raw_risk_score 0.269952577123316
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4359,7 +4365,7 @@ graph [
     raw_risk_score 0.13236377712495287
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4373,7 +4379,7 @@ graph [
     raw_risk_score 0.22728851865031685
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4387,7 +4393,7 @@ graph [
     raw_risk_score 0.1765231173768817
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4401,7 +4407,7 @@ graph [
     raw_risk_score 0.11874570176374259
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4415,7 +4421,7 @@ graph [
     raw_risk_score 0.47894368031479884
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4431,7 +4437,7 @@ graph [
     raw_risk_score 0.09191551538703349
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4445,7 +4451,7 @@ graph [
     raw_risk_score 0.23867187666685058
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4473,7 +4479,7 @@ graph [
     raw_risk_score 0.316897616130525
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4487,7 +4493,7 @@ graph [
     raw_risk_score 0.15458209652784355
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4503,7 +4509,7 @@ graph [
     raw_risk_score 0.21328652329464073
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4517,7 +4523,7 @@ graph [
     raw_risk_score 0.19955923521019944
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4543,7 +4549,7 @@ graph [
     raw_risk_score 0.187227962864939
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4557,7 +4563,7 @@ graph [
     raw_risk_score 0.23891213940676598
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4571,7 +4577,7 @@ graph [
     raw_risk_score 0.1854456834559407
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4585,7 +4591,7 @@ graph [
     raw_risk_score 0.16077667039951915
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4599,7 +4605,7 @@ graph [
     raw_risk_score 0.14762693075617095
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4613,7 +4619,7 @@ graph [
     raw_risk_score 0.3357987569245888
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4627,7 +4633,7 @@ graph [
     raw_risk_score 0.20986927179796572
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4641,7 +4647,7 @@ graph [
     raw_risk_score 0.2792148135778547
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4655,7 +4661,7 @@ graph [
     raw_risk_score 0.18303164867422672
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4671,7 +4677,7 @@ graph [
     raw_risk_score 0.6356746031415023
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4687,7 +4693,7 @@ graph [
     raw_risk_score 0.2442149842504377
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4701,7 +4707,7 @@ graph [
     raw_risk_score 0.1142766864035804
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4715,7 +4721,7 @@ graph [
     raw_risk_score 0.1271725371849895
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4729,7 +4735,7 @@ graph [
     raw_risk_score 0.17501300606029033
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4743,23 +4749,23 @@ graph [
     raw_risk_score 0.26451590968400096
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 333
     label "MSFT"
-    sentiment_score -0.3
+    sentiment_score 0.5
     ticker "MSFT"
     market_cap 0
-    last_news_update "2025-12-06T13:01:27.321000000+00:00"
+    last_news_update "2025-12-07T01:01:31.216000000+00:00"
     name "Microsoft"
     gnn_risk_score 0.2087913155555725
     industry "Software - Infrastructure"
     raw_risk_score 0.21031732758667407
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4775,7 +4781,7 @@ graph [
     raw_risk_score 0.206054910914791
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4789,7 +4795,7 @@ graph [
     raw_risk_score 0.22233802734425542
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4803,23 +4809,23 @@ graph [
     raw_risk_score 0.1388904757748445
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 337
     label "TSLA"
-    sentiment_score -0.6
+    sentiment_score -0.4
     ticker "TSLA"
     market_cap 0
-    last_news_update "2025-12-05T13:02:47.754000000+00:00"
+    last_news_update "2025-12-06T22:01:08.360000000+00:00"
     name "Tesla, Inc."
     gnn_risk_score 0.2087913155555725
     industry "Auto Manufacturers"
     raw_risk_score 0.4131378417098318
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4833,7 +4839,7 @@ graph [
     raw_risk_score 0.1079280740482136
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4847,7 +4853,7 @@ graph [
     raw_risk_score 0.3744192220400483
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4861,7 +4867,7 @@ graph [
     raw_risk_score 0.3678346362353655
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4875,7 +4881,7 @@ graph [
     raw_risk_score 0.3243650286525664
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4891,7 +4897,7 @@ graph [
     raw_risk_score 0.2435363641652955
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4905,7 +4911,7 @@ graph [
     raw_risk_score 0.29009194265604116
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4919,7 +4925,7 @@ graph [
     raw_risk_score 0.41871953331853834
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4933,7 +4939,7 @@ graph [
     raw_risk_score 0.37428380091797464
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4949,7 +4955,7 @@ graph [
     raw_risk_score 0.338798160099694
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -4963,7 +4969,7 @@ graph [
     raw_risk_score 0.2657371561223747
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4977,7 +4983,7 @@ graph [
     raw_risk_score 0.1919978669289733
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -4991,23 +4997,23 @@ graph [
     raw_risk_score 0.08905499974375414
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 350
     label "LLY"
-    sentiment_score -0.3
+    sentiment_score -0.4
     ticker "LLY"
     market_cap 907987578788.93
-    last_news_update "2025-12-05T22:02:59.834000000+00:00"
+    last_news_update "2025-12-06T23:01:19.150000000+00:00"
     name "Eli Lilly &#38; Co."
     gnn_risk_score 0.2087913155555725
     industry "Drug Manufacturers - General"
     raw_risk_score 0.18963596866786248
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "PHARMACEUTICAL PREPARATIONS"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5021,7 +5027,7 @@ graph [
     raw_risk_score 0.07416057856057724
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5035,7 +5041,7 @@ graph [
     raw_risk_score 0.09619289752944618
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5049,23 +5055,23 @@ graph [
     raw_risk_score 0.15808621661103653
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 354
     label "CMA"
-    sentiment_score -0.3
+    sentiment_score -0.6
     ticker "CMA"
     market_cap 0
-    last_news_update "2025-12-04T19:06:23.375000000+00:00"
+    last_news_update "2025-12-06T18:02:55.283000000+00:00"
     name "Comerica Inc."
     gnn_risk_score 0.2087913155555725
     industry "Banks - Regional"
     raw_risk_score 0.2569992947346918
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5079,7 +5085,7 @@ graph [
     raw_risk_score 0.2957702123804038
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5093,7 +5099,7 @@ graph [
     raw_risk_score 0.11488364356278515
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5107,7 +5113,7 @@ graph [
     raw_risk_score 0.1686330246181791
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5121,7 +5127,7 @@ graph [
     raw_risk_score 0.1057185569700432
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5135,7 +5141,7 @@ graph [
     raw_risk_score 0.17241699074384276
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5149,7 +5155,7 @@ graph [
     raw_risk_score 0.18804918620425978
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5163,7 +5169,7 @@ graph [
     raw_risk_score 0.2673502901748914
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5177,7 +5183,7 @@ graph [
     raw_risk_score 0.08681120958722213
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -5191,7 +5197,7 @@ graph [
     raw_risk_score 0.2018424113485045
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5205,7 +5211,7 @@ graph [
     raw_risk_score 0.33829412570882766
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5221,7 +5227,7 @@ graph [
     raw_risk_score 0.3315005836052788
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -5235,23 +5241,23 @@ graph [
     raw_risk_score 0.21952941758593414
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
     id 367
     label "GOOGL"
-    sentiment_score 0.4
+    sentiment_score 0.5
     ticker "GOOGL"
     market_cap 0
-    last_news_update "2025-12-06T11:01:18.877000000+00:00"
+    last_news_update "2025-12-07T01:01:32.030000000+00:00"
     name "Alphabet Inc. (Class A)"
     gnn_risk_score 0.2087913155555725
     industry "Internet Content &#38; Information"
     raw_risk_score 0.3848033693067544
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5265,7 +5271,7 @@ graph [
     raw_risk_score 0.20464046791388238
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5279,7 +5285,7 @@ graph [
     raw_risk_score 0.2093329015137052
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5293,7 +5299,7 @@ graph [
     raw_risk_score 0.1706367753653025
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5307,7 +5313,7 @@ graph [
     raw_risk_score 0.10283548676565502
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5323,7 +5329,7 @@ graph [
     raw_risk_score 0.3453072435728769
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5337,23 +5343,23 @@ graph [
     raw_risk_score 0.17128139547372395
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
     id 374
     label "GEHC"
-    sentiment_score 0.8
+    sentiment_score 0.3
     ticker "GEHC"
     market_cap 0
-    last_news_update "2025-12-02T14:06:33.237000000+00:00"
+    last_news_update "2025-12-06T14:03:23.552000000+00:00"
     name "GE HealthCare"
     gnn_risk_score 0.2087913155555725
     industry "Health Information Services"
     raw_risk_score 0.34017648153968294
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5367,7 +5373,7 @@ graph [
     raw_risk_score 0.24456123564302257
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5381,7 +5387,7 @@ graph [
     raw_risk_score 0.3676726603593792
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5395,7 +5401,7 @@ graph [
     raw_risk_score 0.25914104081415146
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5409,7 +5415,7 @@ graph [
     raw_risk_score 0.09986818800917455
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5423,7 +5429,7 @@ graph [
     raw_risk_score 0.13716973896033213
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5439,7 +5445,7 @@ graph [
     raw_risk_score 0.16998830719673635
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5453,7 +5459,7 @@ graph [
     raw_risk_score 0.20541747873376626
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5469,7 +5475,7 @@ graph [
     raw_risk_score 0.1496614296637519
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5483,7 +5489,7 @@ graph [
     raw_risk_score 0.1489127366557138
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5497,7 +5503,7 @@ graph [
     raw_risk_score 0.19592617256940809
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5511,7 +5517,7 @@ graph [
     raw_risk_score 0.2770855496100293
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5525,7 +5531,7 @@ graph [
     raw_risk_score 0.2345022513990282
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5539,7 +5545,7 @@ graph [
     raw_risk_score 0.3103848572061551
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5553,7 +5559,7 @@ graph [
     raw_risk_score 0.1485015853743632
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5567,7 +5573,7 @@ graph [
     raw_risk_score 0.10086194318230997
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5581,7 +5587,7 @@ graph [
     raw_risk_score 0.1603249567594969
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5597,7 +5603,7 @@ graph [
     raw_risk_score 0.2047714781717349
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5611,7 +5617,7 @@ graph [
     raw_risk_score 0.22266412150753778
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5625,7 +5631,7 @@ graph [
     raw_risk_score 0.2350387191721027
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5639,7 +5645,7 @@ graph [
     raw_risk_score 0.10297049113353003
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5653,7 +5659,7 @@ graph [
     raw_risk_score 0.158558486228638
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5667,7 +5673,7 @@ graph [
     raw_risk_score 0.16954761484040448
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5681,7 +5687,7 @@ graph [
     raw_risk_score 0.22480841580763428
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5695,7 +5701,7 @@ graph [
     raw_risk_score 0.17241505911897304
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5709,7 +5715,7 @@ graph [
     raw_risk_score 0.24920483837598373
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5723,7 +5729,7 @@ graph [
     raw_risk_score 0.10697933206782223
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5737,7 +5743,7 @@ graph [
     raw_risk_score 0.19089330424139184
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5751,7 +5757,7 @@ graph [
     raw_risk_score 0.1611531354388327
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5765,7 +5771,7 @@ graph [
     raw_risk_score 0.2651176954637017
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5779,7 +5785,7 @@ graph [
     raw_risk_score 0.1837089527921668
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5793,7 +5799,7 @@ graph [
     raw_risk_score 0.3006106470579806
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5807,7 +5813,7 @@ graph [
     raw_risk_score 0.2464529555715693
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -5821,7 +5827,7 @@ graph [
     raw_risk_score 0.14023539839501248
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -5835,7 +5841,7 @@ graph [
     raw_risk_score 0.21044865105659144
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5849,7 +5855,7 @@ graph [
     raw_risk_score 0.216218101754379
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5863,23 +5869,23 @@ graph [
     raw_risk_score 0.23404392461872792
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 411
     label "VRTX"
-    sentiment_score 0.8
+    sentiment_score -0.3
     ticker "VRTX"
     market_cap 0
-    last_news_update "2025-12-04T21:01:27.922000000+00:00"
+    last_news_update "2025-12-07T01:01:26.423000000+00:00"
     name "Vertex Pharmaceuticals"
     gnn_risk_score 0.2087913155555725
     industry "Biotechnology"
     raw_risk_score 0.24186055878114193
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -5895,7 +5901,7 @@ graph [
     raw_risk_score 0.279415425240971
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -5909,7 +5915,7 @@ graph [
     raw_risk_score 0.2279756822780376
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5923,7 +5929,7 @@ graph [
     raw_risk_score 0.1651672386391148
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -5937,7 +5943,7 @@ graph [
     raw_risk_score 0.19223387755263405
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5951,7 +5957,7 @@ graph [
     raw_risk_score 0.15860390602176933
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5965,7 +5971,7 @@ graph [
     raw_risk_score 0.29482617337135675
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -5979,23 +5985,23 @@ graph [
     raw_risk_score 0.4246052038270599
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 419
     label "CVX"
-    sentiment_score 0.3
+    sentiment_score 0.7
     ticker "CVX"
     market_cap 0
-    last_news_update "2025-12-06T06:00:47.385000000+00:00"
+    last_news_update "2025-12-06T21:00:56.226000000+00:00"
     name "Chevron Corporation"
     gnn_risk_score 0.2087913155555725
     industry "Oil &#38; Gas Integrated"
     raw_risk_score 0.1873920177752484
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6009,7 +6015,7 @@ graph [
     raw_risk_score 0.28991175160278526
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6023,7 +6029,7 @@ graph [
     raw_risk_score 0.22457878371904327
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6037,7 +6043,7 @@ graph [
     raw_risk_score 0.19654946593375683
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6051,7 +6057,7 @@ graph [
     raw_risk_score 0.1442697525350116
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6065,7 +6071,7 @@ graph [
     raw_risk_score 0.28892034096032504
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6079,7 +6085,7 @@ graph [
     raw_risk_score 0.18115776263785108
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6093,7 +6099,7 @@ graph [
     raw_risk_score 0.1714145184284236
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6107,7 +6113,7 @@ graph [
     raw_risk_score 0.06703316833495719
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6121,7 +6127,7 @@ graph [
     raw_risk_score 0.3428734445680535
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6135,7 +6141,7 @@ graph [
     raw_risk_score 0.23499354272080336
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6149,7 +6155,7 @@ graph [
     raw_risk_score 0.06362198111972266
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6163,7 +6169,7 @@ graph [
     raw_risk_score 0.23711326885125678
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6177,7 +6183,7 @@ graph [
     raw_risk_score 0.2673221463031726
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6193,7 +6199,7 @@ graph [
     raw_risk_score 0.2670565874367967
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6207,7 +6213,7 @@ graph [
     raw_risk_score 0.24125646008051643
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6216,30 +6222,30 @@ graph [
     sentiment_score 0.2
     ticker "AVGO"
     market_cap 0
-    last_news_update "2025-12-06T07:01:30.405000000+00:00"
+    last_news_update "2025-12-06T15:03:08.945000000+00:00"
     name "Broadcom"
     gnn_risk_score 0.2087913155555725
     industry "Semiconductors"
     raw_risk_score 0.40915241895738913
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 436
     label "CSCO"
-    sentiment_score 0.3
+    sentiment_score 0.7
     ticker "CSCO"
     market_cap 0
-    last_news_update "2025-12-04T15:03:33.200000000+00:00"
+    last_news_update "2025-12-06T22:01:11.444000000+00:00"
     name "Cisco"
     gnn_risk_score 0.2087913155555725
     industry "Communication Equipment"
     raw_risk_score 0.14271957617341946
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6255,7 +6261,7 @@ graph [
     raw_risk_score 0.3374699682531085
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6269,7 +6275,7 @@ graph [
     raw_risk_score 0.11427024637319363
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6283,7 +6289,7 @@ graph [
     raw_risk_score 0.15456313317642498
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6297,7 +6303,7 @@ graph [
     raw_risk_score 0.17969733453070794
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6311,7 +6317,7 @@ graph [
     raw_risk_score 0.2146739338151203
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6325,7 +6331,7 @@ graph [
     raw_risk_score 0.42595663484094654
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6339,7 +6345,7 @@ graph [
     raw_risk_score 0.2370873836428497
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6353,7 +6359,7 @@ graph [
     raw_risk_score 0.16876627980455167
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6367,7 +6373,7 @@ graph [
     raw_risk_score 0.2059229553249345
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6383,7 +6389,7 @@ graph [
     raw_risk_score 0.2012791963382859
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6399,7 +6405,7 @@ graph [
     raw_risk_score 0.29100244750075877
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC."
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6413,7 +6419,7 @@ graph [
     raw_risk_score 0.4530787871694253
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6429,7 +6435,7 @@ graph [
     raw_risk_score 0.17634409372414359
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6443,7 +6449,7 @@ graph [
     raw_risk_score 0.17767151676798756
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6457,7 +6463,7 @@ graph [
     raw_risk_score 0.36309993994186374
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -6473,7 +6479,7 @@ graph [
     raw_risk_score 0.43424049430299144
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6489,7 +6495,7 @@ graph [
     raw_risk_score 0.32621682420970977
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -6505,7 +6511,7 @@ graph [
     raw_risk_score 0.41486108205192873
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -6519,7 +6525,7 @@ graph [
     raw_risk_score 0.1523574346059311
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -6533,7 +6539,7 @@ graph [
     raw_risk_score 0.291653959818887
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -6547,23 +6553,23 @@ graph [
     raw_risk_score 0.34057672095593583
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
     id 458
     label "WBD"
-    sentiment_score 0.3
+    sentiment_score -0.6
     ticker "WBD"
     market_cap 0
-    last_news_update "2025-12-06T07:02:09.638000000+00:00"
+    last_news_update "2025-12-06T18:02:54.466000000+00:00"
     name "Warner Bros. Discovery"
     gnn_risk_score 0.2087913155555725
     industry "Entertainment"
     raw_risk_score 0.36064392974332016
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -6577,7 +6583,7 @@ graph [
     raw_risk_score 0.24833324528450462
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6591,7 +6597,7 @@ graph [
     raw_risk_score 0.17777818801325723
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6607,7 +6613,7 @@ graph [
     raw_risk_score 0.12391537758109256
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -6621,7 +6627,7 @@ graph [
     raw_risk_score 0.15803591643027165
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6635,7 +6641,7 @@ graph [
     raw_risk_score 0.2973358695394451
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6649,7 +6655,7 @@ graph [
     raw_risk_score 0.10972744338336839
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6663,7 +6669,7 @@ graph [
     raw_risk_score 0.19167759383392827
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6677,7 +6683,7 @@ graph [
     raw_risk_score 0.2521452031060369
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6693,7 +6699,7 @@ graph [
     raw_risk_score 0.21907803919949265
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6707,7 +6713,7 @@ graph [
     raw_risk_score 0.19245542127090942
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6721,7 +6727,7 @@ graph [
     raw_risk_score 0.2705662561149681
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6735,7 +6741,7 @@ graph [
     raw_risk_score 0.25219874949313553
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6749,7 +6755,7 @@ graph [
     raw_risk_score 0.25030102880209854
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -6765,7 +6771,7 @@ graph [
     raw_risk_score 0.3499018826188679
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6779,7 +6785,7 @@ graph [
     raw_risk_score 0.1955526224590177
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6795,7 +6801,7 @@ graph [
     raw_risk_score 0.19310352371962458
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6809,7 +6815,7 @@ graph [
     raw_risk_score 0.2246802769867594
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6823,7 +6829,7 @@ graph [
     raw_risk_score 0.21035116895613898
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -6837,7 +6843,7 @@ graph [
     raw_risk_score 0.19128422693657965
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -6851,7 +6857,7 @@ graph [
     raw_risk_score 0.23933940983999913
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6865,7 +6871,7 @@ graph [
     raw_risk_score 0.10335190135586339
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6879,7 +6885,7 @@ graph [
     raw_risk_score 0.15121336420111403
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6893,7 +6899,7 @@ graph [
     raw_risk_score 0.21030344262267223
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -6907,7 +6913,7 @@ graph [
     raw_risk_score 0.42298118958056896
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -6923,7 +6929,7 @@ graph [
     raw_risk_score 0.07812665031178617
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6939,7 +6945,7 @@ graph [
     raw_risk_score 0.16187618199778347
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6953,7 +6959,7 @@ graph [
     raw_risk_score 0.23881334899048418
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6967,7 +6973,7 @@ graph [
     raw_risk_score 0.33943897416143876
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -6983,7 +6989,7 @@ graph [
     raw_risk_score 0.1743634651124505
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -6999,7 +7005,7 @@ graph [
     raw_risk_score 0.1689308725499873
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7013,7 +7019,7 @@ graph [
     raw_risk_score 0.30027454715313084
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7027,7 +7033,7 @@ graph [
     raw_risk_score 0.09228048754213243
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7041,7 +7047,7 @@ graph [
     raw_risk_score 0.35561556236842196
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7055,7 +7061,7 @@ graph [
     raw_risk_score 0.13363109945600685
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7069,7 +7075,7 @@ graph [
     raw_risk_score 0.13774037313490003
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7083,7 +7089,7 @@ graph [
     raw_risk_score 0.16775782289642585
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7097,7 +7103,7 @@ graph [
     raw_risk_score 0.17313115920022576
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7111,7 +7117,7 @@ graph [
     raw_risk_score 0.24065945358194146
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7125,7 +7131,7 @@ graph [
     raw_risk_score 0.23519866587652086
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7139,7 +7145,7 @@ graph [
     raw_risk_score 0.216003401797611
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7155,7 +7161,7 @@ graph [
     raw_risk_score 0.28182399897532207
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7169,7 +7175,7 @@ graph [
     raw_risk_score 0.12279468611018099
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7183,7 +7189,7 @@ graph [
     raw_risk_score 0.13322654030475858
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7197,7 +7203,7 @@ graph [
     raw_risk_score 0.21232887528706157
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -7235,7 +7241,7 @@ graph [
     raw_risk_score 0.4973477050390107
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7249,7 +7255,7 @@ graph [
     raw_risk_score 0.1829423524044149
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7263,7 +7269,7 @@ graph [
     raw_risk_score 0.1521587018780853
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7289,7 +7295,7 @@ graph [
     raw_risk_score 0.32212528728863854
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7303,7 +7309,7 @@ graph [
     raw_risk_score 0.22924570504519753
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7317,7 +7323,7 @@ graph [
     raw_risk_score 0.21503174931304758
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7331,7 +7337,7 @@ graph [
     raw_risk_score 0.1855190723261365
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7345,7 +7351,7 @@ graph [
     raw_risk_score 0.3609530935331047
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7359,7 +7365,7 @@ graph [
     raw_risk_score 0.1472268603335165
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7373,7 +7379,7 @@ graph [
     raw_risk_score 0.2429040545528559
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7389,7 +7395,7 @@ graph [
     raw_risk_score 0.43090793437811464
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Healthcare"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7403,7 +7409,7 @@ graph [
     raw_risk_score 0.34086355374163707
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7417,7 +7423,7 @@ graph [
     raw_risk_score 0.30289103270664536
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -7433,7 +7439,7 @@ graph [
     raw_risk_score 0.18969678843904028
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -7615,7 +7621,7 @@ graph [
     raw_risk_score 0.2734517922655743
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7629,7 +7635,7 @@ graph [
     raw_risk_score 0.3242179219217467
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -7645,7 +7651,7 @@ graph [
     raw_risk_score 0.24417780929316424
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7659,7 +7665,7 @@ graph [
     raw_risk_score 0.38181217143957263
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7673,7 +7679,7 @@ graph [
     raw_risk_score 0.1612984830331715
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Real Estate"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7689,7 +7695,7 @@ graph [
     raw_risk_score 0.2603156814828705
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7703,7 +7709,7 @@ graph [
     raw_risk_score 0.2768520281164865
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7717,7 +7723,7 @@ graph [
     raw_risk_score 0.49164650829318485
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7733,7 +7739,7 @@ graph [
     raw_risk_score 0.2757983436827387
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -7747,7 +7753,7 @@ graph [
     raw_risk_score 0.2742248231916221
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -7761,7 +7767,7 @@ graph [
     raw_risk_score 0.10667052295425539
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7775,7 +7781,7 @@ graph [
     raw_risk_score 0.3287158100610707
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7789,7 +7795,7 @@ graph [
     raw_risk_score 0.03313217232083847
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7815,7 +7821,7 @@ graph [
     raw_risk_score 0.18157792916110718
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7829,7 +7835,7 @@ graph [
     raw_risk_score 0.14292999061800354
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7855,23 +7861,23 @@ graph [
     raw_risk_score 0.3287871117006059
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
     id 552
     label "PLTR"
-    sentiment_score 0.2
+    sentiment_score -0.5
     ticker "PLTR"
     market_cap 0
-    last_news_update "2025-12-06T04:01:16.275000000+00:00"
+    last_news_update "2025-12-06T16:02:08.250000000+00:00"
     name "Palantir Technologies"
     gnn_risk_score 0.2087913155555725
     industry "Software - Infrastructure"
     raw_risk_score 0.3514758017294713
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7898,7 +7904,7 @@ graph [
     raw_risk_score 0.2716029936962725
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7912,7 +7918,7 @@ graph [
     raw_risk_score 0.2671786509745974
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7926,7 +7932,7 @@ graph [
     raw_risk_score 0.5188178964925303
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7940,7 +7946,7 @@ graph [
     raw_risk_score 0.3990754970886476
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Financial Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7954,7 +7960,7 @@ graph [
     raw_risk_score 0.23134437749634945
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7970,7 +7976,7 @@ graph [
     raw_risk_score 0.3676599542258621
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -7984,7 +7990,7 @@ graph [
     raw_risk_score 0.3246153102065312
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Basic Materials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -8000,7 +8006,7 @@ graph [
     raw_risk_score 0.3389466690018603
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Energy"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -8014,7 +8020,7 @@ graph [
     raw_risk_score 0.19207925017136665
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -8028,7 +8034,7 @@ graph [
     raw_risk_score 0.2920185581071768
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Defensive"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -8054,7 +8060,7 @@ graph [
     raw_risk_score 0.35651432411687467
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Consumer Cyclical"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -8068,7 +8074,7 @@ graph [
     raw_risk_score 0.17921729521700003
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -8082,7 +8088,7 @@ graph [
     raw_risk_score 0.2000770978354044
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Industrials"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -8096,7 +8102,7 @@ graph [
     raw_risk_score 0.4778301635625333
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -8110,7 +8116,7 @@ graph [
     raw_risk_score 0.2869311326554307
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Utilities"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -8123,7 +8129,7 @@ graph [
     raw_risk_score 0.0774047226483812
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Macro"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -8136,7 +8142,7 @@ graph [
     raw_risk_score 0.13509963497917118
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Macro"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -8149,7 +8155,7 @@ graph [
     raw_risk_score 0.21063546438517244
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Macro"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -8174,7 +8180,7 @@ graph [
     raw_risk_score 0.7618470144523467
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Macro"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -8183,7 +8189,7 @@ graph [
     ticker "X"
     name "X"
     gnn_risk_score 0.2087913155555725
-    raw_risk_score 0.7291339843169502
+    raw_risk_score 0.7534142842999212
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Unknown"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
@@ -8200,7 +8206,7 @@ graph [
     raw_risk_score 0.32962856758053505
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -8232,14 +8238,14 @@ graph [
     label "TSM"
     sentiment_score 0.7
     ticker "TSM"
-    last_news_update "2025-12-05T17:01:58.148000000+00:00"
+    last_news_update "2025-12-07T01:01:24.120000000+00:00"
     name "Taiwan Semiconductor Manufacturing Company Ltd"
     gnn_risk_score 0.2087913155555725
     industry "Semiconductors"
     raw_risk_score 0.20134289372972275
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
   ]
   node [
@@ -8263,7 +8269,7 @@ graph [
     raw_risk_score 0.2949187685372967
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -8276,7 +8282,7 @@ graph [
     raw_risk_score 0.2522355154167689
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Discovered"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -8290,7 +8296,7 @@ graph [
     raw_risk_score 0.12473431224996338
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Technology"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   node [
@@ -8306,7 +8312,7 @@ graph [
     raw_risk_score 0.3606488888901743
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Communication Services"
-    risk_last_updated "2025-12-06T12:16:38.203000000+00:00"
+    risk_last_updated "2025-12-07T01:16:40.050000000+00:00"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
   ]
   edge [
