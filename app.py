@@ -1358,7 +1358,7 @@ def main():
     with tab_explore:
         st.header("🗺️ Interactive Knowledge Graph Explorer")
         
-    # --- NEW: MARKET WEATHER (SECTOR HEATMAP) - Z-SCORE EDITION ---
+        # --- NEW: MARKET WEATHER (SECTOR HEATMAP) - Z-SCORE EDITION ---
         with st.expander("🌤️ Market Weather (Sector Heatmap)", expanded=True):
             with st.spinner("Analyzing market sectors..."):
                 sector_data = db_manager.get_sector_risk_data()
@@ -1369,34 +1369,25 @@ def main():
                 df_sectors = pd.DataFrame(sector_data)
                 
                 # --- CALCULATION: Z-SCORE (Relative Risk) ---
-                # 1. Calculate Market Mean and Standard Deviation
                 mu = df_sectors['AvgRisk'].mean()
                 sigma = df_sectors['AvgRisk'].std()
 
-                # 2. Compute Z-Score: (Value - Mean) / StdDev
-                # This tells us how many "deviations" a sector is away from the average.
                 if sigma == 0:
-                    df_sectors['Z_Score'] = 0 # Avoid division by zero if all sectors are identical
+                    df_sectors['Z_Score'] = 0 
                 else:
                     df_sectors['Z_Score'] = (df_sectors['AvgRisk'] - mu) / sigma
 
-                # 3. Create Treemap
                 fig = px.treemap(
                     df_sectors, 
                     path=[px.Constant("Market"), 'Sector'], 
                     values='CompanyCount',
                     color='Z_Score', 
-                    # RdYlGn_r = Red-Yellow-Green (Reversed). 
-                    # High Positive Z (Riskier than avg) -> Red
-                    # 0 (Average) -> Yellow
-                    # Low Negative Z (Safer than avg) -> Green
                     color_continuous_scale='RdYlGn_r', 
-                    color_continuous_midpoint=0, # Force the scale to center on the Market Average
-                    custom_data=['AvgRisk'], # Pass the RAW risk score to the tooltip
+                    color_continuous_midpoint=0, 
+                    custom_data=['AvgRisk'], 
                     title="Relative Sector Risk (Z-Score)"
                 )
                 
-                # 4. Update Tooltip so you see the REAL risk score, not just the Z-score
                 fig.update_traces(
                     hovertemplate='<b>%{label}</b><br>Companies: %{value}<br>Relative Risk (Z): %{color:.2f} σ<br><b>Actual Risk: %{customdata[0]:.4f}</b>'
                 )
@@ -1414,11 +1405,10 @@ def main():
                 st.warning("Knowledge graph is empty. Please run `worker.py` (locally) to populate the *cloud* database.")
         else:
             # --- STEP 1: PREPARE FILTERS ---
-            # Get all unique sectors from the graph data
             all_sectors = sorted(list(set(
                 financial_graph.nodes[n].get('sector', 'Unknown') 
                 for n in financial_graph.nodes()
-                if financial_graph.nodes[n].get('sector') # filter out empty/None
+                if financial_graph.nodes[n].get('sector') 
             )))
 
             # Layout: Filter on left, Ticker select on right
@@ -1435,7 +1425,6 @@ def main():
             all_nodes = sorted(list(financial_graph.nodes()))
             
             if selected_sector != "All Sectors":
-                # Only keep nodes that match the selected sector
                 all_nodes = [
                     n for n in all_nodes 
                     if financial_graph.nodes[n].get('sector') == selected_sector
@@ -1443,14 +1432,8 @@ def main():
 
             company_map = load_company_names()
             
-            # --- UPDATED FORMATTER ---
-            # This fixes the issue where Macro nodes appeared as tickers (e.g. "CL=F") 
-            # instead of names (e.g. "Crude Oil")
             def format_ticker(ticker):
-                # 1. Try JSON map first (Fastest)
                 name = company_map.get(ticker)
-                
-                # 2. If not in JSON, check the Graph Node attributes (Fallback for Macro/New nodes)
                 if not name and financial_graph.has_node(ticker):
                     name = financial_graph.nodes[ticker].get('name')
                 
@@ -1459,10 +1442,16 @@ def main():
                 return ticker
 
             with col_select:
+                # --- FIX: CHECK SESSION STATE FOR DEFAULT INDEX ---
+                # This ensures the selection from the Dashboard carries over
+                default_index = 0
+                if st.session_state.selected_ticker_for_graph in all_nodes:
+                    default_index = all_nodes.index(st.session_state.selected_ticker_for_graph)
+
                 selected_company = st.selectbox(
                     "Select a company/asset:", 
                     all_nodes, 
-                    index=0 if all_nodes else None,
+                    index=default_index, # <--- APPLIED FIX HERE
                     format_func=format_ticker,
                     key="explore_select"
                 )
@@ -1477,26 +1466,25 @@ def main():
                 # --- BUTTON CLICK HANDLER (Generates & Saves) ---
                 if st.button("🗺️ Explore Neighborhood"):
                     if selected_company:
+                        # Update session state to keep sync if user changed dropdown manually
+                        st.session_state.selected_ticker_for_graph = selected_company
+                        
                         with st.spinner(f"Loading neighborhood for {selected_company}..."):
                             
-                            # Get structure from Neo4j
                             neighborhood_graph = db_manager.get_neighborhood_graph(selected_company)
 
                             if neighborhood_graph.number_of_nodes() > 0:
                                 
-                                # Transfer risk scores & clean sectors from Global Graph to Local Neighborhood Graph
+                                # Transfer risk scores & clean sectors
                                 for node in neighborhood_graph.nodes():
                                     if financial_graph.has_node(node):
-                                        # Sync Risk
                                         neighborhood_graph.nodes[node]['predicted_risk'] = financial_graph.nodes[node].get('predicted_risk', 0)
                                         neighborhood_graph.nodes[node]['raw_risk_score'] = financial_graph.nodes[node].get('raw_risk_score', 0.0)
-                                        # Sync Sector (Cleaned)
                                         neighborhood_graph.nodes[node]['sector'] = financial_graph.nodes[node].get('sector', 'Unknown')
-                                        # Sync Name (for Tooltip)
                                         if 'name' not in neighborhood_graph.nodes[node]:
                                             neighborhood_graph.nodes[node]['name'] = financial_graph.nodes[node].get('name', node)
 
-                                # Manually clean the graph edges of reserved keywords for Pyvis
+                                # Manually clean the graph edges
                                 graph_for_pyvis = neighborhood_graph.copy() 
                                 for u, v, data in graph_for_pyvis.edges(data=True):
                                     data.pop('source', None)
@@ -1505,8 +1493,6 @@ def main():
                                 net = Network(height="750px", width="100%", notebook=True, cdn_resources='in_line', directed=True, bgcolor="#222222", font_color="white")
                                 net.from_nx(graph_for_pyvis)
                                 
-                                # === NEW: APPLY AI VISUAL STYLES ===
-                                # This turns "AI_PROPOSED" edges into dashed grey lines
                                 net = apply_ai_visual_styles(net, graph_for_pyvis)
                                 
                                 risk_map = {
@@ -1520,7 +1506,6 @@ def main():
                                     node_data = neighborhood_graph.nodes[node_id]
                                     node['label'] = node_id
                                     
-                                    # Retrieve risk data
                                     predicted_risk = node_data.get('predicted_risk', 0)
                                     raw_score = node_data.get('raw_risk_score', 0.0)
                                     
@@ -1529,9 +1514,7 @@ def main():
                                     title_prefix = ""
                                     if show_risk and risk_info:
                                         node['color'] = risk_info['color']
-                                        # TOOLTIP: Shows raw score
-                                        title_prefix = f"⚠️ RISK SCORE: {raw_score:.4f} ({risk_info['label'].upper()})\n" \
-                                                       f"----------------------------------\n"
+                                        title_prefix = f"⚠️ RISK SCORE: {raw_score:.4f} ({risk_info['label'].upper()})\n----------------------------------\n"
                                     
                                     if node_id == selected_company:
                                         node['size'] = 30
@@ -1561,7 +1544,6 @@ def main():
                                 
                                 net.set_options(options_str)
                                 
-                                # --- SAVE TO SESSION STATE ---
                                 html_file = f"temp_graph_{uuid.uuid4().hex}.html"
                                 try:
                                     net.save_graph(html_file)
@@ -1574,7 +1556,6 @@ def main():
                                     if os.path.exists(html_file):
                                         os.remove(html_file)
                                     
-                                # === REFRESH TO SHOW NEW HTML ===
                                 st.rerun()
 
                             else:
@@ -1584,8 +1565,9 @@ def main():
 
                 # --- PERSISTENT DISPLAY ---
                 if st.session_state.graph_html is not None:
+                    # Check if the displayed graph matches the dropdown selection
                     if st.session_state.selected_ticker_for_graph != selected_company:
-                        st.caption(f"⚠️ Currently displaying graph for: {st.session_state.selected_ticker_for_graph}. Click 'Explore Neighborhood' to update.")
+                        st.warning(f"⚠️ Displaying graph for **{st.session_state.selected_ticker_for_graph}**. Click 'Explore Neighborhood' to update to **{selected_company}**.")
                     
                     st.components.v1.html(st.session_state.graph_html, height=800, scrolling=True)
                     st.caption("ℹ️ **Legend:** Solid Lines = Verified Data. Dashed Grey Lines = **AI Inferred** (Unverified).")
@@ -1603,7 +1585,6 @@ def main():
                     
                     if st.button("🧠 Generate"):
                         with st.spinner("Consulting Gemini..."):
-                            # Construct context
                             my_risk = financial_graph.nodes[selected_company].get('raw_risk_score', 0.0)
                             neighbors = list(financial_graph.neighbors(selected_company))[:5]
                             neighbor_str = ", ".join(neighbors)
