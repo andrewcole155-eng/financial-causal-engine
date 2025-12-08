@@ -949,7 +949,7 @@ def render_forecast_dashboard():
         df = pd.read_csv(csv_path)
         
         # Validation
-        req_cols = ['ticker', 'forecast_return', 'risk_score']
+        req_cols = ['ticker', 'forecast_return'] # Removed risk_score from req as we pull it from graph
         if not all(col in df.columns for col in req_cols):
             st.error(f"CSV format error. Expected {req_cols}, got {df.columns.tolist()}")
             return
@@ -958,7 +958,7 @@ def render_forecast_dashboard():
         st.error(f"Error loading forecasts: {e}")
         return
 
-    # 2. Enrich Data with Graph Metadata
+    # 2. Enrich Data with Graph Metadata (Live Injection)
     financial_graph = get_full_graph()
     company_map = load_company_names()
     
@@ -966,37 +966,65 @@ def render_forecast_dashboard():
         sector_map = {}
         cap_map = {}
         name_map = {}
-        price_map = {} # <--- New Map
+        price_map = {} 
+        risk_map = {} # <--- NEW: Pull live risk from graph
         
         for n in financial_graph.nodes():
-            sector_map[n] = financial_graph.nodes[n].get('sector', 'Unknown')
+            # Get Sector
+            sec = financial_graph.nodes[n].get('sector', 'Unknown')
+            sector_map[n] = sec if sec else "Unknown"
+            
+            # Get Market Cap (Default to 1B if missing to ensure Treemap displays it)
             cap = financial_graph.nodes[n].get('market_cap', 0)
-            if cap is None or cap == 0: cap = 10_000_000 
+            if cap is None or cap == 0: cap = 1_000_000_000 
             cap_map[n] = cap
+            
             name_map[n] = financial_graph.nodes[n].get('name', n)
-            price_map[n] = financial_graph.nodes[n].get('last_close', 0.0) # <--- Get Price
+            price_map[n] = financial_graph.nodes[n].get('last_close', 0.0) 
+            
+            # Get Live Risk
+            risk_val = financial_graph.nodes[n].get('raw_risk_score', 0.0)
+            risk_map[n] = risk_val
 
+        # Map data to DataFrame
         df['Sector'] = df['ticker'].map(sector_map).fillna('Unknown')
-        df['Market_Cap'] = df['ticker'].map(cap_map).fillna(10_000_000)
+        df['Market_Cap'] = df['ticker'].map(cap_map).fillna(1_000_000_000)
         df['Name'] = df['ticker'].map(name_map).fillna(df['ticker'])
         df['Current_Price'] = df['ticker'].map(price_map).fillna(0.0)
+        
+        # OVERRIDE CSV risk with Graph risk (Fixes the 0.34 uniform issue if graph is updated)
+        df['risk_score'] = df['ticker'].map(risk_map).fillna(df['risk_score'] if 'risk_score' in df else 0.5)
+
     else:
+        # Fallback if graph fails
         df['Sector'] = 'Unknown'
-        df['Market_Cap'] = 10_000_000
+        df['Market_Cap'] = 1_000_000_000
         df['Name'] = df['ticker']
         df['Current_Price'] = 0.0
+        if 'risk_score' not in df.columns: df['risk_score'] = 0.5
 
-    # 3. Calculate Target Price
+    # 3. Calculate Target Price & Formatted Strings
     df['Target_Price'] = df['Current_Price'] * (1 + df['forecast_return'])
+    
+    # FIX: Create a string column for display to guarantee strict formatting
+    df['Forecast_Display'] = df['forecast_return'].apply(lambda x: f"{x:.2%}")
 
     # --- Z-SCORE CALCULATION ---
+    # Handle case where all risks are identical (std dev = 0)
     mu = df['risk_score'].mean()
     sigma = df['risk_score'].std()
     
-    if sigma == 0:
+    if sigma == 0 or pd.isna(sigma):
+        # If no variance, disable z-score coloring and use raw score
         df['z_score'] = 0
+        heatmap_color_col = 'risk_score' 
+        heatmap_midpoint = 0.5
+        heatmap_title = "Absolute Risk (0-1)"
     else:
         df['z_score'] = (df['risk_score'] - mu) / sigma
+        heatmap_color_col = 'z_score'
+        heatmap_midpoint = 0
+        heatmap_title = "Relative Risk (Z-Score)"
 
     # ============================================================
     # 0. DASHBOARD FILTERS
@@ -1004,8 +1032,9 @@ def render_forecast_dashboard():
     with st.expander("🔍 Filter Dashboard", expanded=False):
         col_f1, col_f2 = st.columns(2)
         
-        all_sectors = sorted(list(df['Sector'].unique()))
-        if "Unknown" in all_sectors: all_sectors.remove("Unknown"); all_sectors.append("Unknown")
+        # Ensure we filter out NaNs from sector list
+        unique_sectors = [s for s in df['Sector'].unique() if s and isinstance(s, str)]
+        all_sectors = sorted(unique_sectors)
         
         with col_f1:
             selected_sector_view = st.selectbox("Filter by Sector:", ["All Sectors"] + all_sectors, key="dash_view_sector")
@@ -1022,9 +1051,10 @@ def render_forecast_dashboard():
             return ticker
 
         with col_f2:
+            current_tickers = list(view_df['ticker'].unique())
             selected_asset_view = st.selectbox(
                 "Filter by Specific Asset (Optional):", 
-                ["All Assets"] + list(view_df['ticker'].unique()),
+                ["All Assets"] + current_tickers,
                 format_func=lambda x: format_view_ticker(x) if x != "All Assets" else "All Assets",
                 key="dash_view_asset"
             )
@@ -1066,14 +1096,13 @@ def render_forecast_dashboard():
     col_long, col_short = st.columns(2)
 
     # Column Config for display
-    # We display: Ticker, Current $, Forecast %, Target $, Risk
-    cols_to_show = ['ticker', 'Sector', 'Current_Price', 'forecast_return', 'Target_Price', 'risk_score']
+    # Note: We use 'Forecast_Display' (string) instead of raw float to force formatting
+    cols_to_show = ['ticker', 'Sector', 'Current_Price', 'Forecast_Display', 'Target_Price', 'risk_score']
     
     table_config = {
         "ticker": "Asset",
         "Current_Price": st.column_config.NumberColumn("Price", format="$%.2f"),
-        # FIX 1: Updated format string to handle percentages correctly (0.0027 -> 0.27%)
-        "forecast_return": st.column_config.NumberColumn("Forecast %", format="%.2%"),
+        "Forecast_Display": st.column_config.TextColumn("Forecast %"), # Using TextColumn for the pre-formatted string
         "Target_Price": st.column_config.NumberColumn("Target $", format="$%.2f"),
         "risk_score": st.column_config.ProgressColumn("Risk", format="%.2f", min_value=0, max_value=1),
     }
@@ -1081,26 +1110,29 @@ def render_forecast_dashboard():
     with col_long:
         st.subheader("🟢 Top Gainers (Forecast)")
         if not df_sorted.empty:
-            # Explicitly take the top of the list (Positive/Highest values)
-            long_df = df_sorted.head(10)[cols_to_show]
-            st.dataframe(long_df, column_config=table_config, hide_index=True, use_container_width=True)
+            # Filter for positive only
+            gainers = df_sorted[df_sorted['forecast_return'] > 0].head(10)
+            if not gainers.empty:
+                st.dataframe(gainers[cols_to_show], column_config=table_config, hide_index=True, use_container_width=True)
+            else:
+                st.info("No assets forecasted to gain.")
         else:
-            st.info("No assets match current filters.")
+            st.info("No assets match filters.")
 
     with col_short:
         st.subheader("🔴 Top Decliners (Forecast)")
         if not df_sorted.empty:
-            # FIX 2: Explicitly filter for negative values first
+            # FIX: Filter for negative values only
             decliners_only = df_sorted[df_sorted['forecast_return'] < 0]
             
             if not decliners_only.empty:
                 # Sort ascending (Most negative first)
-                short_df = decliners_only.sort_values(by='forecast_return', ascending=True).head(10)[cols_to_show]
-                st.dataframe(short_df, column_config=table_config, hide_index=True, use_container_width=True)
+                short_df = decliners_only.sort_values(by='forecast_return', ascending=True).head(10)
+                st.dataframe(short_df[cols_to_show], column_config=table_config, hide_index=True, use_container_width=True)
             else:
                 st.info("No declining assets forecasted.")
         else:
-            st.info("No assets match current filters.")
+            st.info("No assets match filters.")
 
     st.divider()
 
@@ -1113,29 +1145,34 @@ def render_forecast_dashboard():
     with col_map:
         try:
             map_data = view_df if not view_df.empty else df
-            fig = px.treemap(
-                map_data, 
-                path=[px.Constant("Market"), 'Sector', 'ticker'], 
-                values='Market_Cap', 
-                color='z_score', 
-                color_continuous_scale='RdYlGn_r', 
-                color_continuous_midpoint=0,        
-                custom_data=['risk_score', 'forecast_return', 'Current_Price'], # Added Price to tooltip
-                title="Relative Risk Heatmap (Z-Score)"
-            )
             
-            fig.update_traces(
-                hovertemplate='<b>%{label}</b><br>Price: $%{customdata[2]:.2f}<br>Risk Score: %{customdata[0]:.4f}<br>Forecast: %{customdata[1]:.2%}'
-            )
-            fig.update_layout(template="plotly_dark", margin=dict(t=30, l=0, r=0, b=0), height=450)
-            st.plotly_chart(fig, use_container_width=True)
+            # Safety check for empty map data
+            if map_data.empty:
+                st.warning("No data available for heatmap.")
+            else:
+                fig = px.treemap(
+                    map_data, 
+                    path=[px.Constant("Market"), 'Sector', 'ticker'], 
+                    values='Market_Cap', 
+                    color=heatmap_color_col, 
+                    color_continuous_scale='RdYlGn_r', 
+                    color_continuous_midpoint=heatmap_midpoint,        
+                    custom_data=['risk_score', 'Forecast_Display', 'Current_Price'], 
+                    title=heatmap_title
+                )
+                
+                fig.update_traces(
+                    hovertemplate='<b>%{label}</b><br>Price: $%{customdata[2]:.2f}<br>Risk Score: %{customdata[0]:.4f}<br>Forecast: %{customdata[1]}'
+                )
+                fig.update_layout(template="plotly_dark", margin=dict(t=30, l=0, r=0, b=0), height=450)
+                st.plotly_chart(fig, use_container_width=True)
             
         except Exception as e:
             st.error(f"Could not render heatmap: {e}")
 
     with col_details:
         st.markdown("### 🕸️ Inspect Causality")
-        default_idx = 0
+        
         current_opts = list(view_df['ticker'].unique())
         
         selected_ticker_dash = st.selectbox(
