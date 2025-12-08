@@ -1072,7 +1072,8 @@ def render_forecast_dashboard():
     table_config = {
         "ticker": "Asset",
         "Current_Price": st.column_config.NumberColumn("Price", format="$%.2f"),
-        "forecast_return": st.column_config.NumberColumn("Forecast %", format="%.2f %%"),
+        # FIX 1: Updated format string to handle percentages correctly (0.0027 -> 0.27%)
+        "forecast_return": st.column_config.NumberColumn("Forecast %", format="%.2%"),
         "Target_Price": st.column_config.NumberColumn("Target $", format="$%.2f"),
         "risk_score": st.column_config.ProgressColumn("Risk", format="%.2f", min_value=0, max_value=1),
     }
@@ -1080,6 +1081,7 @@ def render_forecast_dashboard():
     with col_long:
         st.subheader("🟢 Top Gainers (Forecast)")
         if not df_sorted.empty:
+            # Explicitly take the top of the list (Positive/Highest values)
             long_df = df_sorted.head(10)[cols_to_show]
             st.dataframe(long_df, column_config=table_config, hide_index=True, use_container_width=True)
         else:
@@ -1088,8 +1090,15 @@ def render_forecast_dashboard():
     with col_short:
         st.subheader("🔴 Top Decliners (Forecast)")
         if not df_sorted.empty:
-            short_df = df_sorted.tail(10).sort_values(by='forecast_return', ascending=True)[cols_to_show]
-            st.dataframe(short_df, column_config=table_config, hide_index=True, use_container_width=True)
+            # FIX 2: Explicitly filter for negative values first
+            decliners_only = df_sorted[df_sorted['forecast_return'] < 0]
+            
+            if not decliners_only.empty:
+                # Sort ascending (Most negative first)
+                short_df = decliners_only.sort_values(by='forecast_return', ascending=True).head(10)[cols_to_show]
+                st.dataframe(short_df, column_config=table_config, hide_index=True, use_container_width=True)
+            else:
+                st.info("No declining assets forecasted.")
         else:
             st.info("No assets match current filters.")
 
@@ -1110,7 +1119,7 @@ def render_forecast_dashboard():
                 values='Market_Cap', 
                 color='z_score', 
                 color_continuous_scale='RdYlGn_r', 
-                color_continuous_midpoint=0,       
+                color_continuous_midpoint=0,        
                 custom_data=['risk_score', 'forecast_return', 'Current_Price'], # Added Price to tooltip
                 title="Relative Risk Heatmap (Z-Score)"
             )
