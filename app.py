@@ -1184,7 +1184,11 @@ def render_forecast_dashboard():
         
         st.write("") 
         if st.button("🔎 Explain This Stock", use_container_width=True):
+            # 1. Save the target ticker
             st.session_state.selected_ticker_for_graph = selected_ticker_dash
+            # 2. Set the "Auto-Run" flag for the next tab
+            st.session_state.auto_generate_graph = True 
+            
             st.toast(f"Loading Causal Graph for {selected_ticker_dash}...", icon="🚀")
             st.info(f"Go to the **'🗺️ Explore Graph'** tab to view results.")
 
@@ -1352,7 +1356,7 @@ def main():
                     if st.button(f"🔬 Simulate Impact for {event['ticker']}", key=f"btn_{event.get('id', uuid.uuid4())}"):
                         st.info("Go to the 'Simulate Scenarios' tab to run this simulation manually.")
 
-    # ==============================================================================
+# ==============================================================================
     # --- TAB 3: EXPLORE GRAPH ---
     # ==============================================================================
     with tab_explore:
@@ -1442,8 +1446,7 @@ def main():
                 return ticker
 
             with col_select:
-                # --- FIX: CHECK SESSION STATE FOR DEFAULT INDEX ---
-                # This ensures the selection from the Dashboard carries over
+                # --- CHECK SESSION STATE FOR DEFAULT INDEX ---
                 default_index = 0
                 if st.session_state.selected_ticker_for_graph in all_nodes:
                     default_index = all_nodes.index(st.session_state.selected_ticker_for_graph)
@@ -1451,7 +1454,7 @@ def main():
                 selected_company = st.selectbox(
                     "Select a company/asset:", 
                     all_nodes, 
-                    index=default_index, # <--- APPLIED FIX HERE
+                    index=default_index,
                     format_func=format_ticker,
                     key="explore_select"
                 )
@@ -1463,10 +1466,19 @@ def main():
 
             # --- COLUMN 1: THE GRAPH ---
             with col_graph:
-                # --- BUTTON CLICK HANDLER (Generates & Saves) ---
-                if st.button("🗺️ Explore Neighborhood"):
+                # --- LOGIC: MANUAL BUTTON OR AUTO-TRIGGER ---
+                # We check if the button was clicked OR if the dashboard set the 'auto_generate' flag
+                manual_click = st.button("🗺️ Explore Neighborhood")
+                auto_trigger = st.session_state.get('auto_generate_graph', False)
+
+                if manual_click or auto_trigger:
+                    
+                    # Consuming the flag so it doesn't loop forever
+                    if auto_trigger:
+                        st.session_state.auto_generate_graph = False
+
                     if selected_company:
-                        # Update session state to keep sync if user changed dropdown manually
+                        # Update session state to keep sync
                         st.session_state.selected_ticker_for_graph = selected_company
                         
                         with st.spinner(f"Loading neighborhood for {selected_company}..."):
