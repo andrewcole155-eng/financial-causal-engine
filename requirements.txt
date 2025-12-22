@@ -27,4 +27,8 @@ plotly
 yfinance
 dowhy
 fredapi
-numpy<2.0.0
+numpy==1.26.4
+econml
+dowhy
+torch==2.2.2
+torch-geometric==2.5.2
