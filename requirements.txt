@@ -27,4 +27,4 @@ plotly
 yfinance
 dowhy
 fredapi
-numpy
+numpy<2.0.0
