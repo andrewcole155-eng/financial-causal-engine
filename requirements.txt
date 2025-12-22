@@ -1,4 +1,3 @@
-# requirements.txt
 streamlit
 google-generativeai
 networkx
@@ -11,8 +10,8 @@ feedparser
 stop-words
 nest_asyncio
 transformers
-torch
-torch_geometric
+torch==2.2.2
+torch-geometric==2.5.2
 sec-edgar-downloader
 sentence-transformers
 pandas
@@ -29,6 +28,3 @@ dowhy
 fredapi
 numpy==1.26.4
 econml
-dowhy
-torch==2.2.2
-torch-geometric==2.5.2
