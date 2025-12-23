@@ -10,8 +10,8 @@ feedparser
 stop-words
 nest_asyncio
 transformers
-torch==2.2.2
-torch-geometric==2.5.2
+torch>=2.6.0
+torch-geometric>=2.6.0
 sec-edgar-downloader
 sentence-transformers
 pandas
