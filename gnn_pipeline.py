@@ -8,7 +8,10 @@ from torch_geometric.data import HeteroData
 import numpy as np
 import sys
 from tigramite.pcmci import PCMCI
-from tigramite.independence_tests import ParCorr
+try:
+    from tigramite.independence_tests.parcorr import ParCorr
+except ImportError:
+    from tigramite.independence_tests import ParCorr
 from tigramite import data_processing as pp
 
 logger = logging.getLogger(__name__)
@@ -101,29 +104,59 @@ class GNNPipeline:
         return data
 
     def run_causal_discovery(self, historical_snapshots, pc_alpha=0.05, omega_max=7):
-        """ Identifies regime-dependent periodicity (omega) to remove 'illusory' parents. """
+        """Identifies regime-dependent causal structure using PCMCIΩ."""
         logger.info("🔬 Running PCMCIΩ for regime-dependent causal discovery...")
+
+        # Build (time, variables) matrix
+        # variables = companies
         series_data = []
 
         for snap in historical_snapshots:
-            series_data.append(snap['Company'].y.flatten().numpy())
-        data_matrix = np.array(series_data)
+            # Expect shape: (num_nodes, 1)
+            y = snap['Company'].y
+            if y.dim() == 2:
+                y = y.squeeze(-1)
+            series_data.append(y.cpu().numpy())
 
-        # Turning Point Rule logic
-        best_omega = self._turning_point_rule(data_matrix, omega_max) 
+        data_matrix = np.stack(series_data, axis=0)  # (T, N)
+
+        # Optional: remove companies with zero variance (PCMCI requirement)
+        variances = data_matrix.var(axis=0)
+        valid_idx = variances > 1e-8
+        data_matrix = data_matrix[:, valid_idx]
+
+        if data_matrix.shape[1] < 2:
+            logger.warning("⚠️ Not enough valid variables for PCMCI.")
+            return torch.empty((2, 0), dtype=torch.long)
+
+        # Turning-point rule for omega selection
+        best_omega = self._turning_point_rule(data_matrix, omega_max)
+
         dataframe = pp.DataFrame(data_matrix)
-        pcmci = PCMCI(dataframe=dataframe, cond_ind_test=ParCorr())
-        results = pcmci.run_pcmci(tau_max=best_omega, pc_alpha=pc_alpha)
+        pcmci = PCMCI(
+            dataframe=dataframe,
+            cond_ind_test=ParCorr()
+        )
+
+        results = pcmci.run_pcmci(
+            tau_max=best_omega,
+            pc_alpha=pc_alpha
+        )
+
+        graph = results["graph"]  # shape: (N, N, tau_max+1)
 
         sources = []
         targets = []
 
-        adj = results['graph']
-        for i in range(adj.shape[0]):
-            for j in range(adj.shape[1]):
-                if any(adj[i, j, :] != ''):
+        for i in range(graph.shape[0]):
+            for j in range(graph.shape[1]):
+                if any(graph[i, j, :] != ""):
                     sources.append(i)
                     targets.append(j)
+
+        if not sources:
+            return torch.empty((2, 0), dtype=torch.long)
+
         return torch.tensor([sources, targets], dtype=torch.long)
 
     def _turning_point_rule(self, data, omega_max):
