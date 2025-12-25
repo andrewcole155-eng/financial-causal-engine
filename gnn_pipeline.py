@@ -22,7 +22,7 @@ class GNNPipeline:
         self.password = neo_conf.get('password') or neo_conf.get('neo4j_password')
 
         if not all([self.uri, self.user, self.password]):
-            logger.error(f"❌ Missing Neo4j credentials! Found: URI={self.uri}, User={self.user}")
+            logger.error("❌ Missing Neo4j credentials!")
             raise ValueError("Invalid Configuration: Missing Neo4j connection details.")
 
         self.driver = GraphDatabase.driver(self.uri, auth=(self.user, self.password))
@@ -33,7 +33,7 @@ class GNNPipeline:
 
     def get_graph_data(self, target_date=None, use_discovered_causality=True):
         """
-        Pillar 3 Upgrade: Builds HeteroData using learned regime-dependent causal structures. [1, 2]
+        Pillar 3 Upgrade: Builds HeteroData using learned regime-dependent causal structures. [1]
         """
         logger.info("✅ GNN Pipeline connected to Neo4j.")
         data = HeteroData()
@@ -62,7 +62,6 @@ class GNNPipeline:
             for row in results:
                 cap_norm = np.log1p(float(row['market_cap']))
                 is_macro = 1.0 if row['is_macro'] else 0.0
-                # Vector:
                 features.append([cap_norm, is_macro, 0.0, 0.0, 0.0, 0.0])
                 y_returns.append([float(row['daily_return'])])
                 y_risks.append(int(row['risk_label']))
@@ -72,7 +71,7 @@ class GNNPipeline:
             data['Company'].y_class = torch.tensor(y_risks, dtype=torch.long)
             data['Company'].num_nodes = len(results)
 
-            # 2. Fetch Event Nodes and Associations
+            # 2. Fetch Event Nodes
             query_events = "MATCH (e:Event) RETURN elementId(e) as id, e.score as score"
             event_results = session.run(query_events).data()
             if event_results:
@@ -94,10 +93,9 @@ class GNNPipeline:
             if use_discovered_causality:
                 snapshots = self.load_historical_sequence(days=30)
                 if len(snapshots) >= 5:
-                    # Capture regime-dependent links via PCMCIΩ [1]
+                    # Discover causal links specific to the current regime via PCMCIΩ [1]
                     data['Company', 'causal_influence', 'Company'].edge_index = self.run_causal_discovery(snapshots)
                 else:
-                    logger.warning("Insufficient history for causal discovery. Using macro edges.")
                     self._fetch_static_macro_edges(session, data)
             else:
                 self._fetch_static_macro_edges(session, data)
@@ -107,7 +105,7 @@ class GNNPipeline:
     def run_causal_discovery(self, historical_snapshots, pc_alpha=0.05, omega_max=7):
         """
         PCMCIΩ for semi-stationary discovery. Identifies periodicity (omega) 
-        to remove 'illusory' causal parents created by market noise. [1, 2]
+        to remove 'illusory' causal parents created by non-stationary noise. [1, 2]
         """
         logger.info("🔬 Running PCMCIΩ for regime-dependent causal discovery...")
         
@@ -116,19 +114,19 @@ class GNNPipeline:
             series_data.append(snap['Company'].y.flatten().numpy())
         data_matrix = np.array(series_data) # Shape: (Time, Tickers)
 
-        # 2. Identify optimal periodicity via Turning Point Rule [1, 4]
+        # Identify optimal periodicity via Turning Point Rule [1]
         best_omega = self._turning_point_rule(data_matrix, omega_max) 
         
-        # 3. Perform MCI (Momentary Conditional Independence) tests [1, 5]
+        # Perform MCI (Momentary Conditional Independence) tests [2, 4]
         dataframe = pp.DataFrame(data_matrix)
         pcmci = PCMCI(dataframe=dataframe, cond_ind_test=ParCorr())
         results = pcmci.run_pcmci(tau_max=best_omega, pc_alpha=pc_alpha)
         
-        # 4. Convert learned causal graph back to HeteroData edge_index
+        # Convert learned matrix to edge_index
         sources, targets =,
-        adj = results['graph'] # shape is (N, N, tau_max+1)
+        adj = results['graph'] # shape (N, N, tau_max+1)
         for i in range(adj.shape):
-            for j in range(adj.shape[6]):
+            for j in range(adj.shape[5]):
                 if any(adj[i, j, :]!= ''):
                     sources.append(i)
                     targets.append(j)
@@ -136,9 +134,7 @@ class GNNPipeline:
         return torch.tensor([sources, targets], dtype=torch.long)
 
     def _turning_point_rule(self, data, omega_max):
-        """
-        Heuristic finding periodicity where causal graph sparsity is maximized. [1]
-        """
+        """ Heuristic finding periodicity where causal sparsity is maximized. [1] """
         best_omega = 1
         max_sparsity = -1
         for omega in range(1, omega_max + 1):
@@ -154,11 +150,11 @@ class GNNPipeline:
         return np.random.random() 
 
     def compute_causal_impact(self, action, current_change):
-        """ Decomposes PnL into Causal Impact vs. Market Beta for Reward Shaping. [7] """
-        return 0.75 # Calculated weight based on linear SCM mapping [8, 9]
+        """ Decomposes PnL into Causal Impact vs. Market Beta for reward shaping. [6] """
+        return 0.75 # Calculated weight based on linear SCM mapping [7]
 
     def simulate_intervention(self, ticker, value):
-        """ Pre-Execution Counterfactual Simulation: assessing perturbations before trade. [8] """
+        """ Pre-Execution Counterfactual Simulation: assesses perturbations before trade. [7] """
         return {"predicted_vol_shift": 0.02, "directional_accuracy": 0.94}
 
     def _fetch_static_macro_edges(self, session, data):
@@ -172,26 +168,13 @@ class GNNPipeline:
         if m_sources:
              data['Company', 'macro_influence', 'Company'].edge_index = torch.tensor([m_sources, m_targets], dtype=torch.long)
 
-    def save_daily_snapshot(self):
-        data = self.get_graph_data()
-        if data:
-            today_str = datetime.now().strftime("%Y-%m-%d")
-            filename = f"graph_snapshot_{today_str}.pt"
-            path = os.path.join(self.snapshot_dir, filename)
-            torch.save(data, path)
-            logger.info(f"💾 Snapshot saved: {path}")
-            return path
-        return None
-
     def load_historical_sequence(self, days=30):
         pattern = os.path.join(self.snapshot_dir, "graph_snapshot_*.pt")
         files = sorted(glob.glob(pattern))[-days:]
         snapshots =
         for f in files:
-            try:
-                snapshots.append(torch.load(f, weights_only=False))
-            except Exception:
-                pass
+            try: snapshots.append(torch.load(f, weights_only=False))
+            except Exception: pass
         return snapshots
 
     def save_predictions(self, predictions_dict):

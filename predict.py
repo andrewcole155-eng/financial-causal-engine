@@ -103,7 +103,7 @@ def run_inference():
     with torch.no_grad():
         # returns: (price_forecast, risk_logits)
         pred_price, pred_risk_logits, _ = model(snapshots)
-        
+
         # Process Outputs
         # A. Price Forecast (Raw Float)
         price_forecasts = pred_price.squeeze().numpy()
