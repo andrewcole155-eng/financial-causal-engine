@@ -53,7 +53,10 @@ class GNNPipeline:
 
             self.ticker_to_id = {row['ticker']: i for i, row in enumerate(results)}
             
-            features, y_returns, y_risks =,,
+            features = []
+            y_returns = []
+            y_risks = []
+
             for row in results:
                 cap_norm = np.log1p(float(row['market_cap']))
                 is_macro = 1.0 if row['is_macro'] else 0.0
@@ -76,7 +79,8 @@ class GNNPipeline:
                 
                 query_rels = "MATCH (c:Company)-->(e:Event) RETURN c.ticker as c_ticker, elementId(e) as e_id"
                 rel_results = session.run(query_rels).data()
-                sources, targets =,
+                sources = []
+                targets = []
                 for r in rel_results:
                     if r['c_ticker'] in self.ticker_to_id and r['e_id'] in event_id_map:
                         sources.append(self.ticker_to_id[r['c_ticker']])
@@ -99,7 +103,8 @@ class GNNPipeline:
     def run_causal_discovery(self, historical_snapshots, pc_alpha=0.05, omega_max=7):
         """ Identifies regime-dependent periodicity (omega) to remove 'illusory' parents. """
         logger.info("🔬 Running PCMCIΩ for regime-dependent causal discovery...")
-        series_data =
+        series_data = []
+
         for snap in historical_snapshots:
             series_data.append(snap['Company'].y.flatten().numpy())
         data_matrix = np.array(series_data)
@@ -109,12 +114,14 @@ class GNNPipeline:
         dataframe = pp.DataFrame(data_matrix)
         pcmci = PCMCI(dataframe=dataframe, cond_ind_test=ParCorr())
         results = pcmci.run_pcmci(tau_max=best_omega, pc_alpha=pc_alpha)
-        
-        sources, targets =,
+
+        sources = []
+        targets = []
+
         adj = results['graph']
-        for i in range(adj.shape):
+        for i in range(adj.shape[0]):
             for j in range(adj.shape[1]):
-                if any(adj[i, j, :]!= ''):
+                if any(adj[i, j, :] != ''):
                     sources.append(i)
                     targets.append(j)
         return torch.tensor([sources, targets], dtype=torch.long)
@@ -144,7 +151,9 @@ class GNNPipeline:
     def _fetch_static_macro_edges(self, session, data):
         query_macro = "MATCH (m:Company)-[r]->(c:Company) WHERE m.is_macro = true RETURN m.ticker as source, c.ticker as target"
         res = session.run(query_macro).data()
-        m_sources, m_targets =,
+        m_sources = []
+        m_targets = []
+
         for r in res:
             if r['source'] in self.ticker_to_id and r['target'] in self.ticker_to_id:
                 m_sources.append(self.ticker_to_id[r['source']])
@@ -155,14 +164,15 @@ class GNNPipeline:
     def load_historical_sequence(self, days=30):
         pattern = os.path.join(self.snapshot_dir, "graph_snapshot_*.pt")
         files = sorted(glob.glob(pattern))[-days:]
-        snapshots =
+        snapshots = []
         for f in files:
             try: snapshots.append(torch.load(f, weights_only=False))
             except Exception: pass
         return snapshots
 
     def save_predictions(self, predictions_dict):
-        batch_data =
+        batch_data = []
+
         if isinstance(predictions_dict, dict):
             for ticker, vals in predictions_dict.items():
                 batch_data.append({
