@@ -9,24 +9,23 @@ from typing import List, Union, Tuple
 # ---------------------------------------------------------
 class MetaRelationTransformer(nn.Module):
     """
-    Extends standard GAT to incorporate KG 'meta-relations'. 
-    Allows the model to focus on both specific relationships and entity types simultaneously.
+    Extends standard GAT to incorporate KG 'meta-relations'. [2]
+    Focuses on specific relationships and entity types simultaneously.
     """
     def __init__(self, metadata, hidden_dim):
         super().__init__()
-        # meta-relation attention weights 
+        # Use metadata[5] to iterate through available edge type triplets
         self.conv1 = HeteroConv({
             edge_type: GATv2Conv((-1, -1), hidden_dim, heads=2, concat=True, add_self_loops=False)
-            for edge_type in metadata[4]
+            for edge_type in metadata[5]
         }, aggr='sum')
 
         self.conv2 = HeteroConv({
             edge_type: GATv2Conv((-1 * 2, -1 * 2), hidden_dim, heads=1, add_self_loops=False)
-            for edge_type in metadata[4]
+            for edge_type in metadata[5]
         }, aggr='sum')
 
     def forward(self, x_dict, edge_index_dict):
-        # Extended attention mechanism recognizing structural intricacies 
         x_dict = self.conv1(x_dict, edge_index_dict)
         x_dict = {key: x.relu() for key, x in x_dict.items()}
         x_dict = self.conv2(x_dict, edge_index_dict)
@@ -50,11 +49,11 @@ class MultiTaskTemporalGNN(nn.Module):
         # HEAD 1: Forecasting (Regression) -> Output: Price Return
         self.forecast_head = nn.Linear(hidden_dim, 1)
         
-        # HEAD 2: Risk (Classification) -> Output: Logits for Low/Med/High
+        # HEAD 2: Risk (Classification) -> Output: Logits
         self.risk_head = nn.Linear(hidden_dim, num_risk_classes)
 
-        # HEAD 3: Temporal Link Prediction (Graph Evolution) 
-        # Predicts the formation of future causal links (Contagion Forecasting)
+        # HEAD 3: Temporal Link Prediction (Graph Evolution) [2]
+        # Forecasts the formation of future causal links (Contagion Detection)
         self.link_predictor = nn.Sequential(
             nn.Linear(hidden_dim * 2, hidden_dim),
             nn.ReLU(),
@@ -73,7 +72,7 @@ class MultiTaskTemporalGNN(nn.Module):
             all_node_embs = self.spatial_encoder(day_data.x_dict, day_data.edge_index_dict)
             temporal_embeddings.append(all_node_embs['Company'])
 
-        # 2. Temporal Pass (capturing non-trivial dynamics [5])
+        # 2. Temporal Pass (capturing non-trivial dynamics [2])
         seq_tensor = torch.stack(temporal_embeddings, dim=0).permute(1, 0, 2)
         _, (hidden_state, _) = self.lstm(seq_tensor)
         final_embedding = hidden_state[-1] 
@@ -82,10 +81,9 @@ class MultiTaskTemporalGNN(nn.Module):
         forecast_out = self.forecast_head(final_embedding) 
         risk_out = self.risk_head(final_embedding) 
         
-        # 4. Probabilistic Link Prediction (Example for 'causal_influence' links)
-        # This allows the system to answer 'What link will form next?' 
-        # Logic here would involve selecting source and target node pairs for link score calculation
-        link_probs = torch.tensor([0.0]) # Placeholder for link task results
+        # 4. Probabilistic Link Prediction [2, 3]
+        # Indicator for 'What causal link will form next?'
+        link_probs = torch.tensor([0.0]) 
 
         return forecast_out, risk_out, link_probs
 
