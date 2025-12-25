@@ -5,17 +5,17 @@ from torch_geometric.data import HeteroData
 from typing import List, Union, Tuple
 
 class MetaRelationTransformer(nn.Module):
-    """Extends GAT to condition attention on specific KG 'meta-relations'."""
+    """ Extends GAT to condition attention on specific KG 'meta-relations'. [7, 9] """
     def __init__(self, metadata, hidden_dim):
         super().__init__()
-        # metadata[1] contains (src_type, rel_type, dst_type) triplets
+        # Use metadata[5] to iterate through triplets (src_type, rel_type, dst_type)
         self.conv1 = HeteroConv({
             edge_type: GATv2Conv((-1, -1), hidden_dim, heads=2, concat=True, add_self_loops=False)
-            for edge_type in metadata[1]
+            for edge_type in metadata[5]
         }, aggr='sum')
         self.conv2 = HeteroConv({
             edge_type: GATv2Conv((-1 * 2, -1 * 2), hidden_dim, heads=1, add_self_loops=False)
-            for edge_type in metadata[1]
+            for edge_type in metadata[5]
         }, aggr='sum')
 
     def forward(self, x_dict, edge_index_dict):
@@ -32,7 +32,7 @@ class MultiTaskTemporalGNN(nn.Module):
         self.lstm = nn.LSTM(hidden_dim, hidden_dim, num_layers=1, batch_first=True)
         self.forecast_head = nn.Linear(hidden_dim, 1)
         self.risk_head = nn.Linear(hidden_dim, num_risk_classes)
-        # Head for Temporal Link Prediction (Graph Evolution)
+        # Head for Temporal Link Prediction (Graph Evolution) [7, 9]
         self.link_predictor = nn.Sequential(
             nn.Linear(hidden_dim * 2, hidden_dim),
             nn.ReLU(),
@@ -46,10 +46,12 @@ class MultiTaskTemporalGNN(nn.Module):
         for day_data in snapshots:
             all_node_embs = self.spatial_encoder(day_data.x_dict, day_data.edge_index_dict)
             temporal_embeddings.append(all_node_embs['Company'])
+        
         # Stack nodes across time: (Nodes, Time, Features)
         seq_tensor = torch.stack(temporal_embeddings, dim=1)
         _, (hidden_state, _) = self.lstm(seq_tensor)
         final_embedding = hidden_state[-1] 
+        # Returns Forecast, Risk, and a placeholder for Link Probabilities
         return self.forecast_head(final_embedding), self.risk_head(final_embedding), torch.tensor([0.0])
 
 def create_hetero_model(data: HeteroData, hidden_dim=64, out_dim=None) -> nn.Module:

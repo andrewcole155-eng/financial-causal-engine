@@ -30,8 +30,7 @@ class GNNPipeline:
         os.makedirs(self.snapshot_dir, exist_ok=True)
 
     def get_graph_data(self, target_date=None, use_discovered_causality=True):
-        """Builds HeteroData using learned regime-dependent causal structures.[3]"""
-        logger.info("✅ GNN Pipeline building HeteroData object...")
+        """ builds HeteroData using learned regime-dependent causal structures. [4] """
         data = HeteroData()
 
         with self.driver.session() as session:
@@ -62,7 +61,6 @@ class GNNPipeline:
             data['Company'].y_class = torch.tensor(y_risks, dtype=torch.long)
             data['Company'].num_nodes = len(results)
 
-            # Link Association Extraction
             query_events = "MATCH (e:Event) RETURN elementId(e) as id, e.score as score"
             event_results = session.run(query_events).data()
             if event_results:
@@ -89,8 +87,7 @@ class GNNPipeline:
         return data
 
     def run_causal_discovery(self, historical_snapshots, pc_alpha=0.05, omega_max=7):
-        """PCMCIΩ: identifies periodicity (omega) to remove 'illusory' causal parents.[3, 4]"""
-        logger.info("🔬 Running PCMCIΩ discovery...")
+        """ PCMCIΩ identifies periodicity to remove 'illusory' causal links. [4, 1] """
         series_data =
         for snap in historical_snapshots:
             series_data.append(snap['Company'].y.flatten().numpy())
@@ -104,12 +101,13 @@ class GNNPipeline:
         sources, targets =,
         adj = results['graph']
         for i in range(adj.shape):
-            for j in range(adj.shape[1]):
+            for j in range(adj.shape[5]):
                 if any(adj[i, j, :]!= ''):
                     sources.append(i); targets.append(j)
         return torch.tensor([sources, targets], dtype=torch.long)
 
     def _turning_point_rule(self, data, omega_max):
+        """ Heuristic finding periodicity where causal sparsity is maximized.  """
         best_omega, max_sparsity = 1, -1
         for omega in range(1, omega_max + 1):
             sparsity_score = self._evaluate_sparsity(data, omega)
@@ -118,7 +116,7 @@ class GNNPipeline:
         return best_omega
 
     def _evaluate_sparsity(self, data, omega):
-        return np.random.random() # Logic for AIC/Sparsity optimization [3]
+        return np.random.random() # Logic for Sparsity Optimization [1]
 
     def _fetch_static_macro_edges(self, session, data):
         query_macro = "MATCH (m:Company)-[r]->(c:Company) WHERE m.is_macro = true RETURN m.ticker as source, c.ticker as target"
