@@ -14,7 +14,7 @@ from typing import Dict, Any, List
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from datetime import datetime
-import google.generativeai as genai
+from google import genai
 
 # Third-party Imports
 import feedparser
@@ -117,14 +117,14 @@ def get_worker_config() -> Dict[str, Any]:
 # ==============================================================================
 # Load config temporarily to get key for global setup
 _temp_config = get_worker_config()
-GOOGLE_KEY = _temp_config.get("google_api_key") # <--- Changed to google_api_key
+GOOGLE_KEY = _temp_config.get("google_api_key") 
 
 if GOOGLE_KEY:
-    genai.configure(api_key=GOOGLE_KEY)
-    gemini_model = genai.GenerativeModel('gemini-2.0-flash')
-    logger.info("✅ Gemini AI Model loaded for Relevance Analysis.")
+    # UPDATED: Initialize the Client object (New SDK Syntax)
+    gemini_client = genai.Client(api_key=GOOGLE_KEY)
+    logger.info("✅ Gemini AI Client initialized for Relevance Analysis.")
 else:
-    gemini_model = None
+    gemini_client = None
     logger.warning("⚠️ No GOOGLE_API_KEY found. Worker will revert to basic FinBERT.")
 
 # ==============================================================================
@@ -249,7 +249,7 @@ def get_ai_analysis(headline, tickers):
     1. Sentiment (-1 to 1)
     2. Relevance (0 to 1) - Detecting False Positives (Metacognition)
     """
-    if not gemini_model: 
+    if not gemini_client: 
         return 0.0, 0.0
     
     try:
@@ -269,7 +269,13 @@ def get_ai_analysis(headline, tickers):
         Example: {{"score": -0.5, "relevance": 0.1}}
         """
         
-        response = gemini_model.generate_content(prompt)
+        # UPDATED: Call via the client object
+        response = gemini_client.models.generate_content(
+            model='gemini-2.5-flash',
+            contents=prompt
+        )
+        
+        # Parsing the response text
         text = response.text.replace("```json", "").replace("```", "").strip()
         data = json.loads(text)
         
