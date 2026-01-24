@@ -28,4 +28,5 @@ dowhy
 fredapi
 numpy==1.26.4
 econml
+pyrate-limiter<4.0.0
 tigramite
