@@ -13,7 +13,7 @@ import pandas as pd
 import networkx as nx
 import streamlit as st
 from pyvis.network import Network
-import google.generativeai as genai 
+from google import genai
 import plotly.express as px
 import plotly.graph_objects as go 
 from polygon import RESTClient
@@ -54,14 +54,23 @@ else:
 def setup_genai():
     """Configures Google Gemini API from Streamlit Secrets."""
     try:
-        # Check if key exists in secrets or env
+        # Check environment variables first (Case insensitive check)
         api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
         
+        # If not in Env, check Streamlit Secrets
         if not api_key:
             if "GEMINI_API_KEY" in st.secrets:
                 api_key = st.secrets["GEMINI_API_KEY"]
-            elif "general" in st.secrets and "GEMINI_API_KEY" in st.secrets["general"]:
-                 api_key = st.secrets["general"]["GEMINI_API_KEY"]
+            elif "GOOGLE_API_KEY" in st.secrets:
+                api_key = st.secrets["GOOGLE_API_KEY"]
+            # Fix: Check for lowercase key in case config.json was loaded into secrets
+            elif "google_api_key" in st.secrets:
+                api_key = st.secrets["google_api_key"]
+            elif "general" in st.secrets:
+                # Check inside 'general' section if it exists
+                api_key = st.secrets["general"].get("GEMINI_API_KEY") or \
+                          st.secrets["general"].get("GOOGLE_API_KEY") or \
+                          st.secrets["general"].get("google_api_key")
         
         if not api_key:
             return False
@@ -98,7 +107,10 @@ def generate_ai_analysis(prompt: str) -> str:
             Explicitly state that you are filling in missing graph data with external knowledge.
             """
 
-        model = genai.GenerativeModel('gemini-2.0-flash')
+        # --- UPDATE: Use the correct Experimental or Stable model name ---
+        # gemini-2.0-flash-exp is the current valid name for the 2.0 experimental model
+        model = genai.GenerativeModel('gemini-2.0-flash-exp') 
+        
         response = model.generate_content(final_prompt)
         return response.text
     except Exception as e:
