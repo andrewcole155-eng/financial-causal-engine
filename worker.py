@@ -117,7 +117,7 @@ def get_worker_config() -> Dict[str, Any]:
 # ==============================================================================
 # Load config temporarily to get key for global setup
 _temp_config = get_worker_config()
-GOOGLE_KEY = _temp_config.get("google_api_key") 
+GOOGLE_KEY = _temp_config.get("GOOGLE_API_KEY") 
 
 if GOOGLE_KEY:
     # UPDATED: Initialize the Client object (New SDK Syntax)
