@@ -10,15 +10,23 @@ logger = logging.getLogger(__name__)
 def load_api_key():
     """Loads Google API Key from config.json or Environment."""
     try:
-        # Priority 1: Check Environment
-        if os.getenv("GEMINI_API_KEY"):
-            return os.getenv("GEMINI_API_KEY")
+        # Priority 1: Check Environment (Support both naming conventions)
+        env_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+        if env_key:
+            return env_key
             
         # Priority 2: Check Config File
-        with open('config.json', 'r') as f:
-            config = json.load(f)
-            return config.get('GEMINI_API_KEY')
-    except Exception:
+        if os.path.exists('config.json'):
+            with open('config.json', 'r') as f:
+                config = json.load(f)
+                # Check for all variations found in your project history
+                return (config.get('GEMINI_API_KEY') or 
+                        config.get('GOOGLE_API_KEY') or 
+                        config.get('google_api_key'))
+                        
+        return None
+    except Exception as e:
+        logger.warning(f"Error loading API key: {e}")
         return None
 
 def generate_financial_narrative(ticker, prediction_label, triples):
@@ -27,9 +35,12 @@ def generate_financial_narrative(ticker, prediction_label, triples):
     """
     api_key = load_api_key()
     if not api_key:
-        return "⚠️ Error: GEMINI_API_KEY not found in config.json or environment."
+        return "⚠️ Error: GOOGLE_API_KEY not found in config.json or environment."
 
-    genai.configure(api_key=api_key)
+    try:
+        genai.configure(api_key=api_key)
+    except Exception as e:
+        return f"⚠️ Error configuring Gemini API: {e}"
 
     if not triples:
         return "No sufficient causal paths found to generate a narrative."
@@ -58,8 +69,8 @@ def generate_financial_narrative(ticker, prediction_label, triples):
     """
 
     try:
-        # Use Flash for speed/cost efficiency
-        model = genai.GenerativeModel('gemini-2.0-flash')
+        # UPDATED: Use the correct model name
+        model = genai.GenerativeModel('gemini-2.5-flash')
         response = model.generate_content(prompt)
         return response.text
         

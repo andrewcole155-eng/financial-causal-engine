@@ -108,8 +108,8 @@ def generate_ai_analysis(prompt: str) -> str:
             """
 
         # --- UPDATE: Use the correct Experimental or Stable model name ---
-        # gemini-2.0-flash-exp is the current valid name for the 2.0 experimental model
-        model = genai.GenerativeModel('gemini-2.0-flash-exp') 
+        # gemini-2.5-flash is the current valid name for the 2.0 experimental model
+        model = genai.GenerativeModel('gemini-2.5-flash') 
         
         response = model.generate_content(final_prompt)
         return response.text
