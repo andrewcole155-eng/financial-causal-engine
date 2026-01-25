@@ -84,8 +84,9 @@ def get_worker_config() -> Dict[str, Any]:
     # APIs
     if os.environ.get("POLYGON_API_KEY"):
         config["polygon_api_key"] = os.environ.get("POLYGON_API_KEY")
-    if os.environ.get("GOOGLE_API_KEY"):
-        config["google_api_key"] = os.environ.get("GOOGLE_API_KEY")
+    api_key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY")
+    if api_key:
+        config["google_api_key"] = api_key
 
     # Email - Server Config
     if os.environ.get("EMAIL_SERVER"):
@@ -354,7 +355,7 @@ def check_live_news_for_events(db_manager: DatabaseManager, config: Dict[str, An
                 if re.search(r'\b' + re.escape(ticker) + r'\b', title, re.IGNORECASE):
                     
                     # 1. Decide which model to use
-                    if gemini_model:
+                    if gemini_client:
                         # USE GEMINI (Metacognition Enabled)
                         score, relevance = get_ai_analysis(title, [ticker])
                         
