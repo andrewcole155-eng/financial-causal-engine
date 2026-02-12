@@ -15,6 +15,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from datetime import datetime
 from google import genai
+from google.genai import types
 
 # Third-party Imports
 import feedparser
@@ -267,18 +268,19 @@ def get_ai_analysis(headline, tickers):
            - 1.0 (Relevant): The news explicitly mentions the company or its products.
 
         Return ONLY a JSON object with keys 'score' and 'relevance'.
-        Example: {{"score": -0.5, "relevance": 0.1}}
         """
         
-        # UPDATED: Call via the client object
+        # UPDATED: Call using the new 'config' parameter for strictly structured JSON
         response = gemini_client.models.generate_content(
-            model='gemini-2.5-flash',
-            contents=prompt
+            model='gemini-2.0-flash',
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                response_mime_type="application/json"
+            )
         )
         
-        # Parsing the response text
-        text = response.text.replace("```json", "").replace("```", "").strip()
-        data = json.loads(text)
+        # Parse the response (guaranteed to be JSON by the model config)
+        data = json.loads(response.text)
         
         # Return both values
         return float(data.get("score", 0.0)), float(data.get("relevance", 0.0))

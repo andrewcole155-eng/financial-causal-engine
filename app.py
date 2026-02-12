@@ -14,6 +14,7 @@ import networkx as nx
 import streamlit as st
 from pyvis.network import Network
 from google import genai
+from google.genai import types
 import plotly.express as px
 import plotly.graph_objects as go 
 from polygon import RESTClient
@@ -83,8 +84,8 @@ def setup_genai():
 
 def generate_ai_analysis(prompt: str) -> str:
     """
-    Sends a prompt to Google Gemini. 
-    INCLUDES FALLBACK LOGIC: If the graph data is sparse/empty, 
+    Sends a prompt to Google Gemini using the new SDK.
+    INCLUDES FALLBACK LOGIC: If the graph data is sparse/empty,
     it instructs the AI to use its internal knowledge base to fill the gaps.
     """
     try:
@@ -107,12 +108,20 @@ def generate_ai_analysis(prompt: str) -> str:
             Explicitly state that you are filling in missing graph data with external knowledge.
             """
 
-        # --- UPDATE: Use the correct Experimental or Stable model name ---
-        # gemini-2.5-flash is the current valid name for the 2.0 experimental model
-        model = genai.GenerativeModel('gemini-2.5-flash') 
+        # --- UPDATE: Client-based syntax & Correct Model Name ---
+        # Note: 'gemini-2.5-flash' is not a valid model ID yet. 
+        # The latest Flash model is 'gemini-2.0-flash' (or 'gemini-2.0-flash-exp').
         
-        response = model.generate_content(final_prompt)
+        # If client isn't global, initialize it here:
+        # client = genai.Client(api_key="YOUR_KEY") 
+        
+        response = client.models.generate_content(
+            model='gemini-2.0-flash', 
+            contents=final_prompt
+        )
+        
         return response.text
+
     except Exception as e:
         return f"Error generating AI explanation: {str(e)}"
 
