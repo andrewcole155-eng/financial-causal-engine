@@ -78,14 +78,14 @@ graph [
     last_close 61.060001373291016
     industry "REIT - Residential"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 61.060001373291016
     name "Equity Residential"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.08328154365704857
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -259,14 +259,14 @@ graph [
     last_close 103.87999725341797
     industry "REIT - Residential"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 103.87999725341797
     name "Camden Property Trust"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.15826140389779275
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -349,14 +349,14 @@ graph [
     last_close 255.3699951171875
     industry "REIT - Residential"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 255.3699951171875
     name "Essex Property Trust"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.13944743055463976
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -439,14 +439,14 @@ graph [
     last_close 182.55999755859375
     industry "REIT - Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 182.55999755859375
     name "Simon Property Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9177525043487549
+    raw_risk_score 0.14146353469968054
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -529,14 +529,14 @@ graph [
     last_close 1798.530029296875
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 1798.530029296875
     name "Fair Isaac"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.4292320559422176
+    raw_risk_score 0.31538000165610103
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -619,14 +619,14 @@ graph [
     last_close 337.5299987792969
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 337.5299987792969
     name "Cadence Design Systems"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.3555825147469516
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -710,7 +710,7 @@ graph [
     last_close 45.47999954223633
     industry "REIT - Office"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T23:04:35.492000000+00:00"
     last_updated_at "1767254673840"
@@ -718,7 +718,7 @@ graph [
     name "Alexandria Real Estate Equities"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7
+    raw_risk_score 0.29182399765531586
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -801,14 +801,14 @@ graph [
     last_close 202.27000427246094
     industry "Insurance - Property &#38; Casualty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 202.27000427246094
     name "Allstate"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.46415572075764155
+    raw_risk_score 0.14199739869635403
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -891,14 +891,14 @@ graph [
     last_close 123.61000061035156
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 123.61000061035156
     name "State Street Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.179785179329354
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -981,14 +981,14 @@ graph [
     last_close 63.20000076293945
     industry "Building Products &#38; Equipment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 63.20000076293945
     name "Masco"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9137862920761108
+    raw_risk_score 0.19672262214289263
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -1071,14 +1071,14 @@ graph [
     last_close 89.83000183105469
     industry "Banks - Diversified"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 89.83000183105469
     name "Wells Fargo"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9355820417404175
+    raw_risk_score 0.2719070825528799
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -1161,14 +1161,14 @@ graph [
     last_close 171.10000610351562
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 171.10000610351562
     name "RTX Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.6999687426017993
+    raw_risk_score 0.1564365260865381
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -1251,14 +1251,14 @@ graph [
     last_close 68.02999877929688
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 68.02999877929688
     name "A. O. Smith"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8983036279678345
+    raw_risk_score 0.14009189895472404
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -1342,7 +1342,7 @@ graph [
     last_close 226.0800018310547
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T22:05:29.136000000+00:00"
     last_updated_at "1767254673840"
@@ -1350,7 +1350,7 @@ graph [
     name "AbbVie"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.5833333333333333
+    raw_risk_score 0.17313721828508166
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -1434,7 +1434,7 @@ graph [
     last_close 266.5899963378906
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T19:01:25.199000000+00:00"
     last_updated_at "1767254673840"
@@ -1442,7 +1442,7 @@ graph [
     name "Accenture"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8064093053340912
+    raw_risk_score 0.33885670935826995
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -1611,7 +1611,7 @@ graph [
     last_close 346.260009765625
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T08:01:05.006000000+00:00"
     last_updated_at "1767254673840"
@@ -1619,7 +1619,7 @@ graph [
     name "Adobe Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.48197400867938994
+    raw_risk_score 0.3039331092904477
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -1702,14 +1702,14 @@ graph [
     last_close 261.6300048828125
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 261.6300048828125
     name "Automatic Data Processing"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.27416290952327194
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -1793,7 +1793,7 @@ graph [
     last_close 52.470001220703125
     industry "Auto Parts"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T19:05:12.297000000+00:00"
     last_updated_at "1767254673840"
@@ -1801,7 +1801,7 @@ graph [
     name "Advance Auto Parts"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.5373321620193687
+    raw_risk_score 0.46643951601725436
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -1884,14 +1884,14 @@ graph [
     last_close 13.920000076293945
     industry "Utilities - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 13.920000076293945
     name "AES Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.8306501507759094
+    raw_risk_score 0.19909444412638475
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -1974,14 +1974,14 @@ graph [
     last_close 109.27999877929688
     industry "Insurance - Life"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 109.27999877929688
     name "Aflac"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7531879669741578
+    raw_risk_score 0.0861213434246078
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -2064,14 +2064,14 @@ graph [
     last_close 145.49000549316406
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 145.49000549316406
     name "Agilent Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.5299283832385691
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -2155,7 +2155,7 @@ graph [
     last_close 83.48999786376953
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T15:02:37.486000000+00:00"
     last_updated_at "1767254673840"
@@ -2163,7 +2163,7 @@ graph [
     name "Akamai Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.6
+    raw_risk_score 0.5157531246382222
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -2246,14 +2246,14 @@ graph [
     last_close 49.650001525878906
     industry "Airlines"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 49.650001525878906
     name "Alaska Air Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.33981209210324737
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -2337,7 +2337,7 @@ graph [
     last_close 125.19000244140625
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-02T13:43:42.264000000+00:00"
     last_updated_at "1767254673840"
@@ -2345,7 +2345,7 @@ graph [
     name "Albemarle Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8
+    raw_risk_score 0.3822049978651276
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -2428,14 +2428,14 @@ graph [
     last_close 157.2100067138672
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 157.2100067138672
     name "Align Technology"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1999347010743349
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -2519,7 +2519,7 @@ graph [
     last_close 322.0899963378906
     industry "Internet Content &#38; Information"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T20:03:05.315000000+00:00"
     last_updated_at "1767254673840"
@@ -2527,7 +2527,7 @@ graph [
     name "Alphabet Inc. (Class C)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.4182581785652373
+    raw_risk_score 0.3624599426580398
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -2611,7 +2611,7 @@ graph [
     last_close 57.9900016784668
     industry "Tobacco"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T20:03:00.627000000+00:00"
     last_updated_at "1767254673840"
@@ -2619,7 +2619,7 @@ graph [
     name "Altria"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.21550446067537576
+    raw_risk_score 0.15864781559941685
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -2705,7 +2705,7 @@ graph [
     industry "Internet Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T20:03:06.507000000+00:00"
     updated_at "1768045191518"
@@ -2713,7 +2713,7 @@ graph [
     name "Amazon"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.45925563421004856
+    raw_risk_score 0.22602271980510005
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -2796,14 +2796,14 @@ graph [
     last_close 8.300000190734863
     industry "Packaging &#38; Containers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 8.300000190734863
     name "Amcor"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.21004176917572243
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -2889,7 +2889,7 @@ graph [
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T03:01:39.812000000+00:00"
     updated_at "1768045191518"
@@ -2897,7 +2897,7 @@ graph [
     name "Advanced Micro Devices"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.25534484227498366
+    raw_risk_score 0.5728981855489661
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -2980,14 +2980,14 @@ graph [
     last_close 99.86000061035156
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 99.86000061035156
     name "Ameren"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.8688755035400391
+    raw_risk_score 0.14818098480434166
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -3070,7 +3070,7 @@ graph [
     last_close 14.8100004196167
     industry "Airlines"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     updated_at "1767345396863"
     last_updated_at "1767254673840"
@@ -3078,7 +3078,7 @@ graph [
     name "American Airlines Group"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8598502278327942
+    raw_risk_score 0.3035815000672166
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -3161,14 +3161,14 @@ graph [
     last_close 77.02999877929688
     industry "Insurance - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 77.02999877929688
     name "American International Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.17532695243516494
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -3251,14 +3251,14 @@ graph [
     last_close 178.86000061035156
     industry "REIT - Specialty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 178.86000061035156
     name "American Tower"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.215790770823528
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -3342,7 +3342,7 @@ graph [
     name "N/A"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7705713763628921
+    raw_risk_score 0.7725439828795356
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
@@ -3426,14 +3426,14 @@ graph [
     last_close 199.8000030517578
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 199.8000030517578
     name "Ametek"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.13727720246707265
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -3517,7 +3517,7 @@ graph [
     last_close 329.8900146484375
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T15:02:55.792000000+00:00"
     last_updated_at "1767254673840"
@@ -3525,7 +3525,7 @@ graph [
     name "Amgen"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.6407692233721415
+    raw_risk_score 0.12685276541323953
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -3608,14 +3608,14 @@ graph [
     last_close 139.36000061035156
     industry "Electronic Components"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 139.36000061035156
     name "Amphenol"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.30265988906224567
+    raw_risk_score 0.40211984625318775
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -3699,7 +3699,7 @@ graph [
     last_close 281.2900085449219
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T12:30:15.692000000+00:00"
     last_updated_at "1767254673840"
@@ -3707,7 +3707,7 @@ graph [
     name "Analog Devices"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.2
+    raw_risk_score 0.22629420322260196
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -3875,14 +3875,14 @@ graph [
     last_close 345.20001220703125
     industry "Insurance Brokers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 345.20001220703125
     name "Aon plc"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1305768903932576
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -3968,7 +3968,7 @@ graph [
     industry "Consumer Electronics"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T20:03:04.928000000+00:00"
     updated_at "1768045191518"
@@ -3976,7 +3976,7 @@ graph [
     name "Apple Inc."
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.06068242679942739
+    raw_risk_score 0.16868749172912367
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -4060,7 +4060,7 @@ graph [
     last_close 268.0
     industry "Semiconductor Equipment &#38; Materials"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-02T13:43:39.105000000+00:00"
     last_updated_at "1767254673840"
@@ -4068,7 +4068,7 @@ graph [
     name "Applied Materials"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.06316176652908323
+    raw_risk_score 0.3825207799336996
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -4151,14 +4151,14 @@ graph [
     last_close 128.58999633789062
     industry "Computer Hardware"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 128.58999633789062
     name "Arista Networks"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9070897698402405
+    raw_risk_score 0.5202611833166577
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -4241,14 +4241,14 @@ graph [
     last_close 222.8699951171875
     industry "Insurance - Property &#38; Casualty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 222.8699951171875
     name "Assurant"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.16220939265996898
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -4333,7 +4333,7 @@ graph [
     industry "Telecom Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 1.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T12:07:59.519000000+00:00"
     updated_at "1768130528095"
@@ -4342,7 +4342,7 @@ graph [
     name "AT&#38;T Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7128249242037713
+    raw_risk_score 0.20357893138379657
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -4425,14 +4425,14 @@ graph [
     last_close 171.2899932861328
     industry "Utilities - Regulated Gas"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 171.2899932861328
     name "Atmos Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9315470457077026
+    raw_risk_score 0.20856594633215797
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -4515,14 +4515,14 @@ graph [
     last_close 306.739990234375
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 306.739990234375
     name "Autodesk"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9189375638961792
+    raw_risk_score 0.22001985832929347
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -4605,14 +4605,14 @@ graph [
     last_close 3822.659912109375
     industry "Auto Parts"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 3822.659912109375
     name "AutoZone"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9634789228439331
+    raw_risk_score 0.2901628779206078
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -4695,14 +4695,14 @@ graph [
     last_close 179.3300018310547
     industry "Packaging &#38; Containers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 179.3300018310547
     name "Avery Dennison"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.12840490842017238
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -4785,14 +4785,14 @@ graph [
     last_close 49.029998779296875
     industry "Packaging &#38; Containers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 49.029998779296875
     name "Ball Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.3197902965134588
+    raw_risk_score 0.23494110579321548
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -4876,7 +4876,7 @@ graph [
     last_close 53.95000076293945
     industry "Banks - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T00:01:12.387000000+00:00"
     updated_at "1767345396863"
@@ -4885,7 +4885,7 @@ graph [
     name "Bank of America"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07500000000000005
+    raw_risk_score 0.22962249080945463
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -4968,14 +4968,14 @@ graph [
     last_close 18.829999923706055
     industry "Specialty Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 18.829999923706055
     name "Bath &#38; Body Works, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.33237139983386343
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5059,7 +5059,7 @@ graph [
     last_close 18.540000915527344
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T23:04:32.712000000+00:00"
     last_updated_at "1767254673840"
@@ -5067,7 +5067,7 @@ graph [
     name "Baxter International"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.5333333333333333
+    raw_risk_score 0.24700446090040035
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5150,14 +5150,14 @@ graph [
     last_close 193.9600067138672
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 193.9600067138672
     name "Becton Dickinson"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7582087516784668
+    raw_risk_score 0.19024494961952243
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5240,14 +5240,14 @@ graph [
     last_close 66.72000122070312
     industry "Insurance - Property &#38; Casualty"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 66.72000122070312
     name "W. R. Berkley Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.10991125367694943
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5330,14 +5330,14 @@ graph [
     last_close 317.69000244140625
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 317.69000244140625
     name "Bio-Rad Laboratories"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.96035236120224
+    raw_risk_score 0.4696319939491228
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5420,14 +5420,14 @@ graph [
     last_close 61.68000030517578
     industry "Biotechnology"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 61.68000030517578
     name "Bio-Techne"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.30764117290120624
+    raw_risk_score 0.5045933054001989
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5510,14 +5510,14 @@ graph [
     last_close 114.0199966430664
     industry "Banks - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 114.0199966430664
     name "BNY Mellon"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.18104605353572384
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5600,14 +5600,14 @@ graph [
     last_close 43.29999923706055
     industry "Auto Parts"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 43.29999923706055
     name "BorgWarner Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.34551001242648105
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5690,14 +5690,14 @@ graph [
     last_close 69.27999877929688
     industry "REIT - Office"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 69.27999877929688
     name "BXP, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.18487131846104304
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5780,14 +5780,14 @@ graph [
     last_close 97.5199966430664
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 97.5199966430664
     name "Boston Scientific"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9633976817131042
+    raw_risk_score 0.35783695740555127
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5870,14 +5870,14 @@ graph [
     last_close 78.37000274658203
     industry "Insurance Brokers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 78.37000274658203
     name "Brown &#38; Brown"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.5482388138771057
+    raw_risk_score 0.16560009930535066
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -6050,7 +6050,7 @@ graph [
     last_close 157.22000122070312
     industry "Integrated Freight &#38; Logistics"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T16:05:18.919000000+00:00"
     last_updated_at "1767254673840"
@@ -6058,7 +6058,7 @@ graph [
     name "C.H. Robinson"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.4
+    raw_risk_score 0.2658591015437183
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -6142,7 +6142,7 @@ graph [
     last_close 198.8300018310547
     industry "Medical Distribution"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T00:01:26.803000000+00:00"
     last_updated_at "1767254673840"
@@ -6150,7 +6150,7 @@ graph [
     name "Cardinal Health"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.778648579120636
+    raw_risk_score 0.24678558798073433
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -6234,7 +6234,7 @@ graph [
     last_close 38.81999969482422
     industry "Auto &#38; Truck Dealerships"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T23:04:38.594000000+00:00"
     last_updated_at "1767254673840"
@@ -6242,7 +6242,7 @@ graph [
     name "CarMax, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.72
+    raw_risk_score 0.39825872039169297
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -6326,7 +6326,7 @@ graph [
     last_close 25.8700008392334
     industry "Travel Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T08:00:43.308000000+00:00"
     last_updated_at "1767254673840"
@@ -6334,7 +6334,7 @@ graph [
     name "Carnival"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.3
+    raw_risk_score 0.3397337465881292
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -6417,14 +6417,14 @@ graph [
     last_close 54.290000915527344
     industry "Building Products &#38; Equipment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 54.290000915527344
     name "Carrier Global"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.8358446061611176
+    raw_risk_score 0.21599451757163182
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -6594,14 +6594,14 @@ graph [
     industry "Farm &#38; Heavy Construction Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     updated_at "1768045191518"
     price 572.87
     name "Caterpillar Inc."
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7005155895437513
+    raw_risk_score 0.2101344785317168
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -6684,14 +6684,14 @@ graph [
     last_close 252.75999450683594
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 252.75999450683594
     name "Cboe Global Markets"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9564827084541321
+    raw_risk_score 0.4485959531919931
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -6774,14 +6774,14 @@ graph [
     last_close 160.86000061035156
     industry "Real Estate Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 160.86000061035156
     name "CBRE Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.29719630094988975
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -6864,14 +6864,14 @@ graph [
     last_close 146.25
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 146.25
     name "CDW Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.6961897644344388
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -6954,14 +6954,14 @@ graph [
     last_close 38.34000015258789
     industry "Healthcare Plans"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 38.34000015258789
     name "Centene Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1921078662166275
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7045,7 +7045,7 @@ graph [
     last_close 38.43000030517578
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T11:02:39.777000000+00:00"
     last_updated_at "1767254673840"
@@ -7053,7 +7053,7 @@ graph [
     name "CenterPoint Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7236338257789612
+    raw_risk_score 0.11881270692112969
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7221,14 +7221,14 @@ graph [
     last_close 77.87999725341797
     industry "Agricultural Inputs"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 77.87999725341797
     name "CF Industries"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.303430438041687
+    raw_risk_score 0.34149331535860583
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -7311,14 +7311,14 @@ graph [
     last_close 184.30999755859375
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 184.30999755859375
     name "Charles River Laboratories"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.3518482849952824
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7402,7 +7402,7 @@ graph [
     last_close 93.81999969482422
     industry "Capital Markets"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T15:01:56.073000000+00:00"
     last_updated_at "1767254673840"
@@ -7410,7 +7410,7 @@ graph [
     name "Charles Schwab Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.22668414910634357
+    raw_risk_score 0.20956046661322633
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7493,14 +7493,14 @@ graph [
     last_close 33.939998626708984
     industry "Restaurants"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 33.939998626708984
     name "Chipotle Mexican Grill"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2873610406659346
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7583,14 +7583,14 @@ graph [
     last_close 84.5199966430664
     industry "Household &#38; Personal Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 84.5199966430664
     name "Church &#38; Dwight"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1661694192590401
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7673,14 +7673,14 @@ graph [
     last_close 265.44000244140625
     industry "Healthcare Plans"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 265.44000244140625
     name "Cigna"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2846737407426287
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7763,14 +7763,14 @@ graph [
     last_close 186.75
     industry "Specialty Business Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 186.75
     name "Cintas"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9666671752929688
+    raw_risk_score 0.22837325350725748
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7854,7 +7854,7 @@ graph [
     last_close 108.87999725341797
     industry "Banks - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T00:01:11.483000000+00:00"
     last_updated_at "1767254673840"
@@ -7862,7 +7862,7 @@ graph [
     name "Citigroup"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.5141412120395235
+    raw_risk_score 0.1990113621370487
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7946,7 +7946,7 @@ graph [
     last_close 270.8699951171875
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T13:03:21.252000000+00:00"
     last_updated_at "1767254673840"
@@ -7954,7 +7954,7 @@ graph [
     name "CME Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.3
+    raw_risk_score 0.35963052252085326
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8037,14 +8037,14 @@ graph [
     last_close 71.08999633789062
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 71.08999633789062
     name "CMS Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.3673992305994034
+    raw_risk_score 0.15940568242756753
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8127,14 +8127,14 @@ graph [
     last_close 80.72000122070312
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 80.72000122070312
     name "Cognizant"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.37906530776716324
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -8217,14 +8217,14 @@ graph [
     last_close 17.049999237060547
     industry "Packaged Foods"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 17.049999237060547
     name "Conagra Brands"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9047590255737306
+    raw_risk_score 0.2667019289516962
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8307,14 +8307,14 @@ graph [
     last_close 142.3699951171875
     industry "Beverages - Brewers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 142.3699951171875
     name "Constellation Brands"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.191621685242727
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8397,14 +8397,14 @@ graph [
     last_close 38.720001220703125
     industry "Specialty Business Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 38.720001220703125
     name "Copart"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9662603735923767
+    raw_risk_score 0.24068973648137282
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8487,14 +8487,14 @@ graph [
     last_close 68.01000213623047
     industry "Real Estate Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 68.01000213623047
     name "CoStar Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9414549708366394
+    raw_risk_score 0.25945598594689573
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8577,14 +8577,14 @@ graph [
     last_close 27.389999389648438
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 27.389999389648438
     name "Coterra"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.26283450623458604
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -8667,14 +8667,14 @@ graph [
     last_close 89.27999877929688
     industry "REIT - Specialty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 89.27999877929688
     name "Crown Castle"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9071398377418518
+    raw_risk_score 0.1328620805740936
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8757,14 +8757,14 @@ graph [
     last_close 36.29999923706055
     industry "Railroads"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 36.29999923706055
     name "CSX Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8700401782989502
+    raw_risk_score 0.19725439559740934
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8847,14 +8847,14 @@ graph [
     last_close 510.6499938964844
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 510.6499938964844
     name "Cummins"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2636035835883397
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8937,14 +8937,14 @@ graph [
     last_close 75.62999725341797
     industry "Healthcare Plans"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 75.62999725341797
     name "CVS Health"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.17018316984176635
+    raw_risk_score 0.3180291379212754
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -9027,14 +9027,14 @@ graph [
     last_close 158.6199951171875
     industry "Residential Construction"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 158.6199951171875
     name "D. R. Horton"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.18446884586999557
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -9117,14 +9117,14 @@ graph [
     last_close 226.25
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 226.25
     name "Danaher Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.23332178796000963
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -9207,14 +9207,14 @@ graph [
     last_close 177.72000122070312
     industry "Restaurants"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 177.72000122070312
     name "Darden Restaurants"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.2202649712562561
+    raw_risk_score 0.16775803003016976
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -9297,14 +9297,14 @@ graph [
     last_close 117.38999938964844
     industry "Medical Care Facilities"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 117.38999938964844
     name "DaVita"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.4377500629213552
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -9387,14 +9387,14 @@ graph [
     last_close 11.25
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 11.25
     name "Dentsply Sirona"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2534296292094287
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -9477,14 +9477,14 @@ graph [
     last_close 37.470001220703125
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 37.470001220703125
     name "Devon Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.23991652414232673
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -9568,7 +9568,7 @@ graph [
     last_close 65.48999786376953
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T23:04:38.197000000+00:00"
     last_updated_at "1767254673840"
@@ -9576,7 +9576,7 @@ graph [
     name "Dexcom"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.39999999999999997
+    raw_risk_score 0.4045535619572103
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -9659,14 +9659,14 @@ graph [
     last_close 158.60000610351562
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 158.60000610351562
     name "Diamondback Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.806677520275116
+    raw_risk_score 0.2509009234598715
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -9750,7 +9750,7 @@ graph [
     last_close 164.72999572753906
     industry "REIT - Specialty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T02:03:02.199000000+00:00"
     last_updated_at "1767254673840"
@@ -9758,7 +9758,7 @@ graph [
     name "Digital Realty"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.4
+    raw_risk_score 0.1959736260350953
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -9927,7 +9927,7 @@ graph [
     last_close 132.3699951171875
     industry "Discount Stores"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T15:01:56.062000000+00:00"
     last_updated_at "1767254673840"
@@ -9935,7 +9935,7 @@ graph [
     name "Dollar General"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.2723732337355614
+    raw_risk_score 0.24616196844015112
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10019,7 +10019,7 @@ graph [
     last_close 122.44000244140625
     industry "Discount Stores"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T16:01:29.570000000+00:00"
     last_updated_at "1767254673840"
@@ -10027,7 +10027,7 @@ graph [
     name "Dollar Tree"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7710367918014527
+    raw_risk_score 0.5233552776730376
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10110,14 +10110,14 @@ graph [
     last_close 416.54998779296875
     industry "Restaurants"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 416.54998779296875
     name "Domino's"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.12858591847475548
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10200,14 +10200,14 @@ graph [
     last_close 191.08999633789062
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 191.08999633789062
     name "Dover Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.11493860220550854
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10290,14 +10290,14 @@ graph [
     last_close 22.959999084472656
     industry "Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 22.959999084472656
     name "Dow Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.709560828388862
+    raw_risk_score 0.31201111915917046
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -10381,7 +10381,7 @@ graph [
     last_close 116.5199966430664
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T21:01:30.208000000+00:00"
     last_updated_at "1767254673840"
@@ -10389,7 +10389,7 @@ graph [
     name "Duke Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.6
+    raw_risk_score 0.11334766299522543
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10473,7 +10473,7 @@ graph [
     last_close 337.6600036621094
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T15:03:33.677000000+00:00"
     last_updated_at "1767254673840"
@@ -10481,7 +10481,7 @@ graph [
     name "Eaton Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.3
+    raw_risk_score 0.25174949985058254
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10564,14 +10564,14 @@ graph [
     last_close 82.47000122070312
     industry "Internet Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 82.47000122070312
     name "eBay Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.5140525519847872
+    raw_risk_score 0.20024841549398553
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10654,14 +10654,14 @@ graph [
     last_close 259.69000244140625
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 259.69000244140625
     name "Ecolab"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9047455191612244
+    raw_risk_score 0.15918822549115097
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -10744,14 +10744,14 @@ graph [
     last_close 58.09000015258789
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 58.09000015258789
     name "Edison International"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.11644231879484777
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10834,14 +10834,14 @@ graph [
     last_close 86.19000244140625
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 86.19000244140625
     name "Edwards Lifesciences"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.03946813941001892
+    raw_risk_score 0.24856503580939526
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10925,7 +10925,7 @@ graph [
     last_close 203.9199981689453
     industry "Electronic Gaming &#38; Multimedia"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T19:06:22.159000000+00:00"
     last_updated_at "1767254673840"
@@ -10933,7 +10933,7 @@ graph [
     name "Electronic Arts"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.6213167045797622
+    raw_risk_score 0.1616505506942263
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11016,14 +11016,14 @@ graph [
     last_close 330.75
     industry "Healthcare Plans"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 330.75
     name "Elevance Health"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7543047070503235
+    raw_risk_score 0.15655914991405062
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11106,14 +11106,14 @@ graph [
     last_close 137.38999938964844
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 137.38999938964844
     name "Emerson Electric"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.22420085917535032
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11196,14 +11196,14 @@ graph [
     last_close 31.25
     industry "Solar"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 31.25
     name "Enphase Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9571580290794373
+    raw_risk_score 0.7057487506765029
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -11286,14 +11286,14 @@ graph [
     last_close 94.22000122070312
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 94.22000122070312
     name "Entergy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.18472964537919584
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11376,14 +11376,14 @@ graph [
     last_close 105.12999725341797
     industry "Household &#38; Personal Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 105.12999725341797
     name "Est&#233;e Lauder Companies (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.5170030660099451
+    raw_risk_score 0.29819999036533157
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11466,14 +11466,14 @@ graph [
     last_close 53.2599983215332
     industry "Internet Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 53.2599983215332
     name "Etsy, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9414743185043335
+    raw_risk_score 0.378912364848287
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11557,7 +11557,7 @@ graph [
     name "N/A"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.5977069446355987
+    raw_risk_score 0.5952325558778149
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
@@ -11641,14 +11641,14 @@ graph [
     last_close 73.27999877929688
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 73.27999877929688
     name "Evergy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7274361848831177
+    raw_risk_score 0.11958700008350986
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11731,14 +11731,14 @@ graph [
     last_close 66.73999786376953
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 66.73999786376953
     name "Eversource Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7506053447723389
+    raw_risk_score 0.133578953198695
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11821,14 +11821,14 @@ graph [
     last_close 43.810001373291016
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 43.810001373291016
     name "Exelon"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9336135983467102
+    raw_risk_score 0.1428595949153263
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11911,14 +11911,14 @@ graph [
     last_close 151.47000122070312
     industry "Integrated Freight &#38; Logistics"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 151.47000122070312
     name "Expeditors International"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.14401260591251164
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -12001,14 +12001,14 @@ graph [
     last_close 129.55999755859375
     industry "REIT - Industrial"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 129.55999755859375
     name "Extra Space Storage"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.12365808868474483
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -12094,7 +12094,7 @@ graph [
     industry "Oil &#38; Gas Integrated"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T17:02:36.321000000+00:00"
     updated_at "1768045191518"
@@ -12102,7 +12102,7 @@ graph [
     name "ExxonMobil"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.2
+    raw_risk_score 0.1857333576719949
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -12185,14 +12185,14 @@ graph [
     last_close 41.5
     industry "Industrial Distribution"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 41.5
     name "Fastenal"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1512892421923186
+    raw_risk_score 0.2180504031563894
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -12276,7 +12276,7 @@ graph [
     last_close 97.19999694824219
     industry "REIT - Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T12:02:46.179000000+00:00"
     last_updated_at "1767254673840"
@@ -12284,7 +12284,7 @@ graph [
     name "Federal Realty Investment Trust"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7
+    raw_risk_score 0.20116762553394635
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -12367,14 +12367,14 @@ graph [
     last_close 274.2900085449219
     industry "Integrated Freight &#38; Logistics"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 274.2900085449219
     name "FedEx"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9088307917118073
+    raw_risk_score 0.2499826970839123
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -12458,7 +12458,7 @@ graph [
     last_close 45.41999816894531
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T18:02:56.086000000+00:00"
     last_updated_at "1767254673840"
@@ -12466,7 +12466,7 @@ graph [
     name "Fifth Third Bancorp"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.6
+    raw_risk_score 0.2118124883918042
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -12556,7 +12556,7 @@ graph [
     name "Fiserv, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.11635879675547285
+    raw_risk_score -0.030908130109310136
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -12724,14 +12724,14 @@ graph [
     last_close 13.279999732971191
     industry "Agricultural Inputs"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 13.279999732971191
     name "FMC Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2916639441525451
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -12815,7 +12815,7 @@ graph [
     last_close 86.91999816894531
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T15:02:38.330000000+00:00"
     last_updated_at "1767254673840"
@@ -12823,7 +12823,7 @@ graph [
     name "Fortinet"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7089648127555848
+    raw_risk_score 0.5574326715455082
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -12906,14 +12906,14 @@ graph [
     last_close 53.75
     industry "Scientific &#38; Technical Instruments"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 53.75
     name "Fortive"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1271534983098617
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -12996,14 +12996,14 @@ graph [
     last_close 23.399999618530273
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 23.399999618530273
     name "Franklin Resources"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7116291256661113
+    raw_risk_score 0.215744581207397
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -13087,7 +13087,7 @@ graph [
     last_close 45.20000076293945
     industry "Copper"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T23:04:36.761000000+00:00"
     last_updated_at "1767254673840"
@@ -13095,7 +13095,7 @@ graph [
     name "Freeport-McMoRan"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08829202651977539
+    raw_risk_score 0.2817326568940739
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -13178,14 +13178,14 @@ graph [
     last_close 203.58999633789062
     industry "Scientific &#38; Technical Instruments"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 203.58999633789062
     name "Garmin"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8058351278305054
+    raw_risk_score 0.1786506207825421
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -13268,14 +13268,14 @@ graph [
     last_close 229.77000427246094
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 229.77000427246094
     name "Gartner"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.3833836055710856
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -13358,14 +13358,14 @@ graph [
     last_close 162.3300018310547
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 162.3300018310547
     name "Generac"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.29322818818737645
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -13448,14 +13448,14 @@ graph [
     last_close 45.93000030517578
     industry "Packaged Foods"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 45.93000030517578
     name "General Mills"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.044402897357940674
+    raw_risk_score 0.2012485924254721
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -13539,7 +13539,7 @@ graph [
     last_close 121.22000122070312
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T15:02:59.680000000+00:00"
     last_updated_at "1767254673840"
@@ -13547,7 +13547,7 @@ graph [
     name "Gilead Sciences"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.5701176722844442
+    raw_risk_score 0.17794665663742815
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -13630,14 +13630,14 @@ graph [
     last_close 131.3699951171875
     industry "Insurance - Life"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 131.3699951171875
     name "Globe Life"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.14171599849727973
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -13720,14 +13720,14 @@ graph [
     last_close 78.8499984741211
     industry "Specialty Business Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 78.8499984741211
     name "Global Payments"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1998170311699729
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -13810,7 +13810,7 @@ graph [
     last_close 854.5599975585938
     industry "Capital Markets"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     updated_at "1767345396863"
     last_updated_at "1767254673840"
@@ -13818,7 +13818,7 @@ graph [
     name "Goldman Sachs"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.25875098122145423
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -13901,14 +13901,14 @@ graph [
     last_close 975.5399780273438
     industry "Industrial Distribution"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 975.5399780273438
     name "W. W. Grainger"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.18586876111194583
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -13991,14 +13991,14 @@ graph [
     last_close 129.42999267578125
     industry "Insurance - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 129.42999267578125
     name "Hartford (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.17864510361122515
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14081,14 +14081,14 @@ graph [
     last_close 81.0999984741211
     industry "Leisure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 81.0999984741211
     name "Hasbro"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.31108085590508794
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14171,14 +14171,14 @@ graph [
     last_close 486.70001220703125
     industry "Medical Care Facilities"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 486.70001220703125
     name "HCA Healthcare"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.3525697508956188
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14262,7 +14262,7 @@ graph [
     name "N/A"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1130282266272439
+    raw_risk_score 0.13734632049288067
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
@@ -14346,14 +14346,14 @@ graph [
     last_close 73.62000274658203
     industry "Medical Distribution"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 73.62000274658203
     name "Henry Schein"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.340505072208555
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14521,14 +14521,14 @@ graph [
     last_close 272.25
     industry "Lodging"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 272.25
     name "Hilton Worldwide"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9313783645629883
+    raw_risk_score 0.23015665174019784
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14611,14 +14611,14 @@ graph [
     last_close 74.97000122070312
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 74.97000122070312
     name "Hologic"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.20831477816863725
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14702,7 +14702,7 @@ graph [
     last_close 354.6099853515625
     industry "Home Improvement Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-02T14:08:34.609000000+00:00"
     last_updated_at "1767254673840"
@@ -14710,7 +14710,7 @@ graph [
     name "Home Depot (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.20672029018402105
+    raw_risk_score 0.17917375227738547
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14793,14 +14793,14 @@ graph [
     last_close 191.3300018310547
     industry "Conglomerates"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 191.3300018310547
     name "Honeywell"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9064376354217529
+    raw_risk_score 0.19275751329156984
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14883,14 +14883,14 @@ graph [
     last_close 24.34000015258789
     industry "Packaged Foods"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 24.34000015258789
     name "Hormel Foods"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.4065585096376007
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14973,14 +14973,14 @@ graph [
     last_close 17.260000228881836
     industry "REIT - Hotel &#38; Motel"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 17.260000228881836
     name "Host Hotels &#38; Resorts"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9043532609939575
+    raw_risk_score 0.2903216114754833
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -15063,14 +15063,14 @@ graph [
     last_close 190.97999572753906
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 190.97999572753906
     name "Howmet Aerospace"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9292209148406982
+    raw_risk_score 0.326197825390909
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -15153,14 +15153,14 @@ graph [
     last_close 25.90999984741211
     industry "Computer Hardware"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 25.90999984741211
     name "HP Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.5066945857704677
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -15243,14 +15243,14 @@ graph [
     last_close 257.8500061035156
     industry "Healthcare Plans"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 257.8500061035156
     name "Humana"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.19947727918624877
+    raw_risk_score 0.3537259505148145
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -15334,7 +15334,7 @@ graph [
     last_close 307.94000244140625
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T17:03:29.788000000+00:00"
     last_updated_at "1767254673840"
@@ -15342,7 +15342,7 @@ graph [
     name "IBM"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0008506417274475597
+    raw_risk_score 0.5461460924044155
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -15425,14 +15425,14 @@ graph [
     last_close 177.5399932861328
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 177.5399932861328
     name "IDEX Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.13110163849084194
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -15515,14 +15515,14 @@ graph [
     last_close 714.0999755859375
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 714.0999755859375
     name "Idexx Laboratories"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.25001468678886185
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -15605,14 +15605,14 @@ graph [
     last_close 249.6999969482422
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 249.6999969482422
     name "Illinois Tool Works"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7492923736572266
+    raw_risk_score 0.07872326554435073
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -15695,14 +15695,14 @@ graph [
     last_close 128.9600067138672
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 128.9600067138672
     name "Illumina, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.37030824892110104
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -15788,7 +15788,7 @@ graph [
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 1.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T03:01:40.234000000+00:00"
     updated_at "1768130528095"
@@ -15796,7 +15796,7 @@ graph [
     name "Intel"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.6333952948451042
+    raw_risk_score 0.42367483196143974
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -15879,14 +15879,14 @@ graph [
     last_close 157.82000732421875
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 157.82000732421875
     name "Intercontinental Exchange"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7595615499261494
+    raw_risk_score 0.2912779296881415
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -15969,14 +15969,14 @@ graph [
     last_close 39.060001373291016
     industry "Packaging &#38; Containers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 39.060001373291016
     name "International Paper"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.578120122353236
+    raw_risk_score 0.25625579874238325
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -16146,14 +16146,14 @@ graph [
     last_close 67.18000030517578
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 67.18000030517578
     name "International Flavors &#38; Fragrances"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.4131649030090885
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -16236,14 +16236,14 @@ graph [
     last_close 673.6300048828125
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 673.6300048828125
     name "Intuit"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.5272932714991309
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -16327,7 +16327,7 @@ graph [
     last_close 575.3400268554688
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T18:02:12.891000000+00:00"
     last_updated_at "1767254673840"
@@ -16335,7 +16335,7 @@ graph [
     name "Intuitive Surgical"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.10054473280906684
+    raw_risk_score 0.25723007125987263
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -16418,14 +16418,14 @@ graph [
     last_close 26.239999771118164
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 26.239999771118164
     name "Invesco"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.18872093711235288
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -16508,14 +16508,14 @@ graph [
     last_close 225.85000610351562
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 225.85000610351562
     name "IQVIA"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9601476788520813
+    raw_risk_score 0.2663436391214921
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -16598,14 +16598,14 @@ graph [
     last_close 220.05999755859375
     industry "Electronic Components"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 220.05999755859375
     name "Jabil"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.24900834560394286
+    raw_risk_score 0.34282046532555077
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -16688,14 +16688,14 @@ graph [
     last_close 140.22000122070312
     industry "Engineering &#38; Construction"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 140.22000122070312
     name "Jacobs Solutions"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.5839363612345793
+    raw_risk_score 0.4060305720361982
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -16779,7 +16779,7 @@ graph [
     last_close 201.92999267578125
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T19:02:37.892000000+00:00"
     last_updated_at "1767254673840"
@@ -16787,7 +16787,7 @@ graph [
     name "Johnson &#38; Johnson"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7456826567649841
+    raw_risk_score 0.1546102802469495
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -16871,7 +16871,7 @@ graph [
     last_close 114.2300033569336
     industry "Building Products &#38; Equipment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T16:05:06.765000000+00:00"
     last_updated_at "1767254673840"
@@ -16879,7 +16879,7 @@ graph [
     name "Johnson Controls"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7
+    raw_risk_score 0.19962950727986156
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -16965,7 +16965,7 @@ graph [
     industry "Banks - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T10:00:41.652000000+00:00"
     updated_at "1768045191518"
@@ -16973,7 +16973,7 @@ graph [
     name "JPMorgan Chase"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.5445537114143372
+    raw_risk_score 0.11112426368740436
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -17148,7 +17148,7 @@ graph [
     name "Kellanova"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.39032277781912617
+    raw_risk_score 0.39741938464019616
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -17231,14 +17231,14 @@ graph [
     last_close 210.49000549316406
     industry "Scientific &#38; Technical Instruments"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 210.49000549316406
     name "Keysight Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.8008802277701241
+    raw_risk_score 0.2104817523487802
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -17321,14 +17321,14 @@ graph [
     last_close 27.770000457763672
     industry "Oil &#38; Gas Midstream"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 27.770000457763672
     name "Kinder Morgan"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.18972867087577389
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -17411,14 +17411,14 @@ graph [
     last_close 278.5
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 278.5
     name "L3Harris"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.11056591293939222
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -17501,14 +17501,14 @@ graph [
     last_close 258.3900146484375
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 258.3900146484375
     name "Labcorp"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.12797926321730163
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -17591,14 +17591,14 @@ graph [
     last_close 66.25
     industry "Resorts &#38; Casinos"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 66.25
     name "Las Vegas Sands"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.15816840753047742
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -17681,14 +17681,14 @@ graph [
     last_close 186.82000732421875
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 186.82000732421875
     name "Leidos"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.12955954456514673
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -17772,7 +17772,7 @@ graph [
     last_close 123.91000366210938
     industry "Residential Construction"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T03:01:16.116000000+00:00"
     last_updated_at "1767254673840"
@@ -17780,7 +17780,7 @@ graph [
     name "Lennar"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.330852484703064
+    raw_risk_score 0.24625775199404398
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -17863,14 +17863,14 @@ graph [
     last_close 42.7400016784668
     industry "Insurance - Life"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 42.7400016784668
     name "Lincoln National Corp"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.17205939316257177
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -17953,14 +17953,14 @@ graph [
     last_close 399.57000732421875
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 399.57000732421875
     name "Linde plc"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.8878166079521179
+    raw_risk_score 0.1173565625732303
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -18043,14 +18043,14 @@ graph [
     last_close 139.3300018310547
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 139.3300018310547
     name "Live Nation Entertainment"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2029712637788636
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -18133,14 +18133,14 @@ graph [
     last_close 29.450000762939453
     industry "Auto Parts"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 29.450000762939453
     name "LKQ Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.22543909971972775
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -18223,14 +18223,14 @@ graph [
     last_close 452.20001220703125
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 452.20001220703125
     name "Lockheed Martin"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.10824457506102639
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -18313,14 +18313,14 @@ graph [
     last_close 102.81999969482422
     industry "Insurance - Property &#38; Casualty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 102.81999969482422
     name "Loews Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.5701620106895764
+    raw_risk_score 0.08663864232664721
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -18403,14 +18403,14 @@ graph [
     last_close 248.47000122070312
     industry "Home Improvement Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 248.47000122070312
     name "Lowe's"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7645913433712139
+    raw_risk_score 0.22115704388747703
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -18494,7 +18494,7 @@ graph [
     last_close 190.00999450683594
     industry "Apparel Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T09:01:44.616000000+00:00"
     last_updated_at "1767254673840"
@@ -18502,7 +18502,7 @@ graph [
     name "Lululemon Athletica"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.3
+    raw_risk_score 0.22432967594863792
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -18585,14 +18585,14 @@ graph [
     last_close 195.11000061035156
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 195.11000061035156
     name "M&#38;T Bank"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.22384225814773623
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -18850,14 +18850,14 @@ graph [
     last_close 624.3699951171875
     industry "Building Materials"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 624.3699951171875
     name "Martin Marietta Materials"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.8362513184547424
+    raw_risk_score 0.16674447020232308
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -18940,14 +18940,14 @@ graph [
     last_close 34.52000045776367
     industry "Internet Content &#38; Information"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 34.52000045776367
     name "Match Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.24557342423481587
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19030,14 +19030,14 @@ graph [
     last_close 311.2300109863281
     industry "Restaurants"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 311.2300109863281
     name "McDonald's"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.29186153411865234
+    raw_risk_score 0.08509831443847163
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19120,14 +19120,14 @@ graph [
     last_close 808.6199951171875
     industry "Medical Distribution"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 808.6199951171875
     name "McKesson Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.16661158991212902
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19211,7 +19211,7 @@ graph [
     last_close 101.36000061035156
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T05:00:54.145000000+00:00"
     last_updated_at "1767254673840"
@@ -19219,7 +19219,7 @@ graph [
     name "Medtronic"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.5487281475748335
+    raw_risk_score 0.18332990517735626
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19303,7 +19303,7 @@ graph [
     last_close 99.72000122070312
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T13:01:36.553000000+00:00"
     last_updated_at "1767254673840"
@@ -19311,7 +19311,7 @@ graph [
     name "Merck &#38; Co."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.266118985414505
+    raw_risk_score 0.15478873309471844
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19394,14 +19394,14 @@ graph [
     last_close 78.66000366210938
     industry "Insurance - Life"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 78.66000366210938
     name "MetLife"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.6063987791538241
+    raw_risk_score 0.16245540463478236
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19484,14 +19484,14 @@ graph [
     last_close 1414.8599853515625
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 1414.8599853515625
     name "Mettler Toledo"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.4829093668180072
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19574,14 +19574,14 @@ graph [
     last_close 36.06999969482422
     industry "Resorts &#38; Casinos"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 36.06999969482422
     name "MGM Resorts"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8480924487113952
+    raw_risk_score 0.5109439733047253
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19664,14 +19664,14 @@ graph [
     last_close 65.80999755859375
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 65.80999755859375
     name "Microchip Technology"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2105982469378462
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -19755,7 +19755,7 @@ graph [
     last_close 237.22000122070312
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T17:02:11.344000000+00:00"
     updated_at "1767345396863"
@@ -19764,7 +19764,7 @@ graph [
     name "Micron Technology"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.12191926360130315
+    raw_risk_score 0.635305063332203
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -19847,14 +19847,14 @@ graph [
     last_close 110.69000244140625
     industry "Furnishings, Fixtures &#38; Appliances"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 110.69000244140625
     name "Mohawk Industries"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2950330318097908
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19937,14 +19937,14 @@ graph [
     last_close 151.86000061035156
     industry "Healthcare Plans"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 151.86000061035156
     name "Molina Healthcare"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.23344879102122
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -20027,14 +20027,14 @@ graph [
     last_close 963.280029296875
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 963.280029296875
     name "Monolithic Power Systems"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.28751070705972986
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -20117,14 +20117,14 @@ graph [
     last_close 73.73999786376953
     industry "Beverages - Non-Alcoholic"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 73.73999786376953
     name "Monster Beverage"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0068032145500183105
+    raw_risk_score 0.3148819773920257
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -20207,14 +20207,14 @@ graph [
     last_close 496.5
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 496.5
     name "Moody's Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.16775410678103633
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -20298,7 +20298,7 @@ graph [
     last_close 176.50999450683594
     industry "Capital Markets"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-02T17:52:13.844000000+00:00"
     updated_at "1767345396863"
@@ -20307,7 +20307,7 @@ graph [
     name "Morgan Stanley"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.26591326134545473
+    raw_risk_score 0.2523404378500138
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -20390,14 +20390,14 @@ graph [
     last_close 374.3900146484375
     industry "Communication Equipment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 374.3900146484375
     name "Motorola Solutions"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8487483859062195
+    raw_risk_score 0.2701957459808809
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -20480,14 +20480,14 @@ graph [
     last_close 538.260009765625
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 538.260009765625
     name "MSCI Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9254952669143677
+    raw_risk_score 0.23509413359270753
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -20570,14 +20570,14 @@ graph [
     last_close 117.2699966430664
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 117.2699966430664
     name "NetApp"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.6781589497165194
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -20661,7 +20661,7 @@ graph [
     last_close 100.23999786376953
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T00:01:57.566000000+00:00"
     last_updated_at "1767254673840"
@@ -20669,7 +20669,7 @@ graph [
     name "Netflix"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.26972421407699587
+    raw_risk_score 0.24068683491215181
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -20752,14 +20752,14 @@ graph [
     last_close 89.76000213623047
     industry "Gold"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 89.76000213623047
     name "Newmont"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.3152049263722064
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -20844,14 +20844,14 @@ graph [
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     updated_at "1768045191518"
     price 80.28
     name "NextEra Energy"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8547042608261108
+    raw_risk_score 0.2843301987923291
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -20935,7 +20935,7 @@ graph [
     last_close 65.86000061035156
     industry "Footwear &#38; Accessories"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T09:01:45.029000000+00:00"
     last_updated_at "1767254673840"
@@ -20943,7 +20943,7 @@ graph [
     name "Nike, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.35450896024703976
+    raw_risk_score 0.21717085198789648
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21026,14 +21026,14 @@ graph [
     last_close 42.0
     industry "Utilities - Regulated Gas"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 42.0
     name "NiSource"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.16116787706102642
+    raw_risk_score 0.1520807788047366
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21116,14 +21116,14 @@ graph [
     last_close 238.92999267578125
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 238.92999267578125
     name "Nordson Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.17326400640997522
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21206,14 +21206,14 @@ graph [
     last_close 294.19000244140625
     industry "Railroads"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 294.19000244140625
     name "Norfolk Southern"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.15354987601146233
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21296,14 +21296,14 @@ graph [
     last_close 133.2100067138672
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 133.2100067138672
     name "Northern Trust"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.15786301074498976
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21386,14 +21386,14 @@ graph [
     last_close 548.969970703125
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 548.969970703125
     name "Northrop Grumman"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.5549838781356812
+    raw_risk_score 0.18235549248688887
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21476,14 +21476,14 @@ graph [
     last_close 18.920000076293945
     industry "Travel Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 18.920000076293945
     name "Norwegian Cruise Line Holdings"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.8918260335922241
+    raw_risk_score 0.36590981025164315
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21566,14 +21566,14 @@ graph [
     last_close 163.0
     industry "Utilities - Independent Power Producers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 163.0
     name "NRG Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.27209028061747215
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21656,14 +21656,14 @@ graph [
     last_close 159.4499969482422
     industry "Steel"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 159.4499969482422
     name "Nucor"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.28944274405093506
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -21749,7 +21749,7 @@ graph [
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T07:00:59.016000000+00:00"
     updated_at "1768045191518"
@@ -21757,7 +21757,7 @@ graph [
     name "Nvidia"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.48206881374120714
+    raw_risk_score 0.26207946869411747
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -21840,14 +21840,14 @@ graph [
     last_close 7538.080078125
     industry "Residential Construction"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 7538.080078125
     name "NVR, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.23836522647843328
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21931,7 +21931,7 @@ graph [
     last_close 227.9499969482422
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T12:30:14.535000000+00:00"
     last_updated_at "1767254673840"
@@ -21939,7 +21939,7 @@ graph [
     name "NXP Semiconductors"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.41258063713709514
+    raw_risk_score 0.3098671506004406
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -22022,14 +22022,14 @@ graph [
     last_close 98.88999938964844
     industry "Auto Parts"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 98.88999938964844
     name "O&#8217;Reilly Automotive"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.161676661190215
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -22112,14 +22112,14 @@ graph [
     last_close 155.14999389648438
     industry "Trucking"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 155.14999389648438
     name "Old Dominion"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.41336947312652284
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -22202,14 +22202,14 @@ graph [
     last_close 73.44000244140625
     industry "Advertising Agencies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 73.44000244140625
     name "Omnicom Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.16293638555125103
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -22292,14 +22292,14 @@ graph [
     last_close 54.7400016784668
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 54.7400016784668
     name "ON Semiconductor"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.4407703343961024
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -22382,14 +22382,14 @@ graph [
     last_close 76.33999633789062
     industry "Oil &#38; Gas Midstream"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 76.33999633789062
     name "Oneok"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9190171957015991
+    raw_risk_score 0.19951457128455094
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -22472,14 +22472,14 @@ graph [
     last_close 7.139999866485596
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 7.139999866485596
     name "Organon &#38; Co."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.07575902168350615
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -22562,14 +22562,14 @@ graph [
     last_close 86.44999694824219
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 86.44999694824219
     name "Otis Worldwide"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.19692013741499914
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -22652,14 +22652,14 @@ graph [
     last_close 110.33000183105469
     industry "Farm &#38; Heavy Construction Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 110.33000183105469
     name "Paccar"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1620939757937607
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -22742,14 +22742,14 @@ graph [
     last_close 198.47999572753906
     industry "Packaging &#38; Containers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 198.47999572753906
     name "Packaging Corporation of America"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.18539882223978071
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -22917,14 +22917,14 @@ graph [
     last_close 880.0
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 880.0
     name "Parker Hannifin"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.26340452829996747
+    raw_risk_score 0.18528986888380355
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -23007,14 +23007,14 @@ graph [
     last_close 112.05999755859375
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 112.05999755859375
     name "Paychex"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.271443754751305
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -23097,14 +23097,14 @@ graph [
     last_close 165.72000122070312
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 165.72000122070312
     name "Paycom"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2863750719237661
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -23187,14 +23187,14 @@ graph [
     last_close 104.25
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 104.25
     name "Pentair"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1766439034159304
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -23278,7 +23278,7 @@ graph [
     last_close 26.030000686645508
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T21:04:13.571000000+00:00"
     last_updated_at "1767254673840"
@@ -23286,7 +23286,7 @@ graph [
     name "Pfizer"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.2833333333333333
+    raw_risk_score 0.13727611696534037
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -23369,14 +23369,14 @@ graph [
     last_close 15.15999984741211
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 15.15999984741211
     name "PG&#38;E Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.16152916077884188
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -23459,14 +23459,14 @@ graph [
     last_close 147.80999755859375
     industry "Tobacco"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 147.80999755859375
     name "Philip Morris International"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.4351592025858292
+    raw_risk_score 0.27219782620062155
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -23634,14 +23634,14 @@ graph [
     last_close 239.52000427246094
     industry "Industrial Distribution"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 239.52000427246094
     name "Pool Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.31818232665190826
+    raw_risk_score 0.19328610587717995
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -23724,14 +23724,14 @@ graph [
     last_close 101.02999877929688
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 101.02999877929688
     name "PPG Industries"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.22939395877184607
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -23814,14 +23814,14 @@ graph [
     last_close 33.86000061035156
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 33.86000061035156
     name "PPL Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1416749501579082
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -23905,7 +23905,7 @@ graph [
     last_close 222.88999938964844
     industry "Insurance - Property &#38; Casualty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T17:03:26.457000000+00:00"
     last_updated_at "1767254673840"
@@ -23913,7 +23913,7 @@ graph [
     name "Progressive Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.30137324929237364
+    raw_risk_score 0.12069678582166779
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -23996,14 +23996,14 @@ graph [
     last_close 127.9800033569336
     industry "REIT - Industrial"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 127.9800033569336
     name "Prologis"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.09553511070241025
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -24086,14 +24086,14 @@ graph [
     last_close 173.52000427246094
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 173.52000427246094
     name "PTC Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.20425824701114578
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -24176,14 +24176,14 @@ graph [
     last_close 126.98999786376953
     industry "Residential Construction"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 126.98999786376953
     name "PulteGroup"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.20317156100077222
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -24266,14 +24266,14 @@ graph [
     last_close 89.95999908447266
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 89.95999908447266
     name "Qorvo, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.37632046069523406
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -24356,14 +24356,14 @@ graph [
     last_close 460.6400146484375
     industry "Engineering &#38; Construction"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 460.6400146484375
     name "Quanta Services"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9299815893173218
+    raw_risk_score 0.2864422666534542
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -24447,7 +24447,7 @@ graph [
     last_close 174.80999755859375
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T14:04:09.879000000+00:00"
     updated_at "1767345396863"
@@ -24456,7 +24456,7 @@ graph [
     name "Qualcomm"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.5280861218770345
+    raw_risk_score 0.5253750994056946
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -24539,14 +24539,14 @@ graph [
     last_close 368.4200134277344
     industry "Apparel Manufacturing"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 368.4200134277344
     name "Ralph Lauren Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.3699061627974573
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -24630,7 +24630,7 @@ graph [
     last_close 58.47999954223633
     industry "REIT - Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T02:02:20.616000000+00:00"
     last_updated_at "1767254673840"
@@ -24638,7 +24638,7 @@ graph [
     name "Realty Income"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.33995324362104185
+    raw_risk_score 0.1649122514978913
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -24721,14 +24721,14 @@ graph [
     last_close 68.69999694824219
     industry "REIT - Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 68.69999694824219
     name "Regency Centers"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.07976128610544088
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -24811,14 +24811,14 @@ graph [
     last_close 216.52999877929688
     industry "Waste Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 216.52999877929688
     name "Republic Services"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.11419854124439056
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -24901,14 +24901,14 @@ graph [
     last_close 256.54998779296875
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 256.54998779296875
     name "ResMed"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.26957820144161926
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -24991,14 +24991,14 @@ graph [
     last_close 100.79000091552734
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 100.79000091552734
     name "Revvity"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2880576597641697
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -25081,14 +25081,14 @@ graph [
     last_close 26.799999237060547
     industry "Staffing &#38; Employment Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 26.799999237060547
     name "Robert Half Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.38348589261966315
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -25171,14 +25171,14 @@ graph [
     last_close 404.2900085449219
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 404.2900085449219
     name "Rockwell Automation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.180763567193562
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -25261,14 +25261,14 @@ graph [
     last_close 61.400001525878906
     industry "Personal Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 61.400001525878906
     name "Rollins, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.30016020527146453
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -25352,7 +25352,7 @@ graph [
     last_close 177.8699951171875
     industry "Apparel Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T13:00:53.601000000+00:00"
     last_updated_at "1767254673840"
@@ -25360,7 +25360,7 @@ graph [
     name "Ross Stores"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7661921858787537
+    raw_risk_score 0.32028665298480014
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -25443,14 +25443,14 @@ graph [
     last_close 257.6600036621094
     industry "Travel Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 257.6600036621094
     name "Royal Caribbean Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.32795692399785403
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -25533,14 +25533,14 @@ graph [
     last_close 498.5199890136719
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 498.5199890136719
     name "S&#38;P Global"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9133152961730957
+    raw_risk_score 0.15749744890213138
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -25624,7 +25624,7 @@ graph [
     last_close 260.57000732421875
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T21:01:30.300000000+00:00"
     last_updated_at "1767254673840"
@@ -25632,7 +25632,7 @@ graph [
     name "Salesforce"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.25928881626862743
+    raw_risk_score 0.3923339241327364
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -25715,14 +25715,14 @@ graph [
     last_close 278.7900085449219
     industry "Computer Hardware"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 278.7900085449219
     name "Seagate Technology"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.8955344557762146
+    raw_risk_score 0.3811946450647395
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -25805,14 +25805,14 @@ graph [
     last_close 854.3599853515625
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 854.3599853515625
     name "ServiceNow"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.5759425877450814
+    raw_risk_score 0.535292682283162
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -25895,14 +25895,14 @@ graph [
     last_close 0.7799999713897705
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 0.7799999713897705
     name "SIGNATURE BANK (NY)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.8072642814422457
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -25985,14 +25985,14 @@ graph [
     last_close 69.31999969482422
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 69.31999969482422
     name "Skyworks Solutions"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.4764484162711433
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472451329231262
@@ -26075,14 +26075,14 @@ graph [
     last_close 72.47000122070312
     industry "Tools &#38; Accessories"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 72.47000122070312
     name "Stanley Black &#38; Decker"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.16018503564472195
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -26165,14 +26165,14 @@ graph [
     last_close 364.0199890136719
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 364.0199890136719
     name "Stryker Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.17809263181788057
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -26256,7 +26256,7 @@ graph [
     last_close 466.760009765625
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T00:02:34.979000000+00:00"
     last_updated_at "1767254673840"
@@ -26264,7 +26264,7 @@ graph [
     name "Synopsys"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.30000000000000004
+    raw_risk_score 0.22357614798707948
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -26347,14 +26347,14 @@ graph [
     last_close 73.0999984741211
     industry "Food Distribution"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 73.0999984741211
     name "Sysco"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.14327537635367948
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -26438,7 +26438,7 @@ graph [
     last_close 209.6300048828125
     industry "Telecom Services"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T12:08:01.090000000+00:00"
     last_updated_at "1767254673840"
@@ -26446,7 +26446,7 @@ graph [
     name "T-Mobile US"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13865038633346555
+    raw_risk_score 0.18533591946157127
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -26529,14 +26529,14 @@ graph [
     last_close 106.58000183105469
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 106.58000183105469
     name "T. Rowe Price"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.11820537209455909
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -26620,7 +26620,7 @@ graph [
     last_close 247.8800048828125
     industry "Electronic Gaming &#38; Multimedia"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T22:03:02.708000000+00:00"
     last_updated_at "1767254673840"
@@ -26628,7 +26628,7 @@ graph [
     name "Take-Two Interactive"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.5644499123096467
+    raw_risk_score 0.23350287332901243
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -26712,7 +26712,7 @@ graph [
     last_close 92.19000244140625
     industry "Discount Stores"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T00:01:27.668000000+00:00"
     last_updated_at "1767254673840"
@@ -26720,7 +26720,7 @@ graph [
     name "Target Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8037357687950134
+    raw_risk_score 0.2129462361226111
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -26803,14 +26803,14 @@ graph [
     last_close 234.36000061035156
     industry "Electronic Components"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 234.36000061035156
     name "TE Connectivity"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7053553020512616
+    raw_risk_score 0.24994061896094616
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -26893,14 +26893,14 @@ graph [
     last_close 83.47000122070312
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 83.47000122070312
     name "Textron"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7944525480270386
+    raw_risk_score 0.11534348428243754
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -26984,7 +26984,7 @@ graph [
     last_close 572.77001953125
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T11:05:41.308000000+00:00"
     last_updated_at "1767254673840"
@@ -26992,7 +26992,7 @@ graph [
     name "Thermo Fisher Scientific"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.6072442919015884
+    raw_risk_score 0.25324397346559796
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -27075,14 +27075,14 @@ graph [
     last_close 153.27999877929688
     industry "Apparel Retail"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 153.27999877929688
     name "TJX Companies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9352749586105347
+    raw_risk_score 0.26431186714329924
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -27165,14 +27165,14 @@ graph [
     last_close 401.42999267578125
     industry "Building Products &#38; Equipment"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 401.42999267578125
     name "Trane Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.5879093209902446
+    raw_risk_score 0.1606820153770307
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -27255,14 +27255,14 @@ graph [
     last_close 280.8900146484375
     industry "Insurance - Property &#38; Casualty"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 280.8900146484375
     name "Travelers Companies (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8561714291572571
+    raw_risk_score 0.11363992300784032
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -27345,14 +27345,14 @@ graph [
     last_close 469.3299865722656
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 469.3299865722656
     name "Tyler Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9245031476020813
+    raw_risk_score 0.23245390624256848
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -27435,14 +27435,14 @@ graph [
     last_close 56.91999816894531
     industry "Farm Products"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 56.91999816894531
     name "Tyson Foods"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.3375967093960405
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -27525,14 +27525,14 @@ graph [
     last_close 51.2599983215332
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 51.2599983215332
     name "U.S. Bancorp"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9456842184066773
+    raw_risk_score 0.12737577846887926
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -27615,14 +27615,14 @@ graph [
     last_close 35.20000076293945
     industry "REIT - Residential"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 35.20000076293945
     name "UDR, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.08204941989472056
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -27705,14 +27705,14 @@ graph [
     last_close 174.13999938964844
     industry "Oil &#38; Gas Refining &#38; Marketing"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 174.13999938964844
     name "Valero Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2800200111419171
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -27795,14 +27795,14 @@ graph [
     last_close 80.61000061035156
     industry "REIT - Healthcare Facilities"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 80.61000061035156
     name "Ventas"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.340646540988805
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -27885,14 +27885,14 @@ graph [
     last_close 249.5399932861328
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 249.5399932861328
     name "Verisign"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.16488899114913452
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -27975,14 +27975,14 @@ graph [
     last_close 19.049999237060547
     industry "Apparel Manufacturing"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 19.049999237060547
     name "VF Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.26544867160873287
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -28068,7 +28068,7 @@ graph [
     industry "Credit Services"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T19:02:10.565000000+00:00"
     updated_at "1768045191518"
@@ -28076,7 +28076,7 @@ graph [
     name "Visa Inc."
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10346516408026214
+    raw_risk_score 0.1438766509256698
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -28159,14 +28159,14 @@ graph [
     last_close 214.9499969482422
     industry "Railroads"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 214.9499969482422
     name "Wabtec"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.13353505273593846
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -28337,7 +28337,7 @@ graph [
     industry "Discount Stores"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T00:01:20.735000000+00:00"
     updated_at "1768045191518"
@@ -28345,7 +28345,7 @@ graph [
     name "Walmart"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8383143583933512
+    raw_risk_score 0.30931614466445595
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -28428,14 +28428,14 @@ graph [
     last_close 213.5800018310547
     industry "Waste Management"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 213.5800018310547
     name "Waste Management"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.11470875096744111
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -28519,7 +28519,7 @@ graph [
     last_close 105.70999908447266
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T22:06:07.050000000+00:00"
     last_updated_at "1767254673840"
@@ -28527,7 +28527,7 @@ graph [
     name "WEC Energy Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7
+    raw_risk_score 0.1092515160083751
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -28610,14 +28610,14 @@ graph [
     last_close 204.30999755859375
     industry "REIT - Healthcare Facilities"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 204.30999755859375
     name "Welltower"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.08239183341613922
+    raw_risk_score 0.26163026424773594
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -28785,14 +28785,14 @@ graph [
     last_close 62.810001373291016
     industry "Oil &#38; Gas Midstream"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 62.810001373291016
     name "Williams Companies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9129727482795715
+    raw_risk_score 0.21708161477229593
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -28875,14 +28875,14 @@ graph [
     last_close 125.51000213623047
     industry "Resorts &#38; Casinos"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 125.51000213623047
     name "Wynn Resorts"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7462700009346008
+    raw_risk_score 0.3072843179229259
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -28965,14 +28965,14 @@ graph [
     last_close 77.18000030517578
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 77.18000030517578
     name "Xcel Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8725792765617371
+    raw_risk_score 0.1700180422907604
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -29055,14 +29055,14 @@ graph [
     last_close 139.00999450683594
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 139.00999450683594
     name "Xylem Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.12637969803620802
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -29145,14 +29145,14 @@ graph [
     last_close 144.9600067138672
     industry "Restaurants"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 144.9600067138672
     name "Yum! Brands"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9313863515853882
+    raw_risk_score 0.1102364837412953
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -29235,14 +29235,14 @@ graph [
     last_close 264.80999755859375
     industry "Communication Equipment"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 264.80999755859375
     name "Zebra Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.28299966613046934
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -29325,14 +29325,14 @@ graph [
     last_close 94.27999877929688
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 94.27999877929688
     name "Zimmer Biomet"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.18879377836885414
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -29415,14 +29415,14 @@ graph [
     last_close 55.45000076293945
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 55.45000076293945
     name "Zions Bancorporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8497543931007385
+    raw_risk_score 0.16246687423640024
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -29505,14 +29505,14 @@ graph [
     last_close 118.6500015258789
     industry "Drug Manufacturers - Specialty &#38; Generic"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 118.6500015258789
     name "Zoetis"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9392039775848389
+    raw_risk_score 0.4651671683067507
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -29598,7 +29598,7 @@ graph [
     industry "Computer Hardware"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 1.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T06:01:09.766000000+00:00"
     updated_at "1768130528095"
@@ -29606,7 +29606,7 @@ graph [
     name "IonQ, Inc."
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.11624462604522709
+    raw_risk_score 0.6052662666709688
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -29692,7 +29692,7 @@ graph [
     industry "Grocery Stores"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 1.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T18:02:59.064000000+00:00"
     updated_at "1768130528095"
@@ -29700,7 +29700,7 @@ graph [
     name "Kroger"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.1903815973888744
+    raw_risk_score 0.23540411711969894
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -29785,14 +29785,14 @@ graph [
     industry "Beverages - Non-Alcoholic"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 1.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     updated_at "1768130528095"
     price 69.91
     name "Coca-Cola Company (The)"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.22720911502838134
+    raw_risk_score 0.12306679188001465
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -29877,14 +29877,14 @@ graph [
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 1.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     updated_at "1768130528095"
     price 41.12
     name "Occidental Petroleum"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.28832316487347726
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -29969,14 +29969,14 @@ graph [
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 1.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     updated_at "1768130528095"
     price 19.995
     name "Sirius XM Holdings"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.3070488770802816
+    raw_risk_score 0.24489062051808141
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -30059,14 +30059,14 @@ graph [
     last_close 290.6300048828125
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 290.6300048828125
     name "FactSet"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.4691709499264118
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -30150,7 +30150,7 @@ graph [
     last_close 483.1600036621094
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T20:03:06.119000000+00:00"
     updated_at "1767345396863"
@@ -30159,7 +30159,7 @@ graph [
     name "Microsoft"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.31299035303732925
+    raw_risk_score 0.22750414635531518
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -30243,7 +30243,7 @@ graph [
     last_close 125.08000183105469
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T19:04:06.159000000+00:00"
     last_updated_at "1767254673840"
@@ -30251,7 +30251,7 @@ graph [
     name "Abbott Laboratories"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.6
+    raw_risk_score 0.19534036164660584
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -30334,14 +30334,14 @@ graph [
     last_close 257.6099853515625
     industry "Solar"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 257.6099853515625
     name "First Solar"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.48406289584089934
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -30424,14 +30424,14 @@ graph [
     last_close 44.90999984741211
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 44.90999984741211
     name "FirstEnergy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.3306050499280294
+    raw_risk_score 0.1556209205122603
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -30515,7 +30515,7 @@ graph [
     last_close 455.0
     industry "Auto Manufacturers"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T21:01:37.770000000+00:00"
     updated_at "1767345396863"
@@ -30524,7 +30524,7 @@ graph [
     name "Tesla, Inc."
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.15772437558454627
+    raw_risk_score 0.2598668085008227
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -30608,7 +30608,7 @@ graph [
     last_close 260.69000244140625
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T19:02:39.363000000+00:00"
     last_updated_at "1767254673840"
@@ -30616,7 +30616,7 @@ graph [
     name "Air Products"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.16992635726928712
+    raw_risk_score 0.30428359512745995
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -30699,14 +30699,14 @@ graph [
     last_close 23.239999771118164
     industry "Resorts &#38; Casinos"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 23.239999771118164
     name "Caesars Entertainment"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.4069116943369453
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -30789,7 +30789,7 @@ graph [
     last_close 67.0999984741211
     industry "Airlines"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     updated_at "1767345396863"
     last_updated_at "1767254673840"
@@ -30797,7 +30797,7 @@ graph [
     name "Delta Air Lines"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.5942953484398978
+    raw_risk_score 0.3218351535814867
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -30880,14 +30880,14 @@ graph [
     last_close 84.30999755859375
     industry "REIT - Specialty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 84.30999755859375
     name "Iron Mountain"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1488935337129032
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -30971,7 +30971,7 @@ graph [
     last_close 198.83999633789062
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T19:01:27.119000000+00:00"
     last_updated_at "1767254673840"
@@ -30979,7 +30979,7 @@ graph [
     name "Palo Alto Networks"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.30852916240692135
+    raw_risk_score 0.40730558678322143
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -31062,14 +31062,14 @@ graph [
     last_close 23.610000610351562
     industry "Agricultural Inputs"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 23.610000610351562
     name "Mosaic Company (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.2567920883496603
+    raw_risk_score 0.21555268395454802
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -31152,14 +31152,14 @@ graph [
     last_close 41.7400016784668
     industry "Packaging &#38; Containers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 41.7400016784668
     name "Sealed Air Corp"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.19310228148466602
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -31242,7 +31242,7 @@ graph [
     last_close 37.849998474121094
     industry "Airlines"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     updated_at "1767345396863"
     last_updated_at "1767254673840"
@@ -31250,7 +31250,7 @@ graph [
     name "Southwest Airlines"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.23454104208892668
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -31334,7 +31334,7 @@ graph [
     last_close 104.94999694824219
     industry "Airlines"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T12:07:53.410000000+00:00"
     updated_at "1767345396863"
@@ -31343,7 +31343,7 @@ graph [
     name "United Airlines Holdings"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.4348849376042684
+    raw_risk_score 0.3551767263040834
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -31426,14 +31426,14 @@ graph [
     last_close 76.05000305175781
     industry "Auto Manufacturers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 76.05000305175781
     name "General Motors"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.231943649550279
+    raw_risk_score 0.273294393064632
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -31516,14 +31516,14 @@ graph [
     last_close 93.69000244140625
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 93.69000244140625
     name "ConocoPhillips"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7736777052992867
+    raw_risk_score 0.16910831796144798
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -31606,14 +31606,14 @@ graph [
     last_close 1346.8599853515625
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 1346.8599853515625
     name "TransDigm Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.14636774317892715
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -31699,7 +31699,7 @@ graph [
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T19:02:37.422000000+00:00"
     updated_at "1768045191518"
@@ -31707,7 +31707,7 @@ graph [
     name "Lilly (Eli)"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.05203039754520761
+    raw_risk_score 0.2310568091588821
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -31790,14 +31790,14 @@ graph [
     last_close 178.02000427246094
     industry "REIT - Residential"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 178.02000427246094
     name "AvalonBay Communities"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.12323660691202479
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -31880,14 +31880,14 @@ graph [
     last_close 131.6699981689453
     industry "REIT - Residential"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 131.6699981689453
     name "Mid-America Apartment Communities"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.8768016695976257
+    raw_risk_score 0.13643605881289575
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -31970,14 +31970,14 @@ graph [
     last_close 139.36000061035156
     industry "Oil &#38; Gas Refining &#38; Marketing"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 139.36000061035156
     name "Phillips 66"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9363753795623779
+    raw_risk_score 0.2655378294331422
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -32153,7 +32153,7 @@ graph [
     last_close 85.97000122070312
     industry "Electronic Components"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T06:00:57.011000000+00:00"
     last_updated_at "1767254673840"
@@ -32161,7 +32161,7 @@ graph [
     name "Corning Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7
+    raw_risk_score 0.45704121234616807
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -32244,14 +32244,14 @@ graph [
     last_close 333.1099853515625
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 333.1099853515625
     name "Sherwin-Williams"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.8765588998794556
+    raw_risk_score 0.17689532519285256
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -32334,14 +32334,14 @@ graph [
     last_close 211.50999450683594
     industry "Consulting Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 211.50999450683594
     name "Equifax"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.26196793926431927
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -32424,7 +32424,7 @@ graph [
     last_close 545.52001953125
     industry "Credit Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     updated_at "1767345396863"
     last_updated_at "1767254673840"
@@ -32432,7 +32432,7 @@ graph [
     name "Mastercard"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.4411250129342079
+    raw_risk_score 0.19140223477373866
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -32515,14 +32515,14 @@ graph [
     last_close 63.29999923706055
     industry "Packaged Foods"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 63.29999923706055
     name "McCormick &#38; Company"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1353471695021695
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -32605,14 +32605,14 @@ graph [
     last_close 79.56999969482422
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 79.56999969482422
     name "Public Service Enterprise Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7778173685073853
+    raw_risk_score 0.10843846282881933
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -32695,14 +32695,14 @@ graph [
     last_close 347.2099914550781
     industry "Tools &#38; Accessories"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 347.2099914550781
     name "Snap-on"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.18788480867499274
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -32785,14 +32785,14 @@ graph [
     last_close 320.70001220703125
     industry "Insurance Brokers"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 320.70001220703125
     name "Willis Towers Watson"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.20527655454116117
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -32875,14 +32875,14 @@ graph [
     last_close 522.2999877929688
     industry "Scientific &#38; Technical Instruments"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 522.2999877929688
     name "Teledyne Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.178652450427734
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -32965,14 +32965,14 @@ graph [
     last_close 120.5
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 120.5
     name "Teleflex Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.17542175285569261
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -33056,7 +33056,7 @@ graph [
     last_close 182.5399932861328
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T12:04:56.518000000+00:00"
     last_updated_at "1767254673840"
@@ -33064,7 +33064,7 @@ graph [
     name "Texas Instruments"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.40879690945148467
+    raw_risk_score 0.2123231164414491
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -33149,14 +33149,14 @@ graph [
     industry "Healthcare Plans"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     updated_at "1768045191518"
     price 330.11
     name "UnitedHealth Group"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.2825859387715658
+    raw_risk_score 0.2552195181097858
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -33240,7 +33240,7 @@ graph [
     last_close 321.2699890136719
     industry "Internet Content &#38; Information"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T20:03:05.711000000+00:00"
     updated_at "1767345396863"
@@ -33249,7 +33249,7 @@ graph [
     name "Alphabet Inc. (Class A)"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.44565680088141024
+    raw_risk_score 0.3515688157006771
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -33332,14 +33332,14 @@ graph [
     last_close 477.05999755859375
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 477.05999755859375
     name "Ameriprise Financial"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12075505591928952
+    raw_risk_score 0.23946595942014054
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -33422,14 +33422,14 @@ graph [
     last_close 87.5199966430664
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 87.5199966430664
     name "Principal Financial Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.11586369076625089
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -33512,14 +33512,14 @@ graph [
     last_close 59.0099983215332
     industry "Farm Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 59.0099983215332
     name "Archer Daniels Midland"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.23363427321116126
+    raw_risk_score 0.15977650813786
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -33602,14 +33602,14 @@ graph [
     last_close 91.72000122070312
     industry "Insurance - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 91.72000122070312
     name "Arch Capital Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.21463628257189077
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -33693,7 +33693,7 @@ graph [
     last_close 158.6999969482422
     industry "Semiconductor Equipment &#38; Materials"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T01:01:34.994000000+00:00"
     last_updated_at "1767254673840"
@@ -33701,7 +33701,7 @@ graph [
     name "Lam Research"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8012303441762925
+    raw_risk_score 0.3907352182343654
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -33784,14 +33784,14 @@ graph [
     last_close 94.87000274658203
     industry "Integrated Freight &#38; Logistics"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 94.87000274658203
     name "United Parcel Service"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.6100336367433723
+    raw_risk_score 0.3053667997911318
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -33875,7 +33875,7 @@ graph [
     last_close 85.45999908447266
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T10:05:02.252000000+00:00"
     last_updated_at "1767254673840"
@@ -33883,7 +33883,7 @@ graph [
     name "GE HealthCare"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.5708000868558883
+    raw_risk_score 0.13733175723279956
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -33966,14 +33966,14 @@ graph [
     last_close 79.86000061035156
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 79.86000061035156
     name "Ingersoll Rand"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.019830018281936646
+    raw_risk_score 0.1679809159541317
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34056,14 +34056,14 @@ graph [
     last_close 188.41000366210938
     industry "Integrated Freight &#38; Logistics"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 188.41000366210938
     name "J.B. Hunt"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.34957767148168184
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34146,14 +34146,14 @@ graph [
     last_close 16.899999618530273
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 16.899999618530273
     name "Huntington Bancshares"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.8086152076721191
+    raw_risk_score 0.1892739066942878
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34236,14 +34236,14 @@ graph [
     last_close 167.47999572753906
     industry "Conglomerates"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 167.47999572753906
     name "3M"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.18333298205230575
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34326,14 +34326,14 @@ graph [
     last_close 159.0800018310547
     industry "Security &#38; Protection Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 159.0800018310547
     name "Allegion"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1277394881868711
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34417,7 +34417,7 @@ graph [
     last_close 117.54000091552734
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T21:06:28.612000000+00:00"
     last_updated_at "1767254673840"
@@ -34425,7 +34425,7 @@ graph [
     name "American Electric Power"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.3
+    raw_risk_score 0.14501922843060064
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34509,7 +34509,7 @@ graph [
     last_close 370.3500061035156
     industry "Credit Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T15:01:57.763000000+00:00"
     last_updated_at "1767254673840"
@@ -34517,7 +34517,7 @@ graph [
     name "American Express"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.6
+    raw_risk_score 0.16696866161577387
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34601,7 +34601,7 @@ graph [
     last_close 129.5
     industry "Utilities - Regulated Water"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T15:03:54.072000000+00:00"
     last_updated_at "1767254673840"
@@ -34609,7 +34609,7 @@ graph [
     name "American Water Works"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7
+    raw_risk_score 0.14658061431002975
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34693,7 +34693,7 @@ graph [
     last_close 49.20000076293945
     industry "Oil &#38; Gas Equipment &#38; Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T14:01:52.393000000+00:00"
     last_updated_at "1767254673840"
@@ -34701,7 +34701,7 @@ graph [
     name "Baker Hughes"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.2
+    raw_risk_score 0.18663332662602206
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -34784,14 +34784,14 @@ graph [
     last_close 74.16999816894531
     industry "Specialty Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 74.16999816894531
     name "Best Buy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.4787265954952379
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34874,14 +34874,14 @@ graph [
     last_close 201.88999938964844
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 201.88999938964844
     name "Boeing"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9053532183170319
+    raw_risk_score 0.3117584624298464
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34964,14 +34964,14 @@ graph [
     last_close 29.600000381469727
     industry "Packaged Foods"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 29.600000381469727
     name "Campbell's Company (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.16137210842540622
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -35054,14 +35054,14 @@ graph [
     last_close 14.119999885559082
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 14.119999885559082
     name "DXC Technology"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.5608135782833282
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -35144,14 +35144,14 @@ graph [
     last_close 104.9000015258789
     industry "Household &#38; Personal Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 104.9000015258789
     name "Clorox"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.23615364318539508
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -35234,14 +35234,14 @@ graph [
     last_close 78.06999969482422
     industry "Household &#38; Personal Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 78.06999969482422
     name "Colgate-Palmolive"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1728333276341512
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -35324,14 +35324,14 @@ graph [
     last_close 475.1099853515625
     industry "Farm &#38; Heavy Construction Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 475.1099853515625
     name "Deere &#38; Company"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.34324410096020774
+    raw_risk_score 0.19746293518051478
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -35415,7 +35415,7 @@ graph [
     last_close 105.30000305175781
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T18:01:34.135000000+00:00"
     last_updated_at "1767254673840"
@@ -35423,7 +35423,7 @@ graph [
     name "Walt Disney Company (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.30000000000000004
+    raw_risk_score 0.26675735719751825
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -35506,14 +35506,14 @@ graph [
     last_close 131.22999572753906
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 131.22999572753906
     name "DTE Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9250863790512085
+    raw_risk_score 0.09496897739557021
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -35596,14 +35596,14 @@ graph [
     last_close 61.529998779296875
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 61.529998779296875
     name "Eastman Chemical"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1675392033570412
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -35686,14 +35686,14 @@ graph [
     last_close 447.55999755859375
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 447.55999755859375
     name "Roper Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.23210476608532654
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -35776,14 +35776,14 @@ graph [
     last_close 13.029999732971191
     industry "Auto Manufacturers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 13.029999732971191
     name "Ford Motor Company"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.6744928000921228
+    raw_risk_score 0.4428004446517697
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -35866,14 +35866,14 @@ graph [
     last_close 130.24000549316406
     industry "Auto Parts"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 130.24000549316406
     name "Genuine Parts Company"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.14680987237329923
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -35956,14 +35956,14 @@ graph [
     last_close 28.450000762939453
     industry "Oil &#38; Gas Equipment &#38; Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 28.450000762939453
     name "Halliburton"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.3208356897036234
+    raw_risk_score 0.16199507204178307
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -36046,14 +36046,14 @@ graph [
     last_close 182.3000030517578
     industry "Confectioners"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 182.3000030517578
     name "Hershey Company (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8788290023803711
+    raw_risk_score 0.21526277316449383
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -36136,14 +36136,14 @@ graph [
     last_close 23.329999923706055
     industry "Communication Equipment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 23.329999923706055
     name "Hewlett Packard Enterprise"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9260533452033997
+    raw_risk_score 0.6860614357940013
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -36226,14 +36226,14 @@ graph [
     last_close 24.34000015258789
     industry "Packaged Foods"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 24.34000015258789
     name "Kraft Heinz"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.15502342184840476
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -36316,14 +36316,14 @@ graph [
     last_close 45.130001068115234
     industry "Beverages - Brewers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 45.130001068115234
     name "Molson Coors Beverage Company"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09099344565318183
+    raw_risk_score 0.20826249769480004
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -36406,14 +36406,14 @@ graph [
     last_close 143.4499969482422
     industry "Household &#38; Personal Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 143.4499969482422
     name "Procter &#38; Gamble"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9336574673652649
+    raw_risk_score 0.1313925451323869
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -36496,14 +36496,14 @@ graph [
     last_close 100.11000061035156
     industry "Packaged Foods"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 100.11000061035156
     name "J.M. Smucker Company (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.13430412849086382
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -36586,14 +36586,14 @@ graph [
     last_close 86.27999877929688
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 86.27999877929688
     name "Southern Company"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.14341284976326898
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -36676,14 +36676,14 @@ graph [
     last_close 80.36000061035156
     industry "Credit Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 80.36000061035156
     name "Synchrony Financial"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.164604803364698
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -36766,14 +36766,14 @@ graph [
     last_close 294.8699951171875
     industry "Building Materials"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 294.8699951171875
     name "Vulcan Materials Company"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1963510844379061
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -36856,14 +36856,14 @@ graph [
     last_close 21.690000534057617
     industry "REIT - Specialty"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 21.690000534057617
     name "Weyerhaeuser"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.21367741819011188
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -36946,14 +36946,14 @@ graph [
     last_close 28.690000534057617
     industry "Beverages - Non-Alcoholic"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 28.690000534057617
     name "Keurig Dr Pepper"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.18073466695945606
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -37036,14 +37036,14 @@ graph [
     last_close 190.52999877929688
     industry "Oil &#38; Gas Refining &#38; Marketing"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 190.52999877929688
     name "Marathon Petroleum"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.031549930572509766
+    raw_risk_score 0.26800075111862354
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -37127,7 +37127,7 @@ graph [
     last_close 718.3599853515625
     industry "Biotechnology"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T22:01:16.629000000+00:00"
     last_updated_at "1767254673840"
@@ -37135,7 +37135,7 @@ graph [
     name "Regeneron Pharmaceuticals"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.6499999999999999
+    raw_risk_score 0.36947212817186714
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -37219,7 +37219,7 @@ graph [
     last_close 455.4800109863281
     industry "Biotechnology"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T01:01:26.423000000+00:00"
     last_updated_at "1767254673840"
@@ -37227,7 +37227,7 @@ graph [
     name "Vertex Pharmaceuticals"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.25
+    raw_risk_score 0.22793988563339085
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -37311,7 +37311,7 @@ graph [
     last_close 280.2300109863281
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T11:05:41.694000000+00:00"
     last_updated_at "1767254673840"
@@ -37319,7 +37319,7 @@ graph [
     name "West Pharmaceutical Services"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.3
+    raw_risk_score 0.22437322332255738
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -37402,14 +37402,14 @@ graph [
     last_close 167.24000549316406
     industry "Capital Markets"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 167.24000549316406
     name "MarketAxess"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.31198481231163877
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -37492,14 +37492,14 @@ graph [
     last_close 54.08000183105469
     industry "Specialty Retail"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 54.08000183105469
     name "Tractor Supply"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.21885260970707443
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -37582,14 +37582,14 @@ graph [
     last_close 96.5999984741211
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 96.5999984741211
     name "Consolidated Edison"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.6935612525738463
+    raw_risk_score 0.13538056977959723
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -37672,14 +37672,14 @@ graph [
     last_close 65.5
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 65.5
     name "Alliant Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9173438549041748
+    raw_risk_score 0.13531896274940408
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -37762,14 +37762,14 @@ graph [
     last_close 27.100000381469727
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 27.100000381469727
     name "APA Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9265115857124329
+    raw_risk_score 0.2764383186610485
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -37852,14 +37852,14 @@ graph [
     last_close 40.630001068115234
     industry "Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 40.630001068115234
     name "Celanese Corp"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.855696976184845
+    raw_risk_score 0.3646776219525989
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -37943,7 +37943,7 @@ graph [
     last_close 150.0
     industry "Oil &#38; Gas Integrated"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T17:02:36.875000000+00:00"
     last_updated_at "1767254673840"
@@ -37951,7 +37951,7 @@ graph [
     name "Chevron Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.612389200925827
+    raw_risk_score 0.18244923570296567
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -38034,14 +38034,14 @@ graph [
     last_close 359.82000732421875
     industry "Utilities - Independent Power Producers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 359.82000732421875
     name "Constellation Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.816688060760498
+    raw_risk_score 0.2835194118629075
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -38124,14 +38124,14 @@ graph [
     last_close 68.4000015258789
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 68.4000015258789
     name "Fox Corporation (Class A)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.23106589949684472
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -38214,14 +38214,14 @@ graph [
     last_close 60.88999938964844
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 60.88999938964844
     name "Fox Corporation (Class B)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.4933686062693596
+    raw_risk_score 0.23812551116266212
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -38304,14 +38304,14 @@ graph [
     last_close 337.30999755859375
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 337.30999755859375
     name "General Dynamics"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.8053805828094482
+    raw_risk_score 0.11409113307953309
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -38394,14 +38394,14 @@ graph [
     last_close 1214.4599609375
     industry "Semiconductor Equipment &#38; Materials"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 1214.4599609375
     name "KLA Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.3656446540724917
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -38484,14 +38484,14 @@ graph [
     last_close 26.040000915527344
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 26.040000915527344
     name "News Corp (Class A)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.16306716696690993
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -38574,14 +38574,14 @@ graph [
     last_close 29.59000015258789
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 29.59000015258789
     name "News Corp (Class B)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9034170210361481
+    raw_risk_score 0.17090234283887631
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -38664,14 +38664,14 @@ graph [
     last_close 88.16999816894531
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 88.16999816894531
     name "Pinnacle West Capital"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.8445506691932678
+    raw_risk_score 0.08983651888602683
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -38754,14 +38754,14 @@ graph [
     last_close 181.7100067138672
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 181.7100067138672
     name "Jack Henry &#38; Associates"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.23917715041903584
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -38844,14 +38844,14 @@ graph [
     last_close 47.529998779296875
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 47.529998779296875
     name "Truist Financial"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1548583816265598
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -38934,14 +38934,14 @@ graph [
     last_close 295.0
     industry "Insurance - Property &#38; Casualty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 295.0
     name "Chubb Limited"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.39691335707902914
+    raw_risk_score 0.09981094537840002
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -39024,14 +39024,14 @@ graph [
     last_close 38.459999084472656
     industry "Oil &#38; Gas Equipment &#38; Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 38.459999084472656
     name "Schlumberger"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8859788775444031
+    raw_risk_score 0.19528685399444393
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -39114,14 +39114,14 @@ graph [
     last_close 43.349998474121094
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 43.349998474121094
     name "LyondellBasell"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2741331991022897
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -39205,7 +39205,7 @@ graph [
     last_close 181.3000030517578
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T00:02:37.045000000+00:00"
     last_updated_at "1767254673840"
@@ -39213,7 +39213,7 @@ graph [
     name "Biogen"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11743664145469668
+    raw_risk_score 0.22027620152748548
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -39296,14 +39296,14 @@ graph [
     last_close 5197.0400390625
     industry "Travel Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 5197.0400390625
     name "Booking Holdings"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8470425605773926
+    raw_risk_score 0.2634695195788309
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -39387,7 +39387,7 @@ graph [
     last_close 390.239990234375
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T08:01:05.868000000+00:00"
     updated_at "1767345396863"
@@ -39396,7 +39396,7 @@ graph [
     name "Broadcom"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.20014143315228544
+    raw_risk_score 0.34200340454083067
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -39480,7 +39480,7 @@ graph [
     last_close 77.97000122070312
     industry "Communication Equipment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T15:02:42.528000000+00:00"
     last_updated_at "1767254673840"
@@ -39488,7 +39488,7 @@ graph [
     name "Cisco"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.3598338757242475
+    raw_risk_score 0.44273996817132344
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -39572,7 +39572,7 @@ graph [
     last_close 81.4000015258789
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T18:04:13.943000000+00:00"
     last_updated_at "1767254673840"
@@ -39580,7 +39580,7 @@ graph [
     name "Cooper Companies (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.5828749656677246
+    raw_risk_score 0.12669464660254376
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -39663,14 +39663,14 @@ graph [
     last_close 66.0
     industry "Agricultural Inputs"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 66.0
     name "Corteva"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2758553735203462
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -39753,14 +39753,14 @@ graph [
     last_close 58.4900016784668
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 58.4900016784668
     name "Dominion Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2576715504720648
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -39843,14 +39843,14 @@ graph [
     last_close 40.5099983215332
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 40.5099983215332
     name "DuPont"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7827543020248413
+    raw_risk_score 0.23720474405827582
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -39933,14 +39933,14 @@ graph [
     last_close 741.5800170898438
     industry "REIT - Specialty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 741.5800170898438
     name "Equinix"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.09902886768932362
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -40023,14 +40023,14 @@ graph [
     last_close 263.42999267578125
     industry "Travel Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 263.42999267578125
     name "Expedia Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.782467782497406
+    raw_risk_score 0.27604621237340843
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -40113,14 +40113,14 @@ graph [
     last_close 248.1199951171875
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 248.1199951171875
     name "F5, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.29631712871291643
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -40203,14 +40203,14 @@ graph [
     last_close 27.09000015258789
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 27.09000015258789
     name "Gen Digital"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05518249869346614
+    raw_risk_score 0.4301507995054862
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -40293,14 +40293,14 @@ graph [
     last_close 27.139999389648438
     industry "REIT - Residential"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 27.139999389648438
     name "Invitation Homes"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.13104720372408096
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -40384,7 +40384,7 @@ graph [
     last_close 292.5899963378906
     industry "Lodging"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T22:06:04.227000000+00:00"
     last_updated_at "1767254673840"
@@ -40392,7 +40392,7 @@ graph [
     name "Marriott International"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.5341816955142551
+    raw_risk_score 0.24970197967923446
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -40478,7 +40478,7 @@ graph [
     industry "Internet Content &#38; Information"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T20:03:04.068000000+00:00"
     updated_at "1768045191518"
@@ -40486,7 +40486,7 @@ graph [
     name "Meta Platforms"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.5498981059405765
+    raw_risk_score 0.16458578801659057
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -40569,14 +40569,14 @@ graph [
     last_close 27.700000762939453
     industry "Biotechnology"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 27.700000762939453
     name "Moderna"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05017073452472687
+    raw_risk_score 0.3406276175555647
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -40660,7 +40660,7 @@ graph [
     last_close 90.22000122070312
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T13:03:20.840000000+00:00"
     last_updated_at "1767254673840"
@@ -40668,7 +40668,7 @@ graph [
     name "Nasdaq, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.3
+    raw_risk_score 0.18380934106553504
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -40753,14 +40753,14 @@ graph [
     industry "Credit Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     updated_at "1768045191518"
     price 58.38
     name "PayPal"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.21756417692842311
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -40843,14 +40843,14 @@ graph [
     last_close 116.30000305175781
     industry "Luxury Goods"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 116.30000305175781
     name "Tapestry, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.34111618488286527
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -40934,7 +40934,7 @@ graph [
     last_close 200.77000427246094
     industry "Semiconductor Equipment &#38; Materials"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-02T16:13:56.025000000+00:00"
     last_updated_at "1767254673840"
@@ -40942,7 +40942,7 @@ graph [
     name "Teradyne"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8379380297660828
+    raw_risk_score 0.41009135732480745
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -41026,7 +41026,7 @@ graph [
     last_close 83.5199966430664
     industry "Scientific &#38; Technical Instruments"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T20:01:52.414000000+00:00"
     last_updated_at "1767254673840"
@@ -41034,7 +41034,7 @@ graph [
     name "Trimble Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.4
+    raw_risk_score 0.2116648387780282
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -41118,7 +41118,7 @@ graph [
     last_close 601.5
     industry "Specialty Retail"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T23:01:33.325000000+00:00"
     last_updated_at "1767254673840"
@@ -41126,7 +41126,7 @@ graph [
     name "Ulta Beauty"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7565899809201558
+    raw_risk_score 0.19802908623267412
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -41209,14 +41209,14 @@ graph [
     last_close 221.24000549316406
     industry "Consulting Services"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 221.24000549316406
     name "Verisk Analytics"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.32815889726923925
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -41299,14 +41299,14 @@ graph [
     last_close 10.930000305175781
     industry "Drug Manufacturers - Specialty &#38; Generic"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 10.930000305175781
     name "Viatris"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.35343238743775784
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -41390,7 +41390,7 @@ graph [
     last_close 27.729999542236328
     industry "REIT - Diversified"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T05:00:54.580000000+00:00"
     last_updated_at "1767254673840"
@@ -41398,7 +41398,7 @@ graph [
     name "Vici Properties"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.7
+    raw_risk_score 0.17249321476062326
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -41482,7 +41482,7 @@ graph [
     last_close 26.079999923706055
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T00:01:57.155000000+00:00"
     last_updated_at "1767254673840"
@@ -41490,7 +41490,7 @@ graph [
     name "Warner Bros. Discovery"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0555335013489974
+    raw_risk_score 0.08043685447870536
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -41573,14 +41573,14 @@ graph [
     last_close 55.459999084472656
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 55.459999084472656
     name "Citizens Financial Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1525500780647155
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -41663,14 +41663,14 @@ graph [
     last_close 54.90999984741211
     industry "Confectioners"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 54.90999984741211
     name "Mondelez International"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.07939069969861004
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -41754,7 +41754,7 @@ graph [
     last_close 41.689998626708984
     industry "Telecom Services"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T15:01:57.322000000+00:00"
     last_updated_at "1767254673840"
@@ -41762,7 +41762,7 @@ graph [
     name "Verizon"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.26666666666666666
+    raw_risk_score 0.11164144102667817
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -41845,14 +41845,14 @@ graph [
     last_close 232.02000427246094
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 232.02000427246094
     name "Broadridge Financial Solutions"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.22942177671745845
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -41935,14 +41935,14 @@ graph [
     last_close 230.67999267578125
     industry "Credit Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 230.67999267578125
     name "Capital One"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9351931214332581
+    raw_risk_score 0.1539576546088378
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42025,14 +42025,14 @@ graph [
     last_close 162.3000030517578
     industry "Insurance - Property &#38; Casualty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 162.3000030517578
     name "Cincinnati Financial"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.16053202101976316
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42115,14 +42115,14 @@ graph [
     last_close 66.66000366210938
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 66.66000366210938
     name "Fidelity National Information Services"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2541856259045557
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -42205,14 +42205,14 @@ graph [
     last_close 197.86000061035156
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 197.86000061035156
     name "PNC Financial Services"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.18477405131080216
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42296,7 +42296,7 @@ graph [
     last_close 111.68000030517578
     industry "Insurance - Life"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T16:09:58.652000000+00:00"
     last_updated_at "1767254673840"
@@ -42304,7 +42304,7 @@ graph [
     name "Prudential Financial"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.2
+    raw_risk_score 0.09314858698551846
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42387,14 +42387,14 @@ graph [
     last_close 163.1300048828125
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 163.1300048828125
     name "Raymond James Financial"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.21431216386032398
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42477,14 +42477,14 @@ graph [
     last_close 239.7100067138672
     industry "Insurance Brokers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 239.7100067138672
     name "Arthur J. Gallagher &#38; Co."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.23455882920146723
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42567,14 +42567,14 @@ graph [
     last_close 26.280000686645508
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 26.280000686645508
     name "Regions Financial Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8258122801780701
+    raw_risk_score 0.18198552540830526
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42657,14 +42657,14 @@ graph [
     last_close 235.30999755859375
     industry "Railroads"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 235.30999755859375
     name "Union Pacific Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9273799657821655
+    raw_risk_score 0.13221915553995478
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42748,7 +42748,7 @@ graph [
     last_close 52.150001525878906
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T22:02:58.593000000+00:00"
     last_updated_at "1767254673840"
@@ -42756,7 +42756,7 @@ graph [
     name "Bristol Myers Squibb"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.2718817392985026
+    raw_risk_score 0.15617876672102304
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42839,14 +42839,14 @@ graph [
     last_close 205.10000610351562
     industry "Telecom Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 205.10000610351562
     name "Charter Communications"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.31154203790952983
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42930,7 +42930,7 @@ graph [
     last_close 304.5799865722656
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T19:05:13.709000000+00:00"
     last_updated_at "1767254673840"
@@ -42938,7 +42938,7 @@ graph [
     name "Huntington Ingalls Industries"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.5
+    raw_risk_score 0.34406402130432956
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43021,14 +43021,14 @@ graph [
     last_close 189.5800018310547
     industry "REIT - Specialty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 189.5800018310547
     name "SBA Communications"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1993543459109217
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43111,14 +43111,14 @@ graph [
     last_close 796.9099731445312
     industry "Rental &#38; Leasing Services"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 796.9099731445312
     name "United Rentals"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.3273990861606426
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43201,14 +43201,14 @@ graph [
     last_close 231.0800018310547
     industry "Medical Care Facilities"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 231.0800018310547
     name "Universal Health Services"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.33804035155350526
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43293,14 +43293,14 @@ graph [
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     updated_at "1768045191518"
     price 308.03
     name "GE Aerospace"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8285748362541199
+    raw_risk_score 0.27290229781579134
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -43383,14 +43383,14 @@ graph [
     last_close 102.95999908447266
     industry "Household &#38; Personal Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 102.95999908447266
     name "Kimberly-Clark"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.15905664602427932
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43473,14 +43473,14 @@ graph [
     last_close 263.2799987792969
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 263.2799987792969
     name "Steris"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.13955942961062637
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43563,14 +43563,14 @@ graph [
     last_close 394.80999755859375
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 394.80999755859375
     name "Waters Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.3441406478698418
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43653,14 +43653,14 @@ graph [
     last_close 168.88999938964844
     industry "Computer Hardware"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 168.88999938964844
     name "Western Digital"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.4518969838376007
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -43744,7 +43744,7 @@ graph [
     last_close 145.02000427246094
     industry "Beverages - Non-Alcoholic"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T03:01:11.003000000+00:00"
     last_updated_at "1767254673840"
@@ -43752,7 +43752,7 @@ graph [
     name "PepsiCo"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04143166664319159
+    raw_risk_score 0.2072538224468441
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43836,7 +43836,7 @@ graph [
     last_close 894.6799926757812
     industry "Discount Stores"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T13:03:18.045000000+00:00"
     last_updated_at "1767254673840"
@@ -43844,7 +43844,7 @@ graph [
     name "Costco"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.4597669242117642
+    raw_risk_score 0.22895102102622833
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43927,14 +43927,14 @@ graph [
     last_close 59.70000076293945
     industry "Packaged Foods"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 59.70000076293945
     name "Lamb Weston"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.18150334867063542
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44017,14 +44017,14 @@ graph [
     last_close 76.05999755859375
     industry "Furnishings, Fixtures &#38; Appliances"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 76.05999755859375
     name "Whirlpool Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.34106031478398663
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44108,7 +44108,7 @@ graph [
     last_close 85.12000274658203
     industry "Restaurants"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T15:02:29.533000000+00:00"
     last_updated_at "1767254673840"
@@ -44116,7 +44116,7 @@ graph [
     name "Starbucks"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.3
+    raw_risk_score 0.28264886994120625
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44200,7 +44200,7 @@ graph [
     last_close 1072.1600341796875
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T22:05:57.950000000+00:00"
     last_updated_at "1767254673840"
@@ -44208,7 +44208,7 @@ graph [
     name "BlackRock"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.25
+    raw_risk_score 0.2758907063246124
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44291,14 +44291,14 @@ graph [
     last_close 19.260000228881836
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 19.260000228881836
     name "KeyCorp"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.2946656432674126
+    raw_risk_score 0.1417872027834455
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44381,14 +44381,14 @@ graph [
     last_close 20.1299991607666
     industry "REIT - Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 20.1299991607666
     name "Kimco Realty"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.043719425394728395
+    raw_risk_score 0.15317237571923625
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44471,14 +44471,14 @@ graph [
     last_close 203.60000610351562
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 203.60000610351562
     name "EPAM Systems"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.33315667758705225
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -44561,14 +44561,14 @@ graph [
     last_close 27.309999465942383
     industry "Telecom Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 27.309999465942383
     name "Comcast"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.23390303738632712
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44651,14 +44651,14 @@ graph [
     last_close 112.16999816894531
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 112.16999816894531
     name "EOG Resources"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8443589210510254
+    raw_risk_score 0.219981249413486
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -44741,14 +44741,14 @@ graph [
     last_close 102.5199966430664
     industry "Biotechnology"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 102.5199966430664
     name "Incyte"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.16754170761733067
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44831,14 +44831,14 @@ graph [
     last_close 182.50999450683594
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 182.50999450683594
     name "Quest Diagnostics"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1160954468850488
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44921,14 +44921,14 @@ graph [
     last_close 165.22000122070312
     industry "Steel"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 165.22000122070312
     name "Steel Dynamics"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9227541089057922
+    raw_risk_score 0.3339786670794208
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -45011,14 +45011,14 @@ graph [
     last_close 76.37000274658203
     industry "Auto Parts"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 76.37000274658203
     name "Aptiv"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.8545167446136475
+    raw_risk_score 0.47676846455948707
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -45101,14 +45101,14 @@ graph [
     last_close 60.68000030517578
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 60.68000030517578
     name "EQT Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8072597682476044
+    raw_risk_score 0.1683913631460665
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472451329231262
@@ -45192,7 +45192,7 @@ graph [
     last_close 217.5800018310547
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T08:01:05.451000000+00:00"
     last_updated_at "1767254673840"
@@ -45200,7 +45200,7 @@ graph [
     name "Oracle Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.6477177113294602
+    raw_risk_score 0.4373689308683843
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -45283,14 +45283,14 @@ graph [
     last_close 272.05999755859375
     industry "REIT - Industrial"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 272.05999755859375
     name "Public Storage"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.8287489215532938
+    raw_risk_score 0.13146237050262838
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -45373,14 +45373,14 @@ graph [
     last_close 90.66000366210938
     industry "Utilities - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 90.66000366210938
     name "Sempra"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.15311387100256735
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -45463,14 +45463,14 @@ graph [
     last_close 180.74000549316406
     industry "Oil &#38; Gas Midstream"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 180.74000549316406
     name "Targa Resources"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.15319880412554185
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -45724,7 +45724,7 @@ graph [
     last_close 13.369999885559082
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T00:01:56.737000000+00:00"
     last_updated_at "1767254673840"
@@ -45732,7 +45732,7 @@ graph [
     name "Paramount Skydance Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.41276031335194907
+    raw_risk_score 0.16955098939017213
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -45815,14 +45815,14 @@ graph [
     last_close 296.4599914550781
     industry "Insurance Brokers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 296.4599914550781
     name "Erie Indemnity"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7776663303375244
+    raw_risk_score 0.17366927158563628
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -45905,14 +45905,14 @@ graph [
     last_close 93.62999725341797
     industry "Farm Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 93.62999725341797
     name "Bunge Global"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.21587372798948493
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46080,14 +46080,14 @@ graph [
     last_close 110.01000213623047
     industry "Building Products &#38; Equipment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 110.01000213623047
     name "Builders FirstSource"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.28117348756380206
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46170,14 +46170,14 @@ graph [
     last_close 339.6600036621094
     industry "Medical Distribution"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 339.6600036621094
     name "Cencora (formerly AmerisourceBergen)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.37441198830544103
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46260,14 +46260,14 @@ graph [
     last_close 309.9700012207031
     industry "Insurance - Reinsurance"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 309.9700012207031
     name "Everest Group (formerly RE)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.259844515828123
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46350,14 +46350,14 @@ graph [
     last_close 440.5299987792969
     industry "Electrical Equipment &#38; Parts"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 440.5299987792969
     name "Hubbell Incorporated"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.12974646258648165
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46440,14 +46440,14 @@ graph [
     last_close 304.489990234375
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 304.489990234375
     name "Insulet Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.31822099055411623
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46530,14 +46530,14 @@ graph [
     last_close 16.93000030517578
     industry "Household &#38; Personal Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 16.93000030517578
     name "Kenvue"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8875395059585571
+    raw_risk_score 0.15232642542367175
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46620,14 +46620,14 @@ graph [
     last_close 36.040000915527344
     industry "Packaging &#38; Containers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 36.040000915527344
     name "Smurfit WestRock (formerly WestRock)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7946797847747803
+    raw_risk_score 0.2582481891623838
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46711,7 +46711,7 @@ graph [
     last_close 85.43000030517578
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-02T13:43:43.412000000+00:00"
     last_updated_at "1767254673840"
@@ -46719,7 +46719,7 @@ graph [
     name "Solventum"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8
+    raw_risk_score 0.21037685489917882
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46803,7 +46803,7 @@ graph [
     last_close 34.689998626708984
     industry "Computer Hardware"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T08:01:20.741000000+00:00"
     last_updated_at "1767254673840"
@@ -46811,7 +46811,7 @@ graph [
     name "Supermicro"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.8102514803409576
+    raw_risk_score 0.7232876573834809
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -46894,14 +46894,14 @@ graph [
     last_close 202.22000122070312
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 202.22000122070312
     name "TKO Group Holdings"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9140335321426392
+    raw_risk_score 0.2609130651526667
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46985,7 +46985,7 @@ graph [
     last_close 91.31999969482422
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T18:04:12.593000000+00:00"
     last_updated_at "1767254673840"
@@ -46993,7 +46993,7 @@ graph [
     name "Uber"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.006625482014247293
+    raw_risk_score 0.2716673138082274
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -48266,14 +48266,14 @@ graph [
     last_close 152.14999389648438
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 152.14999389648438
     name "Blackstone Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.25434264659915834
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -48356,14 +48356,14 @@ graph [
     last_close 61.11000061035156
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 61.11000061035156
     name "Block, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.22473839099722812
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -48447,7 +48447,7 @@ graph [
     last_close 512.030029296875
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T19:01:27.916000000+00:00"
     last_updated_at "1767254673840"
@@ -48455,7 +48455,7 @@ graph [
     name "CrowdStrike"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.5224562048912048
+    raw_risk_score 0.4412652663842187
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -48538,14 +48538,14 @@ graph [
     last_close 99.69999694824219
     industry "Footwear &#38; Accessories"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 99.69999694824219
     name "Deckers Brands"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.3789117435614268
+    raw_risk_score 0.3431884775946175
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -48629,7 +48629,7 @@ graph [
     last_close 17.020000457763672
     industry "REIT - Healthcare Facilities"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T02:02:20.185000000+00:00"
     last_updated_at "1767254673840"
@@ -48637,7 +48637,7 @@ graph [
     name "Healthpeak Properties (formerly PEAK)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.238067216873169
+    raw_risk_score 0.3549368123438671
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -48721,7 +48721,7 @@ graph [
     last_close 64.5
     industry "Capital Markets"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T17:02:31.925000000+00:00"
     last_updated_at "1767254673840"
@@ -48729,7 +48729,7 @@ graph [
     name "Interactive Brokers"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.2
+    raw_risk_score 0.20781085130930568
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -48812,14 +48812,14 @@ graph [
     last_close 129.4199981689453
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 129.4199981689453
     name "KKR &#38; Co."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.05886525297776247
+    raw_risk_score 0.23517734187985045
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -48903,7 +48903,7 @@ graph [
     last_close 131.9499969482422
     industry "Capital Markets"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T20:03:08.256000000+00:00"
     last_updated_at "1767254673840"
@@ -48911,7 +48911,7 @@ graph [
     name "Robinhood Markets"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.15189126332600905
+    raw_risk_score 0.4044181360949319
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -48995,7 +48995,7 @@ graph [
     last_close 40.04999923706055
     industry "Advertising Agencies"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T07:01:45.401000000+00:00"
     last_updated_at "1767254673840"
@@ -49003,7 +49003,7 @@ graph [
     name "Trade Desk (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.22552486956119533
+    raw_risk_score 0.31764629614353107
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -49086,14 +49086,14 @@ graph [
     last_close 219.9600067138672
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 219.9600067138672
     name "Workday, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.4911566501349498
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -49176,14 +49176,14 @@ graph [
     last_close 504.3399963378906
     industry "Insurance - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 504.3399963378906
     name "Berkshire Hathaway"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1290810673418738
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -49266,14 +49266,14 @@ graph [
     last_close 310.6400146484375
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 310.6400146484375
     name "Corpay (formerly FLEETCOR/FLT)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.34338648055245
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -49363,7 +49363,7 @@ graph [
     name "Dayforce (formerly Ceridian/CDAY)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.29343293576961754
+    raw_risk_score 0.29128889307113587
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -49531,14 +49531,14 @@ graph [
     last_close 124.31999969482422
     industry "Travel Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 124.31999969482422
     name "Airbnb"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.13931343757907227
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -49621,14 +49621,14 @@ graph [
     last_close 550.9500122070312
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 550.9500122070312
     name "Axon Enterprise"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9327923059463501
+    raw_risk_score 0.5252197940385985
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -49797,7 +49797,7 @@ graph [
     last_close 138.91000366210938
     industry "Computer Hardware"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T15:02:42.119000000+00:00"
     last_updated_at "1767254673840"
@@ -49805,7 +49805,7 @@ graph [
     name "Dell Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.5562074120228107
+    raw_risk_score 0.8819217583337484
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -49889,7 +49889,7 @@ graph [
     last_close 181.75999450683594
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T21:01:48.671000000+00:00"
     last_updated_at "1767254673840"
@@ -49897,7 +49897,7 @@ graph [
     name "Palantir Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.15805518105626107
+    raw_risk_score 0.34906641968691154
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -49980,14 +49980,14 @@ graph [
     last_close 82.04000091552734
     industry "Semiconductor Equipment &#38; Materials"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 82.04000091552734
     name "Qnity Electronics"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.35007569619587486
+    raw_risk_score 0.3311531218321969
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -50070,14 +50070,14 @@ graph [
     last_close 511.6300048828125
     industry "Building Products &#38; Equipment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 511.6300048828125
     name "Lennox International"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1890438852737322
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -50160,14 +50160,14 @@ graph [
     last_close 138.1300048828125
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 138.1300048828125
     name "Apollo Global Management"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.22038224089530414
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -50250,14 +50250,14 @@ graph [
     last_close 691.9400024414062
     industry "Advertising Agencies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 691.9400024414062
     name "AppLovin"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.603122967392651
+    raw_risk_score 0.49413779892317666
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -50340,14 +50340,14 @@ graph [
     last_close 269.7300109863281
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 269.7300109863281
     name "Coinbase"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.19892798662185668
+    raw_risk_score 0.4344063729643168
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -50430,14 +50430,14 @@ graph [
     last_close 122.86000061035156
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 122.86000061035156
     name "Expand Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.1828183587170271
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -50521,7 +50521,7 @@ graph [
     last_close 631.3200073242188
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T18:02:14.231000000+00:00"
     last_updated_at "1767254673840"
@@ -50529,7 +50529,7 @@ graph [
     name "GE Vernova"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.55
+    raw_risk_score 0.3002459208050783
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -50612,14 +50612,14 @@ graph [
     last_close 47.130001068115234
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 47.130001068115234
     name "Solstice Advanced Materials"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2993732894204349
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -50703,7 +50703,7 @@ graph [
     last_close 925.0800170898438
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-02T11:12:55.374000000+00:00"
     last_updated_at "1767254673840"
@@ -50711,7 +50711,7 @@ graph [
     name "Texas Pacific Land Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7902826309204102
+    raw_risk_score 0.2995387770659372
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -50794,14 +50794,14 @@ graph [
     last_close 179.36000061035156
     industry "Specialty Retail"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 179.36000061035156
     name "Williams-Sonoma, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.3904882582380454
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -50884,14 +50884,14 @@ graph [
     last_close 30.399999618530273
     industry "Beverages - Wineries &#38; Distilleries"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 30.399999618530273
     name "Brown&#8211;Forman"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.9147876501083374
+    raw_risk_score 0.2216329650218476
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -51059,14 +51059,14 @@ graph [
     last_close 225.0
     industry "Internet Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 225.0
     name "DoorDash"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.43068289011716837
+    raw_risk_score 0.26248153501117577
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -51149,14 +51149,14 @@ graph [
     last_close 623.6199951171875
     industry "Engineering &#38; Construction"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 623.6199951171875
     name "Emcor"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2716749998365793
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -51239,14 +51239,14 @@ graph [
     last_close 102.16000366210938
     industry "Pollution &#38; Treatment Controls"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 102.16000366210938
     name "Veralto"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.13241030485761013
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -51329,14 +51329,14 @@ graph [
     last_close 151.41000366210938
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 151.41000366210938
     name "Datadog"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.7137900281045513
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -51419,14 +51419,14 @@ graph [
     last_close 167.1699981689453
     industry "Utilities - Independent Power Producers"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 167.1699981689453
     name "Vistra Corp."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.31460487842559814
+    raw_risk_score 0.3079444130070362
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -51436,9 +51436,9 @@ graph [
     label "FTC"
     ticker "FTC"
     name "Federal Trade Commission"
-    raw_risk_score 0.8522731065750122
+    raw_risk_score 0.19917785442072272
     sector "Unknown"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
     id 571
@@ -51450,6 +51450,14 @@ graph [
   ]
   node [
     id 572
+    label "SPP"
+    ticker "SPP"
+    name "Southwest Power Pool"
+    raw_risk_score -0.0
+    sector "Unknown"
+  ]
+  node [
+    id 573
     label "ARST"
     ticker "ARST"
     name "Arista Networks"
@@ -51457,7 +51465,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 573
+    id 574
     label "^TNX"
     daily_return_history "0.0028078171143907354"
     daily_return_history "0.007064176211512426"
@@ -51534,19 +51542,19 @@ graph [
     is_macro 1
     last_close 4.138999938964844
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     last_updated_at "1767254673840"
     price 4.138999938964844
     name "10-Year Treasury Yield"
     gnn_risk_score 0.3719990849494934
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.09039085332147188
     sector "Macro"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0029914602637290955
   ]
   node [
-    id 574
+    id 575
     label "CL=F"
     daily_return_history "0.00902704851512858"
     daily_return_history "-0.0011976738578205644"
@@ -51621,18 +51629,18 @@ graph [
     ticker "CL=F"
     is_macro 1
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     last_updated_at "1767254673840"
     name "Crude Oil"
     gnn_risk_score 0.3719990849494934
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.3271269208932471
     sector "Macro"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0029914602637290955
   ]
   node [
-    id 575
+    id 576
     label "GC=F"
     daily_return_history "-0.0005714452514760555"
     daily_return_history "-0.004524549815743397"
@@ -51707,18 +51715,18 @@ graph [
     ticker "GC=F"
     is_macro 1
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     last_updated_at "1767254673840"
     name "Gold"
     gnn_risk_score 0.3719990849494934
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.20665720954850875
     sector "Macro"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0029914602637290955
   ]
   node [
-    id 576
+    id 577
     label "DX-Y.NYB"
     daily_return_history "0.005294662759920077"
     daily_return_history "0.0027731467964904194"
@@ -51803,7 +51811,7 @@ graph [
     price_forecast_next_day 0.0029914602637290955
   ]
   node [
-    id 577
+    id 578
     label "^VIX"
     daily_return_history "0.007485509275648875"
     daily_return_history "0.0007936271305615493"
@@ -51880,19 +51888,19 @@ graph [
     is_macro 1
     last_close 15.40999984741211
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     last_updated_at "1767254673840"
     price 15.40999984741211
     name "Volatility Index"
     gnn_risk_score 0.3719990849494934
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.31079324160434146
     sector "Macro"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0029914584010839462
   ]
   node [
-    id 578
+    id 579
     label "X"
     daily_return_history "0.0007127070937516661"
     daily_return_history "0.003922174883284734"
@@ -51969,14 +51977,14 @@ graph [
     name "X"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.6014600879616208
+    raw_risk_score 0.5812899019983077
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Unknown"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
   ]
   node [
-    id 579
+    id 580
     label "SPOT"
     sentiment_score 0.7
     daily_return_history "0.009334784664513906"
@@ -52054,20 +52062,20 @@ graph [
     last_close 564.9299926757812
     industry "Internet Content &#38; Information"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     last_news_update "2025-12-06T07:01:27.672000000+00:00"
     last_updated_at "1767254673840"
     price 564.9299926757812
     name "Spotify"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0021649097442626893
+    raw_risk_score 0.3681019861116813
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
   ]
   node [
-    id 580
+    id 581
     label "BRK"
     daily_return_history "0.004016251924097609"
     daily_return_history "0.0009482619489162708"
@@ -52152,7 +52160,7 @@ graph [
     price_forecast_next_day 0.0027472376823425293
   ]
   node [
-    id 581
+    id 582
     label "Tengizchevroil"
     ticker "Tengizchevroil"
     name "Tengizchevroil"
@@ -52160,7 +52168,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 582
+    id 583
     label "OPEC"
     ticker "OPEC"
     name "OPEC"
@@ -52168,17 +52176,17 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 583
+    id 584
     label "JD"
     ticker "JD"
     name "JD.com"
     industry "Internet Retail"
-    raw_risk_score 0.5931569236390135
+    raw_risk_score 0.36045177244992055
     sector "Consumer Cyclical"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 584
+    id 585
     label "JCB"
     ticker "JCB"
     name "JCB"
@@ -52186,7 +52194,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 585
+    id 586
     label "OTCMKTS:APO"
     daily_return_history "-0.006261716966150015"
     daily_return_history "0.002608710638797883"
@@ -52271,7 +52279,7 @@ graph [
     price_forecast_next_day 0.0027472376823425293
   ]
   node [
-    id 586
+    id 587
     label "TSM"
     sentiment_score 0.7
     daily_return_history "-0.009693591386921442"
@@ -52349,20 +52357,20 @@ graph [
     last_close 294.7200012207031
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     last_news_update "2025-12-08T11:01:34.607000000+00:00"
     last_updated_at "1767254673840"
     price 294.7200012207031
     name "Taiwan Semiconductor Manufacturing Company Ltd"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.6115885114669798
+    raw_risk_score 0.28319238714102923
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
   ]
   node [
-    id 587
+    id 588
     label "GBLTF"
     daily_return_history "-0.009138144597486839"
     daily_return_history "0.0025118266943358006"
@@ -52446,7 +52454,7 @@ graph [
     price_forecast_next_day 0.0027472376823425293
   ]
   node [
-    id 588
+    id 589
     label "SONY"
     daily_return_history "0.00820781115093922"
     daily_return_history "0.008714753375186316"
@@ -52523,19 +52531,19 @@ graph [
     last_close 28.030000686645508
     industry "Consumer Electronics"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     last_updated_at "1767254673840"
     price 28.030000686645508
     name "Sony"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.29987677718911854
+    raw_risk_score 0.23504863028989348
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
   ]
   node [
-    id 589
+    id 590
     label "FISV"
     daily_return_history "0.005279219302603699"
     daily_return_history "-0.007147445398154427"
@@ -52611,20 +52619,20 @@ graph [
     last_updated "2025-12-07T07:03:39.898000000+00:00"
     last_close 66.27999877929688
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 66.27999877929688
     name "Fiserv"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.9188294112682343
+    raw_risk_score 0.24001427323784022
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
   ]
   node [
-    id 590
+    id 591
     label "GDDY"
     daily_return_history "0.0026256725112329977"
     daily_return_history "0.0019229083656181322"
@@ -52701,20 +52709,20 @@ graph [
     last_close 128.4600067138672
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 128.4600067138672
     name "GoDaddy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.0
+    raw_risk_score 0.2678692585555477
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
   ]
   node [
-    id 591
+    id 592
     label "NYSE: JPM"
     ticker "NYSE: JPM"
     name "New York Stock Exchange"
@@ -52722,7 +52730,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 592
+    id 593
     label "OTCPK:SSNLF"
     ticker "OTCPK:SSNLF"
     name "Samsung Electronics Co., Ltd."
@@ -52731,17 +52739,17 @@ graph [
     sector "Technology"
   ]
   node [
-    id 593
+    id 594
     label "WES"
     ticker "WES"
     name "Western Midstream Partners"
     industry "Oil &#38; Gas Midstream"
-    raw_risk_score 0.7629923224449157
+    raw_risk_score 0.19908732796060052
     sector "Energy"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 594
+    id 595
     label "SNCAF.PA"
     ticker "SNCAF.PA"
     name "Safran"
@@ -52749,7 +52757,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 595
+    id 596
     label "SKHynix"
     ticker "SKHynix"
     name "SK Hynix Inc."
@@ -52757,7 +52765,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 596
+    id 597
     label "GEC"
     ticker "GEC"
     name "GE HealthCare Technologies Inc"
@@ -52765,7 +52773,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 597
+    id 598
     label "SNE"
     daily_return_history "-0.005138603010526666"
     daily_return_history "-0.002989868655333845"
@@ -52844,25 +52852,25 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 598
+    id 599
     label "RBLX"
     ticker "RBLX"
     name "Roblox"
     industry "Electronic Gaming &#38; Multimedia"
-    raw_risk_score 0.9643365740776062
+    raw_risk_score 0.3129985124418096
     sector "Communication Services"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
-  ]
-  node [
-    id 599
-    label "SEC"
-    ticker "SEC"
-    name "Securities and Exchange Commission"
-    raw_risk_score 0.4655253390471141
-    sector "Unknown"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
     id 600
+    label "SEC"
+    ticker "SEC"
+    name "Securities and Exchange Commission"
+    raw_risk_score 0.48254332416935974
+    sector "Unknown"
+  ]
+  node [
+    id 601
     label "NYSE"
     ticker "NYSE"
     name "New York Stock Exchange"
@@ -52870,7 +52878,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 601
+    id 602
     label "FDIC"
     ticker "FDIC"
     name "Federal Deposit Insurance Corporation"
@@ -52878,7 +52886,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 602
+    id 603
     label "BSH"
     ticker "BSH"
     name "Bain Capital"
@@ -52886,17 +52894,17 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 603
+    id 604
     label "BRK.A"
     ticker "BRK.A"
     name "Berkshire Hathaway"
     industry "Insurance - Diversified"
-    raw_risk_score -0.0
+    raw_risk_score 0.12419058568727648
     sector "Financial Services"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 604
+    id 605
     label "BIDU"
     daily_return_history "0.007254507744483855"
     daily_return_history "-0.0065991146532028006"
@@ -52972,12 +52980,12 @@ graph [
     last_updated_at "1767254673840"
     name "Baidu, Inc."
     industry "Internet Content &#38; Information"
-    raw_risk_score -0.860794186592102
+    raw_risk_score 0.4235287374081219
     sector "Communication Services"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 605
+    id 606
     label "LSI"
     ticker "LSI"
     name "LSI Logic Corporation"
@@ -52985,7 +52993,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 606
+    id 607
     label "PINS"
     daily_return_history "-0.0011910858203807839"
     daily_return_history "0.006537245262604173"
@@ -53061,12 +53069,12 @@ graph [
     last_updated_at "1767254673840"
     name "Pinterest"
     industry "Internet Content &#38; Information"
-    raw_risk_score -0.5234778046607971
+    raw_risk_score 0.30162041987743765
     sector "Communication Services"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 607
+    id 608
     label "FB"
     daily_return_history "-0.005148632105107352"
     daily_return_history "-0.007399016084003729"
@@ -53141,12 +53149,12 @@ graph [
     ticker "FB"
     last_updated_at "1767254673840"
     name "Facebook"
-    raw_risk_score -0.0
+    raw_risk_score 0.04775285361926544
     sector "Unknown"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 608
+    id 609
     label "SKH"
     daily_return_history "0.008586449131267751"
     daily_return_history "0.0010870392421166372"
@@ -53225,7 +53233,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 609
+    id 610
     label "LITE"
     daily_return_history "0.004331449212754562"
     daily_return_history "-0.007986830605347332"
@@ -53301,12 +53309,12 @@ graph [
     last_updated_at "1767254673840"
     name "Lumentum Holdings Inc."
     industry "Communication Equipment"
-    raw_risk_score -0.03175535798072815
+    raw_risk_score 0.5740224593891794
     sector "Technology"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 610
+    id 611
     label "MRVL"
     sentiment_score -0.6
     daily_return_history "0.006752248787837164"
@@ -53384,12 +53392,12 @@ graph [
     last_updated_at "1767254673840"
     name "Marvell Technology, Inc."
     industry "Semiconductors"
-    raw_risk_score 0.18597645759582515
+    raw_risk_score 0.8314313600186821
     sector "Technology"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 611
+    id 612
     label "SUNW"
     daily_return_history "0.007433000382262118"
     daily_return_history "0.008766624263650056"
@@ -53468,7 +53476,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 612
+    id 613
     label "JDSU"
     daily_return_history "0.004455335910762734"
     daily_return_history "-0.008895248079538107"
@@ -53547,7 +53555,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 613
+    id 614
     label "COHR"
     daily_return_history "-0.007904709285781939"
     daily_return_history "-0.00850385359014042"
@@ -53623,12 +53631,12 @@ graph [
     last_updated_at "1767254673840"
     name "Coherent, Inc."
     industry "Scientific &#38; Technical Instruments"
-    raw_risk_score -0.0
+    raw_risk_score 0.488892712103288
     sector "Technology"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 614
+    id 615
     label "LLP"
     daily_return_history "-0.004065196884103066"
     daily_return_history "0.0031820137216327857"
@@ -53703,12 +53711,12 @@ graph [
     ticker "LLP"
     last_updated_at "1767254673840"
     name "Cooley LLP"
-    raw_risk_score -0.9229035377502441
+    raw_risk_score 0.40295918251863533
     sector "Unknown"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 615
+    id 616
     label "BSY"
     daily_return_history "-0.008948248749520899"
     daily_return_history "0.008523277283527536"
@@ -53784,12 +53792,12 @@ graph [
     last_updated_at "1767254673840"
     name "Brookfield Asset Management"
     industry "Software - Application"
-    raw_risk_score -0.0
+    raw_risk_score 0.27559480709217354
     sector "Technology"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 616
+    id 617
     label "VSLI"
     daily_return_history "0.003483362606335921"
     daily_return_history "-0.006752293218939938"
@@ -53868,7 +53876,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 617
+    id 618
     label "MFE"
     daily_return_history "0.0021701263222314356"
     daily_return_history "-0.008879879330428138"
@@ -53947,7 +53955,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 618
+    id 619
     label "BMRN"
     daily_return_history "-0.005824313062612021"
     daily_return_history "-0.0025807551432577716"
@@ -54023,12 +54031,12 @@ graph [
     last_updated_at "1767254673840"
     name "BioMarin Pharmaceutical Inc"
     industry "Biotechnology"
-    raw_risk_score -0.0
+    raw_risk_score 0.26924353718105254
     sector "Healthcare"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 619
+    id 620
     label "UMC"
     daily_return_history "-0.001468806832657838"
     daily_return_history "0.005661193927793967"
@@ -54104,12 +54112,12 @@ graph [
     last_updated_at "1767254673840"
     name "United Microelectronics Corporation"
     industry "Semiconductors"
-    raw_risk_score -0.0
+    raw_risk_score 0.5104764781648701
     sector "Technology"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 620
+    id 621
     label "Samsung"
     daily_return_history "0.00024841756828278966"
     daily_return_history "9.819801264763367e-05"
@@ -54184,11 +54192,11 @@ graph [
     ticker "Samsung"
     last_updated_at "1767254673840"
     name "Samsung Electronics Co."
-    raw_risk_score 0.09299724783216204
+    raw_risk_score 0.10431227789205663
     sector "Unknown"
   ]
   node [
-    id 621
+    id 622
     label "AIR.PA"
     daily_return_history "-0.006696707164074143"
     daily_return_history "-0.009804475880225958"
@@ -54267,7 +54275,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 622
+    id 623
     label "XTO"
     ticker "XTO"
     name "XTO"
@@ -54275,7 +54283,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 623
+    id 624
     label "MOBIL"
     ticker "MOBIL"
     name "Mobil"
@@ -54283,7 +54291,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 624
+    id 625
     label "ESSO"
     ticker "ESSO"
     name "Esso"
@@ -54291,35 +54299,35 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 625
+    id 626
     label "NRC"
     ticker "NRC"
     name "NRC"
     industry "Health Information Services"
-    raw_risk_score -0.0
+    raw_risk_score 0.21081080206412406
     sector "Healthcare"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
-  ]
-  node [
-    id 626
-    label "EPA"
-    ticker "EPA"
-    name "EPA"
-    raw_risk_score 0.2731483578681945
-    sector "Unknown"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
     id 627
+    label "EPA"
+    ticker "EPA"
+    name "EPA"
+    raw_risk_score 0.2731483379999797
+    sector "Unknown"
+  ]
+  node [
+    id 628
     label "AIR"
     ticker "AIR"
     name "Airbus"
     industry "Aerospace &#38; Defense"
-    raw_risk_score 0.6480209811581332
+    raw_risk_score 0.26813692190925076
     sector "Industrials"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 628
+    id 629
     label "SNAP"
     daily_return 0.0
     sentiment_score -0.4
@@ -54399,7 +54407,7 @@ graph [
     industry "Internet Content &#38; Information"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T10:01:43.098000000+00:00"
     updated_at "1768045191518"
@@ -54407,13 +54415,13 @@ graph [
     name "Snap Inc."
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.8087479954674132
+    raw_risk_score 0.21278706120324406
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
   ]
   node [
-    id 629
+    id 630
     label "TWTR"
     daily_return_history "-0.0014147117022370297"
     daily_return_history "0.0032831746858416125"
@@ -54492,7 +54500,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 630
+    id 631
     label "005930.KS"
     daily_return_history "0.003483676108120141"
     daily_return_history "0.0022026460811609312"
@@ -54571,7 +54579,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 631
+    id 632
     label "000660.KS"
     daily_return_history "-0.009305745502140987"
     daily_return_history "-0.0018710520934462765"
@@ -54650,7 +54658,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 632
+    id 633
     label "BABA"
     daily_return_history "0.0028069055202644376"
     daily_return_history "0.0027053995829428353"
@@ -54726,12 +54734,12 @@ graph [
     last_updated_at "1767254673840"
     name "Alibaba Group"
     industry "Internet Retail"
-    raw_risk_score 0.7965680360794067
+    raw_risk_score 0.39933368943541264
     sector "Consumer Cyclical"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 633
+    id 634
     label "KYEC"
     daily_return_history "-0.006804320778476329"
     daily_return_history "-6.809313329162944e-05"
@@ -54810,7 +54818,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 634
+    id 635
     label "SAF.PA"
     daily_return_history "0.00022206537049063862"
     daily_return_history "-0.004862423606202802"
@@ -54889,7 +54897,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 635
+    id 636
     label "NYSE:JPM"
     ticker "NYSE:JPM"
     name "JPMorgan Chase &#38; Co"
@@ -54898,7 +54906,7 @@ graph [
     sector "Financial Services"
   ]
   node [
-    id 636
+    id 637
     label "AMBA"
     daily_return_history "0.00033208502800618524"
     daily_return_history "-0.003830084023577553"
@@ -54974,12 +54982,12 @@ graph [
     last_updated_at "1767254673840"
     name "Ambarella, Inc."
     industry "Semiconductor Equipment &#38; Materials"
-    raw_risk_score 0.9495201706886292
+    raw_risk_score 0.5186000941632303
     sector "Technology"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 637
+    id 638
     label "BRCM"
     daily_return_history "-0.00994632441682248"
     daily_return_history "0.0039163356841484444"
@@ -55058,7 +55066,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 638
+    id 639
     label "SNY"
     daily_return_history "0.006555950244464809"
     daily_return_history "0.008878763654354296"
@@ -55134,12 +55142,12 @@ graph [
     last_updated_at "1767254673840"
     name "Sony"
     industry "Drug Manufacturers - General"
-    raw_risk_score -0.0
+    raw_risk_score 0.0943102764990824
     sector "Healthcare"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 639
+    id 640
     label "UAW"
     daily_return_history "-0.00774250515334352"
     daily_return_history "0.0007298317481001463"
@@ -55218,36 +55226,36 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 640
+    id 641
     label "PRA"
     ticker "PRA"
     name "U.K. Prudential Regulation Authority"
     industry "Insurance - Property &#38; Casualty"
-    raw_risk_score -0.0
+    raw_risk_score 0.08551169510478707
     sector "Financial Services"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
-  ]
-  node [
-    id 641
-    label "FCA"
-    ticker "FCA"
-    name "U.K. Financial Conduct Authority"
-    raw_risk_score 0.9013229459524155
-    sector "Unknown"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
     id 642
+    label "FCA"
+    ticker "FCA"
+    name "U.K. Financial Conduct Authority"
+    raw_risk_score 0.28503819909809125
+    sector "Unknown"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
+  ]
+  node [
+    id 643
     label "ROG"
     ticker "ROG"
     name "Roche"
     industry "Electronic Components"
-    raw_risk_score 0.10975506901741028
+    raw_risk_score 0.2516031114328353
     sector "Technology"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 643
+    id 644
     label "EADSY"
     daily_return_history "0.005274206001846537"
     daily_return_history "0.0024358295574951165"
@@ -55323,12 +55331,12 @@ graph [
     last_updated_at "1767254673840"
     name "Airbus"
     industry "Aerospace &#38; Defense"
-    raw_risk_score -0.0
+    raw_risk_score 0.24682138101355833
     sector "Industrials"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 644
+    id 645
     label "ASDA"
     ticker "ASDA"
     name "ASDA Stores Ltd"
@@ -55336,37 +55344,37 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 645
+    id 646
     label "SSNLF"
     ticker "SSNLF"
     name "Samsung Electronics Co., Ltd."
     industry "Consumer Electronics"
     raw_risk_score 0.0
     sector "Technology"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 646
+    id 647
     label "HNHAF"
     ticker "HNHAF"
     name "Hon Hai Precision Industry Co., Ltd."
     industry "Electronic Components"
     raw_risk_score 0.0
     sector "Technology"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 647
+    id 648
     label "FN"
     ticker "FN"
     name "Fabrinet"
     industry "Electronic Components"
-    raw_risk_score -0.0
+    raw_risk_score 0.4202312992751801
     sector "Technology"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 648
+    id 649
     label "SNECMA.PA"
     ticker "SNECMA.PA"
     name "Safran Aircraft Engines"
@@ -55374,7 +55382,7 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 649
+    id 650
     label "SNCMY"
     ticker "SNCMY"
     name "Safran Group"
@@ -55382,32 +55390,32 @@ graph [
     sector "Unknown"
   ]
   node [
-    id 650
+    id 651
     label "S&#38;P"
     ticker "S&#38;P"
     name "S&#38;P 500 Index"
-    raw_risk_score -0.38144850730895996
+    raw_risk_score -0.06019717454910277
     sector "Unknown"
   ]
   node [
-    id 651
+    id 652
     label "ARIS"
     ticker "ARIS"
     name "Arista Networks"
     industry "Gold"
-    raw_risk_score -0.0
+    raw_risk_score 0.4253412526873427
     sector "Basic Materials"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   node [
-    id 652
+    id 653
     label "COKE"
     ticker "COKE"
     name "Coca-Cola Consolidated"
     industry "Beverages - Non-Alcoholic"
-    raw_risk_score -0.0
+    raw_risk_score 0.43470287889365505
     sector "Consumer Defensive"
-    risk_last_updated "2026-05-31T01:16:44.064000000+00:00"
+    risk_last_updated "2026-06-04T02:17:04.274000000+00:00"
   ]
   edge [
     source 8
@@ -55444,9 +55452,9 @@ graph [
   edge [
     source 8
     target 33
-    last_updated "2026-03-02"
+    last_updated "2026-06-01"
     weight 0.3
-    mechanism "General airline industry correlation; geopolitical risks affecting airline stocks generally"
+    mechanism "Adverse events at Heathrow could impact travel insurance claims for flight disruptions, impacting companies like ALL."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -55907,7 +55915,7 @@ graph [
   ]
   edge [
     source 8
-    target 588
+    target 589
     last_updated "2026-01-03"
     weight 0.3
     mechanism "Improved camera tech in Samsung phones might signal broader advancements in mobile camera technology, potentially affecting Sony's image sensor business positively."
@@ -55915,7 +55923,7 @@ graph [
   ]
   edge [
     source 8
-    target 620
+    target 621
     last_updated "2026-04-15"
     weight 0.3
     mechanism "The news highlights a boom in wealth due to AI in Korea, with Samsung's chairman reclaiming the top spot. This general positive sentiment and economic trend could lead to sympathy moves for other major Korean companies like ALL."
@@ -55923,7 +55931,7 @@ graph [
   ]
   edge [
     source 8
-    target 627
+    target 628
     last_updated "2026-05-04"
     weight 0.6
     mechanism "Spirit Airlines' wind-down could negatively affect Airbus as they may have outstanding aircraft orders."
@@ -58456,7 +58464,7 @@ graph [
   ]
   edge [
     source 29
-    target 628
+    target 629
     sentiment 0.1
     weight 0.52
     type "sec_discovered"
@@ -60855,9 +60863,9 @@ graph [
   edge [
     source 31
     target 517
-    last_updated "2026-05-24"
+    last_updated "2026-06-02"
     weight 0.3
-    mechanism "SMCI produces gaming PCs as well. A price drop on iBuyPower's PCs can signal a drop in hardware costs and affect all in the space."
+    mechanism "AI-powered super resolution could be seen as positive for the AI sector broadly, potentially leading to sympathy moves for other AI-related stocks."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -61045,7 +61053,7 @@ graph [
   ]
   edge [
     source 31
-    target 586
+    target 587
     last_updated "2026-02-13"
     weight 0.9
     mechanism "10-K Disclosure"
@@ -61053,15 +61061,7 @@ graph [
   ]
   edge [
     source 31
-    target 587
-    weight 0.9
-    mechanism "10-K Disclosure"
-    verification_status "VERIFIED_FILING"
-  ]
-  edge [
-    source 31
     target 588
-    last_updated "2026-03-01"
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -61069,27 +61069,28 @@ graph [
   edge [
     source 31
     target 589
+    last_updated "2026-03-01"
+    weight 0.9
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+  ]
+  edge [
+    source 31
+    target 590
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
     source 31
-    target 597
+    target 598
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 31
-    target 610
-    weight 0.9
-    mechanism "10-K Disclosure"
-    verification_status "VERIFIED_FILING"
-  ]
-  edge [
-    source 31
-    target 619
+    target 611
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -61103,28 +61104,35 @@ graph [
   ]
   edge [
     source 31
-    target 630
+    target 621
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 31
-    target 633
+    target 631
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 31
-    target 638
+    target 634
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 31
-    target 645
+    target 639
+    weight 0.9
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+  ]
+  edge [
+    source 31
+    target 646
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -63986,7 +63994,7 @@ graph [
   ]
   edge [
     source 43
-    target 586
+    target 587
     last_updated "2026-01-16"
     weight 0.9
     mechanism "10-K Disclosure"
@@ -63994,7 +64002,7 @@ graph [
   ]
   edge [
     source 43
-    target 588
+    target 589
     last_updated "2026-01-31"
     weight 0.3
     mechanism "Increased iPhone sales benefit Apple's suppliers like Sony (camera sensors)."
@@ -64002,7 +64010,7 @@ graph [
   ]
   edge [
     source 43
-    target 589
+    target 590
     sentiment -0.04
     weight 0.49
     type "sec_discovered"
@@ -64625,7 +64633,7 @@ graph [
   ]
   edge [
     source 47
-    target 578
+    target 579
     last_updated "2026-04-16"
     weight 0.4
     mechanism "Other EV makers may move in sympathy as they are in the same sector"
@@ -64633,7 +64641,7 @@ graph [
   ]
   edge [
     source 47
-    target 579
+    target 580
     last_updated "2026-02-03"
     weight 0.3
     mechanism "Popular artists shaping culture might be featured on Spotify, potentially correlating with the success of T (AT&#38;T) if they are involved in content distribution or partnerships related to the artists."
@@ -64641,7 +64649,7 @@ graph [
   ]
   edge [
     source 47
-    target 588
+    target 589
     last_updated "2026-01-31"
     weight 0.3
     mechanism "Large tech companies may move in sympathy with each other."
@@ -64649,7 +64657,7 @@ graph [
   ]
   edge [
     source 47
-    target 603
+    target 604
     last_updated "2026-05-02"
     weight 0.2
     mechanism "Speculative connection due to mention of Warren Buffett (whose company is Berkshire Hathaway (BRK.A)). The article discusses potential ethical concerns and insider trading, which could broadly impact the perceived integrity of major investors and their companies."
@@ -64657,7 +64665,7 @@ graph [
   ]
   edge [
     source 47
-    target 606
+    target 607
     last_updated "2026-04-18"
     weight 0.6
     mechanism "Increased regulation of social media platforms (like those operated by Pinterest) due to child safety concerns could impact their operations and profitability."
@@ -64665,7 +64673,7 @@ graph [
   ]
   edge [
     source 47
-    target 628
+    target 629
     last_updated "2026-05-24"
     weight 0.3
     mechanism "Social media companies face similar regulatory risks."
@@ -64673,7 +64681,7 @@ graph [
   ]
   edge [
     source 47
-    target 638
+    target 639
     last_updated "2026-02-06"
     weight 0.4
     mechanism "Sanofi (SNY) is a major insulin manufacturer; changes in PBM pricing practices can affect demand for their products."
@@ -64722,9 +64730,9 @@ graph [
   edge [
     source 52
     target 231
-    last_updated "2026-05-04"
+    last_updated "2026-06-02"
     weight 0.3
-    mechanism "Event could raise concerns about safety in sports equipment, affecting related companies."
+    mechanism "Negative news about baseball could potentially affect related sporting goods companies like Nike (NKE) due to perceived association, even though the event is isolated."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -64953,7 +64961,7 @@ graph [
   ]
   edge [
     source 59
-    target 586
+    target 587
     last_updated "2026-03-08"
     weight 0.8
     mechanism "A shortage of LNG could disrupt semiconductor manufacturing, directly affecting foundries like TSMC."
@@ -67059,7 +67067,7 @@ graph [
   ]
   edge [
     source 127
-    target 588
+    target 589
     last_updated "2026-02-01"
     weight 0.6
     mechanism "Re-release of Final Fantasy VII could draw attention and sales away from other gaming companies like Sony."
@@ -69235,13 +69243,6 @@ graph [
   ]
   edge [
     source 133
-    target 581
-    weight 0.9
-    mechanism "10-K Disclosure"
-    verification_status "VERIFIED_FILING"
-  ]
-  edge [
-    source 133
     target 582
     weight 0.9
     mechanism "10-K Disclosure"
@@ -69249,7 +69250,7 @@ graph [
   ]
   edge [
     source 133
-    target 622
+    target 583
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -69264,6 +69265,13 @@ graph [
   edge [
     source 133
     target 624
+    weight 0.9
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+  ]
+  edge [
+    source 133
+    target 625
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -72101,14 +72109,7 @@ graph [
   ]
   edge [
     source 174
-    target 580
-    weight 0.9
-    mechanism "10-K Disclosure"
-    verification_status "VERIFIED_FILING"
-  ]
-  edge [
-    source 174
-    target 585
+    target 581
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -72116,6 +72117,13 @@ graph [
   edge [
     source 174
     target 586
+    weight 0.9
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+  ]
+  edge [
+    source 174
+    target 587
     last_updated "2025-12-06"
     weight 0.3
     mechanism "TSMC manufactures chips for Intel. If Intel is facing headwinds, it could reduce orders from TSMC, potentially impacting TSMC's revenue and stock price."
@@ -72123,21 +72131,14 @@ graph [
   ]
   edge [
     source 174
-    target 589
+    target 590
     sentiment 0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
     source 174
-    target 602
-    weight 0.9
-    mechanism "10-K Disclosure"
-    verification_status "VERIFIED_FILING"
-  ]
-  edge [
-    source 174
-    target 615
+    target 603
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -72152,6 +72153,13 @@ graph [
   edge [
     source 174
     target 617
+    weight 0.9
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+  ]
+  edge [
+    source 174
+    target 618
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -72430,7 +72438,7 @@ graph [
   ]
   edge [
     source 183
-    target 588
+    target 589
     last_updated "2025-12-20"
     weight 0.7
     mechanism "JBL and Sony both sell portable speakers, thus, are competitors in the consumer electronics market."
@@ -72442,6 +72450,30 @@ graph [
     last_updated "2026-02-21"
     weight 0.7
     mechanism "Apple growers in J&#38;K and HP compete with US apple growers. A trade deal impacting one affects the other."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 184
+    target 213
+    last_updated "2026-06-02"
+    weight 0.7
+    mechanism "J&#38;J's prostate cancer drug success may negatively impact competitors in the prostate cancer treatment market like Merck."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 184
+    target 257
+    last_updated "2026-06-02"
+    weight 0.6
+    mechanism "J&#38;J's prostate cancer drug success may negatively impact competitors in the prostate cancer treatment market like Pfizer."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 184
+    target 472
+    last_updated "2026-06-02"
+    weight 0.5
+    mechanism "J&#38;J's prostate cancer drug success may negatively impact competitors in the prostate cancer treatment market like Bristol-Myers Squibb."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -74427,14 +74459,7 @@ graph [
   ]
   edge [
     source 187
-    target 591
-    weight 0.9
-    mechanism "10-K Disclosure"
-    verification_status "VERIFIED_FILING"
-  ]
-  edge [
-    source 187
-    target 599
+    target 592
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -74455,14 +74480,14 @@ graph [
   ]
   edge [
     source 187
-    target 635
+    target 602
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 187
-    target 640
+    target 636
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -74476,7 +74501,14 @@ graph [
   ]
   edge [
     source 187
-    target 650
+    target 642
+    weight 0.9
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+  ]
+  edge [
+    source 187
+    target 651
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -74539,7 +74571,7 @@ graph [
   ]
   edge [
     source 189
-    target 606
+    target 607
     last_updated "2026-04-17"
     weight 0.5
     mechanism "Social media stocks often move in sympathy due to shared investor sentiment and sector-wide trends."
@@ -74547,7 +74579,7 @@ graph [
   ]
   edge [
     source 189
-    target 628
+    target 629
     last_updated "2026-04-17"
     weight 0.5
     mechanism "Social media stocks often move in sympathy due to shared investor sentiment and sector-wide trends."
@@ -74555,7 +74587,7 @@ graph [
   ]
   edge [
     source 189
-    target 638
+    target 639
     last_updated "2026-02-18"
     weight 0.3
     mechanism "Potential increased demand for antiviral medication from Sanofi (SNY) due to flu outbreak affecting Queensland; speculative sympathy move."
@@ -74579,7 +74611,7 @@ graph [
   ]
   edge [
     source 202
-    target 632
+    target 633
     last_updated "2026-01-01"
     weight 0.3
     mechanism "Both Coupang and Alibaba are large E-commerce companies that could be affected by similar regulations."
@@ -74747,7 +74779,7 @@ graph [
   ]
   edge [
     source 203
-    target 588
+    target 589
     last_updated "2026-02-13"
     weight 0.4
     mechanism "LOW sells Sony PS5 consoles. A deal on PS5 games could drive console sales."
@@ -75967,7 +75999,7 @@ graph [
   ]
   edge [
     source 230
-    target 625
+    target 572
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -75981,7 +76013,14 @@ graph [
   ]
   edge [
     source 230
-    target 628
+    target 627
+    weight 0.9
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+  ]
+  edge [
+    source 230
+    target 629
     sentiment 0.01
     weight 0.5
     type "sec_discovered"
@@ -79547,14 +79586,14 @@ graph [
   ]
   edge [
     source 240
-    target 572
+    target 573
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 240
-    target 586
+    target 587
     last_updated "2025-12-05"
     weight 0.3
     mechanism "The trade secret issue at TSMC, if proven, might affect the entire semiconductor industry's reliability perception, creating a sympathy move against NVDA."
@@ -79562,28 +79601,21 @@ graph [
   ]
   edge [
     source 240
-    target 589
+    target 590
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
     source 240
-    target 592
+    target 593
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 240
-    target 595
-    weight 0.9
-    mechanism "10-K Disclosure"
-    verification_status "VERIFIED_FILING"
-  ]
-  edge [
-    source 240
-    target 604
+    target 596
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -79597,7 +79629,7 @@ graph [
   ]
   edge [
     source 240
-    target 608
+    target 606
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -79646,7 +79678,7 @@ graph [
   ]
   edge [
     source 240
-    target 630
+    target 615
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -79667,7 +79699,7 @@ graph [
   ]
   edge [
     source 240
-    target 636
+    target 633
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -79681,7 +79713,7 @@ graph [
   ]
   edge [
     source 240
-    target 645
+    target 638
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -79702,7 +79734,14 @@ graph [
   ]
   edge [
     source 240
-    target 651
+    target 648
+    weight 0.9
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+  ]
+  edge [
+    source 240
+    target 652
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -79877,7 +79916,7 @@ graph [
   ]
   edge [
     source 259
-    target 628
+    target 629
     last_updated "2026-01-20"
     weight 0.6
     mechanism "Potential ban on social media for under-16s could reduce user base and advertising revenue for social media platforms."
@@ -79885,7 +79924,7 @@ graph [
   ]
   edge [
     source 259
-    target 629
+    target 630
     last_updated "2026-01-20"
     weight 0.6
     mechanism "Potential ban on social media for under-16s could reduce user base and advertising revenue for social media platforms."
@@ -80110,9 +80149,9 @@ graph [
   edge [
     source 285
     target 133
-    last_updated "2026-01-07"
-    weight 0.2
-    mechanism "ExxonMobil, as another major energy player, might experience similar sympathy moves based on Chevron's Venezuela strategy, reflecting sector-wide investor sentiment."
+    last_updated "2026-06-02"
+    weight 0.3
+    mechanism "Lower gas usage could indicate a shift away from traditional energy sources, potentially impacting companies in the energy sector."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -80310,9 +80349,9 @@ graph [
   edge [
     source 285
     target 419
-    last_updated "2026-01-07"
-    weight 0.2
-    mechanism "Chevron's activities in Venezuela, even if not directly related to NOW, could signal broader risk appetite changes within the energy sector, causing sympathy moves."
+    last_updated "2026-06-02"
+    weight 0.3
+    mechanism "Lower gas usage could indicate a shift away from traditional energy sources, potentially impacting companies in the energy sector."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -80349,6 +80388,14 @@ graph [
   ]
   edge [
     source 285
+    target 519
+    last_updated "2026-06-01"
+    weight 0.7
+    mechanism "Duffy and Uber are both ride-sharing services; an accident involving one may cause concern for the safety protocols of the other."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 285
     target 540
     last_updated "2026-04-17"
     weight 0.6
@@ -80357,7 +80404,7 @@ graph [
   ]
   edge [
     source 285
-    target 588
+    target 589
     last_updated "2026-05-12"
     weight 0.2
     mechanism "General positive market sentiment due to increased console sales potentially benefiting related tech companies like ServiceNow (NOW) through increased demand for their services."
@@ -80365,7 +80412,7 @@ graph [
   ]
   edge [
     source 285
-    target 606
+    target 607
     last_updated "2026-01-26"
     weight 0.6
     mechanism "Potential social media ban impacting the sector could affect other social media companies."
@@ -80373,7 +80420,7 @@ graph [
   ]
   edge [
     source 285
-    target 628
+    target 629
     last_updated "2026-01-26"
     weight 0.6
     mechanism "Potential social media ban impacting the sector could affect other social media companies."
@@ -84047,14 +84094,14 @@ graph [
   ]
   edge [
     source 310
-    target 584
+    target 585
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 310
-    target 588
+    target 589
     last_updated "2025-12-31"
     weight 0.3
     mechanism "Increased home theater adoption could positively impact consumer electronics companies like Sony."
@@ -84062,14 +84109,14 @@ graph [
   ]
   edge [
     source 310
-    target 589
+    target 590
     sentiment 0.06
     weight 0.51
     type "sec_discovered"
   ]
   edge [
     source 310
-    target 620
+    target 621
     last_updated "2025-12-31"
     weight 0.3
     mechanism "Increased home theater adoption could positively impact consumer electronics companies like Samsung."
@@ -86053,14 +86100,14 @@ graph [
   ]
   edge [
     source 313
-    target 583
+    target 584
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 313
-    target 644
+    target 645
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -87838,7 +87885,7 @@ graph [
   ]
   edge [
     source 327
-    target 589
+    target 590
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
@@ -93273,7 +93320,7 @@ graph [
   ]
   edge [
     source 329
-    target 652
+    target 653
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -97036,28 +97083,28 @@ graph [
   ]
   edge [
     source 330
-    target 580
+    target 581
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 330
-    target 589
+    target 590
     sentiment -0.03
     weight 0.49
     type "sec_discovered"
   ]
   edge [
     source 330
-    target 593
+    target 594
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 330
-    target 603
+    target 604
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -99261,21 +99308,21 @@ graph [
   ]
   edge [
     source 331
-    target 579
+    target 580
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 331
-    target 589
+    target 590
     sentiment -0.04
     weight 0.49
     type "sec_discovered"
   ]
   edge [
     source 331
-    target 607
+    target 608
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -104011,7 +104058,7 @@ graph [
   ]
   edge [
     source 337
-    target 628
+    target 629
     sentiment -0.02
     weight 0.5
     type "sec_discovered"
@@ -106214,21 +106261,21 @@ graph [
   ]
   edge [
     source 350
-    target 618
+    target 619
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 350
-    target 628
+    target 629
     sentiment 0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
     source 350
-    target 642
+    target 643
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -106275,7 +106322,7 @@ graph [
   ]
   edge [
     source 358
-    target 589
+    target 590
     last_updated "2025-12-09"
     weight 0.5
     mechanism "Fiserv is in the same sector. A good outlook for MA may be good for the sector."
@@ -109050,7 +109097,7 @@ graph [
   ]
   edge [
     source 366
-    target 589
+    target 590
     sentiment 0.01
     weight 0.5
     type "sec_discovered"
@@ -112893,7 +112940,7 @@ graph [
   ]
   edge [
     source 367
-    target 628
+    target 629
     sentiment 0.01
     weight 0.5
     type "sec_discovered"
@@ -113460,7 +113507,7 @@ graph [
   ]
   edge [
     source 444
-    target 588
+    target 589
     last_updated "2026-04-17"
     weight 0.7
     mechanism "Xbox competes with Playstation."
@@ -113606,10 +113653,10 @@ graph [
     source 447
     target 17
     sentiment -0.4
-    weight 0.4
+    weight 0.3
     type "sec_discovered"
-    last_updated "2026-05-30"
-    mechanism "Adobe is a major player in digital media and marketing software, and its stock price could be affected by overall investor sentiment towards the tech sector and companies investing heavily in AI."
+    last_updated "2026-06-02"
+    mechanism "Adobe relies on digital advertising, and the overall performance of the digital marketing industry can reflect on Adobe's position."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -117465,7 +117512,7 @@ graph [
   ]
   edge [
     source 447
-    target 578
+    target 579
     last_updated "2026-01-26"
     weight 0.5
     mechanism "Both companies compete in the social media market, and increased regulatory scrutiny on one company (META) could shift the competitive landscape, potentially benefiting or hindering others (X)."
@@ -117473,7 +117520,7 @@ graph [
   ]
   edge [
     source 447
-    target 588
+    target 589
     last_updated "2026-03-07"
     weight 0.3
     mechanism "Sony is a competitor in the VR/AR space, and the news about Meta's privacy concerns might impact the perception of VR/AR products in general."
@@ -117481,14 +117528,14 @@ graph [
   ]
   edge [
     source 447
-    target 589
+    target 590
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
     source 447
-    target 598
+    target 599
     last_updated "2026-05-03"
     weight 0.5
     mechanism "Since Roblox is also investing heavily in the metaverse, this news event causes a sympathy move."
@@ -117496,7 +117543,7 @@ graph [
   ]
   edge [
     source 447
-    target 606
+    target 607
     last_updated "2026-05-28"
     weight 0.7
     mechanism "Increased regulatory and legal risk relating to social media addiction."
@@ -117504,7 +117551,7 @@ graph [
   ]
   edge [
     source 447
-    target 628
+    target 629
     last_updated "2026-05-30"
     weight 0.3
     mechanism "General social media companies might experience a sympathy move due to increased regulatory scrutiny or brand safety concerns."
@@ -117514,7 +117561,7 @@ graph [
   ]
   edge [
     source 447
-    target 629
+    target 630
     last_updated "2026-05-28"
     weight 0.6
     mechanism "Increased regulatory and legal risk relating to social media addiction."
@@ -117546,7 +117593,7 @@ graph [
   ]
   edge [
     source 448
-    target 638
+    target 639
     last_updated "2026-05-24"
     weight 0.4
     mechanism "Sanofi is a large vaccine company and therefore competes in overlapping areas."
@@ -119066,7 +119113,7 @@ graph [
   ]
   edge [
     source 450
-    target 589
+    target 590
     sentiment 0.05
     weight 0.51
     type "sec_discovered"
@@ -120375,56 +120422,49 @@ graph [
   ]
   edge [
     source 478
-    target 594
+    target 595
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 478
-    target 596
+    target 597
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 478
-    target 621
+    target 622
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 478
-    target 627
+    target 628
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 478
-    target 634
+    target 635
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 478
-    target 639
+    target 640
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
     source 478
-    target 643
-    weight 0.9
-    mechanism "10-K Disclosure"
-    verification_status "VERIFIED_FILING"
-  ]
-  edge [
-    source 478
-    target 648
+    target 644
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -120432,6 +120472,13 @@ graph [
   edge [
     source 478
     target 649
+    weight 0.9
+    mechanism "10-K Disclosure"
+    verification_status "VERIFIED_FILING"
+  ]
+  edge [
+    source 478
+    target 650
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
@@ -120543,9 +120590,9 @@ graph [
   edge [
     source 484
     target 110
-    last_updated "2026-05-05"
-    weight 0.4
-    mechanism "If COST's cost-cutting measures via generative AI lead to vulnerabilities, competitors like DLTR may gain a competitive edge if they invest more securely."
+    last_updated "2026-06-02"
+    weight 0.6
+    mechanism "Costco and Dollar Tree compete for consumer spending, although targeting different demographics."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -120615,9 +120662,9 @@ graph [
   edge [
     source 484
     target 313
-    last_updated "2026-05-30"
+    last_updated "2026-06-02"
     weight 0.7
-    mechanism "Potential increased labor costs may impact competitors in the retail sector, like Walmart, although Costco's business model differs."
+    mechanism "Costco and Walmart both operate in the retail sector and compete for consumer spending."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -121150,7 +121197,7 @@ graph [
   ]
   edge [
     source 537
-    target 588
+    target 589
     last_updated "2026-05-29"
     weight 0.6
     mechanism "Steam Deck competes with handheld gaming devices like the PlayStation Portable/Vita or Nintendo Switch, or Sony's future handheld gaming plans."
@@ -121319,9 +121366,9 @@ graph [
   edge [
     source 546
     target 201
-    last_updated "2026-03-09"
+    last_updated "2026-06-01"
     weight 0.3
-    mechanism "Defense stocks may move in sympathy with geopolitical instability."
+    mechanism "Increased geopolitical instability could broadly affect defense sector stocks."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -121359,9 +121406,9 @@ graph [
   edge [
     source 546
     target 236
-    last_updated "2026-03-09"
+    last_updated "2026-06-01"
     weight 0.3
-    mechanism "Defense stocks may move in sympathy with geopolitical instability."
+    mechanism "Increased geopolitical instability could broadly affect defense sector stocks."
     verification_status "AI_PROPOSED"
   ]
   edge [
@@ -121558,7 +121605,7 @@ graph [
   ]
   edge [
     source 546
-    target 620
+    target 621
     last_updated "2026-02-18"
     weight 0.7
     mechanism "DAY competes in the monitor market. A significant price drop by Samsung could affect DAY's sales."
@@ -121566,7 +121613,7 @@ graph [
   ]
   edge [
     source 546
-    target 627
+    target 628
     last_updated "2026-04-14"
     weight 0.2
     mechanism "Prolonged strikes affecting air travel could potentially reduce future demand for new aircraft from manufacturers like Airbus (AIR)."
@@ -121798,4073 +121845,13 @@ graph [
   ]
   edge [
     source 565
-    target 600
+    target 601
     last_updated "2026-02-22"
     weight 0.3
     mechanism "Uncertainty regarding government spending and economic policy can create broad market volatility."
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 573
-    target 0
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 1
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 2
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 3
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 4
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 5
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 6
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 7
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 8
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 9
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 10
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 11
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 12
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 13
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 14
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 15
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 16
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 17
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 18
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 19
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 20
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 21
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 22
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 23
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 24
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 25
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 26
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 27
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 28
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 29
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 30
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 31
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 32
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 33
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 34
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 35
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 36
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 37
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 38
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 39
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 40
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 41
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 42
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 43
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 44
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 45
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 46
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 47
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 48
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 49
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 50
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 51
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 52
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 53
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 54
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 55
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 56
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 57
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 58
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 59
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 60
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 61
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 62
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 63
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 64
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 65
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 66
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 67
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 68
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 69
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 70
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 71
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 72
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 73
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 74
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 75
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 76
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 77
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 78
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 79
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 80
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 81
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 82
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 83
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 84
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 85
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 86
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 87
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 88
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 89
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 90
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 91
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 92
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 93
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 94
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 95
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 96
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 97
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 98
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 99
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 100
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 101
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 102
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 103
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 104
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 105
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 106
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 107
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 108
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 109
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 110
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 111
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 112
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 113
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 114
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 115
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 116
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 117
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 118
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 119
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 120
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 121
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 122
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 123
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 124
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 125
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 126
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 127
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 128
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 129
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 130
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 131
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 132
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 133
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 134
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 135
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 136
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 137
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 138
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 139
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 140
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 141
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 142
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 143
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 144
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 145
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 146
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 147
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 148
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 149
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 150
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 151
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 152
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 153
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 154
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 155
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 156
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 157
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 158
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 159
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 160
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 161
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 162
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 163
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 164
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 165
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 166
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 167
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 168
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 169
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 170
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 171
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 172
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 173
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 174
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 175
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 176
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 177
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 178
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 179
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 180
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 181
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 182
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 183
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 184
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 185
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 186
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 187
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 188
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 189
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 190
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 191
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 192
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 193
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 194
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 195
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 196
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 197
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 198
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 199
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 200
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 201
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 202
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 203
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 204
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 205
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 206
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 207
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 208
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 209
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 210
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 211
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 212
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 213
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 214
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 215
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 216
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 217
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 218
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 219
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 220
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 221
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 222
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 223
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 224
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 225
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 226
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 227
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 228
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 229
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 230
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 231
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 232
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 233
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 234
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 235
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 236
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 237
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 238
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 239
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 240
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 241
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 242
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 243
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 244
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 245
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 246
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 247
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 248
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 249
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 250
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 251
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 252
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 253
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 254
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 255
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 256
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 257
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 258
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 259
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 260
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 261
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 262
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 263
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 264
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 265
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 266
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 267
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 268
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 269
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 270
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 271
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 272
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 273
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 274
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 275
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 276
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 277
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 278
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 279
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 280
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 281
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 282
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 283
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 284
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 285
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 286
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 287
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 288
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 289
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 290
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 291
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 292
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 293
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 294
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 295
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 296
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 297
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 298
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 299
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 300
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 301
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 302
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 303
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 304
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 305
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 306
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 307
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 308
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 309
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 310
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 311
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 312
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 313
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 314
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 315
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 316
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 317
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 318
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 319
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 320
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 321
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 322
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 323
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 324
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 325
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 326
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 327
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 328
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 329
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 330
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 331
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 332
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 333
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 334
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 335
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 336
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 337
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 338
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 339
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 340
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 341
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 342
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 343
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 344
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 345
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 346
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 347
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 348
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 349
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 350
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 351
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 352
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 353
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 354
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 355
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 356
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 357
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 358
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 359
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 360
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 361
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 362
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 363
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 364
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 365
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 366
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 367
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 368
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 369
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 370
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 371
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 372
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 373
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 374
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 375
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 376
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 377
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 378
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 379
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 380
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 381
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 382
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 383
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 384
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 385
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 386
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 387
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 388
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 389
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 390
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 391
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 392
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 393
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 394
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 395
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 396
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 397
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 398
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 399
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 400
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 401
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 402
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 403
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 404
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 405
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 406
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 407
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 408
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 409
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 410
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 411
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 412
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 413
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 414
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 415
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 416
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 417
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 418
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 419
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 420
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 421
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 422
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 423
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 424
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 425
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 426
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 427
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 428
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 429
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 430
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 431
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 432
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 433
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 434
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 435
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 436
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 437
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 438
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 439
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 440
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 441
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 442
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 443
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 444
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 445
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 446
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 447
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 448
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 449
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 450
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 451
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 452
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 453
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 454
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 455
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 456
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 457
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 458
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 459
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 460
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 461
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 462
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 463
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 464
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 465
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 466
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 467
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 468
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 469
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 470
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 471
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 472
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 473
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 474
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 475
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 476
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 477
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 478
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 479
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 480
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 481
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 482
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 483
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 484
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 485
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 486
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 487
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 488
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 489
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 490
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 491
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 492
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 493
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 494
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 495
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 496
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 497
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 498
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 499
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 500
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 501
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 502
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 503
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 504
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 505
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 506
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 507
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 508
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 509
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 510
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 511
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 512
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 513
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 514
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 515
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 516
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 517
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 518
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 519
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 520
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 521
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 522
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 523
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 524
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 525
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 526
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 527
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 528
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 529
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 530
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 531
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 532
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 533
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 534
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 535
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 536
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 537
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 538
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 539
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 540
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 541
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 542
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 543
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 544
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 545
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 546
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 547
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 548
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 549
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 550
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 551
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 552
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 553
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 554
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 555
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 556
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 557
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 558
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 559
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 560
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 561
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 562
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 563
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 564
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 565
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 566
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 567
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 568
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 569
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 578
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 579
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 580
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 585
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 586
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 587
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 588
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 589
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 590
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 573
-    target 628
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
     source 574
     target 0
     weight 0.9
@@ -129856,13 +125843,6 @@ graph [
   ]
   edge [
     source 574
-    target 578
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 574
     target 579
     weight 0.9
     mechanism "Global Macro Influence"
@@ -129877,7 +125857,7 @@ graph [
   ]
   edge [
     source 574
-    target 585
+    target 581
     weight 0.9
     mechanism "Global Macro Influence"
     verification_status "VERIFIED"
@@ -129919,7 +125899,14 @@ graph [
   ]
   edge [
     source 574
-    target 628
+    target 591
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 574
+    target 629
     weight 0.9
     mechanism "Global Macro Influence"
     verification_status "VERIFIED"
@@ -133916,13 +129903,6 @@ graph [
   ]
   edge [
     source 575
-    target 578
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 575
     target 579
     weight 0.9
     mechanism "Global Macro Influence"
@@ -133937,7 +129917,7 @@ graph [
   ]
   edge [
     source 575
-    target 585
+    target 581
     weight 0.9
     mechanism "Global Macro Influence"
     verification_status "VERIFIED"
@@ -133979,7 +129959,14 @@ graph [
   ]
   edge [
     source 575
-    target 628
+    target 591
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 575
+    target 629
     weight 0.9
     mechanism "Global Macro Influence"
     verification_status "VERIFIED"
@@ -137976,13 +133963,6 @@ graph [
   ]
   edge [
     source 576
-    target 578
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 576
     target 579
     weight 0.9
     mechanism "Global Macro Influence"
@@ -137997,7 +133977,7 @@ graph [
   ]
   edge [
     source 576
-    target 585
+    target 581
     weight 0.9
     mechanism "Global Macro Influence"
     verification_status "VERIFIED"
@@ -138039,7 +134019,14 @@ graph [
   ]
   edge [
     source 576
-    target 628
+    target 591
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 576
+    target 629
     weight 0.9
     mechanism "Global Macro Influence"
     verification_status "VERIFIED"
@@ -142036,13 +138023,6 @@ graph [
   ]
   edge [
     source 577
-    target 578
-    weight 0.9
-    mechanism "Global Macro Influence"
-    verification_status "VERIFIED"
-  ]
-  edge [
-    source 577
     target 579
     weight 0.9
     mechanism "Global Macro Influence"
@@ -142057,7 +138037,7 @@ graph [
   ]
   edge [
     source 577
-    target 585
+    target 581
     weight 0.9
     mechanism "Global Macro Influence"
     verification_status "VERIFIED"
@@ -142099,13 +138079,4080 @@ graph [
   ]
   edge [
     source 577
-    target 628
+    target 591
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 577
+    target 629
     weight 0.9
     mechanism "Global Macro Influence"
     verification_status "VERIFIED"
   ]
   edge [
     source 578
+    target 0
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 1
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 2
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 3
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 4
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 5
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 6
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 7
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 8
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 9
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 10
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 11
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 12
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 13
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 14
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 15
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 16
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 17
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 18
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 19
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 20
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 21
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 22
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 23
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 24
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 25
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 26
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 27
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 28
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 29
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 30
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 31
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 32
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 33
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 34
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 35
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 36
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 37
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 38
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 39
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 40
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 41
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 42
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 43
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 44
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 45
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 46
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 47
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 48
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 49
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 50
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 51
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 52
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 53
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 54
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 55
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 56
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 57
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 58
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 59
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 60
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 61
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 62
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 63
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 64
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 65
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 66
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 67
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 68
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 69
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 70
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 71
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 72
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 73
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 74
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 75
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 76
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 77
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 78
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 79
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 80
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 81
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 82
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 83
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 84
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 85
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 86
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 87
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 88
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 89
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 90
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 91
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 92
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 93
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 94
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 95
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 96
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 97
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 98
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 99
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 100
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 101
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 102
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 103
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 104
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 105
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 106
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 107
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 108
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 109
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 110
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 111
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 112
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 113
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 114
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 115
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 116
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 117
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 118
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 119
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 120
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 121
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 122
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 123
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 124
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 125
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 126
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 127
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 128
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 129
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 130
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 131
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 132
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 133
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 134
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 135
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 136
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 137
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 138
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 139
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 140
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 141
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 142
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 143
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 144
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 145
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 146
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 147
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 148
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 149
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 150
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 151
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 152
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 153
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 154
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 155
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 156
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 157
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 158
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 159
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 160
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 161
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 162
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 163
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 164
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 165
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 166
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 167
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 168
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 169
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 170
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 171
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 172
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 173
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 174
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 175
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 176
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 177
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 178
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 179
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 180
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 181
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 182
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 183
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 184
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 185
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 186
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 187
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 188
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 189
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 190
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 191
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 192
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 193
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 194
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 195
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 196
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 197
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 198
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 199
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 200
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 201
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 202
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 203
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 204
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 205
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 206
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 207
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 208
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 209
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 210
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 211
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 212
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 213
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 214
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 215
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 216
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 217
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 218
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 219
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 220
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 221
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 222
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 223
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 224
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 225
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 226
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 227
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 228
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 229
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 230
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 231
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 232
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 233
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 234
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 235
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 236
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 237
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 238
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 239
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 240
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 241
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 242
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 243
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 244
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 245
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 246
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 247
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 248
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 249
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 250
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 251
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 252
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 253
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 254
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 255
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 256
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 257
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 258
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 259
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 260
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 261
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 262
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 263
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 264
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 265
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 266
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 267
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 268
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 269
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 270
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 271
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 272
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 273
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 274
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 275
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 276
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 277
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 278
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 279
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 280
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 281
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 282
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 283
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 284
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 285
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 286
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 287
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 288
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 289
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 290
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 291
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 292
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 293
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 294
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 295
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 296
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 297
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 298
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 299
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 300
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 301
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 302
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 303
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 304
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 305
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 306
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 307
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 308
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 309
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 310
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 311
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 312
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 313
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 314
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 315
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 316
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 317
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 318
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 319
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 320
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 321
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 322
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 323
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 324
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 325
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 326
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 327
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 328
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 329
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 330
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 331
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 332
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 333
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 334
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 335
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 336
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 337
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 338
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 339
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 340
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 341
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 342
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 343
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 344
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 345
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 346
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 347
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 348
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 349
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 350
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 351
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 352
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 353
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 354
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 355
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 356
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 357
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 358
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 359
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 360
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 361
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 362
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 363
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 364
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 365
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 366
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 367
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 368
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 369
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 370
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 371
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 372
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 373
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 374
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 375
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 376
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 377
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 378
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 379
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 380
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 381
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 382
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 383
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 384
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 385
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 386
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 387
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 388
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 389
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 390
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 391
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 392
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 393
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 394
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 395
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 396
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 397
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 398
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 399
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 400
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 401
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 402
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 403
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 404
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 405
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 406
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 407
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 408
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 409
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 410
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 411
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 412
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 413
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 414
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 415
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 416
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 417
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 418
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 419
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 420
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 421
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 422
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 423
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 424
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 425
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 426
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 427
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 428
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 429
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 430
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 431
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 432
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 433
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 434
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 435
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 436
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 437
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 438
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 439
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 440
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 441
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 442
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 443
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 444
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 445
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 446
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 447
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 448
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 449
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 450
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 451
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 452
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 453
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 454
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 455
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 456
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 457
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 458
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 459
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 460
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 461
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 462
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 463
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 464
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 465
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 466
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 467
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 468
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 469
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 470
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 471
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 472
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 473
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 474
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 475
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 476
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 477
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 478
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 479
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 480
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 481
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 482
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 483
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 484
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 485
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 486
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 487
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 488
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 489
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 490
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 491
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 492
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 493
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 494
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 495
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 496
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 497
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 498
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 499
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 500
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 501
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 502
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 503
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 504
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 505
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 506
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 507
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 508
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 509
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 510
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 511
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 512
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 513
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 514
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 515
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 516
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 517
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 518
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 519
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 520
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 521
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 522
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 523
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 524
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 525
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 526
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 527
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 528
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 529
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 530
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 531
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 532
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 533
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 534
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 535
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 536
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 537
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 538
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 539
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 540
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 541
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 542
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 543
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 544
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 545
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 546
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 547
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 548
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 549
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 550
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 551
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 552
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 553
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 554
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 555
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 556
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 557
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 558
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 559
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 560
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 561
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 562
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 563
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 564
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 565
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 566
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 567
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 568
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 569
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 579
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 580
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 581
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 586
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 587
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 588
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 589
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 590
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 591
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 578
+    target 629
+    weight 0.9
+    mechanism "Global Macro Influence"
+    verification_status "VERIFIED"
+  ]
+  edge [
+    source 579
     target 17
     last_updated "2026-02-18"
     weight 0.3
@@ -142113,7 +142160,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 578
+    source 579
     target 27
     last_updated "2026-02-18"
     weight 0.2
@@ -142121,7 +142168,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 578
+    source 579
     target 29
     last_updated "2025-12-08"
     weight 0.3
@@ -142129,7 +142176,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 578
+    source 579
     target 31
     last_updated "2026-03-15"
     weight 0.7
@@ -142137,7 +142184,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 578
+    source 579
     target 43
     last_updated "2026-02-04"
     weight 0.7
@@ -142145,7 +142192,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 578
+    source 579
     target 174
     last_updated "2026-01-08"
     weight 0.4
@@ -142153,7 +142200,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 578
+    source 579
     target 196
     last_updated "2026-01-08"
     weight 0.6
@@ -142161,7 +142208,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 578
+    source 579
     target 228
     last_updated "2026-05-04"
     weight 0.3
@@ -142169,7 +142216,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 578
+    source 579
     target 333
     last_updated "2026-02-22"
     weight 0.7
@@ -142177,7 +142224,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 578
+    source 579
     target 337
     last_updated "2026-01-04"
     weight 0.6
@@ -142185,7 +142232,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 578
+    source 579
     target 447
     last_updated "2026-02-09"
     weight 0.4
@@ -142193,7 +142240,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 578
+    source 579
     target 519
     last_updated "2025-12-08"
     weight 0.3
@@ -142201,7 +142248,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 578
+    source 579
     target 551
     last_updated "2026-01-08"
     weight 0.7
@@ -142209,39 +142256,39 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 578
-    target 588
+    source 579
+    target 589
     last_updated "2026-02-22"
     weight 0.7
     mechanism "X (Likely a gaming related stock) may move in sympathy with Sony as Playstation sales decreased."
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 578
-    target 606
+    source 579
+    target 607
     last_updated "2025-12-09"
     weight 0.2
     mechanism "General market sentiment towards social media and technology companies can cause sympathy moves."
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 578
-    target 628
-    last_updated "2025-12-09"
-    weight 0.2
-    mechanism "General market sentiment towards social media and technology companies can cause sympathy moves."
-    verification_status "AI_PROPOSED"
-  ]
-  edge [
-    source 578
+    source 579
     target 629
+    last_updated "2025-12-09"
+    weight 0.2
+    mechanism "General market sentiment towards social media and technology companies can cause sympathy moves."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 579
+    target 630
     last_updated "2026-02-18"
     weight 0.8
     mechanism "X (formerly known as Twitter) may cause sympathy moves with its old ticker TWTR due to investor confusion, especially if the news creates volatility."
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 579
+    source 580
     target 27
     last_updated "2026-04-05"
     weight 0.3
@@ -142249,7 +142296,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 579
+    source 580
     target 29
     last_updated "2026-04-05"
     weight 0.2
@@ -142257,7 +142304,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 579
+    source 580
     target 43
     last_updated "2026-04-12"
     weight 0.2
@@ -142265,7 +142312,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 579
+    source 580
     target 228
     last_updated "2026-05-21"
     weight 0.7
@@ -142273,7 +142320,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 579
+    source 580
     target 252
     last_updated "2026-01-20"
     weight 0.2
@@ -142281,7 +142328,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 579
+    source 580
     target 391
     last_updated "2026-05-05"
     weight 0.6
@@ -142289,7 +142336,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 579
+    source 580
     target 447
     last_updated "2025-12-09"
     weight 0.3
@@ -142297,7 +142344,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 579
+    source 580
     target 449
     last_updated "2026-02-08"
     weight 0.3
@@ -142305,7 +142352,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 579
+    source 580
     target 458
     last_updated "2026-05-05"
     weight 0.5
@@ -142313,15 +142360,15 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 579
-    target 597
+    source 580
+    target 598
     last_updated "2026-01-31"
     weight 0.4
     mechanism "Sony Music Entertainment is a major label, and the success of music streaming platforms like Spotify directly impacts their revenue."
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 582
+    source 583
     target 133
     last_updated "2026-05-08"
     weight 0.6
@@ -142329,7 +142376,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 582
+    source 583
     target 340
     last_updated "2026-05-08"
     weight 0.6
@@ -142337,7 +142384,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 582
+    source 583
     target 345
     last_updated "2026-05-05"
     weight 0.5
@@ -142345,7 +142392,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 582
+    source 583
     target 346
     last_updated "2026-05-08"
     weight 0.6
@@ -142353,7 +142400,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 582
+    source 583
     target 419
     last_updated "2026-05-08"
     weight 0.6
@@ -142361,7 +142408,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 583
+    source 584
     target 391
     last_updated "2026-04-05"
     weight 0.2
@@ -142369,15 +142416,15 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 583
-    target 632
+    source 584
+    target 633
     last_updated "2026-05-30"
     weight 0.3
     mechanism "Positive geopolitical news (US/Iran deal progress) might create a risk-on sentiment, generally benefiting Chinese tech stocks like JD and Alibaba."
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 584
+    source 585
     target 72
     last_updated "2026-04-16"
     weight 0.7
@@ -142385,7 +142432,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 584
+    source 585
     target 390
     last_updated "2026-04-16"
     weight 0.6
@@ -142393,7 +142440,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 588
+    source 589
     target 16
     last_updated "2026-05-23"
     weight 0.3
@@ -142401,7 +142448,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 588
+    source 589
     target 27
     last_updated "2026-04-14"
     weight 0.3
@@ -142409,7 +142456,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 588
+    source 589
     target 31
     last_updated "2026-03-09"
     weight 0.7
@@ -142417,7 +142464,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 588
+    source 589
     target 43
     last_updated "2026-02-11"
     weight 0.7
@@ -142425,7 +142472,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 588
+    source 589
     target 120
     last_updated "2026-05-23"
     weight 0.3
@@ -142433,7 +142480,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 588
+    source 589
     target 183
     last_updated "2026-02-11"
     weight 0.5
@@ -142441,7 +142488,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 588
+    source 589
     target 240
     last_updated "2026-02-21"
     weight 0.3
@@ -142449,7 +142496,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 588
+    source 589
     target 294
     last_updated "2026-05-12"
     weight 0.3
@@ -142457,7 +142504,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 588
+    source 589
     target 333
     last_updated "2026-04-14"
     weight 0.3
@@ -142465,7 +142512,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 588
+    source 589
     target 517
     last_updated "2026-03-09"
     weight 0.2
@@ -142473,15 +142520,15 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 588
-    target 586
+    source 589
+    target 587
     last_updated "2026-03-09"
     weight 0.4
     mechanism "TSMC (TSM) is a potential supplier of components for the PS6. Increased production may benefit TSM"
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 599
+    source 600
     target 231
     last_updated "2026-05-23"
     weight 0.3
@@ -142489,15 +142536,15 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 599
-    target 600
+    source 600
+    target 601
     last_updated "2026-03-15"
     weight 0.3
     mechanism "Uncertainty surrounding the Treasury Secretary could lead to broader market jitters."
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 620
+    source 621
     target 27
     last_updated "2026-01-03"
     weight 0.6
@@ -142505,7 +142552,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 620
+    source 621
     target 43
     last_updated "2026-01-06"
     weight 0.3
@@ -142513,7 +142560,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 620
+    source 621
     target 167
     last_updated "2026-01-07"
     weight 0.7
@@ -142521,7 +142568,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 620
+    source 621
     target 169
     last_updated "2026-01-03"
     weight 0.3
@@ -142529,7 +142576,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 620
+    source 621
     target 174
     last_updated "2025-12-26"
     weight 0.3
@@ -142537,7 +142584,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 620
+    source 621
     target 218
     last_updated "2026-01-11"
     weight 0.6
@@ -142545,7 +142592,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 620
+    source 621
     target 240
     last_updated "2026-05-17"
     weight 0.6
@@ -142553,7 +142600,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 620
+    source 621
     target 270
     last_updated "2025-12-26"
     weight 0.2
@@ -142561,7 +142608,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 620
+    source 621
     target 333
     last_updated "2026-03-16"
     weight 0.6
@@ -142569,7 +142616,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 620
+    source 621
     target 365
     last_updated "2026-01-11"
     weight 0.3
@@ -142577,7 +142624,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 620
+    source 621
     target 482
     last_updated "2026-01-21"
     weight 0.7
@@ -142585,7 +142632,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 620
+    source 621
     target 517
     last_updated "2026-03-02"
     weight 0.3
@@ -142593,15 +142640,15 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 620
-    target 586
+    source 621
+    target 587
     last_updated "2026-05-17"
     weight 0.4
     mechanism "Samsung uses TSMC for some chip manufacturing; strike could impact orders."
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 627
+    source 628
     target 12
     last_updated "2026-05-26"
     weight 0.3
@@ -142609,7 +142656,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 627
+    source 628
     target 33
     last_updated "2026-05-26"
     weight 0.3
@@ -142617,7 +142664,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 627
+    source 628
     target 69
     last_updated "2026-04-16"
     weight 0.5
@@ -142625,7 +142672,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 627
+    source 628
     target 198
     last_updated "2026-04-18"
     weight 0.7
@@ -142633,7 +142680,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 627
+    source 628
     target 201
     last_updated "2026-05-26"
     weight 0.3
@@ -142641,7 +142688,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 627
+    source 628
     target 236
     last_updated "2026-05-26"
     weight 0.3
@@ -142649,7 +142696,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 627
+    source 628
     target 338
     last_updated "2026-04-18"
     weight 0.7
@@ -142657,7 +142704,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 627
+    source 628
     target 340
     last_updated "2026-05-26"
     weight 0.2
@@ -142665,7 +142712,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 627
+    source 628
     target 345
     last_updated "2026-05-17"
     weight 0.7
@@ -142673,7 +142720,7 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 627
+    source 628
     target 346
     last_updated "2026-05-26"
     weight 0.3
@@ -142681,15 +142728,15 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 627
+    source 628
     target 385
-    last_updated "2026-05-26"
-    weight 0.3
-    mechanism "Increased geopolitical tensions could lead to increased defense spending, benefiting defense contractors."
+    last_updated "2026-06-01"
+    weight 0.7
+    mechanism "Boeing is a major aerospace company and may move in sympathy with other companies in the same sector facing geopolitical risks."
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 627
+    source 628
     target 391
     last_updated "2026-04-16"
     weight 0.3
@@ -142697,183 +142744,191 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 627
+    source 628
     target 423
-    last_updated "2026-05-26"
-    weight 0.3
-    mechanism "Increased geopolitical tensions could lead to increased defense spending, benefiting defense contractors."
+    last_updated "2026-06-02"
+    weight 0.4
+    mechanism "General Dynamics (GD) is a defense contractor; events increasing military activity often see sympathy moves in the defense sector."
     verification_status "AI_PROPOSED"
   ]
   edge [
     source 628
+    target 565
+    last_updated "2026-06-01"
+    weight 0.3
+    mechanism "If incidents like this become frequent, some consumers may prefer food delivery over flying."
+    verification_status "AI_PROPOSED"
+  ]
+  edge [
+    source 629
     target 0
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 1
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 2
     sentiment -0.09
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 3
     sentiment -0.09
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 4
     sentiment -0.09
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 5
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 6
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 7
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 8
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 9
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 10
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 11
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 12
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 13
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 15
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 18
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 19
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 20
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 21
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 22
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 23
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 24
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 25
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 26
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 27
     weight 0.2
     mechanism "Online advertising companies may move in sympathy due to macro-economic factors."
@@ -142883,14 +142938,14 @@ graph [
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 28
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 29
     weight 0.52
     mechanism "10-K Disclosure"
@@ -142899,77 +142954,77 @@ graph [
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 30
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 31
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 32
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 33
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 34
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 35
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 39
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 40
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 41
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 42
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 43
     last_updated "2026-04-17"
     weight 0.3
@@ -142979,35 +143034,35 @@ graph [
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 44
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 45
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 46
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 48
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 49
     sentiment 0.0
     weight 0.3
@@ -143017,357 +143072,357 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 628
+    source 629
     target 50
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 51
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 52
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 53
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 54
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 56
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 57
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 58
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 59
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 60
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 61
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 62
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 63
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 65
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 66
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 67
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 68
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 69
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 70
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 72
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 73
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 74
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 75
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 76
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 77
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 79
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 80
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 81
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 82
     sentiment -0.03
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 84
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 85
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 86
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 87
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 88
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 89
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 90
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 91
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 92
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 93
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 94
     sentiment -0.12
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 95
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 96
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 97
     sentiment -0.03
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 98
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 100
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 101
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 103
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 104
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 107
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 108
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 109
     sentiment 0.13
     weight 0.3
@@ -143377,133 +143432,133 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 628
+    source 629
     target 110
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 111
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 112
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 114
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 115
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 117
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 118
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 119
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 120
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 122
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 123
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 124
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 125
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 126
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 129
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 130
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 131
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 132
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 133
     sentiment 0.03
     weight 0.2
@@ -143513,644 +143568,644 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 628
+    source 629
     target 134
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 135
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 136
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 137
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 138
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 140
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 141
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 142
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 143
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 144
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 145
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 146
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 147
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 148
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 149
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 150
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 151
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 152
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 153
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 154
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 155
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 156
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 158
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 159
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 160
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 161
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 162
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 164
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 165
     sentiment -0.12
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 166
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 167
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 169
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 170
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 171
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 172
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 174
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 176
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 177
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 178
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 179
     sentiment -0.09
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 180
     sentiment -0.09
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 181
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 182
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 184
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 185
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 186
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 187
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 188
     sentiment 0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 190
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 192
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 193
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 194
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 195
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 196
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 197
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 198
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 199
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 200
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 201
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 202
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 203
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 205
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 206
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 207
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 208
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 209
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 210
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 211
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 212
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 214
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 216
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 217
     sentiment 0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 218
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 219
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 220
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 221
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 222
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 223
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 224
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 225
     sentiment -0.12
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 226
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 227
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 228
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 229
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 232
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 233
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 234
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 235
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 236
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 237
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 239
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 240
     last_updated "2026-04-17"
     weight 0.5
@@ -144160,455 +144215,455 @@ graph [
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 242
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 243
     sentiment -0.12
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 244
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 245
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 246
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 249
     sentiment -0.12
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 250
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 251
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 252
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 253
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 254
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 255
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 256
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 257
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 258
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 259
     sentiment 0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 261
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 262
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 263
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 264
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 265
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 266
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 267
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 268
     sentiment -0.03
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 269
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 270
     sentiment -0.03
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 271
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 272
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 273
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 274
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 275
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 277
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 279
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 280
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 281
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 282
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 283
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 284
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 285
     sentiment -0.09
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 286
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 287
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 288
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 289
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 290
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 291
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 292
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 293
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 294
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 295
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 296
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 298
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 299
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 300
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 301
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 302
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 303
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 304
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 306
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 307
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 308
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 309
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 310
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 311
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 312
     sentiment -0.12
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 313
     last_updated "2026-01-19"
     weight 0.53
@@ -144618,77 +144673,77 @@ graph [
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 314
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 315
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 318
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 319
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 321
     sentiment -0.03
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 322
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 323
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 324
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 325
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 326
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 328
     last_updated "2026-01-19"
     weight 0.3
@@ -144696,266 +144751,266 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 628
+    source 629
     target 329
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 330
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 331
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 332
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 333
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 334
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 335
     sentiment -0.04
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 336
     sentiment -0.04
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 337
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 338
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 339
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 340
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 341
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 342
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 343
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 344
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 345
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 346
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 347
     sentiment -0.12
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 348
     sentiment 0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 349
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 351
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 352
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 353
     sentiment 0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 354
     sentiment -0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 355
     sentiment -0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 356
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 357
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 358
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 359
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 360
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 361
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 362
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 363
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 364
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 365
     sentiment -0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 366
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 367
     weight 0.5
     mechanism "10-K Disclosure"
@@ -144964,560 +145019,560 @@ graph [
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 368
     sentiment 0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 369
     sentiment 0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 370
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 371
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 372
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 373
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 374
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 375
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 376
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 377
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 378
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 379
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 380
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 381
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 382
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 383
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 384
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 385
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 386
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 387
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 388
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 389
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 390
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 391
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 392
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 393
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 394
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 395
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 396
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 397
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 398
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 399
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 400
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 401
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 402
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 403
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 404
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 405
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 406
     sentiment 0.07
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 407
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 408
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 409
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 410
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 411
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 412
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 413
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 414
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 415
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 416
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 417
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 418
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 419
     sentiment 0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 420
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 421
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 422
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 423
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 424
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 425
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 426
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 427
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 428
     sentiment -0.09
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 429
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 430
     sentiment -0.08
     weight 0.48
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 431
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 432
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 433
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 434
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 435
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 436
     sentiment 0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 437
     sentiment -0.58
     weight 0.38
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 438
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 439
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 440
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 441
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 442
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 443
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 444
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 445
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 446
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 447
     sentiment 0.12
     weight 0.3
@@ -145527,476 +145582,476 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 628
+    source 629
     target 448
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 449
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 450
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 451
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 452
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 453
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 454
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 455
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 456
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 457
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 458
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 459
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 460
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 461
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 462
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 463
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 464
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 465
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 466
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 467
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 468
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 469
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 470
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 471
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 472
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 473
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 474
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 475
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 476
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 477
     sentiment -0.04
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 478
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 479
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 480
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 481
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 482
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 483
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 484
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 485
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 486
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 487
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 489
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 490
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 491
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 492
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 493
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 494
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 495
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 496
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 497
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 498
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 499
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 500
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 501
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 502
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 503
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 504
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 505
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 506
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 507
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 508
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 509
     sentiment -0.04
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 510
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 511
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 512
     sentiment -0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 513
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 515
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 516
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 517
     sentiment -0.01
     weight 0.3
@@ -146006,231 +146061,231 @@ graph [
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 628
+    source 629
     target 518
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 519
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 520
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 521
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 522
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 523
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 524
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 525
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 526
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 527
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 528
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 529
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 530
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 531
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 532
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 533
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 534
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 535
     sentiment 0.04
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 536
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 537
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 538
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 539
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 540
     sentiment -0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 541
     sentiment 0.13
     weight 0.53
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 542
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 544
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 545
     sentiment -0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 546
     sentiment 0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 547
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 548
     sentiment -0.07
     weight 0.49
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 549
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 550
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 551
     last_updated "2026-04-17"
     weight 0.51
@@ -146240,150 +146295,150 @@ graph [
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 552
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 553
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 555
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 556
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 557
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 558
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 560
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 561
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 562
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 563
     sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 565
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
+    source 629
     target 569
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
-    target 578
+    source 629
+    target 579
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
-    source 628
-    target 586
+    source 629
+    target 587
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
-    source 628
-    target 589
+    source 629
+    target 590
     sentiment 0.0
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
-    target 590
+    source 629
+    target 591
     sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
-    source 628
-    target 598
+    source 629
+    target 599
     weight 0.9
     mechanism "10-K Disclosure"
     verification_status "VERIFIED_FILING"
   ]
   edge [
-    source 628
-    target 606
+    source 629
+    target 607
     last_updated "2026-04-20"
     weight 0.3
     mechanism "Social media companies might move in sympathy if there is a broader economic concern."
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 628
-    target 629
+    source 629
+    target 630
     last_updated "2026-04-17"
     weight 0.5
     mechanism "News about Snap's layoffs might cause investors to reassess the health of other social media companies like Twitter, leading to sympathy moves."
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 645
-    target 588
+    source 646
+    target 589
     last_updated "2026-01-24"
     weight 0.6
     mechanism "Sony also competes in the TV market. A price drop for Samsung's 'The Frame' TV could put pressure on Sony to adjust its pricing or marketing strategies for competing products."
     verification_status "AI_PROPOSED"
   ]
   edge [
-    source 650
+    source 651
     target 226
     last_updated "2026-05-08"
     weight 0.6
