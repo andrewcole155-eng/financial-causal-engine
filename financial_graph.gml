@@ -78,14 +78,14 @@ graph [
     last_close 61.060001373291016
     industry "REIT - Residential"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 61.060001373291016
     name "Equity Residential"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11137936992868093
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -259,14 +259,14 @@ graph [
     last_close 103.87999725341797
     industry "REIT - Residential"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 103.87999725341797
     name "Camden Property Trust"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10918902912225745
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -349,14 +349,14 @@ graph [
     last_close 255.3699951171875
     industry "REIT - Residential"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 255.3699951171875
     name "Essex Property Trust"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08514622758415585
+    raw_risk_score -0.894404411315918
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -439,14 +439,14 @@ graph [
     last_close 182.55999755859375
     industry "REIT - Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 182.55999755859375
     name "Simon Property Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06826677099787559
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -529,14 +529,14 @@ graph [
     last_close 1798.530029296875
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 1798.530029296875
     name "Fair Isaac"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05842056500095134
+    raw_risk_score 0.1901999831199646
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -619,14 +619,14 @@ graph [
     last_close 337.5299987792969
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 337.5299987792969
     name "Cadence Design Systems"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13234586296096343
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -710,7 +710,7 @@ graph [
     last_close 45.47999954223633
     industry "REIT - Office"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T23:04:35.492000000+00:00"
     last_updated_at "1767254673840"
@@ -718,7 +718,7 @@ graph [
     name "Alexandria Real Estate Equities"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09751151011044434
+    raw_risk_score 0.7
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -801,14 +801,14 @@ graph [
     last_close 202.27000427246094
     industry "Insurance - Property &#38; Casualty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 202.27000427246094
     name "Allstate"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0869658873438777
+    raw_risk_score 0.44961100051459074
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -891,14 +891,14 @@ graph [
     last_close 123.61000061035156
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 123.61000061035156
     name "State Street Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07849467645439887
+    raw_risk_score 0.014791488647460938
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -981,14 +981,14 @@ graph [
     last_close 63.20000076293945
     industry "Building Products &#38; Equipment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 63.20000076293945
     name "Masco"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06076875059684593
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -1071,14 +1071,14 @@ graph [
     last_close 89.83000183105469
     industry "Banks - Diversified"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 89.83000183105469
     name "Wells Fargo"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.02989807141749493
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -1161,14 +1161,14 @@ graph [
     last_close 171.10000610351562
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 171.10000610351562
     name "RTX Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.16252579793096145
+    raw_risk_score 0.7808243655241452
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -1251,14 +1251,14 @@ graph [
     last_close 68.02999877929688
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 68.02999877929688
     name "A. O. Smith"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05612379006738855
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -1342,7 +1342,7 @@ graph [
     last_close 226.0800018310547
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T22:05:29.136000000+00:00"
     last_updated_at "1767254673840"
@@ -1350,7 +1350,7 @@ graph [
     name "AbbVie"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0615085001729774
+    raw_risk_score -0.6285454716001238
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -1434,7 +1434,7 @@ graph [
     last_close 266.5899963378906
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T19:01:25.199000000+00:00"
     last_updated_at "1767254673840"
@@ -1442,7 +1442,7 @@ graph [
     name "Accenture"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13231661274253326
+    raw_risk_score -0.7
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -1611,7 +1611,7 @@ graph [
     last_close 346.260009765625
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T08:01:05.006000000+00:00"
     last_updated_at "1767254673840"
@@ -1619,7 +1619,7 @@ graph [
     name "Adobe Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10789643924602779
+    raw_risk_score -0.33122708797454836
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -1702,14 +1702,14 @@ graph [
     last_close 261.6300048828125
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 261.6300048828125
     name "Automatic Data Processing"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08990692447580163
+    raw_risk_score -0.8759641051292419
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -1793,7 +1793,7 @@ graph [
     last_close 52.470001220703125
     industry "Auto Parts"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T19:05:12.297000000+00:00"
     last_updated_at "1767254673840"
@@ -1801,7 +1801,7 @@ graph [
     name "Advance Auto Parts"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09334944545727675
+    raw_risk_score 0.6893570901950199
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -1884,14 +1884,14 @@ graph [
     last_close 13.920000076293945
     industry "Utilities - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 13.920000076293945
     name "AES Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.15795788976493186
+    raw_risk_score -0.0
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -1974,14 +1974,14 @@ graph [
     last_close 109.27999877929688
     industry "Insurance - Life"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 109.27999877929688
     name "Aflac"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.14253300639997574
+    raw_risk_score 0.7387554744879404
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -2064,14 +2064,14 @@ graph [
     last_close 145.49000549316406
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 145.49000549316406
     name "Agilent Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10495199624713603
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -2155,7 +2155,7 @@ graph [
     last_close 83.48999786376953
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T15:02:37.486000000+00:00"
     last_updated_at "1767254673840"
@@ -2163,7 +2163,7 @@ graph [
     name "Akamai Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07045992394258162
+    raw_risk_score -0.6
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -2246,14 +2246,14 @@ graph [
     last_close 49.650001525878906
     industry "Airlines"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 49.650001525878906
     name "Alaska Air Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0758199237685214
+    raw_risk_score -0.894366443157196
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -2337,7 +2337,7 @@ graph [
     last_close 125.19000244140625
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-02T13:43:42.264000000+00:00"
     last_updated_at "1767254673840"
@@ -2345,7 +2345,7 @@ graph [
     name "Albemarle Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1854995442914361
+    raw_risk_score -0.8
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -2428,14 +2428,14 @@ graph [
     last_close 157.2100067138672
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 157.2100067138672
     name "Align Technology"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.17106386376982402
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -2519,7 +2519,7 @@ graph [
     last_close 322.0899963378906
     industry "Internet Content &#38; Information"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T20:03:05.315000000+00:00"
     last_updated_at "1767254673840"
@@ -2527,7 +2527,7 @@ graph [
     name "Alphabet Inc. (Class C)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.153665817809837
+    raw_risk_score -0.4194344530502955
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -2611,7 +2611,7 @@ graph [
     last_close 57.9900016784668
     industry "Tobacco"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T20:03:00.627000000+00:00"
     last_updated_at "1767254673840"
@@ -2619,7 +2619,7 @@ graph [
     name "Altria"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.028739827015882822
+    raw_risk_score 0.6193093085289002
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -2705,7 +2705,7 @@ graph [
     industry "Internet Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T20:03:06.507000000+00:00"
     updated_at "1768045191518"
@@ -2713,7 +2713,7 @@ graph [
     name "Amazon"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12434231436019846
+    raw_risk_score -0.4801536507722809
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -2796,14 +2796,14 @@ graph [
     last_close 8.300000190734863
     industry "Packaging &#38; Containers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 8.300000190734863
     name "Amcor"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05773023644520022
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -2889,7 +2889,7 @@ graph [
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T03:01:39.812000000+00:00"
     updated_at "1768045191518"
@@ -2897,7 +2897,7 @@ graph [
     name "Advanced Micro Devices"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10788127226496852
+    raw_risk_score -0.1704730766514937
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -2980,14 +2980,14 @@ graph [
     last_close 99.86000061035156
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 99.86000061035156
     name "Ameren"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06659922784509212
+    raw_risk_score -0.0
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -3070,7 +3070,7 @@ graph [
     last_close 14.8100004196167
     industry "Airlines"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     updated_at "1767345396863"
     last_updated_at "1767254673840"
@@ -3078,7 +3078,7 @@ graph [
     name "American Airlines Group"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.15734072628674925
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -3161,14 +3161,14 @@ graph [
     last_close 77.02999877929688
     industry "Insurance - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 77.02999877929688
     name "American International Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07133711267479614
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -3251,14 +3251,14 @@ graph [
     last_close 178.86000061035156
     industry "REIT - Specialty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 178.86000061035156
     name "American Tower"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05120586505166702
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -3342,7 +3342,7 @@ graph [
     name "N/A"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.7366302405915609
+    raw_risk_score 0.7319066998286126
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
@@ -3426,14 +3426,14 @@ graph [
     last_close 199.8000030517578
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 199.8000030517578
     name "Ametek"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.17288491692224117
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -3517,7 +3517,7 @@ graph [
     last_close 329.8900146484375
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T15:02:55.792000000+00:00"
     last_updated_at "1767254673840"
@@ -3525,7 +3525,7 @@ graph [
     name "Amgen"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0751149741685258
+    raw_risk_score -0.6277167201042175
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -3608,14 +3608,14 @@ graph [
     last_close 139.36000061035156
     industry "Electronic Components"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 139.36000061035156
     name "Amphenol"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12395093809176044
+    raw_risk_score -0.014806985855102539
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -3699,7 +3699,7 @@ graph [
     last_close 281.2900085449219
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T12:30:15.692000000+00:00"
     last_updated_at "1767254673840"
@@ -3707,7 +3707,7 @@ graph [
     name "Analog Devices"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05995507724480352
+    raw_risk_score -0.53363156914711
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -3875,14 +3875,14 @@ graph [
     last_close 345.20001220703125
     industry "Insurance Brokers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 345.20001220703125
     name "Aon plc"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06248499653253978
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -3968,7 +3968,7 @@ graph [
     industry "Consumer Electronics"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T20:03:04.928000000+00:00"
     updated_at "1768045191518"
@@ -3976,7 +3976,7 @@ graph [
     name "Apple Inc."
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.16378505088432738
+    raw_risk_score -0.05433017828247763
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -4060,7 +4060,7 @@ graph [
     last_close 268.0
     industry "Semiconductor Equipment &#38; Materials"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-02T13:43:39.105000000+00:00"
     last_updated_at "1767254673840"
@@ -4068,7 +4068,7 @@ graph [
     name "Applied Materials"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13125298888462597
+    raw_risk_score -0.05728972256183623
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -4151,14 +4151,14 @@ graph [
     last_close 128.58999633789062
     industry "Computer Hardware"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 128.58999633789062
     name "Arista Networks"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08831702423336243
+    raw_risk_score -0.9234987497329712
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -4241,14 +4241,14 @@ graph [
     last_close 222.8699951171875
     industry "Insurance - Property &#38; Casualty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 222.8699951171875
     name "Assurant"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06009704474190495
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -4333,7 +4333,7 @@ graph [
     industry "Telecom Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 1.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T12:07:59.519000000+00:00"
     updated_at "1768130528095"
@@ -4342,7 +4342,7 @@ graph [
     name "AT&#38;T Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.2652499054853026
+    raw_risk_score 0.7265138413874728
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -4425,14 +4425,14 @@ graph [
     last_close 171.2899932861328
     industry "Utilities - Regulated Gas"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 171.2899932861328
     name "Atmos Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03091103039754564
+    raw_risk_score 0.8088942468166351
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -4515,14 +4515,14 @@ graph [
     last_close 306.739990234375
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 306.739990234375
     name "Autodesk"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10620673599461225
+    raw_risk_score -0.9189375638961792
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -4605,14 +4605,14 @@ graph [
     last_close 3822.659912109375
     industry "Auto Parts"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 3822.659912109375
     name "AutoZone"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04168453563968676
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -4695,14 +4695,14 @@ graph [
     last_close 179.3300018310547
     industry "Packaging &#38; Containers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 179.3300018310547
     name "Avery Dennison"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04325221880789869
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -4785,14 +4785,14 @@ graph [
     last_close 49.029998779296875
     industry "Packaging &#38; Containers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 49.029998779296875
     name "Ball Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08016246234890238
+    raw_risk_score 0.7373089227411482
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -4876,7 +4876,7 @@ graph [
     last_close 53.95000076293945
     industry "Banks - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T00:01:12.387000000+00:00"
     updated_at "1767345396863"
@@ -4885,7 +4885,7 @@ graph [
     name "Bank of America"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1001194485950958
+    raw_risk_score 0.07500000000000005
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -4968,14 +4968,14 @@ graph [
     last_close 18.829999923706055
     industry "Specialty Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 18.829999923706055
     name "Bath &#38; Body Works, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.054994751592801865
+    raw_risk_score 0.7049649357795715
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5059,7 +5059,7 @@ graph [
     last_close 18.540000915527344
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T23:04:32.712000000+00:00"
     last_updated_at "1767254673840"
@@ -5067,7 +5067,7 @@ graph [
     name "Baxter International"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0664734425466303
+    raw_risk_score 0.5333333333333333
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5150,14 +5150,14 @@ graph [
     last_close 193.9600067138672
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 193.9600067138672
     name "Becton Dickinson"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0567138072832972
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5240,14 +5240,14 @@ graph [
     last_close 66.72000122070312
     industry "Insurance - Property &#38; Casualty"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 66.72000122070312
     name "W. R. Berkley Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11746939913564554
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5330,14 +5330,14 @@ graph [
     last_close 317.69000244140625
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 317.69000244140625
     name "Bio-Rad Laboratories"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.15333890956373838
+    raw_risk_score -0.8804699182510376
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5420,14 +5420,14 @@ graph [
     last_close 61.68000030517578
     industry "Biotechnology"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 61.68000030517578
     name "Bio-Techne"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12175680773551271
+    raw_risk_score 0.3124541031987701
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5600,14 +5600,14 @@ graph [
     last_close 43.29999923706055
     industry "Auto Parts"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 43.29999923706055
     name "BorgWarner Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04561395115190299
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5690,14 +5690,14 @@ graph [
     last_close 69.27999877929688
     industry "REIT - Office"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 69.27999877929688
     name "BXP, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.042700987105695865
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5780,14 +5780,14 @@ graph [
     last_close 97.5199966430664
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 97.5199966430664
     name "Boston Scientific"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04338321729800179
+    raw_risk_score 0.9670681953430176
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -5870,14 +5870,14 @@ graph [
     last_close 78.37000274658203
     industry "Insurance Brokers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 78.37000274658203
     name "Brown &#38; Brown"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04812343795706189
+    raw_risk_score 0.8448514540990194
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -6050,7 +6050,7 @@ graph [
     last_close 157.22000122070312
     industry "Integrated Freight &#38; Logistics"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T16:05:18.919000000+00:00"
     last_updated_at "1767254673840"
@@ -6058,7 +6058,7 @@ graph [
     name "C.H. Robinson"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12856751035183278
+    raw_risk_score -0.4
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -6142,7 +6142,7 @@ graph [
     last_close 198.8300018310547
     industry "Medical Distribution"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T00:01:26.803000000+00:00"
     last_updated_at "1767254673840"
@@ -6150,7 +6150,7 @@ graph [
     name "Cardinal Health"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09642920110870928
+    raw_risk_score -0.7
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -6234,7 +6234,7 @@ graph [
     last_close 38.81999969482422
     industry "Auto &#38; Truck Dealerships"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T23:04:38.594000000+00:00"
     last_updated_at "1767254673840"
@@ -6242,7 +6242,7 @@ graph [
     name "CarMax, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.18203763101980483
+    raw_risk_score 0.72
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -6326,7 +6326,7 @@ graph [
     last_close 25.8700008392334
     industry "Travel Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T08:00:43.308000000+00:00"
     last_updated_at "1767254673840"
@@ -6334,7 +6334,7 @@ graph [
     name "Carnival"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.058259071568284776
+    raw_risk_score 0.2155328750610352
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -6417,14 +6417,14 @@ graph [
     last_close 54.290000915527344
     industry "Building Products &#38; Equipment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 54.290000915527344
     name "Carrier Global"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04785698863996436
+    raw_risk_score 0.8328062295913696
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -6594,14 +6594,14 @@ graph [
     industry "Farm &#38; Heavy Construction Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     updated_at "1768045191518"
     price 572.87
     name "Caterpillar Inc."
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1518815025705924
+    raw_risk_score 0.8235464443763097
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -6684,14 +6684,14 @@ graph [
     last_close 252.75999450683594
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 252.75999450683594
     name "Cboe Global Markets"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.21695477380084638
+    raw_risk_score 0.9564827084541321
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -6774,14 +6774,14 @@ graph [
     last_close 160.86000061035156
     industry "Real Estate Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 160.86000061035156
     name "CBRE Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.042196196459759645
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -6864,14 +6864,14 @@ graph [
     last_close 146.25
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 146.25
     name "CDW Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05702364822956643
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -6954,14 +6954,14 @@ graph [
     last_close 38.34000015258789
     industry "Healthcare Plans"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 38.34000015258789
     name "Centene Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07871925730536071
+    raw_risk_score -0.9170560240745544
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7045,7 +7045,7 @@ graph [
     last_close 38.43000030517578
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T11:02:39.777000000+00:00"
     last_updated_at "1767254673840"
@@ -7053,7 +7053,7 @@ graph [
     name "CenterPoint Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04303544503724262
+    raw_risk_score -0.7236338257789612
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7221,14 +7221,14 @@ graph [
     last_close 77.87999725341797
     industry "Agricultural Inputs"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 77.87999725341797
     name "CF Industries"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07968485486557512
+    raw_risk_score 0.8995347619056702
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -7311,14 +7311,14 @@ graph [
     last_close 184.30999755859375
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 184.30999755859375
     name "Charles River Laboratories"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06268337005390277
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7402,7 +7402,7 @@ graph [
     last_close 93.81999969482422
     industry "Capital Markets"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T15:01:56.073000000+00:00"
     last_updated_at "1767254673840"
@@ -7410,7 +7410,7 @@ graph [
     name "Charles Schwab Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07366668837162052
+    raw_risk_score -0.22668414910634357
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7493,14 +7493,14 @@ graph [
     last_close 33.939998626708984
     industry "Restaurants"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 33.939998626708984
     name "Chipotle Mexican Grill"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07867330658664529
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7583,14 +7583,14 @@ graph [
     last_close 84.5199966430664
     industry "Household &#38; Personal Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 84.5199966430664
     name "Church &#38; Dwight"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.029444830504467563
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7673,14 +7673,14 @@ graph [
     last_close 265.44000244140625
     industry "Healthcare Plans"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 265.44000244140625
     name "Cigna"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05616225764971447
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7763,14 +7763,14 @@ graph [
     last_close 186.75
     industry "Specialty Business Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 186.75
     name "Cintas"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.2178126854991022
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7854,7 +7854,7 @@ graph [
     last_close 108.87999725341797
     industry "Banks - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T00:01:11.483000000+00:00"
     last_updated_at "1767254673840"
@@ -7862,7 +7862,7 @@ graph [
     name "Citigroup"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11444802117983321
+    raw_risk_score 0.38303571577425344
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -7946,7 +7946,7 @@ graph [
     last_close 270.8699951171875
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T13:03:21.252000000+00:00"
     last_updated_at "1767254673840"
@@ -7954,7 +7954,7 @@ graph [
     name "CME Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13729273886081408
+    raw_risk_score 0.5988163530826569
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8037,14 +8037,14 @@ graph [
     last_close 71.08999633789062
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 71.08999633789062
     name "CMS Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10865625879411699
+    raw_risk_score -0.31028030316034955
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8127,14 +8127,14 @@ graph [
     last_close 80.72000122070312
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 80.72000122070312
     name "Cognizant"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12147689353108455
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -8217,14 +8217,14 @@ graph [
     last_close 17.049999237060547
     industry "Packaged Foods"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 17.049999237060547
     name "Conagra Brands"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1316000290134975
+    raw_risk_score 0.616230587164561
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8307,14 +8307,14 @@ graph [
     last_close 142.3699951171875
     industry "Beverages - Brewers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 142.3699951171875
     name "Constellation Brands"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05849285204293761
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8397,14 +8397,14 @@ graph [
     last_close 38.720001220703125
     industry "Specialty Business Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 38.720001220703125
     name "Copart"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07542001079258237
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8487,14 +8487,14 @@ graph [
     last_close 68.01000213623047
     industry "Real Estate Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 68.01000213623047
     name "CoStar Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.077261870406689
+    raw_risk_score 0.9527694582939148
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8667,14 +8667,14 @@ graph [
     last_close 89.27999877929688
     industry "REIT - Specialty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 89.27999877929688
     name "Crown Castle"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10186766697571518
+    raw_risk_score 0.35337336858113605
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8757,14 +8757,14 @@ graph [
     last_close 36.29999923706055
     industry "Railroads"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 36.29999923706055
     name "CSX Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13786296262766884
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8847,14 +8847,14 @@ graph [
     last_close 510.6499938964844
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 510.6499938964844
     name "Cummins"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.040509285092597075
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -8937,14 +8937,14 @@ graph [
     last_close 75.62999725341797
     industry "Healthcare Plans"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 75.62999725341797
     name "CVS Health"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09275689382573031
+    raw_risk_score -0.324153999487559
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -9027,14 +9027,14 @@ graph [
     last_close 158.6199951171875
     industry "Residential Construction"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 158.6199951171875
     name "D. R. Horton"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10061520739205518
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -9117,14 +9117,14 @@ graph [
     last_close 226.25
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 226.25
     name "Danaher Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06891995835466772
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -9207,14 +9207,14 @@ graph [
     last_close 177.72000122070312
     industry "Restaurants"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 177.72000122070312
     name "Darden Restaurants"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.041976357536135336
+    raw_risk_score -0.08178669214248657
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -9297,14 +9297,14 @@ graph [
     last_close 117.38999938964844
     industry "Medical Care Facilities"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 117.38999938964844
     name "DaVita"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04007282602637115
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -9387,14 +9387,14 @@ graph [
     last_close 11.25
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 11.25
     name "Dentsply Sirona"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10717152706450182
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -9477,14 +9477,14 @@ graph [
     last_close 37.470001220703125
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 37.470001220703125
     name "Devon Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.061226446408423
+    raw_risk_score -0.8969109654426575
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -9568,7 +9568,7 @@ graph [
     last_close 65.48999786376953
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T23:04:38.197000000+00:00"
     last_updated_at "1767254673840"
@@ -9576,7 +9576,7 @@ graph [
     name "Dexcom"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05026801776836214
+    raw_risk_score 0.39999999999999997
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -9659,14 +9659,14 @@ graph [
     last_close 158.60000610351562
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 158.60000610351562
     name "Diamondback Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1345963405987883
+    raw_risk_score -0.0
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -9750,7 +9750,7 @@ graph [
     last_close 164.72999572753906
     industry "REIT - Specialty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T02:03:02.199000000+00:00"
     last_updated_at "1767254673840"
@@ -9758,7 +9758,7 @@ graph [
     name "Digital Realty"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.18201041456096542
+    raw_risk_score -0.4
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -9927,7 +9927,7 @@ graph [
     last_close 132.3699951171875
     industry "Discount Stores"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T15:01:56.062000000+00:00"
     last_updated_at "1767254673840"
@@ -9935,7 +9935,7 @@ graph [
     name "Dollar General"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10300833631424679
+    raw_risk_score -0.4474196314811706
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10019,7 +10019,7 @@ graph [
     last_close 122.44000244140625
     industry "Discount Stores"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T16:01:29.570000000+00:00"
     last_updated_at "1767254673840"
@@ -10027,7 +10027,7 @@ graph [
     name "Dollar Tree"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06201766200168034
+    raw_risk_score -0.6
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10110,14 +10110,14 @@ graph [
     last_close 416.54998779296875
     industry "Restaurants"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 416.54998779296875
     name "Domino's"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.14122857355945206
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10200,14 +10200,14 @@ graph [
     last_close 191.08999633789062
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 191.08999633789062
     name "Dover Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0863009980379586
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10290,14 +10290,14 @@ graph [
     last_close 22.959999084472656
     industry "Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 22.959999084472656
     name "Dow Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04823587514550434
+    raw_risk_score 0.6839362010359764
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -10381,7 +10381,7 @@ graph [
     last_close 116.5199966430664
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T21:01:30.208000000+00:00"
     last_updated_at "1767254673840"
@@ -10389,7 +10389,7 @@ graph [
     name "Duke Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.035088510297712976
+    raw_risk_score -0.6
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10473,7 +10473,7 @@ graph [
     last_close 337.6600036621094
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T15:03:33.677000000+00:00"
     last_updated_at "1767254673840"
@@ -10481,7 +10481,7 @@ graph [
     name "Eaton Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.053867801278658756
+    raw_risk_score -0.6159914374351501
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10564,14 +10564,14 @@ graph [
     last_close 82.47000122070312
     industry "Internet Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 82.47000122070312
     name "eBay Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05050252665318683
+    raw_risk_score 0.3378558113024785
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10654,14 +10654,14 @@ graph [
     last_close 259.69000244140625
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 259.69000244140625
     name "Ecolab"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09667097153893134
+    raw_risk_score -0.8398160934448242
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -10744,14 +10744,14 @@ graph [
     last_close 58.09000015258789
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 58.09000015258789
     name "Edison International"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10768968453787656
+    raw_risk_score -0.0
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10834,14 +10834,14 @@ graph [
     last_close 86.19000244140625
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 86.19000244140625
     name "Edwards Lifesciences"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.2526144733922603
+    raw_risk_score -0.03946813941001892
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -10925,7 +10925,7 @@ graph [
     last_close 203.9199981689453
     industry "Electronic Gaming &#38; Multimedia"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T19:06:22.159000000+00:00"
     last_updated_at "1767254673840"
@@ -10933,7 +10933,7 @@ graph [
     name "Electronic Arts"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1909905825233443
+    raw_risk_score 0.4907958912849426
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11016,14 +11016,14 @@ graph [
     last_close 330.75
     industry "Healthcare Plans"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 330.75
     name "Elevance Health"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.16259663582625833
+    raw_risk_score 0.9658532738685608
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11106,14 +11106,14 @@ graph [
     last_close 137.38999938964844
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 137.38999938964844
     name "Emerson Electric"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1554754558111769
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11196,14 +11196,14 @@ graph [
     last_close 31.25
     industry "Solar"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 31.25
     name "Enphase Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.15225579382720722
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -11286,14 +11286,14 @@ graph [
     last_close 94.22000122070312
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 94.22000122070312
     name "Entergy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05099751028991932
+    raw_risk_score -0.0
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11376,14 +11376,14 @@ graph [
     last_close 105.12999725341797
     industry "Household &#38; Personal Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 105.12999725341797
     name "Est&#233;e Lauder Companies (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0556803063660216
+    raw_risk_score 0.5438101608702478
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11466,14 +11466,14 @@ graph [
     last_close 53.2599983215332
     industry "Internet Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 53.2599983215332
     name "Etsy, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1422465239242852
+    raw_risk_score 0.7640058398246765
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11557,7 +11557,7 @@ graph [
     name "N/A"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.6101334575845413
+    raw_risk_score 0.60968748962178
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
@@ -11641,14 +11641,14 @@ graph [
     last_close 73.27999877929688
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 73.27999877929688
     name "Evergy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05672743528876832
+    raw_risk_score -0.0
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11731,14 +11731,14 @@ graph [
     last_close 66.73999786376953
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 66.73999786376953
     name "Eversource Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.025271981099000126
+    raw_risk_score 0.06754368543624878
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11821,14 +11821,14 @@ graph [
     last_close 43.810001373291016
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 43.810001373291016
     name "Exelon"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.043119608994949724
+    raw_risk_score 0.9336135983467102
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -11911,14 +11911,14 @@ graph [
     last_close 151.47000122070312
     industry "Integrated Freight &#38; Logistics"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 151.47000122070312
     name "Expeditors International"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07600696080898788
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -12001,14 +12001,14 @@ graph [
     last_close 129.55999755859375
     industry "REIT - Industrial"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 129.55999755859375
     name "Extra Space Storage"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03373806377759102
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -12094,7 +12094,7 @@ graph [
     industry "Oil &#38; Gas Integrated"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T17:02:36.321000000+00:00"
     updated_at "1768045191518"
@@ -12102,7 +12102,7 @@ graph [
     name "ExxonMobil"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.17215506310417333
+    raw_risk_score -0.2
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -12185,14 +12185,14 @@ graph [
     last_close 41.5
     industry "Industrial Distribution"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 41.5
     name "Fastenal"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.045061302290192284
+    raw_risk_score 0.31093276739120485
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -12276,7 +12276,7 @@ graph [
     last_close 97.19999694824219
     industry "REIT - Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T12:02:46.179000000+00:00"
     last_updated_at "1767254673840"
@@ -12284,7 +12284,7 @@ graph [
     name "Federal Realty Investment Trust"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.15736436492834877
+    raw_risk_score -0.7
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -12367,14 +12367,14 @@ graph [
     last_close 274.2900085449219
     industry "Integrated Freight &#38; Logistics"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 274.2900085449219
     name "FedEx"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03990878265505301
+    raw_risk_score -0.9205207824707031
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -12458,7 +12458,7 @@ graph [
     last_close 45.41999816894531
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T18:02:56.086000000+00:00"
     last_updated_at "1767254673840"
@@ -12466,7 +12466,7 @@ graph [
     name "Fifth Third Bancorp"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05392148175577158
+    raw_risk_score 0.6
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -12724,14 +12724,14 @@ graph [
     last_close 13.279999732971191
     industry "Agricultural Inputs"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 13.279999732971191
     name "FMC Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09203559779551557
+    raw_risk_score -0.0
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -12815,7 +12815,7 @@ graph [
     last_close 86.91999816894531
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T15:02:38.330000000+00:00"
     last_updated_at "1767254673840"
@@ -12823,7 +12823,7 @@ graph [
     name "Fortinet"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08718292186450402
+    raw_risk_score -0.7133134782314301
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -12906,14 +12906,14 @@ graph [
     last_close 53.75
     industry "Scientific &#38; Technical Instruments"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 53.75
     name "Fortive"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.036864045919520375
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -12996,14 +12996,14 @@ graph [
     last_close 23.399999618530273
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 23.399999618530273
     name "Franklin Resources"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08280639620464997
+    raw_risk_score 0.7238329838192651
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -13087,7 +13087,7 @@ graph [
     last_close 45.20000076293945
     industry "Copper"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T23:04:36.761000000+00:00"
     last_updated_at "1767254673840"
@@ -13095,7 +13095,7 @@ graph [
     name "Freeport-McMoRan"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09903101851317844
+    raw_risk_score 0.3875788569450378
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -13178,14 +13178,14 @@ graph [
     last_close 203.58999633789062
     industry "Scientific &#38; Technical Instruments"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 203.58999633789062
     name "Garmin"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07189272061891455
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -13268,14 +13268,14 @@ graph [
     last_close 229.77000427246094
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 229.77000427246094
     name "Gartner"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09433228156640888
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -13358,14 +13358,14 @@ graph [
     last_close 162.3300018310547
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 162.3300018310547
     name "Generac"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.2968396201194712
+    raw_risk_score -0.8069970011711121
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -13448,14 +13448,14 @@ graph [
     last_close 45.93000030517578
     industry "Packaged Foods"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 45.93000030517578
     name "General Mills"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05632912476413164
+    raw_risk_score -0.720842182636261
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -13539,7 +13539,7 @@ graph [
     last_close 121.22000122070312
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T15:02:59.680000000+00:00"
     last_updated_at "1767254673840"
@@ -13547,7 +13547,7 @@ graph [
     name "Gilead Sciences"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10677048542077844
+    raw_risk_score -0.6126667857170105
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -13630,14 +13630,14 @@ graph [
     last_close 131.3699951171875
     industry "Insurance - Life"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 131.3699951171875
     name "Globe Life"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05698416182005425
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -13720,14 +13720,14 @@ graph [
     last_close 78.8499984741211
     industry "Specialty Business Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 78.8499984741211
     name "Global Payments"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11296220996788785
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -13810,7 +13810,7 @@ graph [
     last_close 854.5599975585938
     industry "Capital Markets"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     updated_at "1767345396863"
     last_updated_at "1767254673840"
@@ -13818,7 +13818,7 @@ graph [
     name "Goldman Sachs"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0532926920557526
+    raw_risk_score -0.8867775201797485
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -13901,14 +13901,14 @@ graph [
     last_close 975.5399780273438
     industry "Industrial Distribution"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 975.5399780273438
     name "W. W. Grainger"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08594969783928458
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -13991,14 +13991,14 @@ graph [
     last_close 129.42999267578125
     industry "Insurance - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 129.42999267578125
     name "Hartford (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.031130755423493393
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14081,14 +14081,14 @@ graph [
     last_close 81.0999984741211
     industry "Leisure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 81.0999984741211
     name "Hasbro"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.23137141805876238
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14171,14 +14171,14 @@ graph [
     last_close 486.70001220703125
     industry "Medical Care Facilities"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 486.70001220703125
     name "HCA Healthcare"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13129595582723808
+    raw_risk_score 0.9340196847915649
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14262,7 +14262,7 @@ graph [
     name "N/A"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.351139809936285
+    raw_risk_score 0.3341786458211787
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
@@ -14346,14 +14346,14 @@ graph [
     last_close 73.62000274658203
     industry "Medical Distribution"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 73.62000274658203
     name "Henry Schein"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07201513407813558
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14521,14 +14521,14 @@ graph [
     last_close 272.25
     industry "Lodging"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 272.25
     name "Hilton Worldwide"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07723897825019056
+    raw_risk_score -0.931208610534668
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14702,7 +14702,7 @@ graph [
     last_close 354.6099853515625
     industry "Home Improvement Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-02T14:08:34.609000000+00:00"
     last_updated_at "1767254673840"
@@ -14710,7 +14710,7 @@ graph [
     name "Home Depot (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06796624113923207
+    raw_risk_score -0.47967363357543946
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14793,14 +14793,14 @@ graph [
     last_close 191.3300018310547
     industry "Conglomerates"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 191.3300018310547
     name "Honeywell"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.174391879897196
+    raw_risk_score -0.9064376354217529
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14883,14 +14883,14 @@ graph [
     last_close 24.34000015258789
     industry "Packaged Foods"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 24.34000015258789
     name "Hormel Foods"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.15738876304650887
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -14973,14 +14973,14 @@ graph [
     last_close 17.260000228881836
     industry "REIT - Hotel &#38; Motel"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 17.260000228881836
     name "Host Hotels &#38; Resorts"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13517834799824846
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -15063,14 +15063,14 @@ graph [
     last_close 190.97999572753906
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 190.97999572753906
     name "Howmet Aerospace"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10624382858478121
+    raw_risk_score -0.9293879866600037
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -15153,14 +15153,14 @@ graph [
     last_close 25.90999984741211
     industry "Computer Hardware"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 25.90999984741211
     name "HP Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.17483243948210303
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -15243,14 +15243,14 @@ graph [
     last_close 257.8500061035156
     industry "Healthcare Plans"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 257.8500061035156
     name "Humana"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08257858625548951
+    raw_risk_score 0.8394940793514252
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -15334,7 +15334,7 @@ graph [
     last_close 307.94000244140625
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T17:03:29.788000000+00:00"
     last_updated_at "1767254673840"
@@ -15342,7 +15342,7 @@ graph [
     name "IBM"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.30791933607078625
+    raw_risk_score 0.3717926502227783
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -15425,14 +15425,14 @@ graph [
     last_close 177.5399932861328
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 177.5399932861328
     name "IDEX Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.048573954178098414
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -15515,14 +15515,14 @@ graph [
     last_close 714.0999755859375
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 714.0999755859375
     name "Idexx Laboratories"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06894906476338516
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -15605,14 +15605,14 @@ graph [
     last_close 249.6999969482422
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 249.6999969482422
     name "Illinois Tool Works"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10888235008352667
+    raw_risk_score 0.7492923736572266
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -15695,14 +15695,14 @@ graph [
     last_close 128.9600067138672
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 128.9600067138672
     name "Illumina, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05604429878517984
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -15788,7 +15788,7 @@ graph [
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 1.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T03:01:40.234000000+00:00"
     updated_at "1768130528095"
@@ -15796,7 +15796,7 @@ graph [
     name "Intel"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.191061120669786
+    raw_risk_score -0.48486611843109123
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -15879,14 +15879,14 @@ graph [
     last_close 157.82000732421875
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 157.82000732421875
     name "Intercontinental Exchange"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1674868811360508
+    raw_risk_score 0.7372061382640489
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -15969,14 +15969,14 @@ graph [
     last_close 39.060001373291016
     industry "Packaging &#38; Containers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 39.060001373291016
     name "International Paper"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.15541991367141408
+    raw_risk_score -0.27229218681653344
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -16146,14 +16146,14 @@ graph [
     last_close 67.18000030517578
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 67.18000030517578
     name "International Flavors &#38; Fragrances"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1223713148652689
+    raw_risk_score -0.0
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -16236,14 +16236,14 @@ graph [
     last_close 673.6300048828125
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 673.6300048828125
     name "Intuit"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12316268506967376
+    raw_risk_score 0.9583693742752075
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -16327,7 +16327,7 @@ graph [
     last_close 575.3400268554688
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T18:02:12.891000000+00:00"
     last_updated_at "1767254673840"
@@ -16335,7 +16335,7 @@ graph [
     name "Intuitive Surgical"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1914308416749125
+    raw_risk_score 0.6
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -16418,14 +16418,14 @@ graph [
     last_close 26.239999771118164
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 26.239999771118164
     name "Invesco"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.14826343501641864
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -16508,14 +16508,14 @@ graph [
     last_close 225.85000610351562
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 225.85000610351562
     name "IQVIA"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0692957083455149
+    raw_risk_score 0.9601476788520813
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -16598,14 +16598,14 @@ graph [
     last_close 220.05999755859375
     industry "Electronic Components"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 220.05999755859375
     name "Jabil"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08982888047332183
+    raw_risk_score -0.7497267723083496
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -16688,14 +16688,14 @@ graph [
     last_close 140.22000122070312
     industry "Engineering &#38; Construction"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 140.22000122070312
     name "Jacobs Solutions"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10064272710770887
+    raw_risk_score 0.5943931580885597
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -16779,7 +16779,7 @@ graph [
     last_close 201.92999267578125
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T19:02:37.892000000+00:00"
     last_updated_at "1767254673840"
@@ -16787,7 +16787,7 @@ graph [
     name "Johnson &#38; Johnson"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03801665401180926
+    raw_risk_score -0.07632790009180707
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -16871,7 +16871,7 @@ graph [
     last_close 114.2300033569336
     industry "Building Products &#38; Equipment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T16:05:06.765000000+00:00"
     last_updated_at "1767254673840"
@@ -16879,7 +16879,7 @@ graph [
     name "Johnson Controls"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08003972117470806
+    raw_risk_score -0.7
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -16965,7 +16965,7 @@ graph [
     industry "Banks - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T10:00:41.652000000+00:00"
     updated_at "1768045191518"
@@ -16973,7 +16973,7 @@ graph [
     name "JPMorgan Chase"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11481598889199339
+    raw_risk_score -0.34576941505074504
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -17148,7 +17148,7 @@ graph [
     name "Kellanova"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.4858107877274354
+    raw_risk_score 0.44740005938903143
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -17231,14 +17231,14 @@ graph [
     last_close 210.49000549316406
     industry "Scientific &#38; Technical Instruments"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 210.49000549316406
     name "Keysight Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06787474039192821
+    raw_risk_score 0.5583824614683787
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -17321,14 +17321,14 @@ graph [
     last_close 27.770000457763672
     industry "Oil &#38; Gas Midstream"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 27.770000457763672
     name "Kinder Morgan"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08197617913223373
+    raw_risk_score -0.0
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -17411,14 +17411,14 @@ graph [
     last_close 278.5
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 278.5
     name "L3Harris"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07997782669815041
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -17501,14 +17501,14 @@ graph [
     last_close 258.3900146484375
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 258.3900146484375
     name "Labcorp"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13284512138223056
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -17591,14 +17591,14 @@ graph [
     last_close 66.25
     industry "Resorts &#38; Casinos"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 66.25
     name "Las Vegas Sands"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0942710942398217
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -17681,14 +17681,14 @@ graph [
     last_close 186.82000732421875
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 186.82000732421875
     name "Leidos"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13229315048589152
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -17772,7 +17772,7 @@ graph [
     last_close 123.91000366210938
     industry "Residential Construction"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T03:01:16.116000000+00:00"
     last_updated_at "1767254673840"
@@ -17780,7 +17780,7 @@ graph [
     name "Lennar"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05288533034799371
+    raw_risk_score -0.5097432971000672
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -17863,14 +17863,14 @@ graph [
     last_close 42.7400016784668
     industry "Insurance - Life"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 42.7400016784668
     name "Lincoln National Corp"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12920082442314582
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -17953,14 +17953,14 @@ graph [
     last_close 399.57000732421875
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 399.57000732421875
     name "Linde plc"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.15397451019051095
+    raw_risk_score -0.2879992524782817
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -18043,14 +18043,14 @@ graph [
     last_close 139.3300018310547
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 139.3300018310547
     name "Live Nation Entertainment"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07645674925366705
+    raw_risk_score -0.0
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -18133,14 +18133,14 @@ graph [
     last_close 29.450000762939453
     industry "Auto Parts"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 29.450000762939453
     name "LKQ Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03942156800092235
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -18223,14 +18223,14 @@ graph [
     last_close 452.20001220703125
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 452.20001220703125
     name "Lockheed Martin"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.16177409097436657
+    raw_risk_score -0.8863357901573181
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -18313,14 +18313,14 @@ graph [
     last_close 102.81999969482422
     industry "Insurance - Property &#38; Casualty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 102.81999969482422
     name "Loews Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05343674350976922
+    raw_risk_score 0.3244015723466874
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -18403,14 +18403,14 @@ graph [
     last_close 248.47000122070312
     industry "Home Improvement Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 248.47000122070312
     name "Lowe's"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08206606912939649
+    raw_risk_score 0.7420595198495614
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -18494,7 +18494,7 @@ graph [
     last_close 190.00999450683594
     industry "Apparel Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T09:01:44.616000000+00:00"
     last_updated_at "1767254673840"
@@ -18502,7 +18502,7 @@ graph [
     name "Lululemon Athletica"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06418769997688491
+    raw_risk_score -0.06008563280105592
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -18585,14 +18585,14 @@ graph [
     last_close 195.11000061035156
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 195.11000061035156
     name "M&#38;T Bank"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.082813460939805
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -18850,14 +18850,14 @@ graph [
     last_close 624.3699951171875
     industry "Building Materials"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 624.3699951171875
     name "Martin Marietta Materials"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09338070576112868
+    raw_risk_score 0.8362513184547424
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -18940,14 +18940,14 @@ graph [
     last_close 34.52000045776367
     industry "Internet Content &#38; Information"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 34.52000045776367
     name "Match Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05154167187869275
+    raw_risk_score -0.0
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19030,14 +19030,14 @@ graph [
     last_close 311.2300109863281
     industry "Restaurants"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 311.2300109863281
     name "McDonald's"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10600149316157662
+    raw_risk_score 0.3766864359378814
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19120,14 +19120,14 @@ graph [
     last_close 808.6199951171875
     industry "Medical Distribution"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 808.6199951171875
     name "McKesson Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1052485975726905
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19211,7 +19211,7 @@ graph [
     last_close 101.36000061035156
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T05:00:54.145000000+00:00"
     last_updated_at "1767254673840"
@@ -19219,7 +19219,7 @@ graph [
     name "Medtronic"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04516810216277074
+    raw_risk_score -0.27499999999999997
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19303,7 +19303,7 @@ graph [
     last_close 99.72000122070312
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T13:01:36.553000000+00:00"
     last_updated_at "1767254673840"
@@ -19311,7 +19311,7 @@ graph [
     name "Merck &#38; Co."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05462280054092124
+    raw_risk_score -0.3628196052142552
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19394,14 +19394,14 @@ graph [
     last_close 78.66000366210938
     industry "Insurance - Life"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 78.66000366210938
     name "MetLife"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11201026768626622
+    raw_risk_score 0.5971426704655522
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19484,14 +19484,14 @@ graph [
     last_close 1414.8599853515625
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 1414.8599853515625
     name "Mettler Toledo"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0726248997787348
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19574,14 +19574,14 @@ graph [
     last_close 36.06999969482422
     industry "Resorts &#38; Casinos"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 36.06999969482422
     name "MGM Resorts"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03989925875149423
+    raw_risk_score 0.8233562409877777
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19664,14 +19664,14 @@ graph [
     last_close 65.80999755859375
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 65.80999755859375
     name "Microchip Technology"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11567165130707724
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -19755,7 +19755,7 @@ graph [
     last_close 237.22000122070312
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T17:02:11.344000000+00:00"
     updated_at "1767345396863"
@@ -19764,7 +19764,7 @@ graph [
     name "Micron Technology"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11112083808318625
+    raw_risk_score -0.19175267418225603
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -19847,14 +19847,14 @@ graph [
     last_close 110.69000244140625
     industry "Furnishings, Fixtures &#38; Appliances"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 110.69000244140625
     name "Mohawk Industries"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06495358695773526
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -19937,14 +19937,14 @@ graph [
     last_close 151.86000061035156
     industry "Healthcare Plans"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 151.86000061035156
     name "Molina Healthcare"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.18958068463571132
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -20027,14 +20027,14 @@ graph [
     last_close 963.280029296875
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 963.280029296875
     name "Monolithic Power Systems"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10234820038751408
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -20117,14 +20117,14 @@ graph [
     last_close 73.73999786376953
     industry "Beverages - Non-Alcoholic"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 73.73999786376953
     name "Monster Beverage"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05058870061401493
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -20207,14 +20207,14 @@ graph [
     last_close 496.5
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 496.5
     name "Moody's Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07629475941163327
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -20298,7 +20298,7 @@ graph [
     last_close 176.50999450683594
     industry "Capital Markets"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-02T17:52:13.844000000+00:00"
     updated_at "1767345396863"
@@ -20307,7 +20307,7 @@ graph [
     name "Morgan Stanley"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08170035327652284
+    raw_risk_score 0.018072990367287114
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -20390,14 +20390,14 @@ graph [
     last_close 374.3900146484375
     industry "Communication Equipment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 374.3900146484375
     name "Motorola Solutions"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.022990045977896986
+    raw_risk_score 0.06678709387779236
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -20480,14 +20480,14 @@ graph [
     last_close 538.260009765625
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 538.260009765625
     name "MSCI Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11424268294955076
+    raw_risk_score 0.5608853220939636
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -20570,14 +20570,14 @@ graph [
     last_close 117.2699966430664
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 117.2699966430664
     name "NetApp"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07600734787950517
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -20661,7 +20661,7 @@ graph [
     last_close 100.23999786376953
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T00:01:57.566000000+00:00"
     last_updated_at "1767254673840"
@@ -20669,7 +20669,7 @@ graph [
     name "Netflix"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.16551147486543014
+    raw_risk_score -0.07539076209068298
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -20752,14 +20752,14 @@ graph [
     last_close 89.76000213623047
     industry "Gold"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 89.76000213623047
     name "Newmont"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0594435738934946
+    raw_risk_score -0.0
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -20844,14 +20844,14 @@ graph [
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     updated_at "1768045191518"
     price 80.28
     name "NextEra Energy"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03043985195452651
+    raw_risk_score -0.7869057655334473
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -20935,7 +20935,7 @@ graph [
     last_close 65.86000061035156
     industry "Footwear &#38; Accessories"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T09:01:45.029000000+00:00"
     last_updated_at "1767254673840"
@@ -20943,7 +20943,7 @@ graph [
     name "Nike, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06987858968523225
+    raw_risk_score -0.2
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21026,14 +21026,14 @@ graph [
     last_close 42.0
     industry "Utilities - Regulated Gas"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 42.0
     name "NiSource"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10182918772277305
+    raw_risk_score 0.08606794807646012
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21116,14 +21116,14 @@ graph [
     last_close 238.92999267578125
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 238.92999267578125
     name "Nordson Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12809128169867573
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21206,14 +21206,14 @@ graph [
     last_close 294.19000244140625
     industry "Railroads"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 294.19000244140625
     name "Norfolk Southern"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12735640536927928
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21296,14 +21296,14 @@ graph [
     last_close 133.2100067138672
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 133.2100067138672
     name "Northern Trust"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03538900821067747
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21386,14 +21386,14 @@ graph [
     last_close 548.969970703125
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 548.969970703125
     name "Northrop Grumman"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03783656114055053
+    raw_risk_score 0.8861893713474274
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21476,14 +21476,14 @@ graph [
     last_close 18.920000076293945
     industry "Travel Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 18.920000076293945
     name "Norwegian Cruise Line Holdings"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12508695270397485
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21566,14 +21566,14 @@ graph [
     last_close 163.0
     industry "Utilities - Independent Power Producers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 163.0
     name "NRG Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.056416023615144494
+    raw_risk_score -0.0
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21656,14 +21656,14 @@ graph [
     last_close 159.4499969482422
     industry "Steel"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 159.4499969482422
     name "Nucor"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.17001909454747727
+    raw_risk_score -0.0
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -21749,7 +21749,7 @@ graph [
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T07:00:59.016000000+00:00"
     updated_at "1768045191518"
@@ -21757,7 +21757,7 @@ graph [
     name "Nvidia"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04472189608293522
+    raw_risk_score -0.45574469765027364
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -21840,14 +21840,14 @@ graph [
     last_close 7538.080078125
     industry "Residential Construction"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 7538.080078125
     name "NVR, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10298742601894587
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -21931,7 +21931,7 @@ graph [
     last_close 227.9499969482422
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T12:30:14.535000000+00:00"
     last_updated_at "1767254673840"
@@ -21939,7 +21939,7 @@ graph [
     name "NXP Semiconductors"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05985822816057866
+    raw_risk_score -0.41258063713709514
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -22022,14 +22022,14 @@ graph [
     last_close 98.88999938964844
     industry "Auto Parts"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 98.88999938964844
     name "O&#8217;Reilly Automotive"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09718339774565676
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -22112,14 +22112,14 @@ graph [
     last_close 155.14999389648438
     industry "Trucking"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 155.14999389648438
     name "Old Dominion"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09099138625698391
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -22202,14 +22202,14 @@ graph [
     last_close 73.44000244140625
     industry "Advertising Agencies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 73.44000244140625
     name "Omnicom Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06165635470405643
+    raw_risk_score -0.0
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -22292,14 +22292,14 @@ graph [
     last_close 54.7400016784668
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 54.7400016784668
     name "ON Semiconductor"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07831312202613784
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -22382,14 +22382,14 @@ graph [
     last_close 76.33999633789062
     industry "Oil &#38; Gas Midstream"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 76.33999633789062
     name "Oneok"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05471082651952794
+    raw_risk_score -0.0
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -22472,14 +22472,14 @@ graph [
     last_close 7.139999866485596
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 7.139999866485596
     name "Organon &#38; Co."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03257379528828676
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -22562,14 +22562,14 @@ graph [
     last_close 86.44999694824219
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 86.44999694824219
     name "Otis Worldwide"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0353489508365811
+    raw_risk_score 0.82251837849617
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -22652,14 +22652,14 @@ graph [
     last_close 110.33000183105469
     industry "Farm &#38; Heavy Construction Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 110.33000183105469
     name "Paccar"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.15857032979805916
+    raw_risk_score -0.9200085401535034
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -22742,14 +22742,14 @@ graph [
     last_close 198.47999572753906
     industry "Packaging &#38; Containers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 198.47999572753906
     name "Packaging Corporation of America"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1465573671937297
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -22833,7 +22833,7 @@ graph [
     name "Paramount Global"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.3838103711605072
+    raw_risk_score -0.5188976426919302
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
@@ -22917,14 +22917,14 @@ graph [
     last_close 880.0
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 880.0
     name "Parker Hannifin"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0902975629789132
+    raw_risk_score 0.923192173242569
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -23007,14 +23007,14 @@ graph [
     last_close 112.05999755859375
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 112.05999755859375
     name "Paychex"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13062463793769297
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -23097,14 +23097,14 @@ graph [
     last_close 165.72000122070312
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 165.72000122070312
     name "Paycom"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09737173334590994
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -23187,14 +23187,14 @@ graph [
     last_close 104.25
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 104.25
     name "Pentair"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.19566727924284563
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -23278,7 +23278,7 @@ graph [
     last_close 26.030000686645508
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T21:04:13.571000000+00:00"
     last_updated_at "1767254673840"
@@ -23286,7 +23286,7 @@ graph [
     name "Pfizer"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13121150139579602
+    raw_risk_score -0.2833333333333333
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -23369,14 +23369,14 @@ graph [
     last_close 15.15999984741211
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 15.15999984741211
     name "PG&#38;E Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07459516925637849
+    raw_risk_score -0.0
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -23459,14 +23459,14 @@ graph [
     last_close 147.80999755859375
     industry "Tobacco"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 147.80999755859375
     name "Philip Morris International"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08513771413003182
+    raw_risk_score 0.2772501972630794
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -23634,14 +23634,14 @@ graph [
     last_close 239.52000427246094
     industry "Industrial Distribution"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 239.52000427246094
     name "Pool Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.18362337543338603
+    raw_risk_score 0.7258550750107327
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -23724,14 +23724,14 @@ graph [
     last_close 101.02999877929688
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 101.02999877929688
     name "PPG Industries"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.054294263969709426
+    raw_risk_score 0.9316506385803223
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -23814,14 +23814,14 @@ graph [
     last_close 33.86000061035156
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 33.86000061035156
     name "PPL Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05108546059633035
+    raw_risk_score -0.0
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -23905,7 +23905,7 @@ graph [
     last_close 222.88999938964844
     industry "Insurance - Property &#38; Casualty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T17:03:26.457000000+00:00"
     last_updated_at "1767254673840"
@@ -23913,7 +23913,7 @@ graph [
     name "Progressive Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13534604995244845
+    raw_risk_score -0.3
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -23996,14 +23996,14 @@ graph [
     last_close 127.9800033569336
     industry "REIT - Industrial"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 127.9800033569336
     name "Prologis"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07283691733300021
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -24086,14 +24086,14 @@ graph [
     last_close 173.52000427246094
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 173.52000427246094
     name "PTC Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0534149934452478
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -24176,14 +24176,14 @@ graph [
     last_close 126.98999786376953
     industry "Residential Construction"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 126.98999786376953
     name "PulteGroup"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04253827786536662
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -24266,14 +24266,14 @@ graph [
     last_close 89.95999908447266
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 89.95999908447266
     name "Qorvo, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10635699387754557
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -24356,14 +24356,14 @@ graph [
     last_close 460.6400146484375
     industry "Engineering &#38; Construction"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 460.6400146484375
     name "Quanta Services"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11680554091535744
+    raw_risk_score -0.9369558095932007
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -24447,7 +24447,7 @@ graph [
     last_close 174.80999755859375
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T14:04:09.879000000+00:00"
     updated_at "1767345396863"
@@ -24456,7 +24456,7 @@ graph [
     name "Qualcomm"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12259836172785116
+    raw_risk_score 0.05523974100748691
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -24539,14 +24539,14 @@ graph [
     last_close 368.4200134277344
     industry "Apparel Manufacturing"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 368.4200134277344
     name "Ralph Lauren Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07835939544505936
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -24630,7 +24630,7 @@ graph [
     last_close 58.47999954223633
     industry "REIT - Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T02:02:20.616000000+00:00"
     last_updated_at "1767254673840"
@@ -24638,7 +24638,7 @@ graph [
     name "Realty Income"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08481602335429869
+    raw_risk_score 0.29457698322477793
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -24721,14 +24721,14 @@ graph [
     last_close 68.69999694824219
     industry "REIT - Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 68.69999694824219
     name "Regency Centers"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07911490901422849
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -24811,14 +24811,14 @@ graph [
     last_close 216.52999877929688
     industry "Waste Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 216.52999877929688
     name "Republic Services"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07520657881946109
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -24901,14 +24901,14 @@ graph [
     last_close 256.54998779296875
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 256.54998779296875
     name "ResMed"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12657318371014692
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -24991,14 +24991,14 @@ graph [
     last_close 100.79000091552734
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 100.79000091552734
     name "Revvity"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07780992958853747
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -25081,14 +25081,14 @@ graph [
     last_close 26.799999237060547
     industry "Staffing &#38; Employment Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 26.799999237060547
     name "Robert Half Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.16409828102305196
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -25171,14 +25171,14 @@ graph [
     last_close 404.2900085449219
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 404.2900085449219
     name "Rockwell Automation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04103416593267379
+    raw_risk_score -0.8853219747543335
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -25261,14 +25261,14 @@ graph [
     last_close 61.400001525878906
     industry "Personal Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 61.400001525878906
     name "Rollins, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.15641568622263533
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -25352,7 +25352,7 @@ graph [
     last_close 177.8699951171875
     industry "Apparel Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T13:00:53.601000000+00:00"
     last_updated_at "1767254673840"
@@ -25360,7 +25360,7 @@ graph [
     name "Ross Stores"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.20855790045774703
+    raw_risk_score -0.8060601870218913
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -25443,14 +25443,14 @@ graph [
     last_close 257.6600036621094
     industry "Travel Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 257.6600036621094
     name "Royal Caribbean Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.14122865441420934
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -25533,14 +25533,14 @@ graph [
     last_close 498.5199890136719
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 498.5199890136719
     name "S&#38;P Global"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05797144276926126
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -25624,7 +25624,7 @@ graph [
     last_close 260.57000732421875
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T21:01:30.300000000+00:00"
     last_updated_at "1767254673840"
@@ -25632,7 +25632,7 @@ graph [
     name "Salesforce"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06964344089885323
+    raw_risk_score -0.6808703635420118
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -25715,14 +25715,14 @@ graph [
     last_close 278.7900085449219
     industry "Computer Hardware"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 278.7900085449219
     name "Seagate Technology"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10745686221966849
+    raw_risk_score 0.8955344557762146
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -25805,14 +25805,14 @@ graph [
     last_close 854.3599853515625
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 854.3599853515625
     name "ServiceNow"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09954524878874252
+    raw_risk_score 0.5813766748072151
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -25895,14 +25895,14 @@ graph [
     last_close 0.7799999713897705
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 0.7799999713897705
     name "SIGNATURE BANK (NY)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.26160312760049087
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -25985,14 +25985,14 @@ graph [
     last_close 69.31999969482422
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 69.31999969482422
     name "Skyworks Solutions"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10625172874641237
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472451329231262
@@ -26075,14 +26075,14 @@ graph [
     last_close 72.47000122070312
     industry "Tools &#38; Accessories"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 72.47000122070312
     name "Stanley Black &#38; Decker"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09603971605885123
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -26165,14 +26165,14 @@ graph [
     last_close 364.0199890136719
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 364.0199890136719
     name "Stryker Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06925649248200377
+    raw_risk_score 0.7544648051261902
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -26256,7 +26256,7 @@ graph [
     last_close 466.760009765625
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T00:02:34.979000000+00:00"
     last_updated_at "1767254673840"
@@ -26264,7 +26264,7 @@ graph [
     name "Synopsys"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1620040300245308
+    raw_risk_score 0.30000000000000004
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -26347,14 +26347,14 @@ graph [
     last_close 73.0999984741211
     industry "Food Distribution"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 73.0999984741211
     name "Sysco"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0338094678737289
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -26438,7 +26438,7 @@ graph [
     last_close 209.6300048828125
     industry "Telecom Services"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T12:08:01.090000000+00:00"
     last_updated_at "1767254673840"
@@ -26446,7 +26446,7 @@ graph [
     name "T-Mobile US"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09818497234767007
+    raw_risk_score 0.35
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -26529,14 +26529,14 @@ graph [
     last_close 106.58000183105469
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 106.58000183105469
     name "T. Rowe Price"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.043148725688405984
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -26620,7 +26620,7 @@ graph [
     last_close 247.8800048828125
     industry "Electronic Gaming &#38; Multimedia"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T22:03:02.708000000+00:00"
     last_updated_at "1767254673840"
@@ -26628,7 +26628,7 @@ graph [
     name "Take-Two Interactive"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10438014876286167
+    raw_risk_score -0.2
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -26712,7 +26712,7 @@ graph [
     last_close 92.19000244140625
     industry "Discount Stores"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T00:01:27.668000000+00:00"
     last_updated_at "1767254673840"
@@ -26720,7 +26720,7 @@ graph [
     name "Target Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.17968470038694095
+    raw_risk_score -0.8037357687950134
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -26803,14 +26803,14 @@ graph [
     last_close 234.36000061035156
     industry "Electronic Components"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 234.36000061035156
     name "TE Connectivity"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10485066320418644
+    raw_risk_score 0.3911104798316955
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -26893,14 +26893,14 @@ graph [
     last_close 83.47000122070312
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 83.47000122070312
     name "Textron"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11816301653153345
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -26984,7 +26984,7 @@ graph [
     last_close 572.77001953125
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T11:05:41.308000000+00:00"
     last_updated_at "1767254673840"
@@ -26992,7 +26992,7 @@ graph [
     name "Thermo Fisher Scientific"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1470583925279425
+    raw_risk_score 0.07199502786000572
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -27075,14 +27075,14 @@ graph [
     last_close 153.27999877929688
     industry "Apparel Retail"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 153.27999877929688
     name "TJX Companies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06342088045014141
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -27165,14 +27165,14 @@ graph [
     last_close 401.42999267578125
     industry "Building Products &#38; Equipment"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 401.42999267578125
     name "Trane Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07025729860103605
+    raw_risk_score 0.19135003685951235
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -27255,14 +27255,14 @@ graph [
     last_close 280.8900146484375
     industry "Insurance - Property &#38; Casualty"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 280.8900146484375
     name "Travelers Companies (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.2060036840641876
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -27345,14 +27345,14 @@ graph [
     last_close 469.3299865722656
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 469.3299865722656
     name "Tyler Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0692604915047824
+    raw_risk_score -0.9245031476020813
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -27435,14 +27435,14 @@ graph [
     last_close 56.91999816894531
     industry "Farm Products"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 56.91999816894531
     name "Tyson Foods"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10174145386109719
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -27525,14 +27525,14 @@ graph [
     last_close 51.2599983215332
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 51.2599983215332
     name "U.S. Bancorp"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04126320744866633
+    raw_risk_score 0.9321477250619369
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -27615,14 +27615,14 @@ graph [
     last_close 35.20000076293945
     industry "REIT - Residential"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 35.20000076293945
     name "UDR, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12666578602603226
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -27705,14 +27705,14 @@ graph [
     last_close 174.13999938964844
     industry "Oil &#38; Gas Refining &#38; Marketing"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 174.13999938964844
     name "Valero Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.17893143430298297
+    raw_risk_score -0.0
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -27795,14 +27795,14 @@ graph [
     last_close 80.61000061035156
     industry "REIT - Healthcare Facilities"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 80.61000061035156
     name "Ventas"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.14576362539920878
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -27885,14 +27885,14 @@ graph [
     last_close 249.5399932861328
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 249.5399932861328
     name "Verisign"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08207086087476609
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -27975,14 +27975,14 @@ graph [
     last_close 19.049999237060547
     industry "Apparel Manufacturing"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 19.049999237060547
     name "VF Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08381172888330138
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -28068,7 +28068,7 @@ graph [
     industry "Credit Services"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T19:02:10.565000000+00:00"
     updated_at "1768045191518"
@@ -28076,7 +28076,7 @@ graph [
     name "Visa Inc."
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08204238176684625
+    raw_risk_score 0.17618745962778726
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -28159,14 +28159,14 @@ graph [
     last_close 214.9499969482422
     industry "Railroads"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 214.9499969482422
     name "Wabtec"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.2429486454130705
+    raw_risk_score -0.7497333288192749
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -28337,7 +28337,7 @@ graph [
     industry "Discount Stores"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T00:01:20.735000000+00:00"
     updated_at "1768045191518"
@@ -28345,7 +28345,7 @@ graph [
     name "Walmart"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03125582621615538
+    raw_risk_score -0.8383143583933512
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -28428,14 +28428,14 @@ graph [
     last_close 213.5800018310547
     industry "Waste Management"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 213.5800018310547
     name "Waste Management"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03416399916290397
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -28519,7 +28519,7 @@ graph [
     last_close 105.70999908447266
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T22:06:07.050000000+00:00"
     last_updated_at "1767254673840"
@@ -28527,7 +28527,7 @@ graph [
     name "WEC Energy Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09012315124111846
+    raw_risk_score -0.7
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -28610,14 +28610,14 @@ graph [
     last_close 204.30999755859375
     industry "REIT - Healthcare Facilities"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 204.30999755859375
     name "Welltower"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10852405607045969
+    raw_risk_score 0.026470023961294258
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -28785,14 +28785,14 @@ graph [
     last_close 62.810001373291016
     industry "Oil &#38; Gas Midstream"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 62.810001373291016
     name "Williams Companies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12283330409507631
+    raw_risk_score -0.0
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -28875,14 +28875,14 @@ graph [
     last_close 125.51000213623047
     industry "Resorts &#38; Casinos"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 125.51000213623047
     name "Wynn Resorts"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07974387849125673
+    raw_risk_score 0.809651643037796
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -28965,14 +28965,14 @@ graph [
     last_close 77.18000030517578
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 77.18000030517578
     name "Xcel Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.02340237953719268
+    raw_risk_score -0.0
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -29055,14 +29055,14 @@ graph [
     last_close 139.00999450683594
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 139.00999450683594
     name "Xylem Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03287348822894738
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -29145,14 +29145,14 @@ graph [
     last_close 144.9600067138672
     industry "Restaurants"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 144.9600067138672
     name "Yum! Brands"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.25317104007471836
+    raw_risk_score -0.7142457365989685
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -29235,14 +29235,14 @@ graph [
     last_close 264.80999755859375
     industry "Communication Equipment"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 264.80999755859375
     name "Zebra Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03310569181912994
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -29325,14 +29325,14 @@ graph [
     last_close 94.27999877929688
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 94.27999877929688
     name "Zimmer Biomet"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07739137609522964
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -29415,14 +29415,14 @@ graph [
     last_close 55.45000076293945
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 55.45000076293945
     name "Zions Bancorporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07486354095706832
+    raw_risk_score 0.7528480291366577
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -29505,14 +29505,14 @@ graph [
     last_close 118.6500015258789
     industry "Drug Manufacturers - Specialty &#38; Generic"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 118.6500015258789
     name "Zoetis"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.060433448814671456
+    raw_risk_score 0.7939502000808716
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -29598,7 +29598,7 @@ graph [
     industry "Computer Hardware"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 1.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T06:01:09.766000000+00:00"
     updated_at "1768130528095"
@@ -29606,7 +29606,7 @@ graph [
     name "IonQ, Inc."
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.22997910471150318
+    raw_risk_score -0.11624462604522709
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -29692,7 +29692,7 @@ graph [
     industry "Grocery Stores"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 1.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T18:02:59.064000000+00:00"
     updated_at "1768130528095"
@@ -29700,7 +29700,7 @@ graph [
     name "Kroger"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04744208014861887
+    raw_risk_score 0.04428856968879699
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -29785,14 +29785,14 @@ graph [
     industry "Beverages - Non-Alcoholic"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 1.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     updated_at "1768130528095"
     price 69.91
     name "Coca-Cola Company (The)"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03021946116741604
+    raw_risk_score -0.9143140316009521
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -29877,14 +29877,14 @@ graph [
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 1.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     updated_at "1768130528095"
     price 41.12
     name "Occidental Petroleum"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11296814730042232
+    raw_risk_score -0.0
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -29969,14 +29969,14 @@ graph [
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 1.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     updated_at "1768130528095"
     price 19.995
     name "Sirius XM Holdings"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.056582982450632716
+    raw_risk_score 0.07874590158462524
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -30059,14 +30059,14 @@ graph [
     last_close 290.6300048828125
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 290.6300048828125
     name "FactSet"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07897541544782513
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -30150,7 +30150,7 @@ graph [
     last_close 483.1600036621094
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T20:03:06.119000000+00:00"
     updated_at "1767345396863"
@@ -30159,7 +30159,7 @@ graph [
     name "Microsoft"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.029455434632812406
+    raw_risk_score -0.2822120970801303
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -30243,7 +30243,7 @@ graph [
     last_close 125.08000183105469
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T19:04:06.159000000+00:00"
     last_updated_at "1767254673840"
@@ -30251,7 +30251,7 @@ graph [
     name "Abbott Laboratories"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1538841797433125
+    raw_risk_score 0.6633613149325053
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -30334,14 +30334,14 @@ graph [
     last_close 257.6099853515625
     industry "Solar"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 257.6099853515625
     name "First Solar"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.16944410608838092
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -30424,14 +30424,14 @@ graph [
     last_close 44.90999984741211
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 44.90999984741211
     name "FirstEnergy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06677034419330755
+    raw_risk_score -0.2604413628578186
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -30515,7 +30515,7 @@ graph [
     last_close 455.0
     industry "Auto Manufacturers"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T21:01:37.770000000+00:00"
     updated_at "1767345396863"
@@ -30524,7 +30524,7 @@ graph [
     name "Tesla, Inc."
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.27970270330018354
+    raw_risk_score -0.0880787629347581
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -30608,7 +30608,7 @@ graph [
     last_close 260.69000244140625
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T19:02:39.363000000+00:00"
     last_updated_at "1767254673840"
@@ -30616,7 +30616,7 @@ graph [
     name "Air Products"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1326510819704204
+    raw_risk_score -0.19999999999999996
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -30699,14 +30699,14 @@ graph [
     last_close 23.239999771118164
     industry "Resorts &#38; Casinos"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 23.239999771118164
     name "Caesars Entertainment"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06822838524758616
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -30789,7 +30789,7 @@ graph [
     last_close 67.0999984741211
     industry "Airlines"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     updated_at "1767345396863"
     last_updated_at "1767254673840"
@@ -30797,7 +30797,7 @@ graph [
     name "Delta Air Lines"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05828361598121526
+    raw_risk_score 0.495108425617218
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -30880,14 +30880,14 @@ graph [
     last_close 84.30999755859375
     industry "REIT - Specialty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 84.30999755859375
     name "Iron Mountain"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.19963392602845131
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -30971,7 +30971,7 @@ graph [
     last_close 198.83999633789062
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T19:01:27.119000000+00:00"
     last_updated_at "1767254673840"
@@ -30979,7 +30979,7 @@ graph [
     name "Palo Alto Networks"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1154701591112221
+    raw_risk_score -0.32355272173881533
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -31062,14 +31062,14 @@ graph [
     last_close 23.610000610351562
     industry "Agricultural Inputs"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 23.610000610351562
     name "Mosaic Company (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10257878926015784
+    raw_risk_score 0.8447545170783997
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -31242,7 +31242,7 @@ graph [
     last_close 37.849998474121094
     industry "Airlines"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     updated_at "1767345396863"
     last_updated_at "1767254673840"
@@ -31250,7 +31250,7 @@ graph [
     name "Southwest Airlines"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.14037963297488948
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -31334,7 +31334,7 @@ graph [
     last_close 104.94999694824219
     industry "Airlines"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T12:07:53.410000000+00:00"
     updated_at "1767345396863"
@@ -31343,7 +31343,7 @@ graph [
     name "United Airlines Holdings"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10938884277663079
+    raw_risk_score 0.11996713081995647
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -31426,14 +31426,14 @@ graph [
     last_close 76.05000305175781
     industry "Auto Manufacturers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 76.05000305175781
     name "General Motors"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.20281318517918684
+    raw_risk_score 0.25190746784210205
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -31516,14 +31516,14 @@ graph [
     last_close 93.69000244140625
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 93.69000244140625
     name "ConocoPhillips"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12055517287604262
+    raw_risk_score 0.7830199291831568
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -31606,14 +31606,14 @@ graph [
     last_close 1346.8599853515625
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 1346.8599853515625
     name "TransDigm Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08225290648536415
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -31699,7 +31699,7 @@ graph [
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T19:02:37.422000000+00:00"
     updated_at "1768045191518"
@@ -31707,7 +31707,7 @@ graph [
     name "Lilly (Eli)"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08214889094127319
+    raw_risk_score 0.013466109335422527
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -31790,14 +31790,14 @@ graph [
     last_close 178.02000427246094
     industry "REIT - Residential"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 178.02000427246094
     name "AvalonBay Communities"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1015376076091483
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -31880,14 +31880,14 @@ graph [
     last_close 131.6699981689453
     industry "REIT - Residential"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 131.6699981689453
     name "Mid-America Apartment Communities"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11943150978674828
+    raw_risk_score -0.5376728602818079
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -31970,14 +31970,14 @@ graph [
     last_close 139.36000061035156
     industry "Oil &#38; Gas Refining &#38; Marketing"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 139.36000061035156
     name "Phillips 66"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1998790083762041
+    raw_risk_score -0.0
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -32069,7 +32069,7 @@ graph [
     name "Comerica Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score -0.15350214540958407
+    raw_risk_score 0.04925325393676755
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -32153,7 +32153,7 @@ graph [
     last_close 85.97000122070312
     industry "Electronic Components"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T06:00:57.011000000+00:00"
     last_updated_at "1767254673840"
@@ -32161,7 +32161,7 @@ graph [
     name "Corning Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.24954228535965156
+    raw_risk_score -0.8165834605693817
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -32244,14 +32244,14 @@ graph [
     last_close 333.1099853515625
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 333.1099853515625
     name "Sherwin-Williams"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08882309534727263
+    raw_risk_score 0.07489708065986633
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -32334,14 +32334,14 @@ graph [
     last_close 211.50999450683594
     industry "Consulting Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 211.50999450683594
     name "Equifax"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06229700968281843
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -32424,7 +32424,7 @@ graph [
     last_close 545.52001953125
     industry "Credit Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     updated_at "1767345396863"
     last_updated_at "1767254673840"
@@ -32432,7 +32432,7 @@ graph [
     name "Mastercard"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09034680746074987
+    raw_risk_score 0.04664561152458191
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -32515,14 +32515,14 @@ graph [
     last_close 63.29999923706055
     industry "Packaged Foods"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 63.29999923706055
     name "McCormick &#38; Company"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.079123339588486
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -32605,14 +32605,14 @@ graph [
     last_close 79.56999969482422
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 79.56999969482422
     name "Public Service Enterprise Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10738119915525876
+    raw_risk_score 0.8492331504821777
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -32695,14 +32695,14 @@ graph [
     last_close 347.2099914550781
     industry "Tools &#38; Accessories"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 347.2099914550781
     name "Snap-on"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.029428591497871685
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -32785,14 +32785,14 @@ graph [
     last_close 320.70001220703125
     industry "Insurance Brokers"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 320.70001220703125
     name "Willis Towers Watson"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08262577985421266
+    raw_risk_score -0.921105682849884
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -32875,14 +32875,14 @@ graph [
     last_close 522.2999877929688
     industry "Scientific &#38; Technical Instruments"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 522.2999877929688
     name "Teledyne Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.065679298765807
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -32965,14 +32965,14 @@ graph [
     last_close 120.5
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 120.5
     name "Teleflex Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06001219098305936
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -33056,7 +33056,7 @@ graph [
     last_close 182.5399932861328
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T12:04:56.518000000+00:00"
     last_updated_at "1767254673840"
@@ -33064,7 +33064,7 @@ graph [
     name "Texas Instruments"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09281783484732631
+    raw_risk_score -0.5139046335220336
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -33149,14 +33149,14 @@ graph [
     industry "Healthcare Plans"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     updated_at "1768045191518"
     price 330.11
     name "UnitedHealth Group"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06929327321504875
+    raw_risk_score -0.895480751991272
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -33240,7 +33240,7 @@ graph [
     last_close 321.2699890136719
     industry "Internet Content &#38; Information"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T20:03:05.711000000+00:00"
     updated_at "1767345396863"
@@ -33249,7 +33249,7 @@ graph [
     name "Alphabet Inc. (Class A)"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.16045867325169405
+    raw_risk_score -0.4291927799582481
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -33332,14 +33332,14 @@ graph [
     last_close 477.05999755859375
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 477.05999755859375
     name "Ameriprise Financial"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12723497948590828
+    raw_risk_score -0.21063640921614887
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -33422,14 +33422,14 @@ graph [
     last_close 87.5199966430664
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 87.5199966430664
     name "Principal Financial Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04924303305093192
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -33512,14 +33512,14 @@ graph [
     last_close 59.0099983215332
     industry "Farm Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 59.0099983215332
     name "Archer Daniels Midland"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11749699956535921
+    raw_risk_score -0.024910658597946167
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -33602,14 +33602,14 @@ graph [
     last_close 91.72000122070312
     industry "Insurance - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 91.72000122070312
     name "Arch Capital Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.044474073992204356
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -33693,7 +33693,7 @@ graph [
     last_close 158.6999969482422
     industry "Semiconductor Equipment &#38; Materials"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T01:01:34.994000000+00:00"
     last_updated_at "1767254673840"
@@ -33701,7 +33701,7 @@ graph [
     name "Lam Research"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.15750719175982902
+    raw_risk_score -0.8628813648223876
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -33784,14 +33784,14 @@ graph [
     last_close 94.87000274658203
     industry "Integrated Freight &#38; Logistics"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 94.87000274658203
     name "United Parcel Service"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.042141751337869564
+    raw_risk_score 0.5485862385142934
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -33875,7 +33875,7 @@ graph [
     last_close 85.45999908447266
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T10:05:02.252000000+00:00"
     last_updated_at "1767254673840"
@@ -33883,7 +33883,7 @@ graph [
     name "GE HealthCare"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10933568968248247
+    raw_risk_score -0.4666666666666667
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -33966,14 +33966,14 @@ graph [
     last_close 79.86000061035156
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 79.86000061035156
     name "Ingersoll Rand"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12959029510073405
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34056,14 +34056,14 @@ graph [
     last_close 188.41000366210938
     industry "Integrated Freight &#38; Logistics"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 188.41000366210938
     name "J.B. Hunt"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06821901102533076
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34146,14 +34146,14 @@ graph [
     last_close 16.899999618530273
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 16.899999618530273
     name "Huntington Bancshares"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09971474440983233
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34236,14 +34236,14 @@ graph [
     last_close 167.47999572753906
     industry "Conglomerates"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 167.47999572753906
     name "3M"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.20091301212567494
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34326,14 +34326,14 @@ graph [
     last_close 159.0800018310547
     industry "Security &#38; Protection Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 159.0800018310547
     name "Allegion"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.19475293826423035
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34417,7 +34417,7 @@ graph [
     last_close 117.54000091552734
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T21:06:28.612000000+00:00"
     last_updated_at "1767254673840"
@@ -34425,7 +34425,7 @@ graph [
     name "American Electric Power"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08465340473049314
+    raw_risk_score -0.6099168300628662
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34509,7 +34509,7 @@ graph [
     last_close 370.3500061035156
     industry "Credit Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T15:01:57.763000000+00:00"
     last_updated_at "1767254673840"
@@ -34517,7 +34517,7 @@ graph [
     name "American Express"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08621508196842295
+    raw_risk_score -0.6
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34601,7 +34601,7 @@ graph [
     last_close 129.5
     industry "Utilities - Regulated Water"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T15:03:54.072000000+00:00"
     last_updated_at "1767254673840"
@@ -34609,7 +34609,7 @@ graph [
     name "American Water Works"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03340531207211623
+    raw_risk_score -0.7
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34693,7 +34693,7 @@ graph [
     last_close 49.20000076293945
     industry "Oil &#38; Gas Equipment &#38; Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T14:01:52.393000000+00:00"
     last_updated_at "1767254673840"
@@ -34701,7 +34701,7 @@ graph [
     name "Baker Hughes"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.17906487335314217
+    raw_risk_score -0.2
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -34784,14 +34784,14 @@ graph [
     last_close 74.16999816894531
     industry "Specialty Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 74.16999816894531
     name "Best Buy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.18116401456529416
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34874,14 +34874,14 @@ graph [
     last_close 201.88999938964844
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 201.88999938964844
     name "Boeing"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.187962079716361
+    raw_risk_score 0.5591100215911865
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -34964,14 +34964,14 @@ graph [
     last_close 29.600000381469727
     industry "Packaged Foods"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 29.600000381469727
     name "Campbell's Company (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07009961285453238
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -35054,14 +35054,14 @@ graph [
     last_close 14.119999885559082
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 14.119999885559082
     name "DXC Technology"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07793695522699734
+    raw_risk_score -0.8429644107818604
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -35144,14 +35144,14 @@ graph [
     last_close 104.9000015258789
     industry "Household &#38; Personal Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 104.9000015258789
     name "Clorox"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.030790438678964527
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -35234,14 +35234,14 @@ graph [
     last_close 78.06999969482422
     industry "Household &#38; Personal Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 78.06999969482422
     name "Colgate-Palmolive"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06785139248356362
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -35324,14 +35324,14 @@ graph [
     last_close 475.1099853515625
     industry "Farm &#38; Heavy Construction Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 475.1099853515625
     name "Deere &#38; Company"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10256742244119038
+    raw_risk_score 0.349227471852008
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -35415,7 +35415,7 @@ graph [
     last_close 105.30000305175781
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T18:01:34.135000000+00:00"
     last_updated_at "1767254673840"
@@ -35423,7 +35423,7 @@ graph [
     name "Walt Disney Company (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04451465289163317
+    raw_risk_score -0.30000000000000004
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -35506,14 +35506,14 @@ graph [
     last_close 131.22999572753906
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 131.22999572753906
     name "DTE Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10936123839974081
+    raw_risk_score -0.0
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -35596,14 +35596,14 @@ graph [
     last_close 61.529998779296875
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 61.529998779296875
     name "Eastman Chemical"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0879354827348342
+    raw_risk_score -0.0
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -35686,14 +35686,14 @@ graph [
     last_close 447.55999755859375
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 447.55999755859375
     name "Roper Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07955779687081524
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -35776,14 +35776,14 @@ graph [
     last_close 13.029999732971191
     industry "Auto Manufacturers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 13.029999732971191
     name "Ford Motor Company"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.16075492551405676
+    raw_risk_score 0.47951710533786124
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -35866,14 +35866,14 @@ graph [
     last_close 130.24000549316406
     industry "Auto Parts"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 130.24000549316406
     name "Genuine Parts Company"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06949951191193907
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -35956,14 +35956,14 @@ graph [
     last_close 28.450000762939453
     industry "Oil &#38; Gas Equipment &#38; Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 28.450000762939453
     name "Halliburton"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09658545621328057
+    raw_risk_score 0.02149975299835205
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -36046,14 +36046,14 @@ graph [
     last_close 182.3000030517578
     industry "Confectioners"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 182.3000030517578
     name "Hershey Company (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07100924064184432
+    raw_risk_score -0.9341983199119568
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -36136,14 +36136,14 @@ graph [
     last_close 23.329999923706055
     industry "Communication Equipment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 23.329999923706055
     name "Hewlett Packard Enterprise"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13496180590856077
+    raw_risk_score -0.8780994713306427
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -36226,14 +36226,14 @@ graph [
     last_close 24.34000015258789
     industry "Packaged Foods"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 24.34000015258789
     name "Kraft Heinz"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09609788929626943
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -36316,14 +36316,14 @@ graph [
     last_close 45.130001068115234
     industry "Beverages - Brewers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 45.130001068115234
     name "Molson Coors Beverage Company"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09401133334193666
+    raw_risk_score 0.1291374819619315
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -36406,14 +36406,14 @@ graph [
     last_close 143.4499969482422
     industry "Household &#38; Personal Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 143.4499969482422
     name "Procter &#38; Gamble"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06236783650806346
+    raw_risk_score 0.3365851839383443
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -36496,14 +36496,14 @@ graph [
     last_close 100.11000061035156
     industry "Packaged Foods"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 100.11000061035156
     name "J.M. Smucker Company (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12435464422279746
+    raw_risk_score 0.7686401605606079
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -36586,14 +36586,14 @@ graph [
     last_close 86.27999877929688
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 86.27999877929688
     name "Southern Company"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04093802743235042
+    raw_risk_score -0.0
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -36676,14 +36676,14 @@ graph [
     last_close 80.36000061035156
     industry "Credit Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 80.36000061035156
     name "Synchrony Financial"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05161838486115631
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -36766,14 +36766,14 @@ graph [
     last_close 294.8699951171875
     industry "Building Materials"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 294.8699951171875
     name "Vulcan Materials Company"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10643800358005762
+    raw_risk_score 0.9314127564430237
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -36856,14 +36856,14 @@ graph [
     last_close 21.690000534057617
     industry "REIT - Specialty"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 21.690000534057617
     name "Weyerhaeuser"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07342874262598195
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -36946,14 +36946,14 @@ graph [
     last_close 28.690000534057617
     industry "Beverages - Non-Alcoholic"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 28.690000534057617
     name "Keurig Dr Pepper"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09807370170008561
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -37036,14 +37036,14 @@ graph [
     last_close 190.52999877929688
     industry "Oil &#38; Gas Refining &#38; Marketing"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 190.52999877929688
     name "Marathon Petroleum"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.2166720832424764
+    raw_risk_score -0.818269282579422
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -37127,7 +37127,7 @@ graph [
     last_close 718.3599853515625
     industry "Biotechnology"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T22:01:16.629000000+00:00"
     last_updated_at "1767254673840"
@@ -37135,7 +37135,7 @@ graph [
     name "Regeneron Pharmaceuticals"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05887832545244807
+    raw_risk_score -0.6499999999999999
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -37219,7 +37219,7 @@ graph [
     last_close 455.4800109863281
     industry "Biotechnology"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T01:01:26.423000000+00:00"
     last_updated_at "1767254673840"
@@ -37227,7 +37227,7 @@ graph [
     name "Vertex Pharmaceuticals"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.19996841885146405
+    raw_risk_score -0.25
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -37311,7 +37311,7 @@ graph [
     last_close 280.2300109863281
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T11:05:41.694000000+00:00"
     last_updated_at "1767254673840"
@@ -37319,7 +37319,7 @@ graph [
     name "West Pharmaceutical Services"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13637834459740739
+    raw_risk_score -0.3
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -37402,14 +37402,14 @@ graph [
     last_close 167.24000549316406
     industry "Capital Markets"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 167.24000549316406
     name "MarketAxess"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.037507315156056396
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -37492,14 +37492,14 @@ graph [
     last_close 54.08000183105469
     industry "Specialty Retail"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 54.08000183105469
     name "Tractor Supply"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09110641001575906
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -37582,14 +37582,14 @@ graph [
     last_close 96.5999984741211
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 96.5999984741211
     name "Consolidated Edison"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05152333732451293
+    raw_risk_score 0.738584127277136
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -37672,14 +37672,14 @@ graph [
     last_close 65.5
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 65.5
     name "Alliant Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11934926230935004
+    raw_risk_score -0.0
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -37762,14 +37762,14 @@ graph [
     last_close 27.100000381469727
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 27.100000381469727
     name "APA Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07307991845491613
+    raw_risk_score 0.10034066438674927
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -37852,14 +37852,14 @@ graph [
     last_close 40.630001068115234
     industry "Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 40.630001068115234
     name "Celanese Corp"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1410667662287194
+    raw_risk_score -0.7187986373901367
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -37943,7 +37943,7 @@ graph [
     last_close 150.0
     industry "Oil &#38; Gas Integrated"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T17:02:36.875000000+00:00"
     last_updated_at "1767254673840"
@@ -37951,7 +37951,7 @@ graph [
     name "Chevron Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1834343120856523
+    raw_risk_score -0.5629200387001037
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -38034,14 +38034,14 @@ graph [
     last_close 359.82000732421875
     industry "Utilities - Independent Power Producers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 359.82000732421875
     name "Constellation Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.20394841389985155
+    raw_risk_score -0.7004801630973816
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -38124,14 +38124,14 @@ graph [
     last_close 68.4000015258789
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 68.4000015258789
     name "Fox Corporation (Class A)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07962030173253154
+    raw_risk_score -0.0
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -38214,14 +38214,14 @@ graph [
     last_close 60.88999938964844
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 60.88999938964844
     name "Fox Corporation (Class B)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08124606692769831
+    raw_risk_score 0.5172392531083179
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -38304,14 +38304,14 @@ graph [
     last_close 337.30999755859375
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 337.30999755859375
     name "General Dynamics"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1288675224626423
+    raw_risk_score 0.8053805828094482
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -38394,14 +38394,14 @@ graph [
     last_close 1214.4599609375
     industry "Semiconductor Equipment &#38; Materials"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 1214.4599609375
     name "KLA Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.145190306926136
+    raw_risk_score -0.7118619680404663
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -38484,14 +38484,14 @@ graph [
     last_close 26.040000915527344
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 26.040000915527344
     name "News Corp (Class A)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05262701760720507
+    raw_risk_score -0.0
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -38574,14 +38574,14 @@ graph [
     last_close 29.59000015258789
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 29.59000015258789
     name "News Corp (Class B)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.055121633750288945
+    raw_risk_score 0.9228416383266449
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -38664,14 +38664,14 @@ graph [
     last_close 88.16999816894531
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 88.16999816894531
     name "Pinnacle West Capital"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0885399163774735
+    raw_risk_score -0.0
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -38754,14 +38754,14 @@ graph [
     last_close 181.7100067138672
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 181.7100067138672
     name "Jack Henry &#38; Associates"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08622846573724205
+    raw_risk_score 0.8841975331306458
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -38844,14 +38844,14 @@ graph [
     last_close 47.529998779296875
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 47.529998779296875
     name "Truist Financial"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05049781402632106
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -38934,14 +38934,14 @@ graph [
     last_close 295.0
     industry "Insurance - Property &#38; Casualty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 295.0
     name "Chubb Limited"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03504863828819657
+    raw_risk_score -0.7223546504974365
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -39024,14 +39024,14 @@ graph [
     last_close 38.459999084472656
     industry "Oil &#38; Gas Equipment &#38; Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 38.459999084472656
     name "Schlumberger"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.18383858035456732
+    raw_risk_score -0.01998308300971985
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -39114,14 +39114,14 @@ graph [
     last_close 43.349998474121094
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 43.349998474121094
     name "LyondellBasell"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12384540953172622
+    raw_risk_score -0.0
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -39205,7 +39205,7 @@ graph [
     last_close 181.3000030517578
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T00:02:37.045000000+00:00"
     last_updated_at "1767254673840"
@@ -39213,7 +39213,7 @@ graph [
     name "Biogen"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07703514848142111
+    raw_risk_score 0.11743664145469668
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -39296,14 +39296,14 @@ graph [
     last_close 5197.0400390625
     industry "Travel Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 5197.0400390625
     name "Booking Holdings"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06943685652172689
+    raw_risk_score -0.7484814524650574
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -39387,7 +39387,7 @@ graph [
     last_close 390.239990234375
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T08:01:05.868000000+00:00"
     updated_at "1767345396863"
@@ -39396,7 +39396,7 @@ graph [
     name "Broadcom"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07560952342639024
+    raw_risk_score -0.6051821478775569
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 82.83962780417166
@@ -39480,7 +39480,7 @@ graph [
     last_close 77.97000122070312
     industry "Communication Equipment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T15:02:42.528000000+00:00"
     last_updated_at "1767254673840"
@@ -39488,7 +39488,7 @@ graph [
     name "Cisco"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0677344100782199
+    raw_risk_score -0.2753033002217611
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -39572,7 +39572,7 @@ graph [
     last_close 81.4000015258789
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T18:04:13.943000000+00:00"
     last_updated_at "1767254673840"
@@ -39580,7 +39580,7 @@ graph [
     name "Cooper Companies (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06559305976264093
+    raw_risk_score 0.30626438379287724
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -39663,14 +39663,14 @@ graph [
     last_close 66.0
     industry "Agricultural Inputs"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 66.0
     name "Corteva"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04197590147675399
+    raw_risk_score -0.0
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -39753,14 +39753,14 @@ graph [
     last_close 58.4900016784668
     industry "Utilities - Regulated Electric"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 58.4900016784668
     name "Dominion Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03534148872042456
+    raw_risk_score -0.0
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -39843,14 +39843,14 @@ graph [
     last_close 40.5099983215332
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 40.5099983215332
     name "DuPont"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.02660422977140354
+    raw_risk_score -0.0
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -39933,14 +39933,14 @@ graph [
     last_close 741.5800170898438
     industry "REIT - Specialty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 741.5800170898438
     name "Equinix"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07053174302507859
+    raw_risk_score -0.8718488812446594
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -40023,14 +40023,14 @@ graph [
     last_close 263.42999267578125
     industry "Travel Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 263.42999267578125
     name "Expedia Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08104778710979475
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -40113,14 +40113,14 @@ graph [
     last_close 248.1199951171875
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 248.1199951171875
     name "F5, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06699425271792864
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -40203,14 +40203,14 @@ graph [
     last_close 27.09000015258789
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 27.09000015258789
     name "Gen Digital"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03871619319385232
+    raw_risk_score 0.10676982375078417
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -40293,14 +40293,14 @@ graph [
     last_close 27.139999389648438
     industry "REIT - Residential"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 27.139999389648438
     name "Invitation Homes"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06006924681226921
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -40384,7 +40384,7 @@ graph [
     last_close 292.5899963378906
     industry "Lodging"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T22:06:04.227000000+00:00"
     last_updated_at "1767254673840"
@@ -40392,7 +40392,7 @@ graph [
     name "Marriott International"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.03691031306757936
+    raw_risk_score 0.3479862557517158
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -40478,7 +40478,7 @@ graph [
     industry "Internet Content &#38; Information"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T20:03:04.068000000+00:00"
     updated_at "1768045191518"
@@ -40486,7 +40486,7 @@ graph [
     name "Meta Platforms"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09135932744619561
+    raw_risk_score 0.48474704975521304
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -40569,14 +40569,14 @@ graph [
     last_close 27.700000762939453
     industry "Biotechnology"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 27.700000762939453
     name "Moderna"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.28514913373622064
+    raw_risk_score -0.8583158055941263
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -40660,7 +40660,7 @@ graph [
     last_close 90.22000122070312
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T13:03:20.840000000+00:00"
     last_updated_at "1767254673840"
@@ -40668,7 +40668,7 @@ graph [
     name "Nasdaq, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13470237692618192
+    raw_risk_score -0.3
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -40753,14 +40753,14 @@ graph [
     industry "Credit Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     updated_at "1768045191518"
     price 58.38
     name "PayPal"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.2614587073482769
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -40843,14 +40843,14 @@ graph [
     last_close 116.30000305175781
     industry "Luxury Goods"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 116.30000305175781
     name "Tapestry, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.045107444439803177
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -40934,7 +40934,7 @@ graph [
     last_close 200.77000427246094
     industry "Semiconductor Equipment &#38; Materials"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-02T16:13:56.025000000+00:00"
     last_updated_at "1767254673840"
@@ -40942,7 +40942,7 @@ graph [
     name "Teradyne"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12262248200936439
+    raw_risk_score -0.7938490231831868
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -41026,7 +41026,7 @@ graph [
     last_close 83.5199966430664
     industry "Scientific &#38; Technical Instruments"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T20:01:52.414000000+00:00"
     last_updated_at "1767254673840"
@@ -41034,7 +41034,7 @@ graph [
     name "Trimble Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08085093972311579
+    raw_risk_score 0.4
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -41118,7 +41118,7 @@ graph [
     last_close 601.5
     industry "Specialty Retail"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T23:01:33.325000000+00:00"
     last_updated_at "1767254673840"
@@ -41126,7 +41126,7 @@ graph [
     name "Ulta Beauty"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.14793656536105207
+    raw_risk_score -0.6
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -41209,14 +41209,14 @@ graph [
     last_close 221.24000549316406
     industry "Consulting Services"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 221.24000549316406
     name "Verisk Analytics"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11812290369220224
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -41299,14 +41299,14 @@ graph [
     last_close 10.930000305175781
     industry "Drug Manufacturers - Specialty &#38; Generic"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 10.930000305175781
     name "Viatris"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08388090944696679
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -41390,7 +41390,7 @@ graph [
     last_close 27.729999542236328
     industry "REIT - Diversified"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T05:00:54.580000000+00:00"
     last_updated_at "1767254673840"
@@ -41398,7 +41398,7 @@ graph [
     name "Vici Properties"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.028555616560045627
+    raw_risk_score -0.7
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -41482,7 +41482,7 @@ graph [
     last_close 26.079999923706055
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T00:01:57.155000000+00:00"
     last_updated_at "1767254673840"
@@ -41490,7 +41490,7 @@ graph [
     name "Warner Bros. Discovery"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08836412591031702
+    raw_risk_score 0.24104635150809037
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -41573,14 +41573,14 @@ graph [
     last_close 55.459999084472656
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 55.459999084472656
     name "Citizens Financial Group"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04664251282475623
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -41663,14 +41663,14 @@ graph [
     last_close 54.90999984741211
     industry "Confectioners"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 54.90999984741211
     name "Mondelez International"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04623934484578225
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -41754,7 +41754,7 @@ graph [
     last_close 41.689998626708984
     industry "Telecom Services"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T15:01:57.322000000+00:00"
     last_updated_at "1767254673840"
@@ -41762,7 +41762,7 @@ graph [
     name "Verizon"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.23726778842410512
+    raw_risk_score 0.26666666666666666
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -41845,14 +41845,14 @@ graph [
     last_close 232.02000427246094
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 232.02000427246094
     name "Broadridge Financial Solutions"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07163187441495683
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -41935,14 +41935,14 @@ graph [
     last_close 230.67999267578125
     industry "Credit Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 230.67999267578125
     name "Capital One"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06003454852076617
+    raw_risk_score 0.019526809453964233
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42025,14 +42025,14 @@ graph [
     last_close 162.3000030517578
     industry "Insurance - Property &#38; Casualty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 162.3000030517578
     name "Cincinnati Financial"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0669836970542384
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42115,14 +42115,14 @@ graph [
     last_close 66.66000366210938
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 66.66000366210938
     name "Fidelity National Information Services"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05717919831521202
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -42205,14 +42205,14 @@ graph [
     last_close 197.86000061035156
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 197.86000061035156
     name "PNC Financial Services"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.043585971744693856
+    raw_risk_score 0.9127976894378662
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42296,7 +42296,7 @@ graph [
     last_close 111.68000030517578
     industry "Insurance - Life"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T16:09:58.652000000+00:00"
     last_updated_at "1767254673840"
@@ -42304,7 +42304,7 @@ graph [
     name "Prudential Financial"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1251585291476443
+    raw_risk_score -0.07855286598205563
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42387,14 +42387,14 @@ graph [
     last_close 163.1300048828125
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 163.1300048828125
     name "Raymond James Financial"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10718945460958784
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42477,14 +42477,14 @@ graph [
     last_close 239.7100067138672
     industry "Insurance Brokers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 239.7100067138672
     name "Arthur J. Gallagher &#38; Co."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04665674786844972
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42567,14 +42567,14 @@ graph [
     last_close 26.280000686645508
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 26.280000686645508
     name "Regions Financial Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.033998872345823425
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42657,14 +42657,14 @@ graph [
     last_close 235.30999755859375
     industry "Railroads"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 235.30999755859375
     name "Union Pacific Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11376964470117151
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42748,7 +42748,7 @@ graph [
     last_close 52.150001525878906
     industry "Drug Manufacturers - General"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T22:02:58.593000000+00:00"
     last_updated_at "1767254673840"
@@ -42756,7 +42756,7 @@ graph [
     name "Bristol Myers Squibb"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.14677784980960973
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42839,14 +42839,14 @@ graph [
     last_close 205.10000610351562
     industry "Telecom Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 205.10000610351562
     name "Charter Communications"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10468644185401363
+    raw_risk_score -0.0
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -42930,7 +42930,7 @@ graph [
     last_close 304.5799865722656
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T19:05:13.709000000+00:00"
     last_updated_at "1767254673840"
@@ -42938,7 +42938,7 @@ graph [
     name "Huntington Ingalls Industries"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.039285396487746
+    raw_risk_score -0.5
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43021,14 +43021,14 @@ graph [
     last_close 189.5800018310547
     industry "REIT - Specialty"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 189.5800018310547
     name "SBA Communications"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13453745171087994
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43111,14 +43111,14 @@ graph [
     last_close 796.9099731445312
     industry "Rental &#38; Leasing Services"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 796.9099731445312
     name "United Rentals"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11877074691516074
+    raw_risk_score 0.8000272512435913
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43201,14 +43201,14 @@ graph [
     last_close 231.0800018310547
     industry "Medical Care Facilities"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 231.0800018310547
     name "Universal Health Services"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05593087046671792
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43293,14 +43293,14 @@ graph [
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     updated_at "1768045191518"
     price 308.03
     name "GE Aerospace"
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05262896216847708
+    raw_risk_score -0.23207451899846393
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -43383,14 +43383,14 @@ graph [
     last_close 102.95999908447266
     industry "Household &#38; Personal Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 102.95999908447266
     name "Kimberly-Clark"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07315323861277573
+    raw_risk_score 0.8966730237007141
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43473,14 +43473,14 @@ graph [
     last_close 263.2799987792969
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 263.2799987792969
     name "Steris"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05335804262595854
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43563,14 +43563,14 @@ graph [
     last_close 394.80999755859375
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 394.80999755859375
     name "Waters Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04297401175252789
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43653,14 +43653,14 @@ graph [
     last_close 168.88999938964844
     industry "Computer Hardware"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 168.88999938964844
     name "Western Digital"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1435561554588985
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -43744,7 +43744,7 @@ graph [
     last_close 145.02000427246094
     industry "Beverages - Non-Alcoholic"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T03:01:11.003000000+00:00"
     last_updated_at "1767254673840"
@@ -43752,7 +43752,7 @@ graph [
     name "PepsiCo"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09249414502710149
+    raw_risk_score -0.08141976661152309
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43836,7 +43836,7 @@ graph [
     last_close 894.6799926757812
     industry "Discount Stores"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-06T13:03:18.045000000+00:00"
     last_updated_at "1767254673840"
@@ -43844,7 +43844,7 @@ graph [
     name "Costco"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.038567532723257976
+    raw_risk_score 0.464750170837278
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -43927,14 +43927,14 @@ graph [
     last_close 59.70000076293945
     industry "Packaged Foods"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 59.70000076293945
     name "Lamb Weston"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1968767094364289
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44017,14 +44017,14 @@ graph [
     last_close 76.05999755859375
     industry "Furnishings, Fixtures &#38; Appliances"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 76.05999755859375
     name "Whirlpool Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06848283746266504
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44108,7 +44108,7 @@ graph [
     last_close 85.12000274658203
     industry "Restaurants"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T15:02:29.533000000+00:00"
     last_updated_at "1767254673840"
@@ -44116,7 +44116,7 @@ graph [
     name "Starbucks"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.02559392873751479
+    raw_risk_score 0.21020264029502866
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44200,7 +44200,7 @@ graph [
     last_close 1072.1600341796875
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T22:05:57.950000000+00:00"
     last_updated_at "1767254673840"
@@ -44208,7 +44208,7 @@ graph [
     name "BlackRock"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0964553058859981
+    raw_risk_score 0.25
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44291,14 +44291,14 @@ graph [
     last_close 19.260000228881836
     industry "Banks - Regional"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 19.260000228881836
     name "KeyCorp"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08712999486833889
+    raw_risk_score 0.24055829371365028
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44381,14 +44381,14 @@ graph [
     last_close 20.1299991607666
     industry "REIT - Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 20.1299991607666
     name "Kimco Realty"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.12350998143496185
+    raw_risk_score -0.4176852024263806
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44471,14 +44471,14 @@ graph [
     last_close 203.60000610351562
     industry "Information Technology Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 203.60000610351562
     name "EPAM Systems"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09988312487598838
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -44561,14 +44561,14 @@ graph [
     last_close 27.309999465942383
     industry "Telecom Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 27.309999465942383
     name "Comcast"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07283369948947843
+    raw_risk_score 0.9067645072937012
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44651,14 +44651,14 @@ graph [
     last_close 112.16999816894531
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 112.16999816894531
     name "EOG Resources"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10000924944919584
+    raw_risk_score -0.0
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -44741,14 +44741,14 @@ graph [
     last_close 102.5199966430664
     industry "Biotechnology"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 102.5199966430664
     name "Incyte"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0366811827844287
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44831,14 +44831,14 @@ graph [
     last_close 182.50999450683594
     industry "Diagnostics &#38; Research"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 182.50999450683594
     name "Quest Diagnostics"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.16818140315459407
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -44921,14 +44921,14 @@ graph [
     last_close 165.22000122070312
     industry "Steel"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 165.22000122070312
     name "Steel Dynamics"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.16504172703244568
+    raw_risk_score -0.0
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -45011,14 +45011,14 @@ graph [
     last_close 76.37000274658203
     industry "Auto Parts"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 76.37000274658203
     name "Aptiv"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06762182540365841
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -45101,14 +45101,14 @@ graph [
     last_close 60.68000030517578
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 60.68000030517578
     name "EQT Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.046738233693386234
+    raw_risk_score -0.0
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472451329231262
@@ -45192,7 +45192,7 @@ graph [
     last_close 217.5800018310547
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T08:01:05.451000000+00:00"
     last_updated_at "1767254673840"
@@ -45200,7 +45200,7 @@ graph [
     name "Oracle Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.15758959464162653
+    raw_risk_score 0.011682393550872777
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -45283,14 +45283,14 @@ graph [
     last_close 272.05999755859375
     industry "REIT - Industrial"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 272.05999755859375
     name "Public Storage"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.051645240569730994
+    raw_risk_score -0.0
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -45373,14 +45373,14 @@ graph [
     last_close 90.66000366210938
     industry "Utilities - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 90.66000366210938
     name "Sempra"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10660498156325257
+    raw_risk_score -0.0
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -45463,14 +45463,14 @@ graph [
     last_close 180.74000549316406
     industry "Oil &#38; Gas Midstream"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 180.74000549316406
     name "Targa Resources"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07038613205756541
+    raw_risk_score -0.0
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -45724,7 +45724,7 @@ graph [
     last_close 13.369999885559082
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-09T00:01:56.737000000+00:00"
     last_updated_at "1767254673840"
@@ -45732,7 +45732,7 @@ graph [
     name "Paramount Skydance Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.227201819861785
+    raw_risk_score -0.32
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -45815,14 +45815,14 @@ graph [
     last_close 296.4599914550781
     industry "Insurance Brokers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 296.4599914550781
     name "Erie Indemnity"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1484460072221359
+    raw_risk_score 0.8964731693267822
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -45905,14 +45905,14 @@ graph [
     last_close 93.62999725341797
     industry "Farm Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 93.62999725341797
     name "Bunge Global"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10925546179256437
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46080,14 +46080,14 @@ graph [
     last_close 110.01000213623047
     industry "Building Products &#38; Equipment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 110.01000213623047
     name "Builders FirstSource"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11699321696993216
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46170,14 +46170,14 @@ graph [
     last_close 339.6600036621094
     industry "Medical Distribution"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 339.6600036621094
     name "Cencora (formerly AmerisourceBergen)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06453098976393992
+    raw_risk_score -0.0
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46260,14 +46260,14 @@ graph [
     last_close 309.9700012207031
     industry "Insurance - Reinsurance"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 309.9700012207031
     name "Everest Group (formerly RE)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0970895678751938
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46350,14 +46350,14 @@ graph [
     last_close 440.5299987792969
     industry "Electrical Equipment &#38; Parts"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 440.5299987792969
     name "Hubbell Incorporated"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10535118785259938
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46440,14 +46440,14 @@ graph [
     last_close 304.489990234375
     industry "Medical Devices"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 304.489990234375
     name "Insulet Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.0689614129647654
+    raw_risk_score 0.9096451103687286
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46530,14 +46530,14 @@ graph [
     last_close 16.93000030517578
     industry "Household &#38; Personal Products"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 16.93000030517578
     name "Kenvue"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05387448439163179
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46620,14 +46620,14 @@ graph [
     last_close 36.040000915527344
     industry "Packaging &#38; Containers"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 36.040000915527344
     name "Smurfit WestRock (formerly WestRock)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.14155815943374211
+    raw_risk_score 0.8388596296310424
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46711,7 +46711,7 @@ graph [
     last_close 85.43000030517578
     industry "Medical Instruments &#38; Supplies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-02T13:43:43.412000000+00:00"
     last_updated_at "1767254673840"
@@ -46719,7 +46719,7 @@ graph [
     name "Solventum"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10291227454514695
+    raw_risk_score -0.8
     sector "Healthcare"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46803,7 +46803,7 @@ graph [
     last_close 34.689998626708984
     industry "Computer Hardware"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T08:01:20.741000000+00:00"
     last_updated_at "1767254673840"
@@ -46811,7 +46811,7 @@ graph [
     name "Supermicro"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.17582719191290336
+    raw_risk_score -0.7
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -46894,14 +46894,14 @@ graph [
     last_close 202.22000122070312
     industry "Entertainment"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 202.22000122070312
     name "TKO Group Holdings"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.14512019995070924
+    raw_risk_score 0.8292743563652039
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -46985,7 +46985,7 @@ graph [
     last_close 91.31999969482422
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T18:04:12.593000000+00:00"
     last_updated_at "1767254673840"
@@ -46993,7 +46993,7 @@ graph [
     name "Uber"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1501168003621414
+    raw_risk_score 0.24084399938583373
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -48266,14 +48266,14 @@ graph [
     last_close 152.14999389648438
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 152.14999389648438
     name "Blackstone Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.14363865210017032
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -48356,14 +48356,14 @@ graph [
     last_close 61.11000061035156
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 61.11000061035156
     name "Block, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09390475660204384
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -48447,7 +48447,7 @@ graph [
     last_close 512.030029296875
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T19:01:27.916000000+00:00"
     last_updated_at "1767254673840"
@@ -48455,7 +48455,7 @@ graph [
     name "CrowdStrike"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1240758832987553
+    raw_risk_score -0.15433992147445685
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -48538,14 +48538,14 @@ graph [
     last_close 99.69999694824219
     industry "Footwear &#38; Accessories"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 99.69999694824219
     name "Deckers Brands"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13178368643264254
+    raw_risk_score 0.1343103732381548
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -48629,7 +48629,7 @@ graph [
     last_close 17.020000457763672
     industry "REIT - Healthcare Facilities"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T02:02:20.185000000+00:00"
     last_updated_at "1767254673840"
@@ -48637,7 +48637,7 @@ graph [
     name "Healthpeak Properties (formerly PEAK)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09364236573832015
+    raw_risk_score 0.5477544754743576
     sector "Real Estate"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -48721,7 +48721,7 @@ graph [
     last_close 64.5
     industry "Capital Markets"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-04T17:02:31.925000000+00:00"
     last_updated_at "1767254673840"
@@ -48729,7 +48729,7 @@ graph [
     name "Interactive Brokers"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07866256082897308
+    raw_risk_score -0.36884745359420773
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -48812,14 +48812,14 @@ graph [
     last_close 129.4199981689453
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 129.4199981689453
     name "KKR &#38; Co."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11403615455459445
+    raw_risk_score -0.3931601579700197
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -48903,7 +48903,7 @@ graph [
     last_close 131.9499969482422
     industry "Capital Markets"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T20:03:08.256000000+00:00"
     last_updated_at "1767254673840"
@@ -48911,7 +48911,7 @@ graph [
     name "Robinhood Markets"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.18111857744964027
+    raw_risk_score 0.09773226678371433
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -48995,7 +48995,7 @@ graph [
     last_close 40.04999923706055
     industry "Advertising Agencies"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-08T07:01:45.401000000+00:00"
     last_updated_at "1767254673840"
@@ -49003,7 +49003,7 @@ graph [
     name "Trade Desk (The)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11066487878675911
+    raw_risk_score -0.011493299007415803
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -49086,14 +49086,14 @@ graph [
     last_close 219.9600067138672
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 219.9600067138672
     name "Workday, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08588828535382154
+    raw_risk_score 0.9558702111244202
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -49176,14 +49176,14 @@ graph [
     last_close 504.3399963378906
     industry "Insurance - Diversified"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 504.3399963378906
     name "Berkshire Hathaway"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06432907282818619
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -49266,14 +49266,14 @@ graph [
     last_close 310.6400146484375
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 310.6400146484375
     name "Corpay (formerly FLEETCOR/FLT)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10610596913611506
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -49363,7 +49363,7 @@ graph [
     name "Dayforce (formerly Ceridian/CDAY)"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.3239617359087652
+    raw_risk_score 0.31803272694589635
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -49531,14 +49531,14 @@ graph [
     last_close 124.31999969482422
     industry "Travel Services"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 124.31999969482422
     name "Airbnb"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05237905301920566
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -49621,14 +49621,14 @@ graph [
     last_close 550.9500122070312
     industry "Aerospace &#38; Defense"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 550.9500122070312
     name "Axon Enterprise"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.23676003002646323
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -49797,7 +49797,7 @@ graph [
     last_close 138.91000366210938
     industry "Computer Hardware"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T15:02:42.119000000+00:00"
     last_updated_at "1767254673840"
@@ -49805,7 +49805,7 @@ graph [
     name "Dell Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.09713903558226863
+    raw_risk_score -0.30172094553709033
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -49889,7 +49889,7 @@ graph [
     last_close 181.75999450683594
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T21:01:48.671000000+00:00"
     last_updated_at "1767254673840"
@@ -49897,7 +49897,7 @@ graph [
     name "Palantir Technologies"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.07548392454048067
+    raw_risk_score -0.283280714820413
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -49980,14 +49980,14 @@ graph [
     last_close 82.04000091552734
     industry "Semiconductor Equipment &#38; Materials"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 82.04000091552734
     name "Qnity Electronics"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13830692269462164
+    raw_risk_score 0.2806338866551717
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -50070,14 +50070,14 @@ graph [
     last_close 511.6300048828125
     industry "Building Products &#38; Equipment"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 511.6300048828125
     name "Lennox International"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05306244510982442
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -50160,14 +50160,14 @@ graph [
     last_close 138.1300048828125
     industry "Asset Management"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 138.1300048828125
     name "Apollo Global Management"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10208032744811042
+    raw_risk_score -0.0
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -50250,14 +50250,14 @@ graph [
     last_close 691.9400024414062
     industry "Advertising Agencies"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 691.9400024414062
     name "AppLovin"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.26819495345201644
+    raw_risk_score 0.47436178014391944
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -50340,14 +50340,14 @@ graph [
     last_close 269.7300109863281
     industry "Financial Data &#38; Stock Exchanges"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 269.7300109863281
     name "Coinbase"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08845680458708625
+    raw_risk_score 0.3380787571271261
     sector "Financial Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -50430,14 +50430,14 @@ graph [
     last_close 122.86000061035156
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 122.86000061035156
     name "Expand Energy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05174283627567951
+    raw_risk_score -0.0
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -50521,7 +50521,7 @@ graph [
     last_close 631.3200073242188
     industry "Specialty Industrial Machinery"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-07T18:02:14.231000000+00:00"
     last_updated_at "1767254673840"
@@ -50529,7 +50529,7 @@ graph [
     name "GE Vernova"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.13603062796490356
+    raw_risk_score -0.55
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -50612,14 +50612,14 @@ graph [
     last_close 47.130001068115234
     industry "Specialty Chemicals"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 47.130001068115234
     name "Solstice Advanced Materials"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11082120462774564
+    raw_risk_score -0.0
     sector "Basic Materials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -50703,7 +50703,7 @@ graph [
     last_close 925.0800170898438
     industry "Oil &#38; Gas E&#38;P"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-02T11:12:55.374000000+00:00"
     last_updated_at "1767254673840"
@@ -50711,7 +50711,7 @@ graph [
     name "Texas Pacific Land Corporation"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06673086437064436
+    raw_risk_score 0.8
     sector "Energy"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -50794,14 +50794,14 @@ graph [
     last_close 179.36000061035156
     industry "Specialty Retail"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 179.36000061035156
     name "Williams-Sonoma, Inc."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10441304587032924
+    raw_risk_score -0.0
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -50884,14 +50884,14 @@ graph [
     last_close 30.399999618530273
     industry "Beverages - Wineries &#38; Distilleries"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 30.399999618530273
     name "Brown&#8211;Forman"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10290899566643316
+    raw_risk_score -0.0
     sector "Consumer Defensive"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -51059,14 +51059,14 @@ graph [
     last_close 225.0
     industry "Internet Retail"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 225.0
     name "DoorDash"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.1045235569354658
+    raw_risk_score 0.29143814245859784
     sector "Consumer Cyclical"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -51149,14 +51149,14 @@ graph [
     last_close 623.6199951171875
     industry "Engineering &#38; Construction"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 623.6199951171875
     name "Emcor"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08947117344519868
+    raw_risk_score -0.8733783960342407
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -51239,14 +51239,14 @@ graph [
     last_close 102.16000366210938
     industry "Pollution &#38; Treatment Controls"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 102.16000366210938
     name "Veralto"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04936894192581054
+    raw_risk_score -0.0
     sector "Industrials"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -51329,14 +51329,14 @@ graph [
     last_close 151.41000366210938
     industry "Software - Application"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 151.41000366210938
     name "Datadog"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06333778018562161
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -51419,14 +51419,14 @@ graph [
     last_close 167.1699981689453
     industry "Utilities - Independent Power Producers"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 167.1699981689453
     name "Vistra Corp."
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.05124319675955672
+    raw_risk_score -0.0
     sector "Utilities"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -51436,9 +51436,9 @@ graph [
     label "FTC"
     ticker "FTC"
     name "Federal Trade Commission"
-    raw_risk_score 0.09090509106832123
+    raw_risk_score 0.9194493293762207
     sector "Unknown"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 571
@@ -51542,13 +51542,13 @@ graph [
     is_macro 1
     last_close 4.138999938964844
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     last_updated_at "1767254673840"
     price 4.138999938964844
     name "10-Year Treasury Yield"
     gnn_risk_score 0.3719990849494934
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.08274446800017765
+    raw_risk_score -0.0
     sector "Macro"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0029914602637290955
@@ -51629,12 +51629,12 @@ graph [
     ticker "CL=F"
     is_macro 1
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     last_updated_at "1767254673840"
     name "Crude Oil"
     gnn_risk_score 0.3719990849494934
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.154618697922133
+    raw_risk_score -0.0
     sector "Macro"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0029914602637290955
@@ -51715,12 +51715,12 @@ graph [
     ticker "GC=F"
     is_macro 1
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     last_updated_at "1767254673840"
     name "Gold"
     gnn_risk_score 0.3719990849494934
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.06007607116880537
+    raw_risk_score -0.0
     sector "Macro"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0029914602637290955
@@ -51888,13 +51888,13 @@ graph [
     is_macro 1
     last_close 15.40999984741211
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     last_updated_at "1767254673840"
     price 15.40999984741211
     name "Volatility Index"
     gnn_risk_score 0.3719990849494934
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.169879183847866
+    raw_risk_score -0.0
     sector "Macro"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0029914584010839462
@@ -51977,7 +51977,7 @@ graph [
     name "X"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.3862582797353918
+    raw_risk_score 0.4302298594266175
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
     sector "Unknown"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
@@ -52062,14 +52062,14 @@ graph [
     last_close 564.9299926757812
     industry "Internet Content &#38; Information"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     last_news_update "2025-12-06T07:01:27.672000000+00:00"
     last_updated_at "1767254673840"
     price 564.9299926757812
     name "Spotify"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.034955716601557545
+    raw_risk_score 0.02962953860943134
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -52172,7 +52172,7 @@ graph [
     label "OPEC"
     ticker "OPEC"
     name "OPEC"
-    raw_risk_score -0.08507769140932296
+    raw_risk_score -0.2320595766816821
     sector "Unknown"
   ]
   node [
@@ -52181,9 +52181,9 @@ graph [
     ticker "JD"
     name "JD.com"
     industry "Internet Retail"
-    raw_risk_score 0.261725032306543
+    raw_risk_score 0.4442088757242474
     sector "Consumer Cyclical"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 585
@@ -52357,14 +52357,14 @@ graph [
     last_close 294.7200012207031
     industry "Semiconductors"
     last_risk_update "2025-12-06T09:37:00.833000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     last_news_update "2025-12-08T11:01:34.607000000+00:00"
     last_updated_at "1767254673840"
     price 294.7200012207031
     name "Taiwan Semiconductor Manufacturing Company Ltd"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.16211339358442506
+    raw_risk_score -0.6599828869104384
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.916000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -52531,13 +52531,13 @@ graph [
     last_close 28.030000686645508
     industry "Consumer Electronics"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     last_updated_at "1767254673840"
     price 28.030000686645508
     name "Sony"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.10248115657016588
+    raw_risk_score 0.5224488618282175
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -52619,14 +52619,14 @@ graph [
     last_updated "2025-12-07T07:03:39.898000000+00:00"
     last_close 66.27999877929688
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 66.27999877929688
     name "Fiserv"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.04690486303429309
+    raw_risk_score -0.0
     sector "Discovered"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472376823425293
@@ -52709,14 +52709,14 @@ graph [
     last_close 128.4600067138672
     industry "Software - Infrastructure"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_updated_at "1767254673840"
     price 128.4600067138672
     name "GoDaddy"
     gnn_risk_score 0.33808284997940063
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.11886165264912237
+    raw_risk_score -0.0
     sector "Technology"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 0.0027472469955682755
@@ -52744,9 +52744,9 @@ graph [
     ticker "WES"
     name "Western Midstream Partners"
     industry "Oil &#38; Gas Midstream"
-    raw_risk_score 0.10422805706938369
+    raw_risk_score 0.7371579025472913
     sector "Energy"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 595
@@ -52857,9 +52857,9 @@ graph [
     ticker "RBLX"
     name "Roblox"
     industry "Electronic Gaming &#38; Multimedia"
-    raw_risk_score 0.1992567880064549
+    raw_risk_score -0.0
     sector "Communication Services"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 600
@@ -52899,9 +52899,9 @@ graph [
     ticker "BRK.A"
     name "Berkshire Hathaway"
     industry "Insurance - Diversified"
-    raw_risk_score 0.06485705371488351
+    raw_risk_score -0.0
     sector "Financial Services"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 605
@@ -52980,9 +52980,9 @@ graph [
     last_updated_at "1767254673840"
     name "Baidu, Inc."
     industry "Internet Content &#38; Information"
-    raw_risk_score 0.122405554529529
+    raw_risk_score -0.0
     sector "Communication Services"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 606
@@ -53069,9 +53069,9 @@ graph [
     last_updated_at "1767254673840"
     name "Pinterest"
     industry "Internet Content &#38; Information"
-    raw_risk_score 0.10677942659972589
+    raw_risk_score -0.014441072940826416
     sector "Communication Services"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 608
@@ -53149,9 +53149,9 @@ graph [
     ticker "FB"
     last_updated_at "1767254673840"
     name "Facebook"
-    raw_risk_score 0.03648590502793677
+    raw_risk_score 0.7690025568008423
     sector "Unknown"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 609
@@ -53309,9 +53309,9 @@ graph [
     last_updated_at "1767254673840"
     name "Lumentum Holdings Inc."
     industry "Communication Equipment"
-    raw_risk_score 0.10929848735163834
+    raw_risk_score -0.010542184114456177
     sector "Technology"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 611
@@ -53392,9 +53392,9 @@ graph [
     last_updated_at "1767254673840"
     name "Marvell Technology, Inc."
     industry "Semiconductors"
-    raw_risk_score 0.1979512000546571
+    raw_risk_score -0.40073977947235107
     sector "Technology"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 612
@@ -53631,9 +53631,9 @@ graph [
     last_updated_at "1767254673840"
     name "Coherent, Inc."
     industry "Scientific &#38; Technical Instruments"
-    raw_risk_score 0.1682722403727881
+    raw_risk_score -0.0
     sector "Technology"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 615
@@ -53711,9 +53711,9 @@ graph [
     ticker "LLP"
     last_updated_at "1767254673840"
     name "Cooley LLP"
-    raw_risk_score 0.21726093776653901
+    raw_risk_score -0.0
     sector "Unknown"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 616
@@ -53792,9 +53792,9 @@ graph [
     last_updated_at "1767254673840"
     name "Brookfield Asset Management"
     industry "Software - Application"
-    raw_risk_score 0.08704795842888109
+    raw_risk_score -0.0
     sector "Technology"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 617
@@ -54031,9 +54031,9 @@ graph [
     last_updated_at "1767254673840"
     name "BioMarin Pharmaceutical Inc"
     industry "Biotechnology"
-    raw_risk_score 0.025472160375579183
+    raw_risk_score -0.0
     sector "Healthcare"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 620
@@ -54112,9 +54112,9 @@ graph [
     last_updated_at "1767254673840"
     name "United Microelectronics Corporation"
     industry "Semiconductors"
-    raw_risk_score 0.1887087999248626
+    raw_risk_score -0.0
     sector "Technology"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 621
@@ -54192,7 +54192,7 @@ graph [
     ticker "Samsung"
     last_updated_at "1767254673840"
     name "Samsung Electronics Co."
-    raw_risk_score 0.08193316857020061
+    raw_risk_score 0.08291442155838014
     sector "Unknown"
   ]
   node [
@@ -54304,9 +54304,9 @@ graph [
     ticker "NRC"
     name "NRC"
     industry "Health Information Services"
-    raw_risk_score 0.14637826378974111
+    raw_risk_score -0.0
     sector "Healthcare"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 627
@@ -54322,9 +54322,9 @@ graph [
     ticker "AIR"
     name "Airbus"
     industry "Aerospace &#38; Defense"
-    raw_risk_score 0.060433665727127016
+    raw_risk_score 0.6455898986756803
     sector "Industrials"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 629
@@ -54407,7 +54407,7 @@ graph [
     industry "Internet Content &#38; Information"
     last_risk_update "2025-12-06T09:37:00.398000000+00:00"
     gnn_risk 0.0
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
     market_cap 0
     last_news_update "2025-12-05T10:01:43.098000000+00:00"
     updated_at "1768045191518"
@@ -54415,7 +54415,7 @@ graph [
     name "Snap Inc."
     gnn_risk_score 1.0
     last_inference_date "2025-12-07T05:37:11.656000000+00:00"
-    raw_risk_score 0.084631665830382
+    raw_risk_score 0.6802164738376936
     sector "Communication Services"
     gnn_last_updated "2025-12-06T09:27:50.565000000+00:00"
     price_forecast_next_day 85.22006107558252
@@ -54734,9 +54734,9 @@ graph [
     last_updated_at "1767254673840"
     name "Alibaba Group"
     industry "Internet Retail"
-    raw_risk_score 0.18414672961855147
+    raw_risk_score 0.7657209038734436
     sector "Consumer Cyclical"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 634
@@ -54982,9 +54982,9 @@ graph [
     last_updated_at "1767254673840"
     name "Ambarella, Inc."
     industry "Semiconductor Equipment &#38; Materials"
-    raw_risk_score 0.1733529188491374
+    raw_risk_score -0.8139966726303101
     sector "Technology"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 638
@@ -55142,9 +55142,9 @@ graph [
     last_updated_at "1767254673840"
     name "Sony"
     industry "Drug Manufacturers - General"
-    raw_risk_score 0.07384460641420015
+    raw_risk_score -0.0
     sector "Healthcare"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 640
@@ -55240,9 +55240,9 @@ graph [
     label "FCA"
     ticker "FCA"
     name "U.K. Financial Conduct Authority"
-    raw_risk_score 0.0727702281747549
+    raw_risk_score 0.9263516545295716
     sector "Unknown"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 643
@@ -55250,9 +55250,9 @@ graph [
     ticker "ROG"
     name "Roche"
     industry "Electronic Components"
-    raw_risk_score 0.0858091439988807
+    raw_risk_score 0.08876201510429385
     sector "Technology"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 644
@@ -55331,9 +55331,9 @@ graph [
     last_updated_at "1767254673840"
     name "Airbus"
     industry "Aerospace &#38; Defense"
-    raw_risk_score 0.07534600972261293
+    raw_risk_score -0.0
     sector "Industrials"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 645
@@ -55351,7 +55351,7 @@ graph [
     industry "Consumer Electronics"
     raw_risk_score 0.0
     sector "Technology"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 647
@@ -55359,9 +55359,9 @@ graph [
     ticker "HNHAF"
     name "Hon Hai Precision Industry Co., Ltd."
     industry "Electronic Components"
-    raw_risk_score 0.7
+    raw_risk_score -0.0
     sector "Technology"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 648
@@ -55369,9 +55369,9 @@ graph [
     ticker "FN"
     name "Fabrinet"
     industry "Electronic Components"
-    raw_risk_score 0.07712733777221724
+    raw_risk_score -0.0
     sector "Technology"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 649
@@ -55403,9 +55403,9 @@ graph [
     ticker "ARIS"
     name "Arista Networks"
     industry "Gold"
-    raw_risk_score 0.08599650555300019
+    raw_risk_score -0.0
     sector "Basic Materials"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   node [
     id 653
@@ -55413,9 +55413,9 @@ graph [
     ticker "COKE"
     name "Coca-Cola Consolidated"
     industry "Beverages - Non-Alcoholic"
-    raw_risk_score 0.11944814336115428
+    raw_risk_score 0.7515498399734497
     sector "Consumer Defensive"
-    risk_last_updated "2026-07-28T01:16:02.329000000+00:00"
+    risk_last_updated "2026-07-30T01:15:59.213000000+00:00"
   ]
   edge [
     source 8
@@ -99337,22 +99337,22 @@ graph [
   edge [
     source 333
     target 2
-    sentiment 0.02
+    sentiment -0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
     source 333
     target 3
-    sentiment 0.02
+    sentiment -0.02
     weight 0.5
     type "sec_discovered"
   ]
   edge [
     source 333
     target 4
-    sentiment -0.09
-    weight 0.48
+    sentiment -0.02
+    weight 0.5
     type "sec_discovered"
   ]
   edge [
@@ -99438,8 +99438,8 @@ graph [
   edge [
     source 333
     target 31
-    sentiment 0.94
-    weight 0.69
+    sentiment -0.96
+    weight 0.31
     type "sec_discovered"
   ]
   edge [
@@ -99452,8 +99452,8 @@ graph [
   edge [
     source 333
     target 40
-    sentiment 0.94
-    weight 0.69
+    sentiment -0.96
+    weight 0.31
     type "sec_discovered"
   ]
   edge [
@@ -99516,8 +99516,8 @@ graph [
   edge [
     source 333
     target 135
-    sentiment 0.02
-    weight 0.5
+    sentiment -0.1
+    weight 0.48
     type "sec_discovered"
   ]
   edge [
@@ -99530,8 +99530,8 @@ graph [
   edge [
     source 333
     target 152
-    sentiment 0.0
-    weight 0.5
+    sentiment 0.03
+    weight 0.51
     type "sec_discovered"
   ]
   edge [
@@ -99579,6 +99579,20 @@ graph [
   ]
   edge [
     source 333
+    target 185
+    sentiment -0.03
+    weight 0.49
+    type "sec_discovered"
+  ]
+  edge [
+    source 333
+    target 186
+    sentiment -0.03
+    weight 0.49
+    type "sec_discovered"
+  ]
+  edge [
+    source 333
     target 188
     sentiment -0.06
     weight 0.49
@@ -99587,8 +99601,8 @@ graph [
   edge [
     source 333
     target 194
-    sentiment 0.0
-    weight 0.5
+    sentiment 0.03
+    weight 0.51
     type "sec_discovered"
   ]
   edge [
@@ -99685,8 +99699,8 @@ graph [
   edge [
     source 333
     target 283
-    sentiment 0.0
-    weight 0.5
+    sentiment 0.03
+    weight 0.51
     type "sec_discovered"
   ]
   edge [
@@ -99706,15 +99720,15 @@ graph [
   edge [
     source 333
     target 298
-    sentiment 0.07
+    sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
   edge [
     source 333
     target 310
-    sentiment 0.0
-    weight 0.5
+    sentiment 0.03
+    weight 0.51
     type "sec_discovered"
   ]
   edge [
@@ -99944,8 +99958,8 @@ graph [
   edge [
     source 333
     target 372
-    sentiment 0.87
-    weight 0.67
+    sentiment 0.01
+    weight 0.5
     type "sec_discovered"
   ]
   edge [
@@ -99958,7 +99972,7 @@ graph [
   edge [
     source 333
     target 377
-    sentiment 0.01
+    sentiment -0.01
     weight 0.5
     type "sec_discovered"
   ]
@@ -100161,8 +100175,8 @@ graph [
   edge [
     source 333
     target 408
-    sentiment -0.03
-    weight 0.49
+    sentiment -0.02
+    weight 0.5
     type "sec_discovered"
   ]
   edge [
@@ -100203,8 +100217,8 @@ graph [
   edge [
     source 333
     target 428
-    sentiment 0.03
-    weight 0.51
+    sentiment 0.02
+    weight 0.5
     type "sec_discovered"
   ]
   edge [
@@ -100239,15 +100253,22 @@ graph [
   edge [
     source 333
     target 477
-    sentiment 0.0
+    sentiment 0.03
+    weight 0.51
+    type "sec_discovered"
+  ]
+  edge [
+    source 333
+    target 478
+    sentiment 0.01
     weight 0.5
     type "sec_discovered"
   ]
   edge [
     source 333
     target 483
-    sentiment -0.01
-    weight 0.5
+    sentiment 0.06
+    weight 0.51
     type "sec_discovered"
   ]
   edge [
@@ -100267,8 +100288,8 @@ graph [
   edge [
     source 333
     target 504
-    sentiment -0.03
-    weight 0.49
+    sentiment -0.02
+    weight 0.5
     type "sec_discovered"
   ]
   edge [
@@ -100295,7 +100316,7 @@ graph [
   edge [
     source 333
     target 517
-    sentiment 0.07
+    sentiment 0.03
     weight 0.51
     type "sec_discovered"
   ]
